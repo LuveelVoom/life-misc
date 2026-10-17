@@ -1,0 +1,5 @@
+#C Family 1 (blinking-block band), phase t: 4 periods of 6 columns. Only the middle 3 rows are self-consistent;
+#C the edge rows need suitable neighbours (see family1_real_agar_torus.rle).
+x = 24, y = 5, rule = B3/S23
+3o2b4o2b4o2b4o2bo$2o4b2o4b2o4b2o$b2ob2ob2ob2ob2ob2ob2ob2o$3b2o4b2o4b
+2o4b2o$2b4o2b4o2b4o2b4o!

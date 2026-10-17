@@ -1,0 +1,4 @@
+#C Family 2 (moving double-stripe variant), phase t. NOTE: the '^.^.' edge rows cannot be completed
+#C in any real evolution (hand-proved); interior rows only illustrate the local windows.
+x = 24, y = 6, rule = B3/S23
+$$24o$24o$$!

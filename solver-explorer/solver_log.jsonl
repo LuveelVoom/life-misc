@@ -1,0 +1,492 @@
+{"branch": "root", "completion": false, "height": 54, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-19T18:16:55.738961+00:00"}
+{"branch": "root", "height": 54, "kind": "branch_split_requested", "time": "2026-09-19T18:16:55.739063+00:00"}
+{"branch": "root", "kind": "manager_paused", "stage": "partition", "time": "2026-09-19T20:11:33.774866+00:00"}
+{"branch": "partition-00000001/1", "completion": false, "height": 55, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T20:12:00.345930+00:00"}
+{"branch": "partition-00000001/2", "completion": false, "height": 55, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T20:12:00.353912+00:00"}
+{"branch": "partition-00000001/3", "completion": false, "height": 55, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T20:12:00.369643+00:00"}
+{"branch": "partition-00000001/4", "completion": false, "height": 55, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T20:12:00.369706+00:00"}
+{"branch": "root", "children": 4, "kind": "partition_materialized", "partition": "partition-00000001", "time": "2026-09-19T20:12:00.369712+00:00"}
+{"bytes": 14196355964, "kind": "checkpoint_deleted", "source": "checkpoints/root_54", "time": "2026-09-19T20:12:00.371057+00:00"}
+{"branch": "partition-00000001/1", "height": 55, "kind": "branch_started", "time": "2026-09-19T20:12:00.372024+00:00"}
+{"branch": "partition-00000001/1", "completion": false, "height": 61, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-19T21:15:39.334455+00:00"}
+{"branch": "partition-00000001/1", "height": 61, "kind": "branch_split_requested", "time": "2026-09-19T21:15:39.334509+00:00"}
+{"bytes": 3977235091, "kind": "checkpoint_deleted", "source": "partitions/00000001/p00000001-1_55", "time": "2026-09-19T21:15:39.369872+00:00"}
+{"branch": "partition-00000002/1", "completion": false, "height": 62, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T22:12:06.858223+00:00"}
+{"branch": "partition-00000002/2", "completion": false, "height": 62, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T22:12:06.858573+00:00"}
+{"branch": "partition-00000002/3", "completion": false, "height": 62, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T22:12:06.858857+00:00"}
+{"branch": "partition-00000002/4", "completion": false, "height": 62, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-19T22:12:06.858896+00:00"}
+{"branch": "partition-00000001/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000002", "time": "2026-09-19T22:12:06.858913+00:00"}
+{"bytes": 10359535311, "kind": "checkpoint_deleted", "source": "checkpoints/p00000001-1_61", "time": "2026-09-19T22:12:06.918406+00:00"}
+{"branch": "partition-00000002/1", "height": 62, "kind": "branch_started", "time": "2026-09-19T22:12:06.951348+00:00"}
+{"branch": "partition-00000002/1", "completion": false, "height": 68, "kind": "solver_result", "reason": "interrupted", "stage": "extend", "time": "2026-09-19T22:50:18.927567+00:00"}
+{"branch": "partition-00000002/1", "kind": "manager_paused", "stage": "extend", "time": "2026-09-19T22:50:18.927625+00:00"}
+{"bytes": 2772240721, "kind": "checkpoint_deleted", "source": "partitions/00000002/p00000002-1_62", "time": "2026-09-19T22:50:19.031501+00:00"}
+{"branch": "partition-00000002/1", "completion": false, "height": 70, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-19T23:26:15.184877+00:00"}
+{"branch": "partition-00000002/1", "height": 70, "kind": "branch_split_requested", "time": "2026-09-19T23:26:15.184937+00:00"}
+{"bytes": 8021708625, "kind": "checkpoint_deleted", "source": "checkpoints/p00000002-1_68", "time": "2026-09-19T23:26:15.291960+00:00"}
+{"branch": "partition-00000002/1", "kind": "manager_paused", "stage": "partition", "time": "2026-09-19T23:48:57.454603+00:00"}
+{"branch": "partition-00000003/1", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T02:15:14.598125+00:00"}
+{"branch": "partition-00000003/2", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T02:15:14.598466+00:00"}
+{"branch": "partition-00000003/3", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T02:15:14.598778+00:00"}
+{"branch": "partition-00000003/4", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T02:15:14.598815+00:00"}
+{"branch": "partition-00000002/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000003", "time": "2026-09-20T02:15:14.598835+00:00"}
+{"bytes": 10397488082, "kind": "checkpoint_deleted", "source": "checkpoints/p00000002-1_70", "time": "2026-09-20T02:15:14.779514+00:00"}
+{"branch": "partition-00000003/1", "height": 71, "kind": "branch_started", "time": "2026-09-20T02:15:15.119363+00:00"}
+{"branch": "partition-00000003/1", "completion": false, "height": 85, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-20T03:30:42.375232+00:00"}
+{"branch": "partition-00000003/1", "height": 85, "kind": "branch_split_requested", "time": "2026-09-20T03:30:42.375292+00:00"}
+{"bytes": 2530844193, "kind": "checkpoint_deleted", "source": "partitions/00000003/p00000003-1_71", "time": "2026-09-20T03:30:42.526945+00:00"}
+{"branch": "partition-00000004/1", "completion": false, "height": 86, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T04:03:26.659672+00:00"}
+{"branch": "partition-00000004/2", "completion": false, "height": 86, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T04:03:26.660001+00:00"}
+{"branch": "partition-00000004/3", "completion": false, "height": 86, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T04:03:26.660308+00:00"}
+{"branch": "partition-00000004/4", "completion": false, "height": 86, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T04:03:26.660360+00:00"}
+{"branch": "partition-00000003/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000004", "time": "2026-09-20T04:03:26.660368+00:00"}
+{"bytes": 10139878802, "kind": "checkpoint_deleted", "source": "checkpoints/p00000003-1_85", "time": "2026-09-20T04:03:26.842739+00:00"}
+{"branch": "partition-00000004/1", "height": 86, "kind": "branch_started", "time": "2026-09-20T04:03:26.936014+00:00"}
+{"branch": "partition-00000004/1", "completion": false, "height": 322, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T05:05:26.253842+00:00"}
+{"bytes": 2493425460, "kind": "checkpoint_deleted", "source": "partitions/00000004/p00000004-1_86", "time": "2026-09-20T05:05:26.281058+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000004-1_322", "time": "2026-09-20T05:05:26.281201+00:00"}
+{"branch": "partition-00000004/2", "height": 86, "kind": "branch_started", "time": "2026-09-20T05:05:26.283755+00:00"}
+{"branch": "partition-00000004/2", "completion": false, "height": 332, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T05:59:55.568083+00:00"}
+{"bytes": 3144711164, "kind": "checkpoint_deleted", "source": "partitions/00000004/p00000004-2_86", "time": "2026-09-20T05:59:55.598293+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000004-2_332", "time": "2026-09-20T05:59:55.598467+00:00"}
+{"branch": "partition-00000004/3", "height": 86, "kind": "branch_started", "time": "2026-09-20T05:59:55.601566+00:00"}
+{"branch": "partition-00000004/3", "completion": false, "height": 331, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T07:37:08.638244+00:00"}
+{"bytes": 3652125648, "kind": "checkpoint_deleted", "source": "partitions/00000004/p00000004-3_86", "time": "2026-09-20T07:37:08.674830+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000004-3_331", "time": "2026-09-20T07:37:08.674967+00:00"}
+{"branch": "partition-00000004/4", "height": 86, "kind": "branch_started", "time": "2026-09-20T07:37:08.679319+00:00"}
+{"branch": "partition-00000004/4", "completion": false, "height": 294, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T08:30:09.328874+00:00"}
+{"bytes": 3908564007, "kind": "checkpoint_deleted", "source": "partitions/00000004/p00000004-4_86", "time": "2026-09-20T08:30:09.368151+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000004-4_294", "time": "2026-09-20T08:30:09.368292+00:00"}
+{"branch": "partition-00000003/2", "height": 71, "kind": "branch_started", "time": "2026-09-20T08:30:09.371548+00:00"}
+{"branch": "partition-00000003/2", "completion": false, "height": 83, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-20T09:14:01.239564+00:00"}
+{"branch": "partition-00000003/2", "height": 83, "kind": "branch_split_requested", "time": "2026-09-20T09:14:01.239616+00:00"}
+{"bytes": 3274090315, "kind": "checkpoint_deleted", "source": "partitions/00000003/p00000003-2_71", "time": "2026-09-20T09:14:01.434814+00:00"}
+{"branch": "partition-00000005/1", "completion": false, "height": 84, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T09:32:34.637510+00:00"}
+{"branch": "partition-00000005/2", "completion": false, "height": 84, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T09:32:34.637563+00:00"}
+{"branch": "partition-00000005/3", "completion": false, "height": 84, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T09:32:34.637602+00:00"}
+{"branch": "partition-00000005/4", "completion": false, "height": 84, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T09:32:34.637638+00:00"}
+{"branch": "partition-00000003/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000005", "time": "2026-09-20T09:32:34.637644+00:00"}
+{"bytes": 9633108906, "kind": "checkpoint_deleted", "source": "checkpoints/p00000003-2_83", "time": "2026-09-20T09:32:34.903677+00:00"}
+{"branch": "partition-00000005/1", "height": 84, "kind": "branch_started", "time": "2026-09-20T09:32:35.202178+00:00"}
+{"branch": "partition-00000005/1", "completion": false, "height": 659, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T11:18:00.317994+00:00"}
+{"bytes": 2826324347, "kind": "checkpoint_deleted", "source": "partitions/00000005/p00000005-1_84", "time": "2026-09-20T11:18:00.348634+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000005-1_659", "time": "2026-09-20T11:18:00.348782+00:00"}
+{"branch": "partition-00000005/2", "height": 84, "kind": "branch_started", "time": "2026-09-20T11:18:00.353322+00:00"}
+{"branch": "partition-00000005/2", "completion": false, "height": 243, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T11:37:49.138391+00:00"}
+{"bytes": 2743132836, "kind": "checkpoint_deleted", "source": "partitions/00000005/p00000005-2_84", "time": "2026-09-20T11:37:49.179418+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000005-2_243", "time": "2026-09-20T11:37:49.179552+00:00"}
+{"branch": "partition-00000005/3", "height": 84, "kind": "branch_started", "time": "2026-09-20T11:37:49.184736+00:00"}
+{"branch": "partition-00000005/3", "completion": false, "height": 242, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T11:55:47.944738+00:00"}
+{"bytes": 3275084972, "kind": "checkpoint_deleted", "source": "partitions/00000005/p00000005-3_84", "time": "2026-09-20T11:55:47.993122+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000005-3_242", "time": "2026-09-20T11:55:47.993262+00:00"}
+{"branch": "partition-00000005/4", "height": 84, "kind": "branch_started", "time": "2026-09-20T11:55:47.997445+00:00"}
+{"branch": "partition-00000005/4", "completion": false, "height": 171, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-20T14:16:55.808767+00:00"}
+{"branch": "partition-00000005/4", "height": 171, "kind": "branch_split_requested", "time": "2026-09-20T14:16:55.808829+00:00"}
+{"bytes": 2578311502, "kind": "checkpoint_deleted", "source": "partitions/00000005/p00000005-4_84", "time": "2026-09-20T14:16:56.003171+00:00"}
+{"branch": "partition-00000006/1", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T14:42:05.602386+00:00"}
+{"branch": "partition-00000006/2", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T14:42:05.602711+00:00"}
+{"branch": "partition-00000006/3", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T14:42:05.603022+00:00"}
+{"branch": "partition-00000006/4", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T14:42:05.603072+00:00"}
+{"branch": "partition-00000005/4", "children": 4, "kind": "partition_materialized", "partition": "partition-00000006", "time": "2026-09-20T14:42:05.603080+00:00"}
+{"bytes": 10185526899, "kind": "checkpoint_deleted", "source": "checkpoints/p00000005-4_171", "time": "2026-09-20T14:42:05.907753+00:00"}
+{"branch": "partition-00000006/1", "height": 172, "kind": "branch_started", "time": "2026-09-20T14:42:06.337948+00:00"}
+{"branch": "partition-00000006/1", "completion": false, "height": 191, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-20T15:35:14.699018+00:00"}
+{"branch": "partition-00000006/1", "height": 191, "kind": "branch_split_requested", "time": "2026-09-20T15:35:14.699134+00:00"}
+{"bytes": 3238434838, "kind": "checkpoint_deleted", "source": "partitions/00000006/p00000006-1_172", "time": "2026-09-20T15:35:14.917532+00:00"}
+{"branch": "partition-00000007/1", "completion": false, "height": 192, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T15:53:09.212142+00:00"}
+{"branch": "partition-00000007/2", "completion": false, "height": 192, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T15:53:09.212521+00:00"}
+{"branch": "partition-00000007/3", "completion": false, "height": 192, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T15:53:09.212826+00:00"}
+{"branch": "partition-00000007/4", "completion": false, "height": 192, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-20T15:53:09.212876+00:00"}
+{"branch": "partition-00000006/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000007", "time": "2026-09-20T15:53:09.212884+00:00"}
+{"bytes": 9509286857, "kind": "checkpoint_deleted", "source": "checkpoints/p00000006-1_191", "time": "2026-09-20T15:53:09.516267+00:00"}
+{"branch": "partition-00000007/1", "height": 192, "kind": "branch_started", "time": "2026-09-20T15:53:09.773988+00:00"}
+{"branch": "partition-00000007/1", "completion": false, "height": 374, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T16:34:50.951124+00:00"}
+{"bytes": 2721181269, "kind": "checkpoint_deleted", "source": "partitions/00000007/p00000007-1_192", "time": "2026-09-20T16:34:50.983409+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000007-1_374", "time": "2026-09-20T16:34:50.983560+00:00"}
+{"branch": "partition-00000007/2", "height": 192, "kind": "branch_started", "time": "2026-09-20T16:34:51.000970+00:00"}
+{"branch": "partition-00000007/2", "completion": false, "height": 379, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T17:39:33.976507+00:00"}
+{"bytes": 2888322988, "kind": "checkpoint_deleted", "source": "partitions/00000007/p00000007-2_192", "time": "2026-09-20T17:39:34.034663+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000007-2_379", "time": "2026-09-20T17:39:34.034878+00:00"}
+{"branch": "partition-00000007/3", "height": 192, "kind": "branch_started", "time": "2026-09-20T17:39:34.040510+00:00"}
+{"branch": "partition-00000007/3", "completion": false, "height": 383, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T18:09:20.736647+00:00"}
+{"bytes": 2409653542, "kind": "checkpoint_deleted", "source": "partitions/00000007/p00000007-3_192", "time": "2026-09-20T18:09:20.769733+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000007-3_383", "time": "2026-09-20T18:09:20.769884+00:00"}
+{"branch": "partition-00000007/4", "height": 192, "kind": "branch_started", "time": "2026-09-20T18:09:20.775767+00:00"}
+{"branch": "partition-00000007/4", "completion": false, "height": 445, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T19:37:10.676381+00:00"}
+{"bytes": 2467353480, "kind": "checkpoint_deleted", "source": "partitions/00000007/p00000007-4_192", "time": "2026-09-20T19:37:10.725292+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000007-4_445", "time": "2026-09-20T19:37:10.725477+00:00"}
+{"branch": "partition-00000006/2", "height": 172, "kind": "branch_started", "time": "2026-09-20T19:37:10.731577+00:00"}
+{"branch": "partition-00000006/2", "completion": false, "height": 393, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-20T22:40:54.201151+00:00"}
+{"bytes": 2353549159, "kind": "checkpoint_deleted", "source": "partitions/00000006/p00000006-2_172", "time": "2026-09-20T22:40:54.510380+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000006-2_393", "time": "2026-09-20T22:40:54.510467+00:00"}
+{"branch": "partition-00000006/3", "height": 172, "kind": "branch_started", "time": "2026-09-20T22:40:54.941783+00:00"}
+{"branch": "partition-00000006/3", "completion": false, "height": 196, "kind": "solver_result", "reason": "interrupted", "stage": "extend", "time": "2026-09-20T23:36:52.528221+00:00"}
+{"branch": "partition-00000006/3", "kind": "manager_paused", "stage": "extend", "time": "2026-09-20T23:36:52.528280+00:00"}
+{"bytes": 3720791772, "kind": "checkpoint_deleted", "source": "partitions/00000006/p00000006-3_172", "time": "2026-09-20T23:36:52.820982+00:00"}
+{"branch": "partition-00000006/3", "completion": false, "height": 447, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T01:13:18.407019+00:00"}
+{"bytes": 7119054314, "kind": "checkpoint_deleted", "source": "checkpoints/p00000006-3_196", "time": "2026-09-21T01:13:18.721079+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000006-3_447", "time": "2026-09-21T01:13:18.721533+00:00"}
+{"branch": "partition-00000006/4", "height": 172, "kind": "branch_started", "time": "2026-09-21T01:13:19.391121+00:00"}
+{"branch": "partition-00000006/4", "completion": false, "height": 397, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T02:24:47.338660+00:00"}
+{"bytes": 3583477572, "kind": "checkpoint_deleted", "source": "partitions/00000006/p00000006-4_172", "time": "2026-09-21T02:24:47.386649+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000006-4_397", "time": "2026-09-21T02:24:47.386840+00:00"}
+{"branch": "partition-00000003/3", "height": 71, "kind": "branch_started", "time": "2026-09-21T02:24:47.398249+00:00"}
+{"branch": "partition-00000003/3", "completion": false, "height": 77, "kind": "solver_result", "reason": "interrupted", "stage": "extend", "time": "2026-09-21T02:44:27.355778+00:00"}
+{"branch": "partition-00000003/3", "kind": "manager_paused", "stage": "extend", "time": "2026-09-21T02:44:27.355839+00:00"}
+{"bytes": 3612369902, "kind": "checkpoint_deleted", "source": "partitions/00000003/p00000003-3_71", "time": "2026-09-21T02:44:27.695903+00:00"}
+{"branch": "partition-00000003/3", "completion": false, "height": 86, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T03:21:23.788878+00:00"}
+{"branch": "partition-00000003/3", "height": 86, "kind": "branch_split_requested", "time": "2026-09-21T03:21:23.788996+00:00"}
+{"bytes": 6183189850, "kind": "checkpoint_deleted", "source": "checkpoints/p00000003-3_77", "time": "2026-09-21T03:21:24.117913+00:00"}
+{"branch": "partition-00000008/1", "completion": false, "height": 87, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T03:38:42.998477+00:00"}
+{"branch": "partition-00000008/2", "completion": false, "height": 87, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T03:38:42.998838+00:00"}
+{"branch": "partition-00000008/3", "completion": false, "height": 87, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T03:38:42.999120+00:00"}
+{"branch": "partition-00000008/4", "completion": false, "height": 87, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T03:38:42.999166+00:00"}
+{"branch": "partition-00000003/3", "children": 4, "kind": "partition_materialized", "partition": "partition-00000008", "time": "2026-09-21T03:38:42.999175+00:00"}
+{"bytes": 9505120791, "kind": "checkpoint_deleted", "source": "checkpoints/p00000003-3_86", "time": "2026-09-21T03:38:43.367472+00:00"}
+{"branch": "partition-00000008/1", "height": 87, "kind": "branch_started", "time": "2026-09-21T03:38:43.887158+00:00"}
+{"branch": "partition-00000008/1", "completion": false, "height": 274, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T04:07:39.739739+00:00"}
+{"bytes": 2415092826, "kind": "checkpoint_deleted", "source": "partitions/00000008/p00000008-1_87", "time": "2026-09-21T04:07:39.771349+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000008-1_274", "time": "2026-09-21T04:07:39.771508+00:00"}
+{"branch": "partition-00000008/2", "height": 87, "kind": "branch_started", "time": "2026-09-21T04:07:39.783512+00:00"}
+{"branch": "partition-00000008/2", "completion": false, "height": 252, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T04:16:29.066060+00:00"}
+{"bytes": 1902989008, "kind": "checkpoint_deleted", "source": "partitions/00000008/p00000008-2_87", "time": "2026-09-21T04:16:29.107008+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000008-2_252", "time": "2026-09-21T04:16:29.107157+00:00"}
+{"branch": "partition-00000008/3", "height": 87, "kind": "branch_started", "time": "2026-09-21T04:16:29.119707+00:00"}
+{"branch": "partition-00000008/3", "completion": false, "height": 471, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T04:45:59.934698+00:00"}
+{"bytes": 2522714351, "kind": "checkpoint_deleted", "source": "partitions/00000008/p00000008-3_87", "time": "2026-09-21T04:45:59.965958+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000008-3_471", "time": "2026-09-21T04:45:59.966112+00:00"}
+{"branch": "partition-00000008/4", "height": 87, "kind": "branch_started", "time": "2026-09-21T04:45:59.984127+00:00"}
+{"branch": "partition-00000008/4", "completion": false, "height": 265, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T05:33:58.279051+00:00"}
+{"bytes": 2761477270, "kind": "checkpoint_deleted", "source": "partitions/00000008/p00000008-4_87", "time": "2026-09-21T05:33:58.321145+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000008-4_265", "time": "2026-09-21T05:33:58.373396+00:00"}
+{"branch": "partition-00000003/4", "height": 71, "kind": "branch_started", "time": "2026-09-21T05:33:58.435601+00:00"}
+{"branch": "partition-00000003/4", "completion": false, "height": 313, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T07:17:37.942662+00:00"}
+{"bytes": 4173933961, "kind": "checkpoint_deleted", "source": "partitions/00000003/p00000003-4_71", "time": "2026-09-21T07:17:38.357143+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000003-4_313", "time": "2026-09-21T07:17:38.357283+00:00"}
+{"branch": "partition-00000002/2", "height": 62, "kind": "branch_started", "time": "2026-09-21T07:17:38.990008+00:00"}
+{"branch": "partition-00000002/2", "completion": false, "height": 73, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T07:57:54.049095+00:00"}
+{"branch": "partition-00000002/2", "height": 73, "kind": "branch_split_requested", "time": "2026-09-21T07:57:54.049150+00:00"}
+{"bytes": 3934633123, "kind": "checkpoint_deleted", "source": "partitions/00000002/p00000002-2_62", "time": "2026-09-21T07:57:54.379918+00:00"}
+{"branch": "partition-00000009/1", "completion": false, "height": 74, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T08:20:25.197975+00:00"}
+{"branch": "partition-00000009/2", "completion": false, "height": 74, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T08:20:25.198336+00:00"}
+{"branch": "partition-00000009/3", "completion": false, "height": 74, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T08:20:25.198624+00:00"}
+{"branch": "partition-00000009/4", "completion": false, "height": 74, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T08:20:25.198663+00:00"}
+{"branch": "partition-00000002/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000009", "time": "2026-09-21T08:20:25.198673+00:00"}
+{"bytes": 10197732117, "kind": "checkpoint_deleted", "source": "checkpoints/p00000002-2_73", "time": "2026-09-21T08:20:25.588671+00:00"}
+{"branch": "partition-00000009/1", "height": 74, "kind": "branch_started", "time": "2026-09-21T08:20:26.260583+00:00"}
+{"branch": "partition-00000009/1", "completion": false, "height": 239, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T09:00:23.773791+00:00"}
+{"bytes": 3162765922, "kind": "checkpoint_deleted", "source": "partitions/00000009/p00000009-1_74", "time": "2026-09-21T09:00:23.808209+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000009-1_239", "time": "2026-09-21T09:00:23.808346+00:00"}
+{"branch": "partition-00000009/2", "height": 74, "kind": "branch_started", "time": "2026-09-21T09:00:23.867437+00:00"}
+{"branch": "partition-00000009/2", "completion": false, "height": 253, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T09:52:19.458269+00:00"}
+{"bytes": 3234744334, "kind": "checkpoint_deleted", "source": "partitions/00000009/p00000009-2_74", "time": "2026-09-21T09:52:19.494555+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000009-2_253", "time": "2026-09-21T09:52:19.494692+00:00"}
+{"branch": "partition-00000009/3", "height": 74, "kind": "branch_started", "time": "2026-09-21T09:52:19.542778+00:00"}
+{"branch": "partition-00000009/3", "completion": false, "height": 259, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T10:36:20.877934+00:00"}
+{"bytes": 3294110623, "kind": "checkpoint_deleted", "source": "partitions/00000009/p00000009-3_74", "time": "2026-09-21T10:36:20.928556+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000009-3_259", "time": "2026-09-21T10:36:20.928693+00:00"}
+{"branch": "partition-00000009/4", "height": 74, "kind": "branch_started", "time": "2026-09-21T10:36:20.995200+00:00"}
+{"branch": "partition-00000009/4", "completion": false, "height": 238, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T11:06:26.607768+00:00"}
+{"bytes": 2946351217, "kind": "checkpoint_deleted", "source": "partitions/00000009/p00000009-4_74", "time": "2026-09-21T11:06:26.651771+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000009-4_238", "time": "2026-09-21T11:06:26.651919+00:00"}
+{"branch": "partition-00000002/3", "height": 62, "kind": "branch_started", "time": "2026-09-21T11:06:26.708792+00:00"}
+{"branch": "partition-00000002/3", "completion": false, "height": 71, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T11:46:38.816945+00:00"}
+{"branch": "partition-00000002/3", "height": 71, "kind": "branch_split_requested", "time": "2026-09-21T11:46:38.816997+00:00"}
+{"bytes": 4703489064, "kind": "checkpoint_deleted", "source": "partitions/00000002/p00000002-3_62", "time": "2026-09-21T11:46:39.240782+00:00"}
+{"branch": "partition-00000010/1", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T12:11:21.452429+00:00"}
+{"branch": "partition-00000010/2", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T12:11:21.463785+00:00"}
+{"branch": "partition-00000010/3", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T12:11:21.475383+00:00"}
+{"branch": "partition-00000010/4", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T12:11:21.475462+00:00"}
+{"branch": "partition-00000002/3", "children": 4, "kind": "partition_materialized", "partition": "partition-00000010", "time": "2026-09-21T12:11:21.475469+00:00"}
+{"bytes": 10152833373, "kind": "checkpoint_deleted", "source": "checkpoints/p00000002-3_71", "time": "2026-09-21T12:11:21.908851+00:00"}
+{"branch": "partition-00000010/1", "height": 72, "kind": "branch_started", "time": "2026-09-21T12:11:22.801008+00:00"}
+{"branch": "partition-00000010/1", "completion": false, "height": 335, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T14:47:41.446727+00:00"}
+{"bytes": 3243367687, "kind": "checkpoint_deleted", "source": "partitions/00000010/p00000010-1_72", "time": "2026-09-21T14:47:41.484940+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000010-1_335", "time": "2026-09-21T14:47:41.485099+00:00"}
+{"branch": "partition-00000010/2", "height": 72, "kind": "branch_started", "time": "2026-09-21T14:47:41.552516+00:00"}
+{"branch": "partition-00000010/2", "completion": false, "height": 279, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T16:01:12.184836+00:00"}
+{"bytes": 2833509652, "kind": "checkpoint_deleted", "source": "partitions/00000010/p00000010-2_72", "time": "2026-09-21T16:01:12.225158+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000010-2_279", "time": "2026-09-21T16:01:12.225325+00:00"}
+{"branch": "partition-00000010/3", "height": 72, "kind": "branch_started", "time": "2026-09-21T16:01:12.349710+00:00"}
+{"branch": "partition-00000010/3", "completion": false, "height": 316, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T17:07:15.408955+00:00"}
+{"bytes": 2948903418, "kind": "checkpoint_deleted", "source": "partitions/00000010/p00000010-3_72", "time": "2026-09-21T17:07:15.479405+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000010-3_316", "time": "2026-09-21T17:07:15.479594+00:00"}
+{"branch": "partition-00000010/4", "height": 72, "kind": "branch_started", "time": "2026-09-21T17:07:15.546547+00:00"}
+{"branch": "partition-00000010/4", "completion": false, "height": 268, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T17:54:22.906426+00:00"}
+{"bytes": 3516171280, "kind": "checkpoint_deleted", "source": "partitions/00000010/p00000010-4_72", "time": "2026-09-21T17:54:22.948211+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000010-4_268", "time": "2026-09-21T17:54:22.948354+00:00"}
+{"branch": "partition-00000002/4", "height": 62, "kind": "branch_started", "time": "2026-09-21T17:54:23.015157+00:00"}
+{"branch": "partition-00000002/4", "completion": false, "height": 71, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T18:26:45.973174+00:00"}
+{"branch": "partition-00000002/4", "height": 71, "kind": "branch_split_requested", "time": "2026-09-21T18:26:45.973231+00:00"}
+{"bytes": 4488513071, "kind": "checkpoint_deleted", "source": "partitions/00000002/p00000002-4_62", "time": "2026-09-21T18:26:46.382973+00:00"}
+{"branch": "partition-00000011/1", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T18:48:21.417179+00:00"}
+{"branch": "partition-00000011/2", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T18:48:21.421714+00:00"}
+{"branch": "partition-00000011/3", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T18:48:21.422043+00:00"}
+{"branch": "partition-00000011/4", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T18:48:21.422094+00:00"}
+{"branch": "partition-00000002/4", "children": 4, "kind": "partition_materialized", "partition": "partition-00000011", "time": "2026-09-21T18:48:21.422100+00:00"}
+{"bytes": 9283076688, "kind": "checkpoint_deleted", "source": "checkpoints/p00000002-4_71", "time": "2026-09-21T18:48:21.824019+00:00"}
+{"branch": "partition-00000011/1", "height": 72, "kind": "branch_started", "time": "2026-09-21T18:48:22.746340+00:00"}
+{"branch": "partition-00000011/1", "completion": false, "height": 261, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T19:39:23.061332+00:00"}
+{"bytes": 3283656115, "kind": "checkpoint_deleted", "source": "partitions/00000011/p00000011-1_72", "time": "2026-09-21T19:39:23.101537+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000011-1_261", "time": "2026-09-21T19:39:23.101670+00:00"}
+{"branch": "partition-00000011/2", "height": 72, "kind": "branch_started", "time": "2026-09-21T19:39:23.187103+00:00"}
+{"branch": "partition-00000011/2", "completion": false, "height": 258, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T20:08:44.190304+00:00"}
+{"bytes": 2789469963, "kind": "checkpoint_deleted", "source": "partitions/00000011/p00000011-2_72", "time": "2026-09-21T20:08:44.226814+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000011-2_258", "time": "2026-09-21T20:08:44.226951+00:00"}
+{"branch": "partition-00000011/3", "height": 72, "kind": "branch_started", "time": "2026-09-21T20:08:44.382172+00:00"}
+{"branch": "partition-00000011/3", "completion": false, "height": 226, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T20:42:47.200160+00:00"}
+{"bytes": 2144102782, "kind": "checkpoint_deleted", "source": "partitions/00000011/p00000011-3_72", "time": "2026-09-21T20:42:47.229772+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000011-3_226", "time": "2026-09-21T20:42:47.229915+00:00"}
+{"branch": "partition-00000011/4", "height": 72, "kind": "branch_started", "time": "2026-09-21T20:42:47.302038+00:00"}
+{"branch": "partition-00000011/4", "completion": false, "height": 273, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-21T21:46:32.854367+00:00"}
+{"bytes": 2713401421, "kind": "checkpoint_deleted", "source": "partitions/00000011/p00000011-4_72", "time": "2026-09-21T21:46:32.903603+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000011-4_273", "time": "2026-09-21T21:46:32.903824+00:00"}
+{"branch": "partition-00000001/2", "height": 55, "kind": "branch_started", "time": "2026-09-21T21:46:32.988985+00:00"}
+{"branch": "partition-00000001/2", "completion": false, "height": 60, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T22:26:37.584909+00:00"}
+{"branch": "partition-00000001/2", "height": 60, "kind": "branch_split_requested", "time": "2026-09-21T22:26:37.584967+00:00"}
+{"bytes": 5092738543, "kind": "checkpoint_deleted", "source": "partitions/00000001/p00000001-2_55", "time": "2026-09-21T22:26:38.067387+00:00"}
+{"branch": "partition-00000012/1", "completion": false, "height": 61, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T23:13:12.741717+00:00"}
+{"branch": "partition-00000012/2", "completion": false, "height": 61, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T23:13:12.742111+00:00"}
+{"branch": "partition-00000012/3", "completion": false, "height": 61, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T23:13:12.745121+00:00"}
+{"branch": "partition-00000012/4", "completion": false, "height": 61, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-21T23:13:12.745208+00:00"}
+{"branch": "partition-00000001/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000012", "time": "2026-09-21T23:13:12.745222+00:00"}
+{"bytes": 11078533455, "kind": "checkpoint_deleted", "source": "checkpoints/p00000001-2_60", "time": "2026-09-21T23:13:13.242632+00:00"}
+{"branch": "partition-00000012/1", "height": 61, "kind": "branch_started", "time": "2026-09-21T23:13:14.635096+00:00"}
+{"branch": "partition-00000012/1", "completion": false, "height": 70, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-21T23:57:37.401867+00:00"}
+{"branch": "partition-00000012/1", "height": 70, "kind": "branch_split_requested", "time": "2026-09-21T23:57:37.401929+00:00"}
+{"bytes": 3501860059, "kind": "checkpoint_deleted", "source": "partitions/00000012/p00000012-1_61", "time": "2026-09-21T23:57:37.854345+00:00"}
+{"branch": "partition-00000012/1", "kind": "manager_paused", "stage": "partition", "time": "2026-09-22T00:28:57.353660+00:00"}
+{"branch": "partition-00000013/1", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T04:58:36.107050+00:00"}
+{"branch": "partition-00000013/2", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T04:58:36.107542+00:00"}
+{"branch": "partition-00000013/3", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T04:58:36.116899+00:00"}
+{"branch": "partition-00000013/4", "completion": false, "height": 71, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T04:58:36.116978+00:00"}
+{"branch": "partition-00000012/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000013", "time": "2026-09-22T04:58:36.116984+00:00"}
+{"bytes": 10453615326, "kind": "checkpoint_deleted", "source": "checkpoints/p00000012-1_70", "time": "2026-09-22T04:58:36.176494+00:00"}
+{"branch": "partition-00000013/1", "height": 71, "kind": "branch_started", "time": "2026-09-22T04:58:36.266418+00:00"}
+{"branch": "partition-00000013/1", "completion": false, "height": 347, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T07:43:29.706109+00:00"}
+{"bytes": 2349418074, "kind": "checkpoint_deleted", "source": "partitions/00000013/p00000013-1_71", "time": "2026-09-22T07:43:29.748941+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000013-1_347", "time": "2026-09-22T07:43:29.749104+00:00"}
+{"branch": "partition-00000013/2", "height": 71, "kind": "branch_started", "time": "2026-09-22T07:43:29.861580+00:00"}
+{"branch": "partition-00000013/2", "completion": false, "height": 250, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T09:22:30.544878+00:00"}
+{"bytes": 2618549353, "kind": "checkpoint_deleted", "source": "partitions/00000013/p00000013-2_71", "time": "2026-09-22T09:22:30.578188+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000013-2_250", "time": "2026-09-22T09:22:30.578325+00:00"}
+{"branch": "partition-00000013/3", "height": 71, "kind": "branch_started", "time": "2026-09-22T09:22:30.691011+00:00"}
+{"branch": "partition-00000013/3", "completion": false, "height": 281, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T10:40:55.246861+00:00"}
+{"bytes": 3145581292, "kind": "checkpoint_deleted", "source": "partitions/00000013/p00000013-3_71", "time": "2026-09-22T10:40:55.285594+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000013-3_281", "time": "2026-09-22T10:40:55.405970+00:00"}
+{"branch": "partition-00000013/4", "height": 71, "kind": "branch_started", "time": "2026-09-22T10:40:55.548581+00:00"}
+{"branch": "partition-00000013/4", "completion": false, "height": 226, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T11:32:08.030478+00:00"}
+{"bytes": 3787221999, "kind": "checkpoint_deleted", "source": "partitions/00000013/p00000013-4_71", "time": "2026-09-22T11:32:08.104057+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000013-4_226", "time": "2026-09-22T11:32:08.104229+00:00"}
+{"branch": "partition-00000012/2", "height": 61, "kind": "branch_started", "time": "2026-09-22T11:32:08.247905+00:00"}
+{"branch": "partition-00000012/2", "completion": false, "height": 71, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-22T12:09:28.121568+00:00"}
+{"branch": "partition-00000012/2", "height": 71, "kind": "branch_split_requested", "time": "2026-09-22T12:09:28.121626+00:00"}
+{"bytes": 4153092402, "kind": "checkpoint_deleted", "source": "partitions/00000012/p00000012-2_61", "time": "2026-09-22T12:09:28.703425+00:00"}
+{"branch": "partition-00000014/1", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T12:29:53.089688+00:00"}
+{"branch": "partition-00000014/2", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T12:29:53.090068+00:00"}
+{"branch": "partition-00000014/3", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T12:29:53.090425+00:00"}
+{"branch": "partition-00000014/4", "completion": false, "height": 72, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T12:29:53.090469+00:00"}
+{"branch": "partition-00000012/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000014", "time": "2026-09-22T12:29:53.090479+00:00"}
+{"bytes": 9780461238, "kind": "checkpoint_deleted", "source": "checkpoints/p00000012-2_71", "time": "2026-09-22T12:29:53.712978+00:00"}
+{"branch": "partition-00000014/1", "height": 72, "kind": "branch_started", "time": "2026-09-22T12:29:54.930504+00:00"}
+{"branch": "partition-00000014/1", "completion": false, "height": 271, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T13:58:01.548512+00:00"}
+{"bytes": 3568630630, "kind": "checkpoint_deleted", "source": "partitions/00000014/p00000014-1_72", "time": "2026-09-22T13:58:01.636940+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000014-1_271", "time": "2026-09-22T13:58:01.637155+00:00"}
+{"branch": "partition-00000014/2", "height": 72, "kind": "branch_started", "time": "2026-09-22T13:58:01.740637+00:00"}
+{"branch": "partition-00000014/2", "completion": false, "height": 147, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-22T16:07:46.648317+00:00"}
+{"branch": "partition-00000014/2", "height": 147, "kind": "branch_split_requested", "time": "2026-09-22T16:07:46.648373+00:00"}
+{"bytes": 2508650721, "kind": "checkpoint_deleted", "source": "partitions/00000014/p00000014-2_72", "time": "2026-09-22T16:07:47.148037+00:00"}
+{"branch": "partition-00000015/1", "completion": false, "height": 148, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T16:45:04.074500+00:00"}
+{"branch": "partition-00000015/2", "completion": false, "height": 148, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T16:45:04.074826+00:00"}
+{"branch": "partition-00000015/3", "completion": false, "height": 148, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T16:45:04.075117+00:00"}
+{"branch": "partition-00000015/4", "completion": false, "height": 148, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T16:45:04.075160+00:00"}
+{"branch": "partition-00000014/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000015", "time": "2026-09-22T16:45:04.075165+00:00"}
+{"bytes": 10621295796, "kind": "checkpoint_deleted", "source": "checkpoints/p00000014-2_147", "time": "2026-09-22T16:45:04.688443+00:00"}
+{"branch": "partition-00000015/1", "height": 148, "kind": "branch_started", "time": "2026-09-22T16:45:06.040266+00:00"}
+{"branch": "partition-00000015/1", "completion": false, "height": 159, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-22T17:43:15.310906+00:00"}
+{"branch": "partition-00000015/1", "height": 159, "kind": "branch_split_requested", "time": "2026-09-22T17:43:15.310963+00:00"}
+{"bytes": 3687287647, "kind": "checkpoint_deleted", "source": "partitions/00000015/p00000015-1_148", "time": "2026-09-22T17:43:15.887300+00:00"}
+{"branch": "partition-00000016/1", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T18:24:11.251585+00:00"}
+{"branch": "partition-00000016/2", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T18:24:11.251976+00:00"}
+{"branch": "partition-00000016/3", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T18:24:11.252327+00:00"}
+{"branch": "partition-00000016/4", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-22T18:24:11.252373+00:00"}
+{"branch": "partition-00000015/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000016", "time": "2026-09-22T18:24:11.252381+00:00"}
+{"bytes": 11864816702, "kind": "checkpoint_deleted", "source": "checkpoints/p00000015-1_159", "time": "2026-09-22T18:24:11.917546+00:00"}
+{"branch": "partition-00000016/1", "height": 160, "kind": "branch_started", "time": "2026-09-22T18:24:13.226863+00:00"}
+{"branch": "partition-00000016/1", "completion": false, "height": 495, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T21:51:50.097383+00:00"}
+{"bytes": 4210395896, "kind": "checkpoint_deleted", "source": "partitions/00000016/p00000016-1_160", "time": "2026-09-22T21:51:50.668192+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000016-1_495", "time": "2026-09-22T21:51:50.669296+00:00"}
+{"branch": "partition-00000016/2", "height": 160, "kind": "branch_started", "time": "2026-09-22T21:51:52.344969+00:00"}
+{"branch": "partition-00000016/2", "completion": false, "height": 391, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-22T23:27:45.595086+00:00"}
+{"bytes": 3270689367, "kind": "checkpoint_deleted", "source": "partitions/00000016/p00000016-2_160", "time": "2026-09-22T23:27:46.119876+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000016-2_391", "time": "2026-09-22T23:27:46.119980+00:00"}
+{"branch": "partition-00000016/3", "height": 160, "kind": "branch_started", "time": "2026-09-22T23:27:47.519327+00:00"}
+{"branch": "partition-00000016/3", "completion": false, "height": 495, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T01:57:45.370989+00:00"}
+{"bytes": 3361879386, "kind": "checkpoint_deleted", "source": "partitions/00000016/p00000016-3_160", "time": "2026-09-23T01:57:45.992172+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000016-3_495", "time": "2026-09-23T01:57:45.992265+00:00"}
+{"branch": "partition-00000016/4", "height": 160, "kind": "branch_started", "time": "2026-09-23T01:57:47.387675+00:00"}
+{"branch": "partition-00000016/4", "completion": false, "height": 375, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T03:01:21.741498+00:00"}
+{"bytes": 4500077773, "kind": "checkpoint_deleted", "source": "partitions/00000016/p00000016-4_160", "time": "2026-09-23T03:01:22.249737+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000016-4_375", "time": "2026-09-23T03:01:22.249939+00:00"}
+{"branch": "partition-00000015/2", "height": 148, "kind": "branch_started", "time": "2026-09-23T03:01:23.650897+00:00"}
+{"branch": "partition-00000015/2", "completion": false, "height": 159, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-23T03:45:40.888906+00:00"}
+{"branch": "partition-00000015/2", "height": 159, "kind": "branch_split_requested", "time": "2026-09-23T03:45:40.888980+00:00"}
+{"bytes": 2872407150, "kind": "checkpoint_deleted", "source": "partitions/00000015/p00000015-2_148", "time": "2026-09-23T03:45:41.424278+00:00"}
+{"branch": "partition-00000017/1", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T04:12:34.755293+00:00"}
+{"branch": "partition-00000017/2", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T04:12:34.755680+00:00"}
+{"branch": "partition-00000017/3", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T04:12:34.756041+00:00"}
+{"branch": "partition-00000017/4", "completion": false, "height": 160, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T04:12:34.756089+00:00"}
+{"branch": "partition-00000015/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000017", "time": "2026-09-23T04:12:34.756103+00:00"}
+{"bytes": 10436986468, "kind": "checkpoint_deleted", "source": "checkpoints/p00000015-2_159", "time": "2026-09-23T04:12:35.415205+00:00"}
+{"branch": "partition-00000017/1", "height": 160, "kind": "branch_started", "time": "2026-09-23T04:12:36.887648+00:00"}
+{"branch": "partition-00000017/1", "completion": false, "height": 430, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T04:59:16.462287+00:00"}
+{"bytes": 2952789859, "kind": "checkpoint_deleted", "source": "partitions/00000017/p00000017-1_160", "time": "2026-09-23T04:59:16.500947+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000017-1_430", "time": "2026-09-23T04:59:16.501085+00:00"}
+{"branch": "partition-00000017/2", "height": 160, "kind": "branch_started", "time": "2026-09-23T04:59:16.705254+00:00"}
+{"branch": "partition-00000017/2", "completion": false, "height": 353, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T05:42:17.067670+00:00"}
+{"bytes": 3389583694, "kind": "checkpoint_deleted", "source": "partitions/00000017/p00000017-2_160", "time": "2026-09-23T05:42:17.110495+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000017-2_353", "time": "2026-09-23T05:42:17.110694+00:00"}
+{"branch": "partition-00000017/3", "height": 160, "kind": "branch_started", "time": "2026-09-23T05:42:17.251519+00:00"}
+{"branch": "partition-00000017/3", "completion": false, "height": 424, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T07:52:14.861393+00:00"}
+{"bytes": 3422887882, "kind": "checkpoint_deleted", "source": "partitions/00000017/p00000017-3_160", "time": "2026-09-23T07:52:15.537851+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000017-3_424", "time": "2026-09-23T07:52:15.615508+00:00"}
+{"branch": "partition-00000017/4", "height": 160, "kind": "branch_started", "time": "2026-09-23T07:52:17.539244+00:00"}
+{"branch": "partition-00000017/4", "completion": false, "height": 234, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-23T11:16:22.085248+00:00"}
+{"branch": "partition-00000017/4", "height": 234, "kind": "branch_split_requested", "time": "2026-09-23T11:16:22.085355+00:00"}
+{"bytes": 3740250334, "kind": "checkpoint_deleted", "source": "partitions/00000017/p00000017-4_160", "time": "2026-09-23T11:16:22.744044+00:00"}
+{"branch": "partition-00000018/1", "completion": false, "height": 235, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T11:38:20.356448+00:00"}
+{"branch": "partition-00000018/2", "completion": false, "height": 235, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T11:38:20.356772+00:00"}
+{"branch": "partition-00000018/3", "completion": false, "height": 235, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T11:38:20.362343+00:00"}
+{"branch": "partition-00000018/4", "completion": false, "height": 235, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T11:38:20.362425+00:00"}
+{"branch": "partition-00000017/4", "children": 4, "kind": "partition_materialized", "partition": "partition-00000018", "time": "2026-09-23T11:38:20.362432+00:00"}
+{"bytes": 10362068078, "kind": "checkpoint_deleted", "source": "checkpoints/p00000017-4_234", "time": "2026-09-23T11:38:21.101880+00:00"}
+{"branch": "partition-00000018/1", "height": 235, "kind": "branch_started", "time": "2026-09-23T11:38:22.698839+00:00"}
+{"branch": "partition-00000018/1", "completion": false, "height": 380, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T11:58:36.010897+00:00"}
+{"bytes": 1436801414, "kind": "checkpoint_deleted", "source": "partitions/00000018/p00000018-1_235", "time": "2026-09-23T11:58:36.035633+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000018-1_380", "time": "2026-09-23T11:58:36.035745+00:00"}
+{"branch": "partition-00000018/2", "height": 235, "kind": "branch_started", "time": "2026-09-23T11:58:36.197825+00:00"}
+{"branch": "partition-00000018/2", "completion": false, "height": 626, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T15:23:51.839420+00:00"}
+{"bytes": 2582884331, "kind": "checkpoint_deleted", "source": "partitions/00000018/p00000018-2_235", "time": "2026-09-23T15:23:51.875137+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000018-2_626", "time": "2026-09-23T15:23:51.875281+00:00"}
+{"branch": "partition-00000018/3", "height": 235, "kind": "branch_started", "time": "2026-09-23T15:23:52.034791+00:00"}
+{"branch": "partition-00000018/3", "completion": false, "height": 476, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T17:42:24.988273+00:00"}
+{"bytes": 3578730164, "kind": "checkpoint_deleted", "source": "partitions/00000018/p00000018-3_235", "time": "2026-09-23T17:42:25.609260+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000018-3_476", "time": "2026-09-23T17:42:25.609374+00:00"}
+{"branch": "partition-00000018/4", "height": 235, "kind": "branch_started", "time": "2026-09-23T17:42:27.318835+00:00"}
+{"branch": "partition-00000018/4", "completion": false, "height": 455, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T18:23:04.049436+00:00"}
+{"bytes": 2751832136, "kind": "checkpoint_deleted", "source": "partitions/00000018/p00000018-4_235", "time": "2026-09-23T18:23:04.086800+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000018-4_455", "time": "2026-09-23T18:23:04.086933+00:00"}
+{"branch": "partition-00000015/3", "height": 148, "kind": "branch_started", "time": "2026-09-23T18:23:04.256328+00:00"}
+{"branch": "partition-00000015/3", "completion": false, "height": 157, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-23T18:55:07.677781+00:00"}
+{"branch": "partition-00000015/3", "height": 157, "kind": "branch_split_requested", "time": "2026-09-23T18:55:07.677840+00:00"}
+{"bytes": 2918886057, "kind": "checkpoint_deleted", "source": "partitions/00000015/p00000015-3_148", "time": "2026-09-23T18:55:08.419229+00:00"}
+{"branch": "partition-00000019/1", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T19:21:03.292705+00:00"}
+{"branch": "partition-00000019/2", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T19:21:03.293012+00:00"}
+{"branch": "partition-00000019/3", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T19:21:03.293284+00:00"}
+{"branch": "partition-00000019/4", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T19:21:03.293331+00:00"}
+{"branch": "partition-00000015/3", "children": 4, "kind": "partition_materialized", "partition": "partition-00000019", "time": "2026-09-23T19:21:03.293336+00:00"}
+{"bytes": 10090768671, "kind": "checkpoint_deleted", "source": "checkpoints/p00000015-3_157", "time": "2026-09-23T19:21:04.038915+00:00"}
+{"branch": "partition-00000019/1", "height": 158, "kind": "branch_started", "time": "2026-09-23T19:21:06.027870+00:00"}
+{"branch": "partition-00000019/1", "completion": false, "height": 172, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-23T20:04:06.437106+00:00"}
+{"branch": "partition-00000019/1", "height": 172, "kind": "branch_split_requested", "time": "2026-09-23T20:04:06.437161+00:00"}
+{"bytes": 3289291542, "kind": "checkpoint_deleted", "source": "partitions/00000019/p00000019-1_158", "time": "2026-09-23T20:04:07.241566+00:00"}
+{"branch": "partition-00000020/1", "completion": false, "height": 173, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T20:24:04.932303+00:00"}
+{"branch": "partition-00000020/2", "completion": false, "height": 173, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T20:24:04.941044+00:00"}
+{"branch": "partition-00000020/3", "completion": false, "height": 173, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T20:24:04.941383+00:00"}
+{"branch": "partition-00000020/4", "completion": false, "height": 173, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T20:24:04.941434+00:00"}
+{"branch": "partition-00000019/1", "children": 4, "kind": "partition_materialized", "partition": "partition-00000020", "time": "2026-09-23T20:24:04.941441+00:00"}
+{"bytes": 9994437506, "kind": "checkpoint_deleted", "source": "checkpoints/p00000019-1_172", "time": "2026-09-23T20:24:05.833006+00:00"}
+{"branch": "partition-00000020/1", "height": 173, "kind": "branch_started", "time": "2026-09-23T20:24:07.601107+00:00"}
+{"branch": "partition-00000020/1", "completion": false, "height": 320, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T20:38:42.540937+00:00"}
+{"bytes": 2093813475, "kind": "checkpoint_deleted", "source": "partitions/00000020/p00000020-1_173", "time": "2026-09-23T20:38:42.573190+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000020-1_320", "time": "2026-09-23T20:38:42.573329+00:00"}
+{"branch": "partition-00000020/2", "height": 173, "kind": "branch_started", "time": "2026-09-23T20:38:42.789274+00:00"}
+{"branch": "partition-00000020/2", "completion": false, "height": 222, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-23T22:20:25.303637+00:00"}
+{"branch": "partition-00000020/2", "height": 222, "kind": "branch_split_requested", "time": "2026-09-23T22:20:25.303697+00:00"}
+{"bytes": 3036042545, "kind": "checkpoint_deleted", "source": "partitions/00000020/p00000020-2_173", "time": "2026-09-23T22:20:26.130104+00:00"}
+{"branch": "partition-00000021/1", "completion": false, "height": 223, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T22:48:35.124739+00:00"}
+{"branch": "partition-00000021/2", "completion": false, "height": 223, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T22:48:35.129971+00:00"}
+{"branch": "partition-00000021/3", "completion": false, "height": 223, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T22:48:35.135864+00:00"}
+{"branch": "partition-00000021/4", "completion": false, "height": 223, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-23T22:48:35.135934+00:00"}
+{"branch": "partition-00000020/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000021", "time": "2026-09-23T22:48:35.135944+00:00"}
+{"bytes": 10510379661, "kind": "checkpoint_deleted", "source": "checkpoints/p00000020-2_222", "time": "2026-09-23T22:48:36.022380+00:00"}
+{"branch": "partition-00000021/1", "height": 223, "kind": "branch_started", "time": "2026-09-23T22:48:37.908718+00:00"}
+{"branch": "partition-00000021/1", "completion": false, "height": 446, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T23:12:07.018633+00:00"}
+{"bytes": 2389410940, "kind": "checkpoint_deleted", "source": "partitions/00000021/p00000021-1_223", "time": "2026-09-23T23:12:07.058501+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000021-1_446", "time": "2026-09-23T23:12:07.058659+00:00"}
+{"branch": "partition-00000021/2", "height": 223, "kind": "branch_started", "time": "2026-09-23T23:12:07.245429+00:00"}
+{"branch": "partition-00000021/2", "completion": false, "height": 479, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-23T23:49:51.519231+00:00"}
+{"bytes": 2936731889, "kind": "checkpoint_deleted", "source": "partitions/00000021/p00000021-2_223", "time": "2026-09-23T23:49:51.559642+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000021-2_479", "time": "2026-09-23T23:49:51.559786+00:00"}
+{"branch": "partition-00000021/3", "height": 223, "kind": "branch_started", "time": "2026-09-23T23:49:51.737087+00:00"}
+{"branch": "partition-00000021/3", "completion": false, "height": 395, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T00:38:07.492775+00:00"}
+{"bytes": 3331301218, "kind": "checkpoint_deleted", "source": "partitions/00000021/p00000021-3_223", "time": "2026-09-24T00:38:07.545320+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000021-3_395", "time": "2026-09-24T00:38:07.545511+00:00"}
+{"branch": "partition-00000021/4", "height": 223, "kind": "branch_started", "time": "2026-09-24T00:38:07.723621+00:00"}
+{"branch": "partition-00000021/4", "completion": false, "height": 412, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T01:04:23.403135+00:00"}
+{"bytes": 2646208014, "kind": "checkpoint_deleted", "source": "partitions/00000021/p00000021-4_223", "time": "2026-09-24T01:04:23.507206+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000021-4_412", "time": "2026-09-24T01:04:23.507355+00:00"}
+{"branch": "partition-00000020/3", "height": 173, "kind": "branch_started", "time": "2026-09-24T01:04:23.707630+00:00"}
+{"branch": "partition-00000020/3", "completion": false, "height": 513, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T04:09:31.230078+00:00"}
+{"bytes": 2666888489, "kind": "checkpoint_deleted", "source": "partitions/00000020/p00000020-3_173", "time": "2026-09-24T04:09:32.086394+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000020-3_513", "time": "2026-09-24T04:09:32.086535+00:00"}
+{"branch": "partition-00000020/4", "height": 173, "kind": "branch_started", "time": "2026-09-24T04:09:34.080717+00:00"}
+{"branch": "partition-00000020/4", "completion": false, "height": 540, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T07:15:22.661760+00:00"}
+{"bytes": 2571713820, "kind": "checkpoint_deleted", "source": "partitions/00000020/p00000020-4_173", "time": "2026-09-24T07:15:23.482612+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000020-4_540", "time": "2026-09-24T07:15:23.482685+00:00"}
+{"branch": "partition-00000019/2", "height": 158, "kind": "branch_started", "time": "2026-09-24T07:15:25.572915+00:00"}
+{"branch": "partition-00000019/2", "completion": false, "height": 171, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-24T07:53:53.502615+00:00"}
+{"branch": "partition-00000019/2", "height": 171, "kind": "branch_split_requested", "time": "2026-09-24T07:53:53.502671+00:00"}
+{"bytes": 3283031540, "kind": "checkpoint_deleted", "source": "partitions/00000019/p00000019-2_158", "time": "2026-09-24T07:53:54.406063+00:00"}
+{"branch": "partition-00000022/1", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T08:12:09.306107+00:00"}
+{"branch": "partition-00000022/2", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T08:12:09.306441+00:00"}
+{"branch": "partition-00000022/3", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T08:12:09.306743+00:00"}
+{"branch": "partition-00000022/4", "completion": false, "height": 172, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T08:12:09.306799+00:00"}
+{"branch": "partition-00000019/2", "children": 4, "kind": "partition_materialized", "partition": "partition-00000022", "time": "2026-09-24T08:12:09.306806+00:00"}
+{"bytes": 9111825688, "kind": "checkpoint_deleted", "source": "checkpoints/p00000019-2_171", "time": "2026-09-24T08:12:10.220023+00:00"}
+{"branch": "partition-00000022/1", "height": 172, "kind": "branch_started", "time": "2026-09-24T08:12:12.448632+00:00"}
+{"branch": "partition-00000022/1", "completion": false, "height": 376, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T08:58:52.503788+00:00"}
+{"bytes": 2579912575, "kind": "checkpoint_deleted", "source": "partitions/00000022/p00000022-1_172", "time": "2026-09-24T08:58:52.559666+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000022-1_376", "time": "2026-09-24T08:58:52.559810+00:00"}
+{"branch": "partition-00000022/2", "height": 172, "kind": "branch_started", "time": "2026-09-24T08:58:52.884256+00:00"}
+{"branch": "partition-00000022/2", "completion": false, "height": 528, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T12:30:06.367192+00:00"}
+{"bytes": 2674676407, "kind": "checkpoint_deleted", "source": "partitions/00000022/p00000022-2_172", "time": "2026-09-24T12:30:07.206463+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000022-2_528", "time": "2026-09-24T12:30:07.206578+00:00"}
+{"branch": "partition-00000022/3", "height": 172, "kind": "branch_started", "time": "2026-09-24T12:30:09.435951+00:00"}
+{"branch": "partition-00000022/3", "completion": false, "height": 573, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T14:34:23.497960+00:00"}
+{"bytes": 2877098796, "kind": "checkpoint_deleted", "source": "partitions/00000022/p00000022-3_172", "time": "2026-09-24T14:34:23.566732+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000022-3_573", "time": "2026-09-24T14:34:23.566879+00:00"}
+{"branch": "partition-00000022/4", "height": 172, "kind": "branch_started", "time": "2026-09-24T14:34:23.836381+00:00"}
+{"branch": "partition-00000022/4", "completion": false, "height": 352, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T14:49:22.449848+00:00"}
+{"bytes": 2342471385, "kind": "checkpoint_deleted", "source": "partitions/00000022/p00000022-4_172", "time": "2026-09-24T14:49:22.499559+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000022-4_352", "time": "2026-09-24T14:49:22.499703+00:00"}
+{"branch": "partition-00000019/3", "height": 158, "kind": "branch_started", "time": "2026-09-24T14:49:22.806218+00:00"}
+{"branch": "partition-00000019/3", "completion": false, "height": 503, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T19:03:43.118654+00:00"}
+{"bytes": 3465669001, "kind": "checkpoint_deleted", "source": "partitions/00000019/p00000019-3_158", "time": "2026-09-24T19:03:44.096111+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000019-3_503", "time": "2026-09-24T19:03:44.096186+00:00"}
+{"branch": "partition-00000019/4", "height": 158, "kind": "branch_started", "time": "2026-09-24T19:03:46.608204+00:00"}
+{"branch": "partition-00000019/4", "completion": false, "height": 445, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T20:54:28.153310+00:00"}
+{"bytes": 3445101888, "kind": "checkpoint_deleted", "source": "partitions/00000019/p00000019-4_158", "time": "2026-09-24T20:54:29.100872+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000019-4_445", "time": "2026-09-24T20:54:29.101011+00:00"}
+{"branch": "partition-00000015/4", "height": 148, "kind": "branch_started", "time": "2026-09-24T20:54:31.504726+00:00"}
+{"branch": "partition-00000015/4", "completion": false, "height": 157, "kind": "solver_result", "reason": "memory_cap", "stage": "extend", "time": "2026-09-24T21:22:50.300963+00:00"}
+{"branch": "partition-00000015/4", "height": 157, "kind": "branch_split_requested", "time": "2026-09-24T21:22:50.301020+00:00"}
+{"bytes": 4339928437, "kind": "checkpoint_deleted", "source": "partitions/00000015/p00000015-4_148", "time": "2026-09-24T21:22:51.255957+00:00"}
+{"branch": "partition-00000023/1", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T21:41:54.536917+00:00"}
+{"branch": "partition-00000023/2", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T21:41:54.537256+00:00"}
+{"branch": "partition-00000023/3", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T21:41:54.537559+00:00"}
+{"branch": "partition-00000023/4", "completion": false, "height": 158, "kind": "solver_result", "reason": "row_limit", "stage": "materialize", "time": "2026-09-24T21:41:54.537612+00:00"}
+{"branch": "partition-00000015/4", "children": 4, "kind": "partition_materialized", "partition": "partition-00000023", "time": "2026-09-24T21:41:54.537620+00:00"}
+{"bytes": 8966827975, "kind": "checkpoint_deleted", "source": "checkpoints/p00000015-4_157", "time": "2026-09-24T21:41:55.613711+00:00"}
+{"branch": "partition-00000023/1", "height": 158, "kind": "branch_started", "time": "2026-09-24T21:41:58.277863+00:00"}
+{"branch": "partition-00000023/1", "completion": false, "height": 415, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-24T23:25:07.659118+00:00"}
+{"bytes": 2280307610, "kind": "checkpoint_deleted", "source": "partitions/00000023/p00000023-1_158", "time": "2026-09-24T23:25:07.695542+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000023-1_415", "time": "2026-09-24T23:25:07.695687+00:00"}
+{"branch": "partition-00000023/2", "height": 158, "kind": "branch_started", "time": "2026-09-24T23:25:08.043010+00:00"}
+{"branch": "partition-00000023/2", "completion": false, "height": 374, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-25T00:34:36.437272+00:00"}
+{"bytes": 2686089018, "kind": "checkpoint_deleted", "source": "partitions/00000023/p00000023-2_158", "time": "2026-09-25T00:34:36.533664+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000023-2_374", "time": "2026-09-25T00:34:36.533834+00:00"}
+{"branch": "partition-00000023/3", "height": 158, "kind": "branch_started", "time": "2026-09-25T00:34:36.791567+00:00"}
+{"branch": "partition-00000023/3", "completion": false, "height": 326, "kind": "solver_result", "reason": "exhausted", "stage": "extend", "time": "2026-09-25T01:09:46.474134+00:00"}
+{"bytes": 2872012532, "kind": "checkpoint_deleted", "source": "partitions/00000023/p00000023-3_158", "time": "2026-09-25T01:09:47.488834+00:00"}
+{"bytes": 480, "kind": "checkpoint_deleted", "source": "checkpoints/p00000023-3_326", "time": "2026-09-25T01:09:47.488983+00:00"}

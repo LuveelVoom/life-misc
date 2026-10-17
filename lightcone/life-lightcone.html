@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Life at the speed of light</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#e6eaee; --panel:#f4f6f8; --ink:#1b2836; --muted:#5b6b7b; --line:#c9d1d9;
+  --dead:#f7f9fb; --alive:#1b2836; --unknown:#d5dce3; --pre:#8e9aa6;
+  --accent:#2f5d8a; --warn:#a4461b;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10161d; --panel:#18212b; --ink:#e3e9ef; --muted:#93a3b3; --line:#2b3947;
+    --dead:#0c1117; --alive:#e3e9ef; --unknown:#1f2a35; --pre:#5a6977;
+    --accent:#7fb0de; --warn:#f0925f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10161d; --panel:#18212b; --ink:#e3e9ef; --muted:#93a3b3; --line:#2b3947;
+  --dead:#0c1117; --alive:#e3e9ef; --unknown:#1f2a35; --pre:#5a6977;
+  --accent:#7fb0de; --warn:#f0925f;
+}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.45}
+main{max-width:1400px;margin:0 auto;padding:20px 16px 32px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.01em;margin:0 0 4px}
+.lede{color:var(--muted);margin:0 0 16px;max-width:75ch}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:860px){.views{grid-template-columns:1fr}}
+.views.stacked{grid-template-columns:1fr;max-width:1100px;margin:0 auto}
+figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px}
+figcaption{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+figcaption b{font-weight:600}
+figcaption span{color:var(--muted);font-size:.85rem}
+canvas{display:block;width:100%;aspect-ratio:300/210;border-radius:3px;touch-action:none;cursor:crosshair}
+.controls{margin-top:14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 22px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button{font:inherit;font-weight:500;color:var(--ink);background:var(--bg);border:1px solid var(--line);
+  border-radius:4px;padding:6px 11px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.primary{background:var(--accent);color:var(--panel);border-color:var(--accent)}
+label.slider{display:grid;grid-template-columns:1fr auto;gap:2px 8px;font-size:.9rem}
+label.slider input{grid-column:1/-1;width:100%;accent-color:var(--accent)}
+label.slider output{font-variant-numeric:tabular-nums;color:var(--muted)}
+label.check{display:flex;gap:6px;align-items:center;font-size:.9rem}
+input[type=checkbox]{accent-color:var(--accent)}
+.readout{grid-column:1/-1;font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem}
+.readout .warn{color:var(--warn);font-weight:600}
+.legend{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted)}
+.legend i{display:inline-block;width:120px;height:10px;border-radius:2px}
+.group-title{font-weight:600;font-size:.9rem;margin-bottom:4px}
+.notes{margin-top:14px;color:var(--muted);font-size:.9rem;max-width:80ch}
+.notes p{margin:.4em 0}
+</style>
+</head>
+<body>
+<main>
+  <h1>Life at the speed of light</h1>
+  <p class="lede">Left: the lattice as it actually is right now, with every object labelled. Right: what an observer at the ring marker sees, where each cell's light left it <em>d / c</em> generations ago. Click or drag on either view to move the observer.</p>
+
+  <div class="views">
+    <figure>
+      <figcaption><b>Instantaneous state</b><span id="genLabel">generation 0</span></figcaption>
+      <canvas id="trueCv" aria-label="Instantaneous Game of Life state"></canvas>
+    </figure>
+    <figure>
+      <figcaption><b>Observer's view</b>
+        <span class="legend">cell colour = light delay: <i id="legendBar"></i><span id="legendMax">0–150 gen</span></span>
+      </figcaption>
+      <canvas id="obsCv" aria-label="Game of Life as seen by the observer with light delay"></canvas>
+    </figure>
+  </div>
+
+  <div class="controls">
+    <div>
+      <div class="group-title">Simulation</div>
+      <div class="row">
+        <button id="playBtn" class="primary">Pause</button>
+        <button id="stepBtn">Step</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <label class="slider" style="margin-top:8px">Generations per second <output id="spdOut"></output>
+        <input id="spd" type="range" min="1" max="60" step="1" value="12"></label>
+    </div>
+    <div>
+      <div class="group-title">Signal speed</div>
+      <label class="slider">c (cells per generation) <output id="cOut"></output>
+        <input id="c" type="range" min="0.3" max="4" step="0.05" value="1"></label>
+      <label class="check" style="margin-top:6px"><input id="rings" type="checkbox" checked> Show delay rings (every 20 gen)</label>
+      <label class="check"><input id="tint" type="checkbox" checked> Colour cells by delay</label>
+      <label class="check"><input id="stack" type="checkbox"> Stack views (larger cells)</label>
+    </div>
+    <div>
+      <div class="group-title">Observer velocity</div>
+      <label class="slider">vx (cells / gen) <output id="vxOut"></output>
+        <input id="vx" type="range" min="-4" max="4" step="0.05" value="0"></label>
+      <label class="slider">vy (cells / gen) <output id="vyOut"></output>
+        <input id="vy" type="range" min="-4" max="4" step="0.05" value="0"></label>
+      <div class="row" style="margin-top:6px"><button id="stopBtn">Make stationary</button></div>
+    </div>
+    <div>
+      <div class="group-title">Scenarios</div>
+      <div class="row">
+        <button data-preset="center">Centre, at rest</button>
+        <button data-preset="corner">Far corner, at rest</button>
+        <button data-preset="chase">Chase the ships</button>
+        <button data-preset="flyby">Fast fly-by</button>
+        <button data-preset="outrun">Outrun the light (2.5c)</button>
+        <button data-preset="slowlight">Slow light (c = 0.4)</button>
+      </div>
+      <label class="check" style="margin-top:8px"><input id="respawn" type="checkbox" checked> Respawn the diehard every 300 gen</label>
+      <label class="check"><input id="showPre" type="checkbox" checked> Show pre-start regions as initial pattern</label>
+    </div>
+    <div class="readout" id="readout"></div>
+  </div>
+
+  <div class="notes">
+    <p>Signals travel in straight lines at speed c through the lattice's rest frame, so the observer's picture at time T samples cell (x, y) at generation ⌊T − d/c⌋, where d is the straight-line distance from the observer's current position. This is classical finite-speed signalling (retardation and Doppler-like effects); there is no Lorentz contraction or time dilation, because Life has a preferred frame.</p>
+    <p>The 300 × 210 lattice wraps around at its edges so spaceships circulate forever, but light is only traced along direct paths inside the rectangle. The observer bounces off the edges.</p>
+    <p>What to look for: the two glider streams are compressed on the side the observer moves toward and stretched behind it; spaceships at four different speeds (c/2, 2c/7, c/7, c/10 in Life's native units) look faster when approaching and slower when receding; oscillators with periods 2, 3, 5, 8, 14, 15 and 30 fall out of sync with their near twins; the diehard keeps "living" for distant observers after it has vanished; eaters silently delete gliders. Above signal speed, light from behind is overtaken and those regions play backwards.</p>
+  </div>
+</main>
+
+<script>
+(() => {
+// ===== WORLD (embedded verbatim in page) =====
+const W = 300, H = 210, N = W * H;
+function rle(s){const out=[];let x=0,y=0,n='';for(const ch of s){if(ch>='0'&&ch<='9'){n+=ch;continue}const k=n?parseInt(n,10):1;n='';
+  if(ch==='b')x+=k;else if(ch==='o'){for(let i=0;i<k;i++)out.push([x++,y])}else if(ch==='$'){y+=k;x=0}else if(ch==='!')break}return out}
+function bbox(c){let a=1e9,b=1e9,d=-1e9,e=-1e9;for(const[x,y]of c){a=Math.min(a,x);b=Math.min(b,y);d=Math.max(d,x);e=Math.max(e,y)}return{x0:a,y0:b,x1:d,y1:e}}
+function mirror(c,mx,my){const b=bbox(c);return c.map(([x,y])=>[mx?b.x1-x:x-b.x0,my?b.y1-y:y-b.y0])}
+function transpose(c){return mirror(c.map(([x,y])=>[y,x]),false,false)}
+// All orientations below were checked headlessly (period / velocity / eater absorption).
+const P = {
+  gun:rle('24bo$22bobo$12b2o6b2o12b2o$11bo3bo4b2o12b2o$2o8bo5bo3b2o$2o8bo3bob2o4bobo$10bo5bo7bo$11bo3bo$12b2o!'), // shoots SE
+  eater:[[0,0],[1,0],[0,1],[2,1],[2,2],[2,3],[3,3]],             // absorbs the gun's gliders at gun+(90+k,76+k)
+  lwss:rle('bo2bo$o4b$o3bo$4o!'),          // moves W, c/2
+  mwss:rle('3bo$bo3bo$o$o4bo$5o!'),        // moves W, c/2
+  hwss:rle('2b2o$o4bo$6bo$o5bo$b6o!'),     // moves E, c/2
+  copperhead:rle('b2o2b2o$3b2o$3b2o$obo2bobo$o6bo2$o6bo$b2o2b2o$2b4o2$3b2o$3b2o!'), // moves N, c/10
+  weekender:rle('bo12bo$bo12bo$obo10bobo$bo12bo$bo12bo$2bo3b4o3bo$6b4o$2b4o4b4o2$4bo6bo$5b2o2b2o!'), // moves N, 2c/7
+  loafer:rle('b2o2bob2o$o2bo2b2o$bobo$2bo$8bo$6b3o$5bo$6bo$7b2o!'),  // moves W, c/7
+  diehard:rle('6bo$2o$bo3b3o!'),           // vanishes completely after 130 gen
+  pulsar:rle('2b3o3b3o2$o4bobo4bo$o4bobo4bo$o4bobo4bo$2b3o3b3o2$2b3o3b3o$o4bobo4bo$o4bobo4bo$o4bobo4bo2$2b3o3b3o!'),
+  penta:rle('2bo4bo$2ob4ob2o$2bo4bo!'),
+  kok:rle('2ob6o$2ob6o$2o$2o5b2o$2o5b2o$2o5b2o$7b2o$6ob2o$6ob2o!'),
+  queenbee:rle('9bo$7bobo$6bobo$2o3bo2bo11b2o$2o4bobo11b2o$7bobo$9bo!'),
+  tumbler:rle('bo5bo$obo3bobo$o2bobo2bo$2bo3bo$2b2ob2o!'),
+  octagon:rle('3b2o$2bo2bo$bo4bo$o6bo$o6bo$bo4bo$2bo2bo$3b2o!'),
+  fig8:rle('3o$3o$3o$3b3o$3b3o$3b3o!'),
+  beacon:rle('2o$o$3bo$2b2o!'), toad:rle('b3o$3o!'), blinker:rle('3o!')
+};
+const GA={x:8,y:46}, GB={x:W-8-36,y:46}, EK=6;
+// fixed objects: [cells, x, y, label, period]
+const FIXED=[
+  [P.gun,GA.x,GA.y,'Gosper gun',30],
+  [P.eater,GA.x+90+EK,GA.y+76+EK,'eater',30],
+  [mirror(P.gun,true,false),GB.x,GB.y,'Gosper gun (mirrored)',30],
+  [mirror(P.eater,true,false),GB.x+35-(90+EK)-3,GB.y+76+EK,'eater',30],
+  [P.queenbee,60,64,'queen bee shuttle p30',30],
+  [P.pulsar,98,58,'pulsar p3',3],
+  [P.tumbler,118,84,'tumbler p14',14],
+  [P.fig8,118,108,'figure eight p8',8],
+  [P.octagon,172,62,'octagon 2 p5',5],
+  [P.penta,198,58,'pentadecathlon p15',15],
+  [P.kok,176,92,"Kok's galaxy p8",8],
+  [P.pulsar,20,72,'pulsar p3',3],
+  [P.beacon,14,138,'beacon p2',2],
+  [P.toad,34,146,'toad p2',2],
+  [P.blinker,56,152,'blinker p2',2],
+  [P.pulsar,268,92,'pulsar p3',3],
+  [P.penta,268,128,'pentadecathlon p15',15],
+  [P.kok,262,140,"Kok's galaxy p8",8]
+];
+// moving objects on a wrap-around (toroidal) lattice: [cells, x, y, label, vx]
+const MOVERS=[
+  [mirror(P.lwss,true,false),8,6,'LWSS → c/2',0.5],[mirror(P.lwss,true,false),158,6,'',0.5],
+  [mirror(P.mwss,true,false),60,14,'MWSS → c/2',0.5],
+  [mirror(P.hwss,true,false),W-16,23,'← HWSS c/2',-0.5],[mirror(P.hwss,true,false),130,23,'',-0.5],
+  [P.lwss,W-40,33,'← LWSS c/2',-0.5],
+  [mirror(transpose(P.weekender),true,false),6,160,'weekender → 2c/7',2/7],
+  [transpose(P.copperhead),W-20,181,'← copperhead c/10',-0.1],
+  [P.loafer,W-120,195,'← loafer c/7',-1/7]
+];
+// transient: diehard, optionally respawned every 300 gen
+const DIEHARD=[P.diehard,12,104,'diehard (vanishes at 130)'];
+function place(g,cells,ox,oy){for(const[x,y]of cells){const X=((x+ox)%W+W)%W,Y=((y+oy)%H+H)%H;g[Y*W+X]=1}}
+function initial(){const g=new Uint8Array(N);for(const o of FIXED)place(g,o[0],o[1],o[2]);for(const o of MOVERS)place(g,o[0],o[1],o[2]);place(g,DIEHARD[0],DIEHARD[1],DIEHARD[2]);return g}
+const XM=new Int32Array(W),XP=new Int32Array(W);for(let x=0;x<W;x++){XM[x]=(x+W-1)%W;XP[x]=(x+1)%W}
+function stepWorld(a){const b=new Uint8Array(N);
+  for(let y=0;y<H;y++){const up=((y+H-1)%H)*W,md=y*W,dn=((y+1)%H)*W;
+    for(let x=0;x<W;x++){const l=XM[x],r=XP[x];
+      const n=a[up+l]+a[up+x]+a[up+r]+a[md+l]+a[md+r]+a[dn+l]+a[dn+x]+a[dn+r];
+      b[md+x]=(n===3||(n===2&&a[md+x]===1))?1:0}}
+  return b}
+function respawn(g,gen){if(gen%300===0)place(g,DIEHARD[0],DIEHARD[1],DIEHARD[2])}
+// ===== END WORLD =====
+
+const MAXD = Math.hypot(W, H), HIST = 1280, BYTES = Math.ceil(N / 8);
+function pack(g){const p=new Uint8Array(BYTES);for(let i=0;i<N;i++)if(g[i])p[i>>3]|=1<<(i&7);return p}
+
+// ---------- state ----------
+let hist, init, cur, gen, T, playing=true;
+const obs={x:150,y:105,vx:0,vy:0}; let obsStart={x:150,y:105,vx:0,vy:0};
+const $=id=>document.getElementById(id);
+const ui={spd:$('spd'),c:$('c'),vx:$('vx'),vy:$('vy'),rings:$('rings'),tint:$('tint'),respawn:$('respawn'),showPre:$('showPre'),stack:$('stack')};
+
+function reset(){init=initial();cur=init;hist=new Array(HIST);hist[0]=pack(init);gen=0;T=0;Object.assign(obs,obsStart);syncSliders()}
+function advanceTo(t){while(gen<Math.floor(t)){cur=stepWorld(cur);gen++;if(ui.respawn.checked)respawn(cur,gen);hist[gen%HIST]=pack(cur)}}
+
+// ---------- colours ----------
+function isDark(){const t=document.documentElement.dataset.theme;return t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function hex(h){h=h.trim().replace('#','');return[parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]}
+let pal={},palDark=null;
+function mix(a,b,t){return[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t]}
+function refreshPalette(){const d=isDark();if(d===palDark)return;palDark=d;const cs=getComputedStyle(document.documentElement);
+  const v=n=>hex(cs.getPropertyValue(n));pal={dead:v('--dead'),alive:v('--alive'),unknown:v('--unknown'),pre:v('--pre')};
+  const stops=d?[[255,196,92],[240,110,130],[120,150,255]]:[[196,112,0],[184,38,78],[52,64,190]];
+  pal.ramp=[];for(let i=0;i<256;i++){const t=i/255;pal.ramp.push(t<.5?mix(stops[0],stops[1],t*2):mix(stops[1],stops[2],(t-.5)*2))}
+  $('legendBar').style.background=`linear-gradient(90deg,rgb(${stops[0]}),rgb(${stops[1]}),rgb(${stops[2]}))`}
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{palDark=null});
+new MutationObserver(()=>{palDark=null}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+// ---------- rendering ----------
+const trueCv=$('trueCv'),obsCv=$('obsCv');
+const off=document.createElement('canvas');off.width=W;off.height=H;const offCtx=off.getContext('2d');
+const img=offCtx.createImageData(W,H);
+function setPx(i,c){const k=i*4;img.data[k]=c[0];img.data[k+1]=c[1];img.data[k+2]=c[2];img.data[k+3]=255}
+function sizeCanvas(cv){const r=cv.getBoundingClientRect(),dpr=window.devicePixelRatio||1;
+  const w=Math.max(1,Math.round(r.width*dpr)),h=Math.max(1,Math.round(r.width*dpr*H/W));if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}}
+function blit(cv){const ctx=cv.getContext('2d');offCtx.putImageData(img,0,0);ctx.imageSmoothingEnabled=false;ctx.drawImage(off,0,0,cv.width,cv.height);return ctx}
+const RAMP_MAX=200;
+const font=dpr=>`${10*dpr}px "Instrument Sans",system-ui,sans-serif`;
+
+function drawObserver(ctx,cv,withRings){const s=cv.width/W,dpr=window.devicePixelRatio||1,px=obs.x*s,py=obs.y*s,c=+ui.c.value;
+  const ink=`rgb(${pal.alive})`;ctx.save();ctx.lineWidth=1.2*dpr;
+  if(withRings){ctx.strokeStyle=ink;ctx.fillStyle=ink;ctx.font=font(dpr);
+    for(let k=20;k*c<=MAXD;k+=20){const r=k*c*s;ctx.globalAlpha=.25;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.stroke();
+      ctx.globalAlpha=.6;ctx.fillText(`${k}`,px+r*0.7071+2*dpr,py-r*0.7071-2*dpr)}}
+  ctx.globalAlpha=1;ctx.strokeStyle=ink;ctx.fillStyle=ink;ctx.lineWidth=2*dpr;ctx.beginPath();ctx.arc(px,py,5*dpr,0,Math.PI*2);ctx.stroke();
+  ctx.beginPath();ctx.arc(px,py,1.6*dpr,0,Math.PI*2);ctx.fill();
+  if(obs.vx||obs.vy){const L=10*s;const ex=px+obs.vx*L,ey=py+obs.vy*L;ctx.beginPath();ctx.moveTo(px,py);ctx.lineTo(ex,ey);ctx.stroke();
+    const a=Math.atan2(obs.vy,obs.vx);ctx.beginPath();ctx.moveTo(ex,ey);ctx.lineTo(ex-6*dpr*Math.cos(a-.5),ey-6*dpr*Math.sin(a-.5));
+    ctx.lineTo(ex-6*dpr*Math.cos(a+.5),ey-6*dpr*Math.sin(a+.5));ctx.closePath();ctx.fill()}
+  ctx.restore()}
+function drawLabels(ctx,cv){const s=cv.width/W,dpr=window.devicePixelRatio||1;ctx.save();ctx.fillStyle=`rgb(${pal.alive})`;ctx.globalAlpha=.62;ctx.font=font(dpr);
+  for(const o of FIXED)if(o[3]!=='eater'||true)ctx.fillText(o[3],o[1]*s,(o[2]-1.5)*s);
+  for(const o of MOVERS)if(o[3]){const x=(((o[1]+o[4]*gen)%W)+W)%W;ctx.fillText(o[3],x*s,(o[2]-1.2)*s)}
+  if(ui.respawn.checked||gen<130)ctx.fillText(DIEHARD[3],DIEHARD[1]*s,(DIEHARD[2]-1.5)*s);
+  ctx.restore()}
+
+function render(){refreshPalette();sizeCanvas(trueCv);sizeCanvas(obsCv);
+  for(let i=0;i<N;i++)setPx(i,cur[i]?pal.alive:pal.dead);
+  let ctx=blit(trueCv);drawLabels(ctx,trueCv);drawObserver(ctx,trueCv,false);
+  const c=+ui.c.value,tint=ui.tint.checked,showPre=ui.showPre.checked;
+  for(let y=0;y<H;y++){const dy=y+.5-obs.y;for(let x=0;x<W;x++){const i=y*W+x,dx=x+.5-obs.x,delay=Math.sqrt(dx*dx+dy*dy)/c,te=Math.floor(T-delay);
+    if(te<0){setPx(i,showPre?(init[i]?pal.pre:pal.dead):pal.unknown);continue}
+    if(gen-te>=HIST){setPx(i,pal.unknown);continue}
+    if((hist[te%HIST][i>>3]>>(i&7))&1)setPx(i,tint?pal.ramp[Math.min(255,(delay/RAMP_MAX*255)|0)]:pal.alive);else setPx(i,pal.dead)}}
+  ctx=blit(obsCv);drawObserver(ctx,obsCv,ui.rings.checked);
+  $('genLabel').textContent=`generation ${gen}`;
+  const sp=Math.hypot(obs.vx,obs.vy);
+  $('readout').innerHTML=`T = ${T.toFixed(1)} gen &nbsp; observer (${obs.x.toFixed(1)}, ${obs.y.toFixed(1)}) &nbsp; |v| = ${(sp/c).toFixed(2)} c`+
+    ` &nbsp; farthest cell is shown as it was ${Math.min(T,maxDist()/c).toFixed(0)} gen ago`+
+    (sp>=c?` &nbsp; <span class="warn">Observer is at or above signal speed: it overtakes light coming from behind and sees events there in reverse order.</span>`:'')}
+function maxDist(){return Math.max(Math.hypot(obs.x,obs.y),Math.hypot(W-obs.x,obs.y),Math.hypot(obs.x,H-obs.y),Math.hypot(W-obs.x,H-obs.y))}
+
+// ---------- loop ----------
+let last=performance.now();
+function moveObserver(dt){obs.x+=obs.vx*dt;obs.y+=obs.vy*dt;
+  if(obs.x<0){obs.x=-obs.x;obs.vx=Math.abs(obs.vx)}if(obs.x>W){obs.x=2*W-obs.x;obs.vx=-Math.abs(obs.vx)}
+  if(obs.y<0){obs.y=-obs.y;obs.vy=Math.abs(obs.vy)}if(obs.y>H){obs.y=2*H-obs.y;obs.vy=-Math.abs(obs.vy)}syncVel()}
+function frame(now){const dtSec=Math.min(.1,(now-last)/1000);last=now;
+  if(playing){const dt=Math.min(dtSec*+ui.spd.value,6);
+    // sub-step observer motion so fast observers bounce correctly
+    const n=Math.max(1,Math.ceil(dt*Math.hypot(obs.vx,obs.vy)/5));for(let k=0;k<n;k++)moveObserver(dt/n);T+=dt;advanceTo(T)}
+  render();requestAnimationFrame(frame)}
+
+// ---------- UI ----------
+function syncSliders(){ui.vx.value=obs.vx;ui.vy.value=obs.vy;outputs()}
+let lastVx=null,lastVy=null;function syncVel(){if(obs.vx!==lastVx||obs.vy!==lastVy){lastVx=obs.vx;lastVy=obs.vy;ui.vx.value=obs.vx;ui.vy.value=obs.vy;outputs()}}
+function outputs(){$('spdOut').textContent=ui.spd.value;$('cOut').textContent=(+ui.c.value).toFixed(2);
+  $('vxOut').textContent=(+ui.vx.value).toFixed(2);$('vyOut').textContent=(+ui.vy.value).toFixed(2);$('legendMax').textContent=`0 → ${RAMP_MAX}+ gen`}
+ui.spd.oninput=ui.c.oninput=outputs;
+ui.vx.oninput=()=>{obs.vx=+ui.vx.value;outputs()};ui.vy.oninput=()=>{obs.vy=+ui.vy.value;outputs()};
+ui.stack.onchange=()=>document.querySelector('.views').classList.toggle('stacked',ui.stack.checked);
+$('stopBtn').onclick=()=>{obs.vx=obs.vy=0;syncSliders()};
+$('playBtn').onclick=e=>{playing=!playing;e.target.textContent=playing?'Pause':'Play'};
+$('stepBtn').onclick=()=>{playing=false;$('playBtn').textContent='Play';const t=Math.floor(T)+1;moveObserver(t-T);T=t;advanceTo(T)};
+$('resetBtn').onclick=reset;
+const PRESETS={center:{x:150,y:105,vx:0,vy:0,c:1},corner:{x:292,y:204,vx:0,vy:0,c:1},chase:{x:40,y:20,vx:.5,vy:0,c:1},
+  flyby:{x:4,y:105,vx:.9,vy:0,c:1},outrun:{x:4,y:120,vx:2.5,vy:0,c:1},slowlight:{x:150,y:105,vx:0,vy:0,c:.4}};
+document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>{const p=PRESETS[b.dataset.preset];obsStart={x:p.x,y:p.y,vx:p.vx,vy:p.vy};ui.c.value=p.c;reset();
+  if(!playing){playing=true;$('playBtn').textContent='Pause'}});
+function pointer(cv){let down=false;const set=e=>{const r=cv.getBoundingClientRect();obs.x=Math.max(0,Math.min(W,(e.clientX-r.left)/r.width*W));obs.y=Math.max(0,Math.min(H,(e.clientY-r.top)/r.height*H))};
+  cv.addEventListener('pointerdown',e=>{down=true;cv.setPointerCapture(e.pointerId);set(e)});
+  cv.addEventListener('pointermove',e=>{if(down)set(e)});cv.addEventListener('pointerup',()=>down=false);cv.addEventListener('pointercancel',()=>down=false)}
+pointer(trueCv);pointer(obsCv);
+reset();outputs();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

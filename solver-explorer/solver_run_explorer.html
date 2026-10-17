@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solver run explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#eef1f4;--panel:#ffffff;--ink:#1b2430;--muted:#5d6978;--rule:#d6dce3;--grid:#e6eaef;
+--exh:#1f8a84;--split:#c4860e;--intr:#b8487a;--pend:#9aa3ad;--part:#4f6fb3;--base:#6c7f95;
+font-family:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181e;--panel:#1c2129;--ink:#e3e8ee;--muted:#98a4b3;--rule:#2d3440;--grid:#262c36;--exh:#3bb8ae;--split:#e2a73a;--intr:#dc6f9f;--pend:#6f7a87;--part:#7d9ae0;--base:#8b9bb0}}
+:root[data-theme="dark"]{--bg:#14181e;--panel:#1c2129;--ink:#e3e8ee;--muted:#98a4b3;--rule:#2d3440;--grid:#262c36;--exh:#3bb8ae;--split:#e2a73a;--intr:#dc6f9f;--pend:#6f7a87;--part:#7d9ae0;--base:#8b9bb0}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
+main{max-width:1180px;margin:0 auto;padding:28px 18px 60px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:600;font-size:clamp(26px,4vw,38px);line-height:1.05;margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:4px 0 0;max-width:70ch}
+.load{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);padding:8px 14px;border-radius:6px;font:inherit;font-weight:500;cursor:pointer}
+.load:focus-within{outline:2px solid var(--part);outline-offset:2px}
+.load input{position:absolute;opacity:0;width:1px;height:1px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin-bottom:22px}
+.stat{background:var(--panel);padding:12px 14px}
+.stat b{display:block;font-family:"Barlow Semi Condensed",sans-serif;font-size:24px;font-weight:600;line-height:1.1}
+.stat span{color:var(--muted);font-size:13px}
+section{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:16px 16px 12px;margin-bottom:18px}
+section h2{font-family:"Barlow Semi Condensed",sans-serif;font-weight:600;font-size:20px;margin:0 0 2px}
+section p.note{color:var(--muted);font-size:13.5px;margin:0 0 10px;max-width:90ch}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.row>section{margin-bottom:0}
+.rowwrap{margin-bottom:18px}
+@media (max-width:820px){.row{grid-template-columns:1fr}.row>section{margin-bottom:18px}.rowwrap{margin-bottom:0}}
+.chart{width:100%;overflow-x:auto}
+svg{display:block;font-family:inherit}
+svg text{fill:var(--muted);font-size:11px}
+.axis path,.axis line{stroke:var(--rule)}
+.grid line{stroke:var(--grid)}
+.grid path{display:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted);margin:2px 0 8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--panel);padding:8px 10px;border-radius:6px;font-size:12.5px;line-height:1.4;max-width:280px;opacity:0;transition:opacity .1s;z-index:10}
+#tip b{font-weight:600}
+.tablewrap{overflow-x:auto;max-height:520px;overflow-y:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:6px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--grid)}
+th{position:sticky;top:0;background:var(--panel);color:var(--muted);font-weight:600;cursor:pointer;user-select:none;border-bottom:1px solid var(--rule)}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+th:focus-visible{outline:2px solid var(--part)}
+tr.sel td{background:color-mix(in srgb,var(--part) 14%,transparent)}
+.pill{display:inline-block;padding:1px 7px;border-radius:9px;font-size:12px;color:#fff}
+.hl{stroke:var(--ink)!important;stroke-width:2px}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:14px}
+.controls label{display:inline-flex;align-items:center;gap:7px;cursor:pointer}
+.controls input[type=checkbox]{width:16px;height:16px;accent-color:var(--part)}
+.controls input[type=number]{width:64px;font:inherit;padding:3px 6px;border:1px solid var(--rule);border-radius:5px;background:var(--bg);color:var(--ink)}
+.controls input:disabled{opacity:.5}
+#hidsum{color:var(--muted);font-size:13px}
+#err{color:var(--intr);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div>
+    <h1>Solver run explorer</h1>
+    <p class="sub" id="sub"></p>
+  </div>
+  <label class="load">Load another log (.jsonl)<input type="file" id="file" accept=".jsonl,.json,.log,.txt"></label>
+</header>
+<div id="err"></div>
+<div class="controls">
+  <label><input type="checkbox" id="hide" checked> Hide time inflated by interruptions and pauses</label>
+  <label>Collapse idle gaps longer than <input type="number" id="gaph" min="0.25" step="0.25" value="2"> h</label>
+  <span id="hidsum"></span>
+</div>
+<div class="stats" id="stats"></div>
+
+<section>
+  <h2>Search tree by height</h2>
+  <p class="note">Each line is one branch, drawn from the height it started at to the height it reached. Vertical joins are partitions: a branch that hits the memory cap is split into 4 children that restart one level higher. Hover for details; click to highlight a branch in every chart and the table.</p>
+  <div class="legend" id="lg-tree"></div>
+  <div class="chart" id="tree"></div>
+</section>
+
+<section>
+  <h2>What the solver was doing over time</h2>
+  <p class="note">Extend runs and partition builds on one clock (UTC). The run is sequential, so gaps between bars are idle time. Hatched runs resumed after an interruption; the resume time isn't logged, so they are drawn from the interruption. Triangles mark manager pauses.</p>
+  <div class="legend" id="lg-act"></div>
+  <div class="chart" id="activity"></div>
+</section>
+
+<section>
+  <h2>Height over time</h2>
+  <p class="note">Each run is a segment from (start time, start height) to (end time, height reached). Only the endpoints are logged, so the straight line between them is an assumption, not measured progress.</p>
+  <div class="chart" id="hot"></div>
+</section>
+
+<section>
+  <h2>Depth of each branch</h2>
+  <p class="note">Branches in the order they first ran. Bar spans start height to final height.</p>
+  <div class="chart" id="depth"></div>
+</section>
+
+<div class="row rowwrap">
+  <section>
+    <h2>Partition build time</h2>
+    <p class="note">From split request to materialized children, in minutes. Darker bars include a manager pause, so they overstate compute time.</p>
+    <div class="chart" id="pbuild"></div>
+  </section>
+  <section>
+    <h2>Time between partitions</h2>
+    <p class="note">Hours since the previous partition was materialized, labelled with the height it split at.</p>
+    <div class="chart" id="pgap"></div>
+  </section>
+</div>
+
+<div class="row rowwrap">
+  <section>
+    <h2>Run length vs levels gained</h2>
+    <p class="note">Runs with a logged start only. Longer, shallower runs mean more work per level.</p>
+    <div class="chart" id="thru"></div>
+  </section>
+  <section>
+    <h2>Checkpoint sizes</h2>
+    <p class="note">Size of each deleted checkpoint when it was removed. Split checkpoints are the full state at the memory cap; partition bases are one child's share.</p>
+    <div class="legend" id="lg-ck"></div>
+    <div class="chart" id="ckpt"></div>
+  </section>
+</div>
+
+<section>
+  <h2>Partitions</h2>
+  <div class="tablewrap" id="ptable"></div>
+</section>
+
+<section>
+  <h2>Branches</h2>
+  <p class="note">Click a column to sort. Click a row to highlight the branch.</p>
+  <div class="tablewrap" id="btable"></div>
+</section>
+</main>
+<div id="tip" role="tooltip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script type="text/plain" id="data">
+R|19T18:16:55|root|54|memory_cap
+S|19T18:16:55|root|54
+P|19T20:11:33|root|partition
+M|19T20:12:00|root|1
+D|19T20:12:00|14196355964|c:root_54
+B|19T20:12:00|1/1|55
+R|19T21:15:39|1/1|61|memory_cap
+S|19T21:15:39|1/1|61
+D|19T21:15:39|3977235091|p:1-1_55
+M|19T22:12:06|1/1|2
+D|19T22:12:06|10359535311|c:1-1_61
+B|19T22:12:06|2/1|62
+R|19T22:50:18|2/1|68|interrupted
+P|19T22:50:18|2/1|extend
+D|19T22:50:19|2772240721|p:2-1_62
+R|19T23:26:15|2/1|70|memory_cap
+S|19T23:26:15|2/1|70
+D|19T23:26:15|8021708625|c:2-1_68
+P|19T23:48:57|2/1|partition
+M|20T02:15:14|2/1|3
+D|20T02:15:14|10397488082|c:2-1_70
+B|20T02:15:15|3/1|71
+R|20T03:30:42|3/1|85|memory_cap
+S|20T03:30:42|3/1|85
+D|20T03:30:42|2530844193|p:3-1_71
+M|20T04:03:26|3/1|4
+D|20T04:03:26|10139878802|c:3-1_85
+B|20T04:03:26|4/1|86
+R|20T05:05:26|4/1|322|exhausted
+D|20T05:05:26|2493425460|p:4-1_86
+B|20T05:05:26|4/2|86
+R|20T05:59:55|4/2|332|exhausted
+D|20T05:59:55|3144711164|p:4-2_86
+B|20T05:59:55|4/3|86
+R|20T07:37:08|4/3|331|exhausted
+D|20T07:37:08|3652125648|p:4-3_86
+B|20T07:37:08|4/4|86
+R|20T08:30:09|4/4|294|exhausted
+D|20T08:30:09|3908564007|p:4-4_86
+B|20T08:30:09|3/2|71
+R|20T09:14:01|3/2|83|memory_cap
+S|20T09:14:01|3/2|83
+D|20T09:14:01|3274090315|p:3-2_71
+M|20T09:32:34|3/2|5
+D|20T09:32:34|9633108906|c:3-2_83
+B|20T09:32:35|5/1|84
+R|20T11:18:00|5/1|659|exhausted
+D|20T11:18:00|2826324347|p:5-1_84
+B|20T11:18:00|5/2|84
+R|20T11:37:49|5/2|243|exhausted
+D|20T11:37:49|2743132836|p:5-2_84
+B|20T11:37:49|5/3|84
+R|20T11:55:47|5/3|242|exhausted
+D|20T11:55:47|3275084972|p:5-3_84
+B|20T11:55:47|5/4|84
+R|20T14:16:55|5/4|171|memory_cap
+S|20T14:16:55|5/4|171
+D|20T14:16:56|2578311502|p:5-4_84
+M|20T14:42:05|5/4|6
+D|20T14:42:05|10185526899|c:5-4_171
+B|20T14:42:06|6/1|172
+R|20T15:35:14|6/1|191|memory_cap
+S|20T15:35:14|6/1|191
+D|20T15:35:14|3238434838|p:6-1_172
+M|20T15:53:09|6/1|7
+D|20T15:53:09|9509286857|c:6-1_191
+B|20T15:53:09|7/1|192
+R|20T16:34:50|7/1|374|exhausted
+D|20T16:34:50|2721181269|p:7-1_192
+B|20T16:34:51|7/2|192
+R|20T17:39:33|7/2|379|exhausted
+D|20T17:39:34|2888322988|p:7-2_192
+B|20T17:39:34|7/3|192
+R|20T18:09:20|7/3|383|exhausted
+D|20T18:09:20|2409653542|p:7-3_192
+B|20T18:09:20|7/4|192
+R|20T19:37:10|7/4|445|exhausted
+D|20T19:37:10|2467353480|p:7-4_192
+B|20T19:37:10|6/2|172
+R|20T22:40:54|6/2|393|exhausted
+D|20T22:40:54|2353549159|p:6-2_172
+B|20T22:40:54|6/3|172
+R|20T23:36:52|6/3|196|interrupted
+P|20T23:36:52|6/3|extend
+D|20T23:36:52|3720791772|p:6-3_172
+R|21T01:13:18|6/3|447|exhausted
+D|21T01:13:18|7119054314|c:6-3_196
+B|21T01:13:19|6/4|172
+R|21T02:24:47|6/4|397|exhausted
+D|21T02:24:47|3583477572|p:6-4_172
+B|21T02:24:47|3/3|71
+R|21T02:44:27|3/3|77|interrupted
+P|21T02:44:27|3/3|extend
+D|21T02:44:27|3612369902|p:3-3_71
+R|21T03:21:23|3/3|86|memory_cap
+S|21T03:21:23|3/3|86
+D|21T03:21:24|6183189850|c:3-3_77
+M|21T03:38:42|3/3|8
+D|21T03:38:43|9505120791|c:3-3_86
+B|21T03:38:43|8/1|87
+R|21T04:07:39|8/1|274|exhausted
+D|21T04:07:39|2415092826|p:8-1_87
+B|21T04:07:39|8/2|87
+R|21T04:16:29|8/2|252|exhausted
+D|21T04:16:29|1902989008|p:8-2_87
+B|21T04:16:29|8/3|87
+R|21T04:45:59|8/3|471|exhausted
+D|21T04:45:59|2522714351|p:8-3_87
+B|21T04:45:59|8/4|87
+R|21T05:33:58|8/4|265|exhausted
+D|21T05:33:58|2761477270|p:8-4_87
+B|21T05:33:58|3/4|71
+R|21T07:17:37|3/4|313|exhausted
+D|21T07:17:38|4173933961|p:3-4_71
+B|21T07:17:38|2/2|62
+R|21T07:57:54|2/2|73|memory_cap
+S|21T07:57:54|2/2|73
+D|21T07:57:54|3934633123|p:2-2_62
+M|21T08:20:25|2/2|9
+D|21T08:20:25|10197732117|c:2-2_73
+B|21T08:20:26|9/1|74
+R|21T09:00:23|9/1|239|exhausted
+D|21T09:00:23|3162765922|p:9-1_74
+B|21T09:00:23|9/2|74
+R|21T09:52:19|9/2|253|exhausted
+D|21T09:52:19|3234744334|p:9-2_74
+B|21T09:52:19|9/3|74
+R|21T10:36:20|9/3|259|exhausted
+D|21T10:36:20|3294110623|p:9-3_74
+B|21T10:36:20|9/4|74
+R|21T11:06:26|9/4|238|exhausted
+D|21T11:06:26|2946351217|p:9-4_74
+B|21T11:06:26|2/3|62
+R|21T11:46:38|2/3|71|memory_cap
+S|21T11:46:38|2/3|71
+D|21T11:46:39|4703489064|p:2-3_62
+M|21T12:11:21|2/3|10
+D|21T12:11:21|10152833373|c:2-3_71
+B|21T12:11:22|10/1|72
+R|21T14:47:41|10/1|335|exhausted
+D|21T14:47:41|3243367687|p:10-1_72
+B|21T14:47:41|10/2|72
+R|21T16:01:12|10/2|279|exhausted
+D|21T16:01:12|2833509652|p:10-2_72
+B|21T16:01:12|10/3|72
+R|21T17:07:15|10/3|316|exhausted
+D|21T17:07:15|2948903418|p:10-3_72
+B|21T17:07:15|10/4|72
+R|21T17:54:22|10/4|268|exhausted
+D|21T17:54:22|3516171280|p:10-4_72
+B|21T17:54:23|2/4|62
+R|21T18:26:45|2/4|71|memory_cap
+S|21T18:26:45|2/4|71
+D|21T18:26:46|4488513071|p:2-4_62
+M|21T18:48:21|2/4|11
+D|21T18:48:21|9283076688|c:2-4_71
+B|21T18:48:22|11/1|72
+R|21T19:39:23|11/1|261|exhausted
+D|21T19:39:23|3283656115|p:11-1_72
+B|21T19:39:23|11/2|72
+R|21T20:08:44|11/2|258|exhausted
+D|21T20:08:44|2789469963|p:11-2_72
+B|21T20:08:44|11/3|72
+R|21T20:42:47|11/3|226|exhausted
+D|21T20:42:47|2144102782|p:11-3_72
+B|21T20:42:47|11/4|72
+R|21T21:46:32|11/4|273|exhausted
+D|21T21:46:32|2713401421|p:11-4_72
+B|21T21:46:32|1/2|55
+R|21T22:26:37|1/2|60|memory_cap
+S|21T22:26:37|1/2|60
+D|21T22:26:38|5092738543|p:1-2_55
+M|21T23:13:12|1/2|12
+D|21T23:13:13|11078533455|c:1-2_60
+B|21T23:13:14|12/1|61
+R|21T23:57:37|12/1|70|memory_cap
+S|21T23:57:37|12/1|70
+D|21T23:57:37|3501860059|p:12-1_61
+P|22T00:28:57|12/1|partition
+M|22T04:58:36|12/1|13
+D|22T04:58:36|10453615326|c:12-1_70
+B|22T04:58:36|13/1|71
+R|22T07:43:29|13/1|347|exhausted
+D|22T07:43:29|2349418074|p:13-1_71
+B|22T07:43:29|13/2|71
+R|22T09:22:30|13/2|250|exhausted
+D|22T09:22:30|2618549353|p:13-2_71
+B|22T09:22:30|13/3|71
+R|22T10:40:55|13/3|281|exhausted
+D|22T10:40:55|3145581292|p:13-3_71
+B|22T10:40:55|13/4|71
+R|22T11:32:08|13/4|226|exhausted
+D|22T11:32:08|3787221999|p:13-4_71
+B|22T11:32:08|12/2|61
+R|22T12:09:28|12/2|71|memory_cap
+S|22T12:09:28|12/2|71
+D|22T12:09:28|4153092402|p:12-2_61
+M|22T12:29:53|12/2|14
+D|22T12:29:53|9780461238|c:12-2_71
+B|22T12:29:54|14/1|72
+R|22T13:58:01|14/1|271|exhausted
+D|22T13:58:01|3568630630|p:14-1_72
+B|22T13:58:01|14/2|72
+R|22T16:07:46|14/2|147|memory_cap
+S|22T16:07:46|14/2|147
+D|22T16:07:47|2508650721|p:14-2_72
+M|22T16:45:04|14/2|15
+D|22T16:45:04|10621295796|c:14-2_147
+B|22T16:45:06|15/1|148
+R|22T17:43:15|15/1|159|memory_cap
+S|22T17:43:15|15/1|159
+D|22T17:43:15|3687287647|p:15-1_148
+M|22T18:24:11|15/1|16
+D|22T18:24:11|11864816702|c:15-1_159
+B|22T18:24:13|16/1|160
+R|22T21:51:50|16/1|495|exhausted
+D|22T21:51:50|4210395896|p:16-1_160
+B|22T21:51:52|16/2|160
+R|22T23:27:45|16/2|391|exhausted
+D|22T23:27:46|3270689367|p:16-2_160
+B|22T23:27:47|16/3|160
+R|23T01:57:45|16/3|495|exhausted
+D|23T01:57:45|3361879386|p:16-3_160
+B|23T01:57:47|16/4|160
+R|23T03:01:21|16/4|375|exhausted
+D|23T03:01:22|4500077773|p:16-4_160
+B|23T03:01:23|15/2|148
+R|23T03:45:40|15/2|159|memory_cap
+S|23T03:45:40|15/2|159
+D|23T03:45:41|2872407150|p:15-2_148
+M|23T04:12:34|15/2|17
+D|23T04:12:35|10436986468|c:15-2_159
+B|23T04:12:36|17/1|160
+R|23T04:59:16|17/1|430|exhausted
+D|23T04:59:16|2952789859|p:17-1_160
+B|23T04:59:16|17/2|160
+R|23T05:42:17|17/2|353|exhausted
+D|23T05:42:17|3389583694|p:17-2_160
+B|23T05:42:17|17/3|160
+R|23T07:52:14|17/3|424|exhausted
+D|23T07:52:15|3422887882|p:17-3_160
+B|23T07:52:17|17/4|160
+R|23T11:16:22|17/4|234|memory_cap
+S|23T11:16:22|17/4|234
+D|23T11:16:22|3740250334|p:17-4_160
+M|23T11:38:20|17/4|18
+D|23T11:38:21|10362068078|c:17-4_234
+B|23T11:38:22|18/1|235
+R|23T11:58:36|18/1|380|exhausted
+D|23T11:58:36|1436801414|p:18-1_235
+B|23T11:58:36|18/2|235
+R|23T15:23:51|18/2|626|exhausted
+D|23T15:23:51|2582884331|p:18-2_235
+B|23T15:23:52|18/3|235
+R|23T17:42:24|18/3|476|exhausted
+D|23T17:42:25|3578730164|p:18-3_235
+B|23T17:42:27|18/4|235
+R|23T18:23:04|18/4|455|exhausted
+D|23T18:23:04|2751832136|p:18-4_235
+B|23T18:23:04|15/3|148
+R|23T18:55:07|15/3|157|memory_cap
+S|23T18:55:07|15/3|157
+D|23T18:55:08|2918886057|p:15-3_148
+M|23T19:21:03|15/3|19
+D|23T19:21:04|10090768671|c:15-3_157
+B|23T19:21:06|19/1|158
+R|23T20:04:06|19/1|172|memory_cap
+S|23T20:04:06|19/1|172
+D|23T20:04:07|3289291542|p:19-1_158
+M|23T20:24:04|19/1|20
+D|23T20:24:05|9994437506|c:19-1_172
+B|23T20:24:07|20/1|173
+R|23T20:38:42|20/1|320|exhausted
+D|23T20:38:42|2093813475|p:20-1_173
+B|23T20:38:42|20/2|173
+R|23T22:20:25|20/2|222|memory_cap
+S|23T22:20:25|20/2|222
+D|23T22:20:26|3036042545|p:20-2_173
+M|23T22:48:35|20/2|21
+D|23T22:48:36|10510379661|c:20-2_222
+B|23T22:48:37|21/1|223
+R|23T23:12:07|21/1|446|exhausted
+D|23T23:12:07|2389410940|p:21-1_223
+B|23T23:12:07|21/2|223
+R|23T23:49:51|21/2|479|exhausted
+D|23T23:49:51|2936731889|p:21-2_223
+B|23T23:49:51|21/3|223
+R|24T00:38:07|21/3|395|exhausted
+D|24T00:38:07|3331301218|p:21-3_223
+B|24T00:38:07|21/4|223
+R|24T01:04:23|21/4|412|exhausted
+D|24T01:04:23|2646208014|p:21-4_223
+B|24T01:04:23|20/3|173
+R|24T04:09:31|20/3|513|exhausted
+D|24T04:09:32|2666888489|p:20-3_173
+B|24T04:09:34|20/4|173
+R|24T07:15:22|20/4|540|exhausted
+D|24T07:15:23|2571713820|p:20-4_173
+B|24T07:15:25|19/2|158
+R|24T07:53:53|19/2|171|memory_cap
+S|24T07:53:53|19/2|171
+D|24T07:53:54|3283031540|p:19-2_158
+M|24T08:12:09|19/2|22
+D|24T08:12:10|9111825688|c:19-2_171
+B|24T08:12:12|22/1|172
+R|24T08:58:52|22/1|376|exhausted
+D|24T08:58:52|2579912575|p:22-1_172
+B|24T08:58:52|22/2|172
+R|24T12:30:06|22/2|528|exhausted
+D|24T12:30:07|2674676407|p:22-2_172
+B|24T12:30:09|22/3|172
+R|24T14:34:23|22/3|573|exhausted
+D|24T14:34:23|2877098796|p:22-3_172
+B|24T14:34:23|22/4|172
+R|24T14:49:22|22/4|352|exhausted
+D|24T14:49:22|2342471385|p:22-4_172
+B|24T14:49:22|19/3|158
+R|24T19:03:43|19/3|503|exhausted
+D|24T19:03:44|3465669001|p:19-3_158
+B|24T19:03:46|19/4|158
+R|24T20:54:28|19/4|445|exhausted
+D|24T20:54:29|3445101888|p:19-4_158
+B|24T20:54:31|15/4|148
+R|24T21:22:50|15/4|157|memory_cap
+S|24T21:22:50|15/4|157
+D|24T21:22:51|4339928437|p:15-4_148
+M|24T21:41:54|15/4|23
+D|24T21:41:55|8966827975|c:15-4_157
+B|24T21:41:58|23/1|158
+R|24T23:25:07|23/1|415|exhausted
+D|24T23:25:07|2280307610|p:23-1_158
+B|24T23:25:08|23/2|158
+R|25T00:34:36|23/2|374|exhausted
+D|25T00:34:36|2686089018|p:23-2_158
+B|25T00:34:36|23/3|158
+R|25T01:09:46|23/3|326|exhausted
+D|25T01:09:47|2872012532|p:23-3_158
+</script>
+<script>
+const pad8 = n => String(n).padStart(8, '0');
+function expandBranch(b){ if(b==='root') return 'root'; const [p,k]=b.split('/'); return `partition-${pad8(p)}/${k}`; }
+function expandSource(s){
+  const [kind, rest] = s.split(':');
+  if(rest.startsWith('root')) return 'checkpoints/'+rest;
+  const [pk, h] = rest.split('_'); const [p,k] = pk.split('-');
+  return kind==='c' ? `checkpoints/p${pad8(p)}-${k}_${h}` : `partitions/${pad8(p)}/p${pad8(p)}-${k}_${h}`;
+}
+function parseCompact(txt){
+  const ev=[];
+  for(const line of txt.trim().split('\n')){
+    const f=line.split('|'); const time='2026-09-'+f[1]+'Z';
+    switch(f[0]){
+      case 'R': ev.push({kind:'solver_result',time,branch:expandBranch(f[2]),height:+f[3],reason:f[4],stage:'extend',completion:false}); break;
+      case 'S': ev.push({kind:'branch_split_requested',time,branch:expandBranch(f[2]),height:+f[3]}); break;
+      case 'P': ev.push({kind:'manager_paused',time,branch:expandBranch(f[2]),stage:f[3]}); break;
+      case 'B': ev.push({kind:'branch_started',time,branch:expandBranch(f[2]),height:+f[3]}); break;
+      case 'M': ev.push({kind:'partition_materialized',time,branch:expandBranch(f[2]),partition:'partition-'+pad8(f[3]),children:4}); break;
+      case 'D': ev.push({kind:'checkpoint_deleted',time,bytes:+f[2],source:expandSource(f[3])}); break;
+    }
+  }
+  return ev;
+}
+function parseJSONL(txt){
+  return txt.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>{try{return JSON.parse(l)}catch(e){return null}}).filter(Boolean);
+}
+function analyze(events){
+  const T = s => new Date(s).getTime();
+  const B = new Map();
+  const get = id => { if(!B.has(id)) B.set(id,{id,parent:null,children:[],startH:null,endH:null,status:'pending',runs:[],runStart:null,resumed:false,splitReqT:null,partition:null,order:B.size, interrupts:0, completion:false}); return B.get(id); };
+  const partitions=[], deletions=[], pauses=[];
+  let completionFound=false;
+  const points=[];
+  const sorted = events.slice().sort((a,b)=>T(a.time)-T(b.time));
+  const t0 = T(sorted[0].time), t1 = T(sorted[sorted.length-1].time);
+  for(const e of sorted){
+    const t=T(e.time); points.push(t);
+    if(e.kind==='solver_result'){
+      if(e.completion) completionFound=true;
+      const b=get(e.branch);
+      if(e.stage==='materialize'){ if(b.startH==null) b.startH=e.height; continue; }
+      const from = b.runStart!=null ? b.runStart : null;
+      b.runs.push({start:from, end:t, fromH:b.lastH ?? b.startH, toH:e.height, reason:e.reason, startKnown: from!=null && !b.resumeUnknown});
+      b.lastH=e.height; b.endH=e.height; b.runStart=null; b.resumeUnknown=false;
+      if(e.completion){ b.completion=true; }
+      if(e.reason==='exhausted') b.status='exhausted';
+      else if(e.reason==='memory_cap') b.status='split';
+      else if(e.reason==='interrupted'){ b.status='paused'; b.interrupts++; b.runStart=t; b.resumeUnknown=true; }
+      else b.status=e.reason;
+    } else if(e.kind==='branch_started'){
+      const b=get(e.branch); b.runStart=t; b.resumeUnknown=false; if(b.startH==null) b.startH=e.height; if(b.status==='pending') b.status='running';
+    } else if(e.kind==='branch_split_requested'){
+      const b=get(e.branch); b.splitReqT=t; b.splitH=e.height;
+    } else if(e.kind==='manager_paused'){
+      pauses.push({t, branch:e.branch, stage:e.stage});
+    } else if(e.kind==='partition_materialized'){
+      const p=get(e.branch); const n=e.children||4;
+      const part={name:e.partition, num:+e.partition.split('-')[1], parent:e.branch, reqT:p.splitReqT, matT:t, splitH:p.splitH, children:[], paused: pauses.some(x=>x.branch===e.branch&&x.stage==='partition'&&x.t>=p.splitReqT&&x.t<=t)};
+      p.partition=part.name;
+      for(let i=1;i<=n;i++){ const c=get(`${e.partition}/${i}`); c.parent=e.branch; if(c.startH==null) c.startH=p.splitH+1; p.children.push(c.id); part.children.push(c.id); }
+      partitions.push(part);
+    } else if(e.kind==='checkpoint_deleted'){
+      const src=e.source; let cls = e.bytes<100000 ? 'final stub' : src.startsWith('partitions/') ? 'partition base' : 'split / resume';
+      const m=src.match(/_(\d+)$/);
+      deletions.push({t, bytes:e.bytes, source:src, cls, height:m?+m[1]:null});
+    }
+  }
+  // root has no explicit start
+  const root=B.get('root'); if(root && root.startH==null){ root.startH=0; root.preLog=true; }
+  const resumes=[]; for(const b of B.values()) for(const r of b.runs) if(r.start!=null && !r.startKnown) resumes.push(r);
+  for(let i=1;i<partitions.length;i++){ const a=partitions[i-1].matT, b=partitions[i].matT; partitions[i].gapPrev=b-a;
+    partitions[i].gapInflated = pauses.some(p=>p.t>a&&p.t<=b) || resumes.some(r=>r.end>a&&r.start<b); }
+  // activity lanes
+  const activity=[];
+  for(const b of B.values()) for(const r of b.runs) if(r.start!=null) activity.push({lane:'Extend', start:r.start, end:r.end, branch:b.id, reason:r.reason, startKnown:r.startKnown});
+  for(const p of partitions) if(p.reqT!=null) activity.push({lane:'Partition', start:p.reqT, end:p.matT, branch:p.parent, reason:p.paused?'partition (paused)':'partition', partition:p.name});
+  const branches=[...B.values()];
+  return {points, branches, byId:B, partitions, deletions, pauses, activity, t0, t1, completionFound};
+}
+
+
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const short = id => id==='root' ? 'root' : id.replace(/^partition-0*/,'');
+const fmtT = d3.utcFormat('%b %d %H:%M');
+const fmtDur = ms => { if(ms==null) return '–'; const m=Math.round(ms/60000); return m<60? m+' min' : (m/60).toFixed(1)+' h'; };
+const GB = b => (b/1e9).toFixed(1)+' GB';
+const statusColor = s => ({exhausted:css('--exh'),split:css('--split'),paused:css('--intr'),interrupted:css('--intr'),memory_cap:css('--split'),pending:css('--pend'),running:css('--part')}[s]||css('--pend'));
+const statusLabel = s => ({exhausted:'Exhausted (no completion)',split:'Split at memory cap',pending:'Not started yet',paused:'Paused',running:'Running'}[s]||s);
+const tip = document.getElementById('tip');
+function showTip(ev, html){ tip.innerHTML=html; tip.style.opacity=1; const w=tip.offsetWidth,h=tip.offsetHeight; let x=ev.clientX+14,y=ev.clientY+14; if(x+w>innerWidth-8)x=ev.clientX-w-14; if(y+h>innerHeight-8)y=ev.clientY-h-14; tip.style.left=x+'px'; tip.style.top=y+'px'; }
+function hideTip(){ tip.style.opacity=0; }
+let A=null, selected=null, HIDE=true, GAPH=2;
+function width(el){ return Math.max(320, el.clientWidth); }
+function legend(id, items){ document.getElementById(id).innerHTML = items.map(([c,l,extra])=>`<span><i style="background:${c};${extra||''}"></i>${l}</span>`).join(''); }
+function runtime(b){ return b.runs.reduce((s,r)=>s+(r.start!=null&&(r.startKnown||!HIDE)?r.end-r.start:0),0); }
+const inflatedAct = a => (a.lane==='Extend'&&a.startKnown===false) || (a.lane==='Partition'&&a.reason.includes('paused'));
+function actView(){ return HIDE ? A.activity.filter(a=>!inflatedAct(a)) : A.activity; }
+let T=null;
+function computeBreaks(){
+  if(!HIDE) return [];
+  const thr=GAPH*3.6e6, iv=actView().map(a=>[a.start,a.end]).concat(A.points.map(t=>[t,t])).sort((a,b)=>a[0]-b[0]);
+  const mg=[]; for(const [s,e] of iv){ const l=mg[mg.length-1]; if(l&&s<=l[1]) l[1]=Math.max(l[1],e); else mg.push([s,e]); }
+  const br=[]; for(let i=1;i<mg.length;i++) if(mg[i][0]-mg[i-1][1]>thr) br.push([mg[i-1][1],mg[i][0]]);
+  return br;
+}
+function makeTime(r0,r1){
+  const br=A.breaks;
+  if(!br.length){ const x=d3.scaleUtc().domain([A.t0,A.t1]).range([r0,r1]); return {x,breaks:[],ticks:n=>x.ticks(n)}; }
+  const bp=Math.min(18,(r1-r0)*.25/br.length), kept=(A.t1-A.t0)-d3.sum(br,b=>b[1]-b[0]), k=(r1-r0-bp*br.length)/kept;
+  const dom=[A.t0], rng=[r0]; let px=r0, t=A.t0; const bpx=[];
+  for(const [a,b] of br){ px+=(a-t)*k; dom.push(a); rng.push(px); bpx.push([px,px+bp,a,b]); px+=bp; dom.push(b); rng.push(px); t=b; }
+  dom.push(A.t1); rng.push(r1);
+  const x=d3.scaleLinear().domain(dom).range(rng).clamp(true);
+  const ticks=()=>{ const out=[]; let last=-1e9; const segs=[[A.t0,br[0][0]]].concat(br.map((b,i)=>[b[1], i+1<br.length?br[i+1][0]:A.t1]));
+    for(const [s,e] of segs){ const w=x(e)-x(s); if(w<40) continue; let tks=d3.scaleUtc().domain([s,e]).ticks(Math.max(2,Math.floor(w/70)+1)); if(!tks.length) tks=[new Date(s+(e-s)/2)];
+      for(const tk of tks){ const p=x(+tk); if(p-last>=78 && !bpx.some(b=>p>b[0]-34&&p<b[1]+34)){ out.push(tk); last=p; } } }
+    return out; };
+  return {x,breaks:bpx,ticks};
+}
+function firstStart(b){ const r=b.runs.find(r=>r.start!=null); return r? r.start : (b.runs.length? b.runs[0].end : Infinity); }
+function branchTip(b){
+  const rt=runtime(b);
+  return `<b>${short(b.id)}</b><br>${statusLabel(b.status)}<br>Height ${b.preLog?'(start not logged)':b.startH} → ${b.endH ?? '–'}${b.endH!=null&&!b.preLog?` (+${b.endH-b.startH})`:''}<br>`+
+   (b.parent?`Parent ${short(b.parent)}<br>`:'')+
+   (b.runs.length?`Logged run time ${fmtDur(rt)}${b.interrupts?` · ${b.interrupts} interruption`:''}<br>`:'')+
+   (b.partition?`Created ${short(b.partition)}`:'');
+}
+function select(id){ selected = (selected===id? null : id); drawAll(); }
+function isSel(id){ return selected && (id===selected); }
+function inSelTree(id){ if(!selected) return false; let b=A.byId.get(id); while(b){ if(b.id===selected) return true; b=b.parent? A.byId.get(b.parent):null; } return false; }
+function axisGrid(g, axis, size){ g.call(axis.tickSize(-size)).call(s=>s.select('.domain').remove()).attr('class','grid'); g.selectAll('text').remove(); }
+
+function drawStats(){
+  const bs=A.branches, ex=bs.filter(b=>b.status==='exhausted'), pend=bs.filter(b=>b.status==='pending');
+  const maxB=bs.reduce((m,b)=>(b.endH??0)>(m.endH??0)?b:m,bs[0]);
+  const ext=actView().filter(a=>a.lane==='Extend').reduce((s,a)=>s+a.end-a.start,0);
+  const prt=actView().filter(a=>a.lane==='Partition').reduce((s,a)=>s+a.end-a.start,0);
+  const tot=A.deletions.reduce((s,d)=>s+d.bytes,0);
+  const S=[[fmtDur(A.t1-A.t0),'logged wall time'],[A.partitions.length,'partitions'],[ex.length,'branches exhausted'],[pend.length,'branches not started'],[maxB.endH,`max height (${short(maxB.id)})`],[fmtDur(ext),'extending'],[fmtDur(prt),'building partitions'],[(tot/1e12).toFixed(2)+' TB','checkpoints deleted']];
+  const hid=A.activity.filter(inflatedAct), hb=d3.sum(A.breaks,b=>b[1]-b[0]);
+  document.getElementById('hidsum').textContent = HIDE ? (hid.length||A.breaks.length ? `Hiding ${hid.length} inflated run${hid.length===1?'':'s'} or builds and collapsing ${fmtDur(hb)} of idle time on time axes.` : 'Nothing in this log is inflated by interruptions or pauses.') : `${hid.length} inflated run${hid.length===1?'':'s'} or builds are shown at full length.`;
+  if(HIDE) S[5][1]='extending (logged starts)', S[6][1]='building partitions (no pauses)';
+  document.getElementById('stats').innerHTML=S.map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('');
+  document.getElementById('sub').textContent=`${fmtT(new Date(A.t0))} to ${fmtT(new Date(A.t1))} UTC. ${A.completionFound?'A completion was found.':'No branch has reported a completion.'} ${pend.length} queued branches remain, starting at heights ${[...new Set(pend.map(b=>b.startH))].sort((a,b)=>a-b).join(', ')}.`;
+}
+
+function drawTree(){
+  const el=document.getElementById('tree'); el.innerHTML='';
+  const root=A.byId.get('root'); if(!root) return;
+  const rowH=13, m={t:10,r:60,b:30,l:10};
+  let yi=0; const Y=new Map();
+  (function place(b){ if(!b.children.length){ Y.set(b.id, yi++); return; } b.children.forEach(c=>place(A.byId.get(c))); const ys=b.children.map(c=>Y.get(c)); Y.set(b.id,(Math.min(...ys)+Math.max(...ys))/2); })(root);
+  const W=width(el), H=m.t+m.b+yi*rowH;
+  const maxH=d3.max(A.branches,b=>b.endH??b.startH);
+  const x=d3.scaleLinear().domain([0,maxH*1.03]).range([m.l,W-m.r]);
+  const y=i=>m.t+i*rowH+rowH/2;
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  axisGrid(svg.append('g').attr('transform',`translate(0,${H-m.b})`), d3.axisBottom(x).ticks(W/80), H-m.b-m.t);
+  svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).ticks(W/80));
+  svg.append('text').attr('x',W-m.r).attr('y',H-2).attr('text-anchor','end').text('search height');
+  const g=svg.append('g');
+  for(const b of A.branches){
+    if(!Y.has(b.id)) continue; const yy=y(Y.get(b.id)); const col=statusColor(b.status);
+    const dim = selected && !inSelTree(b.id) ? .25 : 1;
+    if(b.children.length){ const cy=b.children.map(c=>y(Y.get(c))); g.append('line').attr('x1',x(b.endH)).attr('x2',x(b.endH)).attr('y1',d3.min(cy)).attr('y2',d3.max(cy)).attr('stroke',css('--split')).attr('stroke-width',1.5).attr('opacity',dim);
+      b.children.forEach(c=>{ const cb=A.byId.get(c); g.append('line').attr('x1',x(b.endH)).attr('x2',x(cb.startH)).attr('y1',y(Y.get(c))).attr('y2',y(Y.get(c))).attr('stroke',css('--split')).attr('opacity',dim); }); }
+    const end=b.endH??b.startH;
+    const ln=g.append('line').attr('x1',x(b.startH)).attr('x2',x(end)).attr('y1',yy).attr('y2',yy).attr('stroke',col).attr('stroke-width',isSel(b.id)?5:3.2).attr('stroke-linecap','round').attr('opacity',dim);
+    if(b.status==='pending') g.append('circle').attr('cx',x(b.startH)).attr('cy',yy).attr('r',4).attr('fill','none').attr('stroke',col).attr('stroke-width',1.5).attr('opacity',dim);
+    b.runs.filter(r=>r.reason==='interrupted').forEach(r=>g.append('line').attr('x1',x(r.toH)).attr('x2',x(r.toH)).attr('y1',yy-5).attr('y2',yy+5).attr('stroke',css('--intr')).attr('stroke-width',2).attr('opacity',dim));
+    if(!b.children.length) g.append('text').attr('x',x(end)+6).attr('y',yy+3.5).attr('font-size',10).attr('opacity',dim).text(`${short(b.id)}${b.status==='pending'?' queued':'  '+end}`);
+    g.append('rect').attr('x',x(b.startH)-3).attr('y',yy-rowH/2).attr('width',Math.max(8,x(end)-x(b.startH)+6)).attr('height',rowH).attr('fill','transparent').style('cursor','pointer')
+     .on('mousemove',ev=>showTip(ev,branchTip(b))).on('mouseleave',hideTip).on('click',()=>select(b.id));
+  }
+  legend('lg-tree',[[css('--exh'),'Exhausted, no completion'],[css('--split'),'Hit memory cap and split'],[css('--intr'),'Interruption point'],['transparent','Not started yet',`border:1.5px solid ${css('--pend')};border-radius:50%`]]);
+}
+
+function timeAxis(svg,TS,H,m,W,fmt){
+  const tv=TS.ticks(W/110), f=d3.utcFormat(fmt||(W<600?'%d %Hh':'%b %d %H:%M'));
+  axisGrid(svg.append('g').attr('transform',`translate(0,${H-m.b})`), d3.axisBottom(TS.x).tickValues(tv), H-m.b-m.t);
+  svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(TS.x).tickValues(tv).tickFormat(d=>f(new Date(d))));
+  const g=svg.append('g');
+  for(const [p0,p1,a,b] of TS.breaks){
+    g.append('rect').attr('x',p0).attr('width',p1-p0).attr('y',m.t).attr('height',H-m.b-m.t).attr('fill',css('--grid')).attr('opacity',.9)
+      .on('mousemove',ev=>showTip(ev,`<b>${fmtDur(b-a)} collapsed</b><br>No logged activity once interruption and pause time is hidden<br>${fmtT(new Date(a))} → ${fmtT(new Date(b))}`)).on('mouseleave',hideTip);
+    g.append('text').attr('x',(p0+p1)/2).attr('y',H-m.b+4).attr('text-anchor','middle').attr('dominant-baseline','hanging').attr('font-size',12).text('≈');
+  }
+}
+function hiddenNote(el,n,what){ if(HIDE&&n) d3.select(el).append('div').style('font-size','12.5px').style('color','var(--muted)').style('margin-top','4px').text(`${n} ${what} hidden by the interruption filter.`); }
+function drawActivity(){
+  const el=document.getElementById('activity'); el.innerHTML='';
+  const W=width(el), m={t:14,r:36,b:28,l:74}, lanes=['Extend','Partition'], lh=34, H=m.t+m.b+lanes.length*lh+18;
+  const TS=makeTime(m.l,W-m.r), x=TS.x;
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  const defs=svg.append('defs'); const pat=defs.append('pattern').attr('id','hatch').attr('width',5).attr('height',5).attr('patternUnits','userSpaceOnUse').attr('patternTransform','rotate(45)');
+  pat.append('rect').attr('width',5).attr('height',5).attr('fill',css('--exh')).attr('opacity',.35); pat.append('line').attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',5).attr('stroke',css('--exh')).attr('stroke-width',2.5);
+  timeAxis(svg,TS,H,m,W);
+  lanes.forEach((l,i)=>svg.append('text').attr('x',m.l-8).attr('y',m.t+i*lh+lh/2+4).attr('text-anchor','end').attr('font-size',12).text(l));
+  const colFor=a=> a.lane==='Partition' ? (a.reason.includes('paused')?css('--base'):css('--part')) : statusColor(a.reason);
+  svg.append('g').selectAll('rect').data(actView()).join('rect')
+    .attr('x',a=>x(a.start)).attr('width',a=>Math.max(1.5,x(a.end)-x(a.start)-0.6))
+    .attr('y',a=>m.t+lanes.indexOf(a.lane)*lh+5).attr('height',lh-10).attr('rx',2)
+    .attr('fill',a=> a.lane==='Extend' && !a.startKnown ? 'url(#hatch)' : colFor(a))
+    .attr('opacity',a=> selected && !inSelTree(a.branch) ? .2 : 1)
+    .attr('class',a=>isSel(a.branch)?'hl':null).style('cursor','pointer')
+    .on('mousemove',(ev,a)=>showTip(ev,`<b>${a.lane==='Partition'?'Building '+short(a.partition):short(a.branch)}</b><br>${a.lane==='Partition'?'from '+short(a.branch):a.reason}${a.startKnown===false?' (resume time not logged)':''}<br>${fmtT(new Date(a.start))} → ${fmtT(new Date(a.end))}<br>${fmtDur(a.end-a.start)}`))
+    .on('mouseleave',hideTip).on('click',(ev,a)=>select(a.branch));
+  svg.append('g').selectAll('path').data(A.pauses).join('path')
+    .attr('transform',p=>`translate(${x(p.t)},${m.t+lanes.length*lh+6})`).attr('d',d3.symbol(d3.symbolTriangle,40)()).attr('fill',css('--intr'))
+    .on('mousemove',(ev,p)=>showTip(ev,`<b>Manager paused</b><br>${short(p.branch)} during ${p.stage}<br>${fmtT(new Date(p.t))}`)).on('mouseleave',hideTip);
+  hiddenNote(el,A.activity.length-actView().length,'inflated runs or partition builds');
+  legend('lg-act',[[css('--exh'),'Extend, exhausted'],[css('--split'),'Extend, hit memory cap'],[css('--intr'),'Extend, interrupted'],[css('--part'),'Partition build'],[css('--base'),'Partition build with pause']]);
+}
+
+function drawHOT(){
+  const el=document.getElementById('hot'); el.innerHTML='';
+  const W=width(el), m={t:10,r:36,b:28,l:44}, H=340;
+  const runs=A.branches.flatMap(b=>b.runs.map(r=>({...r,b})));
+  const TS=makeTime(m.l,W-m.r), x=TS.x;
+  const y=d3.scaleLinear().domain([0,d3.max(runs,r=>r.toH)*1.05]).range([H-m.b,m.t]);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  timeAxis(svg,TS,H,m,W);
+  axisGrid(svg.append('g').attr('transform',`translate(${m.l},0)`), d3.axisLeft(y).ticks(6), -(W-m.l-m.r)); 
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6));
+  svg.append('text').attr('x',m.l+4).attr('y',m.t+4).text('height');
+  const op=r=> selected && !inSelTree(r.b.id) ? .15 : 1;
+  svg.append('g').selectAll('line').data(runs.filter(r=>r.start!=null&&(r.startKnown||!HIDE))).join('line')
+    .attr('x1',r=>x(r.start)).attr('x2',r=>x(r.end)).attr('y1',r=>y(r.fromH)).attr('y2',r=>y(r.toH))
+    .attr('stroke',r=>statusColor(r.reason)).attr('stroke-width',r=>isSel(r.b.id)?3:1.4).attr('stroke-dasharray',r=>r.startKnown?null:'3 3').attr('opacity',op);
+  svg.append('g').selectAll('circle').data(runs).join('circle')
+    .attr('cx',r=>x(r.end)).attr('cy',r=>y(r.toH)).attr('r',r=>isSel(r.b.id)?6:4).attr('fill',r=>statusColor(r.reason)).attr('opacity',op).style('cursor','pointer')
+    .on('mousemove',(ev,r)=>showTip(ev,`<b>${short(r.b.id)}</b> ${r.reason}<br>Height ${r.fromH} → ${r.toH}<br>Ended ${fmtT(new Date(r.end))}${r.start!=null?'<br>'+fmtDur(r.end-r.start)+(r.startKnown?'':' (from interruption)'):' (start not logged)'}`))
+    .on('mouseleave',hideTip).on('click',(ev,r)=>select(r.b.id));
+  hiddenNote(el,runs.filter(r=>r.start!=null&&!r.startKnown).length,'resumed-run lines');
+}
+
+function drawDepth(){
+  const el=document.getElementById('depth'); el.innerHTML='';
+  const bs=A.branches.filter(b=>b.runs.length).sort((a,b)=>firstStart(a)-firstStart(b)).concat(A.branches.filter(b=>!b.runs.length));
+  const m={t:10,r:10,b:52,l:44}; const W=Math.max(width(el), bs.length*9+m.l+m.r), H=320;
+  const x=d3.scaleBand().domain(bs.map(b=>b.id)).range([m.l,W-m.r]).padding(.18);
+  const y=d3.scaleLinear().domain([0,d3.max(bs,b=>b.endH??b.startH)*1.05]).range([H-m.b,m.t]);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  axisGrid(svg.append('g').attr('transform',`translate(${m.l},0)`), d3.axisLeft(y).ticks(6), -(W-m.l-m.r));
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6));
+  const xa=svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).tickFormat(short));
+  xa.selectAll('text').attr('transform','rotate(-65)').attr('text-anchor','end').attr('dx','-.5em').attr('dy','-.2em').attr('font-size',9);
+  svg.append('g').selectAll('rect').data(bs).join('rect')
+    .attr('x',b=>x(b.id)).attr('width',x.bandwidth()).attr('y',b=>y(b.endH??b.startH)).attr('height',b=>Math.max(2,y(b.startH)-y(b.endH??b.startH)))
+    .attr('fill',b=>statusColor(b.status)).attr('opacity',b=>selected&&!inSelTree(b.id)?.2:1).attr('class',b=>isSel(b.id)?'hl':null).style('cursor','pointer')
+    .on('mousemove',(ev,b)=>showTip(ev,branchTip(b))).on('mouseleave',hideTip).on('click',(ev,b)=>select(b.id));
+}
+
+function barChart(elId, data, val, fmt, color, tipFn, label, yLabel){
+  const el=document.getElementById(elId); el.innerHTML='';
+  const W=width(el), m={t:16,r:8,b:30,l:40}, H=240;
+  const x=d3.scaleBand().domain(data.map(d=>d.name)).range([m.l,W-m.r]).padding(.2);
+  const y=d3.scaleLinear().domain([0,d3.max(data,val)*1.12]).nice().range([H-m.b,m.t]);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  axisGrid(svg.append('g').attr('transform',`translate(${m.l},0)`), d3.axisLeft(y).ticks(5), -(W-m.l-m.r));
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5));
+  svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).tickFormat(n=>+n.split('-')[1]).tickValues(x.domain().filter((d,i)=>data.length<30||i%2===0)));
+  svg.append('text').attr('x',m.l+4).attr('y',m.t-4).text(yLabel);
+  svg.append('text').attr('x',W-m.r).attr('y',H-2).attr('text-anchor','end').text('partition #');
+  svg.append('g').selectAll('rect').data(data).join('rect').attr('x',d=>x(d.name)).attr('width',x.bandwidth()).attr('y',d=>y(val(d))).attr('height',d=>y(0)-y(val(d)))
+    .attr('fill',color).attr('opacity',d=>selected&&!inSelTree(d.parent)?.2:1).style('cursor','pointer')
+    .on('mousemove',(ev,d)=>showTip(ev,tipFn(d))).on('mouseleave',hideTip).on('click',(ev,d)=>select(d.parent));
+  if(label && x.bandwidth()>12) svg.append('g').selectAll('text').data(data).join('text').attr('x',d=>x(d.name)+x.bandwidth()/2).attr('y',d=>y(val(d))-3).attr('text-anchor','middle').attr('font-size',9).text(label);
+}
+function drawPartitions(){
+  const P0=A.partitions.filter(p=>p.reqT!=null), P=HIDE?P0.filter(p=>!p.paused):P0;
+  barChart('pbuild',P,p=>(p.matT-p.reqT)/60000,null,p=>p.paused?css('--base'):css('--part'),
+    p=>`<b>${short(p.name)}</b> from ${short(p.parent)}<br>Split at height ${p.splitH}<br>Requested ${fmtT(new Date(p.reqT))}<br>Materialized ${fmtT(new Date(p.matT))}<br>${fmtDur(p.matT-p.reqT)}${p.paused?' (includes a pause)':''}`,null,'minutes');
+  hiddenNote(document.getElementById('pbuild'),P0.length-P.length,'builds that included a pause');
+  const G0=A.partitions.filter(p=>p.gapPrev!=null), G=HIDE?G0.filter(p=>!p.gapInflated):G0;
+  barChart('pgap',G,p=>p.gapPrev/3.6e6,null,css('--split'),
+    p=>`<b>${short(p.name)}</b> from ${short(p.parent)}<br>${fmtDur(p.gapPrev)} after the previous partition<br>Split at height ${p.splitH}`,p=>p.splitH,'hours');
+  hiddenNote(document.getElementById('pgap'),G0.length-G.length,'gaps spanning a pause or interruption');
+}
+
+function drawThru(){
+  const el=document.getElementById('thru'); el.innerHTML='';
+  const runs=A.branches.flatMap(b=>b.runs.filter(r=>r.start!=null&&r.startKnown).map(r=>({...r,b,dur:(r.end-r.start)/3.6e6,gain:r.toH-r.fromH})));
+  const W=width(el), m={t:14,r:12,b:34,l:44}, H=260;
+  const x=d3.scaleLinear().domain([0,d3.max(runs,r=>r.dur)*1.05]).range([m.l,W-m.r]);
+  const y=d3.scaleLinear().domain([0,d3.max(runs,r=>r.gain)*1.08]).range([H-m.b,m.t]);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  axisGrid(svg.append('g').attr('transform',`translate(0,${H-m.b})`), d3.axisBottom(x).ticks(6), H-m.b-m.t);
+  axisGrid(svg.append('g').attr('transform',`translate(${m.l},0)`), d3.axisLeft(y).ticks(5), -(W-m.l-m.r));
+  svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).ticks(6));
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5));
+  svg.append('text').attr('x',W-m.r).attr('y',H-2).attr('text-anchor','end').text('run length (hours)');
+  svg.append('text').attr('x',m.l+4).attr('y',m.t-2).text('levels gained');
+  svg.append('g').selectAll('circle').data(runs).join('circle').attr('cx',r=>x(r.dur)).attr('cy',r=>y(r.gain)).attr('r',r=>isSel(r.b.id)?7:4.5)
+    .attr('fill',r=>statusColor(r.reason)).attr('fill-opacity',.8).attr('opacity',r=>selected&&!inSelTree(r.b.id)?.15:1).style('cursor','pointer')
+    .on('mousemove',(ev,r)=>showTip(ev,`<b>${short(r.b.id)}</b> ${r.reason}<br>+${r.gain} levels in ${fmtDur(r.end-r.start)}<br>${(r.gain/r.dur).toFixed(0)} levels/h, starting at ${r.fromH}`)).on('mouseleave',hideTip).on('click',(ev,r)=>select(r.b.id));
+}
+
+function drawCkpt(){
+  const el=document.getElementById('ckpt'); el.innerHTML='';
+  const D=A.deletions.filter(d=>d.cls!=='final stub');
+  const W=width(el), m={t:14,r:30,b:28,l:44}, H=240;
+  const TS=makeTime(m.l,W-m.r), x=TS.x;
+  const y=d3.scaleLinear().domain([0,d3.max(D,d=>d.bytes/1e9)*1.08]).range([H-m.b,m.t]);
+  const svg=d3.select(el).append('svg').attr('width',W).attr('height',H);
+  axisGrid(svg.append('g').attr('transform',`translate(${m.l},0)`), d3.axisLeft(y).ticks(5), -(W-m.l-m.r));
+  timeAxis(svg,TS,H,m,W*0.75,'%b %d');
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5));
+  svg.append('text').attr('x',m.l+4).attr('y',m.t-2).text('GB');
+  const c=d=>d.cls==='partition base'?css('--base'):css('--split');
+  svg.append('g').selectAll('circle').data(D).join('circle').attr('cx',d=>x(d.t)).attr('cy',d=>y(d.bytes/1e9)).attr('r',4).attr('fill',c).attr('fill-opacity',.85)
+    .on('mousemove',(ev,d)=>showTip(ev,`<b>${d.source}</b><br>${GB(d.bytes)}, ${d.cls}<br>Deleted ${fmtT(new Date(d.t))}`)).on('mouseleave',hideTip);
+  const stubs=A.deletions.length-D.length;
+  legend('lg-ck',[[css('--split'),'Split or resume checkpoint'],[css('--base'),'Partition base']].concat(stubs?[['transparent',`${stubs} final 480-byte stubs not shown`]]:[]));
+}
+
+function table(elId, cols, rows, key, rowId){
+  const el=document.getElementById(elId);
+  let sortK=key.k, dir=key.dir;
+  function render(){
+    const r=rows.slice().sort((a,b)=>{const va=a[sortK],vb=b[sortK]; return (va>vb?1:va<vb?-1:0)*dir;});
+    el.innerHTML=`<table><thead><tr>${cols.map(c=>`<th tabindex="0" data-k="${c.k}">${c.l}${c.k===sortK?(dir>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>${r.map(x=>`<tr data-id="${rowId?rowId(x):''}" class="${rowId&&isSel(rowId(x))?'sel':''}">${cols.map(c=>`<td>${c.f?c.f(x):x[c.k]??'–'}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    el.querySelectorAll('th').forEach(th=>{const go=()=>{const k=th.dataset.k; if(k===sortK) dir=-dir; else {sortK=k;dir=1;} render();}; th.onclick=go; th.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};});
+    if(rowId) el.querySelectorAll('tbody tr').forEach(tr=>tr.onclick=()=>select(tr.dataset.id));
+  }
+  render();
+}
+function drawTables(){
+  table('ptable',[
+    {k:'num',l:'#'},{k:'parent',l:'From branch',f:p=>short(p.parent)},{k:'splitH',l:'Split height'},
+    {k:'reqT',l:'Requested',f:p=>p.reqT?fmtT(new Date(p.reqT)):'–'},{k:'matT',l:'Materialized',f:p=>fmtT(new Date(p.matT))},
+    {k:'build',l:'Build',f:p=>fmtDur(p.build)+(p.paused?' *':'')},{k:'gapPrev',l:'Since previous',f:p=>fmtDur(p.gapPrev)+(p.gapInflated?' *':'')},
+    {k:'nDone',l:'Children run',f:p=>`${p.nDone} of ${p.children.length}`}
+  ], A.partitions.map(p=>({...p,build:p.reqT?p.matT-p.reqT:null,nDone:p.children.filter(c=>A.byId.get(c).status!=='pending').length})), {k:'num',dir:1}, p=>p.parent);
+  table('btable',[
+    {k:'id',l:'Branch',f:b=>short(b.id)},{k:'status',l:'Outcome',f:b=>`<span class="pill" style="background:${statusColor(b.status)}">${b.status}</span>`},
+    {k:'startH',l:'Start height',f:b=>b.preLog?'before log':b.startH},{k:'endH',l:'End height'},{k:'gain',l:'Levels',f:b=>b.gain??'–'},
+    {k:'rt',l:'Run time',f:b=>b.rt?fmtDur(b.rt):'–'},{k:'rate',l:'Levels/h',f:b=>b.rate?b.rate.toFixed(0):'–'},
+    {k:'fs',l:'First started',f:b=>b.preLog?'before log':isFinite(b.fs)?fmtT(new Date(b.fs)):'–'},{k:'le',l:'Ended',f:b=>b.le?fmtT(new Date(b.le)):'–'}
+  ], A.branches.map(b=>{const rt=runtime(b),gain=b.endH!=null&&!b.preLog?b.endH-b.startH:null; return {...b,gain,rt,rate:rt&&gain?gain/(rt/3.6e6):null,fs:firstStart(b),le:b.runs.length?b.runs[b.runs.length-1].end:null};}), {k:'fs',dir:1}, b=>b.id);
+}
+
+function drawAll(){ if(!A) return; A.breaks=computeBreaks(); drawStats(); drawTree(); drawActivity(); drawHOT(); drawDepth(); drawPartitions(); drawThru(); drawCkpt(); drawTables(); }
+function load(events){ try{ A=analyze(events); selected=null; document.getElementById('err').textContent=''; drawAll(); }catch(e){ document.getElementById('err').textContent='That file could not be read as a solver log: '+e.message; } }
+document.getElementById('hide').addEventListener('change',e=>{HIDE=e.target.checked; document.getElementById('gaph').disabled=!HIDE; drawAll();});
+document.getElementById('gaph').addEventListener('change',e=>{const v=parseFloat(e.target.value); if(v>0){GAPH=v; drawAll();}});
+document.getElementById('file').addEventListener('change',e=>{const f=e.target.files[0]; if(!f) return; f.text().then(t=>{const ev=parseJSONL(t); if(!ev.length){document.getElementById('err').textContent='No JSON lines found in that file.';return;} load(ev);});});
+let rt; addEventListener('resize',()=>{clearTimeout(rt); rt=setTimeout(drawAll,150);});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',drawAll);
+load(parseCompact(document.getElementById('data').textContent));
+
+</script>
+</body>
+</html>

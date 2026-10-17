@@ -1,0 +1,24 @@
+time t-0:
+.o.......
+oo.oo...o
+oo.......
+....o.o..
+..ooooo..
+..oo.oo.o
+.o.oo...o
+........o
+ooo......
+
+time t-1:
+.ooooooo...
+..o.o....o.
+o...oo....o
+..oo...o..o
+..oo.......
+oo..oooo..o
+oo......o..
+.oo.o.....o
+o.o.oo.o..o
+.o.oooo...o
+o.....oooo.
+

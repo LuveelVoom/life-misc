@@ -1,0 +1,3 @@
+#C Real period-2 agar containing the family-1 band, on a 6x14 torus; density 10/21. Load in Golly (torus rule).
+x = 6, y = 14, rule = B3/S23:T6,14
+3o2bo$2o$b2ob2o$3b2o$2b4o$2o$2o$2b4o$3b2o$2ob2o$2o$3o2bo$3b2o$3b2o!
