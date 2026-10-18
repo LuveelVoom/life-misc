@@ -1,0 +1,93 @@
+## beehive: crawler or fuse (18 objects left behind); period 15, passes 3 object(s) per period, moves (0,-12) = 12c/15; objects every 4 cells
+x = 7, y = 60, rule = B3/S23-a5
+4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$bo$b2o$o2bo$b2o$bo!
+## beehive: fuse; period 20, passes 4 object(s) per period, moves (0,-16) = 16c/20; objects every 4 cells
+x = 7, y = 60, rule = B3/S23-a5
+4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$2bo$bobo$2ob2o$2bo!
+## beehive: fuse; period 15, passes 3 object(s) per period, moves (0,-12) = 12c/15; objects every 4 cells
+x = 7, y = 63, rule = B3/S23-a5
+4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$$4b2o$3bo2bo$4b2o$2bo$bobo$2ob2o$2bo!
+## beehive: fuse; period 40, passes 8 object(s) per period, moves (0,-32) = 32c/40; objects every 4 cells
+x = 9, y = 62, rule = B3/S23-a5
+6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$6b2o$5bo2bo$6b2o$$$$$$$2bo$b2o$o2bo$b2o$2bo!
+## tub: fuse; period 5, passes 1 object(s) per period, moves (0,-4) = 4c/5; objects every 4 cells
+x = 7, y = 62, rule = B3/S23-a5
+5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$5bo$4bobo$5bo$$$2bo$b2o$o2bo$b2o$2bo!
+## tub: crawler or fuse (1 objects left behind); period 5, passes 1 object(s) per period, moves (0,-4) = 4c/5; objects every 4 cells
+x = 9, y = 60, rule = B3/S23-a5
+7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$7bo$6bobo$7bo$$$$$$2bo$2ob2o$bobo$2bo!
+## loaf: fuse; period 6, passes 1 object(s) per period, moves (0,-6) = 6c/6; objects every 6 cells
+x = 10, y = 91, rule = B3/S23-a5
+8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$2bo4b2o$2ob2o$bobo$2bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 10, y = 92, rule = B3/S23-a5
+8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$2bo$2ob2o$bobo$2bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 8, y = 91, rule = B3/S23-a5
+6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$2bo2b2o$2ob2o$bobo$2bo!
+## loaf: crawler or fuse (1 objects left behind); period 24, passes 4 object(s) per period, moves (0,-24) = 24c/24; objects every 6 cells
+x = 7, y = 92, rule = B3/S23-a5
+5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$2bob2o$b2o$o2bo$b2o$2bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 7, y = 92, rule = B3/S23-a5
+5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$2bo$bobo$2ob2o$2bo!
+## loaf: fuse; period 24, passes 4 object(s) per period, moves (0,-24) = 24c/24; objects every 6 cells
+x = 8, y = 92, rule = B3/S23-a5
+6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$2bo$2ob2o$bobo$2bo!
+## loaf: fuse; period 24, passes 4 object(s) per period, moves (0,-24) = 24c/24; objects every 6 cells
+x = 10, y = 90, rule = B3/S23-a5
+8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$8bo$7bobo$6bo2bo$7b2o$$$$$2bo$2ob2o$bobo$2bo!
+## loaf: fuse; period 24, passes 4 object(s) per period, moves (0,-24) = 24c/24; objects every 6 cells
+x = 7, y = 88, rule = B3/S23-a5
+5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$$5bo$4bobo$3bo2bo$4b2o$$bo$b2o$o2bo$b2o$bo!
+## loaf: fuse; period 24, passes 4 object(s) per period, moves (0,-24) = 24c/24; objects every 6 cells
+x = 8, y = 91, rule = B3/S23-a5
+6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$6bo$5bobo$4bo2bo$5b2o$$$$$$2bo$2ob2o$bobo$2bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 6, y = 90, rule = B3/S23-a5
+4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$4bo$3bobo$2bo2bo$3b2o$$$$2bo$b2o$o2bo$b2o$2bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 7, y = 87, rule = B3/S23-a5
+2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$$$$$$4bo$2b2ob2o$3bobo$4bo!
+## loaf: fuse; period 12, passes 2 object(s) per period, moves (0,-12) = 12c/12; objects every 6 cells
+x = 5, y = 91, rule = B3/S23-a5
+2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$2bo$bobo$o2bo$b2o$$$$$2bo$2b2o$bo2bo$2b2o$2bo!
+## pond: fuse; period 5, passes 1 object(s) per period, moves (0,-5) = 5c/5; objects every 5 cells
+x = 10, y = 77, rule = B3/S23-a5
+7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$2bo4b2o$2ob2o$bobo$2bo!
+## pond: crawler or fuse (1 objects left behind); period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 10, y = 74, rule = B3/S23-a5
+7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$$7b2o$6bo2bo$6bo2bo$7b2o$2bo$b2o$o2bo$b2o$2bo!
+## pond: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 7, y = 77, rule = B3/S23-a5
+4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$4b2o$$4b2o$3bo2bo$3bo2bo$2bob2o$2ob2o$bobo$2bo!
+## pond: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 8, y = 77, rule = B3/S23-a5
+5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$2bo2b2o$2ob2o$bobo$2bo!
+## pond: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 8, y = 76, rule = B3/S23-a5
+5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$5b2o$4bo2bo$4bo2bo$5b2o$$$$2bo$2ob2o$bobo$2bo!
+## pond: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 9, y = 78, rule = B3/S23-a5
+6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$2bo$2ob2o$bobo$2bo!
+## pond: fuse; period 40, passes 8 object(s) per period, moves (0,-40) = 40c/40; objects every 5 cells
+x = 12, y = 75, rule = B3/S23-a5
+9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$9b2o$8bo2bo$8bo2bo$9b2o$$$2bo$2ob2o$bobo$2bo!
+## pond: crawler or fuse (1 objects left behind); period 20, passes 4 object(s) per period, moves (0,-20) = 20c/20; objects every 5 cells
+x = 9, y = 78, rule = B3/S23-a5
+6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$bo4b2o$b2o$o2bo$b2o$bo!
+## pond: fuse; period 40, passes 8 object(s) per period, moves (0,-40) = 40c/40; objects every 5 cells
+x = 9, y = 74, rule = B3/S23-a5
+6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$6b2o$5bo2bo$5bo2bo$6b2o$$2bo$2ob2o$bobo$2bo!
+## pond: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 6, y = 78, rule = B3/S23-a5
+3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$3b2o$2bo2bo$2bo2bo$3b2o$$$$$$2bo$2ob2o$bobo$2bo!
+## ship: fuse; period 10, passes 2 object(s) per period, moves (0,-10) = 10c/10; objects every 5 cells
+x = 9, y = 77, rule = B3/S23-a5
+6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$$$6b2o$6bobo$7b2o$2bo$2ob2o$bobo$2bo!
+## ship: fuse; period 20, passes 4 object(s) per period, moves (0,-20) = 20c/20; objects every 5 cells
+x = 6, y = 74, rule = B3/S23-a5
+3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$$3b2o$3bobo$4b2o$$2bo$b2o$o2bo$b2o$2bo!
+## ship: fuse; period 20, passes 4 object(s) per period, moves (0,-20) = 20c/20; objects every 5 cells
+x = 5, y = 77, rule = B3/S23-a5
+2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$$$2b2o$2bobo$3b2o$2bo$2ob2o$bobo$2bo!
