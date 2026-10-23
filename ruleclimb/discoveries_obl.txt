@@ -1,0 +1,940 @@
+# NEW BEHAVIOUR c/4 diagonal ship (p4), 3 cells, 1350 in 600 soups (start)
+# first seen in soup seed 15728000783777139521
+x = 3, y = 2, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4ejywz5cajqr6-an7e8
+2bo$obo!
+
+# NEW BEHAVIOUR p10 oscillator, 5 cells, 278 in 600 soups (start)
+# first seen in soup seed 39696689981712816
+x = 3, y = 3, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4ejywz5cajqr6-an7e8
+2o$2bo$2o!
+
+# NEW BEHAVIOUR p6 oscillator, 4 cells, 3 in 600 soups (start)
+# first seen in soup seed 4229447429023353442
+x = 7, y = 1, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4ejywz5cajqr6-an7e8
+obobobo!
+
+# NEW BEHAVIOUR p16 oscillator, 6 cells, 5 in 600 soups (explore it 2, parent [+B6i +B7e ])
+# first seen in soup seed 16551525428819068158
+x = 3, y = 6, rule = B2ce3akqy4ejytw5cknq6aik7e8/S12in3ajq4ejywz5cajqr6-an7e8
+bo$obo3$obo$bo!
+
+# new shape p6 oscillator, 4 cells, 2 in 600 soups (explore it 3, parent [-B5c ])
+# first seen in soup seed 8995413844439850507
+x = 4, y = 4, rule = B2ce3akqy4ejytw5knq6aik7e8/S12in3ajq4ejywz5cajqr6-an7e8
+bo$o$3bo$2bo!
+
+# NEW BEHAVIOUR p28 oscillator, 6 cells, 1 in 600 soups (explore it 3, parent [-B5c ])
+# first seen in soup seed 13613121263816698625
+x = 4, y = 6, rule = B2ce3akqy4ejytw5knq6aik7e8/S12in3ajq4ejywz5cajqr6-an7e8
+o$2o$3bo$2bo2$2bo!
+
+# NEW BEHAVIOUR p4 oscillator, 8 cells, 1 in 600 soups (explore it 10, parent [-S5r -S4e +S5y ])
+# first seen in soup seed 7929522850277714210
+x = 5, y = 5, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jywz5cajqy6-an7e8
+bobo$o3bo2$o3bo$bobo!
+
+# NEW BEHAVIOUR p14 oscillator, 6 cells, 2 in 600 soups (explore it 13, parent [-B5n ])
+# first seen in soup seed 1403446266871741748
+x = 1, y = 11, rule = B2ce3akqy4ejytw5kq6aik7e8/S12in3ajq4cejywz5cajqr6-an7e8
+o2$o2$o2$o2$o2$o!
+
+# new shape p4 oscillator, 8 cells, 1 in 600 soups (explore it 13, parent [-B5n ])
+# first seen in soup seed 7846397130077324476
+x = 9, y = 5, rule = B2ce3akqy4ejytw5kq6aik7e8/S12in3ajq4cejywz5cajqr6-an7e8
+2bobobo2$o7bo2$2bobobo!
+
+# NEW BEHAVIOUR p30 oscillator, 11 cells, 1 in 600 soups (explore it 55, parent [+B4z +B6n ])
+# first seen in soup seed 10338922689642218788
+x = 16, y = 4, rule = B2ce3akqy4ejytwz5cknq6akn8/S12in3ajq4ejywz5cajqr6-an7e8
+4bobo2$4bobo2bobobobo$2o3bo!
+
+# new shape p4 oscillator, 12 cells, 1 in 600 soups (explore it 57, parent [+S4c ])
+# first seen in soup seed 16317659173988167694
+x = 5, y = 6, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4cjywz5cajqy6-an7e8
+5o2$2bo$bobo$bobo$o3bo!
+
+# new shape p10 oscillator, 13 cells, 1 in 600 soups (explore it 75, parent [+S7c ])
+# first seen in soup seed 15066519029131526477
+x = 12, y = 12, rule = B2ce3akqy4ejytw5ckq6ak8/S12in3ajq4ejywz5-en6-n7
+o$o$3bo2$3bo5bobo$o$o3$5bobo$5bobo$6bo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 75, parent [+S7c ])
+# first seen in soup seed 14833017857402666549
+x = 3, y = 9, rule = B2ce3akqy4ejytw5ckq6ak8/S12in3ajq4ejywz5-en6-n7
+obo2$bo2$bo2$bo2$bo!
+
+# NEW BEHAVIOUR c/3 diagonal ship (p3), 5 cells, 4 in 600 soups (explore it 76, parent [+B4y +S7c +S4c ])
+# first seen in soup seed 1072493620722360300
+x = 4, y = 4, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejywz5-eikn6-n78
+bo$o2bo$2bo$bo!
+
+# new shape p30 oscillator, 9 cells, 1 in 600 soups (explore it 80, parent [-S6e ])
+# first seen in soup seed 11315956059635132352
+x = 10, y = 9, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4cjywz5cajqy6cik7e8
+obo2$obo$bo5$3bobobobo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 83, parent [+S6n ])
+# first seen in soup seed 2314519489296766275
+x = 7, y = 7, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jyw5cajqy6-a7e8
+obo3bo2$6bo2$6bo2$6bo!
+
+# NEW BEHAVIOUR 3c/17 orthogonal ship (p17), 5 cells, 34 in 600 soups (explore it 85, parent [+B7e ])
+# first seen in soup seed 17840421363737643619
+x = 3, y = 6, rule = B2ce3akqy4ejtw5cknq6ak7e8/S12in3ajq4jywz5-einr6-an7e8
+obo$bo4$obo!
+
+# NEW BEHAVIOUR p84 oscillator, 7 cells, 1 in 600 soups (explore it 85, parent [+B7e ])
+# first seen in soup seed 1569198320255850217
+x = 4, y = 7, rule = B2ce3akqy4ejtw5cknq6ak7e8/S12in3ajq4jywz5-einr6-an7e8
+o2$b2o$bo$o$2bo$3bo!
+
+# NEW BEHAVIOUR c/2 orthogonal ship (p4), 9 cells, 1 in 600 soups (explore it 89, parent [-B4y -S4z ])
+# first seen in soup seed 2352269336887839533
+x = 6, y = 5, rule = B2ce3akqy4ejtw5cknq6aik8/S12in3ajq4cejyw5-eikn6-n78
+bo$o3bo$2o3bo$o3bo$bo!
+
+# new shape p6 oscillator, 8 cells, 2 in 600 soups (explore it 92, parent [+B5n +S5y ])
+# first seen in soup seed 12513799723235237141
+x = 11, y = 3, rule = B2ce3akqy4ejytw5knq6aik7e8/S12in3ajq4cejywz5-eikn6-n7e8
+o9bo$2bobobobo$o9bo!
+
+# NEW BEHAVIOUR p17 oscillator, 6 cells, 18 in 600 soups (explore it 93, parent [-S4w +B5n -S6i ])
+# first seen in soup seed 1072493620722360300
+x = 1, y = 12, rule = B2ce3akqy4ejytw5knq6aik7e8/S12in3ajq4cejyz5cajqr6-in7e8
+o3$o2$o$o2$o3$o!
+
+# NEW BEHAVIOUR p9 oscillator, 8 cells, 1 in 600 soups (explore it 97, parent [+S5i -S4w +B4y ])
+# first seen in soup seed 15266797213773076958
+x = 4, y = 4, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejy5-ekn6-en78
+obo$2b2o$2o$bobo!
+
+# new shape p16 oscillator, 10 cells, 1 in 600 soups (explore it 108, parent [+S4w +B6n ])
+# first seen in soup seed 6867617017667381861
+x = 8, y = 18, rule = B2ce3akqy4ejytw5knq6-ce7e8/S12in3ajq4cejywz5cajqr6-in7e8
+obo5$6bo$5bobo3$5bobo$6bo7$3b2o!
+
+# new shape p28 oscillator, 8 cells, 1 in 600 soups (explore it 122, parent [+S5r ])
+# first seen in soup seed 16911879717703858232
+x = 5, y = 7, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jywz5-eikn6-an7e8
+bo$2bo$bo$o3bo$3bo$2bo$3bo!
+
+# new shape p4 oscillator, 10 cells, 1 in 600 soups (explore it 122, parent [+S5r ])
+# first seen in soup seed 16851028985452293972
+x = 8, y = 7, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jywz5-eikn6-an7e8
+4bobo$3bo3bo2$3bo3bo$4bobo2$2o!
+
+# new shape p16 oscillator, 8 cells, 1 in 600 soups (explore it 125, parent [+B4z +S6n ])
+# first seen in soup seed 3716233700104730567
+x = 12, y = 6, rule = B2ce3akqy4ejytwz5knq6-ce7e8/S12in3ajq4cejywz5cajqr6-i7e8
+7bo2bo$6bo4bo$7bo2bo3$2o!
+
+# new shape p14 oscillator, 3 cells, 307 in 600 soups (explore it 134, parent [+B6c ])
+# first seen in soup seed 1853118107827562084
+x = 3, y = 2, rule = B2ce3akqy4ejytw5cknq6-en8/S12in3ajq4cejywz5-eikn6-n78
+bo$obo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 136, parent [+B4z -S6a +S6n ])
+# first seen in soup seed 12289909627786905316
+x = 4, y = 9, rule = B2ce3akqy4ejytwz5cknq6aik8/S12in3ajq4cejyw5-eikn6-a78
+3bo2$3bo2$3bo2$3bo2$obo!
+
+# NEW BEHAVIOUR p8 oscillator, 8 cells, 2 in 600 soups (explore it 139, parent [+S4z -S6a +S5e ])
+# first seen in soup seed 16236486657822596376
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejyz5-kn6cik78
+o2bo$4bo$5bo$o$bo$2bo2bo!
+
+# NEW BEHAVIOUR c/2 orthogonal ship (p6), 10 cells, 1 in 600 soups (explore it 154, parent [+B6c ])
+# first seen in soup seed 12812043926085013531
+x = 9, y = 8, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cejywz5cajqr6-an7e8
+o7bo$3bobo$4bo$3bobo3$3bobo$4bo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 171, parent [-S5r -B6i ])
+# first seen in soup seed 12790059146349023142
+x = 5, y = 9, rule = B2ce3akqy4ejytw5knq6ak7e8/S12in3ajq4cejywz5cajqy6-n7e8
+o2$o3bo2$4bo2$4bo2$4bo!
+
+# NEW BEHAVIOUR p22 oscillator, 6 cells, 7 in 600 soups (explore it 177, parent [-S6a +B6n ])
+# first seen in soup seed 4846741910615610885
+x = 6, y = 6, rule = B2ce3akqy4ejtw5cknq6-e8/S12in3ajq4cjywz5-eikn6-an78
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR p20 oscillator, 6 cells, 3 in 600 soups (explore it 186, parent [+S5k -S7c ])
+# first seen in soup seed 12146176229880754967
+x = 4, y = 4, rule = B2ce3akqy4ejtw5cknq6-e8/S12in3ajq4cjywz5-ein6-an7e8
+bo$obo$bobo$2bo!
+
+# NEW BEHAVIOUR p172 oscillator, 9 cells, 1 in 600 soups (explore it 198, parent [-S4z +S4e +S7c ])
+# first seen in soup seed 13501185216323548824
+x = 7, y = 6, rule = B2ce3akqy4ejtw5cknq6ak7e8/S12in3ajq4ejyw5-einr6-an78
+3bo2bo$obo2$4bobo$5b2o$4bo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 200, parent [-S6e +B6i -S7e ])
+# first seen in soup seed 9844354735416451691
+x = 7, y = 7, rule = B2ce3akqy4ejytwz5ckq6aik/S12in3ajq4ejywz5-einy6cik8
+obobobo6$4bobo!
+
+# NEW BEHAVIOUR c/19 orthogonal ship (p19), 5 cells, 1 in 600 soups (explore it 203, parent [+B4z +B6n -S7e ])
+# first seen in soup seed 13877351911094177582
+x = 5, y = 3, rule = B2ce3akqy4ejytwz5cknq6-ce7e8/S12in3ajq4cejywz5cajqr6cik8
+o3bo$bo$o3bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 211, parent [+B4y +B4z ])
+# first seen in soup seed 15048972720245253619
+x = 12, y = 7, rule = B2ce3akqy4ejytwz5cknq6aik8/S12in3ajq4cejyw5-eikn6-n78
+5bo2$5bo$9bobo$5bo2$2o3bo!
+
+# NEW BEHAVIOUR p24 oscillator, 10 cells, 1 in 600 soups (explore it 220, parent [-S6a ])
+# first seen in soup seed 12289909627786905316
+x = 8, y = 4, rule = B2ce3akqy4ejytw5cknq6-en8/S12in3ajq4cejywz5-eikn6-an78
+bo4bo$obo2bobo2$obo2bobo!
+
+# new shape p14 oscillator, 10 cells, 1 in 600 soups (explore it 238, parent [+S5i -B5n +S5e ])
+# first seen in soup seed 16851028985452293972
+x = 12, y = 6, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjywz5-n6-an7e8
+11bo$bobo6bo$bobo7bo$o3bo2$2bo!
+
+# new shape p16 oscillator, 12 cells, 1 in 600 soups (explore it 238, parent [+S5i -B5n +S5e ])
+# first seen in soup seed 9339497153817988081
+x = 7, y = 3, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjywz5-n6-an7e8
+ob3obo$bo3bo$ob3obo!
+
+# NEW BEHAVIOUR p42 oscillator, 11 cells, 1 in 600 soups (explore it 238, parent [+S5i -B5n +S5e ])
+# first seen in soup seed 11526414620007030777
+x = 7, y = 13, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjywz5-n6-an7e8
+o5bo2$o2bo2bo2$3bo2$3bo2$3bo3$2bobo$3bo!
+
+# new shape p10 oscillator, 11 cells, 1 in 600 soups (explore it 247, parent [+S6n ])
+# first seen in soup seed 15562348135240277435
+x = 12, y = 9, rule = B2ce3akqy4ejtwz5ckq6ak/S12in3ajq4ejywz5cajqr6-a7e8
+o5bo$2bobo$o5bo4$9bobo$9bobo$10bo!
+
+# NEW BEHAVIOUR p34 oscillator, 6 cells, 1 in 600 soups (explore it 260, parent [+S5r +B6n -S8 ])
+# first seen in soup seed 5730515088161314332
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6akn8/S12in3ajq4jywz5-eikn6-n7e
+4bo$3bobo2$bo$o$bo!
+
+# NEW BEHAVIOUR p29 oscillator, 6 cells, 4 in 600 soups (explore it 264, parent [+S5k ])
+# first seen in soup seed 14978122130246260202
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejyz5-einy6-i7e8
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR (3,2)c/19 oblique ship, 12 cells, 1 in 600 soups (explore it 266, parent [+S5k ])
+# first seen in soup seed 593746010381885056
+x = 10, y = 10, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4jyw5-einr6-a7e8
+7bo$8bo$7bobo$8bo2$bo$bo$2bo$2o$2o!
+
+# NEW BEHAVIOUR p27 oscillator, 4 cells, 7 in 600 soups (explore it 273, parent [-S4e +S5y -S6c ])
+# first seen in soup seed 13069746981501029605
+x = 4, y = 3, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cjyw5-eikn6eik7e
+o2bo2$o2bo!
+
+# new shape p6 oscillator, 8 cells, 11 in 600 soups (explore it 283, parent [+S5y ])
+# first seen in soup seed 9359086322150647696
+x = 11, y = 7, rule = B2ce3akqy4ejytw5kq6-en7e8/S12in3ajq4cejywz5-eikn6-an78
+5bo2$5bo2$5bo$o9bo$o4bo4bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 286, parent [-S5r -B5c ])
+# first seen in soup seed 14890034216576608409
+x = 8, y = 9, rule = B2ce3akqy4ejytw5knq6ak8/S12in3ajq4jywz5cajqy6-an7e8
+6bo2$6bo$obo$6bo2$6bo2$5bobo!
+
+# NEW BEHAVIOUR p7 oscillator, 8 cells, 3 in 600 soups (explore it 290, parent [+S6a -B8 ])
+# first seen in soup seed 17060724559594862477
+x = 4, y = 4, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejywz5cajqr6-en8
+obo$2b2o$2o$bobo!
+
+# new shape p16 oscillator, 8 cells, 1 in 600 soups (explore it 290, parent [+S6a -B8 ])
+# first seen in soup seed 4704697193992444531
+x = 4, y = 14, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejywz5cajqr6-en8
+3bo$3bo7$bo$obo3$obo$bo!
+
+# NEW BEHAVIOUR c/26 orthogonal ship (p104), 6 cells, 1 in 600 soups (explore it 292, parent [+S7c ])
+# first seen in soup seed 1035814398609395654
+x = 4, y = 9, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cejywz5cajqr6-an78
+3bo$3bo4$obo3$obo!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 293, parent [-S5i ])
+# first seen in soup seed 15818027356954713408
+x = 9, y = 13, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejyz5-ikn6cik78
+4bo2$4bo2$obo3bobo2$4bo2$4bo2$4bo2$4bo!
+
+# new shape p20 oscillator, 6 cells, 10 in 600 soups (explore it 301, parent [-S5i +B4z -S4z ])
+# first seen in soup seed 17929929566189970849
+x = 5, y = 5, rule = B2ce3akqy4ejytwz5ckq6ak8/S12in3ajq4ejyw5-ein6-n7e
+2bobo$bo$bo$3bo$o!
+
+# NEW BEHAVIOUR p12 oscillator, 12 cells, 2 in 600 soups (explore it 313, parent [+B6n ])
+# first seen in soup seed 12744909958692343651
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-ce8/S12in3ajq4cejywz5-eikn6-n78
+obobo$5bo$obo$3bobo$o$bobobo!
+
+# new shape p12 oscillator, 14 cells, 1 in 600 soups (explore it 313, parent [+B6n ])
+# first seen in soup seed 13956901287868833766
+x = 9, y = 9, rule = B2ce3akqy4ejytw5cknq6-ce8/S12in3ajq4cejywz5-eikn6-n78
+6bobo3$obobo$5bo$obo$3bobo$o$bobobo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 315, parent [+S5e ])
+# first seen in soup seed 9254447660898308409
+x = 7, y = 9, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cejywz5-ikny6-an78
+obobobo4$3bo2$3bo2$2bobo!
+
+# NEW BEHAVIOUR p148 oscillator, 5 cells, 1 in 600 soups (explore it 318, parent [-S6i ])
+# first seen in soup seed 1112039610784781834
+x = 3, y = 5, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jywz5cajq6-in7e8
+bo$obo3$2o!
+
+# NEW BEHAVIOUR 3c/19 diagonal ship (p38), 6 cells, 2 in 600 soups (explore it 322, parent [-B5c ])
+# first seen in soup seed 16317659173988167694
+x = 6, y = 5, rule = B2ce3akqy4ejytw5knq6aik8/S12in3ajq4jyw5-einr6-a7e8
+bo$2bo$bo3bo$o$2bo!
+
+# NEW BEHAVIOUR c/40 diagonal ship (p40), 6 cells, 2 in 600 soups (explore it 322, parent [-B5c ])
+# first seen in soup seed 11697873133884324491
+x = 4, y = 4, rule = B2ce3akqy4ejytw5knq6aik8/S12in3ajq4jyw5-einr6-a7e8
+3bo$bobo$bo$obo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 323, parent [+S4z -S6i ])
+# first seen in soup seed 15860596671139116853
+x = 8, y = 5, rule = B2ce3akqy4ejtw5cknq6ak7e8/S12in3ajq4ejyz5-einr6cek7c8
+bobobobo4$obo!
+
+# new shape p24 oscillator, 6 cells, 2 in 600 soups (explore it 333, parent [-S4z ])
+# first seen in soup seed 16553786770047084464
+x = 4, y = 4, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjyw5-n6-an7e8
+2bo$bobo$obo$bo!
+
+# new shape p14 oscillator, 8 cells, 1 in 600 soups (explore it 333, parent [-S4z ])
+# first seen in soup seed 11820805565068911946
+x = 11, y = 9, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjyw5-n6-an7e8
+10bo$9bo$10bo3$bo$obo2$obo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 341, parent [-S5y ])
+# first seen in soup seed 6209980650944432932
+x = 9, y = 5, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejywz5-einy6aik8
+2o5b2o4$bobobobo!
+
+# NEW BEHAVIOUR 2c/15 diagonal ship (p15), 8 cells, 1 in 600 soups (explore it 344, parent [-B5c ])
+# first seen in soup seed 4935173068101142531
+x = 6, y = 6, rule = B2ce3akqy4ejytw5knq6ak8/S12in3ajq4jywz5cajq6-in7e8
+2o2$o$o$5bo$2b2obo!
+
+# new shape p6 oscillator, 12 cells, 2 in 600 soups (explore it 348, parent [+B5n ])
+# first seen in soup seed 7774658926939941383
+x = 9, y = 6, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cejywz5-eikn6-an7c8
+2o5b2o$2o5b2o4$bobobobo!
+
+# NEW BEHAVIOUR p32 oscillator, 8 cells, 1 in 600 soups (explore it 368, parent [-S7e ])
+# first seen in soup seed 1544092983619832592
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5knq6-ce7e/S12in3ajq4cejy5-einy6-i8
+bo$o$2b2o$2b2o$5bo$4bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 371, parent [+S5y +B6n -S4c ])
+# first seen in soup seed 9759404650560076231
+x = 7, y = 12, rule = B2ce3akqy4ejytw5kq6-e7e8/S12in3ajq4ejywz5-eikn6-an78
+2o5$obobobo5$4bo$4bo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 377, parent [+S4e ])
+# first seen in soup seed 5495095677595369095
+x = 7, y = 7, rule = B2ce3akqy4ejytw5knq6aik8/S12in3ajq4ejyw5-einr6-a7e8
+obobobo6$bobo!
+
+# NEW BEHAVIOUR c/5 orthogonal ship (p20), 4 cells, 389 in 600 soups (explore it 388, parent [+B5c ])
+# first seen in soup seed 3138507074009746009
+x = 3, y = 4, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejywz5cajqr6-an78
+bo2$obo$bo!
+
+# new shape p4 oscillator, 9 cells, 2 in 600 soups (explore it 394, parent [+B4z ])
+# first seen in soup seed 6343037568949717474
+x = 5, y = 3, rule = B2ce3akqy4ejytwz5cknq6-en7e8/S12in3ajq4cejywz5cajqr6-an78
+obobo$obobo$obobo!
+
+# new shape p28 oscillator, 4 cells, 9 in 600 soups (explore it 409, parent [+S5y ])
+# first seen in soup seed 14076530458327266244
+x = 3, y = 2, rule = B2ce3akqy4ejytwz5ckq6-en8/S12in3ajq4ejywz5-ein6-an7e8
+obo$obo!
+
+# new shape p16 oscillator, 6 cells, 3 in 600 soups (explore it 417, parent [+S5i ])
+# first seen in soup seed 9693847697171022508
+x = 8, y = 3, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejywz5-ekny6-an78
+bo4bo$o6bo$bo4bo!
+
+# NEW BEHAVIOUR 5c/23 orthogonal ship (p23), 4 cells, 354 in 600 soups (explore it 429, parent [+S6n +S5e ])
+# first seen in soup seed 9342725728937339621
+x = 5, y = 3, rule = B2ce3akqy4ejytw5kq6-e7e8/S12in3ajq4ejywz5-ikn6-a78
+bo$o3bo$bo!
+
+# new shape p6 oscillator, 12 cells, 1 in 600 soups (explore it 435, parent [-B4y ])
+# first seen in soup seed 2314519489296766275
+x = 7, y = 7, rule = B2ce3akqy4ejtwz5ckq6aik8/S12in3ajq4cejywz5-eikn6-a7c8
+obobobo5$2o3b2o$2o3b2o!
+
+# NEW BEHAVIOUR 2c/15 orthogonal ship (p15), 5 cells, 361 in 600 soups (explore it 436, parent [+B5n ])
+# first seen in soup seed 8374579999252155513
+x = 3, y = 3, rule = B2ce3akqy4ejytw5knq6-e7e8/S12in3ajq4ejywz5-ikn6-a78
+bo$obo$obo!
+
+# NEW BEHAVIOUR c/11 orthogonal ship (p44), 6 cells, 3 in 600 soups (explore it 456, parent [-S4e -S8 ])
+# first seen in soup seed 12535026495135328780
+x = 4, y = 5, rule = B2ce3akqy4ejytw5cknq6-ce8/S12in3ajq4cjyw5cajqr6-n7
+b2o3$obo$o2bo!
+
+# NEW BEHAVIOUR p15 oscillator, 6 cells, 1 in 600 soups (explore it 470, parent [+B4y -S5r -S5e ])
+# first seen in soup seed 1032706254914671546
+x = 3, y = 7, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cjywz5-enr6-an7e8
+bo$o$bo2$bo$2bo$bo!
+
+# NEW BEHAVIOUR c/15 orthogonal ship (p15), 8 cells, 1 in 600 soups (explore it 481, parent [-S4w +S7c +B6i ])
+# first seen in soup seed 9380543550372464964
+x = 7, y = 9, rule = B2ce3akqy4ejytw5cknq6-ce78/S12in3ajq4jyz5-eikn6-n7
+5bo2$5bo2$obobobo2$5bo2$5bo!
+
+# new shape p20 oscillator, 8 cells, 4 in 600 soups (explore it 491, parent [-S4z +B6n ])
+# first seen in soup seed 6422718846926421536
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4ejyw5cajqr6-an78
+o$bo2bo$3bo$2bo$bo2bo$5bo!
+
+# new shape p7 oscillator, 10 cells, 1 in 600 soups (explore it 492, parent [-S4w -S5r +S7c ])
+# first seen in soup seed 12218598401828475411
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-ce7e8/S12in3ajq4cejyz5cajq6cik7c8
+o4bo$bo$2b2o$2b2o$4bo$o4bo!
+
+# new shape p17 oscillator, 10 cells, 1 in 600 soups (explore it 518, parent [-B4z ])
+# first seen in soup seed 2746595981501743961
+x = 4, y = 17, rule = B2ce3akqy4ejytw5knq6-ce7e/S12in3ajq4cejy5-einy6-i8
+o3$o2$o$o2$o3$o4$2b2o$2b2o!
+
+# new shape p29 oscillator, 4 cells, 13 in 600 soups (explore it 527, parent [+S5e -S7e ])
+# first seen in soup seed 4949934788295257974
+x = 4, y = 3, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejyz5-iny6-i8
+o2bo2$o2bo!
+
+# NEW BEHAVIOUR c/11 orthogonal ship (p11), 5 cells, 1 in 600 soups (explore it 534, parent [+S4e ])
+# first seen in soup seed 8329235780719395407
+x = 2, y = 5, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cejywz5-enr6-an7e8
+bo$o$bo$o$bo!
+
+# new shape p32 oscillator, 6 cells, 4 in 600 soups (explore it 539, parent [-B4y -S7c -S4c ])
+# first seen in soup seed 4937263470665674424
+x = 6, y = 6, rule = B2ce3akqy4ejtw5cknq6-ce8/S12in3ajq4ejywz5-eikn6-n7e8
+o$bo$2bo$3bo$4bo$5bo!
+
+# new shape p16 oscillator, 8 cells, 1 in 600 soups (explore it 553, parent [+S5i +B4z ])
+# first seen in soup seed 2513068373668256642
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5kq6-e7e8/S12in3ajq4ejywz5-kn6-a78
+5bo$3bo$2bobo$bobo$2bo$o!
+
+# new shape p10 oscillator, 13 cells, 1 in 600 soups (explore it 562, parent [+S4c +S5e ])
+# first seen in soup seed 12051316881465014646
+x = 14, y = 9, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4cjyw5-knry6eak7e8
+9bo2$9bo2$5bobo3bobo$bobo$o8bo$bobo$9bo!
+
+# new shape p28 oscillator, 4 cells, 4 in 600 soups (explore it 575, parent [-B5n ])
+# first seen in soup seed 17253034171660561026
+x = 4, y = 4, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjywz5-ein6-an7e8
+3bo$2bo$bo$o!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 575, parent [-B5n ])
+# first seen in soup seed 405374782895886061
+x = 4, y = 4, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjywz5-ein6-an7e8
+2b2o$b2o$o2bo$obo!
+
+# NEW BEHAVIOUR p26 oscillator, 15 cells, 1 in 600 soups (explore it 576, parent [+B4z ])
+# first seen in soup seed 18136784773240684485
+x = 8, y = 8, rule = B2ce3akqy4ejytwz5cknq6akn8/S12in3ajq4jywz5cajqr6-an7e8
+o$bo2bo$2bobo$6b2o$b2o3b2o2$3b2o$3b2o!
+
+# new shape p24 oscillator, 6 cells, 1 in 600 soups (explore it 580, parent [-B4y +B5c -S7c ])
+# first seen in soup seed 17360098952242159555
+x = 6, y = 6, rule = B2ce3akqy4ejtwz5ckq6-e7e8/S12in3ajq4ejywz5-kn6-a7e8
+2bo2$obo$3bobo2$3bo!
+
+# NEW BEHAVIOUR p48 oscillator, 6 cells, 3 in 600 soups (explore it 588, parent [+S4w -B4z -S8 ])
+# first seen in soup seed 8593815234063425872
+x = 6, y = 6, rule = B2ce3akqy4ejytw5knq6-ce7e/S12in3ajq4cejyw5-einy6-i
+5bo$4bo$3bo$2bo$bo$o!
+
+# new shape p34 oscillator, 8 cells, 1 in 600 soups (explore it 590, parent [-S6e ])
+# first seen in soup seed 10319582185172198309
+x = 17, y = 4, rule = B2ce3akqy4ejytwz5cknq6-ce7e/S12in3ajq4cejyz5-einy6-ei7e8
+o2bob2obo2bo$16bo2$16bo!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 618, parent [+B6c ])
+# first seen in soup seed 10165226114359734270
+x = 15, y = 7, rule = B2ce3akqy4ejytw5knq6-e7e/S12in3ajq4cejyw5-einy6-i
+8bo2$o7bo$2bobo7bobo$o7bo2$8bo!
+
+# new shape p4 oscillator, 9 cells, 44 in 600 soups (explore it 619, parent [-B5c +B7c ])
+# first seen in soup seed 2548102133572122307
+x = 5, y = 5, rule = B2ce3akqy4ejytw5knq6aik7c8/S12in3ajq4cejyz5-kn6cik78
+bobo$o3bo$2bo$o3bo$bobo!
+
+# new shape p4 oscillator, 11 cells, 1 in 600 soups (explore it 619, parent [-B5c +B7c ])
+# first seen in soup seed 14075695495611303714
+x = 5, y = 9, rule = B2ce3akqy4ejytw5knq6aik7c8/S12in3ajq4cejyz5-kn6cik78
+4bo$4bo3$bobo$o3bo$2bo$o3bo$bobo!
+
+# new shape p16 oscillator, 6 cells, 15 in 600 soups (explore it 622, parent [+B5c -S5y ])
+# first seen in soup seed 13703179646025672301
+x = 3, y = 8, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cjyw5-ekny6-an7e8
+bo$obo5$obo$bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 622, parent [+B5c -S5y ])
+# first seen in soup seed 15375836345499920979
+x = 9, y = 9, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cjyw5-ekny6-an7e8
+2bobobobo2$o2$o2$o2$o!
+
+# new shape p10 oscillator, 12 cells, 1 in 600 soups (explore it 636, parent [-S4c -B6i ])
+# first seen in soup seed 8502461586650870731
+x = 9, y = 12, rule = B2ce3akqy4ejytw5cknq6cak8/S12in3ajq4ejywz5-eikn6-an78
+7bo$6bobo$6bobo5$2bo$3b2o$o$3b2o$2bo!
+
+# NEW BEHAVIOUR c/20 diagonal ship (p20), 9 cells, 1 in 600 soups (explore it 637, parent [-S5k ])
+# first seen in soup seed 4519205261599828641
+x = 9, y = 7, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cjywz5-eknr6-an7e8
+6b2o$6b2o$6bobo2$o$bo$o!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 639, parent [-B4y -B5n ])
+# first seen in soup seed 14450488308351973115
+x = 9, y = 7, rule = B2ce3akqy4ejtw5kq6aik7e8/S12in3ajq4ejywz5cajqr6-an7e8
+8bo$2b2o$8bo$o$o7bo2$8bo!
+
+# NEW BEHAVIOUR p98 oscillator, 8 cells, 1 in 600 soups (explore it 657, parent [+S5i -B5n +B4z ])
+# first seen in soup seed 2907144805390986392
+x = 4, y = 8, rule = B2ce3akqy4ejytwz5kq6-en7e8/S12in3ajq4cejywz5-ekny6-an78
+2b2o2$2bo$bo$2bo$bo2$2o!
+
+# new shape p12 oscillator, 10 cells, 2 in 600 soups (explore it 662, parent [+S6n ])
+# first seen in soup seed 9227354802130762045
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejy5-ekn6-e78
+2bo$bo2bo$o2bo$2bo2bo$bo2bo$3bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 666, parent [+B5c +S5e ])
+# first seen in soup seed 16839616184597603962
+x = 6, y = 7, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejyz5-ikny6-an78
+o4bo$o$5bo2$5bo$o$o4bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 666, parent [+B5c +S5e ])
+# first seen in soup seed 4935173068101142531
+x = 9, y = 9, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejyz5-ikny6-an78
+4bo2$4bo2$4bo2$4bo2$obo3bobo!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 666, parent [+B5c +S5e ])
+# first seen in soup seed 13931499385060058885
+x = 7, y = 15, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejyz5-ikny6-an78
+o2$o2$o2$o2$2bobo2$6bo2$6bo2$2bobo!
+
+# new shape p4 oscillator, 11 cells, 1 in 600 soups (explore it 674, parent [+B4z ])
+# first seen in soup seed 17470834981063811908
+x = 9, y = 5, rule = B2ce3akqy4ejytwz5knq6aik7c8/S12in3ajq4cejyz5-kn6cik78
+o4bobo$4bo3bo$o5bo$4bo3bo$5bobo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 674, parent [+B4z ])
+# first seen in soup seed 9844354735416451691
+x = 6, y = 7, rule = B2ce3akqy4ejytwz5knq6aik7c8/S12in3ajq4cejyz5-kn6cik78
+5bo2$5bo2$o4bo2$o4bo!
+
+# NEW BEHAVIOUR c/19 diagonal ship (p38), 5 cells, 3 in 600 soups (explore it 679, parent [+B5c -S5y -S6c ])
+# first seen in soup seed 6351433689165390817
+x = 3, y = 4, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4ejywz5-ikny6-ca78
+2o2$2o$2bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 685, parent [-B4y +S6a -B7e ])
+# first seen in soup seed 2161497060172672125
+x = 9, y = 11, rule = B2ce3akqy4ejtw5knq6-en8/S12in3ajq4cejywz5cajqr6-n7e8
+3bo$3bo5$2bobobobo4$obo!
+
+# new shape p30 oscillator, 10 cells, 2 in 600 soups (explore it 693, parent [+B7c -S4c ])
+# first seen in soup seed 10165226114359734270
+x = 6, y = 7, rule = B2ce3akqy4ejytw5ckq6-e7c8/S12in3ajq4jywz5-eknr6-an7e8
+4bo$5bo$bo3bo$o4bo$bo3bo$5bo$4bo!
+
+# new shape p22 oscillator, 6 cells, 1 in 600 soups (explore it 701, parent [+B6n ])
+# first seen in soup seed 2098269320014528162
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-ce8/S12in3ajq4cejyw5-eikn6-ea78
+5bo$4bo$3bo$2bo$bo$o!
+
+# new shape p14 oscillator, 8 cells, 1 in 600 soups (explore it 723, parent [-S5i +S6e ])
+# first seen in soup seed 535422857776936509
+x = 5, y = 12, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejyz5-ikn6-an78
+o2$o2$o2$o2$o2$o$2bobo!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 751, parent [+B4z ])
+# first seen in soup seed 9380543550372464964
+x = 7, y = 13, rule = B2ce3akqy4ejytwz5knq6-en7e8/S12in3ajq4cejywz5cajqr6-an7e8
+5bo2$5bo2$4bobo2$5bo2$5bo4$obobobo!
+
+# NEW BEHAVIOUR c/4 orthogonal ship (p8), 9 cells, 1 in 600 soups (explore it 759, parent [+S5y ])
+# first seen in soup seed 6990685006742907561
+x = 6, y = 7, rule = B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4jywz5cajqy6-in7e8
+3bobo$4bo2$obobo2$4bo$3bobo!
+
+# NEW BEHAVIOUR p40 oscillator, 8 cells, 2 in 600 soups (explore it 778, parent [+S6n +S7c ])
+# first seen in soup seed 17424939739316811727
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-ce7e8/S12in3ajq4cejywz5cajqr6-ea7c8
+o$bo$2b2o$2b2o$4bo$5bo!
+
+# NEW BEHAVIOUR c/9 diagonal ship (p18), 8 cells, 1 in 600 soups (explore it 788, parent [+S5e ])
+# first seen in soup seed 7221610540561016383
+x = 4, y = 7, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4jyw5-inr6-a7e8
+bo$ob2o3$2bo$obo$bo!
+
+# new shape p42 oscillator, 7 cells, 1 in 600 soups (explore it 795, parent [-B8 ])
+# first seen in soup seed 5617556989957113436
+x = 11, y = 8, rule = B2ce3akqy4ejtw5cknq6-e/S12in3ajq4cjywz5-ein6-an7e8
+10bo$9bo$10bo5$obobobo!
+
+# new shape (3,2)c/19 oblique ship, 10 cells, 1 in 600 soups (explore it 797, parent [-B5c -S4e ])
+# first seen in soup seed 238863526555421141
+x = 9, y = 6, rule = B2ce3akqy4ejytwz5knq6aik8/S12in3ajq4cjy5-eikn6-ea78
+bobo$obo$bo2$4b2o$4bobobo!
+
+# new shape p14 oscillator, 6 cells, 1 in 600 soups (explore it 798, parent [+S5r +S6a +B7c ])
+# first seen in soup seed 18112974473792848544
+x = 13, y = 5, rule = B2ce3akqy4ejytw5ckq6-e7c8/S12in3ajq4cejywz5-en6-n7e8
+12bo$11bo$o11bo$bo$o!
+
+# NEW BEHAVIOUR p92 oscillator, 6 cells, 9 in 600 soups (explore it 806, parent [+B4z ])
+# first seen in soup seed 6356640439655209670
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5ckq6-e8/S12in3ajq4cjywz5-eknr6-an7e8
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR c/6 diagonal ship (p6), 9 cells, 1 in 600 soups (explore it 809, parent [-S4z ])
+# first seen in soup seed 8507666838922774073
+x = 6, y = 5, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cejyw5-in6-an7e8
+3bo$bo$3b2o$bo3bo$o2b2o!
+
+# new shape p10 oscillator, 9 cells, 1 in 600 soups (explore it 820, parent [-B6i ])
+# first seen in soup seed 12649464058254332962
+x = 6, y = 5, rule = B2ce3akqy4ejytw5cknq6akn8/S12in3ajq4cejywz5-eikn6-n78
+2o$2bo$2o3bo$4b2o$4bo!
+
+# NEW BEHAVIOUR c/8 orthogonal ship (p8), 12 cells, 1 in 600 soups (explore it 829, parent [-S6i ])
+# first seen in soup seed 7231560118060552994
+x = 7, y = 5, rule = B2ce3akqy4ejytw5cknq6-en7e8/S12in3ajq4cejyz5-einy6cek78
+bobo2bo$2bo3bo$o5bo$2bo3bo$bobo2bo!
+
+# new shape p28 oscillator, 9 cells, 1 in 600 soups (explore it 834, parent [-S5r ])
+# first seen in soup seed 16851028985452293972
+x = 12, y = 8, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cejyw5-inr6-an7e8
+10bo$11bo$10bo3$b2o$o2bo$b2o!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 854, parent [+B6n +S5e ])
+# first seen in soup seed 14658480799511225245
+x = 13, y = 3, rule = B2ce3akqy4ejytw5knq6-e7e8/S12in3ajq4cejywz5-ikny6-an78
+obobo$6bobobobo$obobo!
+
+# new shape p6 oscillator, 10 cells, 2 in 600 soups (explore it 856, parent [-B5n -S4z -S6e ])
+# first seen in soup seed 4659130378616895176
+x = 5, y = 5, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjyw5-ein6cik7e8
+o3bo$b3o2$b3o$o3bo!
+
+# NEW BEHAVIOUR c/2 orthogonal ship (p12), 12 cells, 1 in 600 soups (explore it 856, parent [-B5n -S4z -S6e ])
+# first seen in soup seed 17535956465073360841
+x = 5, y = 14, rule = B2ce3akqy4ejtw5ckq6-e8/S12in3ajq4cjyw5-ein6cik7e8
+2bo$bobo3$bobo$2bo$bobo2$2bo3$o3bo2$2bo!
+
+# new shape p20 oscillator, 17 cells, 1 in 600 soups (explore it 859, parent [-B5n -S5r -B6i ])
+# first seen in soup seed 204376421602418826
+x = 11, y = 15, rule = B2ce3akqy4ejytwz5ckq6ak8/S12in3ajq4cejyw5cajqy6-ea78
+5bo$5bo2$4bo$4bo3bo2$6bo3bo2$6bo3bo2$6bo3bo$bo$obo5bo2$obo!
+
+# NEW BEHAVIOUR p54 oscillator, 6 cells, 1 in 600 soups (explore it 867, parent [+B4y +B7e ])
+# first seen in soup seed 5073470543898155411
+x = 8, y = 11, rule = B2ce3akqy4ejytw5ckq6-e7e8/S12in3ajq4cjyw5-ein6cik7e8
+7bo2$7bo5$obo3$obo!
+
+# new shape p14 oscillator, 8 cells, 1 in 600 soups (explore it 870, parent [+S5i +S6n ])
+# first seen in soup seed 716263063422877930
+x = 19, y = 3, rule = B2ce3akqy4ejtw5cknq6-e8/S12in3ajq4cjywz5-ekn6-a78
+o7bobo7bo$bo15bo$o17bo!
+
+# new shape p6 oscillator, 6 cells, 1 in 600 soups (explore it 874, parent [-B6i ])
+# first seen in soup seed 14438909482769028619
+x = 6, y = 7, rule = B2ce3akqy4ejytw5cknq6akn8/S12in3ajq4cjyw5cajqr6-n7
+o2bobo2$o2$o2$o!
+
+# new shape p12 oscillator, 14 cells, 2 in 600 soups (explore it 881, parent [+B7c +S7e ])
+# first seen in soup seed 14770807474540395266
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-ce78/S12in3ajq4cejywz5cajqr6-ea78
+o2bobo$bo$2b2obo$ob2o$4bo$obo2bo!
+
+# new shape p84 oscillator, 5 cells, 4 in 600 soups (explore it 890, parent [+B5n -S4z -S4e ])
+# first seen in soup seed 14353141521036803169
+x = 5, y = 5, rule = B2ce3akqy4ejytw5knq6aik78/S12in3ajq4cjyw5cajqr6-a7e8
+obo3$3b2o$2bo!
+
+# new shape p4 oscillator, 9 cells, 1 in 600 soups (explore it 894, parent [-B4y +B4z +S4z ])
+# first seen in soup seed 6076902863980272100
+x = 10, y = 5, rule = B2ce3akqy4ejtwz5ckq6-e7e8/S12in3ajq4cjywz5-ein6cik7e8
+o2bobobo$o$9bo2$3bobobo!
+
+# new shape p27 oscillator, 6 cells, 1 in 600 soups (explore it 912, parent [-S5k +S7c ])
+# first seen in soup seed 15048972720245253619
+x = 5, y = 13, rule = B2ce3akqy4ejytw5ckq6-e7e8/S12in3ajq4cjyw5-eikn6cik78
+2bobo3$2bobo8$o$o!
+
+# new shape p27 oscillator, 6 cells, 2 in 600 soups (explore it 930, parent [-B4z +B6c -B7c ])
+# first seen in soup seed 9311979611034530690
+x = 4, y = 4, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4cejywz5cajqr6-ea78
+2bo$bobo$obo$bo!
+
+# new shape p28 oscillator, 8 cells, 1 in 600 soups (explore it 932, parent [-B5c -B6i ])
+# first seen in soup seed 7929522850277714210
+x = 7, y = 11, rule = B2ce3akqy4ejytw5knq6-ei7e8/S12in3ajq4ejywz5-ikny6-ca78
+4bobo3$4bobo6$2o$2o!
+
+# new shape 3c/19 diagonal ship (p38), 17 cells, 1 in 600 soups (explore it 932, parent [-B5c -B6i ])
+# first seen in soup seed 17550810198828413720
+x = 8, y = 11, rule = B2ce3akqy4ejytw5knq6-ei7e8/S12in3ajq4ejywz5-ikny6-ca78
+7bo$4bobo$3bo2b2o$6bo$7bo$2bo$2bo$3bo$obo$bob2o$bo!
+
+# NEW BEHAVIOUR 5c/28 orthogonal ship (p56), 9 cells, 213 in 600 soups (explore it 936, parent [-B4y -S5k ])
+# first seen in soup seed 6526197707984412336
+x = 6, y = 5, rule = B2ce3akqy4ejtw5ckq6-e7e8/S12in3ajq4cjyw5-eikn6cik7e8
+2bo$bobo$o2bobo$bobo$2bo!
+
+# new shape p6 oscillator, 12 cells, 1 in 600 soups (explore it 939, parent [-B6c ])
+# first seen in soup seed 8570963164964255660
+x = 11, y = 8, rule = B2ce3akqy4ejytw5cknq6aik7e8/S12in3ajq4cejyz5cajqr6cek78
+2o7b2o$2o3bo3b2o2$5bo2$5bo2$5bo!
+
+# NEW BEHAVIOUR p33 oscillator, 6 cells, 3 in 600 soups (explore it 952, parent [-S4w -B8 ])
+# first seen in soup seed 15700021790295479442
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-ce/S12in3ajq4cjy5cajqr6-n7
+5bo$4bo$3bo$2bo$bo$o!
+
+# new shape p6 oscillator, 12 cells, 1 in 600 soups (explore it 977, parent [-S4z ])
+# first seen in soup seed 10344152588031732722
+x = 5, y = 9, rule = B2ce3akqy4ejytwz5ckq6-e8/S12in3ajq4cjyw5-eknr6-an7e8
+o3bo$b3o2$b3o$o3bo2$2bo2$2bo!
+
+# new shape p6 oscillator, 12 cells, 3 in 600 soups (explore it 997, parent [-B5n -B5c ])
+# first seen in soup seed 6241122065739892223
+x = 17, y = 7, rule = B2ce3akqy4ejytw5kq6-en7e8/S12in3ajq4cejyz5-einy6cek78
+8bo2$o7bo7bo$2bobo7bobo$o7bo7bo2$8bo!
+
+# new shape p26 oscillator, 6 cells, 2 in 600 soups (explore it 1004, parent [+S4c ])
+# first seen in soup seed 9227354802130762045
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-ce78/S12in3ajq4cjyz5-eikn6-n7
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR p63 oscillator, 6 cells, 2 in 600 soups (explore it 1006, parent [+S5i -S6a ])
+# first seen in soup seed 18076194602557990655
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-ce78/S12in3ajq4cjyz5-ekn6-an7
+o$bo$2bo$3bo$4bo$5bo!
+
+# new shape p7 oscillator, 13 cells, 1 in 600 soups (explore it 1008, parent [+S6a ])
+# first seen in soup seed 17384661894563825382
+x = 7, y = 11, rule = B2ce3akqy4ejytw5ckq6-e7e8/S12in3ajq4cjyw5-ein6-en7e8
+4bo$2bo$4bobo$bobo$5bo$3bo2$2bo$obo$o$o!
+
+# new shape p10 oscillator, 6 cells, 1 in 600 soups (explore it 1011, parent [-S4w +S4z ])
+# first seen in soup seed 2548102133572122307
+x = 6, y = 6, rule = B2ce3akqy4ejtw5ckq6-e7e8/S12in3ajq4cjyz5-eikn6cik7e8
+o$bo$2bo$3bo$4bo$5bo!
+
+# new shape p7 oscillator, 12 cells, 1 in 600 soups (explore it 1016, parent [-S4w +B4y +B6n ])
+# first seen in soup seed 2723058544451238936
+x = 7, y = 10, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4cejy5cajq6-an78
+6bo$6bo3$o4bo$4bo$2b2o$2b2o$bo$o4bo!
+
+# new shape p10 oscillator, 18 cells, 1 in 600 soups (explore it 1019, parent [-S4w +B6n +S5k ])
+# first seen in soup seed 695066053454369040
+x = 21, y = 9, rule = B2ce3akqy4ejytw5knq6akn8/S12in3ajq4jyz5cakjq6-in7e8
+18bo$18bo$18bo3$b2o15b2o$o19bo$b2o15b2o$8b5o!
+
+# new shape p30 oscillator, 6 cells, 1 in 600 soups (explore it 1025, parent [+B4z ])
+# first seen in soup seed 10423135632878196827
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6-e7e8/S12in3ajq4ejywz5-ikny6-ca78
+o$bo$2bo$3bo$4bo$5bo!
+
+# new shape p6 oscillator, 12 cells, 1 in 600 soups (explore it 1052, parent [-S4w +S5k +S4c ])
+# first seen in soup seed 1800171547209186794
+x = 9, y = 11, rule = B2ce3akqy4ejytwz5cknq6-e7e8/S12in3ajq4cejyz5-iny6-ca78
+obo3bobo2$4bo2$4bo2$4bo2$4bo2$obo3bobo!
+
+# NEW BEHAVIOUR p212 oscillator, 6 cells, 1 in 600 soups (explore it 1053, parent [-S4e -S6e ])
+# first seen in soup seed 1741229149253390557
+x = 3, y = 5, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cjywz5cajqr6cik7e8
+2o2$bo$obo$o!
+
+# new shape p14 oscillator, 8 cells, 1 in 600 soups (explore it 1057, parent [-B4y ])
+# first seen in soup seed 3010290100100935603
+x = 15, y = 1, rule = B2ce3akqy4ejtwz5cknq6-en7c8/S12in3ajq4cejyw5-eikn6-a78
+obobobobobobobo!
+
+# NEW BEHAVIOUR 7c/57 orthogonal ship (p57), 4 cells, 277 in 600 soups (explore it 1063, parent [-S4c ])
+# first seen in soup seed 1853118107827562084
+x = 3, y = 3, rule = B2ce3akqy4ejytw5ckq6-e7e8/S12in3ajq4jyw5-eikn6ck78
+bo$bo$obo!
+
+# NEW BEHAVIOUR p188 oscillator, 6 cells, 1 in 600 soups (explore it 1065, parent [-S5r +S6a ])
+# first seen in soup seed 6412986943620731428
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4ejywz5ceajq6-c78
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR c/7 diagonal ship (p7), 9 cells, 1 in 600 soups (explore it 1067, parent [+S5r -S6c ])
+# first seen in soup seed 1885302578112177737
+x = 6, y = 6, rule = B2ce3akqy4ejtw5cknq6ak7e8/S12in3ajq4jywz5-ein6eik7e8
+4bo$b3o$b2o$bo$o$5bo!
+
+# NEW BEHAVIOUR p19 oscillator, 6 cells, 1 in 600 soups (explore it 1074, parent [-S4w -S5k -B6i ])
+# first seen in soup seed 14867968716738558948
+x = 6, y = 6, rule = B2ce3akqy4ejytw5ckq6-ei8/S12in3ajq4cejyz5-eknr6-an7e8
+5bo$4bo$3bo$2bo$bo$o!
+
+# NEW BEHAVIOUR 9c/20 orthogonal ship (p20), 8 cells, 251 in 600 soups (explore it 1082, parent [-B4y -S6e -S6i ])
+# first seen in soup seed 2907144805390986392
+x = 6, y = 5, rule = B2ce3akqy4ejtw5cknq6-e7e8/S12in3ajq4ejywz5ceajq6akn78
+3bo$bo2bo$o4bo$bo2bo$3bo!
+
+# new shape p26 oscillator, 4 cells, 8 in 600 soups (explore it 1082, parent [-B4y -S6e -S6i ])
+# first seen in soup seed 1167830811854636342
+x = 6, y = 1, rule = B2ce3akqy4ejtw5cknq6-e7e8/S12in3ajq4ejywz5ceajq6akn78
+ob2obo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 1083, parent [+S6a +S5y ])
+# first seen in soup seed 2555853732323607409
+x = 7, y = 13, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cjywz5-eikn6-en7e8
+3bo2$3bo4$obobobo4$5bo2$5bo!
+
+# new shape p6 oscillator, 14 cells, 1 in 600 soups (explore it 1083, parent [+S6a +S5y ])
+# first seen in soup seed 9319650138073152968
+x = 9, y = 13, rule = B2ce3akqy4ejytw5knq6-en7e8/S12in3ajq4cjywz5-eikn6-en7e8
+bo2$bo2$bo2$bo2$obo2$4b2o$4b2ob2o$7b2o!
+
+# new shape p10 oscillator, 11 cells, 1 in 600 soups (explore it 1122, parent [+S5e -B6i ])
+# first seen in soup seed 13263142017104066107
+x = 9, y = 11, rule = B2ce3akqy4ejytw5ckq6-ei8/S12in3ajq4cjywz5-nr6-an7e8
+4bo2$4bo2$obo3bobo4$6b2o$5bo$6b2o!
+
+# new shape (3,2)c/19 oblique ship, 17 cells, 1 in 600 soups (explore it 1217, parent [-B5n ])
+# first seen in soup seed 8956581889603419142
+x = 5, y = 13, rule = B2ce3akqy4ejytw5ckq6-ce78/S12in3ajq4cjyz5-ekn6-an7
+2bo$bo2bo$bobo$2b2o$o2bo$o2bo$bo2$3b2o$3bo$4bo2$4bo!
+
+# new shape c/5 orthogonal ship (p20), 11 cells, 1 in 600 soups (explore it 1218, parent [-S5i -S4w ])
+# first seen in soup seed 811178351449847531
+x = 9, y = 8, rule = B2ce3akqy4ejtw5cknq6-en7e8/S12in3ajq4cejy5cajq6-an78
+7bo2$6bobo$7bo$obo$obo$bo$obo!
+
+# NEW BEHAVIOUR p45 oscillator, 14 cells, 3 in 600 soups (explore it 1236, parent [+S5e ])
+# first seen in soup seed 3703536400420874826
+x = 8, y = 8, rule = B2ce3akqy4ejytwz5cknq6akn8/S12in3ajq4cjywz5-kny6-an7e8
+4bo2bo2$4bo$3b3obo$ob3o$3bo2$o2bo!
+
+# new shape 2c/15 orthogonal ship (p15), 12 cells, 1 in 600 soups (explore it 1251, parent [+B5n -S5r ])
+# first seen in soup seed 7556102670612315934
+x = 9, y = 13, rule = B2ce3akqy4ejytw5knq6-e7e8/S12in3ajq4ejywz5-iknr6-a78
+6bo$3bo$4bo3bo$3bo$6bo2$bo2$3bo$obo$3bo2$bo!
+
+# new shape p22 oscillator, 6 cells, 1 in 600 soups (explore it 1281, parent [-B8 ])
+# first seen in soup seed 16836277440586865900
+x = 6, y = 6, rule = B2ce3akqy4ejytw5cknq6-e7/S12in3ajq4ejy5cajq6-an78
+4bo$5bo$3bo$2bo$o$bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 1283, parent [-S4w -S4z +S5e ])
+# first seen in soup seed 14056347621440687609
+x = 11, y = 7, rule = B2ce3akqy4ejytw5cknq6aik8/S12in3ajq4cejy5-ikn6-n78
+4bo2$4bo2$obo2$4bobobobo!
+
+# new shape p6 oscillator, 9 cells, 1 in 600 soups (explore it 1317, parent [-B6c +S5k ])
+# first seen in soup seed 18076194602557990655
+x = 7, y = 8, rule = B2ce3akqy4ejytw5ckq6-ce7e8/S12in3ajq4jyw5-ein6ck78
+obobobo5$5b2o2$3b3o!
+
+# NEW BEHAVIOUR c/6 orthogonal ship (p18), 5 cells, 1 in 600 soups (explore it 1338, parent [-S4w -S5r +B6i ])
+# first seen in soup seed 6996196802608828056
+x = 5, y = 5, rule = B2ce3akqy4ejytwz5cknq6-ce8/S12in3ajq4cjyz5-knry6-an7e8
+o3bo$2bo$2bo2$2bo!
+
+# new shape p6 oscillator, 8 cells, 1 in 600 soups (explore it 1352, parent [+B5n -B6c ])
+# first seen in soup seed 4435892903827585721
+x = 6, y = 11, rule = B2ce3akqy4ejytw5cknq6aik7e/S12in3ajq4cejyz5-einy6-ai78
+2bo$2bo3$o2bobo2$o2$o2$o!
+
+# new shape p26 oscillator, 6 cells, 2 in 600 soups (explore it 1364, parent [-S4w +S6n ])
+# first seen in soup seed 2098269320014528162
+x = 6, y = 6, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cjyz5-enr6-a7e8
+o$bo$2bo$3bo$4bo$5bo!
+
+# new shape p12 oscillator, 10 cells, 3 in 600 soups (explore it 1366, parent [-S6i ])
+# first seen in soup seed 3012696463722836473
+x = 7, y = 7, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cjywz5-eknr6cek7e8
+3bo$2bobo$3bo$o5bo$3bo$2bobo$3bo!
+
+# new shape p14 oscillator, 10 cells, 1 in 600 soups (explore it 1379, parent [-B7e ])
+# first seen in soup seed 17546647745976042136
+x = 10, y = 15, rule = B2ce3akqy4ejytw5cknq6-en8/S12in3ajq4cejywz5-einy6-a78
+7bobo$8bo7$b2o$o$b2o4$2bobo!
+
+# new shape p7 oscillator, 7 cells, 1 in 600 soups (explore it 1379, parent [-B7e ])
+# first seen in soup seed 12812043926085013531
+x = 5, y = 5, rule = B2ce3akqy4ejytw5cknq6-en8/S12in3ajq4cejywz5-einy6-a78
+o3bo$3bo$2bo$bo$o3bo!
+
+# new shape p6 oscillator, 10 cells, 1 in 600 soups (explore it 1421, parent [-B6c +S5e ])
+# first seen in soup seed 2769174270416171929
+x = 9, y = 8, rule = B2ce3akqy4ejytw5cknq6aik7e8/S12in3ajq4cjyw5-kny6aik7c8
+4bobo$8bo2$o7bo2$o7bo2$2bobo3bo!
+
+# new shape p6 oscillator, 12 cells, 1 in 600 soups (explore it 1423, parent [-B5n ])
+# first seen in soup seed 8593815234063425872
+x = 7, y = 11, rule = B2ce3akqy4ejytw5ckq6aik7e/S12in3ajq4cejyz5-einy6-ai78
+4bo$4bo$o3bo2$o$4bobo$o2$o3bo$4bo$4bo!
+
+# NEW BEHAVIOUR p122 oscillator, 6 cells, 1 in 600 soups (explore it 1435, parent [+S7c +S4c ])
+# first seen in soup seed 18242730894119728498
+x = 6, y = 6, rule = B2ce3akqy4ejytwz5cknq6akn8/S12in3ajq4cjywz5cajqr6-an78
+5bo$4bo$3bo$2bo$bo$o!
+
+# new shape p10 oscillator, 10 cells, 1 in 600 soups (explore it 1449, parent [+S6a ])
+# first seen in soup seed 3071993442263697011
+x = 7, y = 7, rule = B2ce3akqy4ejytw5cknq6-e7e8/S12in3ajq4cejywz5cajqr6-e78
+bo$3o$bo2$5bo$4b3o$5bo!
+
+# NEW BEHAVIOUR 11c/38 orthogonal ship (p38), 6 cells, 1 in 600 soups (explore it 1463, parent [-B6c ])
+# first seen in soup seed 7405390217750141597
+x = 7, y = 3, rule = B2ce3akqy4ejtw5ckq6-ce7e8/S12in3ajq4cjyw5-eikn6cik7e8
+bo$o3b3o$bo!
+
+# new shape p27 oscillator, 6 cells, 3 in 600 soups (explore it 1464, parent [-S4w -S5y +S5e ])
+# first seen in soup seed 369524003726376063
+x = 3, y = 8, rule = B2ce3akqy4ejtw5ckq6-e7e8/S12in3ajq4cjy5-ikny6cik7e8
+bo$obo5$obo$bo!
+
+# new shape p28 oscillator, 6 cells, 1 in 600 soups (explore it 1475, parent [-S4z -B6i ])
+# first seen in soup seed 7556102670612315934
+x = 9, y = 8, rule = B2ce3akqy4ejytw5cknq6-ei7e8/S12in3ajq4ejyw5ceajq6-c78
+o$o4$5bo2bo2$5bo2bo!
+
+# new shape (3,2)c/19 oblique ship, 10 cells, 1 in 600 soups (explore it 1484, parent [-B4y +S4e +B7e ])
+# first seen in soup seed 3720007608282522120
+x = 8, y = 9, rule = B2ce3akqy4ejtwz5ckq6-e7e8/S12in3ajq4cejywz5-eknr6-an7e8
+2o$o$bo2$bo4b2o$6bo$7bo2$7bo!
+
+# NEW BEHAVIOUR p60 oscillator, 18 cells, 1 in 600 soups (explore it 1486, parent [-B5n ])
+# first seen in soup seed 10112400083609627733
+x = 12, y = 12, rule = B2ce3akqy4ejytw5ckq6-e7e8/S12in3ajq4cejywz5cajqr6-ea78
+10bo$11bo2$5bob2o$7b2o$3bobo$6bobo$3b2o$3b2obo2$o$bo!
+
+# new shape p6 oscillator, 10 cells, 2 in 600 soups (explore it 1502, parent [+S5i -B4y ])
+# first seen in soup seed 16442607944425776697
+x = 6, y = 5, rule = B2ce3akqy4ejtw5knq6-en7e8/S12in3ajq4cjywz5-ekny6cik7e8
+2o2b2o2$2b2o2$2o2b2o!
+
+# new shape c/7 diagonal ship (p7), 8 cells, 1 in 600 soups (explore it 1506, parent [+B5n ])
+# first seen in soup seed 405374782895886061
+x = 5, y = 5, rule = B2ce3akqy4ejytw5cknq6aik7e8/S12in3ajq4cejywz5-ein6ekn78
+o$bo2bo$2bobo$3bo$b2o!
+
+# new shape p7 oscillator, 5 cells, 13 in 600 soups (explore it 1544, parent [-S6c -S5k -S8 ])
+# first seen in soup seed 9072545329185123129
+x = 3, y = 3, rule = B2ce3akqy4ejytw5ckq6-e8/S12in3ajq4cejywz5-eknr6eik7e
+obo$bo$obo!
+
+# NEW BEHAVIOUR p162 oscillator, 6 cells, 1 in 600 soups (explore it 1546, parent [-S5r -S4e ])
+# first seen in soup seed 7706789889964793662
+x = 8, y = 3, rule = B2ce3akqy4ejytw5cknq6-en8/S12in3ajq4cjywz5cakjq6-a78
+bo4bo$o6bo$bo4bo!
+

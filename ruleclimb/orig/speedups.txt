@@ -1,0 +1,53 @@
+rulesearch speedup ideas
+========================
+
+Measured baseline (rule A, 2000 soups, 1 thread, Linux, this sandbox):
+  ~9.7 ns per cell-update overall; the sweep itself is ~2.3 ns (measured with scans disabled).
+  => ~75% of time is the every-8-gens cluster scan + classification, not simulation.
+  Note: simply disabling scans is SLOWER (ships never removed, soups never stabilise).
+Gains below are estimates unless marked measured.
+
+1. Reuse classifications across mutants   [identical results]
+   Cache is cleared every evaluation, so every still life / blinker is re-simulated for each rule.
+   A cluster's isolated evolution depends only on the transition classes it touches.
+   Store (key -> Info, touched classes + their values); on lookup in a new rule, reuse if those
+   classes are unchanged. Mutants differ in 1-3 classes, so most entries stay valid.
+   Likely the biggest single win.
+
+2. Cheaper scans
+   a) [identical] No std::string keys / vector allocations in the hot path: 64-bit hash of the
+      cluster bitmap, reusable buffers, flat open-addressing table.
+   b) [identical] Skip scan when nothing changed since the last scan (hash equal and no ship
+      candidates last time).
+   c) [CHANGES COUNTS slightly - make it an option] only examine clusters within a few cells of the
+      global bbox edge (escaping ships are on the frontier); adaptive scan interval (8 -> 16/32
+      while no ship candidates are present).
+
+3. Sweep: skip inactive tiles   [identical]
+   Track 8x8 (or 16x16) tiles whose cells or neighbouring tiles changed last generation; only
+   recompute those. Settled debris dominates late soup life. Est. 3-5x on the sweep.
+
+4. Sweep: SIMD / bit-sliced rule evaluation   [identical]
+   Per rule, build a BDD (or mux tree with shared nodes) of the 512-entry table; evaluate on 64
+   cells per word (AVX2: 256) from the 9 shifted neighbour bitplanes. Typical rules have small
+   BDDs, so ~5-10 ops/cell -> well under 1 ns/cell. Combine with 3.
+   Cheaper variant: 2x2-cell lookup (16-bit index -> 4 output bits, 64 KB table), 4x fewer lookups.
+
+5. Search level
+   - Cache evaluations by rule-table hash (LAHC/explore revisit rules).   [identical]
+   - Racing already drops ~60% of mutants early (measured). The 32-soup probe + per-soup
+     cost limit gave ~5x per-iteration speedup (measured: ~6 s -> ~1 s/iter).
+   - Adaptive N: stop the full evaluation early when the mutant is clearly better, not only worse.
+   - Smaller grid (128) when soups stay small; grow only if a pattern reaches the border.
+   - Reduce gmax once a rule's stabilisation time is known (e.g. 4x the 99th percentile).
+
+6. Memory / setup   [identical, small]
+   - Clear only the previously used bbox of the grids instead of 2 x 256x256 memset per soup.
+
+7. Parallelism
+   - Soups are independent; threads already scale. For many cores, run several climbs/explores
+     on separate rule populations (island model) rather than larger soup batches.
+
+Verification rule for any of these: same config + seed must reproduce identical census counts
+single-threaded (the old engine is the oracle), except items marked CHANGES COUNTS, which need
+a statistical comparison on fresh seeds instead.
