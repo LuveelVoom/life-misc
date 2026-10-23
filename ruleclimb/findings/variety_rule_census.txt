@@ -1,0 +1,296 @@
+census f=0.0000 bad=0.000 cost=0.089M feasible B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+time 0.55s
+     4  persistent bounded active region (~16 cells; never settles: aperiodic, or a period > 60)  first in soup seed 3732399503319184226 (dump RULE SEED shows it)
+     1  persistent bounded active region (~8 cells; never settles: aperiodic, or a period > 60)  first in soup seed 15323387957144386060 (dump RULE SEED shows it)
+     5  linear growth +10 cells per 10 gens (puffer, rake or gun)  first in soup seed 8821949490866344038 (dump RULE SEED shows it)
+     2  linear growth +15 cells per 10 gens (puffer, rake or gun)  first in soup seed 9937436412230787906 (dump RULE SEED shows it)
+   102  linear growth +5 cells per 10 gens (puffer, rake or gun)  first in soup seed 15003672835138828666 (dump RULE SEED shows it)
+     2  linear growth +17 cells per 17 gens (puffer, rake or gun)  first in soup seed 4708752421191177326 (dump RULE SEED shows it)
+     9  linear growth +9 cells per 18 gens (puffer, rake or gun)  first in soup seed 15456106616880891942 (dump RULE SEED shows it)
+    69  linear growth +1 cells per 1 gens (puffer, rake or gun)  first in soup seed 817658226001621758 (dump RULE SEED shows it)
+  1654  linear growth +1 cells per 2 gens (puffer, rake or gun)  first in soup seed 10058818461582405381 (dump RULE SEED shows it)
+    71  linear growth +2 cells per 2 gens (puffer, rake or gun)  first in soup seed 5231448270232432182 (dump RULE SEED shows it)
+     2  linear growth +3 cells per 2 gens (puffer, rake or gun)  first in soup seed 9598110411655376649 (dump RULE SEED shows it)
+    24  linear growth +17 cells per 34 gens (puffer, rake or gun)  first in soup seed 18143305656134876301 (dump RULE SEED shows it)
+     3  linear growth +34 cells per 34 gens (puffer, rake or gun)  first in soup seed 17434872379688315593 (dump RULE SEED shows it)
+     9  linear growth +1 cells per 4 gens (puffer, rake or gun)  first in soup seed 402254179395966436 (dump RULE SEED shows it)
+     3  linear growth +2 cells per 4 gens (puffer, rake or gun)  first in soup seed 6885625395327294486 (dump RULE SEED shows it)
+     1  linear growth +3 cells per 4 gens (puffer, rake or gun)  first in soup seed 15582178394292176079 (dump RULE SEED shows it)
+     1  linear growth +4 cells per 4 gens (puffer, rake or gun)  first in soup seed 9849568822288018221 (dump RULE SEED shows it)
+     4  linear growth +5 cells per 5 gens (puffer, rake or gun)  first in soup seed 7848123747665530995 (dump RULE SEED shows it)
+     1  linear growth +17 cells per 68 gens (puffer, rake or gun)  first in soup seed 2172623250072295798 (dump RULE SEED shows it)
+     3  linear growth +3 cells per 6 gens (puffer, rake or gun)  first in soup seed 17361544476576380394 (dump RULE SEED shows it)
+     2  linear growth +4 cells per 8 gens (puffer, rake or gun)  first in soup seed 3442009668704962766 (dump RULE SEED shows it)
+ 10550  c/4 diagonal ship (p4)               3 cells  (not in archive) 
+x = 2, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$o!
+  3281  2c/17 orthogonal ship (p34)          4 cells  (not in archive) 
+x = 3, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2bo$2o!
+  1444  p5 oscillator                        4 cells  (not in archive) 
+x = 2, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2o!
+   123  p18 oscillator                       5 cells  (not in archive) 
+x = 4, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$bobo$o$bo!
+    24  p6 oscillator                        9 cells  (not in archive) 
+x = 4, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$2b2o$2b2o!
+    23  p8 oscillator                        8 cells  (not in archive) 
+x = 4, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bobo$obo$bobo$obo!
+    22  c/4 orthogonal ship (p4)             4 cells  (not in archive) 
+x = 3, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+obo$bo2$bo!
+    16  p8 oscillator                        9 cells  (not in archive) 
+x = 2, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o2$bo$2o$2o!
+    15  p6 oscillator                        4 cells  (not in archive) 
+x = 1, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o2$o2$o2$o!
+    12  c/2 orthogonal ship (p4)             7 cells  (not in archive) 
+x = 3, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2o2$bo$bo$obo!
+    10  p4 oscillator                        9 cells  (not in archive) 
+x = 3, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o2$bo$b2o$b2o!
+     9  p46 oscillator                       4 cells  (not in archive) 
+x = 4, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3bo$2bo$bo$o!
+     7  p6 oscillator                       10 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$2b2o$2b2o$3bo!
+     6  p4 oscillator                       10 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$b2o$b2o$o!
+     6  c/2 orthogonal ship (p2)             6 cells  (not in archive) 
+x = 4, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo!
+     6  p8 oscillator                       10 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$2o$2o$2bo!
+     5  p6 oscillator                       10 cells  (not in archive) 
+x = 5, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$2b2o$2b2o$4bo!
+     5  c/2 orthogonal ship (p4)             8 cells  (not in archive) 
+x = 3, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+obo$bo$bo$bo$bo$2bo2$o!
+     4  p8 oscillator                       10 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2o2$2bo$b2o$b2o$o!
+     4  c/2 orthogonal ship (p4)             8 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$b2o2$bo$bo$bo$obo!
+     4  c/2 orthogonal ship (p4)            10 cells  (not in archive) 
+x = 3, y = 10, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o2$2bo$bo$bo$bo$bo$bo$obo$bo!
+     3  p6 oscillator                       10 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$o2$2b2o$2b2o$2bo!
+     3  p6 oscillator                       11 cells  (not in archive) 
+x = 8, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3o$b2o$5b2o$4b4o!
+     3  c/2 orthogonal ship (p4)            10 cells  (not in archive) 
+x = 3, y = 10, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo2$o$bo$bo$bo$bo$bo$bo$obo!
+     3  c/2 orthogonal ship (p2)            10 cells  (not in archive) 
+x = 4, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$bo$bo$bo$bo$bo$obo$bo!
+     3  c/2 orthogonal ship (p4)             9 cells  (not in archive) 
+x = 3, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o2$2bo$bo$bo$bo$bo$bo$obo!
+     3  c/2 orthogonal ship (p2)             8 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$2bo$bobo$2bo!
+     3  c/2 orthogonal ship (p2)             8 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bobo$2bo$2bo$2bo$2bo2$2o!
+     3  c/2 orthogonal ship (p2)             7 cells  (not in archive) 
+x = 6, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4bo$2b2obo$o3bo$o!
+     2  p18 oscillator                       7 cells  (not in archive) 
+x = 6, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo2$o2bobo$2o2bo!
+     2  c/2 orthogonal ship (p4)            24 cells  (not in archive) 
+x = 3, y = 24, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o2$2bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$obo
+!
+     2  c/2 orthogonal ship (p4)            11 cells  (not in archive) 
+x = 10, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+9bo$2ob6o$bo7bo!
+     2  c/2 orthogonal ship (p2)            13 cells  (not in archive) 
+x = 4, y = 12, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$bobo!
+     2  c/2 orthogonal ship (p2)            15 cells  (not in archive) 
+x = 4, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$obo$bo!
+     2  c/2 orthogonal ship (p2)            15 cells  (not in archive) 
+x = 14, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+13bo$2b11o$o12bo$o!
+     2  c/2 orthogonal ship (p4)             7 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo2$o$bo$bo$bo$obo!
+     2  p6 oscillator                       10 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2o$2o$bo2$2b2o$2b2o!
+     2  p8 oscillator                       10 cells  (not in archive) 
+x = 2, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$2o$2o$o!
+     2  p3 oscillator                        8 cells  (not in archive) 
+x = 3, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2o$b2o2$b2o!
+     2  p6 oscillator                       10 cells  (not in archive) 
+x = 5, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$o2$2b2o$2b2o$4bo!
+     2  p4 oscillator                       10 cells  (not in archive) 
+x = 7, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$4ob2o$5b2o!
+     1  c/2 orthogonal ship (p4)            14 cells  (not in archive) 
+x = 3, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$obo$bo$bo$bo$bo$bo$bo$bo$bo$bo$o2$2bo!
+     1  p6 oscillator                       10 cells  (not in archive) 
+x = 4, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2o$2o2$2bo$2b2o$2b2o!
+     1  p6 oscillator                       10 cells  (not in archive) 
+x = 7, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b3o$4b2o$2o$3o!
+     1  p4 oscillator                       15 cells  (not in archive) 
+x = 7, y = 10, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b2o$4b2o$6bo$b2o$b2o2$bo$2o$2o$bo!
+     1  p4 oscillator                       17 cells  (not in archive) 
+x = 7, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2ob4o$2o2b2o$3bo2$b3o$2b2o$4bo!
+     1  p4 oscillator                       13 cells  (not in archive) 
+x = 4, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2o$2o$bo2$3bo$2o$2obo$o!
+     1  p4 oscillator                       10 cells  (not in archive) 
+x = 7, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+6bo$4b2o$3ob2o$2o!
+     1  p4 oscillator                       10 cells  (not in archive) 
+x = 3, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$bo2$b2o$b2o$2bo!
+     1  p3 oscillator                       16 cells  (not in archive) 
+x = 5, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o$2b2o$b2o$b2o2$3obo$2obo$3bo!
+     1  p3 oscillator                       13 cells  (not in archive) 
+x = 5, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3bo$2obo$3obo2$b2o$b2o$3bo!
+     1  c/2 orthogonal ship (p4)            11 cells  (not in archive) 
+x = 11, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o9bo$b7o$o7bo!
+     1  c/2 orthogonal ship (p2)            32 cells  (not in archive) 
+x = 4, y = 31, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$b
+o$bo$bo$bo$bo$bo$obo$bo!
+     1  c/2 orthogonal ship (p4)            15 cells  (not in archive) 
+x = 3, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+obo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo2$b2o$bo!
+     1  c/2 orthogonal ship (p4)            16 cells  (not in archive) 
+x = 15, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o12bo$b11ob2o$o!
+     1  c/2 orthogonal ship (p4)            17 cells  (not in archive) 
+x = 3, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$b2o2$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$obo!
+     1  c/2 orthogonal ship (p4)            19 cells  (not in archive) 
+x = 19, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo14bo$3b14obo$o16bo!
+     1  c/2 orthogonal ship (p4)            22 cells  (not in archive) 
+x = 22, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o20bo$b18o$o18bo!
+     1  c/2 orthogonal ship (p4)            23 cells  (not in archive) 
+x = 23, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo18bo$ob18o$bo20bo!
+     1  c/2 orthogonal ship (p4)            23 cells  (not in archive) 
+x = 3, y = 23, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo2$o$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$obo!
+     1  c/2 orthogonal ship (p4)            25 cells  (not in archive) 
+x = 24, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o21bo$b20ob2o$o!
+     1  c/2 orthogonal ship (p4)            25 cells  (not in archive) 
+x = 3, y = 25, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+obo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$bo$2bo
+2$o!
+     1  c/2 orthogonal ship (p4)            27 cells  (not in archive) 
+x = 26, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo23bo$2ob22o$25bo!
+     1  c/2 orthogonal ship (p4)            31 cells  (not in archive) 
+x = 31, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o29bo$b27o$o27bo!
+     1  c/2 orthogonal ship (p2)            12 cells  (not in archive) 
+x = 11, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$ob7o$bo8bo$10bo!
+     1  p8 oscillator                       11 cells  (not in archive) 
+x = 3, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2o$2o$bo2$2o$2o$2bo!
+     1  p8 oscillator                       11 cells  (not in archive) 
+x = 8, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2ob3o$b2o2b3o$o!
+     1  p8 oscillator                       14 cells  (not in archive) 
+x = 9, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3o$b4ob3o$3b2o2b2o!
+     1  p6 oscillator                       15 cells  (not in archive) 
+x = 9, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2b3o$4o$2o4b2o$6b2o$8bo!
+     1  p6 oscillator                       11 cells  (not in archive) 
+x = 6, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$b2o$b2o$bo2$3b2o$3b2o$5bo!
+     1  p6 oscillator                       14 cells  (not in archive) 
+x = 8, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$4o$2b2o$bo4b2o$5b3o!
+     1  c/2 orthogonal ship (p2)             7 cells  (not in archive) 
+x = 4, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$2bo$bobo!
+     1  p6 oscillator                       11 cells  (not in archive) 
+x = 5, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$3b2o$3b2o2$bo$b2o$b2o$o!
+     1  c/2 orthogonal ship (p2)             9 cells  (not in archive) 
+x = 8, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+7bo$bo5bo$ob4o$bo!
+     1  c/2 orthogonal ship (p2)             9 cells  (not in archive) 
+x = 8, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+7bo$2b5o$o6bo$o!
+     1  p6 oscillator                       15 cells  (not in archive) 
+x = 9, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$5o$2ob2o$6b3o$7b2o!
+     1  c/2 orthogonal ship (p2)            11 cells  (not in archive) 
+x = 4, y = 10, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$2bo$2bo$2bo$2bo$2bo$bobo!
+     1  c/2 orthogonal ship (p2)            42 cells  (not in archive) 
+x = 4, y = 41, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$bobo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$
+2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2b
+o$2bo$2bo$2bo$2bo2$2o!
+     1  c/2 orthogonal ship (p2)            13 cells  (not in archive) 
+x = 12, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+10bo$2b8obo$o9bo$o!
+     1  p6 oscillator                       11 cells  (not in archive) 
+x = 8, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b3o$o4b3o$b2o$b2o!
+     1  c/2 orthogonal ship (p2)            14 cells  (not in archive) 
+x = 13, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$o11bo$2b10o$12bo!
+     1  p6 oscillator                       11 cells  (not in archive) 
+x = 8, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$3o$4b3o$5b3o!
+     1  p6 oscillator                       10 cells  (not in archive) 
+x = 7, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$3o3bo$4b2o$4b2o!
+     1  c/2 orthogonal ship (p2)            16 cells  (not in archive) 
+x = 15, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$o12bo$2b11obo$13bo!
+     1  c/2 orthogonal ship (p2)            17 cells  (not in archive) 
+x = 16, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+15bo$2b13o$o14bo$o!
+     1  c/2 orthogonal ship (p2)            21 cells  (not in archive) 
+x = 20, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$ob16o$bo17bo$19bo!
+     1  c/2 orthogonal ship (p2)            27 cells  (not in archive) 
+x = 26, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$ob22o$bo23bo$25bo!
+     1  c/2 orthogonal ship (p2)            28 cells  (not in archive) 
+x = 27, y = 4, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+26bo$bo24bo$ob23o$bo!
+     1  c/2 orthogonal ship (p2)            30 cells  (not in archive) 
+x = 4, y = 29, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2b
+o$2bo$2bo$2bo$2bo$2bo$2bo$2bo$2bo$bobo$2bo!

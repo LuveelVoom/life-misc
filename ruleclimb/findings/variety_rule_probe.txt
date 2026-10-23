@@ -1,0 +1,289 @@
+census f=0.0000 bad=0.000 cost=0.085M feasible B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+probe library: 4 ships, 16 still lifes
+  ship    2099  c/4 diagonal ship (p4) (3 cells)
+  ship     649  2c/17 orthogonal ship (p34) (6 cells)
+  ship       6  c/4 orthogonal ship (p4) (4 cells)
+  ship       2  c/2 orthogonal ship (p2) (6 cells)
+  still   3588  still life (2 cells)
+  still   1876  still life (4 cells)
+  still    814  still life (5 cells)
+  still    294  still life (3 cells)
+  still     45  still life (6 cells)
+  still     41  still life (4 cells)
+  still     25  still life (6 cells)
+  still     24  still life (6 cells)
+  still     18  still life (8 cells)
+  still     16  still life (9 cells)
+  still     10  still life (9 cells)
+  still      9  still life (10 cells)
+  still      8  still life (5 cells)
+  still      6  still life (7 cells)
+  still      4  still life (10 cells)
+  still      4  still life (10 cells)
+# NEW catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (4 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 1 setups (probe)
+x = 4, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o13$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (4 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 1 setups (probe)
+x = 4, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (5 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 2 setups (probe)
+x = 5, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$b2o$b2o13$b2o$b2o$3b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (5 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 2 setups (probe)
+x = 4, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (8 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 2 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$b2o$b2o13$b2o$b2o$3b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (8 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 2 setups (probe)
+x = 4, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2o$2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 1 setups (probe)
+x = 5, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o2bo$b2o$b2o13$b2o$b2o$3b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 1 setups (probe)
+x = 5, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo2bo$2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 5 setups (probe)
+x = 7, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3o$2ob2o$3b2o13$3b2o$3b2o$5b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 5 setups (probe)
+x = 7, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b3o$2b2ob2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 2 setups (probe)
+x = 4, y = 20, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2o$bo$2o$2o13$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 2 setups (probe)
+x = 5, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3b2o$3b2o$3bo$2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 3 setups (probe)
+x = 4, y = 21, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$b2o$b2o$o$2o$2o13$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 3 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$3b2o$3b2o$2bo$2b2o$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 1 setups (probe)
+x = 6, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2obo$ob2o$2b2o13$2b2o$2b2o$4b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 1 setups (probe)
+x = 6, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3b2o$bob2o$2b2obo$2b2o11$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (5 cells), 3 setups (probe)
+x = 4, y = 21, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3bo$b2o$b2o$2bo$2o$2o13$2o$2o$2b2o!
+# catalyst: reflector 180deg: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + 2c/17 orthogonal ship (p34) (6 cells), 3 setups (probe)
+x = 6, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+5bo$3b2o$3b2o$4bo$2b2o$2b2o11$2o$2o$2b2o!
+# NEW catalyst: converter to c/4 diagonal ship (p4) (3 cells): 2c/17 orthogonal ship (p34) (6 cells) + still life (2 cells) -> still life restored + c/4 diagonal ship (p4) (3 cells), 2 setups (probe)
+x = 4, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2bo11$2o$2o$2b2o!
+# catalyst: converter to c/4 diagonal ship (p4) (3 cells): 2c/17 orthogonal ship (p34) (6 cells) + still life (3 cells) -> still life restored + c/4 diagonal ship (p4) (3 cells), 2 setups (probe)
+x = 4, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2bo$2bo11$2o$2o$2b2o!
+# catalyst: converter to c/4 diagonal ship (p4) (3 cells): 2c/17 orthogonal ship (p34) (6 cells) + still life (4 cells) -> still life restored + c/4 diagonal ship (p4) (3 cells), 2 setups (probe)
+x = 4, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2bo$2bo$2bo11$2o$2o$2b2o!
+# catalyst: converter to c/4 diagonal ship (p4) (3 cells): 2c/17 orthogonal ship (p34) (6 cells) + still life (5 cells) -> still life restored + c/4 diagonal ship (p4) (3 cells), 2 setups (probe)
+x = 4, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2bo$2bo$2bo$2bo11$2o$2o$2b2o!
+# catalyst: converter to c/4 diagonal ship (p4) (3 cells): 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored + c/4 diagonal ship (p4) (3 cells), 2 setups (probe)
+x = 4, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$2bo$2bo$2bo$2bo$2bo11$2o$2o$2b2o!
+# NEW catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (5 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 5, y = 13, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o2$3bo$3bo$2bobo6$2bo$2o$2o!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (6 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 5, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o2$3bo$3bo$2bobo6$2bo$2o$2o$2bo!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (10 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 5, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o2$3bo$3bo$2bobo6$2bo$2o$2o$2bo$b2o$b2o!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (6 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 6, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$4bo$4bo$3bobo6$3bo$b2o$b2o$o!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (7 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 6, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$4bo$4bo$3bobo6$3bo$b2o$b2o$o2bo!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (10 cells) -> still life restored + still life (4 cells), 1 setups (probe)
+x = 5, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o2$3bo$3bo$2bobo6$2bo$2o$4o$2b2o$bo!
+# catalyst: catalysed reaction: c/2 orthogonal ship (p2) (6 cells) + still life (10 cells) -> still life restored + still life (4 cells), 2 setups (probe)
+x = 6, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o2$4bo$4bo$3bobo6$3bo$b2o$b2o$2bo$2o$2o!
+# NEW catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (4 cells) -> still life restored + still life (5 cells), 2 setups (probe)
+x = 10, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+6b4o12$2o$2o$2b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (5 cells) -> still life restored + still life (5 cells), 2 setups (probe)
+x = 11, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+6b5o12$2o$2o$2b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored + still life (5 cells), 2 setups (probe)
+x = 12, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+6b6o12$2o$2o$2b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + p2 oscillator (2 cells), 2 setups (probe)
+x = 7, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+5b2o$5b2o$4bo$4b2o$4b2o11$2o$2o$2b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored + still life (2 cells), 2 setups (probe)
+x = 6, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2ob2o$2b3o13$2b2o$2b2o$4b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + p2 oscillator (2 cells), 2 setups (probe)
+x = 7, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4bo$5b2o$5b2o$4bo$4b2o$4b2o11$2o$2o$2b2o!
+# catalyst: catalysed reaction: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored + still life (2 cells), 2 setups (probe)
+x = 7, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b2o$b2ob2o$b3o2bo11$2o$2o$2b2o!
+# NEW catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (4 cells) -> still life restored + p2 oscillator (2 cells), 2 setups (probe)
+x = 10, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o$8b2o$8b2o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (5 cells) -> still life restored + p2 oscillator (2 cells), 4 setups (probe)
+x = 11, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o9bo$8b2o$8b2o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (8 cells) -> still life restored + p2 oscillator (2 cells), 8 setups (probe)
+x = 11, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o$8b2o$8b2o$9b2o$9b2o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (6 cells) -> still life restored + p2 oscillator (2 cells), 2 setups (probe)
+x = 11, y = 6, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o9bo$8b2o$8b2o$10bo!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (9 cells) -> still life restored + p2 oscillator (2 cells), 14 setups (probe)
+x = 13, y = 5, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o9b3o$8b2ob2o$8b2o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (9 cells) -> still life restored + p2 oscillator (2 cells), 10 setups (probe)
+x = 11, y = 8, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o$9b2o$9b2o$9bo$8b2o$8b2o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (10 cells) -> still life restored + p2 oscillator (2 cells), 10 setups (probe)
+x = 11, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o$8b2o$8b2o$8bo$9b2o$9b2o$8bo!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (10 cells) -> still life restored + p2 oscillator (2 cells), 2 setups (probe)
+x = 12, y = 7, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+9bo$10b2o$8b4o$8b2o$o9bo$bobo$o!
+# catalyst: catalysed reaction: c/4 orthogonal ship (p4) (4 cells) + still life (10 cells) -> still life restored + p2 oscillator (2 cells), 8 setups (probe)
+x = 12, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$bobo$o$8b2o$8b2o$10bo$9b2o$9b2o$11bo!
+# NEW catalyst: eater: c/2 orthogonal ship (p2) (6 cells) + still life (2 cells) -> still life restored, 1 setups (probe)
+x = 4, y = 12, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo6$2bo$2bo!
+# catalyst: eater: c/2 orthogonal ship (p2) (6 cells) + still life (3 cells) -> still life restored, 1 setups (probe)
+x = 4, y = 13, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo6$2bo$2bo$2bo!
+# catalyst: eater: c/2 orthogonal ship (p2) (6 cells) + still life (4 cells) -> still life restored, 1 setups (probe)
+x = 4, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo6$2bo$2bo$2bo$2bo!
+# catalyst: eater: c/2 orthogonal ship (p2) (6 cells) + still life (5 cells) -> still life restored, 1 setups (probe)
+x = 4, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo6$2bo$2bo$2bo$2bo$2bo!
+# catalyst: eater: c/2 orthogonal ship (p2) (6 cells) + still life (6 cells) -> still life restored, 1 setups (probe)
+x = 4, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o2$2bo$2bo$bobo6$2bo$2bo$2bo$2bo$2bo$2bo!
+# NEW catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored, 2 setups (probe)
+x = 10, y = 14, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+4b6o11$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (4 cells) -> still life restored, 2 setups (probe)
+x = 4, y = 15, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2o11$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (5 cells) -> still life restored, 6 setups (probe)
+x = 4, y = 16, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$b2o$b2o11$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (8 cells) -> still life restored, 4 setups (probe)
+x = 4, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$b2o$b2o11$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored, 4 setups (probe)
+x = 5, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o$b2o$b2o$o11$b2o$b2o$3b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored, 10 setups (probe)
+x = 6, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+3b3o$b2ob2o$b2o13$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (9 cells) -> still life restored, 4 setups (probe)
+x = 4, y = 18, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o$2b2o$2bo$b2o$b2o11$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored, 8 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2o$2o$o$b2o$b2o$o11$b2o$b2o$3b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (6 cells) -> still life restored, 2 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo$2b2o$2b2o$4bo13$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (7 cells) -> still life restored, 2 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+bo2bo$2b2o$2b2o$4bo13$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored, 4 setups (probe)
+x = 5, y = 19, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2b2o$ob2o$b2obo$b2o13$2o$2o$2b2o!
+# catalyst: eater: 2c/17 orthogonal ship (p34) (6 cells) + still life (10 cells) -> still life restored, 10 setups (probe)
+x = 5, y = 21, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+b2o$b2o$3bo$2b2o$2b2o$4bo13$2o$2o$2b2o!
+# NEW catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (4 cells) -> still life restored, 2 setups (probe)
+x = 10, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo6$8b2o$8b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (5 cells) -> still life restored, 4 setups (probe)
+x = 11, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo5$10bo$8b2o$8b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (8 cells) -> still life restored, 8 setups (probe)
+x = 11, y = 11, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo6$8b2o$8b2o$9b2o$9b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (6 cells) -> still life restored, 2 setups (probe)
+x = 11, y = 10, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo5$10bo$8b2o$8b2o$10bo!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (9 cells) -> still life restored, 14 setups (probe)
+x = 13, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo5$10b3o$8b2ob2o$8b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (9 cells) -> still life restored, 10 setups (probe)
+x = 11, y = 9, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo3$9b2o$9b2o$9bo$8b2o$8b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (10 cells) -> still life restored, 10 setups (probe)
+x = 11, y = 13, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo6$8b2o$8b2o$8bo$9b2o$9b2o$8bo!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (10 cells) -> still life restored, 2 setups (probe)
+x = 11, y = 11, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo6$7b2o$7b2obo$6bob2o$8b2o!
+# catalyst: eater: c/4 diagonal ship (p4) (3 cells) + still life (10 cells) -> still life restored, 8 setups (probe)
+x = 12, y = 13, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+2bo$obo6$8b2o$8b2o$10bo$9b2o$9b2o$11bo!
+# NEW wick: fuse at c/1 along a orthogonal wick (both ways), 3 setups (probe)
+x = 41, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+41o$19bo$41o!
+# wick: fuse at c/1 along a orthogonal wick (one way), 2 setups (probe)
+x = 163, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3b2o2bo3bo3b
+o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo$b2o2b2o2b2o2b2o2b
+2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o
+2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b2o2b
+2o2b2o$o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3b
+o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo!
+# wick: fuse at c/1 along a orthogonal wick (both ways), 4 setups (probe)
+x = 82, y = 3, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+82o$39bo$82o!
+# NEW fossil: p8 oscillator (12 cells) in the ash, first in soup seed 3708274257692436936, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p3 oscillator (14 cells) in the ash, first in soup seed 5780161373730331194, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p2 oscillator (12 cells) in the ash, first in soup seed 13106760701138605151, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p2 oscillator (12 cells) in the ash, first in soup seed 5590983990862538585, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p8 oscillator (12 cells) in the ash, first in soup seed 7619989060715315343, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p8 oscillator (12 cells) in the ash, first in soup seed 18330826624258660710, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p2 oscillator (15 cells) in the ash, first in soup seed 6469272758247451806, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p2 oscillator (16 cells) in the ash, first in soup seed 16880720721084902260, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p46 oscillator (26 cells) in the ash, first in soup seed 2159264056681998753, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p8 oscillator (20 cells) in the ash, first in soup seed 11031519385778021796, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p2 oscillator (13 cells) in the ash, first in soup seed 14556815392229715593, 0 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+# fossil: p6 oscillator (12 cells) in the ash, first in soup seed 12427851083288689125, 1 in 4000 soups (probe)
+x = 0, y = 0, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+!
+probe: 72 catalytic reactions, 8 wicks tested -> 3 signals/fuses, 12 fossils; 1.6s

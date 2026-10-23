@@ -81,3 +81,14 @@ Census of 20000 fresh soups + probe:
   100 gens, steady — a puffer / wickstretcher), plus ~20 other growth signatures (periods 1–68)
 - persistent bounded active regions (~8–16 cells) in a few soups per 20000 (aperiodic or period > 60)
 - signals/fuses on wicks and rare large ash objects (fossils)
+
+### Example: 180-degree reflection of the 2c/17 ship by a block
+The ship (bottom, moving up) hits the block and comes straight back; the block is unchanged. Checked by direct
+simulation without ship deletion: the ship climbs 8 rows per 68 gens, reflects around gen 70–100, then recedes
+8 rows per 68 gens (generation 340: block in place, ship 33 rows below it).
+
+    x = 4, y = 17, rule = B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c
+    2o$2o13$2o$2o$2b2o!
+
+All reflections, conversions and other reactions of this rule: findings/variety_rule_probe.txt (probe of 4000
+soups); its census of 20000 soups: findings/variety_rule_census.txt.
