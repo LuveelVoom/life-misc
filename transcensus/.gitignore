@@ -1,0 +1,5 @@
+transcensus-int
+transcensus-int-*
+!transcensus-int.c
+tc-orig
+build/
