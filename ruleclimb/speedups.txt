@@ -81,3 +81,27 @@ Tried and rejected (measured):
   2c (frontier-only scans) not done: changes counts. 3 (inactive tiles): with B+C the sweep is ~25% of time.
   -  Skipping runs of 8 empty neighbourhoods in the scalar sweep: no gain (superseded by NEON).
 Remaining profile: classification of chaotic clusters (~45%), scan clustering/escape test (~25%), sweep (~25%).
+
+
+Implemented (2026-10), moved here from README.md
+===============================================
+All of these give bit-identical results to the previous engine (same config + seed, any thread count);
+checked on census, climb and explore runs.
+- Cluster classification runs on a local byte grid instead of `std::set`/`vector` cell lists, and stops as soon as
+  the evolution enters a cycle that does not contain the starting state (it then can never recur).
+- Before the final scan only ships matter, so a cluster is not classified at all when every one of the 8 possible
+  directions of travel is already blocked by other debris (the escape-cone test is the same one used afterwards).
+- On ARM (NEON) the soup and classification sweeps evaluate 16 cells per step: the 512-entry table is packed into a
+  64-byte bit table, one `tbl` lookup on the NW..E bits, one per-lane shift on the SW,S,SE bits.
+- Transition usage (mutation weights) is computed lazily: only for rules that are actually mutated from, by
+  re-running their first 64 soups with counting on. Before, every evaluation ran its first 64 soups on the slow
+  counting path, which in `climb` was the whole 32-soup race probe.
+- `check`/constraint setup records the table entries a pattern uses in a 512-entry array (it used to store one
+  entry per cell per generation, which took >16 GB on a chaotic non-repeating pattern), and stops with an error
+  when a pattern grows past `pmax` cells.
+- `climb` reports the best *feasible* rule (it used to report the highest f even when infeasible).
+- Discoveries are merged in soup order and processed in key order, so the reported phase / first-seen seed of an
+  object no longer depends on thread scheduling.
+Measured on an M4 Pro (rule of `examples/diag_ship_explore.cfg`): census of 2000 soups 2.45 s -> 0.42 s single
+thread; 60 climb iterations 167 s -> 21 s (1 thread), 34 s -> 3.4 s (14 threads). See `speedups.txt` for what was
+tried and rejected.

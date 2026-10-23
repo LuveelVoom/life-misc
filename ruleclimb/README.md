@@ -12,10 +12,15 @@ new objects while keeping targets common (`explore`).
     ./rulesearch CONFIG climb ITERS
     ./rulesearch CONFIG explore ITERS [POPCAP]
     ./rulesearch CONFIG dump RULE SEED        # soup as RLE
-    ./rulesearch CONFIG probe RULE [N] [SEED] # catalysts, signals/fuses on wicks, fossils (see below)
+    ./rulesearch CONFIG probe RULE [N] [SEED] # census finds, catalysts, signals/1D CA/fuses on wicks, fossils (see below)
     ./rulesearch CONFIG vary ITERS            # hill-climb on the variety score (most different interesting things)
     ./rulesearch CONFIG climb 500 seed=3 soups=400 soup=16,16,0.4   # key=value overrides config lines
     OMP_NUM_THREADS=n sets threads; results do not depend on thread count.
+
+To collect the rare and easy-to-miss things of one rule into a single RLE pattern collection (rare ships and
+oscillators, puffers/guns, catalysts, signals and 1D CA along wicks, rare large ash objects), use `rarefind.py`:
+
+    python3 rarefind.py B2-a3/S23 -n 20000 -o rare.rle      # --help for options; needs the rulesearch binary
 
 Ctrl-C during `climb`/`explore` finishes the current iteration and prints the best rule / final population
 as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
@@ -58,6 +63,8 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `wick_period K` `wick_cells N` `wick_max N` | wick tiles: period ≤ K (6), ≤ N cells per tile (8), at most N wicks probed (400) |
 | `fossil_cells N` `fossil_rate r` `fossil_max N` | fossils: ≥ N cells (12), in ≤ r·soups (0.002), report at most N (12) |
 | `vary_min r` `vary_probe 0\|1` | vary: a behaviour counts fully once seen r·soups times (0.002); run the probe for every rule (1) |
+| `vary_strict N` `vary_decay d` | vary: an oscillator period seen in fewer than N soups scores 0 (default 0 = off); the k-th best oscillator period, with its shape bonus, counts d^k (default 1 = off). Against rules whose many periods are random geometry; see Variety below |
+| `vary_common_ship m [r]` | vary: a ship velocity seen r times per soup or more (default 0.1) counts (1+m)× its weight, linearly less below r (default m 0 = off) |
 | `gun_ships N` | a soup that never settles and emitted ≥ N copies of one ship is reported as a gun candidate (10) |
 
 ## Algorithm
@@ -101,8 +108,16 @@ occur reliably count fully and one-off flukes little:
 ship velocity 3 (oblique 6); oscillator period P ≥ `min_osc_period`: 1 + log2(P)/2; +0.2 per extra shape of a
 behaviour (≤ 5); still-life diversity 0.5·log2(1 + #still lifes); soup behaviours: linear-growth period 2 (≤ 5 of
 them), gun 4, persistent active region 2; probe: per catalyst kind and ship — reflector 5, converter/splitter 2,
-eater/pass-through 1, catalysed reaction 0.5; signal speed 4, fuse speeds 1 each (≤ 3).
+eater/pass-through 1, catalysed reaction 0.5; signal speed 4, fuse speeds 1 each (≤ 3), 1D CA speeds 4 each (≤ 3).
 Constraints, `min_rate`, `max_bad`, `max_cost` still apply (infeasible rules are penalised). Targets are optional.
+
+**Rules full of one-off oscillators.** Some rules make oscillators whose period is set by random geometry:
+signals circulating inside walled boxes of stable lines, or chaotic finite pieces of an agar (e.g. checkerboard
+diamonds). Every soup builds a new geometry, so they show dozens of periods, each seen in 1–3 soups, and top the
+score. `vary_strict 10` drops periods seen in fewer than 10 soups and `vary_decay 0.7` gives diminishing returns
+for further periods; together they took such rules from about 100 to about 20 on a 1000-rule random sample.
+`vary_common_ship 1 0.1` doubles the value of a ship velocity that turns up at least once per 10 soups.
+
 A mutant whose first 1/8 of the soups is far too explosive or slow is dropped early. ~1 s per iteration with the probe.
 **Persistent active regions** (soup behaviour, with `growth 1`): a soup that never settles, does not grow, emits
 nothing and stays off the border — a bounded region that keeps changing (aperiodic, or an oscillator with period
@@ -124,12 +139,20 @@ setup to open in Golly.
 - **Wicks, signals, fuses.** Wicks are stable periodic lines made of a small tile repeated along (k,0) or (k,k), whose
   pieces are not still lifes on their own (rows of independent still lifes are rejected). Each cell of the tile in
   the middle of a long wick is toggled and the damage (cells differing from the intact wick) is followed for 64
-  gens inside the light cone of the wick's ends. **signal** = bounded damage whose front moves with an exact period
-  and changes wick cells; **fuse** = the front moves the same way but the damaged part keeps growing (the wick is
-  consumed). Credit: signal 6, fuse 2 (× `reward signal`). Check: in Life the diagonal line of cells is found as a
-  speed-c fuse.
+  gens inside the light cone of the wick's ends. The damage front must move with an exact period and change wick cells.
+  - **signal**: the damage stays bounded and localized at the front(s), with the wick intact behind. Candidates are
+    followed to gen 128 (or until the ends' light cone closes in) and must keep the same speed; slow damage often
+    creeps and then stops.
+  - **1D CA**: the damage spreads but never leaves the wick's own rows, and keeps changing behind the front (not
+    periodic with period ≤ 8): the wick acts as a one-dimensional automaton, e.g. holes multiplying inside it.
+  - **fuse**: the damaged part keeps growing (spilling out of the wick, or leaving static/short-period remains).
+
+  Credit: signal 6, 1D CA 5, fuse 2 (× `reward signal`). Check: in Life the diagonal line of cells is found as a
+  speed-c fuse. (Before 2026-10-22, 1D CA behaviour and slow stalling damage were labelled signals, and diagonal
+  speeds with an odd step were printed wrongly, e.g. 3c/4 as c/2.)
 - **Fossils** (my reading of "index fossils"): large isolated objects in the final ash (≥ `fossil_cells`) that occur
-  in few soups — leftovers that mark rare reactions. Pseudo-objects are excluded.
+  in few soups — leftovers that mark rare reactions. Pseudo-objects are excluded. (Before 2026-10-22 a bug left
+  fossils without their pattern and undercounted them, so objects that were not rare could be reported.)
 Not done yet (ideas): oscillators as catalysts (needs phase enumeration), ship–ship collisions (syntheses),
 sparkers, signals on oscillating wicks, catalysts for soup reactions other than ship impacts.
 
@@ -146,24 +169,7 @@ sparkers, signals on oscillating wicks, catalysts for soup reactions other than 
 - `split` checks for interaction only up to the longest component's repeat time.
 - B0 rules are not supported (B0 is always forced off).
 
-## Performance notes (2026-10)
-All of these give bit-identical results to the previous engine (same config + seed, any thread count);
-checked on census, climb and explore runs.
-- Cluster classification runs on a local byte grid instead of `std::set`/`vector` cell lists, and stops as soon as
-  the evolution enters a cycle that does not contain the starting state (it then can never recur).
-- Before the final scan only ships matter, so a cluster is not classified at all when every one of the 8 possible
-  directions of travel is already blocked by other debris (the escape-cone test is the same one used afterwards).
-- On ARM (NEON) the soup and classification sweeps evaluate 16 cells per step: the 512-entry table is packed into a
-  64-byte bit table, one `tbl` lookup on the NW..E bits, one per-lane shift on the SW,S,SE bits.
-- Transition usage (mutation weights) is computed lazily: only for rules that are actually mutated from, by
-  re-running their first 64 soups with counting on. Before, every evaluation ran its first 64 soups on the slow
-  counting path, which in `climb` was the whole 32-soup race probe.
-- `check`/constraint setup records the table entries a pattern uses in a 512-entry array (it used to store one
-  entry per cell per generation, which took >16 GB on a chaotic non-repeating pattern), and stops with an error
-  when a pattern grows past `pmax` cells.
-- `climb` reports the best *feasible* rule (it used to report the highest f even when infeasible).
-- Discoveries are merged in soup order and processed in key order, so the reported phase / first-seen seed of an
-  object no longer depends on thread scheduling.
-Measured on an M4 Pro (rule of `examples/diag_ship_explore.cfg`): census of 2000 soups 2.45 s -> 0.42 s single
-thread; 60 climb iterations 167 s -> 21 s (1 thread), 34 s -> 3.4 s (14 threads). See `speedups.txt` for what was
-tried and rejected.
+## Speed
+Results never depend on the thread count. On an M4 Pro, a census of 2000 soups takes about 0.4 s on one thread,
+and 60 `climb` iterations about 21 s on one thread or 3.4 s on 14 (rule of `examples/diag_ship_explore.cfg`).
+What was optimised, and what was tried and rejected, is in `speedups.txt`.

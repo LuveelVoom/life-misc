@@ -285,7 +285,7 @@ struct Cfg {
     string logFile="discoveries.txt", archiveFile="archive.txt", bestFile; vector<string> starts; int maxgCons=4000;
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
-    double varyMin=0.002; int varyProbe=1;
+    double varyMin=0.002; int varyProbe=1; int varyStrict=0; double varyDecay=1.0, varyCommonShip=0, varyCommonRate=0.1;
     int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
 } C;
 static vector<int> forcedV; // per class: -1 free, 0/1 forced
@@ -327,6 +327,8 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="soup_symmetry"){ need((bool)(is>>C.soupSym)); need(C.soupSym=="C1"||C.soupSym=="C2"||C.soupSym=="C4"||C.soupSym=="D2"||C.soupSym=="D4"||C.soupSym=="D8"); }
         else if(k=="gun_ships") is>>C.gunShips;
         else if(k=="vary_min") is>>C.varyMin; else if(k=="vary_probe") is>>C.varyProbe;
+        else if(k=="vary_strict") is>>C.varyStrict; else if(k=="vary_decay") is>>C.varyDecay;
+        else if(k=="vary_common_ship"){ need((bool)(is>>C.varyCommonShip)); is>>C.varyCommonRate; }
         else if(k=="probe") is>>C.probe; else if(k=="probe_grid") is>>C.probeGrid; else if(k=="probe_ships") is>>C.probeShips; else if(k=="probe_stills") is>>C.probeStills;
         else if(k=="probe_gens") is>>C.probeGens; else if(k=="wick_period") is>>C.wickK; else if(k=="wick_cells") is>>C.wickCells; else if(k=="wick_max") is>>C.wickMax;
         else if(k=="fossil_cells") is>>C.fossilCells; else if(k=="fossil_rate") is>>C.fossilRate; else if(k=="fossil_max") is>>C.fossilMax;
@@ -903,8 +905,10 @@ static vector<ProbeHit> probeCatalysts(const Eval&E,const vector<LibObj>&ships,c
 }
 
 // Wicks: stable periodic lines built from a small tile repeated along (k,0) or (k,k). Signals: a one-cell disturbance
-// in the middle of a long wick whose damage (cells differing from the intact wick) stays bounded and moves at a
-// constant speed along it. Fuses: the damage front moves at constant speed while the wick behind is consumed.
+// in the middle of a long wick whose damage (cells differing from the intact wick) stays localized at its front(s)
+// and moves at a constant speed along it. 1D CA: the damage spreads along the wick at a constant speed without ever
+// leaving the wick's own rows, so the wick acts as a one-dimensional automaton (holes multiplying inside it).
+// Fuses: the damage front moves at constant speed while the damage grows and spills out of the wick.
 static vector<ProbeHit> probeWicks(const Eval&E,int*nWicks){
     const uint8_t*T=E.T.t; struct Wick { Cells tile; int sx,sy,bw,bh; string sig; };
     vector<Wick> wicks; set<string> sigs;
@@ -942,13 +946,17 @@ static vector<ProbeHit> probeWicks(const Eval&E,int*nWicks){
           Cells init=L; auto pc=runs[q].cell; if(Ls.count(pc)) init.erase(find(init.begin(),init.end(),pc)); else init.push_back(pc);
           int qlo=INT_MAX,qhi=INT_MIN; for(auto&p:L){ int v=proj(w,p.first,p.second); qlo=min(qlo,v); qhi=max(qhi,v); }
           int q0=proj(w,pc.first,pc.second), sp=w.sy?2:1; int ox,oy; vector<int> lo(G+1,INT_MAX),hi(G+1,INT_MIN),cnt(G+1,0),wire(G+1,0);
+          // last TL gens: damage positions along the wick, and damage outside the wick's band of rows
+          const int TL=8; vector<vector<pair<int,int>>> dv(TL+1); vector<int> outBand(TL+1,0);
+          auto perp=[&](int x,int y){ return w.sy? x-y : y; }; int pmin=INT_MAX,pmax=INT_MIN; for(auto&p:L){ int u=perp(p.first,p.second); pmin=min(pmin,u); pmax=max(pmax,u); }
           // ideal: the intact wick (stable away from its ends); compared inside the light cone of the ends
           int mx,my,Mx,My; bbox(init,mx,my,Mx,My); int IW=Mx-mx+40, IH=My-my+40; vector<uint8_t> ideal(IW*IH,0); for(auto&p:L) ideal[(p.second-my+20)*IW+p.first-mx+20]=1;
           Gn.runPattern(init,G,ox,oy,[&](int t){
               int a=qlo+sp*t+4, b=qhi-sp*t-4; if(a>=b) return false;
               for(int y=my-20;y<My+20;y++) for(int x=mx-20;x<Mx+20;x++){ int v=proj(w,x,y); if(v<a||v>b) continue;
                   int gx=x+ox, gy=y+oy; if(gx<0||gy<0||gx>=Gn.W||gy>=Gn.H) continue; uint8_t is=Gn.a[gy*Gn.W+gx], id=ideal[(y-my+20)*IW+x-mx+20];
-                  if(is!=id){ cnt[t]++; if(id) wire[t]++; lo[t]=min(lo[t],v); hi[t]=max(hi[t],v); } }
+                  if(is!=id){ cnt[t]++; if(id) wire[t]++; lo[t]=min(lo[t],v); hi[t]=max(hi[t],v);
+                      if(t>=G-TL){ dv[t-(G-TL)].push_back({x,y}); int u=perp(x,y); if(u<pmin||u>pmax) outBand[t-(G-TL)]++; } } }
               return true; });
           auto ok=[&](int t){ return t<=G && cnt[t]>0; };
           if(!ok(G)||!ok(G/2)||!ok(3*G/4)) continue;
@@ -957,17 +965,38 @@ static vector<ProbeHit> probeWicks(const Eval&E,int*nWicks){
           int c1=cnt[G/2],c2=cnt[3*G/4],c3=cnt[G]; bool bounded=c3<=c1+max(4,c1/5)&&c2<=c1+max(4,c1/5);
           bool growing=c2-c1>0&&c3-c2>0&&abs((c3-c2)-(c2-c1))<=max(2,(c2-c1)/5);
           if(wire[G]==0) continue;                                          // must actually alter the wick
-          string kind= bounded? "signal" : growing? "fuse" : ""; if(kind.empty()) continue;
+          // localized: in each of the last TL gens all damage lies within Wd of the leading/trailing edge (a 1D CA
+          // fills the space between them); inBand: no damage outside the wick's rows in those gens
+          int Wd=12*sp+2*(w.sy?2*w.sx:w.sx); bool localized=true, inBand=true;
+          for(int i=0;i<=TL;i++){ int t=G-TL+i; if(outBand[i]) inBand=false; if(cnt[t]==0) continue;
+              for(auto&c:dv[i]){ int v=proj(w,c.first,c.second); if(v>lo[t]+Wd&&v<hi[t]-Wd){ localized=false; break; } } }
+          // a 1D CA keeps changing behind its front; a fuse leaves static or short-period remains there
+          bool periodicBehind=false; { int a=lo[G-TL]+Wd, b=hi[G-TL]-Wd;
+              auto behind=[&](int i){ set<pair<int,int>> r; for(auto&c:dv[i]){ int v=proj(w,c.first,c.second); if(v>a&&v<b) r.insert(c);} return r; };
+              auto now=behind(TL); for(int p=1;p<=TL&&!periodicBehind;p++) periodicBehind= behind(TL-p)==now; }
+          string kind= bounded&&localized? "signal" : inBand&&!localized&&!periodicBehind? "1dca" : growing? "fuse" : ""; if(kind.empty()) continue;
           // exact speed: smallest period P with constant displacement of the leading edge over three periods
           int dq=0,P=0; for(int p=1;p<=40&&3*p<=G/2;p++){ int e=right? hi[G]:-lo[G], e1=right? hi[G-p]:-lo[G-p], e2=right? hi[G-2*p]:-lo[G-2*p], e3=right? hi[G-3*p]:-lo[G-3*p];
               if(e-e1>0&&e-e1==e1-e2&&e1-e2==e2-e3&&(kind!="signal"||cnt[G]==cnt[G-p])){ dq=e-e1; P=p; break; } }
           if(!P) continue;                                                   // no exact periodic front: just drifting damage
-          char sbuf[64]; if(P){ int d=w.sy? dq/2:dq; int g=std::gcd(d,P); snprintf(sbuf,64,"%s/%d",d/g==1?"c":(to_string(d/g)+"c").c_str(),P/g); } else snprintf(sbuf,64,"~%.3fc",(double)(right?R1+R2:L1+L2)/(G/2)/(w.sy?2:1));
+          if(kind=="signal"){ // confirm: follow the front further (until the ends' light cone closes in) at the same speed;
+              // slow damage often creeps for a while and then stops
+              const int G2=2*G; vector<int> lo2(G2+1,INT_MAX),hi2(G2+1,INT_MIN); int tE=0;
+              Gn.runPattern(init,G2,ox,oy,[&](int t){
+                  int a=qlo+sp*t+4, b=qhi-sp*t-4; if(a>=b) return false; if(t<=G) return true;
+                  for(int y=my-20;y<My+20;y++) for(int x=mx-20;x<Mx+20;x++){ int v=proj(w,x,y); if(v<a||v>b) continue;
+                      int gx=x+ox, gy=y+oy; if(gx<0||gy<0||gx>=Gn.W||gy>=Gn.H) continue;
+                      if(Gn.a[gy*Gn.W+gx]!=ideal[(y-my+20)*IW+x-mx+20]){ lo2[t]=min(lo2[t],v); hi2[t]=max(hi2[t],v); } }
+                  if(lo2[t]<=hi2[t]){ int e=right? hi2[t]:-lo2[t]; if(e+Wd>=(right? b:-a)) return false; tE=t; } // front near the window edge
+                  return true; });
+              if(tE>=G+P){ int e0=right? hi[G]:-lo[G], e1=right? hi2[tE]:-lo2[tE]; if(abs((e1-e0)*P-dq*(tE-G))>2*P) continue; } }
+          // speed: on a diagonal wick proj = x+y moves 2 per cell step
+          char sbuf[64]; if(P){ int d=dq, PP=w.sy? 2*P:P; int g=std::gcd(d,PP); snprintf(sbuf,64,"%s/%d",d/g==1?"c":(to_string(d/g)+"c").c_str(),PP/g); } else snprintf(sbuf,64,"~%.3fc",(double)(right?R1+R2:L1+L2)/(G/2)/(w.sy?2:1));
           string dir= left&&right? "both ways" : "one way";
           ProbeHit hit; hit.id="S"+kind+"_"+string(sbuf)+(w.sy?"_diag":"_orth")+":"; for(unsigned char ch:w.sig){ char b2[3]; snprintf(b2,3,"%02x",ch); hit.id+=b2; }
-          hit.text=kind+" at "+sbuf+" along a "+(w.sy?"diagonal":"orthogonal")+" wick ("+dir+")"+(kind=="signal"&&cnt[G]>0&&lo[G]<=q0&&hi[G]>=q0&&!(left&&right)?"":"");
+          hit.text=(kind=="1dca"?string("1D CA"):kind)+" at "+sbuf+" along a "+(w.sy?"diagonal":"orthogonal")+" wick ("+dir+")"+(kind=="signal"&&cnt[G]>0&&lo[G]<=q0&&hi[G]>=q0&&!(left&&right)?"":"");
           Cells seg; int m=n/2; for(auto&p:init){ int u=w.sy? (p.first)/w.sx : p.first/w.sx; if(abs(u-m)<=20) seg.push_back(p); } hit.setup=seg;
-          hit.credit=(kind=="signal"?6:2)*(C.reward.count("signal")?C.reward.at("signal"):1); hit.lanes=1; res[q].push_back(hit); } }
+          hit.credit=(kind=="signal"?6:kind=="1dca"?5:2)*(C.reward.count("signal")?C.reward.at("signal"):1); hit.lanes=1; res[q].push_back(hit); } }
     map<string,ProbeHit> by; for(auto&v:res) for(auto&h:v){ auto it=by.find(h.id); if(it==by.end()) by[h.id]=h; else it->second.lanes++; }
     vector<ProbeHit> out; for(auto&kv:by) out.push_back(kv.second); return out;
 }
@@ -977,7 +1006,8 @@ static vector<ProbeHit> probeFossils(const Eval&E){
     map<string,ProbeHit> by;
     for(auto&kv:E.ash){ auto&c=kv.second; if((int)c.ex.size()<C.fossilCells) continue; if(isPseudo(c.ex,E.T.t,max(1,c.I.period))) continue; string cid=canonId(normCells(c.ex),c.I,E.T.t);
         auto it=by.find(cid); if(it!=by.end()){ it->second.lanes+=c.count; continue; }
-        ProbeHit h; h.id=string(c.I.period==1?"Fstill":"Fosc")+":"+cid.substr(cid.find(':')+1); // behaviour = kind only; each size/shape is a new shape h.lanes=c.count; h.setup=normCells(c.ex);
+        ProbeHit h; h.id=string(c.I.period==1?"Fstill":"Fosc")+":"+cid.substr(cid.find(':')+1); // behaviour = kind only; each size/shape is a new shape
+        h.lanes=c.count; h.setup=normCells(c.ex);
         h.text=objName(c.I,c.ex.size())+" in the ash, first in soup seed "+to_string(c.seed); h.credit=0.3; by[cid]=h; }
     vector<ProbeHit> out; for(auto&kv:by) if(kv.second.lanes<=max(1L,(long)(C.fossilRate*E.n))) out.push_back(kv.second);
     sort(out.begin(),out.end(),[](const ProbeHit&a,const ProbeHit&b){ return a.setup.size()!=b.setup.size()? a.setup.size()>b.setup.size() : a.id<b.id; });
@@ -1010,6 +1040,7 @@ static double probeRule(const Eval&E,const string&ctx,bool printAll){
 static void modeProbe(const string&rule,int N,u64 seed){
     Table T=parseRule(rule); if(!satisfies(T)) printf("warning: rule violates constraints\n");
     C.N=N; for(auto*g:engines) g->collectAsh=true; Eval E; fullEval(E,T,seed); printEval("census",E);
+    recordFinds(E,processCands(E),"census"); recordSoupEvents(E,"census"); // ships/oscillators/puffers too (all shapes go to the log)
     probeRule(E,"probe",true);
 }
 static void loadArchive(){ if(C.archiveFile.empty()) return; ifstream f(C.archiveFile); string s; while(f>>s){ if(archiveIds.insert(s).second) descCount[descOf(s)]++; } }
@@ -1123,17 +1154,27 @@ struct Member { Eval E; double credit=0; int visits=0; vector<string> finds; };
 // behaviours count fully and one-off flukes little. Behaviours: ship velocities (oblique worth more), oscillator
 // periods >= min_osc_period, extra shapes of them, still-life diversity, puffer/gun/active-region soups, and (with
 // the probe) catalyst kinds, signals and fuses. Returns the score; 'why' gets a breakdown.
-struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0; int nShip=0,nOsc=0; };
+struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0; int nShip=0,nOsc=0; };
 static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
     Variety V; double need=max(1.0,C.varyMin*E.n); auto pres=[&](double c){ return min(1.0,c/need); };
     map<string,pair<double,int>> beh; // behaviour -> (count, shapes)
     for(auto&F:processCands(E)) if(F.I.type==2||F.I.period>=C.minOscPeriod){ auto&b=beh[descOf(F.id)]; b.first+=F.count; b.second++; }
     for(size_t t=0;t<C.tg.size();t++){ auto&T=C.tg[t]; Info I; I.type=(T.dx||T.dy)?2:1; I.period=T.period; I.dx=T.dx; I.dy=T.dy;
         Cells c=C.pats[T.pat].evo.gens[C.pats[T.pat].evo.s]; auto&b=beh[descOf(canonId(c,I,E.T.t))]; b.first+=E.rate[t]*E.n; b.second++; }
-    for(auto&kv:beh){ const string&d=kv.first; double p=pres(kv.second.first); int P=atoi(d.c_str()+1);
-        if(d[0]=='Q'){ int ax=0,ay=0; sscanf(d.c_str(),"Q%*d(%d,%d)",&ax,&ay); double w= (ax&&ay&&ax!=ay)? 6 : 3; V.ships+=w*p; if(p>=1) V.nShip++; }
-        else { V.oscs+=(1+log2((double)max(1,P))/2)*p; if(p>=1) V.nOsc++; }
-        V.shapes+=0.2*min(5,kv.second.second-1)*p; }
+    // vary_strict N: an oscillator period seen in fewer than N soups scores nothing (one-off periods are mostly random
+    // geometry: signals in walled boxes, chaotic agar fragments). vary_decay d: the k-th best period, with its shape
+    // bonus, is worth d^k.
+    vector<pair<double,double>> oscTerms; // (period term, shape bonus), only with vary_decay
+    for(auto&kv:beh){ const string&d=kv.first; double p=pres(kv.second.first); int P=atoi(d.c_str()+1); double shp;
+        if(d[0]=='Q'){ int ax=0,ay=0; sscanf(d.c_str(),"Q%*d(%d,%d)",&ax,&ay); double w= (ax&&ay&&ax!=ay)? 6 : 3;
+            if(C.varyCommonShip>0) w*=1+C.varyCommonShip*min(1.0,kv.second.first/(C.varyCommonRate*E.n)); // vary_common_ship m r
+            V.ships+=w*p; if(p>=1) V.nShip++; }
+        else { if(C.varyStrict>0&&kv.second.first<C.varyStrict) p=0; if(p>=1) V.nOsc++;
+            double t=(1+log2((double)max(1,P))/2)*p;
+            if(C.varyDecay!=1.0){ oscTerms.push_back({t,0.2*min(5,kv.second.second-1)*p}); continue; }
+            V.oscs+=t; }
+        shp=0.2*min(5,kv.second.second-1)*p; V.shapes+=shp; }
+    sort(oscTerms.rbegin(),oscTerms.rend()); { double w=1; for(auto&t:oscTerms){ V.oscs+=w*t.first; V.shapes+=w*t.second; w*=C.varyDecay; } }
     { set<string> sl; for(auto&kv:E.ash) if(kv.second.I.type==1&&kv.second.I.period==1&&kv.second.count>=need) sl.insert(canonId(normCells(kv.second.ex),kv.second.I,E.T.t)); V.stills=0.5*log2(1.0+sl.size()); }
     { map<string,double> sb; for(auto&e:soupEvents(E)){ string k=e.id.substr(0,1)+(e.id[0]=='G'? e.id.substr(1,e.id.find(':')-1):""); sb[k]=max(sb[k],e.credit/ (e.id[0]=='U'?10.0:e.id[0]=='G'?3.0:2.0)); }
       int ng=0; for(auto&kv:sb){ char c=kv.first[0]; if(c=='G'){ if(ng++<5) V.soup+=2; } else if(c=='U') V.soup+=4; else if(c=='A') V.soup+=2; } }
@@ -1142,14 +1183,14 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
         for(auto&h:cat){ string k=h.id.substr(1,h.id.find('_')-1); string ship=h.id.substr(h.id.find('_')+1); ship=ship.substr(0,ship.find(':'));
             if(k.rfind("reflector",0)==0) k="reflector"; if(k.rfind("converter",0)==0) k="converter"; if(k.rfind("splitter",0)==0) k="splitter"; kinds.insert(k+"|"+ship); }
         for(auto&k:kinds){ string c=k.substr(0,k.find('|')); V.cat+= c=="reflector"?5: c=="converter"||c=="splitter"?2: c=="catalysed"?0.5:1; }
-        auto sig=probeWicks(E,nullptr); set<string> sg,fu; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:fu).insert(d); }
-        V.sig=4*sg.size()+min<size_t>(3,fu.size());
+        auto sig=probeWicks(E,nullptr); set<string> sg,fu,ca; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:d[1]=='1'?ca:fu).insert(d); }
+        V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca=4*min<size_t>(3,ca.size());
         if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); } }
-    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig;
+    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca;
     return V;
 }
-static string varietyLine(const Variety&V){ char b[256]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f]",
-    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig); return b; }
+static string varietyLine(const Variety&V){ char b[256]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f]",
+    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca); return b; }
 // vary: late-acceptance hill climb on the variety score (constraints as usual; targets/min_rate/max_bad/max_cost
 // only as feasibility). No racing: a mutant is dropped after the first 1/8 of the soups if it is clearly too bad.
 static void modeVary(int iters){
