@@ -285,7 +285,7 @@ struct Cfg {
     string logFile="discoveries.txt", archiveFile="archive.txt", bestFile; vector<string> starts; int maxgCons=4000;
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
-    double varyMin=0.002; int varyProbe=1; int varyStrict=0; double varyDecay=1.0, varyCommonShip=0, varyCommonRate=0.1;
+    double varyMin=0.002; int varyProbe=1; int varyStrict=0; double varyDecay=1.0, varyCommonShip=0, varyCommonRate=0.1, varyConfined=1.0;
     int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
 } C;
 static vector<int> forcedV; // per class: -1 free, 0/1 forced
@@ -328,6 +328,7 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="gun_ships") is>>C.gunShips;
         else if(k=="vary_min") is>>C.varyMin; else if(k=="vary_probe") is>>C.varyProbe;
         else if(k=="vary_strict") is>>C.varyStrict; else if(k=="vary_decay") is>>C.varyDecay;
+        else if(k=="vary_confined") is>>C.varyConfined;
         else if(k=="vary_common_ship"){ need((bool)(is>>C.varyCommonShip)); is>>C.varyCommonRate; }
         else if(k=="probe") is>>C.probe; else if(k=="probe_grid") is>>C.probeGrid; else if(k=="probe_ships") is>>C.probeShips; else if(k=="probe_stills") is>>C.probeStills;
         else if(k=="probe_gens") is>>C.probeGens; else if(k=="wick_period") is>>C.wickK; else if(k=="wick_cells") is>>C.wickCells; else if(k=="wick_max") is>>C.wickMax;
@@ -1154,7 +1155,7 @@ struct Member { Eval E; double credit=0; int visits=0; vector<string> finds; };
 // behaviours count fully and one-off flukes little. Behaviours: ship velocities (oblique worth more), oscillator
 // periods >= min_osc_period, extra shapes of them, still-life diversity, puffer/gun/active-region soups, and (with
 // the probe) catalyst kinds, signals and fuses. Returns the score; 'why' gets a breakdown.
-struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0; int nShip=0,nOsc=0; };
+struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0; int nShip=0,nOsc=0; bool confined=false; };
 static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
     Variety V; double need=max(1.0,C.varyMin*E.n); auto pres=[&](double c){ return min(1.0,c/need); };
     map<string,pair<double,int>> beh; // behaviour -> (count, shapes)
@@ -1177,7 +1178,8 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
     sort(oscTerms.rbegin(),oscTerms.rend()); { double w=1; for(auto&t:oscTerms){ V.oscs+=w*t.first; V.shapes+=w*t.second; w*=C.varyDecay; } }
     { set<string> sl; for(auto&kv:E.ash) if(kv.second.I.type==1&&kv.second.I.period==1&&kv.second.count>=need) sl.insert(canonId(normCells(kv.second.ex),kv.second.I,E.T.t)); V.stills=0.5*log2(1.0+sl.size()); }
     { map<string,double> sb; for(auto&e:soupEvents(E)){ string k=e.id.substr(0,1)+(e.id[0]=='G'? e.id.substr(1,e.id.find(':')-1):""); sb[k]=max(sb[k],e.credit/ (e.id[0]=='U'?10.0:e.id[0]=='G'?3.0:2.0)); }
-      int ng=0; for(auto&kv:sb){ char c=kv.first[0]; if(c=='G'){ if(ng++<5) V.soup+=2; } else if(c=='U') V.soup+=4; else if(c=='A') V.soup+=2; } }
+      int ng=0; for(auto&kv:sb){ char c=kv.first[0]; if(c=='G'){ if(ng++<5) V.soup+=2; } else if(c=='U') V.soup+=4; else if(c=='A') V.soup+=2; }
+      bool moves=false; for(auto&kv:beh) if(kv.first[0]=='Q') moves=true; for(auto&kv:sb) if(kv.first[0]=='G'||kv.first[0]=='U') moves=true; V.confined=!moves; }
     if(probe){ vector<LibObj> ships,stills; probeLibrary(E,ships,stills);
         auto cat=probeCatalysts(E,ships,stills); set<string> kinds;
         for(auto&h:cat){ string k=h.id.substr(1,h.id.find('_')-1); string ship=h.id.substr(h.id.find('_')+1); ship=ship.substr(0,ship.find(':'));
@@ -1187,10 +1189,11 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
         V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca= ca.empty()? 0 : 4+min<size_t>(2,ca.size()-1); // one behaviour: a 1D CA wick usually shows several speeds
         if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); } }
     V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca;
+    if(V.confined&&C.varyConfined!=1.0) V.score*=C.varyConfined; // vary_confined f: no ship and no growth at all, everything stays in its box
     return V;
 }
-static string varietyLine(const Variety&V){ char b[256]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f]",
-    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca); return b; }
+static string varietyLine(const Variety&V){ char b[300]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f]",
+    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca); string r=b; if(V.confined&&C.varyConfined!=1.0) r+=" (confined: x"+to_string(C.varyConfined).substr(0,4)+")"; return r; }
 // vary: late-acceptance hill climb on the variety score (constraints as usual; targets/min_rate/max_bad/max_cost
 // only as feasibility). No racing: a mutant is dropped after the first 1/8 of the soups if it is clearly too bad.
 static void modeVary(int iters){
