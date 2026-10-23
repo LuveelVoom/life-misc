@@ -1,0 +1,3101 @@
+# NEW BEHAVIOUR c/2 orthogonal ship (p4), 9 cells, 3 in 1000 soups (start)
+# first seen in soup seed 7043841110506982727
+x = 4, y = 5, rule = B3/S23
+bobo$o$o$o2bo$3o!
+
+# new shape c/2 orthogonal ship (p4), 11 cells, 2 in 1000 soups (start)
+# first seen in soup seed 1958259756228294026
+x = 6, y = 5, rule = B3/S23
+2bo$o3bo$5bo$o4bo$b5o!
+
+# NEW catalyst: catalysed reaction: c/2 orthogonal ship (p4) (9 cells) + still life (7 cells) -> still life restored + p2 oscillator (3 cells), 2 setups (start)
+x = 8, y = 16, rule = B3/S23
+bobo$o$o$o2bo$3o8$4b2o$4bobo$6bo$6b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (11 cells) + still life (7 cells) -> still life restored + still life (6 cells), 2 setups (start)
+x = 16, y = 10, rule = B3/S23
+2bo$o3bo$5bo$o4bo$b5o2$12b2o$12bo$13b3o$15bo!
+
+# NEW catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored, 2 setups (start)
+x = 11, y = 12, rule = B3/S23
+bo$2bo$3o6$7b2o$7bo$8b3o$10bo!
+
+# NEW catalyst: eater: c/2 orthogonal ship (p4) (9 cells) + still life (7 cells) -> still life restored, 4 setups (start)
+x = 7, y = 16, rule = B3/S23
+bobo$o$o$o2bo$3o8$3b2o$3bo$4b3o$6bo!
+
+# NEW wick: fuse at 2c/3 along a orthogonal wick (both ways), 2 setups (start)
+x = 123, y = 2, rule = B3/S23
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at 3c/4 along a orthogonal wick (both ways), 6 setups (start)
+x = 123, y = 3, rule = B3/S23
+59bo$ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at c/1 along a diagonal wick (both ways), 3 setups (start)
+x = 41, y = 41, rule = B3/S23
+o$bo$2bo$3bo$4bo$5bo$6bo$7bo$8bo$9bo$10bo$11bo$12bo$13bo$14bo$15bo$16b
+o$17bo$18bo2$20bo$21bo$22bo$23bo$24bo$25bo$26bo$27bo$28bo$29bo$30bo$
+31bo$32bo$33bo$34bo$35bo$36bo$37bo$38bo$39bo$40bo!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 10 setups (start)
+x = 123, y = 123, rule = B3/S23
+2o$2bo$2bo$3b2o$5bo$5bo$6b2o$8bo$8bo$9b2o$11bo$11bo$12b2o$14bo$14bo$
+15b2o$17bo$17bo$18b2o$20bo$20bo$21b2o$23bo$23bo$24b2o$26bo$26bo$27b2o$
+29bo$29bo$30b2o$32bo$32bo$33b2o$35bo$35bo$36b2o$38bo$38bo$39b2o$41bo$
+41bo$42b2o$44bo$44bo$45b2o$47bo$47bo$48b2o$50bo$50bo$51b2o$53bo$53bo$
+54b2o$56bo$56bo$57b2o$59bo2$60b2o$62bo$62bo$63b2o$65bo$65bo$66b2o$68bo
+$68bo$69b2o$71bo$71bo$72b2o$74bo$74bo$75b2o$77bo$77bo$78b2o$80bo$80bo$
+81b2o$83bo$83bo$84b2o$86bo$86bo$87b2o$89bo$89bo$90b2o$92bo$92bo$93b2o$
+95bo$95bo$96b2o$98bo$98bo$99b2o$101bo$101bo$102b2o$104bo$104bo$105b2o$
+107bo$107bo$108b2o$110bo$110bo$111b2o$113bo$113bo$114b2o$116bo$116bo$
+117b2o$119bo$119bo$120b2o$122bo$122bo!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 4 setups (start)
+x = 123, y = 123, rule = B3/S23
+2o$obo$b2o$3b2o$3bobo$4b2o$6b2o$6bobo$7b2o$9b2o$9bobo$10b2o$12b2o$12bo
+bo$13b2o$15b2o$15bobo$16b2o$18b2o$18bobo$19b2o$21b2o$21bobo$22b2o$24b
+2o$24bobo$25b2o$27b2o$27bobo$28b2o$30b2o$30bobo$31b2o$33b2o$33bobo$34b
+2o$36b2o$36bobo$37b2o$39b2o$39bobo$40b2o$42b2o$42bobo$43b2o$45b2o$45bo
+bo$46b2o$48b2o$48bobo$49b2o$51b2o$51bobo$52b2o$54b2o$54bobo$55b2o$57b
+2o$57bobo$58b2obo$60b2o$60bobo$61b2o$63b2o$63bobo$64b2o$66b2o$66bobo$
+67b2o$69b2o$69bobo$70b2o$72b2o$72bobo$73b2o$75b2o$75bobo$76b2o$78b2o$
+78bobo$79b2o$81b2o$81bobo$82b2o$84b2o$84bobo$85b2o$87b2o$87bobo$88b2o$
+90b2o$90bobo$91b2o$93b2o$93bobo$94b2o$96b2o$96bobo$97b2o$99b2o$99bobo$
+100b2o$102b2o$102bobo$103b2o$105b2o$105bobo$106b2o$108b2o$108bobo$109b
+2o$111b2o$111bobo$112b2o$114b2o$114bobo$115b2o$117b2o$117bobo$118b2o$
+120b2o$120bobo$121b2o!
+
+# NEW wick: fuse at c/1 along a orthogonal wick (both ways), 1 setups (start)
+x = 123, y = 2, rule = B3/S23
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at c/2 along a diagonal wick (both ways), 12 setups (start)
+x = 123, y = 123, rule = B3/S23
+2o$obo$b2o$3b2o$3bobo$4b2o$6b2o$6bobo$7b2o$9b2o$9bobo$10b2o$12b2o$12bo
+bo$13b2o$15b2o$15bobo$16b2o$18b2o$18bobo$19b2o$21b2o$21bobo$22b2o$24b
+2o$24bobo$25b2o$27b2o$27bobo$28b2o$30b2o$30bobo$31b2o$33b2o$33bobo$34b
+2o$36b2o$36bobo$37b2o$39b2o$39bobo$40b2o$42b2o$42bobo$43b2o$45b2o$45bo
+bo$46b2o$48b2o$48bobo$49b2o$51b2o$51bobo$52b2o$54b2o$54bobo$55b2o$57b
+2o$57bobo$58bo$60b2o$60bobo$61b2o$63b2o$63bobo$64b2o$66b2o$66bobo$67b
+2o$69b2o$69bobo$70b2o$72b2o$72bobo$73b2o$75b2o$75bobo$76b2o$78b2o$78bo
+bo$79b2o$81b2o$81bobo$82b2o$84b2o$84bobo$85b2o$87b2o$87bobo$88b2o$90b
+2o$90bobo$91b2o$93b2o$93bobo$94b2o$96b2o$96bobo$97b2o$99b2o$99bobo$
+100b2o$102b2o$102bobo$103b2o$105b2o$105bobo$106b2o$108b2o$108bobo$109b
+2o$111b2o$111bobo$112b2o$114b2o$114bobo$115b2o$117b2o$117bobo$118b2o$
+120b2o$120bobo$121b2o!
+
+# NEW fossil: p2 oscillator (24 cells) in the ash, first in soup seed 5411414669844330883, 0 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 10012103502418394836, 0 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# NEW fossil: still life (14 cells) in the ash, first in soup seed 1014777231078047048, 2 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 7369442097986262580, 0 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 16556097445670054504, 1 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# fossil: still life (16 cells) in the ash, first in soup seed 7414662081467848513, 0 in 1000 soups (start)
+x = 0, y = 0, rule = B3/S23
+!
+
+# NEW wick: fuse at 3c/4 along a diagonal wick (one way), 2 setups (explore it 3, parent [-B3q ])
+x = 164, y = 164, rule = B3-q/S23
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o$80bo2bo$80bob2o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b
+2o$90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo
+2bo$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$
+110bo$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o
+$120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 22 setups (explore it 3, parent [-B3q ])
+x = 164, y = 164, rule = B3-q/S23
+2o$obo$bobo$2b2o$4b2o$4bobo$5bobo$6b2o$8b2o$8bobo$9bobo$10b2o$12b2o$
+12bobo$13bobo$14b2o$16b2o$16bobo$17bobo$18b2o$20b2o$20bobo$21bobo$22b
+2o$24b2o$24bobo$25bobo$26b2o$28b2o$28bobo$29bobo$30b2o$32b2o$32bobo$
+33bobo$34b2o$36b2o$36bobo$37bobo$38b2o$40b2o$40bobo$41bobo$42b2o$44b2o
+$44bobo$45bobo$46b2o$48b2o$48bobo$49bobo$50b2o$52b2o$52bobo$53bobo$54b
+2o$56b2o$56bobo$57bobo$58b2o$60b2o$60bobo$61bobo$62b2o$64b2o$64bobo$
+65bobo$66b2o$68b2o$68bobo$69bobo$70b2o$72b2o$72bobo$73bobo$74b2o$76b2o
+$76bobo$77bobo$78b3o$80b2o$80bobo$81bobo$82b2o$84b2o$84bobo$85bobo$86b
+2o$88b2o$88bobo$89bobo$90b2o$92b2o$92bobo$93bobo$94b2o$96b2o$96bobo$
+97bobo$98b2o$100b2o$100bobo$101bobo$102b2o$104b2o$104bobo$105bobo$106b
+2o$108b2o$108bobo$109bobo$110b2o$112b2o$112bobo$113bobo$114b2o$116b2o$
+116bobo$117bobo$118b2o$120b2o$120bobo$121bobo$122b2o$124b2o$124bobo$
+125bobo$126b2o$128b2o$128bobo$129bobo$130b2o$132b2o$132bobo$133bobo$
+134b2o$136b2o$136bobo$137bobo$138b2o$140b2o$140bobo$141bobo$142b2o$
+144b2o$144bobo$145bobo$146b2o$148b2o$148bobo$149bobo$150b2o$152b2o$
+152bobo$153bobo$154b2o$156b2o$156bobo$157bobo$158b2o$160b2o$160bobo$
+161bobo$162b2o!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 17581687467765170523, 0 in 1000 soups (explore it 3, parent [-B3q ])
+x = 0, y = 0, rule = B3-q/S23
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 1526924815635124091, 1 in 1000 soups (explore it 3, parent [-B3q ])
+x = 0, y = 0, rule = B3-q/S23
+!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (4 cells) -> still life restored, 2 setups (explore it 6, parent [-B3k ])
+x = 10, y = 10, rule = B3-kq/S23
+bo$2bo$3o6$8b2o$8b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (4 cells) -> still life restored, 4 setups (explore it 6, parent [-B3k ])
+x = 11, y = 11, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$9bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (5 cells) -> still life restored, 14 setups (explore it 6, parent [-B3k ])
+x = 11, y = 11, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$8b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (6 cells) -> still life restored, 6 setups (explore it 6, parent [-B3k ])
+x = 11, y = 11, rule = B3-kq/S23
+bo$2bo$3o6$8b2o$8bobo$9b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (6 cells) -> still life restored, 8 setups (explore it 6, parent [-B3k ])
+x = 11, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$8bobo$9bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored, 12 setups (explore it 6, parent [-B3k ])
+x = 12, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$8b2o$8bo$10b2o$10b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (6 cells) -> still life restored, 10 setups (explore it 6, parent [-B3k ])
+x = 12, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$9bobo$10bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored, 18 setups (explore it 6, parent [-B3k ])
+x = 12, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$9b2o$8bo2bo$8bobo$9bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored, 18 setups (explore it 6, parent [-B3k ])
+x = 12, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$10b2o$9bobo$8bobo$9bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 4 setups (explore it 6, parent [-B3k ])
+x = 12, y = 12, rule = B3-kq/S23
+bo$2bo$3o6$9b2o$8bo2bo$8bo2bo$9b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored, 28 setups (explore it 6, parent [-B3k ])
+x = 12, y = 11, rule = B3-kq/S23
+bo$2bo$3o4$10b2o$11bo$9bo$8bobo$9bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (9 cells) -> still life restored, 16 setups (explore it 6, parent [-B3k ])
+x = 13, y = 13, rule = B3-kq/S23
+bo$2bo$3o6$8b2o$8bo$10b2o$10bobo$11b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 12 setups (explore it 6, parent [-B3k ])
+x = 13, y = 13, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$9bobo$10bobo$11bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (12 cells) -> still life restored, 10 setups (explore it 6, parent [-B3k ])
+x = 14, y = 14, rule = B3-kq/S23
+bo$2bo$3o6$8b2o$8bobo$9b2o$11b2o$11bobo$12b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (14 cells) -> still life restored, 28 setups (explore it 6, parent [-B3k ])
+x = 15, y = 15, rule = B3-kq/S23
+bo$2bo$3o6$9bo$8bobo$8bo2bo$9b2obo$11bobo$11bo2bo$12b2o!
+
+# fossil: still life (18 cells) in the ash, first in soup seed 6255581847729574014, 0 in 1000 soups (explore it 6, parent [-B3k ])
+x = 0, y = 0, rule = B3-kq/S23
+!
+
+# NEW wick: fuse at 2c/5 along a diagonal wick (one way), 2 setups (explore it 21, parent [+S4z ])
+x = 82, y = 82, rule = B3-q/S234z
+2o$o$2b2o$2bo$4b2o$4bo$6b2o$6bo$8b2o$8bo$10b2o$10bo$12b2o$12bo$14b2o$
+14bo$16b2o$16bo$18b2o$18bo$20b2o$20bo$22b2o$22bo$24b2o$24bo$26b2o$26bo
+$28b2o$28bo$30b2o$30bo$32b2o$32bo$34b2o$34bo$36b2o$36bo$38b2o$38bo$41b
+o$40bo$42b2o$42bo$44b2o$44bo$46b2o$46bo$48b2o$48bo$50b2o$50bo$52b2o$
+52bo$54b2o$54bo$56b2o$56bo$58b2o$58bo$60b2o$60bo$62b2o$62bo$64b2o$64bo
+$66b2o$66bo$68b2o$68bo$70b2o$70bo$72b2o$72bo$74b2o$74bo$76b2o$76bo$78b
+2o$78bo$80b2o$80bo!
+
+# NEW wick: fuse at 2c/5 along a orthogonal wick (both ways), 4 setups (explore it 21, parent [+S4z ])
+x = 205, y = 3, rule = B3-q/S234z
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b3o2b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 7 setups (explore it 21, parent [+S4z ])
+x = 164, y = 164, rule = B3-q/S234z
+2o$bo$b3o$3bo$4b2o$5bo$5b3o$7bo$8b2o$9bo$9b3o$11bo$12b2o$13bo$13b3o$
+15bo$16b2o$17bo$17b3o$19bo$20b2o$21bo$21b3o$23bo$24b2o$25bo$25b3o$27bo
+$28b2o$29bo$29b3o$31bo$32b2o$33bo$33b3o$35bo$36b2o$37bo$37b3o$39bo$40b
+2o$41bo$41b3o$43bo$44b2o$45bo$45b3o$47bo$48b2o$49bo$49b3o$51bo$52b2o$
+53bo$53b3o$55bo$56b2o$57bo$57b3o$59bo$60b2o$61bo$61b3o$63bo$64b2o$65bo
+$65b3o$67bo$68b2o$69bo$69b3o$71bo$72b2o$73bo$73b3o$75bo$76b2o$77bo$77b
+3o$79bo2bo$80b2o$81bo$81b3o$83bo$84b2o$85bo$85b3o$87bo$88b2o$89bo$89b
+3o$91bo$92b2o$93bo$93b3o$95bo$96b2o$97bo$97b3o$99bo$100b2o$101bo$101b
+3o$103bo$104b2o$105bo$105b3o$107bo$108b2o$109bo$109b3o$111bo$112b2o$
+113bo$113b3o$115bo$116b2o$117bo$117b3o$119bo$120b2o$121bo$121b3o$123bo
+$124b2o$125bo$125b3o$127bo$128b2o$129bo$129b3o$131bo$132b2o$133bo$133b
+3o$135bo$136b2o$137bo$137b3o$139bo$140b2o$141bo$141b3o$143bo$144b2o$
+145bo$145b3o$147bo$148b2o$149bo$149b3o$151bo$152b2o$153bo$153b3o$155bo
+$156b2o$157bo$157b3o$159bo$160b2o$161bo$161b3o$163bo!
+
+# NEW wick: signal at c/1 along a orthogonal wick (both ways), 3 setups (explore it 21, parent [+S4z ])
+x = 123, y = 2, rule = B3-q/S234z
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 5801548322714700045, 1 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 7423812417568718024, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 3401430470017305558, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: p2 oscillator (41 cells) in the ash, first in soup seed 6411573838525004598, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 4757482761424355031, 1 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 5755646932478008148, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (13 cells) in the ash, first in soup seed 14383561730809869224, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 1594493063933498500, 0 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 10909039671240919053, 1 in 1000 soups (explore it 21, parent [+S4z ])
+x = 0, y = 0, rule = B3-q/S234z
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 16393335144123353988, 0 in 1000 soups (explore it 22, parent [+B4q ])
+x = 0, y = 0, rule = B3-kq4q/S23
+!
+
+# fossil: still life (20 cells) in the ash, first in soup seed 9339497153817988081, 0 in 1000 soups (explore it 22, parent [+B4q ])
+x = 0, y = 0, rule = B3-kq4q/S23
+!
+
+# NEW SOUP BEHAVIOUR linear growth +10 cells per 64 gens (puffer, rake or gun), 1 in 1000 soups (explore it 28, parent [+B5k ])
+# soup seed 9951619509523701173 (the soup is below; run it in Golly)
+x = 16, y = 16, rule = B3-q5k/S23
+2o2b2o2bo2bo3bo$2o3bobo3bob2o$o2b3ob4o2bo$o2b3o2b4o2bo$obo3b3ob2o2b2o$
+2b4o5bo2bo$bobo6b2obo$o2bobobo2bob3o$bob2o2bo7bo$b2o2b2o2bo2bo$8bo4b2o
+$bob3ob2o2bobo$3b4o3b3o2bo$4obo3b2o4bo$b2ob6o3bo$4bo2b2obo3bo!
+
+# NEW wick: fuse at 2c/3 along a diagonal wick (one way), 4 setups (explore it 28, parent [+B5k ])
+x = 82, y = 82, rule = B3-q5k/S23
+2o$o$2b2o$2bo$4b2o$4bo$6b2o$6bo$8b2o$8bo$10b2o$10bo$12b2o$12bo$14b2o$
+14bo$16b2o$16bo$18b2o$18bo$20b2o$20bo$22b2o$22bo$24b2o$24bo$26b2o$26bo
+$28b2o$28bo$30b2o$30bo$32b2o$32bo$34b2o$34bo$36b2o$36bo$38b2o$38bobo$
+40b2o$40bo$42b2o$42bo$44b2o$44bo$46b2o$46bo$48b2o$48bo$50b2o$50bo$52b
+2o$52bo$54b2o$54bo$56b2o$56bo$58b2o$58bo$60b2o$60bo$62b2o$62bo$64b2o$
+64bo$66b2o$66bo$68b2o$68bo$70b2o$70bo$72b2o$72bo$74b2o$74bo$76b2o$76bo
+$78b2o$78bo$80b2o$80bo!
+
+# NEW wick: fuse at 4c/5 along a diagonal wick (one way), 1 setups (explore it 28, parent [+B5k ])
+x = 164, y = 164, rule = B3-q5k/S23
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o$80bo2bo$81b3o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b2o$
+90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo2bo
+$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$110b
+o$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o$
+120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# fossil: p2 oscillator (29 cells) in the ash, first in soup seed 18176615617160980425, 0 in 1000 soups (explore it 28, parent [+B5k ])
+x = 0, y = 0, rule = B3-q5k/S23
+!
+
+# fossil: p2 oscillator (42 cells) in the ash, first in soup seed 13906362264177492907, 0 in 1000 soups (explore it 28, parent [+B5k ])
+x = 0, y = 0, rule = B3-q5k/S23
+!
+
+# fossil: still life (13 cells) in the ash, first in soup seed 8996820874389082134, 0 in 1000 soups (explore it 28, parent [+B5k ])
+x = 0, y = 0, rule = B3-q5k/S23
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 15815445532976148244, 0 in 1000 soups (explore it 28, parent [+B5k ])
+x = 0, y = 0, rule = B3-q5k/S23
+!
+
+# NEW wick: fuse at 4c/5 along a orthogonal wick (one way), 4 setups (explore it 62, parent [+B5c ])
+x = 123, y = 3, rule = B3-kq4q5c/S23
+60bo$ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 8843015898132927226, 0 in 1000 soups (explore it 62, parent [+B5c ])
+x = 0, y = 0, rule = B3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (25 cells) in the ash, first in soup seed 3421831783896064126, 0 in 1000 soups (explore it 62, parent [+B5c ])
+x = 0, y = 0, rule = B3-kq4q5c/S23
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 17060724559594862477, 0 in 1000 soups (explore it 62, parent [+B5c ])
+x = 0, y = 0, rule = B3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 8250202977394348777, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 8894027846593957625, 1 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (25 cells) in the ash, first in soup seed 8002812012419063724, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 13956901287868833766, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 13137761280386853773, 1 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 2098269320014528162, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (27 cells) in the ash, first in soup seed 17007864596997311664, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (27 cells) in the ash, first in soup seed 12964807826673707439, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 39696689981712816, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (33 cells) in the ash, first in soup seed 8568547847324474002, 1 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (36 cells) in the ash, first in soup seed 12024929863945676024, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# fossil: p2 oscillator (36 cells) in the ash, first in soup seed 17389576123718362187, 0 in 1000 soups (explore it 79, parent [+B2i ])
+x = 0, y = 0, rule = B2i3-kq4q5c/S23
+!
+
+# wick: fuse at 2c/3 along a diagonal wick (one way), 1 setups (explore it 80, parent [+B5c ])
+x = 164, y = 164, rule = B3-q5ck/S23
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o2bo$80bo2bo$82b2o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b
+2o$90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo
+2bo$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$
+110bo$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o
+$120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# wick: fuse at c/2 along a diagonal wick (one way), 2 setups (explore it 80, parent [+B5c ])
+x = 82, y = 82, rule = B3-q5ck/S23
+2o$o$2b2o$2bo$4b2o$4bo$6b2o$6bo$8b2o$8bo$10b2o$10bo$12b2o$12bo$14b2o$
+14bo$16b2o$16bo$18b2o$18bo$20b2o$20bo$22b2o$22bo$24b2o$24bo$26b2o$26bo
+$28b2o$28bo$30b2o$30bo$32b2o$32bo$34b2o$34bo$36b2o$36bo$38b2o$38bo$41b
+o$40bo$42b2o$42bo$44b2o$44bo$46b2o$46bo$48b2o$48bo$50b2o$50bo$52b2o$
+52bo$54b2o$54bo$56b2o$56bo$58b2o$58bo$60b2o$60bo$62b2o$62bo$64b2o$64bo
+$66b2o$66bo$68b2o$68bo$70b2o$70bo$72b2o$72bo$74b2o$74bo$76b2o$76bo$78b
+2o$78bo$80b2o$80bo!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 12562310938228306115, 0 in 1000 soups (explore it 80, parent [+B5c ])
+x = 0, y = 0, rule = B3-q5ck/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 1417966975615512387, 0 in 1000 soups (explore it 80, parent [+B5c ])
+x = 0, y = 0, rule = B3-q5ck/S23
+!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 83, parent [-S3y ])
+x = 12, y = 7, rule = B3-q/S23-y4z
+bo$2bo$3o5b2o$8bo$10b2o$10bo$9b2o!
+
+# NEW wick: fuse at 3c/7 along a orthogonal wick (one way), 4 setups (explore it 83, parent [-S3y ])
+x = 205, y = 4, rule = B3-q/S23-y4z
+100bo$3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o!
+
+# NEW wick: fuse at c/3 along a orthogonal wick (both ways), 4 setups (explore it 83, parent [-S3y ])
+x = 205, y = 3, rule = B3-q/S23-y4z
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3bo4b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# fossil: p4 oscillator (18 cells) in the ash, first in soup seed 7027221585052501243, 0 in 1000 soups (explore it 83, parent [-S3y ])
+x = 0, y = 0, rule = B3-q/S23-y4z
+!
+
+# fossil: still life (13 cells) in the ash, first in soup seed 7102418536526096578, 0 in 1000 soups (explore it 83, parent [-S3y ])
+x = 0, y = 0, rule = B3-q/S23-y4z
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 14616362877875918342, 0 in 1000 soups (explore it 83, parent [-S3y ])
+x = 0, y = 0, rule = B3-q/S23-y4z
+!
+
+# NEW BEHAVIOUR p4 oscillator, 12 cells, 1 in 1000 soups (explore it 83, parent [-S3y ])
+# first seen in soup seed 7027221585052501243
+x = 7, y = 7, rule = B3-q/S23-y4z
+3b2o$bobo$o5bo$bo3b2o2$3bobo$4bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (7 cells) -> still life restored + still life (4 cells), 2 setups (explore it 84, parent [+S7c ])
+x = 15, y = 9, rule = B3-q5ck/S237c
+13b2o$14bo$11b3o$11bo2$2b2o$2ob2o$4o$b2o!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 12435895129876745918, 0 in 1000 soups (explore it 84, parent [+S7c ])
+x = 0, y = 0, rule = B3-q5ck/S237c
+!
+
+# fossil: still life (13 cells) in the ash, first in soup seed 11694168191666190443, 0 in 1000 soups (explore it 84, parent [+S7c ])
+x = 0, y = 0, rule = B3-q5ck/S237c
+!
+
+# fossil: p2 oscillator (25 cells) in the ash, first in soup seed 63659754904074735, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (32 cells) in the ash, first in soup seed 13460722518344925084, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 10517327542246047788, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (36 cells) in the ash, first in soup seed 12027118289083831702, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 811178351449847531, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (42 cells) in the ash, first in soup seed 17763247166776168036, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 15418433688158539723, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 9804760312581831993, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# fossil: still life (42 cells) in the ash, first in soup seed 7300659039925882856, 0 in 1000 soups (explore it 85, parent [+B5k ])
+x = 0, y = 0, rule = B3-kq4q5k/S23
+!
+
+# wick: fuse at 4c/5 along a orthogonal wick (one way), 2 setups (explore it 87, parent [+S5a ])
+x = 205, y = 3, rule = B3-q/S23-y4z5a
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o3b2o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# wick: fuse at c/1 along a diagonal wick (one way), 1 setups (explore it 87, parent [+S5a ])
+x = 164, y = 164, rule = B3-q/S23-y4z5a
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o$80bo2bo$81b3o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b2o$
+90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo2bo
+$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$110b
+o$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o$
+120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 17420044080216075211, 0 in 1000 soups (explore it 87, parent [+S5a ])
+x = 0, y = 0, rule = B3-q/S23-y4z5a
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 14075695495611303714, 0 in 1000 soups (explore it 87, parent [+S5a ])
+x = 0, y = 0, rule = B3-q/S23-y4z5a
+!
+
+# fossil: still life (19 cells) in the ash, first in soup seed 2283217132499602512, 0 in 1000 soups (explore it 87, parent [+S5a ])
+x = 0, y = 0, rule = B3-q/S23-y4z5a
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 17606939196237328953, 0 in 1000 soups (explore it 87, parent [+S5a ])
+x = 0, y = 0, rule = B3-q/S23-y4z5a
+!
+
+# fossil: still life (20 cells) in the ash, first in soup seed 27060564431015404, 0 in 1000 soups (explore it 87, parent [+S5a ])
+x = 0, y = 0, rule = B3-q/S23-y4z5a
+!
+
+# new shape c/2 orthogonal ship (p4), 13 cells, 1 in 1000 soups (explore it 87, parent [+S5a ])
+# first seen in soup seed 9452229933423531958
+x = 5, y = 7, rule = B3-q/S23-y4z5a
+3o$o2bo$o$o3bo$o3bo$o$bobo!
+
+# wick: fuse at 2c/3 along a orthogonal wick (both ways), 4 setups (explore it 119, parent [+B3q +S7c ])
+x = 205, y = 4, rule = B3/S23-y4z7c
+99bo$3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o!
+
+# wick: fuse at 3c/4 along a orthogonal wick (one way), 2 setups (explore it 119, parent [+B3q +S7c ])
+x = 205, y = 3, rule = B3/S23-y4z7c
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o4bo3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 2 setups (explore it 119, parent [+B3q +S7c ])
+x = 205, y = 3, rule = B3/S23-y4z7c
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o2b3o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# fossil: still life (16 cells) in the ash, first in soup seed 7974774297785667623, 0 in 1000 soups (explore it 119, parent [+B3q +S7c ])
+x = 0, y = 0, rule = B3/S23-y4z7c
+!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 18 setups (explore it 127, parent [+S4t ])
+x = 205, y = 3, rule = B3-q5k/S234t
+obo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2b
+obo2bobo2bobo2bobo2bobo2bobob2obo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2b
+obo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo$ob4ob
+4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob
+4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob4ob3o$obo2bobo2bobo2bobo
+2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo
+2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo
+2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo2bobo!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 17166739513092849000, 0 in 1000 soups (explore it 127, parent [+S4t ])
+x = 0, y = 0, rule = B3-q5k/S234t
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 18443245146516676166, 0 in 1000 soups (explore it 127, parent [+S4t ])
+x = 0, y = 0, rule = B3-q5k/S234t
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 1895172244697047053, 0 in 1000 soups (explore it 127, parent [+S4t ])
+x = 0, y = 0, rule = B3-q5k/S234t
+!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 12 setups (explore it 128, parent [+S5y ])
+x = 82, y = 3, rule = B3/S23-y4z5y7c
+bobobobobobobobobobobobobobobobobobobo3bobobobobobobobobobobobobobobob
+obobobobobo$82o$obobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobo!
+
+# wick: fuse at 2c/3 along a diagonal wick (both ways), 1 setups (explore it 137, parent [+B5i +B6c ])
+x = 164, y = 164, rule = B3-q5i6c/S234z
+2o$bo$b3o$3bo$4b2o$5bo$5b3o$7bo$8b2o$9bo$9b3o$11bo$12b2o$13bo$13b3o$
+15bo$16b2o$17bo$17b3o$19bo$20b2o$21bo$21b3o$23bo$24b2o$25bo$25b3o$27bo
+$28b2o$29bo$29b3o$31bo$32b2o$33bo$33b3o$35bo$36b2o$37bo$37b3o$39bo$40b
+2o$41bo$41b3o$43bo$44b2o$45bo$45b3o$47bo$48b2o$49bo$49b3o$51bo$52b2o$
+53bo$53b3o$55bo$56b2o$57bo$57b3o$59bo$60b2o$61bo$61b3o$63bo$64b2o$65bo
+$65b3o$67bo$68b2o$69bo$69b3o$71bo$72b2o$73bo$73b3o$75bo$76b2o$77bo$77b
+3o$79bo$80b2o$80b2o$81b3o$83bo$84b2o$85bo$85b3o$87bo$88b2o$89bo$89b3o$
+91bo$92b2o$93bo$93b3o$95bo$96b2o$97bo$97b3o$99bo$100b2o$101bo$101b3o$
+103bo$104b2o$105bo$105b3o$107bo$108b2o$109bo$109b3o$111bo$112b2o$113bo
+$113b3o$115bo$116b2o$117bo$117b3o$119bo$120b2o$121bo$121b3o$123bo$124b
+2o$125bo$125b3o$127bo$128b2o$129bo$129b3o$131bo$132b2o$133bo$133b3o$
+135bo$136b2o$137bo$137b3o$139bo$140b2o$141bo$141b3o$143bo$144b2o$145bo
+$145b3o$147bo$148b2o$149bo$149b3o$151bo$152b2o$153bo$153b3o$155bo$156b
+2o$157bo$157b3o$159bo$160b2o$161bo$161b3o$163bo!
+
+# NEW wick: fuse at 5c/6 along a orthogonal wick (both ways), 3 setups (explore it 137, parent [+B5i +B6c ])
+x = 123, y = 2, rule = B3-q5i6c/S234z
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# fossil: p34 oscillator (12 cells) in the ash, first in soup seed 2452758297592695587, 1 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+x = 0, y = 0, rule = B3-q5i6c/S234z
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 10165226114359734270, 0 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+x = 0, y = 0, rule = B3-q5i6c/S234z
+!
+
+# fossil: p2 oscillator (29 cells) in the ash, first in soup seed 7950454542610415380, 0 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+x = 0, y = 0, rule = B3-q5i6c/S234z
+!
+
+# fossil: still life (19 cells) in the ash, first in soup seed 9799195797855612382, 0 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+x = 0, y = 0, rule = B3-q5i6c/S234z
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 2152942601511341962, 0 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+x = 0, y = 0, rule = B3-q5i6c/S234z
+!
+
+# NEW BEHAVIOUR p34 oscillator, 9 cells, 4 in 1000 soups (explore it 137, parent [+B5i +B6c ])
+# first seen in soup seed 620556217947179047
+x = 7, y = 3, rule = B3-q5i6c/S234z
+o2bobo$bob2obo$bobo!
+
+# NEW wick: fuse at 4c/7 along a diagonal wick (one way), 4 setups (explore it 140, parent [+B5r +S4z ])
+x = 164, y = 163, rule = B3-q5kr/S234z
+2o$o2bo$2b2o2$4b2o$4bo2bo$6b2o2$8b2o$8bo2bo$10b2o2$12b2o$12bo2bo$14b2o
+2$16b2o$16bo2bo$18b2o2$20b2o$20bo2bo$22b2o2$24b2o$24bo2bo$26b2o2$28b2o
+$28bo2bo$30b2o2$32b2o$32bo2bo$34b2o2$36b2o$36bo2bo$38b2o2$40b2o$40bo2b
+o$42b2o2$44b2o$44bo2bo$46b2o2$48b2o$48bo2bo$50b2o2$52b2o$52bo2bo$54b2o
+2$56b2o$56bo2bo$58b2o2$60b2o$60bo2bo$62b2o2$64b2o$64bo2bo$66b2o2$68b2o
+$68bo2bo$70b2o2$72b2o$72bo2bo$74b2o2$76b2o$76bo2bo$78b2o$79bo$80b2o$
+80bo2bo$82b2o2$84b2o$84bo2bo$86b2o2$88b2o$88bo2bo$90b2o2$92b2o$92bo2bo
+$94b2o2$96b2o$96bo2bo$98b2o2$100b2o$100bo2bo$102b2o2$104b2o$104bo2bo$
+106b2o2$108b2o$108bo2bo$110b2o2$112b2o$112bo2bo$114b2o2$116b2o$116bo2b
+o$118b2o2$120b2o$120bo2bo$122b2o2$124b2o$124bo2bo$126b2o2$128b2o$128bo
+2bo$130b2o2$132b2o$132bo2bo$134b2o2$136b2o$136bo2bo$138b2o2$140b2o$
+140bo2bo$142b2o2$144b2o$144bo2bo$146b2o2$148b2o$148bo2bo$150b2o2$152b
+2o$152bo2bo$154b2o2$156b2o$156bo2bo$158b2o2$160b2o$160bo2bo$162b2o!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 7251208075507182228, 0 in 1000 soups (explore it 140, parent [+B5r +S4z ])
+x = 0, y = 0, rule = B3-q5kr/S234z
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 2678697904304206897, 0 in 1000 soups (explore it 140, parent [+B5r +S4z ])
+x = 0, y = 0, rule = B3-q5kr/S234z
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 4770027471577126406, 0 in 1000 soups (explore it 140, parent [+B5r +S4z ])
+x = 0, y = 0, rule = B3-q5kr/S234z
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 152159497591979565, 0 in 1000 soups (explore it 140, parent [+B5r +S4z ])
+x = 0, y = 0, rule = B3-q5kr/S234z
+!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 164, parent [+B2n ])
+x = 13, y = 13, rule = B2n3-q5kr/S234z
+bo$2bo$3o6$9bo$8bobo$9b2o$12bo$11b2o!
+
+# NEW wick: fuse at 0c/1 along a diagonal wick (one way), 2 setups (explore it 164, parent [+B2n ])
+x = 164, y = 163, rule = B2n3-q5kr/S234z
+2b2o$o2bo$2o2$6b2o$4bo2bo$4b2o2$10b2o$8bo2bo$8b2o2$14b2o$12bo2bo$12b2o
+2$18b2o$16bo2bo$16b2o2$22b2o$20bo2bo$20b2o2$26b2o$24bo2bo$24b2o2$30b2o
+$28bo2bo$28b2o2$34b2o$32bo2bo$32b2o2$38b2o$36bo2bo$36b2o2$42b2o$40bo2b
+o$40b2o2$46b2o$44bo2bo$44b2o2$50b2o$48bo2bo$48b2o2$54b2o$52bo2bo$52b2o
+2$58b2o$56bo2bo$56b2o2$62b2o$60bo2bo$60b2o2$66b2o$64bo2bo$64b2o2$70b2o
+$68bo2bo$68b2o2$74b2o$72bo2bo$72b2o2$78b2o$76bo2bo$76b2o$84bo$82b2o$
+80bo2bo$80b2o2$86b2o$84bo2bo$84b2o2$90b2o$88bo2bo$88b2o2$94b2o$92bo2bo
+$92b2o2$98b2o$96bo2bo$96b2o2$102b2o$100bo2bo$100b2o2$106b2o$104bo2bo$
+104b2o2$110b2o$108bo2bo$108b2o2$114b2o$112bo2bo$112b2o2$118b2o$116bo2b
+o$116b2o2$122b2o$120bo2bo$120b2o2$126b2o$124bo2bo$124b2o2$130b2o$128bo
+2bo$128b2o2$134b2o$132bo2bo$132b2o2$138b2o$136bo2bo$136b2o2$142b2o$
+140bo2bo$140b2o2$146b2o$144bo2bo$144b2o2$150b2o$148bo2bo$148b2o2$154b
+2o$152bo2bo$152b2o2$158b2o$156bo2bo$156b2o2$162b2o$160bo2bo$160b2o!
+
+# wick: fuse at 0c/1 along a diagonal wick (one way), 4 setups (explore it 164, parent [+B2n ])
+x = 164, y = 163, rule = B2n3-q5kr/S234z
+2o$o2bo$2b2o2$4b2o$4bo2bo$6b2o2$8b2o$8bo2bo$10b2o2$12b2o$12bo2bo$14b2o
+2$16b2o$16bo2bo$18b2o2$20b2o$20bo2bo$22b2o2$24b2o$24bo2bo$26b2o2$28b2o
+$28bo2bo$30b2o2$32b2o$32bo2bo$34b2o2$36b2o$36bo2bo$38b2o2$40b2o$40bo2b
+o$42b2o2$44b2o$44bo2bo$46b2o2$48b2o$48bo2bo$50b2o2$52b2o$52bo2bo$54b2o
+2$56b2o$56bo2bo$58b2o2$60b2o$60bo2bo$62b2o2$64b2o$64bo2bo$66b2o2$68b2o
+$68bo2bo$70b2o2$72b2o$72bo2bo$74b2o2$76b2o$76bo2bo$78b2o$82bo$80b2o$
+80bo2bo$82b2o2$84b2o$84bo2bo$86b2o2$88b2o$88bo2bo$90b2o2$92b2o$92bo2bo
+$94b2o2$96b2o$96bo2bo$98b2o2$100b2o$100bo2bo$102b2o2$104b2o$104bo2bo$
+106b2o2$108b2o$108bo2bo$110b2o2$112b2o$112bo2bo$114b2o2$116b2o$116bo2b
+o$118b2o2$120b2o$120bo2bo$122b2o2$124b2o$124bo2bo$126b2o2$128b2o$128bo
+2bo$130b2o2$132b2o$132bo2bo$134b2o2$136b2o$136bo2bo$138b2o2$140b2o$
+140bo2bo$142b2o2$144b2o$144bo2bo$146b2o2$148b2o$148bo2bo$150b2o2$152b
+2o$152bo2bo$154b2o2$156b2o$156bo2bo$158b2o2$160b2o$160bo2bo$162b2o!
+
+# wick: fuse at 2c/5 along a diagonal wick (one way), 2 setups (explore it 164, parent [+B2n ])
+x = 164, y = 163, rule = B2n3-q5kr/S234z
+2b2o$o2bo$2o2$6b2o$4bo2bo$4b2o2$10b2o$8bo2bo$8b2o2$14b2o$12bo2bo$12b2o
+2$18b2o$16bo2bo$16b2o2$22b2o$20bo2bo$20b2o2$26b2o$24bo2bo$24b2o2$30b2o
+$28bo2bo$28b2o2$34b2o$32bo2bo$32b2o2$38b2o$36bo2bo$36b2o2$42b2o$40bo2b
+o$40b2o2$46b2o$44bo2bo$44b2o2$50b2o$48bo2bo$48b2o2$54b2o$52bo2bo$52b2o
+2$58b2o$56bo2bo$56b2o2$62b2o$60bo2bo$60b2o2$66b2o$64bo2bo$64b2o2$70b2o
+$68bo2bo$68b2o2$74b2o$72bo2bo$72b2o2$78b2o$76bo2bo$76b2o2$82b3o$80bo2b
+o$80b2o2$86b2o$84bo2bo$84b2o2$90b2o$88bo2bo$88b2o2$94b2o$92bo2bo$92b2o
+2$98b2o$96bo2bo$96b2o2$102b2o$100bo2bo$100b2o2$106b2o$104bo2bo$104b2o
+2$110b2o$108bo2bo$108b2o2$114b2o$112bo2bo$112b2o2$118b2o$116bo2bo$116b
+2o2$122b2o$120bo2bo$120b2o2$126b2o$124bo2bo$124b2o2$130b2o$128bo2bo$
+128b2o2$134b2o$132bo2bo$132b2o2$138b2o$136bo2bo$136b2o2$142b2o$140bo2b
+o$140b2o2$146b2o$144bo2bo$144b2o2$150b2o$148bo2bo$148b2o2$154b2o$152bo
+2bo$152b2o2$158b2o$156bo2bo$156b2o2$162b2o$160bo2bo$160b2o!
+
+# NEW BEHAVIOUR p3 oscillator, 8 cells, 12 in 1000 soups (explore it 164, parent [+B2n ])
+# first seen in soup seed 2314519489296766275
+x = 5, y = 5, rule = B2n3-q5kr/S234z
+3b2o$bo2bo2$o2bo$2o!
+
+# new shape p3 oscillator, 8 cells, 1 in 1000 soups (explore it 164, parent [+B2n ])
+# first seen in soup seed 18185236406217862295
+x = 6, y = 5, rule = B2n3-q5kr/S234z
+4bo$2b2obo2$ob2o$bo!
+
+# NEW SOUP BEHAVIOUR linear growth +27 cells per 135 gens (puffer, rake or gun), 2 in 1000 soups (explore it 175, parent [+B6c ])
+# soup seed 14000843436503604257 (the soup is below; run it in Golly)
+x = 16, y = 16, rule = B2i3-kq4q5c6c/S23
+2ob5obo2bo$b2ob4o7bo$o3b2ob5ob2o$obobo4bobo2b2o$o3bo2b3obobo$4b2o4bo3b
+o$bob3o3b7o$bob2ob4obo3bo$4bo2bo2bobo$ob2o5bo4b2o$3bob3obobobo$bo13bo$
+4o2bobob3ob2o$2o2b4obo2bobo$b7obobo2b2o$ob3obo2b2obo2bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (5 cells) -> still life restored + still life (4 cells), 2 setups (explore it 214, parent [+S7e ])
+x = 14, y = 8, rule = B3-q5kr/S234z7e
+o$3o$2bo2$10b2o$9b2ob2o$10b4o$11b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (9 cells) -> still life restored + still life (4 cells), 2 setups (explore it 214, parent [+S7e ])
+x = 14, y = 9, rule = B3-q5kr/S234z7e
+10b2o$9b2ob2o$10b4o$11b2o$3bo$b3o$o$b3o$3bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (14 cells) -> still life restored + still life (4 cells), 2 setups (explore it 214, parent [+S7e ])
+x = 17, y = 11, rule = B3-q5kr/S234z7e
+13b2o$12b2ob2o$13b4o$14b2o$2bo$3o$o$b2o$3bob2o$3bobo$4b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (4 cells) -> still life restored, 2 setups (explore it 214, parent [+S7e ])
+x = 12, y = 8, rule = B3-q5kr/S234z7e
+2o$2o3$8b2o$7b2ob2o$8b4o$9b2o!
+
+# fossil: p6 oscillator (15 cells) in the ash, first in soup seed 8166045952798766107, 0 in 1000 soups (explore it 214, parent [+S7e ])
+x = 0, y = 0, rule = B3-q5kr/S234z7e
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 10482631361645927171, 0 in 1000 soups (explore it 214, parent [+S7e ])
+x = 0, y = 0, rule = B3-q5kr/S234z7e
+!
+
+# fossil: p2 oscillator (27 cells) in the ash, first in soup seed 8981933632360998786, 0 in 1000 soups (explore it 214, parent [+S7e ])
+x = 0, y = 0, rule = B3-q5kr/S234z7e
+!
+
+# fossil: p2 oscillator (32 cells) in the ash, first in soup seed 3456425044792787333, 0 in 1000 soups (explore it 214, parent [+S7e ])
+x = 0, y = 0, rule = B3-q5kr/S234z7e
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 1800171547209186794, 0 in 1000 soups (explore it 214, parent [+S7e ])
+x = 0, y = 0, rule = B3-q5kr/S234z7e
+!
+
+# NEW BEHAVIOUR p6 oscillator, 14 cells, 1 in 1000 soups (explore it 214, parent [+S7e ])
+# first seen in soup seed 8166045952798766107
+x = 7, y = 7, rule = B3-q5kr/S234z7e
+2o$2o2b2o$3bobo2$2b2o$5b2o$5b2o!
+
+# NEW catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (6 cells) -> still life restored + p2 oscillator (3 cells) + p2 oscillator (3 cells) + still life (6 cells), 2 setups (explore it 233, parent [+B4w ])
+x = 20, y = 17, rule = B3-q4w5kr/S234z7e
+b2o$o2bo$b2o9$18bo$17b2o$16b2obo$15b2o$15bobo$15b2o!
+
+# NEW catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (4 cells) -> still life restored, 2 setups (explore it 233, parent [+B4w ])
+x = 16, y = 20, rule = B3-q4w5kr/S234z7e
+2o$2o13$14bo$13b2o$12b2obo$11b2o$11bobo$11b2o!
+
+# NEW wick: fuse at 5c/7 along a orthogonal wick (both ways), 2 setups (explore it 233, parent [+B4w ])
+x = 205, y = 3, rule = B3-q4w5kr/S234z7e
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3bo4b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# wick: fuse at c/2 along a diagonal wick (one way), 4 setups (explore it 233, parent [+B4w ])
+x = 164, y = 164, rule = B3-q4w5kr/S234z7e
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+79b3o$80bo2bo$82b2o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b2o$
+90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo2bo
+$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$110b
+o$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o$
+120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# fossil: still life (20 cells) in the ash, first in soup seed 7076314233536656362, 0 in 1000 soups (explore it 233, parent [+B4w ])
+x = 0, y = 0, rule = B3-q4w5kr/S234z7e
+!
+
+# NEW BEHAVIOUR c/4 diagonal ship (p20), 9 cells, 71 in 1000 soups (explore it 233, parent [+B4w ])
+# first seen in soup seed 14785255912991989295
+x = 6, y = 5, rule = B3-q4w5kr/S234z7e
+2b3o$bo3bo$o4bo2$2o!
+
+# new shape p4 oscillator, 6 cells, 63 in 1000 soups (explore it 233, parent [+B4w ])
+# first seen in soup seed 2828268213073454246
+x = 2, y = 4, rule = B3-q4w5kr/S234z7e
+o$2o$2o$o!
+
+# new shape p4 oscillator, 9 cells, 1 in 1000 soups (explore it 233, parent [+B4w ])
+# first seen in soup seed 9693847697171022508
+x = 3, y = 7, rule = B3-q4w5kr/S234z7e
+b2o$o$o$bo$2bo$2bo$2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (11 cells) -> still life restored, 32 setups (explore it 241, parent [+S5r ])
+x = 14, y = 13, rule = B3-kq/S235r
+bo$2bo$3o6$8b2o$8bo2b2o$10bo2bo$10bo2bo$11b2o!
+
+# fossil: p2 oscillator (34 cells) in the ash, first in soup seed 2586822553315677273, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: p2 oscillator (31 cells) in the ash, first in soup seed 17977331738794747152, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: p2 oscillator (34 cells) in the ash, first in soup seed 10909039671240919053, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: p2 oscillator (33 cells) in the ash, first in soup seed 959782497603579554, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: p2 oscillator (29 cells) in the ash, first in soup seed 10849140751610151486, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: p2 oscillator (37 cells) in the ash, first in soup seed 15703000877256859609, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: still life (18 cells) in the ash, first in soup seed 4741969213163773802, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# fossil: still life (24 cells) in the ash, first in soup seed 8570963164964255660, 0 in 1000 soups (explore it 241, parent [+S5r ])
+x = 0, y = 0, rule = B3-kq/S235r
+!
+
+# NEW catalyst: converter to c/4 diagonal ship (p4) (5 cells): 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 11, y = 26, rule = B3-q4w5ikr/S234z7e
+bo$obo$obo$bo16$5b3o$4bo2bo$4bo$5bo3b2o$9b2o$6b2o$6b2o!
+
+# NEW catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 7, y = 22, rule = B3-q4w5ikr/S234z7e
+b2o$b2o14$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 26, y = 19, rule = B3-q4w5ikr/S234z7e
+2o$2o11$20b3o$19bo2bo$19bo$20bo3b2o$24b2o$21b2o$21b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 22, y = 13, rule = B3-q4w5ikr/S234z7e
+2o$2o5$16b3o$15bo2bo$15bo$16bo3b2o$20b2o$17b2o$17b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 4 setups (explore it 246, parent [+B5i ])
+x = 7, y = 22, rule = B3-q4w5ikr/S234z7e
+bo$b3o$3bo13$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 23, y = 13, rule = B3-q4w5ikr/S234z7e
+2bo$3o$o4$17b3o$16bo2bo$16bo$17bo3b2o$21b2o$18b2o$18b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 22, y = 13, rule = B3-q4w5ikr/S234z7e
+2o$bo$b2o4$16b3o$15bo2bo$15bo$16bo3b2o$20b2o$17b2o$17b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 7, y = 23, rule = B3-q4w5ikr/S234z7e
+2bo$bobo$b2o14$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 23, y = 13, rule = B3-q4w5ikr/S234z7e
+b2o$obo$bo4$17b3o$16bo2bo$16bo$17bo3b2o$21b2o$18b2o$18b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 7, y = 23, rule = B3-q4w5ikr/S234z7e
+2b2o$bobo$b2o14$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 23, y = 13, rule = B3-q4w5ikr/S234z7e
+b2o$obo$2o4$17b3o$16bo2bo$16bo$17bo3b2o$21b2o$18b2o$18b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z7e
+3bo$2bobo$bobo$b2o14$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 24, y = 13, rule = B3-q4w5ikr/S234z7e
+2b2o$bobo$obo$bo3$18b3o$17bo2bo$17bo$18bo3b2o$22b2o$19b2o$19b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 3 setups (explore it 246, parent [+B5i ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z7e
+3bo$2bobo$2bobo$b2ob2o14$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 24, y = 13, rule = B3-q4w5ikr/S234z7e
+3bo$b3o$o$b3o$3bo2$18b3o$17bo2bo$17bo$18bo3b2o$22b2o$19b2o$19b2o!
+
+# NEW catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + still life (14 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 16, y = 22, rule = B3-q4w5ikr/S234z7e
+2o$2o14$10b3o$9bo2bo$9bo$10bo3b2o$14b2o$11b2o$11b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + still life (4 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 8, y = 22, rule = B3-q4w5ikr/S234z7e
+2o$2o14$2b3o$bo2bo$bo$2bo3b2o$6b2o$3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 12, y = 24, rule = B3-q4w5ikr/S234z7e
+2bo$3o$o15$6b3o$5bo2bo$5bo$6bo3b2o$10b2o$7b2o$7b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + still life (14 cells), 8 setups (explore it 246, parent [+B5i ])
+x = 17, y = 23, rule = B3-q4w5ikr/S234z7e
+o$3o$2bo14$11b3o$10bo2bo$10bo$11bo3b2o$15b2o$12b2o$12b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + still life (4 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 22, y = 14, rule = B3-q4w5ikr/S234z7e
+2bo$3o$o5$16b3o$15bo2bo$15bo$16bo3b2o$20b2o$17b2o$17b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + still life (7 cells), 4 setups (explore it 246, parent [+B5i ])
+x = 19, y = 24, rule = B3-q4w5ikr/S234z7e
+o$3o$2bo15$13b3o$12bo2bo$12bo$13bo3b2o$17b2o$14b2o$14b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 13, y = 24, rule = B3-q4w5ikr/S234z7e
+2o$obo$bo15$7b3o$6bo2bo$6bo$7bo3b2o$11b2o$8b2o$8b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + still life (14 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 17, y = 23, rule = B3-q4w5ikr/S234z7e
+bo$obo$b2o14$11b3o$10bo2bo$10bo$11bo3b2o$15b2o$12b2o$12b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + still life (14 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 17, y = 23, rule = B3-q4w5ikr/S234z7e
+2o$obo$b2o14$11b3o$10bo2bo$10bo$11bo3b2o$15b2o$12b2o$12b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 14, y = 27, rule = B3-q4w5ikr/S234z7e
+b2o$o2bo$b2o18$8b3o$7bo2bo$7bo$8bo3b2o$12b2o$9b2o$9b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells) + still life (4 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells), 1 setups (explore it 246, parent [+B5i ])
+x = 27, y = 21, rule = B3-q4w5ikr/S234z7e
+bo$obo$obo$bo11$21b3o$20bo2bo$20bo$21bo3b2o$25b2o$22b2o$22b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (6 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 14, y = 25, rule = B3-q4w5ikr/S234z7e
+bo$obo$bobo$2bo15$8b3o$7bo2bo$7bo$8bo3b2o$12b2o$9b2o$9b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (7 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 14, y = 25, rule = B3-q4w5ikr/S234z7e
+2o$obo$bobo$2bo15$8b3o$7bo2bo$7bo$8bo3b2o$12b2o$9b2o$9b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (7 cells) -> still life restored + still life (14 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 18, y = 24, rule = B3-q4w5ikr/S234z7e
+bo$obo$bobo$2b2o14$12b3o$11bo2bo$11bo$12bo3b2o$16b2o$13b2o$13b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 26, y = 19, rule = B3-q4w5ikr/S234z7e
+2ob2o$bobo$bobo$2bo9$20b3o$19bo2bo$19bo$20bo3b2o$24b2o$21b2o$21b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + still life (14 cells), 4 setups (explore it 246, parent [+B5i ])
+x = 19, y = 24, rule = B3-q4w5ikr/S234z7e
+2bo$bobo$bobo$2ob2o14$13b3o$12bo2bo$12bo$13bo3b2o$17b2o$14b2o$14b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + still life (4 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 7, y = 23, rule = B3-q4w5ikr/S234z7e
+2bo$bobo$bobo$2ob2o13$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + still life (7 cells), 2 setups (explore it 246, parent [+B5i ])
+x = 26, y = 27, rule = B3-q4w5ikr/S234z7e
+2bo$bobo$bobo$2ob2o17$20b3o$19bo2bo$19bo$20bo3b2o$24b2o$21b2o$21b2o!
+
+# NEW BEHAVIOUR 7c/40 diagonal ship (p40), 15 cells, 21 in 1000 soups (explore it 246, parent [+B5i ])
+# first seen in soup seed 14853074090162497604
+x = 6, y = 7, rule = B3-q4w5ikr/S234z7e
+2b2o$2b2o$5bo$2o3bo$o3b2o$4b2o$4b2o!
+
+# fossil: p2 oscillator (26 cells) in the ash, first in soup seed 12584410641376815218, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 8570963164964255660, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 15733092796339055516, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 12973296398881372485, 1 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (31 cells) in the ash, first in soup seed 9477286910155720876, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 4846741910615610885, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 5952030063854750492, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 4828128339725419870, 1 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (27 cells) in the ash, first in soup seed 16911879717703858232, 0 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 593746010381885056, 1 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# fossil: p2 oscillator (33 cells) in the ash, first in soup seed 10524484419554281414, 1 in 1000 soups (explore it 252, parent [+B4t ])
+x = 0, y = 0, rule = B3-q4t/S23
+!
+
+# NEW BEHAVIOUR p7 oscillator, 7 cells, 12 in 1000 soups (explore it 252, parent [+B4t ])
+# first seen in soup seed 2783534252124444913
+x = 4, y = 4, rule = B3-q4t/S23
+3o2$bobo$2b2o!
+
+# NEW BEHAVIOUR p8 oscillator, 8 cells, 1 in 1000 soups (explore it 252, parent [+B4t ])
+# first seen in soup seed 4763554058272965767
+x = 5, y = 7, rule = B3-q4t/S23
+bo$obo2$bobo2$2bobo$3bo!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 4 setups (explore it 253, parent [+S5c ])
+x = 23, y = 13, rule = B3-q4w5ikr/S234z5c7e
+20b2o$20bo$22bo$21b2o$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o$
+3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 1 setups (explore it 253, parent [+S5c ])
+x = 24, y = 14, rule = B3-q4w5ikr/S234z5c7e
+22b2o$20bo2bo$20b2o3$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o$
+3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 3 setups (explore it 253, parent [+S5c ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z5c7e
+3b2o$3bo$5bo$4b2o12$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o$3b
+2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 9 setups (explore it 253, parent [+S5c ])
+x = 24, y = 13, rule = B3-q4w5ikr/S234z5c7e
+20b2o$21bo$21bobo$22b2o$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 4 setups (explore it 253, parent [+S5c ])
+x = 24, y = 15, rule = B3-q4w5ikr/S234z5c7e
+22b2o$22bo$20bobo$20b2o3$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 5 setups (explore it 253, parent [+S5c ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z5c7e
+2b2o$3bo$3bobo$4b2o12$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o$
+3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 6 setups (explore it 253, parent [+S5c ])
+x = 24, y = 13, rule = B3-q4w5ikr/S234z5c7e
+20b2o$20bo$22b2o$22b2o$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o
+$3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (16 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 24, y = 15, rule = B3-q4w5ikr/S234z5c7e
+22b2o$23bo$20b2o$20b2o3$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 4 setups (explore it 253, parent [+S5c ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z5c7e
+2b2o$2bo$4b2o$4b2o12$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b2o$
+3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (8 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 1 setups (explore it 253, parent [+S5c ])
+x = 24, y = 13, rule = B3-q4w5ikr/S234z5c7e
+20b2o$20bobo$21bobo$22b2o$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (8 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 253, parent [+S5c ])
+x = 7, y = 24, rule = B3-q4w5ikr/S234z5c7e
+2b2o$2bobo$3bobo$4b2o12$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + still life (14 cells), 8 setups (explore it 253, parent [+S5c ])
+x = 22, y = 25, rule = B3-q4w5ikr/S234z5c7e
+19b2o$19bo$21bo$20b2o13$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + still life (4 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 21, y = 28, rule = B3-q4w5ikr/S234z5c7e
+19bo$18bobo$18bobo$19bo16$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (6 cells) -> still life restored + still life (6 cells) + still life (6 cells) + still life (6 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 19, y = 28, rule = B3-q4w5ikr/S234z5c7e
+17bo$16bobo$16bobo$17bo16$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + p2 oscillator (11 cells), 4 setups (explore it 253, parent [+S5c ])
+x = 25, y = 19, rule = B3-q4w5ikr/S234z5c7e
+21b2o$22bo$22bobo$23b2o7$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (14 cells), 16 setups (explore it 253, parent [+S5c ])
+x = 24, y = 25, rule = B3-q4w5ikr/S234z5c7e
+22b2o$22bo$20bobo$20b2o13$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (4 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 27, y = 30, rule = B3-q4w5ikr/S234z5c7e
+23b2o$23bobo$25bo$25b2o18$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (7 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 25, y = 27, rule = B3-q4w5ikr/S234z5c7e
+23b2o$22bobo$22bo$21b2o15$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (8 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 25, y = 29, rule = B3-q4w5ikr/S234z5c7e
+23b2o$23bo$21bobo$21b2o17$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$
+3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (14 cells), 12 setups (explore it 253, parent [+S5c ])
+x = 25, y = 29, rule = B3-q4w5ikr/S234z5c7e
+21b2o$21bo$23b2o$23b2o17$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (4 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 27, y = 30, rule = B3-q4w5ikr/S234z5c7e
+23b2o$23bo$25b2o$25b2o18$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o$3b
+2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (8 cells) -> still life restored + still life (14 cells), 2 setups (explore it 253, parent [+S5c ])
+x = 24, y = 25, rule = B3-q4w5ikr/S234z5c7e
+22b2o$21bobo$20bobo$20b2o13$3b3o$2bo2bo$2bo3bo$2bo3bo$3bo2bo$2o2b2o$2o
+$3b2o$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (6 cells) -> still life restored, 2 setups (explore it 253, parent [+S5c ])
+x = 12, y = 20, rule = B3-q4w5ikr/S234z5c7e
+3bo$4b2o$bob2o$ob2o$3o12$10bo$9bobo$9bobo$10bo!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (7 cells) -> still life restored, 2 setups (explore it 253, parent [+S5c ])
+x = 6, y = 14, rule = B3-q4w5ikr/S234z5c7e
+2b2o$2b2o$o$2o6$4bo$3b3o$2b2obo$2b3o$3b2o!
+
+# NEW wick: signal at 0c/1 along a diagonal wick (one way), 1 setups (explore it 253, parent [+S5c ])
+x = 164, y = 164, rule = B3-q4w5ikr/S234z5c7e
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o$80bo2bo$80bob2o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b
+2o$90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo
+2bo$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$
+110bo$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o
+$120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (4 cells) -> still life restored + p2 oscillator (3 cells) + p2 oscillator (3 cells) + still life (4 cells), 2 setups (explore it 255, parent [+S6i ])
+x = 8, y = 22, rule = B3-q4w5ikr/S234z5c6i7e
+2o$2o14$2b3o$bo2bo$bo$2bo3b2o$6b2o$3b2o$3b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (5 cells) -> still life restored + p2 oscillator (3 cells) + p2 oscillator (3 cells) + still life (4 cells), 2 setups (explore it 255, parent [+S6i ])
+x = 22, y = 14, rule = B3-q4w5ikr/S234z5c6i7e
+2bo$3o$o5$16b3o$15bo2bo$15bo$16bo3b2o$20b2o$17b2o$17b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (7 cells) -> still life restored + p2 oscillator (3 cells) + p2 oscillator (3 cells) + still life (4 cells), 2 setups (explore it 255, parent [+S6i ])
+x = 7, y = 23, rule = B3-q4w5ikr/S234z5c6i7e
+2b2o$bobo$bo$2o13$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (15 cells) + still life (9 cells) -> still life restored + p2 oscillator (3 cells) + p2 oscillator (3 cells) + still life (4 cells), 2 setups (explore it 255, parent [+S6i ])
+x = 7, y = 23, rule = B3-q4w5ikr/S234z5c6i7e
+2bo$bobo$bobo$2ob2o13$b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+# wick: fuse at 0c/1 along a diagonal wick (both ways), 1 setups (explore it 255, parent [+S6i ])
+x = 164, y = 164, rule = B3-q4w5ikr/S234z5c6i7e
+2o$o2bo$2b2o$2bo$4b2o$4bo2bo$6b2o$6bo$8b2o$8bo2bo$10b2o$10bo$12b2o$12b
+o2bo$14b2o$14bo$16b2o$16bo2bo$18b2o$18bo$20b2o$20bo2bo$22b2o$22bo$24b
+2o$24bo2bo$26b2o$26bo$28b2o$28bo2bo$30b2o$30bo$32b2o$32bo2bo$34b2o$34b
+o$36b2o$36bo2bo$38b2o$38bo$40b2o$40bo2bo$42b2o$42bo$44b2o$44bo2bo$46b
+2o$46bo$48b2o$48bo2bo$50b2o$50bo$52b2o$52bo2bo$54b2o$54bo$56b2o$56bo2b
+o$58b2o$58bo$60b2o$60bo2bo$62b2o$62bo$64b2o$64bo2bo$66b2o$66bo$68b2o$
+68bo2bo$70b2o$70bo$72b2o$72bo2bo$74b2o$74bo$76b2o$76bo2bo$78b2o$78bo$
+80b2o$80b2obo$82b2o$82bo$84b2o$84bo2bo$86b2o$86bo$88b2o$88bo2bo$90b2o$
+90bo$92b2o$92bo2bo$94b2o$94bo$96b2o$96bo2bo$98b2o$98bo$100b2o$100bo2bo
+$102b2o$102bo$104b2o$104bo2bo$106b2o$106bo$108b2o$108bo2bo$110b2o$110b
+o$112b2o$112bo2bo$114b2o$114bo$116b2o$116bo2bo$118b2o$118bo$120b2o$
+120bo2bo$122b2o$122bo$124b2o$124bo2bo$126b2o$126bo$128b2o$128bo2bo$
+130b2o$130bo$132b2o$132bo2bo$134b2o$134bo$136b2o$136bo2bo$138b2o$138bo
+$140b2o$140bo2bo$142b2o$142bo$144b2o$144bo2bo$146b2o$146bo$148b2o$148b
+o2bo$150b2o$150bo$152b2o$152bo2bo$154b2o$154bo$156b2o$156bo2bo$158b2o$
+158bo$160b2o$160bo2bo$162b2o$162bo!
+
+# fossil: p12 oscillator (12 cells) in the ash, first in soup seed 95040039896747387, 0 in 1000 soups (explore it 257, parent [+B5a +B5q ])
+x = 0, y = 0, rule = B3-q4w5aikqr/S234z5c7e
+!
+
+# NEW BEHAVIOUR c/3 orthogonal ship (p3), 10 cells, 3 in 1000 soups (explore it 257, parent [+B5a +B5q ])
+# first seen in soup seed 5842503893268247320
+x = 4, y = 7, rule = B3-q4w5aikqr/S234z5c7e
+o$2o$2bo$2b2o$2bo$2o$o!
+
+# NEW BEHAVIOUR p12 oscillator, 9 cells, 1 in 1000 soups (explore it 257, parent [+B5a +B5q ])
+# first seen in soup seed 95040039896747387
+x = 5, y = 5, rule = B3-q4w5aikqr/S234z5c7e
+o2bo$o3bo$o$bo$2b3o!
+
+# wick: fuse at 2c/3 along a diagonal wick (both ways), 1 setups (explore it 263, parent [-B3c ])
+x = 164, y = 164, rule = B3-c/S23
+2o$obo$3bo$2b2o$4b2o$4bobo$7bo$6b2o$8b2o$8bobo$11bo$10b2o$12b2o$12bobo
+$15bo$14b2o$16b2o$16bobo$19bo$18b2o$20b2o$20bobo$23bo$22b2o$24b2o$24bo
+bo$27bo$26b2o$28b2o$28bobo$31bo$30b2o$32b2o$32bobo$35bo$34b2o$36b2o$
+36bobo$39bo$38b2o$40b2o$40bobo$43bo$42b2o$44b2o$44bobo$47bo$46b2o$48b
+2o$48bobo$51bo$50b2o$52b2o$52bobo$55bo$54b2o$56b2o$56bobo$59bo$58b2o$
+60b2o$60bobo$63bo$62b2o$64b2o$64bobo$67bo$66b2o$68b2o$68bobo$71bo$70b
+2o$72b2o$72bobo$75bo$74b2o$76b2o$76bobo$79bo$78b2o$80b2o$80bobo$83bo$
+82b2o$82bob2o$84bobo$87bo$86b2o$88b2o$88bobo$91bo$90b2o$92b2o$92bobo$
+95bo$94b2o$96b2o$96bobo$99bo$98b2o$100b2o$100bobo$103bo$102b2o$104b2o$
+104bobo$107bo$106b2o$108b2o$108bobo$111bo$110b2o$112b2o$112bobo$115bo$
+114b2o$116b2o$116bobo$119bo$118b2o$120b2o$120bobo$123bo$122b2o$124b2o$
+124bobo$127bo$126b2o$128b2o$128bobo$131bo$130b2o$132b2o$132bobo$135bo$
+134b2o$136b2o$136bobo$139bo$138b2o$140b2o$140bobo$143bo$142b2o$144b2o$
+144bobo$147bo$146b2o$148b2o$148bobo$151bo$150b2o$152b2o$152bobo$155bo$
+154b2o$156b2o$156bobo$159bo$158b2o$160b2o$160bobo$163bo$162b2o!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 6 setups (explore it 263, parent [-B3c ])
+x = 164, y = 164, rule = B3-c/S23
+2o$obo$3bo$2b2o$4b2o$4bobo$7bo$6b2o$8b2o$8bobo$11bo$10b2o$12b2o$12bobo
+$15bo$14b2o$16b2o$16bobo$19bo$18b2o$20b2o$20bobo$23bo$22b2o$24b2o$24bo
+bo$27bo$26b2o$28b2o$28bobo$31bo$30b2o$32b2o$32bobo$35bo$34b2o$36b2o$
+36bobo$39bo$38b2o$40b2o$40bobo$43bo$42b2o$44b2o$44bobo$47bo$46b2o$48b
+2o$48bobo$51bo$50b2o$52b2o$52bobo$55bo$54b2o$56b2o$56bobo$59bo$58b2o$
+60b2o$60bobo$63bo$62b2o$64b2o$64bobo$67bo$66b2o$68b2o$68bobo$71bo$70b
+2o$72b2o$72bobo$75bo$74b2o$76b2o$76bobo$79bo$78b2o$79b3o$80bobo$83bo$
+82b2o$84b2o$84bobo$87bo$86b2o$88b2o$88bobo$91bo$90b2o$92b2o$92bobo$95b
+o$94b2o$96b2o$96bobo$99bo$98b2o$100b2o$100bobo$103bo$102b2o$104b2o$
+104bobo$107bo$106b2o$108b2o$108bobo$111bo$110b2o$112b2o$112bobo$115bo$
+114b2o$116b2o$116bobo$119bo$118b2o$120b2o$120bobo$123bo$122b2o$124b2o$
+124bobo$127bo$126b2o$128b2o$128bobo$131bo$130b2o$132b2o$132bobo$135bo$
+134b2o$136b2o$136bobo$139bo$138b2o$140b2o$140bobo$143bo$142b2o$144b2o$
+144bobo$147bo$146b2o$148b2o$148bobo$151bo$150b2o$152b2o$152bobo$155bo$
+154b2o$156b2o$156bobo$159bo$158b2o$160b2o$160bobo$163bo$162b2o!
+
+# wick: fuse at c/2 along a diagonal wick (both ways), 1 setups (explore it 263, parent [-B3c ])
+x = 164, y = 164, rule = B3-c/S23
+2o$obo$3bo$2b2o$4b2o$4bobo$7bo$6b2o$8b2o$8bobo$11bo$10b2o$12b2o$12bobo
+$15bo$14b2o$16b2o$16bobo$19bo$18b2o$20b2o$20bobo$23bo$22b2o$24b2o$24bo
+bo$27bo$26b2o$28b2o$28bobo$31bo$30b2o$32b2o$32bobo$35bo$34b2o$36b2o$
+36bobo$39bo$38b2o$40b2o$40bobo$43bo$42b2o$44b2o$44bobo$47bo$46b2o$48b
+2o$48bobo$51bo$50b2o$52b2o$52bobo$55bo$54b2o$56b2o$56bobo$59bo$58b2o$
+60b2o$60bobo$63bo$62b2o$64b2o$64bobo$67bo$66b2o$68b2o$68bobo$71bo$70b
+2o$72b2o$72bobo$75bo$74b2o$76b2o$76bobo$79bo$78b2o$80b2o$80bobo$82b2o$
+82b2o$84b2o$84bobo$87bo$86b2o$88b2o$88bobo$91bo$90b2o$92b2o$92bobo$95b
+o$94b2o$96b2o$96bobo$99bo$98b2o$100b2o$100bobo$103bo$102b2o$104b2o$
+104bobo$107bo$106b2o$108b2o$108bobo$111bo$110b2o$112b2o$112bobo$115bo$
+114b2o$116b2o$116bobo$119bo$118b2o$120b2o$120bobo$123bo$122b2o$124b2o$
+124bobo$127bo$126b2o$128b2o$128bobo$131bo$130b2o$132b2o$132bobo$135bo$
+134b2o$136b2o$136bobo$139bo$138b2o$140b2o$140bobo$143bo$142b2o$144b2o$
+144bobo$147bo$146b2o$148b2o$148bobo$151bo$150b2o$152b2o$152bobo$155bo$
+154b2o$156b2o$156bobo$159bo$158b2o$160b2o$160bobo$163bo$162b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 6 setups (explore it 264, parent [-S3k ])
+x = 13, y = 25, rule = B3-q4w5ikr/S23-k4z7e
+9b2o$8b2ob2o$7b2o2b2o$7b2o2bo$7bo2b2o$7b4o$8bo15$o$3o$2bo$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 4 setups (explore it 264, parent [-S3k ])
+x = 24, y = 7, rule = B3-q4w5ikr/S23-k4z7e
+20b2o$19b2ob2o$18b2o2b2o$o17b2o2bo$3o15bo2b2o$2bo15b4o$2b2o15bo!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (15 cells), 1 setups (explore it 264, parent [-S3k ])
+x = 13, y = 26, rule = B3-q4w5ikr/S23-k4z7e
+9b2o$8b2ob2o$7b2o2b2o$7b2o2bo$7bo2b2o$7b4o$8bo15$2o$obo$bobo$2bobo$3bo
+!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (21 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (21 cells), 1 setups (explore it 264, parent [-S3k ])
+x = 25, y = 7, rule = B3-q4w5ikr/S23-k4z7e
+21b2o$20b2ob2o$bo17b2o2b2o$obo16b2o2bo$bobo15bo2b2o$2bobo14b4o$3b2o15b
+o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (4 cells) -> still life restored + p2 oscillator (3 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 18, y = 15, rule = B3-q4w5ikr/S23-k4z7e
+2b2o$2b3o$2b2o$obo$2o8$16bo$15bobo$16bo!
+
+# NEW catalyst: catalysed reaction: c/4 diagonal ship (p4) (5 cells) + still life (7 cells) -> still life restored + still life (4 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 4, y = 12, rule = B3-q4w5ikr/S23-k4z7e
+bo$2bo$3o6$2b2o$bobo$bo$2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 19, y = 26, rule = B3-q4w5ikr/S23-k4z7e
+15b2o$14b2ob2o$13b2o2b2o$13b2o2bo$13bo2b2o$13b4o$14bo16$o$3o$2bo$2b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (14 cells), 10 setups (explore it 264, parent [-S3k ])
+x = 23, y = 18, rule = B3-q4w5ikr/S23-k4z7e
+19b2o$18b2ob2o$17b2o2b2o$17b2o2bo$17bo2b2o$17b4o$18bo8$o$3o$2bo$2b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (7 cells) -> still life restored + still life (7 cells), 4 setups (explore it 264, parent [-S3k ])
+x = 24, y = 26, rule = B3-q4w5ikr/S23-k4z7e
+20b2o$19b2ob2o$18b2o2b2o$18b2o2bo$18bo2b2o$18b4o$19bo16$o$3o$2bo$2b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (8 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 22, y = 27, rule = B3-q4w5ikr/S23-k4z7e
+18b2o$17b2ob2o$16b2o2b2o$16b2o2bo$16bo2b2o$16b4o$17bo16$3bo$2bobo$bobo
+$obo$bo!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (9 cells) -> still life restored + p2 oscillator (11 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 22, y = 27, rule = B3-q4w5ikr/S23-k4z7e
+18b2o$17b2ob2o$16b2o2b2o$16b2o2bo$16bo2b2o$16b4o$17bo16$3bo$2bobo$bobo
+$obo$2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (21 cells) + still life (9 cells) -> still life restored + still life (14 cells), 2 setups (explore it 264, parent [-S3k ])
+x = 25, y = 20, rule = B3-q4w5ikr/S23-k4z7e
+21b2o$20b2ob2o$19b2o2b2o$19b2o2bo$19bo2b2o$19b4o$20bo9$3b2o$2bobo$bobo
+$obo$bo!
+
+# wick: fuse at c/1 along a diagonal wick (one way), 4 setups (explore it 264, parent [-S3k ])
+x = 82, y = 82, rule = B3-q4w5ikr/S23-k4z7e
+2o$o$2b2o$2bo$4b2o$4bo$6b2o$6bo$8b2o$8bo$10b2o$10bo$12b2o$12bo$14b2o$
+14bo$16b2o$16bo$18b2o$18bo$20b2o$20bo$22b2o$22bo$24b2o$24bo$26b2o$26bo
+$28b2o$28bo$30b2o$30bo$32b2o$32bo$34b2o$34bo$36b2o$36bo$38b2o$38b2o$
+40b2o$40bo$42b2o$42bo$44b2o$44bo$46b2o$46bo$48b2o$48bo$50b2o$50bo$52b
+2o$52bo$54b2o$54bo$56b2o$56bo$58b2o$58bo$60b2o$60bo$62b2o$62bo$64b2o$
+64bo$66b2o$66bo$68b2o$68bo$70b2o$70bo$72b2o$72bo$74b2o$74bo$76b2o$76bo
+$78b2o$78bo$80b2o$80bo!
+
+# NEW BEHAVIOUR p17 oscillator, 20 cells, 96 in 1000 soups (explore it 264, parent [-S3k ])
+# first seen in soup seed 12146176229880754967
+x = 7, y = 7, rule = B3-q4w5ikr/S23-k4z7e
+2b3o$bo3bo$o2bo2bo$obobobo$o2bo2bo$bo3bo$2b3o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (14 cells) + still life (5 cells) -> still life restored, 2 setups (explore it 265, parent [-S3e ])
+x = 20, y = 18, rule = B3-q4w5ikr/S23-ek4z7e
+b2o$4o$2b3o$2b2o$b2o$bo10$18bo$17bobo$18b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (6 cells) -> still life restored, 2 setups (explore it 265, parent [-S3e ])
+x = 7, y = 14, rule = B3-q4w5ikr/S23-ek4z7e
+4b2o$4bobo$5b2o7$bo$3o$ob2o$b3o$b2o!
+
+# NEW wick: fuse at 3c/5 along a orthogonal wick (both ways), 1 setups (explore it 265, parent [-S3e ])
+x = 123, y = 3, rule = B3-q4w5ikr/S23-ek4z7e
+61bo$ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at 5c/9 along a orthogonal wick (both ways), 5 setups (explore it 265, parent [-S3e ])
+x = 123, y = 2, rule = B3-q4w5ikr/S23-ek4z7e
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at c/2 along a orthogonal wick (both ways), 3 setups (explore it 265, parent [-S3e ])
+x = 205, y = 4, rule = B3-q4w5ikr/S23-ek4z7e
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o$100bo!
+
+# new shape p6 oscillator, 6 cells, 27 in 1000 soups (explore it 265, parent [-S3e ])
+# first seen in soup seed 2888627413236743062
+x = 4, y = 4, rule = B3-q4w5ikr/S23-ek4z7e
+bo$o$bobo$2b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (4 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 3 setups (explore it 266, parent [-S3k ])
+x = 24, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22b2o5$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (4 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 22, rule = B3-q4w5ikr/S23-k4z5c7e
+6b2o$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 5 setups (explore it 266, parent [-S3k ])
+x = 25, y = 14, rule = B3-q4w5ikr/S23-k4z5c7e
+24bo$22b3o$22bo5$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 3 setups (explore it 266, parent [-S3k ])
+x = 9, y = 22, rule = B3-q4w5ikr/S23-k4z5c7e
+7bo$5b3o$5bo13$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 25, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bobo$23bo4$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (5 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 23, rule = B3-q4w5ikr/S23-k4z5c7e
+6bo$5bobo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 25, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bobo$23b2o4$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 23, rule = B3-q4w5ikr/S23-k4z5c7e
+5b2o$5bobo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 5 setups (explore it 266, parent [-S3k ])
+x = 26, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bo2bo$24b2o4$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (6 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 3 setups (explore it 266, parent [-S3k ])
+x = 9, y = 23, rule = B3-q4w5ikr/S23-k4z5c7e
+4b2o$4bo2bo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 12 setups (explore it 266, parent [-S3k ])
+x = 10, y = 24, rule = B3-q4w5ikr/S23-k4z5c7e
+8b2o$7bobo$7bo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 6 setups (explore it 266, parent [-S3k ])
+x = 15, y = 29, rule = B3-q4w5ikr/S23-k4z5c7e
+13b2o$12bobo$12bo$11b2o19$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b
+2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 7 setups (explore it 266, parent [-S3k ])
+x = 26, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22bo$22b3o$24bo$24b2o3$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 3 setups (explore it 266, parent [-S3k ])
+x = 9, y = 24, rule = B3-q4w5ikr/S23-k4z5c7e
+4bo$4b3o$6bo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 26, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bobo$23bobo$24bo3$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b
+2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 24, rule = B3-q4w5ikr/S23-k4z5c7e
+5bo$4bobo$5bobo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (8 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 26, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bobo$23bobo$24b2o3$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$
+5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (8 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 24, rule = B3-q4w5ikr/S23-k4z5c7e
+4b2o$4bobo$5bobo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o
+!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 3 setups (explore it 266, parent [-S3k ])
+x = 27, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2ob2o$23bobo$23bobo$24bo3$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo
+$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 24, rule = B3-q4w5ikr/S23-k4z5c7e
+5bo$4bobo$4bobo$3b2ob2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b
+2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 27, y = 13, rule = B3-q4w5ikr/S23-k4z5c7e
+22b2o$22bobo$23bobo$24bobo$25bo2$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo
+2bobo$5b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (17 cells) + still life (9 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 1 setups (explore it 266, parent [-S3k ])
+x = 9, y = 25, rule = B3-q4w5ikr/S23-k4z5c7e
+4bo$3bobo$4bobo$5bobo$6b2o14$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo
+$5b2o!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (17 cells) + still life (4 cells) -> still life restored + still life (4 cells) + still life (4 cells) + still life (4 cells) + still life (4 cells) + still life (6 cells), 2 setups (explore it 266, parent [-S3k ])
+x = 23, y = 25, rule = B3-q4w5ikr/S23-k4z5c7e
+21b2o$21b2o17$5bobo$5bobo$obo2bo2bo$3bo4bo$3bo$obo2bobo$5b2o!
+
+# fossil: p17 oscillator (44 cells) in the ash, first in soup seed 4757482761424355031, 0 in 1000 soups (explore it 266, parent [-S3k ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-k4z5c7e
+!
+
+# new shape p17 oscillator, 24 cells, 1 in 1000 soups (explore it 266, parent [-S3k ])
+# first seen in soup seed 4757482761424355031
+x = 11, y = 11, rule = B3-q4w5ikr/S23-k4z5c7e
+2o$2o3$6b3o$5bo3bo$4bo2bo2bo$4bobobobo$4bo2bo2bo$5bo3bo$6b3o!
+
+# new shape 7c/40 diagonal ship (p40), 30 cells, 1 in 1000 soups (explore it 266, parent [-S3k ])
+# first seen in soup seed 7353032366564728039
+x = 12, y = 12, rule = B3-q4w5ikr/S23-k4z5c7e
+5b5o$5b3o$10b2o$10b2o$8bo$2o5b2o$2o$2o3bo$o3b2o$o$2b2o$2b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (6 cells) -> still life restored, 2 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 22, y = 15, rule = B3-eq4w5ikjry/S234z7e
+20bo$19bobo$18bobo$19bo7$2o$ob2o$4bo$bo2bo$2bobo!
+
+# wick: fuse at 3c/4 along a orthogonal wick (both ways), 2 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 164, y = 3, rule = B3-eq4w5ikjry/S234z7e
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobo$bobobobobobobobobobobobobobobobobobobobobobobo
+bobobobobobobobobobobobobobobobob3obobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobo$o3bo3bo3bo3bo3bo3bo3bo
+3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo
+3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo!
+
+# wick: fuse at 3c/5 along a orthogonal wick (both ways), 2 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 205, y = 3, rule = B3-eq4w5ikjry/S234z7e
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o4bo3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 6 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 164, y = 164, rule = B3-eq4w5ikjry/S234z7e
+obo$bobo$2bo$3bo$4bobo$5bobo$6bo$7bo$8bobo$9bobo$10bo$11bo$12bobo$13bo
+bo$14bo$15bo$16bobo$17bobo$18bo$19bo$20bobo$21bobo$22bo$23bo$24bobo$
+25bobo$26bo$27bo$28bobo$29bobo$30bo$31bo$32bobo$33bobo$34bo$35bo$36bob
+o$37bobo$38bo$39bo$40bobo$41bobo$42bo$43bo$44bobo$45bobo$46bo$47bo$48b
+obo$49bobo$50bo$51bo$52bobo$53bobo$54bo$55bo$56bobo$57bobo$58bo$59bo$
+60bobo$61bobo$62bo$63bo$64bobo$65bobo$66bo$67bo$68bobo$69bobo$70bo$71b
+o$72bobo$73bobo$74bo$75bo$76bobo$77bobo$78bo$79bo$79b2obo$81bobo$82bo$
+83bo$84bobo$85bobo$86bo$87bo$88bobo$89bobo$90bo$91bo$92bobo$93bobo$94b
+o$95bo$96bobo$97bobo$98bo$99bo$100bobo$101bobo$102bo$103bo$104bobo$
+105bobo$106bo$107bo$108bobo$109bobo$110bo$111bo$112bobo$113bobo$114bo$
+115bo$116bobo$117bobo$118bo$119bo$120bobo$121bobo$122bo$123bo$124bobo$
+125bobo$126bo$127bo$128bobo$129bobo$130bo$131bo$132bobo$133bobo$134bo$
+135bo$136bobo$137bobo$138bo$139bo$140bobo$141bobo$142bo$143bo$144bobo$
+145bobo$146bo$147bo$148bobo$149bobo$150bo$151bo$152bobo$153bobo$154bo$
+155bo$156bobo$157bobo$158bo$159bo$160bobo$161bobo$162bo$163bo!
+
+# wick: fuse at c/1 along a diagonal wick (both ways), 9 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 164, y = 164, rule = B3-eq4w5ikjry/S234z7e
+ob2o$bobo$2bo$3bo$4bob2o$5bobo$6bo$7bo$8bob2o$9bobo$10bo$11bo$12bob2o$
+13bobo$14bo$15bo$16bob2o$17bobo$18bo$19bo$20bob2o$21bobo$22bo$23bo$24b
+ob2o$25bobo$26bo$27bo$28bob2o$29bobo$30bo$31bo$32bob2o$33bobo$34bo$35b
+o$36bob2o$37bobo$38bo$39bo$40bob2o$41bobo$42bo$43bo$44bob2o$45bobo$46b
+o$47bo$48bob2o$49bobo$50bo$51bo$52bob2o$53bobo$54bo$55bo$56bob2o$57bob
+o$58bo$59bo$60bob2o$61bobo$62bo$63bo$64bob2o$65bobo$66bo$67bo$68bob2o$
+69bobo$70bo$71bo$72bob2o$73bobo$74bo$75bo$76bob2o$77bobo$78bo$79bo4bo$
+80bob2o$81bobo$82bo$83bo$84bob2o$85bobo$86bo$87bo$88bob2o$89bobo$90bo$
+91bo$92bob2o$93bobo$94bo$95bo$96bob2o$97bobo$98bo$99bo$100bob2o$101bob
+o$102bo$103bo$104bob2o$105bobo$106bo$107bo$108bob2o$109bobo$110bo$111b
+o$112bob2o$113bobo$114bo$115bo$116bob2o$117bobo$118bo$119bo$120bob2o$
+121bobo$122bo$123bo$124bob2o$125bobo$126bo$127bo$128bob2o$129bobo$130b
+o$131bo$132bob2o$133bobo$134bo$135bo$136bob2o$137bobo$138bo$139bo$140b
+ob2o$141bobo$142bo$143bo$144bob2o$145bobo$146bo$147bo$148bob2o$149bobo
+$150bo$151bo$152bob2o$153bobo$154bo$155bo$156bob2o$157bobo$158bo$159bo
+$160bob2o$161bobo$162bo$163bo!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 8 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 82, y = 3, rule = B3-eq4w5ikjry/S234z7e
+39bo$bobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobo$obobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobo!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 15 setups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 164, y = 4, rule = B3-eq4w5ikjry/S234z7e
+82bo$2bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3b
+o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo$bobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobo$o3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo
+3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 10165226114359734270, 0 in 1000 soups (explore it 270, parent [-B3e +B5j +B5y ])
+x = 0, y = 0, rule = B3-eq4w5ikjry/S234z7e
+!
+
+# new shape p12 oscillator, 10 cells, 1 in 1000 soups (explore it 270, parent [-B3e +B5j +B5y ])
+# first seen in soup seed 13684355176903169567
+x = 5, y = 6, rule = B3-eq4w5ikjry/S234z7e
+2b2o2$bo2bo$2o2bo$bobo$2bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p4) (5 cells) + still life (4 cells) -> still life restored + still life (4 cells), 2 setups (explore it 276, parent [-S3y ])
+x = 10, y = 8, rule = B3-q4w5ikr/S23-ky4z7e
+bo$2bo$3o4$8b2o$8b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (4 cells) -> still life restored, 2 setups (explore it 276, parent [-S3y ])
+x = 8, y = 19, rule = B3-q4w5ikr/S23-ky4z7e
+bo$obo$bo11$7bo$5b2o$4bo$4bo2bo$4bo2bo$5b2o!
+
+# fossil: p2 oscillator (40 cells) in the ash, first in soup seed 2346298559775030523, 0 in 1000 soups (explore it 276, parent [-S3y ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-ky4z7e
+!
+
+# fossil: p2 oscillator (40 cells) in the ash, first in soup seed 14837506194240012662, 0 in 1000 soups (explore it 276, parent [-S3y ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-ky4z7e
+!
+
+# fossil: p2 oscillator (40 cells) in the ash, first in soup seed 7929522850277714210, 0 in 1000 soups (explore it 276, parent [-S3y ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-ky4z7e
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 12398978207494724896, 1 in 1000 soups (explore it 276, parent [-S3y ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-ky4z7e
+!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (6 cells) -> still life restored + still life (4 cells), 6 setups (explore it 285, parent [+B6k ])
+x = 19, y = 13, rule = B3-q4w5kr6k/S234z7e
+b2o$o2bo$b2o7$15b3o$14bo3bo$14bo3bo$13bo2b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (9 cells) -> still life restored + still life (4 cells), 6 setups (explore it 285, parent [+B6k ])
+x = 19, y = 14, rule = B3-q4w5kr6k/S234z7e
+o$3o$3bo$3o$o6$15b3o$14bo3bo$14bo3bo$13bo2b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (9 cells) -> still life restored, 2 setups (explore it 285, parent [+B6k ])
+x = 19, y = 17, rule = B3-q4w5kr6k/S234z7e
+o$3o$3bo$3o$o9$15b3o$14bo3bo$14bo3bo$13bo2b2o!
+
+# fossil: p2 oscillator (29 cells) in the ash, first in soup seed 1484728156367066136, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (25 cells) in the ash, first in soup seed 5228531041863410885, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (28 cells) in the ash, first in soup seed 4846741910615610885, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (31 cells) in the ash, first in soup seed 2452758297592695587, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (24 cells) in the ash, first in soup seed 10936161224624940394, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (34 cells) in the ash, first in soup seed 9065610668932531235, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (31 cells) in the ash, first in soup seed 5047692643500602781, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (30 cells) in the ash, first in soup seed 5938651670147573283, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (27 cells) in the ash, first in soup seed 12377444358483528704, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (48 cells) in the ash, first in soup seed 10899060154916106133, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# fossil: p2 oscillator (33 cells) in the ash, first in soup seed 14296733428608016723, 0 in 1000 soups (explore it 294, parent [+S6k ])
+x = 0, y = 0, rule = B3-q4t/S236k
+!
+
+# wick: fuse at 5c/7 along a orthogonal wick (both ways), 1 setups (explore it 299, parent [+B4j ])
+x = 123, y = 3, rule = B3-q4jw5kr/S234z7e
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o$61bo!
+
+# wick: fuse at c/2 along a orthogonal wick (both ways), 2 setups (explore it 299, parent [+B4j ])
+x = 123, y = 2, rule = B3-q4jw5kr/S234z7e
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob5ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# wick: signal at 0c/1 along a diagonal wick (one way), 2 setups (explore it 299, parent [+B4j ])
+x = 164, y = 163, rule = B3-q4jw5kr/S234z7e
+2b2o$o2bo$2o2$6b2o$4bo2bo$4b2o2$10b2o$8bo2bo$8b2o2$14b2o$12bo2bo$12b2o
+2$18b2o$16bo2bo$16b2o2$22b2o$20bo2bo$20b2o2$26b2o$24bo2bo$24b2o2$30b2o
+$28bo2bo$28b2o2$34b2o$32bo2bo$32b2o2$38b2o$36bo2bo$36b2o2$42b2o$40bo2b
+o$40b2o2$46b2o$44bo2bo$44b2o2$50b2o$48bo2bo$48b2o2$54b2o$52bo2bo$52b2o
+2$58b2o$56bo2bo$56b2o2$62b2o$60bo2bo$60b2o2$66b2o$64bo2bo$64b2o2$70b2o
+$68bo2bo$68b2o2$74b2o$72bo2bo$72b2o2$78b2o$76bo2bo$76b2o$84bo$82b2o$
+80bo2bo$80b2o2$86b2o$84bo2bo$84b2o2$90b2o$88bo2bo$88b2o2$94b2o$92bo2bo
+$92b2o2$98b2o$96bo2bo$96b2o2$102b2o$100bo2bo$100b2o2$106b2o$104bo2bo$
+104b2o2$110b2o$108bo2bo$108b2o2$114b2o$112bo2bo$112b2o2$118b2o$116bo2b
+o$116b2o2$122b2o$120bo2bo$120b2o2$126b2o$124bo2bo$124b2o2$130b2o$128bo
+2bo$128b2o2$134b2o$132bo2bo$132b2o2$138b2o$136bo2bo$136b2o2$142b2o$
+140bo2bo$140b2o2$146b2o$144bo2bo$144b2o2$150b2o$148bo2bo$148b2o2$154b
+2o$152bo2bo$152b2o2$158b2o$156bo2bo$156b2o2$162b2o$160bo2bo$160b2o!
+
+# NEW BEHAVIOUR p10 oscillator, 8 cells, 5 in 1000 soups (explore it 299, parent [+B4j ])
+# first seen in soup seed 13501185216323548824
+x = 3, y = 5, rule = B3-q4jw5kr/S234z7e
+b2o$obo2$2bo$3o!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 16497001539306873970, 0 in 1000 soups (explore it 313, parent [+B4t ])
+x = 0, y = 0, rule = B34t/S23-y4z5y7c
+!
+
+# fossil: still life (24 cells) in the ash, first in soup seed 17913871287723073585, 1 in 1000 soups (explore it 313, parent [+B4t ])
+x = 0, y = 0, rule = B34t/S23-y4z5y7c
+!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (7 cells) -> still life restored + p4 oscillator (6 cells), 2 setups (explore it 315, parent [+B5c ])
+x = 18, y = 18, rule = B3-eq4w5-eanq/S234z7e
+15bo$14b2o$13b3o$14b2o$15bobo$17bo10$3bo$obobo$2obo!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 5 setups (explore it 315, parent [+B5c ])
+x = 164, y = 3, rule = B3-eq4w5-eanq/S234z7e
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobob3obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobo
+bobobobobobobobobobobo$bobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobob
+obobobobobobobobobobobobobobobobobobobobobobobo$o3bo3bo3bo3bo3bo3bo3bo
+3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo
+3bo3bo3bo3bo3bo3bo3bo3bo3bo3bo!
+
+# fossil: p4 oscillator (13 cells) in the ash, first in soup seed 1589816515789396872, 0 in 1000 soups (explore it 315, parent [+B5c ])
+x = 0, y = 0, rule = B3-eq4w5-eanq/S234z7e
+!
+
+# fossil: p2 oscillator (12 cells) in the ash, first in soup seed 18317546655630825444, 0 in 1000 soups (explore it 315, parent [+B5c ])
+x = 0, y = 0, rule = B3-eq4w5-eanq/S234z7e
+!
+
+# new shape p4 oscillator, 10 cells, 1 in 1000 soups (explore it 315, parent [+B5c ])
+# first seen in soup seed 1589816515789396872
+x = 5, y = 5, rule = B3-eq4w5-eanq/S234z7e
+2o$o2bo2$o3bo$2ob2o!
+
+# NEW SOUP BEHAVIOUR linear growth +8 cells per 21 gens (puffer, rake or gun), 2 in 1000 soups (explore it 316, parent [-B5i +S4e +S5c ])
+# soup seed 7145016943437946343 (the soup is below; run it in Golly)
+x = 16, y = 16, rule = B3-q4w5kr/S234ez5c7e
+b2ob3obo2b2o$b4o4b2o4bo$b3obo2b2ob4o$o4b3obo3bo$o3bo2b3obo3bo$2b3obobo
+2bob3o$2o6b3o2bo$5obob2obo$o3b3o2b2obobo$o3bo3bob2o3bo$bob7o5bo$2ob4o
+3bobo2bo$bobobobob2o$2ob3obob4ob2o$b2o2b2o3bobobo$bo3bob5o!
+
+# NEW SOUP BEHAVIOUR linear growth +20 cells per 80 gens (puffer, rake or gun), 27 in 1000 soups (explore it 316, parent [-B5i +S4e +S5c ])
+# soup seed 12744909958692343651 (the soup is below; run it in Golly)
+x = 16, y = 16, rule = B3-q4w5kr/S234ez5c7e
+obobo2bobo2b4o$3bob2obobob4o$bo2b2o2bobobob2o$2o2b2obo2b2o2b2o$2b4o2bo
+b4o$b3ob4obo$bob4ob2obobobo$3bobo2b2o3b3o$2ob4o5b2o$o2b2o3b2o2b3o$2obo
+bo5b2o2bo$obo2bob2ob5o$2ob2o2bobobob2o$bo2bo3b5o$b3obo6bob2o$2bobob2o
+5bo!
+
+# catalyst: catalysed reaction: 7c/40 diagonal ship (p40) (17 cells) + still life (4 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + p2 oscillator (3 cells) + still life (4 cells), 2 setups (explore it 318, parent [+B5e ])
+x = 24, y = 10, rule = B3-q4w5eikr/S234z7e
+2b2o$2b2o2$2o3b3o$2o2bo2bo$4bo2bo$4bobo2$22b2o$22b2o!
+
+# fossil: p2 oscillator (32 cells) in the ash, first in soup seed 2411190938493407144, 0 in 1000 soups (explore it 318, parent [+B5e ])
+x = 0, y = 0, rule = B3-q4w5eikr/S234z7e
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 17683156477748031742, 0 in 1000 soups (explore it 318, parent [+B5e ])
+x = 0, y = 0, rule = B3-q4w5eikr/S234z7e
+!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (6 cells) -> still life restored + still life (6 cells) + still life (6 cells) + still life (6 cells), 2 setups (explore it 323, parent [-S3e +S7c ])
+x = 13, y = 9, rule = B3-q4w5ikr/S23-e4z5c7
+9b2o$8b2ob2o$9b4o$10b2o2$bo$obo$obo$bo!
+
+# NEW wick: fuse at 7c/10 along a orthogonal wick (both ways), 3 setups (explore it 323, parent [-S3e +S7c ])
+x = 123, y = 2, rule = B3-q4w5ikr/S23-e4z5c7
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o2bob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# fossil: p3 oscillator (12 cells) in the ash, first in soup seed 9844354735416451691, 0 in 1000 soups (explore it 323, parent [-S3e +S7c ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-e4z5c7
+!
+
+# new shape p3 oscillator, 8 cells, 71 in 1000 soups (explore it 323, parent [-S3e +S7c ])
+# first seen in soup seed 16041091631213979323
+x = 4, y = 4, rule = B3-q4w5ikr/S23-e4z5c7
+o2bo$b2o$b2o$o2bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (6 cells) -> still life restored + p4 oscillator (6 cells), 2 setups (explore it 326, parent [+S5r ])
+x = 18, y = 18, rule = B3-q4w5ikr/S23-k4z5r7e
+15b2o$15bobo$16b2o11$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (8 cells) -> still life restored + still life (4 cells), 2 setups (explore it 326, parent [+S5r ])
+x = 18, y = 12, rule = B3-q4w5ikr/S23-k4z5r7e
+14b2o$14bobo$15bobo$16b2o4$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (11 cells) -> still life restored + p2 oscillator (3 cells), 4 setups (explore it 326, parent [+S5r ])
+x = 20, y = 11, rule = B3-q4w5ikr/S23-k4z5r7e
+15bo$14bobo$15bobo$17b3o$17bobo$18bo$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (15 cells) + still life (4 cells) -> still life restored + still life (8 cells), 2 setups (explore it 326, parent [+S5r ])
+x = 7, y = 14, rule = B3-q4w5ikr/S23-k4z5r7e
+b2o$b3o$b3o$ob2o$3o$bo7$5b2o$5b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (6 cells) -> still life restored, 2 setups (explore it 326, parent [+S5r ])
+x = 18, y = 12, rule = B3-q4w5ikr/S23-k4z5r7e
+15b2o$15bo$17bo$16b2o4$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 326, parent [+S5r ])
+x = 19, y = 19, rule = B3-q4w5ikr/S23-k4z5r7e
+15b2o$15bobo$16bobo$17b2o11$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (11 cells) -> still life restored, 2 setups (explore it 326, parent [+S5r ])
+x = 21, y = 15, rule = B3-q4w5ikr/S23-k4z5r7e
+19bo$18bobo$17bobo$15b3o$15bobo$16bo5$3o$3bo$o2bo$bo2bo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (6 cells) -> still life restored, 2 setups (explore it 326, parent [+S5r ])
+x = 11, y = 11, rule = B3-q4w5ikr/S23-k4z5r7e
+bo$2bo$3o5$9b2o$10bo$8bo$8b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (9 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 326, parent [+S5r ])
+x = 16, y = 7, rule = B3-q4w5ikr/S23-k4z5r7e
+12b2o$12bobo$13bobo$b4o9b2o$o3bo$4bo$o2bo!
+
+# fossil: p17 oscillator (46 cells) in the ash, first in soup seed 15276817881070109898, 0 in 1000 soups (explore it 326, parent [+S5r ])
+x = 0, y = 0, rule = B3-q4w5ikr/S23-k4z5r7e
+!
+
+# new shape p17 oscillator, 26 cells, 1 in 1000 soups (explore it 326, parent [+S5r ])
+# first seen in soup seed 15276817881070109898
+x = 14, y = 9, rule = B3-q4w5ikr/S23-k4z5r7e
+b2o$o2bo$b2o6b3o$8bo3bo$7bo2bo2bo$7bobobobo$7bo2bo2bo$8bo3bo$9b3o!
+
+# NEW BEHAVIOUR c/8 diagonal ship (p8), 7 cells, 13 in 1000 soups (explore it 333, parent [-S3e ])
+# first seen in soup seed 9970772263621896713
+x = 3, y = 5, rule = B3-q4w5aikqr/S23-e4z5c7e
+bo$o$obo$b2o$2bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (10 cells) + still life (7 cells) -> still life restored + still life (4 cells), 6 setups (explore it 336, parent [-S3y ])
+x = 13, y = 19, rule = B3-q4w5ikr/S23-ky4z5r7e
+10b2o$9bo2bo$9bo2bo$9bo$10b2o$12bo10$2o$obo$2bo$2b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (10 cells) + still life (7 cells) -> still life restored, 2 setups (explore it 336, parent [-S3y ])
+x = 16, y = 19, rule = B3-q4w5ikr/S23-ky4z5r7e
+13b2o$12bo2bo$12bo2bo$12bo$13b2o$15bo10$2o$obo$2bo$2b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (4 cells) -> still life restored + p2 oscillator (3 cells), 2 setups (explore it 341, parent [+B4k ])
+x = 7, y = 13, rule = B3-q4kw5eikr/S234z7e
+5b2o$5b2o7$bo$3o$ob2o$b3o$b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (4 cells) -> still life restored + still life (4 cells), 2 setups (explore it 341, parent [+B4k ])
+x = 6, y = 12, rule = B3-q4kw5eikr/S234z7e
+4b2o$4b2o6$bo$3o$ob2o$b3o$b2o!
+
+# NEW BEHAVIOUR c/4 diagonal ship (p4), 8 cells, 5 in 1000 soups (explore it 341, parent [+B4k ])
+# first seen in soup seed 2098269320014528162
+x = 5, y = 5, rule = B3-q4kw5eikr/S234z7e
+2b2o$bo2bo$o2bo$o$o!
+
+# new shape p6 oscillator, 10 cells, 4 in 1000 soups (explore it 341, parent [+B4k ])
+# first seen in soup seed 16911879717703858232
+x = 6, y = 6, rule = B3-q4kw5eikr/S234z7e
+bo$obo$o$bo2bo$2bo2bo$3b2o!
+
+# new shape p4 oscillator, 8 cells, 1 in 1000 soups (explore it 341, parent [+B4k ])
+# first seen in soup seed 10132548827926570724
+x = 5, y = 3, rule = B3-q4kw5eikr/S234z7e
+o3bo$2ob2o$o3bo!
+
+# NEW wick: fuse at 6c/7 along a orthogonal wick (both ways), 3 setups (explore it 342, parent [-B3c +S4j +B5c ])
+x = 123, y = 3, rule = B3-cq4w5ckr/S234jz7e
+bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bob2o2bo2bo2b
+o2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo$123o$o2bo2bo2bo2b
+o2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo
+2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo!
+
+# wick: fuse at c/1 along a orthogonal wick (both ways), 7 setups (explore it 342, parent [-B3c +S4j +B5c ])
+x = 123, y = 3, rule = B3-cq4w5ckr/S234jz7e
+bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2b2obo2bo2bo2b
+o2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo$123o$o2bo2bo2bo2b
+o2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo
+2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo2bo!
+
+# NEW wick: signal at 2c/3 along a diagonal wick (one way), 2 setups (explore it 342, parent [-B3c +S4j +B5c ])
+x = 82, y = 82, rule = B3-cq4w5ckr/S234jz7e
+2o$o$2b2o$2bo$4b2o$4bo$6b2o$6bo$8b2o$8bo$10b2o$10bo$12b2o$12bo$14b2o$
+14bo$16b2o$16bo$18b2o$18bo$20b2o$20bo$22b2o$22bo$24b2o$24bo$26b2o$26bo
+$28b2o$28bo$30b2o$30bo$32b2o$32bo$34b2o$34bo$36b2o$36bo$38b2o$38bo$41b
+o$40bo$42b2o$42bo$44b2o$44bo$46b2o$46bo$48b2o$48bo$50b2o$50bo$52b2o$
+52bo$54b2o$54bo$56b2o$56bo$58b2o$58bo$60b2o$60bo$62b2o$62bo$64b2o$64bo
+$66b2o$66bo$68b2o$68bo$70b2o$70bo$72b2o$72bo$74b2o$74bo$76b2o$76bo$78b
+2o$78bo$80b2o$80bo!
+
+# NEW wick: signal at c/1 along a diagonal wick (both ways), 2 setups (explore it 342, parent [-B3c +S4j +B5c ])
+x = 41, y = 41, rule = B3-cq4w5ckr/S234jz7e
+o$bo$2bo$3bo$4bo$5bo$6bo$7bo$8bo$9bo$10bo$11bo$12bo$13bo$14bo$15bo$16b
+o$17bo$18bo$19bobo$20bo$21bo$22bo$23bo$24bo$25bo$26bo$27bo$28bo$29bo$
+30bo$31bo$32bo$33bo$34bo$35bo$36bo$37bo$38bo$39bo$40bo!
+
+# fossil: p4 oscillator (14 cells) in the ash, first in soup seed 13831291914428865630, 2 in 1000 soups (explore it 344, parent [+B3q ])
+x = 0, y = 0, rule = B34kw5eikr/S234z7e
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 17941777230178912184, 0 in 1000 soups (explore it 344, parent [+B3q ])
+x = 0, y = 0, rule = B34kw5eikr/S234z7e
+!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p4) (5 cells) + still life (4 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + p2 oscillator (3 cells) + still life (4 cells) + still life (6 cells), 2 setups (explore it 354, parent [+S4e ])
+x = 10, y = 7, rule = B3-q4w5ikr/S234ez5c7e
+bo$2bo$3o3$8b2o$8b2o!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (19 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (17 cells), 8 setups (explore it 358, parent [+S5e ])
+x = 13, y = 24, rule = B3-q4w5ikr/S234z5ce6i7e
+9b2o$5b2obobo$4bo4bo$3bo6bobo$3bo8bo$3bo6b2o$4bo$7b2o13$2o$2o$3bo$2b2o
+!
+
+# catalyst: pass-through: 7c/40 diagonal ship (p40) (19 cells) + still life (7 cells) -> still life restored + 7c/40 diagonal ship (p40) (19 cells), 4 setups (explore it 358, parent [+S5e ])
+x = 31, y = 13, rule = B3-q4w5ikr/S234z5ce6i7e
+27b2o$23b2obobo$22bo4bo$21bo6bobo$21bo8bo$21bo6b2o$22bo$25b2o2$2o$2o$
+3bo$2b2o!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 4939068784957895861, 0 in 1000 soups (explore it 358, parent [+S5e ])
+x = 0, y = 0, rule = B3-q4w5ikr/S234z5ce6i7e
+!
+
+# NEW SOUP BEHAVIOUR linear growth +4 cells per 28 gens (puffer, rake or gun), 2 in 1000 soups (explore it 367, parent [+S4i -S3c ])
+# soup seed 1724452587415623345 (the soup is below; run it in Golly)
+x = 16, y = 16, rule = B3-q4kw5eikr/S23-c4iz7e
+2b5o3b3ob2o$2bobo2b2o2b3obo$bo2bo2b5o$ob2o2bob7o$ob2o3bo2bo2bo$7o2b2o
+3bo$o2b4o3b5o$4o2b3obob2obo$3ob4o2bo3bo$b2o3bo2bob2o$3o4b3obo$b2obobo
+2b2o4bo$2bo2bobo4b3o$b2obob5o2bobo$3o5bo2b2ob2o$2obo3bo2b2o!
+
+# new shape p3 oscillator, 6 cells, 2 in 1000 soups (explore it 367, parent [+S4i -S3c ])
+# first seen in soup seed 3265010108783406736
+x = 4, y = 4, rule = B3-q4kw5eikr/S23-c4iz7e
+2o$o$3bo$2b2o!
+
+# fossil: still life (16 cells) in the ash, first in soup seed 14872833088502977039, 0 in 1000 soups (explore it 369, parent [+B6i ])
+x = 0, y = 0, rule = B3-cq4w5ckr6i/S234jz7e
+!
+
+# NEW wick: fuse at 5c/8 along a orthogonal wick (both ways), 1 setups (explore it 374, parent [+B4y +S6n ])
+x = 205, y = 3, rule = B3-q4yw5ikr/S23-ky4z6n7e
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b2o3b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o!
+
+# NEW catalyst: catalysed reaction: c/45 diagonal ship (p90) (23 cells) + still life (4 cells) -> still life restored + still life (5 cells), 2 setups (explore it 378, parent [+S5a ])
+x = 15, y = 18, rule = B3-q4w5aikqr/S23-e4z5ca7e
+11bo$10b3o$9bo2b2o$8bo2bob2o$7bo3bob2o$6bo4bob2o$10bobo$7b2o9$2o$2o!
+
+# catalyst: catalysed reaction: c/45 diagonal ship (p90) (23 cells) + still life (7 cells) -> still life restored + still life (5 cells), 2 setups (explore it 378, parent [+S5a ])
+x = 17, y = 20, rule = B3-q4w5aikqr/S23-e4z5ca7e
+13bo$12b3o$11bo2b2o$10bo2bob2o$9bo3bob2o$8bo4bob2o$12bobo$9b2o9$2b2o$
+2b2o$o$2o!
+
+# catalyst: catalysed reaction: c/45 diagonal ship (p90) (23 cells) + still life (6 cells) -> still life restored + still life (4 cells) + still life (4 cells), 2 setups (explore it 378, parent [+S5a ])
+x = 13, y = 20, rule = B3-q4w5aikqr/S23-e4z5ca7e
+9bo$8b3o$7bo2b2o$6bo2bob2o$5bo3bob2o$4bo4bob2o$8bobo$5b2o9$bo$obo$bobo
+$2bo!
+
+# catalyst: catalysed reaction: c/45 diagonal ship (p90) (23 cells) + still life (7 cells) -> still life restored + still life (4 cells) + still life (4 cells), 2 setups (explore it 378, parent [+S5a ])
+x = 13, y = 20, rule = B3-q4w5aikqr/S23-e4z5ca7e
+9bo$8b3o$7bo2b2o$6bo2bob2o$5bo3bob2o$4bo4bob2o$8bobo$5b2o9$bo$obo$bobo
+$2b2o!
+
+# catalyst: catalysed reaction: c/45 diagonal ship (p90) (23 cells) + still life (8 cells) -> still life restored + still life (4 cells) + still life (4 cells), 2 setups (explore it 378, parent [+S5a ])
+x = 13, y = 21, rule = B3-q4w5aikqr/S23-e4z5ca7e
+9bo$8b3o$7bo2b2o$6bo2bob2o$5bo3bob2o$4bo4bob2o$8bobo$5b2o9$bo$obo$bobo
+$2bobo$3bo!
+
+# wick: fuse at 5c/8 along a orthogonal wick (both ways), 3 setups (explore it 378, parent [+S5a ])
+x = 123, y = 2, rule = B3-q4w5aikqr/S23-e4z5ca7e
+ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o2bob2ob2ob2o
+b2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2obo$2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob
+2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2ob2o!
+
+# NEW wick: fuse at 7c/9 along a orthogonal wick (both ways), 1 setups (explore it 378, parent [+S5a ])
+x = 205, y = 4, rule = B3-q4w5aikqr/S23-e4z5ca7e
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o$b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b
+3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o
+2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o2b3o$2o3b2o3b2o3b2o3b2o3b
+2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o
+3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b2o3b
+2o$102bo!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 2828268213073454246, 0 in 1000 soups (explore it 378, parent [+S5a ])
+x = 0, y = 0, rule = B3-q4w5aikqr/S23-e4z5ca7e
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 17546647745976042136, 0 in 1000 soups (explore it 378, parent [+S5a ])
+x = 0, y = 0, rule = B3-q4w5aikqr/S23-e4z5ca7e
+!
+
+# NEW BEHAVIOUR c/45 diagonal ship (p90), 17 cells, 4 in 1000 soups (explore it 378, parent [+S5a ])
+# first seen in soup seed 2346298559775030523
+x = 6, y = 14, rule = B3-q4w5aikqr/S23-e4z5ca7e
+2b2o$2bobo$4bo$bob2o$ob2o$3o6$5bo$4bo$5bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p4) (5 cells) + still life (10 cells) -> still life restored + still life (4 cells), 2 setups (explore it 388, parent [-B5i -B3y ])
+x = 13, y = 5, rule = B3-qy4w5kr/S23-k4z5r7e
+bo8b2o$2bo7bobo$3o6b3o$8bo$8b2o!
+
+# fossil: p17 oscillator (44 cells) in the ash, first in soup seed 15276817881070109898, 0 in 1000 soups (explore it 388, parent [-B5i -B3y ])
+x = 0, y = 0, rule = B3-qy4w5kr/S23-k4z5r7e
+!
+
+# fossil: p17 oscillator (45 cells) in the ash, first in soup seed 5874745516360469603, 0 in 1000 soups (explore it 388, parent [-B5i -B3y ])
+x = 0, y = 0, rule = B3-qy4w5kr/S23-k4z5r7e
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 11102936359166627540, 0 in 1000 soups (explore it 388, parent [-B5i -B3y ])
+x = 0, y = 0, rule = B3-qy4w5kr/S23-k4z5r7e
+!
+
+# new shape p17 oscillator, 24 cells, 1 in 1000 soups (explore it 388, parent [-B5i -B3y ])
+# first seen in soup seed 15276817881070109898
+x = 12, y = 9, rule = B3-qy4w5kr/S23-k4z5r7e
+7b3o$6bo3bo$5bo2bo2bo$5bobobobo$5bo2bo2bo$6bo3bo$7b3o$2o$2o!
+
+# new shape p17 oscillator, 25 cells, 1 in 1000 soups (explore it 388, parent [-B5i -B3y ])
+# first seen in soup seed 5874745516360469603
+x = 12, y = 10, rule = B3-qy4w5kr/S23-k4z5r7e
+2b3o$bo3bo$o2bo2bo$obobobo$o2bo2bo$bo3bo$2b3o$10bo$9bobo$9b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (13 cells) + still life (4 cells) -> still life restored + still life (4 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells) + still life (6 cells), 2 setups (explore it 391, parent [+S7c ])
+x = 17, y = 13, rule = B3-q4w5ikr/S234z7
+4b2o$bo2b2o$o2b2o$ob2o$b2o7$15b2o$15b2o!
+
+# fossil: still life (18 cells) in the ash, first in soup seed 9714553239851074838, 0 in 1000 soups (explore it 391, parent [+S7c ])
+x = 0, y = 0, rule = B3-q4w5ikr/S234z7
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 8650485298051235102, 0 in 1000 soups (explore it 391, parent [+S7c ])
+x = 0, y = 0, rule = B3-q4w5ikr/S234z7
+!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (7 cells) -> still life restored + still life (4 cells), 2 setups (explore it 392, parent [+S6e ])
+x = 9, y = 15, rule = B3-q4w5kr/S234z6e7e
+b2o$3o$2obo$b3o$2bo7$5b2o$6bo$6b3o$8bo!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 10012628657520386425, 0 in 1000 soups (explore it 392, parent [+S6e ])
+x = 0, y = 0, rule = B3-q4w5kr/S234z6e7e
+!
+
+# NEW catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bo$17bobo$18bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bo$17bobo$18b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18b2o$17bo2bo$18b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bob2o$17bobobo$18bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bobobo$17bobob2o$18bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bo$17bobo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$19b2o$18bobo$17bobo$18bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$19b2o$18bo2bo$17bo2bo$18b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$20bo$18b3o$17bo$18b3o$20bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 32, rule = B3-eq4w5ekr/S234ez5c7
+20bo$18b3o$17b2obo$6bobo8b3o$6bo11b2o$6bo$7b3o5b2o$14bo2bo$10bo2bo2bo$
+11bo4bo$11b2ob2o$13bo15$2bo$bobo$2bo$bo$obo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 8 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$19b2o$18bo2bo$17bo2bobo$18b2obo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 22, y = 27, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$19bo$18bobo$17bo3bo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 22, y = 33, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo17$20bo$19bobo$18bobo$17bobo$18bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 24, y = 33, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo17$20bo$19bobo$18bo3bo$17bobobobo$18bo3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (33 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo12$18bo$17bobo$18bobo$19bobo$20bobo$21bo!
+
+# NEW catalyst: catalysed reaction: c/2 orthogonal ship (p14) (33 cells) + still life (4 cells) -> still life restored + still life (4 cells), 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 28, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo15$12b2o$12b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (33 cells) + still life (6 cells) -> still life restored + still life (4 cells), 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 29, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo15$12b2o$12bobo$13b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (33 cells) + still life (10 cells) -> still life restored + still life (4 cells), 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 34, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo17$4bo$3bobo$4bobo$5bobo$6bobo$7bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (8 cells) -> still life restored + still life (4 cells), 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 22, y = 21, rule = B3-eq4w5ekr/S234ez5c7
+17bo$16bobob2o$17bobobo13$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (8 cells) -> still life restored + still life (5 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 17, y = 19, rule = B3-eq4w5ekr/S234ez5c7
+12bo$11bobob2o$12bobobo11$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (8 cells) -> still life restored + still life (6 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 12, y = 18, rule = B3-eq4w5ekr/S234ez5c7
+10bo$6b2obobo$6bobobo10$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (10 cells) -> still life restored + still life (4 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 16, y = 20, rule = B3-eq4w5ekr/S234ez5c7
+14b2o$15bo$12b3o$12bo2bo$14b2o10$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (10 cells) -> still life restored + still life (6 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 11, y = 19, rule = B3-eq4w5ekr/S234ez5c7
+7b2o$7bo$8b3o$7bo2bo$7b2o9$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (12 cells) + still life (10 cells) -> still life restored + still life (4 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 18, y = 9, rule = B3-eq4w5ekr/S234ez5c7
+15bo$14bobo$15bobo$bo12bo2bo$b2o11bobo$ob2o11bo$3b2o$2bobo$3b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p4) (5 cells) + still life (10 cells) -> still life restored + still life (4 cells), 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 4, y = 13, rule = B3-eq4w5ekr/S234ez5c7
+bo$2bo$3o6$2b2o$o2bo$3o$3bo$2b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p4) (12 cells) + still life (11 cells) -> still life restored + still life (4 cells), 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 16, y = 9, rule = B3-eq4w5ekr/S234ez5c7
+12bo$11bobo$12bobo$15bo$12bobo$2b2o7bobo$2ob2o7bo$4o$b2o!
+
+# NEW catalyst: eater: c/2 orthogonal ship (p14) (33 cells) + still life (7 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 30, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo14$2b2o$2bo$3bo$2bo$2b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p14) (33 cells) + still life (5 cells) -> still life restored, 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 25, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$11b2o$12bo$12b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p14) (33 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 28, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$11b2o$12bo$11bo$12bo$11bobo$12bo!
+
+# catalyst: eater: c/2 orthogonal ship (p14) (33 cells) + still life (7 cells) -> still life restored, 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$11b2o$12bo$12bobo$13b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p14) (33 cells) + still life (9 cells) -> still life restored, 1 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 16, y = 26, rule = B3-eq4w5ekr/S234ez5c7
+14bo$12b3o$11b2obo$obo8b3o$o11b2o$o$b3o5b2o$8bo2bo$4bo2bo2bo$5bo4bo$5b
+2ob2o$7bo11$11b2ob2o$12bobo$12bobo$13bo!
+
+# catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (7 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 19, y = 13, rule = B3-eq4w5ekr/S234ez5c7
+17b2o$18bo$17bo$18bo$17b2o3$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (8 cells) -> still life restored, 4 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 17, y = 21, rule = B3-eq4w5ekr/S234ez5c7
+12bo$11bobob2o$12bobobo13$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (10 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 23, rule = B3-eq4w5ekr/S234ez5c7
+19b2o$20bo$17b3o$17bo2bo$19b2o13$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p20) (12 cells) + still life (10 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 21, y = 14, rule = B3-eq4w5ekr/S234ez5c7
+18bo$17bobo$18bobo$17bo2bo$17bobo$18bo3$bo$b2o$ob2o$3b2o$2bobo$3b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 11, y = 11, rule = B3-eq4w5ekr/S234ez5c7
+bo$2bo$3o6$6bobobo$5bobob2o$6bo!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (7 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 16, y = 6, rule = B3-eq4w5ekr/S234ez5c7
+12bob2o$11bobobo$2b2o8bo$2ob2o$4o$b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (8 cells) -> still life restored, 6 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 17, y = 6, rule = B3-eq4w5ekr/S234ez5c7
+12bobobo$11bobob2o$2b2o8bo$2ob2o$4o$b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (10 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 15, y = 6, rule = B3-eq4w5ekr/S234ez5c7
+2b2o$2ob2o$4o7b2o$b2o9bo$10bobobo$10b2ob2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 17, y = 7, rule = B3-eq4w5ekr/S234ez5c7
+15bo$12bobobo$11bobobo$2b2o8bo$2ob2o$4o$b2o!
+
+# catalyst: eater: c/2 orthogonal ship (p4) (12 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 16, y = 9, rule = B3-eq4w5ekr/S234ez5c7
+2b2o$2ob2o$4o$b2o$14bo$13bobo$12bobo$11bobo$12bo!
+
+# fossil: p2 oscillator (19 cells) in the ash, first in soup seed 16641588443568335578, 0 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234ez5c7
+!
+
+# fossil: still life (15 cells) in the ash, first in soup seed 6255581847729574014, 0 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234ez5c7
+!
+
+# fossil: still life (16 cells) in the ash, first in soup seed 4435892903827585721, 0 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234ez5c7
+!
+
+# NEW BEHAVIOUR p5 oscillator, 7 cells, 57 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+# first seen in soup seed 7950454542610415380
+x = 4, y = 4, rule = B3-eq4w5ekr/S234ez5c7
+o$b2o$bobo$2b2o!
+
+# NEW BEHAVIOUR c/2 orthogonal ship (p14), 30 cells, 44 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+# first seen in soup seed 17724542191534867790
+x = 13, y = 16, rule = B3-eq4w5ekr/S234ez5c7
+6b3o$5bo$5bo2bo$5bo$3bo$b2o$bo$o2bo$bo2bo$bo4bo$2bo3bo$3b3o2$9bo2bo$9b
+4o$11b2o!
+
+# new shape c/2 orthogonal ship (p14), 30 cells, 1 in 1000 soups (explore it 393, parent [-B3e +S7c +B5e ])
+# first seen in soup seed 14601385238281280912
+x = 15, y = 15, rule = B3-eq4w5ekr/S234ez5c7
+6b3o$5bo$5bo2bo$5bo$3bo$b2o$bo$o2bo$bo$bo3b2o$2bo4bo$3bo3bo$4b3o$10b2o
+$10b3obo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (4 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 2 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 17, y = 8, rule = B3-q4w5ik/S23-ky4z5y6e7e
+15b2o$15b2o2$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (5 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 8 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 18, y = 8, rule = B3-q4w5ik/S23-ky4z5y6e7e
+15bo$15b3o$17bo$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (5 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 2 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 11, y = 20, rule = B3-q4w5ik/S23-ky4z5y6e7e
+9bo$8bobo$9b2o13$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (6 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 2 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 18, y = 8, rule = B3-q4w5ik/S23-ky4z5y6e7e
+15b2o$15bobo$16b2o$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (7 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 12 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 11, y = 19, rule = B3-q4w5ik/S23-ky4z5y6e7e
+9b2o$8bobo$8bo$7b2o11$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (7 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 8 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 22, y = 13, rule = B3-q4w5ik/S23-ky4z5y6e7e
+20b2o$20b2o$18bo$18b2o5$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (7 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 2 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 11, y = 21, rule = B3-q4w5ik/S23-ky4z5y6e7e
+8bo$7bobo$8bobo$9b2o13$2bo$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (8 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 2 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 19, y = 8, rule = B3-q4w5ik/S23-ky4z5y6e7e
+15b2o$15bobo$16bobo$2bo14b2o$b3o$5o2$4b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (11 cells) + still life (9 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (16 cells), 4 setups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 19, y = 8, rule = B3-q4w5ik/S23-ky4z5y6e7e
+15bo$15b3o$18bo$2bo12b3o$b3o11bo$5o2$4b2o!
+
+# fossil: p2 oscillator (13 cells) in the ash, first in soup seed 17253034171660561026, 1 in 1000 soups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 0, y = 0, rule = B3-q4w5ik/S23-ky4z5y6e7e
+!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 16958278567820051507, 0 in 1000 soups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 0, y = 0, rule = B3-q4w5ik/S23-ky4z5y6e7e
+!
+
+# fossil: still life (21 cells) in the ash, first in soup seed 13629969654909526669, 0 in 1000 soups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 0, y = 0, rule = B3-q4w5ik/S23-ky4z5y6e7e
+!
+
+# fossil: still life (24 cells) in the ash, first in soup seed 2176978681793608077, 0 in 1000 soups (explore it 394, parent [-B5r +S5y +S6e ])
+x = 0, y = 0, rule = B3-q4w5ik/S23-ky4z5y6e7e
+!
+
+# new shape p4 oscillator, 11 cells, 1 in 1000 soups (explore it 394, parent [-B5r +S5y +S6e ])
+# first seen in soup seed 6498883904483638617
+x = 6, y = 6, rule = B3-q4w5ik/S23-ky4z5y6e7e
+3bo$2bobo$3bobo$bo2bo$o2bo$2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 21, y = 28, rule = B3-eq4w5ekr/S234e5c7
+19bo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2bo$bo2bo
+9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 19, y = 26, rule = B3-eq4w5ekr/S234e5c7
+bo$obo$bo14$12bo$10b2ob2o$9bo5bo$9b2obob2o$15b3o$6b2o7bo2bo$5bo2bo9bo$
+4bo2bo6bo3bo$4bo2bo6bo2bo$5bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 21, y = 28, rule = B3-eq4w5ekr/S234e5c7
+19bo$18bobo$19b2o16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2bo$bo2b
+o9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 19, y = 26, rule = B3-eq4w5ekr/S234e5c7
+bo$obo$2o14$12bo$10b2ob2o$9bo5bo$9b2obob2o$15b3o$6b2o7bo2bo$5bo2bo9bo$
+4bo2bo6bo3bo$4bo2bo6bo2bo$5bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5c7
+19b2o$18bo2bo$19b2o16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2bo$bo
+2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234e5c7
+b2o$o2bo$b2o14$13bo$11b2ob2o$10bo5bo$10b2obob2o$16b3o$7b2o7bo2bo$6bo2b
+o9bo$5bo2bo6bo3bo$5bo2bo6bo2bo$6bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 4 setups (explore it 399, parent [-S4z ])
+x = 21, y = 30, rule = B3-eq4w5ekr/S234e5c7
+19b2o$20bo$19bo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o
+7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234e5c7
+3bo$obobo$2obo14$14bo$12b2ob2o$11bo5bo$11b2obob2o$17b3o$8b2o7bo2bo$7bo
+2bo9bo$6bo2bo6bo3bo$6bo2bo6bo2bo$7bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 25, y = 28, rule = B3-eq4w5ekr/S234e5c7
+19bo3bo$18bobobobo$19bobobo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o
+7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234e5c7
+bo3bo$obobobo$bobobo14$16bo$14b2ob2o$13bo5bo$13b2obob2o$19b3o$10b2o7bo
+2bo$9bo2bo9bo$8bo2bo6bo3bo$8bo2bo6bo2bo$9bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 3 setups (explore it 399, parent [-S4z ])
+x = 22, y = 29, rule = B3-eq4w5ekr/S234e5c7
+20bo$19bobo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2b
+o$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234e5c7
+2bo$bobo$obo$bo13$13bo$11b2ob2o$10bo5bo$10b2obob2o$16b3o$7b2o7bo2bo$6b
+o2bo9bo$5bo2bo6bo3bo$5bo2bo6bo2bo$6bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 3 setups (explore it 399, parent [-S4z ])
+x = 22, y = 29, rule = B3-eq4w5ekr/S234e5c7
+20b2o$19bobo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo
+2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234e5c7
+2bo$bobo$obo$2o13$13bo$11b2ob2o$10bo5bo$10b2obob2o$16b3o$7b2o7bo2bo$6b
+o2bo9bo$5bo2bo6bo3bo$5bo2bo6bo2bo$6bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 3 setups (explore it 399, parent [-S4z ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234e5c7
+20b2o$19bo2bo$18bo2bo$19b2o16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o
+7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234e5c7
+2b2o$bo2bo$o2bo$b2o13$14bo$12b2ob2o$11bo5bo$11b2obob2o$17b3o$8b2o7bo2b
+o$7bo2bo9bo$6bo2bo6bo3bo$6bo2bo6bo2bo$7bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 22, y = 29, rule = B3-eq4w5ekr/S234e5c7
+20b2o$19bobo$18bo$19bobo$20b2o15$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b
+2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 6 setups (explore it 399, parent [-S4z ])
+x = 22, y = 31, rule = B3-eq4w5ekr/S234e5c7
+20b2o$21bo$20bo$19bo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$
+2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 20, y = 26, rule = B3-eq4w5ekr/S234e5c7
+2bo$bobo$2bo$bo$o$2o11$13bo$11b2ob2o$10bo5bo$10b2obob2o$16b3o$7b2o7bo
+2bo$6bo2bo9bo$5bo2bo6bo3bo$5bo2bo6bo2bo$6bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 5 setups (explore it 399, parent [-S4z ])
+x = 20, y = 29, rule = B3-eq4w5ekr/S234e5c7
+bo$obo$bo$2bo$bobo$2bo14$13bo$11b2ob2o$10bo5bo$10b2obob2o$16b3o$7b2o7b
+o2bo$6bo2bo9bo$5bo2bo6bo3bo$5bo2bo6bo2bo$6bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234e5c7
+4bo$bobobo$obobo$bo13$15bo$13b2ob2o$12bo5bo$12b2obob2o$18b3o$9b2o7bo2b
+o$8bo2bo9bo$7bo2bo6bo3bo$7bo2bo6bo2bo$8bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 5 setups (explore it 399, parent [-S4z ])
+x = 22, y = 31, rule = B3-eq4w5ekr/S234e5c7
+20b2o$19bobo$20bo$19bo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b
+3o$2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234e5c7
+4bo$bobobo$obobo$2o13$15bo$13b2ob2o$12bo5bo$12b2obob2o$18b3o$9b2o7bo2b
+o$8bo2bo9bo$7bo2bo6bo3bo$7bo2bo6bo2bo$8bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 5 setups (explore it 399, parent [-S4z ])
+x = 22, y = 32, rule = B3-eq4w5ekr/S234e5c7
+20b2o$19bobo$19bo$20bo$19bo$18bobo$19bo16$8bo$6b2ob2o$5bo5bo$5b2obob2o
+$11b3o$2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234e5c7
+5bo$b2obobo$o2bobo$2o13$16bo$14b2ob2o$13bo5bo$13b2obob2o$19b3o$10b2o7b
+o2bo$9bo2bo9bo$8bo2bo6bo3bo$8bo2bo6bo2bo$9bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234e5c7
+20bo$19bobo$18bo3bo$19bobo$20bo15$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$
+2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 3 setups (explore it 399, parent [-S4z ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5c7
+19bo$18bobo$19bobo$20bobo$21bo14$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b
+2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234e5c7
+3bo$2bobo$bobo$obo$bo12$14bo$12b2ob2o$11bo5bo$11b2obob2o$17b3o$8b2o7bo
+2bo$7bo2bo9bo$6bo2bo6bo3bo$6bo2bo6bo2bo$7bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 5 setups (explore it 399, parent [-S4z ])
+x = 23, y = 30, rule = B3-eq4w5ekr/S234e5c7
+21bo$20bobo$19bobo$18bo$19bobo$20bobo$21bo14$8bo$6b2ob2o$5bo5bo$5b2obo
+b2o$11b3o$2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (31 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234e5c7
+bo3bo$obobobo$bo3bo$2bobo$3bo12$16bo$14b2ob2o$13bo5bo$13b2obob2o$19b3o
+$10b2o7bo2bo$9bo2bo9bo$8bo2bo6bo3bo$8bo2bo6bo2bo$9bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (15 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 4 setups (explore it 399, parent [-S4z ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5c7
+bo$obobo$bobobo$6bo$bobobo$obobo$bo12$16bo$14b2ob2o$13bo5bo$13b2obob2o
+$19b3o$10b2o7bo2bo$9bo2bo9bo$8bo2bo6bo3bo$8bo2bo6bo2bo$9bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (36 cells) -> still life restored + c/2 orthogonal ship (p14) (30 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 31, y = 33, rule = B3-eq4w5ekr/S234e5c7
+24bo$23bobo$22bo3bo$21bobobobo$20bobo3bobo$19bobo5bobo$18bo11bo$19bobo
+5bobo$20bobo3bobo$21bobobobo$22bo3bo$23bobo$24bo11$8bo$6b2ob2o$5bo5bo$
+5b2obob2o$11b3o$2b2o7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (31 cells) + still life (36 cells) -> still life restored + c/2 orthogonal ship (p14) (36 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 29, y = 38, rule = B3-eq4w5ekr/S234e5c7
+6bo$5bobo$4bo3bo$3bobobobo$2bobo3bobo$bobo5bobo$o11bo$bobo5bobo$2bobo
+3bobo$3bobobobo$4bo3bo$5bobo$6bo16$22bo$20b2ob2o$19bo5bo$19b2obob2o$
+25b3o$16b2o7bo2bo$15bo2bo9bo$14bo2bo6bo3bo$14bo2bo6bo2bo$15bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (31 cells) + still life (4 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (4 cells) + still life (4 cells) + still life (4 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 15, y = 22, rule = B3-eq4w5ekr/S234e5c7
+2b2o$2b2o11$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2bo$bo2bo9bo$o2b
+o6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (31 cells) + still life (7 cells) -> still life restored + p5 oscillator (7 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 15, y = 27, rule = B3-eq4w5ekr/S234e5c7
+3b2o$3bo$4bo$3bo$3b2o13$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o7bo2bo$
+bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (31 cells) + still life (9 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (4 cells), 1 setups (explore it 399, parent [-S4z ])
+x = 15, y = 31, rule = B3-eq4w5ekr/S234e5c7
+3bo$2bobo$3bo$4bo$3bobo$4b2o16$8bo$6b2ob2o$5bo5bo$5b2obob2o$11b3o$2b2o
+7bo2bo$bo2bo9bo$o2bo6bo3bo$o2bo6bo2bo$bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (4 cells) -> still life restored + still life (4 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 17, y = 13, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o7$15b2o$15b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (9 cells) -> still life restored + still life (4 cells), 6 setups (explore it 399, parent [-S4z ])
+x = 19, y = 20, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o13$13bobobo$12bobobobo$13bo3bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (9 cells) -> still life restored + still life (5 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 14, y = 17, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o10$8bobobo$7bobobobo$8bo3bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (9 cells) -> still life restored + still life (6 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 13, y = 21, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o14$7bobobo$6bobobobo$7bo3bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (8 cells) -> still life restored + still life (6 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 23, y = 16, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o6$19b2o$19bo$20bo$21bo$20bobo$21bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (10 cells) -> still life restored + still life (4 cells), 4 setups (explore it 399, parent [-S4z ])
+x = 21, y = 22, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o11$19bo$18bobo$19bo$18bo$19bo$17bobo$17b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (10 cells) -> still life restored + still life (5 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 19, y = 17, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o6$17bo$16bobo$17bo$16bo$17bo$15bobo$15b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (9 cells) + still life (10 cells) -> still life restored + still life (6 cells), 2 setups (explore it 399, parent [-S4z ])
+x = 23, y = 16, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o5$19b2o$19bobo$21bo$20bo$21bo$20bobo$21bo!
+
+# catalyst: eater: c/4 diagonal ship (p20) (9 cells) + still life (9 cells) -> still life restored, 2 setups (explore it 399, parent [-S4z ])
+x = 14, y = 19, rule = B3-eq4w5ekr/S234e5c7
+4b2o2$o4bo$o3bo$b3o12$8bobobo$7bobobobo$8bo3bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (9 cells) -> still life restored, 2 setups (explore it 399, parent [-S4z ])
+x = 12, y = 11, rule = B3-eq4w5ekr/S234e5c7
+bo$2bo$3o6$6bobobo$5bobobobo$6bo3bo!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (8 cells) -> still life restored, 2 setups (explore it 399, parent [-S4z ])
+x = 12, y = 13, rule = B3-eq4w5ekr/S234e5c7
+bo$2bo$3o5$10bo$9bobo$10bo$9bo$8bo$8b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (10 cells) -> still life restored, 2 setups (explore it 399, parent [-S4z ])
+x = 12, y = 14, rule = B3-eq4w5ekr/S234e5c7
+bo$2bo$3o5$10bo$9bobo$10bo$9bo$10bo$8bobo$8b2o!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 5138183221242497993, 0 in 1000 soups (explore it 399, parent [-S4z ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234e5c7
+!
+
+# fossil: still life (14 cells) in the ash, first in soup seed 17109489598015233375, 0 in 1000 soups (explore it 399, parent [-S4z ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234e5c7
+!
+
+# fossil: still life (13 cells) in the ash, first in soup seed 13831298428609293128, 0 in 1000 soups (explore it 399, parent [-S4z ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234e5c7
+!
+
+# fossil: still life (36 cells) in the ash, first in soup seed 9877745228526596367, 0 in 1000 soups (explore it 399, parent [-S4z ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234e5c7
+!
+
+# new shape c/2 orthogonal ship (p14), 25 cells, 2 in 1000 soups (explore it 399, parent [-S4z ])
+# first seen in soup seed 6672889876153984558
+x = 15, y = 15, rule = B3-eq4w5ekr/S234e5c7
+6b3o$9bo$6bo2bo$9bo$11bo$12b2o$13bo$11bo2bo$13bo$8b2o3bo$7bo4bo$7bo3bo
+$8b3o2$o!
+
+# new shape p4 oscillator, 8 cells, 1 in 1000 soups (explore it 399, parent [-S4z ])
+# first seen in soup seed 11207321444986958686
+x = 5, y = 5, rule = B3-eq4w5ekr/S234e5c7
+2bo$bobo2$2ob2o$2bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 20, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+4b2o$4b2ob2o8b2o$5bo2bo8b3o$6b2o7bob2o$17bo$9b2o3bo$9bo2bo2bo$10b2ob2o
+$11b3o14$bo$obo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 19, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+bo$obo$bo13$12bo$10b2ob2o$10bo4bo$9bo2bob2o$9b2o4b3o$15bo2bo$6b2o10bo$
+4b3obo5bo3bo$7b2o5bo2bo$4b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 21, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobo$19bo16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2bo$2b2o
+10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (4 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 20, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+4b2o$4b2ob2o8b2o$5bo2bo8b3o$6b2o7bob2o$17bo$9b2o3bo$9bo2bo2bo$10b2ob2o
+$11b3o14$2o$obo$bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 19, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+2o$obo$bo13$12bo$10b2ob2o$10bo4bo$9bo2bob2o$9b2o4b3o$15bo2bo$6b2o10bo$
+4b3obo5bo3bo$7b2o5bo2bo$4b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 21, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19b2o$18bobo$19bo16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2bo$2b2o
+10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (5 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19b2o$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 21, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+5b2o$5b2ob2o8b2o$6bo2bo8b3o$7b2o7bob2o$18bo$10b2o3bo$10bo2bo2bo$11b2ob
+2o$12b3o14$b2o$o2bo$b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 20, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+b2o$o2bo$b2o13$13bo$11b2ob2o$11bo4bo$10bo2bob2o$10b2o4b3o$16bo2bo$7b2o
+10bo$5b3obo5bo3bo$8b2o5bo2bo$5b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19b2o$18bo2bo$19b2o16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2bo$2b
+2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19b2o$18bo2bo$19b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 22, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o14$3bo$obobo$2obo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 21, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bo$20bo$19b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobobo$19bob2o16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2bo$
+2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 23, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobobo$19bob2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+7b2o$7b2ob2o8b2o$8bo2bo8b3o$9b2o7bob2o$20bo$12b2o3bo$12bo2bo2bo$13b2ob
+2o$14b3o14$obobo$2obobo$4bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 4 setups (explore it 400, parent [+S5e ])
+x = 20, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+4b2o$4b2ob2o8b2o$5bo2bo8b3o$6b2o7bob2o$17bo$9b2o3bo$9bo2bo2bo$10b2ob2o
+$11b3o14$bo$obo$bo$o$bo$2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 24, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bobobo$18bobob2o$19bo16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2b
+o$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 24, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bobobo$18bobob2o$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 24, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+8b2o$8b2ob2o8b2o$9bo2bo8b3o$10b2o7bob2o$21bo$13b2o3bo$13bo2bo2bo$14b2o
+b2o$15b3o14$bo3bo$obobobo$bobobo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+bo3bo$obobobo$bobobo13$16bo$14b2ob2o$14bo4bo$13bo2bob2o$13b2o4b3o$19bo
+2bo$10b2o10bo$8b3obo5bo3bo$11b2o5bo2bo$8b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 25, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo3bo$18bobobobo$19bobobo16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$
+11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 25, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo3bo$18bobobobo$19bobobo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 21, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+5b2o$5b2ob2o8b2o$6bo2bo8b3o$7b2o7bob2o$18bo$10b2o3bo$10bo2bo2bo$11b2ob
+2o$12b3o13$bo$obo$bobo$2bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bobo$20bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobo$19bobo$20bo15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo2b
+o$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (6 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20bo$19bobo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 21, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+5b2o$5b2ob2o8b2o$6bo2bo8b3o$7b2o7bob2o$18bo$10b2o3bo$10bo2bo2bo$11b2ob
+2o$12b3o13$2o$obo$bobo$2bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bobo$20b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobo$19bobo$20b2o15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$11bo
+2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (7 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20b2o$19bobo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 22, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o13$b2o$o2bo$bo2bo$2b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19b2o$18bo2bo$19bo2bo$20b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19b2o$18bo2bo$19bo2bo$20b2o15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o$
+11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 23, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20b2o$19bo2bo$18bo2bo$19b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 21, y = 26, rule = B3-eq4w5ekr/S234e5ce7
+5b2o$5b2ob2o8b2o$6bo2bo8b3o$7b2o7bob2o$18bo$10b2o3bo$10bo2bo2bo$11b2ob
+2o$12b3o13$2o$obo$3bo$obo$2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+20b2o$19bobo$18bo$19bobo$20b2o15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o
+$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 22, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20b2o$19bobo$18bo$19bobo$20b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 4 setups (explore it 400, parent [+S5e ])
+x = 24, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+8b2o$8b2ob2o8b2o$9bo2bo8b3o$10b2o7bob2o$21bo$13b2o3bo$13bo2bo2bo$14b2o
+b2o$15b3o13$4bo$bobobo$obobobo$bo3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 22, y = 31, rule = B3-eq4w5ekr/S234e5ce7
+20bo$19bobo$20bo$19bo$18bobo$19bobo$20bo15$8bo$6b2ob2o$6bo4bo$5bo2bob
+2o$5b2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 8 setups (explore it 400, parent [+S5e ])
+x = 22, y = 30, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20bo$19bobo$18bobo$19bo$20bo$19bobo$20bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 20, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+bo$obo$bo$2bo$bobo$obo$bo12$13bo$11b2ob2o$11bo4bo$10bo2bob2o$10b2o4b3o
+$16bo2bo$7b2o10bo$5b3obo5bo3bo$8b2o5bo2bo$5b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 25, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$22bo$19bobobo$18bobobobo$19bo3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o13$b2o$o2bo$b2obo$o2bo$b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+20b2o$19bo2bo$18bob2o$19bo2bo$20b2o15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b
+2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (11 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20b2o$19bo2bo$18bob2o$19bo2bo$20b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 26, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o13$2bo$bobo$o3bo$bobo$2bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20bo$19bobo$18bo3bo$19bobo$20bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o12$bo$obo$bobo$2bobo$3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bobo$20bobo$21bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobo$19bobo$20bobo$21bo14$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b3o
+$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+14$21bo$20bobo$19bobo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 25, rule = B3-eq4w5ekr/S234e5ce7
+6b2o$6b2ob2o8b2o$7bo2bo8b3o$8b2o7bob2o$19bo$11b2o3bo$11bo2bo2bo$12b2ob
+2o$13b3o12$2o$obo$bobo$2bobo$3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 23, y = 30, rule = B3-eq4w5ekr/S234e5ce7
+21b2o$20bobo$19bobo$18bobo$19bo16$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b2o4b
+3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+16$19bo$18bobo$19bobo$20bobo$21b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$obo$bobo$2bobo$3bo13$14bo$12b2ob2o$12bo4bo$11bo2bob2o$11b2o4b3o$17b
+o2bo$8b2o10bo$6b3obo5bo3bo$9b2o5bo2bo$6b3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (9 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 23, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+14$21b2o$20bobo$19bobo$18bobo$19bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 4 setups (explore it 400, parent [+S5e ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234e5ce7
+7b2o$7b2ob2o8b2o$8bo2bo8b3o$9b2o7bob2o$20bo$12b2o3bo$12bo2bo2bo$13b2ob
+2o$14b3o13$bobo$obobo$bo3bo$2bobo$3bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 5 setups (explore it 400, parent [+S5e ])
+x = 24, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+20bobo$19bobobo$18bo3bo$19bobo$20bo15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b
+2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 9 setups (explore it 400, parent [+S5e ])
+x = 24, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20bobo$19bobobo$18bo3bo$19bobo$20bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 24, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+19bobo$18bobobo$19bo3bo$20bobo$21bo14$8bo$6b2ob2o$6bo4bo$5bo2bob2o$5b
+2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells), 3 setups (explore it 400, parent [+S5e ])
+x = 23, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+7b2o$7b2ob2o8b2o$8bo2bo8b3o$9b2o7bob2o$20bo$12b2o3bo$12bo2bo2bo$13b2ob
+2o$14b3o14$2bobo$bobobo$o3bo$bobo$2bo!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (12 cells) -> still life restored + c/2 orthogonal ship (p14) (32 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 23, y = 26, rule = B3-eq4w5ekr/S234e5ce7
+7b2o$7b2ob2o8b2o$8bo2bo8b3o$9b2o7bob2o$20bo$12b2o3bo$12bo2bo2bo$13b2ob
+2o$14b3o13$2b2o$bo2bo$ob2obo$bo2bo$2b2o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (34 cells) + still life (12 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 24, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+20b2o$19bo2bo$18bob2obo$19bo2bo$20b2o15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$
+5b2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: pass-through: c/2 orthogonal ship (p14) (32 cells) + still life (12 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 24, y = 28, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$20b2o$19bo2bo$18bob2obo$19bo2bo$20b2o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (32 cells) + still life (8 cells) -> still life restored + p5 oscillator (7 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 16, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+13$3b2o$3bo$4bo$3bo$2bobo$3bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/4 diagonal ship (p4) (5 cells) + still life (4 cells) + still life (6 cells) + still life (6 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 16, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+12$2bo$bobo$2bobo$3bo$2bo$bobo$2bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (33 cells) + still life (5 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 30, rule = B3-eq4w5ekr/S234e5ce7
+19bo$18bobo$17bo3bo$18bobo$17bobo$18bo15$8bo$6b2ob2o$6bo4bo$5bo2bob2o$
+5b2o4b3o$11bo2bo$2b2o10bo$3obo5bo3bo$3b2o5bo2bo$3o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (34 cells) + still life (5 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 22, y = 29, rule = B3-eq4w5ekr/S234e5ce7
+2o$2ob2o8b2o$bo2bo8b3o$2b2o7bob2o$13bo$5b2o3bo$5bo2bo2bo$6b2ob2o$7b3o
+15$18bo$17bobo$18bobo$17bo3bo$18bobo$19bo!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (34 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (37 cells) + still life (5 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 20, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+2bo$bobo$o3bo$bobo$2bobo$3bo12$13bo$11b2ob2o$11bo4bo$10bo2bob2o$10b2o
+4b3o$16bo2bo$7b2o10bo$5b3obo5bo3bo$8b2o5bo2bo$5b3o!
+
+# catalyst: catalysed reaction: c/2 orthogonal ship (p14) (32 cells) + still life (10 cells) -> still life restored + c/2 orthogonal ship (p14) (39 cells) + still life (5 cells), 1 setups (explore it 400, parent [+S5e ])
+x = 21, y = 27, rule = B3-eq4w5ekr/S234e5ce7
+5b2o$5b2ob2o8b2o$6bo2bo8b3o$7b2o7bob2o$18bo$10b2o3bo$10bo2bo2bo$11b2ob
+2o$12b3o13$3bo$2bobo$bobo$o3bo$bobo$2bo!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (13 cells) + still life (10 cells) -> still life restored + still life (4 cells), 6 setups (explore it 400, parent [+S5e ])
+x = 21, y = 23, rule = B3-eq4w5ekr/S234e5ce7
+2bo$bobo$o3bo$bobobo$2bobo13$19b2o$18b3o$17b2o$16b2o$16bo2bo$17b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (13 cells) + still life (10 cells) -> still life restored + still life (5 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 16, y = 21, rule = B3-eq4w5ekr/S234e5ce7
+2bo$bobo$o3bo$bobobo$2bobo11$14b2o$13b3o$12b2o$11b2o$11bo2bo$12b2o!
+
+# catalyst: catalysed reaction: c/4 diagonal ship (p20) (13 cells) + still life (10 cells) -> still life restored + still life (6 cells), 2 setups (explore it 400, parent [+S5e ])
+x = 11, y = 20, rule = B3-eq4w5ekr/S234e5ce7
+3bo$2bobo$bo3bo$obobo$bobo10$9b2o$8b3o$7b2o$6b2o$6bo2bo$7b2o!
+
+# catalyst: eater: c/4 diagonal ship (p4) (5 cells) + still life (10 cells) -> still life restored, 2 setups (explore it 400, parent [+S5e ])
+x = 11, y = 13, rule = B3-eq4w5ekr/S234e5ce7
+bo$2bo$3o6$6bobo$5bobobo$6bo3bo$7bobo$8bo!
+
+# wick: fuse at c/2 along a orthogonal wick (one way), 3 setups (explore it 400, parent [+S5e ])
+x = 205, y = 3, rule = B3-eq4w5ekr/S234e5ce7
+99bo$obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob
+2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob
+2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob
+o$2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2ob
+ob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2ob
+ob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obob2obo!
+
+# fossil: still life (12 cells) in the ash, first in soup seed 13931499385060058885, 1 in 1000 soups (explore it 400, parent [+S5e ])
+x = 0, y = 0, rule = B3-eq4w5ekr/S234e5ce7
+!
+
+# new shape c/2 orthogonal ship (p14), 28 cells, 2 in 1000 soups (explore it 400, parent [+S5e ])
+# first seen in soup seed 3122117797122915847
+x = 16, y = 15, rule = B3-eq4w5ekr/S234e5ce7
+8bo$6b2ob2o$5bo5bo$5b2obo3bo$13bo$2b2o6bo2bo$bo2bo5bo2bo$o2bo7b2o$o2bo
+$bo5$15bo!
+
+# new shape p5 oscillator, 11 cells, 1 in 1000 soups (explore it 400, parent [+S5e ])
+# first seen in soup seed 1980641107354917345
+x = 6, y = 6, rule = B3-eq4w5ekr/S234e5ce7
+4b2o$2o2b2o$2o$2bo$3bo$2bo!
+

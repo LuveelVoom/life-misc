@@ -44,3 +44,22 @@ Logs: findings/explore_variety_C1_discoveries.txt, findings/explore_variety_D4_d
   an 8-cell still life), 23 splitter, 25 pass-through (a c/4 ship crossing straight-line still lifes of 13–16
   cells and coming out unchanged), 117 other catalysed reactions; fuses at 12 different speeds on orthogonal and
   diagonal wicks; no reflector and no non-destructive signal yet.
+
+## A Life-like rule with a soup-common 7c/40 diagonal ship (2026-10-22)
+Start: B3/S23, isotropic, glider kept exactly as in Life (min 0.5/soup), explore 400 iterations with `probe 1`,
+`reward catalyst 5` (findings/explore_life_probe_discoveries.txt). Goal was a one-still-life glider reflector: none
+found (55 eater, 167 pass-through, 111 catalysed setups, 1 converter). Instead, at iteration 246:
+
+    B3-q4w5ikr/S234z7e        7c/40 diagonal ship 0.023/soup; a 6-cell still life converts it into a glider
+
+The ship (15 cells, period 40, moves (7,7); confirmed by the original engine too):
+
+    x = 8, y = 7, rule = B3-q4w5ikr/S234z7e
+    b3o$o2bo$o$bo3b2o$5b2o$2b2o$2b2o!
+
+Climb (findings/slow_ship_climb.cfg, 250 iterations, 15 free transitions) raised it ten-fold:
+
+    B3-q4eqw5ikr/S23-k4z6i    7c/40 ship 0.22/soup, glider 2.0/soup, bad 1.0%, cost 1.1M   (20000 fresh soups)
+
+i.e. about one soup in five emits this slow ship. The probe on it finds eaters, pass-throughs and catalysed
+reactions, but not the 7c/40 -> glider converter of the parent rule.
