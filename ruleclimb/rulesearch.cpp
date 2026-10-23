@@ -1184,7 +1184,7 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
             if(k.rfind("reflector",0)==0) k="reflector"; if(k.rfind("converter",0)==0) k="converter"; if(k.rfind("splitter",0)==0) k="splitter"; kinds.insert(k+"|"+ship); }
         for(auto&k:kinds){ string c=k.substr(0,k.find('|')); V.cat+= c=="reflector"?5: c=="converter"||c=="splitter"?2: c=="catalysed"?0.5:1; }
         auto sig=probeWicks(E,nullptr); set<string> sg,fu,ca; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:d[1]=='1'?ca:fu).insert(d); }
-        V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca=4*min<size_t>(3,ca.size());
+        V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca= ca.empty()? 0 : 4+min<size_t>(2,ca.size()-1); // one behaviour: a 1D CA wick usually shows several speeds
         if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); } }
     V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca;
     return V;

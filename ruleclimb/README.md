@@ -108,7 +108,7 @@ occur reliably count fully and one-off flukes little:
 ship velocity 3 (oblique 6); oscillator period P ≥ `min_osc_period`: 1 + log2(P)/2; +0.2 per extra shape of a
 behaviour (≤ 5); still-life diversity 0.5·log2(1 + #still lifes); soup behaviours: linear-growth period 2 (≤ 5 of
 them), gun 4, persistent active region 2; probe: per catalyst kind and ship — reflector 5, converter/splitter 2,
-eater/pass-through 1, catalysed reaction 0.5; signal speed 4, fuse speeds 1 each (≤ 3), 1D CA speeds 4 each (≤ 3).
+eater/pass-through 1, catalysed reaction 0.5; signal speed 4, fuse speeds 1 each (≤ 3), 1D CA 4 for the first speed and 1 per further speed (≤ 6).
 Constraints, `min_rate`, `max_bad`, `max_cost` still apply (infeasible rules are penalised). Targets are optional.
 
 **Rules full of one-off oscillators.** Some rules make oscillators whose period is set by random geometry:
