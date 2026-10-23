@@ -63,3 +63,21 @@ Climb (findings/slow_ship_climb.cfg, 250 iterations, 15 free transitions) raised
 
 i.e. about one soup in five emits this slow ship. The probe on it finds eaters, pass-throughs and catalysed
 reactions, but not the 7c/40 -> glider converter of the parent rule.
+
+## A high-variety rule (`vary` mode, 2026-10-22)
+Start: the original rule B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4ejywz5cajqr6-an7e8, only its 3-cell c/4 diagonal ship
+kept as a constraint (89 free transitions); `vary 600` (findings/variety_vary.cfg, run log findings/vary_run.txt).
+Variety score 15.8 -> 48.5:
+
+    B2cen3aq4ceikrtw5kj6-in/S12i3canqy4-eiy5cekjq6cik7c        bad 0%, cost 0.09M per soup (fast, tame)
+
+Census of 20000 fresh soups + probe:
+- ships: c/4 diagonal (3 cells, 0.53/soup), **2c/17 orthogonal (p34, 4–6 cells, 0.16/soup)**, c/4 orthogonal
+  (4 cells), c/2 orthogonal (6 cells, rare)
+- oscillators: p5 (4 cells, common), p18 (5 cells), p6, p8 (two kinds), more rarely others
+- **180-degree reflectors: the 2c/17 ship bounces straight back off many single still lifes (4–10 cells)**, and
+  2–6-cell still lifes convert it into the c/4 diagonal ship — single-object reflectors/converters, which Life lacks
+- soups with exact linear growth: 8% of soups grow +1 cell per 2 gens (checked without ship deletion: +50 cells per
+  100 gens, steady — a puffer / wickstretcher), plus ~20 other growth signatures (periods 1–68)
+- persistent bounded active regions (~8–16 cells) in a few soups per 20000 (aperiodic or period > 60)
+- signals/fuses on wicks and rare large ash objects (fossils)

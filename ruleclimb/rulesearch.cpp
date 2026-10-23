@@ -285,6 +285,7 @@ struct Cfg {
     string logFile="discoveries.txt", archiveFile="archive.txt", bestFile; vector<string> starts; int maxgCons=4000;
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
+    double varyMin=0.002; int varyProbe=1;
     int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
 } C;
 static vector<int> forcedV; // per class: -1 free, 0/1 forced
@@ -325,11 +326,12 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="best") is>>C.bestFile;
         else if(k=="soup_symmetry"){ need((bool)(is>>C.soupSym)); need(C.soupSym=="C1"||C.soupSym=="C2"||C.soupSym=="C4"||C.soupSym=="D2"||C.soupSym=="D4"||C.soupSym=="D8"); }
         else if(k=="gun_ships") is>>C.gunShips;
+        else if(k=="vary_min") is>>C.varyMin; else if(k=="vary_probe") is>>C.varyProbe;
         else if(k=="probe") is>>C.probe; else if(k=="probe_grid") is>>C.probeGrid; else if(k=="probe_ships") is>>C.probeShips; else if(k=="probe_stills") is>>C.probeStills;
         else if(k=="probe_gens") is>>C.probeGens; else if(k=="wick_period") is>>C.wickK; else if(k=="wick_cells") is>>C.wickCells; else if(k=="wick_max") is>>C.wickMax;
         else if(k=="fossil_cells") is>>C.fossilCells; else if(k=="fossil_rate") is>>C.fossilRate; else if(k=="fossil_max") is>>C.fossilMax;
         else if(k=="growth"){ int v; is>>v; C.growth=v; }
-        else if(k=="reward"){ string n; double w; need((bool)(is>>n>>w)); need(n=="ship"||n=="oblique"||n=="diagonal"||n=="orthogonal"||n=="osc"||n=="growth"||n=="gun"||n=="catalyst"||n=="signal"); C.reward[n]=w; }
+        else if(k=="reward"){ string n; double w; need((bool)(is>>n>>w)); need(n=="ship"||n=="oblique"||n=="diagonal"||n=="orthogonal"||n=="osc"||n=="growth"||n=="gun"||n=="catalyst"||n=="signal"||n=="active"); C.reward[n]=w; }
         else die("unknown config key '"+k+"'"+(ln>nfile?string(" (command line)"):" at line "+to_string(ln)));
     }
     if(C.refRule.empty()) die("config needs 'rule'");
@@ -412,7 +414,7 @@ static inline uint8x16_t step16(const uint8_t*r0,const uint8_t*r1,const uint8_t*
 static inline u64 laneBits(uint8x16_t v){ return vget_lane_u64(vreinterpret_u64_u8(vshrn_n_u16(vreinterpretq_u16_u8(vtstq_u8(v,v)),4)),0)&0x1111111111111111ULL; }
 #endif
 struct Cand { long count=0; Cells ex; Info I; u64 seed=0; };
-struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; }; // growth: pop +growD every growP gens; gun: gunN copies of one ship
+struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; uint16_t activeN; }; // activeN: bounded region that never settled // growth: pop +growD every growP gens; gun: gunN copies of one ship
 // everything one soup produces (kept per soup so merging is in soup order, independent of thread count)
 struct SoupOut { SoupRes r; vector<pair<string,Cand>> cands; vector<uint32_t> usage; Cand gunShip; vector<pair<string,Cand>> ash; };
 struct ShipEvt { Cells c; Info I; int t; }; // a ship deleted by the scan (probe runs)
@@ -560,7 +562,10 @@ struct Engine {
         scan(R,true,bx0,bx1,by0,by1,h);
         if(!stable&&C.growth){ // never settled: a soup that keeps emitting copies of one ship looks like a gun
             const string*bk=nullptr; int bn=0; for(auto&kv:shipN) if(kv.second>bn){bn=kv.second;bk=&kv.first;}
-            if(bk && bn>=C.gunShips){ R.gunN=min(bn,65535); gunShip.ex=keyCells(*bk); gunShip.I=cls1(gunShip.ex); gunShip.seed=seed; gunShip.count=bn; } }
+            if(bk && bn>=C.gunShips){ R.gunN=min(bn,65535); gunShip.ex=keyCells(*bk); gunShip.I=cls1(gunShip.ex); gunShip.seed=seed; gunShip.count=bn; }
+            // neither growing nor emitting nor at the border, yet still changing: a persistent bounded active region
+            int e=t, h0=max(0,e-C.gmax/2); long mx=0,mx0=0; for(int g=h0;g<=e;g++) mx=max(mx,(long)popH[g]); for(int g=h0;g<=h0+50&&g<=e;g++) mx0=max(mx0,(long)popH[g]);
+            if(!R.growP && !R.gunN && !edgeHit && e>=C.gmax && mx<=mx0*5/4+20) R.activeN=min<long>(popH[e],65535); }
     }
     // Probe runs: evolve an arbitrary pattern like a soup (escaping ships are deleted and logged in shipLog) until the
     // state repeats (period <= 60, twice) or gmax. The pattern is shifted by (offx,offy) onto the grid centre.
@@ -779,6 +784,8 @@ static vector<SoupEvent> soupEvents(const Eval&E){
         auto add=[&](const string&id,const string&desc,double credit){ auto&e=by[id]; if(!e.count){e.id=id;e.desc=desc;e.seed=seed;e.credit=credit;} e.count++; };
         if(R.r.growP){ char b[160]; snprintf(b,160,"linear growth +%d cells per %d gens (puffer, rake or gun)",R.r.growD,R.r.growP);
             add("G"+to_string(R.r.growP)+":"+to_string(R.r.growD),b,3.0*(C.reward.count("growth")?C.reward.at("growth"):1)); }
+        if(R.r.activeN){ int b=0; while((2<<b)<=R.r.activeN) b++; char t[160]; snprintf(t,160,"persistent bounded active region (~%d cells; never settles: aperiodic, or a period > 60)",1<<b);
+            add("A"+to_string(1<<b),t,2.0*(C.reward.count("active")?C.reward.at("active"):1)); }
         if(R.r.gunN && R.gunShip.count){ string cid=canonId(R.gunShip.ex,R.gunShip.I,E.T.t);
             add("U"+descOf(cid), describe(R.gunShip.I)+" emitter (gun?): the soup keeps producing it ("+to_string(R.r.gunN)+" copies seen)",
                 10.0*(C.reward.count("gun")?C.reward.at("gun"):1)); } }
@@ -1111,6 +1118,65 @@ static void modeClimb(int iters){
 }
 
 struct Member { Eval E; double credit=0; int visits=0; vector<string> finds; };
+// ===================== variety: how many different interesting things one rule has =====================
+// Each distinct behaviour scores weight * presence, presence = min(1, count / (vary_min * soups)), so reliable
+// behaviours count fully and one-off flukes little. Behaviours: ship velocities (oblique worth more), oscillator
+// periods >= min_osc_period, extra shapes of them, still-life diversity, puffer/gun/active-region soups, and (with
+// the probe) catalyst kinds, signals and fuses. Returns the score; 'why' gets a breakdown.
+struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0; int nShip=0,nOsc=0; };
+static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
+    Variety V; double need=max(1.0,C.varyMin*E.n); auto pres=[&](double c){ return min(1.0,c/need); };
+    map<string,pair<double,int>> beh; // behaviour -> (count, shapes)
+    for(auto&F:processCands(E)) if(F.I.type==2||F.I.period>=C.minOscPeriod){ auto&b=beh[descOf(F.id)]; b.first+=F.count; b.second++; }
+    for(size_t t=0;t<C.tg.size();t++){ auto&T=C.tg[t]; Info I; I.type=(T.dx||T.dy)?2:1; I.period=T.period; I.dx=T.dx; I.dy=T.dy;
+        Cells c=C.pats[T.pat].evo.gens[C.pats[T.pat].evo.s]; auto&b=beh[descOf(canonId(c,I,E.T.t))]; b.first+=E.rate[t]*E.n; b.second++; }
+    for(auto&kv:beh){ const string&d=kv.first; double p=pres(kv.second.first); int P=atoi(d.c_str()+1);
+        if(d[0]=='Q'){ int ax=0,ay=0; sscanf(d.c_str(),"Q%*d(%d,%d)",&ax,&ay); double w= (ax&&ay&&ax!=ay)? 6 : 3; V.ships+=w*p; if(p>=1) V.nShip++; }
+        else { V.oscs+=(1+log2((double)max(1,P))/2)*p; if(p>=1) V.nOsc++; }
+        V.shapes+=0.2*min(5,kv.second.second-1)*p; }
+    { set<string> sl; for(auto&kv:E.ash) if(kv.second.I.type==1&&kv.second.I.period==1&&kv.second.count>=need) sl.insert(canonId(normCells(kv.second.ex),kv.second.I,E.T.t)); V.stills=0.5*log2(1.0+sl.size()); }
+    { map<string,double> sb; for(auto&e:soupEvents(E)){ string k=e.id.substr(0,1)+(e.id[0]=='G'? e.id.substr(1,e.id.find(':')-1):""); sb[k]=max(sb[k],e.credit/ (e.id[0]=='U'?10.0:e.id[0]=='G'?3.0:2.0)); }
+      int ng=0; for(auto&kv:sb){ char c=kv.first[0]; if(c=='G'){ if(ng++<5) V.soup+=2; } else if(c=='U') V.soup+=4; else if(c=='A') V.soup+=2; } }
+    if(probe){ vector<LibObj> ships,stills; probeLibrary(E,ships,stills);
+        auto cat=probeCatalysts(E,ships,stills); set<string> kinds;
+        for(auto&h:cat){ string k=h.id.substr(1,h.id.find('_')-1); string ship=h.id.substr(h.id.find('_')+1); ship=ship.substr(0,ship.find(':'));
+            if(k.rfind("reflector",0)==0) k="reflector"; if(k.rfind("converter",0)==0) k="converter"; if(k.rfind("splitter",0)==0) k="splitter"; kinds.insert(k+"|"+ship); }
+        for(auto&k:kinds){ string c=k.substr(0,k.find('|')); V.cat+= c=="reflector"?5: c=="converter"||c=="splitter"?2: c=="catalysed"?0.5:1; }
+        auto sig=probeWicks(E,nullptr); set<string> sg,fu; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:fu).insert(d); }
+        V.sig=4*sg.size()+min<size_t>(3,fu.size());
+        if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); } }
+    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig;
+    return V;
+}
+static string varietyLine(const Variety&V){ char b[256]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f]",
+    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig); return b; }
+// vary: late-acceptance hill climb on the variety score (constraints as usual; targets/min_rate/max_bad/max_cost
+// only as feasibility). No racing: a mutant is dropped after the first 1/8 of the soups if it is clearly too bad.
+static void modeVary(int iters){
+    for(auto*g:engines) g->collectAsh=true;
+    bool probe=C.varyProbe; u64 rng=C.seed*15485863+5, epoch=C.seed*1000+9; double tStart=nowS();
+    auto value=[&](Eval&E,Variety&V,const string&ctx){ V=varietyOf(E,probe,ctx,true); recordFinds(E,processCands(E),ctx); recordSoupEvents(E,ctx);
+        return feasible(E)? V.score : V.score-10-20*max(0.0,E.bad-C.maxBad); };
+    Eval cur; fullEval(cur,startRule(0),epoch); Variety cv; double cf=value(cur,cv,"start");
+    printf("start %s\n      ",varietyLine(cv).c_str()); printEval("",cur);
+    Eval best=cur; Variety bv=cv; double bf=cf; vector<double> hist(max(1,C.lahc),cf); long evals=0,early=0;
+    for(int it=1;it<=iters&&!stopFlag;it++){
+        if(it%25==0){ printf("[it %d: %ld evals, %ld rejected early, current %.2f, best %.2f, %.0fs]\n",it,evals,early,cf,bf,nowS()-tStart); fflush(stdout); }
+        if(C.reseed>0&&it%C.reseed==0){ epoch++; Table T=cur.T; fullEval(cur,T,epoch); cf=value(cur,cv,"reseed"); fill(hist.begin(),hist.end(),cf); printf("reseed@%d %s\n",it,varietyLine(cv).c_str()); }
+        string desc; Table MT=mutate(cur.T,usageOf(cur),rng,desc);
+        Eval M; beginEval(M,MT,epoch); evals++;
+        int b=max(32,C.N/8); evalRange(M,0,b); score(M);
+        if(M.bad>2*C.maxBad+0.05 || (C.maxCost>0&&M.cost>2*C.maxCost)){ early++; continue; }
+        evalRange(M,b,C.N); finishEval(M); score(M);
+        Variety mv; double mf=value(M,mv,"vary it "+to_string(it)+" ["+desc+"]");
+        double h=hist[it%hist.size()];
+        if(mf>=cf||mf>=h){ bool imp=mf>cf; cur=std::move(M); cf=mf; cv=mv; hist[it%hist.size()]=cf;
+            if(imp){ printf("it %d [%s] %s\n      ",it,desc.c_str(),varietyLine(cv).c_str()); printEval("",cur); }
+            if(cf>bf&&feasible(cur)){ best=cur; bv=cv; bf=cf; writeBest({&best},("vary: most varied rule so far, "+varietyLine(bv)).c_str()); } }
+        else hist[it%hist.size()]=cf;
+    }
+    printf("best %s\n     ",varietyLine(bv).c_str()); printEval("",best); writeBest({&best},("vary: most varied rule, "+varietyLine(bv)).c_str());
+}
 static void modeExplore(int iters,int cap){
     if(C.probe) for(auto*g:engines) g->collectAsh=true;
     u64 rng=C.seed*104729+3, epoch=C.seed*1000+7;
@@ -1171,13 +1237,14 @@ int main(int argc,char**argv){
     // key=value arguments anywhere after CONFIG override config lines (commas stand for spaces: soup=16,16,0.4)
     vector<string> args, ov; for(int i=1;i<argc;i++){ string a=argv[i]; size_t e=a.find('='); if(i>1&&e!=string::npos&&e>0&&isalpha((unsigned char)a[0])&&a.compare(0,3,"MAP")!=0){ string v=a.substr(e+1); replace(v.begin(),v.end(),',',' '); ov.push_back(a.substr(0,e)+" "+v); } else args.push_back(a); }
     argc=args.size()+1; vector<char*> av={argv[0]}; for(auto&a:args) av.push_back((char*)a.c_str()); argv=av.data();
-    if(argc<3){ fprintf(stderr,"usage: rulesearch CONFIG MODE [ARGS] [key=value ...]\n  modes: check [RULE...] | census RULE [N] [SEED] | climb ITERS | explore ITERS [POPCAP] | dump RULE SEED\n  key=value overrides a config line, e.g. seed=3 soups=400 soup=16,16,0.4\n"); return 1; }
+    if(argc<3){ fprintf(stderr,"usage: rulesearch CONFIG MODE [ARGS] [key=value ...]\n  modes: check [RULE...] | census RULE [N] [SEED] | climb ITERS | explore ITERS [POPCAP] | vary ITERS | probe RULE [N] [SEED] | dump RULE SEED\n  key=value overrides a config line, e.g. seed=3 soups=400 soup=16,16,0.4\n"); return 1; }
     loadCfg(argv[1],ov); string mode=argv[2];
     signal(SIGINT,onSigint);
     int nt=omp_get_max_threads(); for(int i=0;i<nt;i++) engines.push_back(new Engine(C.grid));
     loadArchive(); if(!C.logFile.empty()) logFp=fopen(C.logFile.c_str(),"a");
     if(mode=="check"){ vector<string> r; for(int i=3;i<argc;i++) r.push_back(argv[i]); modeCheck(r); }
     else if(mode=="census"){ if(argc<4) die("census RULE [N] [SEED]"); modeCensus(argv[3],argc>4?atoi(argv[4]):C.N,argc>5?strtoull(argv[5],0,10):1); }
+    else if(mode=="vary"){ modeVary(argc>3?atoi(argv[3]):300); }
     else if(mode=="probe"){ if(argc<4) die("probe RULE [N] [SEED]"); modeProbe(argv[3],argc>4?atoi(argv[4]):C.N,argc>5?strtoull(argv[5],0,10):1); }
     else if(mode=="dump"){ if(argc<5) die("dump RULE SEED"); modeDump(argv[3],strtoull(argv[4],0,10)); }
     else if(mode=="climb"){ modeClimb(argc>3?atoi(argv[3]):1000); }

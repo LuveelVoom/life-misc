@@ -13,6 +13,7 @@ new objects while keeping targets common (`explore`).
     ./rulesearch CONFIG explore ITERS [POPCAP]
     ./rulesearch CONFIG dump RULE SEED        # soup as RLE
     ./rulesearch CONFIG probe RULE [N] [SEED] # catalysts, signals/fuses on wicks, fossils (see below)
+    ./rulesearch CONFIG vary ITERS            # hill-climb on the variety score (most different interesting things)
     ./rulesearch CONFIG climb 500 seed=3 soups=400 soup=16,16,0.4   # key=value overrides config lines
     OMP_NUM_THREADS=n sets threads; results do not depend on thread count.
 
@@ -48,7 +49,7 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `lahc L` `reseed R` `seed S` | climb history length, new soup set every R iterations, RNG seed |
 | `log FILE` `archive FILE` | discoveries log (RLE) and persistent object archive (one id per line); `none` (or `log=` on the command line) turns either off |
 | `best FILE` | climb: best rule so far, rewritten on every improvement; explore: population, rewritten every 25 iterations |
-| `reward KIND W` | explore: multiply novelty credit of discoveries of KIND (`ship`, `oblique`, `diagonal`, `orthogonal`, `osc`, `growth`, `gun`, `catalyst`, `signal`) by W; several allowed, they multiply |
+| `reward KIND W` | explore: multiply novelty credit of discoveries of KIND (`ship`, `oblique`, `diagonal`, `orthogonal`, `osc`, `growth`, `gun`, `active`, `catalyst`, `signal`) by W; several allowed, they multiply |
 | `soup_symmetry S` | `C1` (default, original soups), `D2` (mirror, 2W×H), `C2` (180°, W×2H), `C4`, `D4`, `D8` (2n×2n, n=max(W,H)). Symmetric soups favour symmetric oscillators/ships that C1 soups rarely make |
 | `growth 0\|1` | detect puffers/rakes/guns in soups (default 1). `growth 0` reproduces the old engine exactly |
 | `probe 0\|1` | explore: run the probe on every feasible child and give novelty credit for new catalysts / signals / fossils (slower: ~1–2 s per rule) |
@@ -56,6 +57,7 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `probe_gens G` `probe_grid G` | generation limit of one collision (600), grid for probe runs (512) |
 | `wick_period K` `wick_cells N` `wick_max N` | wick tiles: period ≤ K (6), ≤ N cells per tile (8), at most N wicks probed (400) |
 | `fossil_cells N` `fossil_rate r` `fossil_max N` | fossils: ≥ N cells (12), in ≤ r·soups (0.002), report at most N (12) |
+| `vary_min r` `vary_probe 0\|1` | vary: a behaviour counts fully once seen r·soups times (0.002); run the probe for every rule (1) |
 | `gun_ships N` | a soup that never settles and emitted ≥ N copies of one ship is reported as a gun candidate (10) |
 
 ## Algorithm
@@ -91,6 +93,20 @@ These are logged as `# NEW SOUP BEHAVIOUR ...` with the whole soup as RLE (open 
 (period, growth) / (ship velocity), listed by `census`, and earn explore credit (3 per new growth period, 10 per
 new gun ship type, times `reward growth` / `reward gun`). In explore they are recorded for every fully evaluated
 rule, feasible or not (rules with common puffers are usually over `max_bad`). Census/climb results are unchanged.
+
+## Variety (`vary` mode)
+Late-acceptance hill climb (like `climb`) whose objective is how many *different* interesting things one rule has.
+Each distinct behaviour scores weight × presence, presence = min(1, count / (`vary_min`·soups)), so behaviours that
+occur reliably count fully and one-off flukes little:
+ship velocity 3 (oblique 6); oscillator period P ≥ `min_osc_period`: 1 + log2(P)/2; +0.2 per extra shape of a
+behaviour (≤ 5); still-life diversity 0.5·log2(1 + #still lifes); soup behaviours: linear-growth period 2 (≤ 5 of
+them), gun 4, persistent active region 2; probe: per catalyst kind and ship — reflector 5, converter/splitter 2,
+eater/pass-through 1, catalysed reaction 0.5; signal speed 4, fuse speeds 1 each (≤ 3).
+Constraints, `min_rate`, `max_bad`, `max_cost` still apply (infeasible rules are penalised). Targets are optional.
+A mutant whose first 1/8 of the soups is far too explosive or slow is dropped early. ~1 s per iteration with the probe.
+**Persistent active regions** (soup behaviour, with `growth 1`): a soup that never settles, does not grow, emits
+nothing and stays off the border — a bounded region that keeps changing (aperiodic, or an oscillator with period
+> 60, which the soup stability test cannot see).
 
 ## Probe: catalysts, signals, fossils
 `probe RULE` runs a census (collecting the final ash), then three active searches. In explore, `probe 1` does the
