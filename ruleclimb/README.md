@@ -66,7 +66,7 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `vary_strict N` `vary_decay d` | vary: an oscillator period seen in fewer than N soups scores 0 (default 0 = off); the k-th best oscillator period, with its shape bonus, counts d^k (default 1 = off). Against rules whose many periods are random geometry; see Variety below |
 | `vary_common_ship m [r]` | vary: a ship velocity seen r times per soup or more (default 0.1) counts (1+m)× its weight, linearly less below r (default m 0 = off) |
 | `vary_confined f` | vary: a rule with no ship at all and no puffer/rake/gun soup (nothing ever leaves its box) has its whole score multiplied by f (default 1 = off; 0.5 used on the random sample) |
-| `vary_replicators 0\|1` | vary: also search for replicators and score the best one 4 + 6·controllability, +1 per further kind (≤ 2); default 0 (it adds ~8 CPU-s per chaotic rule) |
+| `vary_replicators 0\|1` | vary: also search for replicators and score the best one 2 + 5·controllability, +1 for a further kind; default 0 (it adds ~8 CPU-s per chaotic rule) |
 | `replicator_seeds N` `replicator_soups N` `replicator_max N` `replicator_gens G` `replicator_add RLE` | replicator probe: random 3×3–6×6 seeds (1000) and census soups (200) searched for candidates, at most 64 tested alone for G gens (192); `replicator_add` always tests the given pattern |
 | `gun_ships N` | a soup that never settles and emitted ≥ N copies of one ship is reported as a gun candidate (10) |
 

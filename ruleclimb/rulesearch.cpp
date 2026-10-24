@@ -1090,7 +1090,7 @@ static vector<ProbeHit> probeReplicators(const Eval&E){
           int a=min(4*R,last), e=min(8*R,last); if(a>e-R) a=max(2*R,e-R); double f=0; for(int t=a;t<=e;t++) f=max(f,fr[t]);
           char buf[256]; snprintf(buf,256,"%d cells, 2 copies at gen %d, up to %d copies by gen %d, controllability %.2f",(int)K.size(),R,maxC,last,f);
           ProbeHit h; h.id="Rrep:"; for(unsigned char ch:key){ char b2[3]; snprintf(b2,3,"%02x",ch); h.id+=b2; }
-          h.text=buf; h.setup=K; h.lanes=cv[q].second.second%1000000; h.credit=4+6*f; h.score=f; h.sig=R*1000+maxC; res[q].push_back(h); } }
+          h.text=buf; h.setup=K; h.lanes=cv[q].second.second%1000000; h.credit=2+5*f; h.score=f; h.sig=R*1000+maxC; res[q].push_back(h); } }
     for(auto&v:res) for(auto&h:v) out.push_back(h);
     sort(out.begin(),out.end(),[](const ProbeHit&a,const ProbeHit&b){ return a.score!=b.score? a.score>b.score : a.id<b.id; });
     return out;
@@ -1257,7 +1257,7 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
         auto sig=probeWicks(E,nullptr); set<string> sg,fu,ca; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:d[1]=='1'?ca:fu).insert(d); }
         V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca= ca.empty()? 0 : 4+min<size_t>(2,ca.size()-1); // one behaviour: a 1D CA wick usually shows several speeds
         vector<ProbeHit> rp; if(C.varyRep) rp=probeReplicators(E); if(!rp.empty()){ set<long> kinds; for(auto&h:rp) kinds.insert(h.sig); // phases of one replicator share R and copy count
-            V.rep=4+6*rp[0].score+min<size_t>(2,kinds.size()-1); } // best one counts by controllability
+            V.rep=2+5*rp[0].score+min<size_t>(1,kinds.size()-1); } // best one counts by controllability
         if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); recordProbe(E,rp,"replicator",ctx,false); } }
     V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca+V.rep;
     if(V.rep>0) V.confined=false; // a replicator spreads
