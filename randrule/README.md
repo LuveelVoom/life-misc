@@ -19,6 +19,7 @@ Each of the 102 transitions (51 birth, 51 survival) is switched on independently
 | `--include LIST` | transitions that are always on, e.g. `S23` |
 | `--within RULE` | only transitions of RULE may be on (upper bound) |
 | `--contains RULE` | every transition of RULE is on (lower bound) |
+| `--totalistic` | outer-totalistic (Life-like) rules: each neighbour count is switched as a whole |
 | `--seed S` | repeatable output |
 
 Lists use rule-half syntax: `B2a`, `B2-a` (every B2 letter except a), `S2ce3`, comma or space separated.

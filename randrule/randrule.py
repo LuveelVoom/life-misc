@@ -13,6 +13,7 @@ the positive or the "-" form).
 Examples:
   python3 randrule.py -n 1000 --exclude B0,B1,B2a --seed 1 > rules.txt
   python3 randrule.py -n 20 --within B2345678/S012345678 --contains B3/S23 -p 0.2
+  python3 randrule.py -n 250 --totalistic --exclude B0,B1,B2      # Life-like rules
 """
 import argparse, random, re, sys
 
@@ -98,6 +99,8 @@ def main():
     ap.add_argument('--contains', help='every transition of this rule is on')
     ap.add_argument('--seed', type=int, help='random seed (default: random)')
     ap.add_argument('--allow-duplicates', action='store_true', help='do not skip rules already printed')
+    ap.add_argument('--totalistic', action='store_true',
+                    help='outer-totalistic (Life-like) rules: each neighbour count is on or off as a whole')
     a = ap.parse_args()
 
     allowed = set(TRANSITIONS) - parse_tokens(a.exclude)
@@ -107,6 +110,16 @@ def main():
     if forced - allowed:
         sys.exit(f'--include/--contains conflict with --exclude/--within: {rule_string(forced - allowed)}')
     free = sorted(allowed - forced, key=TRANSITIONS.index)
+    if a.totalistic:   # units are whole counts: allowed only if every letter is allowed
+        groups = {}
+        for t in TRANSITIONS:
+            groups.setdefault(t[:2], []).append(t)
+        part = [g for g, ts in groups.items() if 0 < len(set(ts) & forced) < len(ts)]
+        if part:
+            sys.exit('--totalistic: --include/--contains force only part of ' + ', '.join(f'{b}{n}' for b, n in part))
+        free = [frozenset(ts) for g, ts in groups.items() if set(ts) <= allowed and not set(ts) & forced]
+    else:
+        free = [frozenset([t]) for t in free]
     space = 2 ** len(free)
     if not a.allow_duplicates and a.n > space:
         sys.exit(f'only {space} rules fit these restrictions; asked for {a.n}')
@@ -115,7 +128,7 @@ def main():
     rng = random.Random(a.seed)
     seen, printed = set(), 0
     while printed < a.n:
-        r = rule_string(forced | {t for t in free if rng.random() < a.p})
+        r = rule_string(forced.union(*[u for u in free if rng.random() < a.p]))
         if r in seen and not a.allow_duplicates:
             continue
         seen.add(r)
