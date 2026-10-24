@@ -286,7 +286,7 @@ struct Cfg {
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
     double varyMin=0.002; int varyProbe=1; int varyStrict=0; double varyDecay=1.0, varyCommonShip=0, varyCommonRate=0.1, varyConfined=1.0;
-    int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
+    int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; int repSeeds=1000, repSoups=200, repMax=64, repGens=192, varyRep=0; vector<string> repAdd; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
 } C;
 static vector<int> forcedV; // per class: -1 free, 0/1 forced
 
@@ -331,6 +331,8 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="vary_confined") is>>C.varyConfined;
         else if(k=="vary_common_ship"){ need((bool)(is>>C.varyCommonShip)); is>>C.varyCommonRate; }
         else if(k=="probe") is>>C.probe; else if(k=="probe_grid") is>>C.probeGrid; else if(k=="probe_ships") is>>C.probeShips; else if(k=="probe_stills") is>>C.probeStills;
+        else if(k=="replicator_add"){ string r; need((bool)(is>>r)); C.repAdd.push_back(r); }
+        else if(k=="vary_replicators") is>>C.varyRep; else if(k=="replicator_seeds") is>>C.repSeeds; else if(k=="replicator_soups") is>>C.repSoups; else if(k=="replicator_max") is>>C.repMax; else if(k=="replicator_gens") is>>C.repGens;
         else if(k=="probe_gens") is>>C.probeGens; else if(k=="wick_period") is>>C.wickK; else if(k=="wick_cells") is>>C.wickCells; else if(k=="wick_max") is>>C.wickMax;
         else if(k=="fossil_cells") is>>C.fossilCells; else if(k=="fossil_rate") is>>C.fossilRate; else if(k=="fossil_max") is>>C.fossilMax;
         else if(k=="growth"){ int v; is>>v; C.growth=v; }
@@ -817,7 +819,7 @@ static vector<Engine*> probeEngines;
 static void probeSetRule(const Table&T){ int nt=omp_get_max_threads(); while((int)probeEngines.size()<nt) probeEngines.push_back(new Engine(C.probeGrid)); for(auto*g:probeEngines) g->setRule(T.t); }
 static Cells normCells(const Cells&c){ int mx,my,Mx,My; bbox(c,mx,my,Mx,My); Cells r; for(auto&p:c) r.push_back({p.first-mx,p.second-my}); sort(r.begin(),r.end()); return r; }
 struct LibObj { Cells c; Info I; long count=0; string canon; };
-struct ProbeHit { string id, text; long lanes=0; Cells setup; double credit=0; };
+struct ProbeHit { string id, text; long lanes=0; Cells setup; double credit=0, score=0; long sig=0; };
 static string noSpace(string s){ for(auto&ch:s) if(ch==' ') ch='_'; return s; }
 
 // objects for the probe: common ships (targets + found ships) and common still lifes from the final ash
@@ -1027,6 +1029,72 @@ static double recordProbe(const Eval&E,const vector<ProbeHit>&hits,const string&
     }
     return credit;
 }
+// replicators: a pattern that, on its own, makes exact copies of itself (in any orientation of the symmetry group).
+// Stage 1 runs random small seeds and some census soups and keeps cluster shapes that occur twice at once and, alone,
+// copy themselves within repGens/4 gens; stage 2 runs each such
+// shape alone: it must not come back alone as itself (oscillator/ship), must reach >= 3 exact copies, and when the
+// second copy appears at least half of all live cells must be exact copies.
+// Controllability = the best share of live cells that are exact copies around gens 4R..8R (R = first time there are
+// two copies): 1 for clean doubling like HighLife's replicator, near 0 when the copies dissolve into chaos.
+static vector<ProbeHit> probeReplicators(const Eval&E){
+    vector<ProbeHit> out; if(C.repSeeds<=0&&C.repAdd.empty()) return out; probeSetRule(E.T);
+    auto canon=[](const Cells&c){ string best; for(int o:groupOrients()){ string k=keyOf(normCells(xform(c,o))); if(best.empty()||k<best) best=k; } return best; };
+    // 8-connected clusters of the live cells within radius r of the grid centre, by flood fill on the grid itself;
+    // stops (returns false) past cap live cells. n = number of live cells seen.
+    auto clusters=[](Engine&G,int r,size_t cap,vector<Cells>&out,size_t&n){ out.clear(); n=0; static thread_local vector<uint8_t> vis; static thread_local vector<int> touched;
+        if(vis.size()!=(size_t)G.W*G.H) vis.assign((size_t)G.W*G.H,0); int x0=max(1,G.W/2-r),x1=min(G.W-2,G.W/2+r),y0=max(1,G.H/2-r),y1=min(G.H-2,G.H/2+r); bool ok=true; vector<int> st;
+        for(int y=y0;y<=y1&&ok;y++) for(int x=x0;x<=x1;x++){ int i=y*G.W+x; if(!G.a[i]||vis[i]) continue; Cells cc; st.assign(1,i); vis[i]=1; touched.push_back(i);
+            while(!st.empty()){ int j=st.back(); st.pop_back(); cc.push_back({j%G.W,j/G.W});
+                for(int dy=-1;dy<=1;dy++) for(int dx=-1;dx<=1;dx++){ int k=j+dy*G.W+dx; if(k>=0&&k<(int)vis.size()&&G.a[k]&&!vis[k]){ vis[k]=1; touched.push_back(k); st.push_back(k); } } }
+            n+=cc.size(); out.push_back(std::move(cc)); if(n>cap){ ok=false; break; } }
+        for(int i:touched) vis[i]=0; touched.clear(); return ok; };
+    map<string,pair<Cells,int>> cand;
+    #pragma omp parallel
+    { Engine&Gn=*probeEngines[omp_get_thread_num()]; map<string,bool> qt; // quick-test results, shared by this thread's runs
+      #pragma omp for schedule(dynamic,8)
+      for(int s=0;s<C.repSeeds+C.repSoups;s++){ Cells seed; int gens=C.repGens/2, rad0=8;
+          if(s<C.repSeeds){ u64 r=0x5EED0000ULL+s; int b=3+s%4; for(int y=0;y<b;y++){ u64 z=splitmix(r); for(int x=0;x<b;x++) if(z>>x&1) seed.push_back({x,y}); } }
+          else { int fw,fh; seed=makeSoup(soupSeed(E.seedEpoch,s-C.repSeeds),fw,fh); gens=C.repGens; rad0=max(fw,fh); }
+          if(seed.empty()) continue; int ox,oy; map<string,Cells> found;
+          // quick test: on its own the shape makes two copies of itself within repGens/4 gens
+          auto copiesItself=[&](const Cells&cc,const string&k){ Cells x=cc; for(int g=1;g<=C.repGens/4;g++){ x=stepCells(x,E.T.t); if(x.empty()||x.size()>500) return false;
+              if(x.size()<2*cc.size()) continue; int n=0; for(auto&q:comps8(x)) if(q.size()==cc.size()&&canon(q)==k&&++n==2) return true; } return false; };
+          int every= s<C.repSeeds? 4 : 8; size_t cap=1500;
+          vector<Cells> cs; size_t npop;
+          Gn.runPattern(seed,gens,ox,oy,[&](int t){ if(t<8||t%every) return true; if(!clusters(Gn,t+rad0,cap,cs,npop)) return false;
+              map<long,int> sg; vector<long> sgs(cs.size(),-1); // cheap signature first: size and bounding box
+              for(size_t i=0;i<cs.size();i++){ auto&cc=cs[i]; if(cc.size()<4||cc.size()>300) continue; int mx,my,Mx,My; bbox(cc,mx,my,Mx,My); int w=Mx-mx+1,h=My-my+1;
+                  sgs[i]=(long)cc.size()*1000000+min(w,h)*1000+max(w,h); sg[sgs[i]]++; }
+              map<string,int> cnt; for(size_t i=0;i<cs.size();i++){ auto&cc=cs[i]; if(sgs[i]<0||sg[sgs[i]]<2) continue; string k=canon(cc);
+                  if(++cnt[k]==2&&!found.count(k)){ auto it=qt.find(k); bool ok= it!=qt.end()? it->second : (qt[k]=copiesItself(cc,k)); if(!ok) continue; found[k]=cc; if(found.size()>=8) return false; } }
+              return true; });
+          if(!found.empty()){
+              #pragma omp critical(repcand)
+              for(auto&kv:found){ auto&e=cand[kv.first]; if(!e.second) e.first=normCells(kv.second); e.second++; } } } }
+    for(auto&r:C.repAdd){ Cells c=normCells(parseRLE(r)); if(!c.empty()){ auto&e=cand[canon(c)]; if(!e.second) e.first=c; e.second+=1000000; } } // replicator_add RLE: always tested
+    vector<pair<string,pair<Cells,int>>> cv(cand.begin(),cand.end());
+    sort(cv.begin(),cv.end(),[](auto&a,auto&b){ return a.second.second!=b.second.second? a.second.second>b.second.second : a.first<b.first; });
+    if((int)cv.size()>C.repMax) cv.resize(C.repMax);
+    vector<vector<ProbeHit>> res(cv.size());
+    #pragma omp parallel
+    { Engine&Gn=*probeEngines[omp_get_thread_num()];
+      #pragma omp for schedule(dynamic,1)
+      for(size_t q=0;q<cv.size();q++){ const string&key=cv[q].first; const Cells&K=cv[q].second.first; int mx,my,Mx,My; bbox(K,mx,my,Mx,My); int rad=max(Mx-mx,My-my)+4;
+          int R=0,maxC=0,last=0; bool periodic=false; vector<double> fr(C.repGens+1,-1); int ox,oy;
+          vector<Cells> cs; size_t npop;
+          Gn.runPattern(K,C.repGens,ox,oy,[&](int t){ last=t; if(!clusters(Gn,t+rad,20000,cs,npop)||npop==0) return false;
+              int copies=0; for(auto&cc:cs) if(cc.size()==K.size()&&canon(cc)==key) copies++;
+              if(copies==1&&npop==K.size()){ periodic=true; return false; }
+              if(copies>=2){ if(!R) R=t; fr[t]=(double)copies*K.size()/npop; } maxC=max(maxC,copies); return true; });
+          if(periodic||!R||maxC<3||fr[R]<0.5) continue; // first copies must be clean: chance repeats of a shape in chaos are not
+          int a=min(4*R,last), e=min(8*R,last); if(a>e-R) a=max(2*R,e-R); double f=0; for(int t=a;t<=e;t++) f=max(f,fr[t]);
+          char buf[256]; snprintf(buf,256,"%d cells, 2 copies at gen %d, up to %d copies by gen %d, controllability %.2f",(int)K.size(),R,maxC,last,f);
+          ProbeHit h; h.id="Rrep:"; for(unsigned char ch:key){ char b2[3]; snprintf(b2,3,"%02x",ch); h.id+=b2; }
+          h.text=buf; h.setup=K; h.lanes=cv[q].second.second%1000000; h.credit=4+6*f; h.score=f; h.sig=R*1000+maxC; res[q].push_back(h); } }
+    for(auto&v:res) for(auto&h:v) out.push_back(h);
+    sort(out.begin(),out.end(),[](const ProbeHit&a,const ProbeHit&b){ return a.score!=b.score? a.score>b.score : a.id<b.id; });
+    return out;
+}
 static double probeRule(const Eval&E,const string&ctx,bool printAll){
     double t0=nowS(); vector<LibObj> ships,stills; probeLibrary(E,ships,stills);
     if(printAll){ printf("probe library: %zu ships, %zu still lifes\n",ships.size(),stills.size());
@@ -1035,7 +1103,8 @@ static double probeRule(const Eval&E,const string&ctx,bool printAll){
     double cr=0; auto cat=probeCatalysts(E,ships,stills); cr+=recordProbe(E,cat,"catalyst",ctx,printAll);
     int nw=0; auto sig=probeWicks(E,&nw); cr+=recordProbe(E,sig,"wick",ctx,printAll);
     auto fos=probeFossils(E); cr+=recordProbe(E,fos,"fossil",ctx,printAll);
-    if(printAll) printf("probe: %zu catalytic reactions, %d wicks tested -> %zu signals/fuses, %zu fossils; %.1fs\n",cat.size(),nw,sig.size(),fos.size(),nowS()-t0);
+    auto rep=probeReplicators(E); cr+=recordProbe(E,rep,"replicator",ctx,printAll);
+    if(printAll) printf("probe: %zu catalytic reactions, %d wicks tested -> %zu signals/fuses, %zu fossils, %zu replicators; %.1fs\n",cat.size(),nw,sig.size(),fos.size(),rep.size(),nowS()-t0);
     return cr;
 }
 static void modeProbe(const string&rule,int N,u64 seed){
@@ -1155,7 +1224,7 @@ struct Member { Eval E; double credit=0; int visits=0; vector<string> finds; };
 // behaviours count fully and one-off flukes little. Behaviours: ship velocities (oblique worth more), oscillator
 // periods >= min_osc_period, extra shapes of them, still-life diversity, puffer/gun/active-region soups, and (with
 // the probe) catalyst kinds, signals and fuses. Returns the score; 'why' gets a breakdown.
-struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0; int nShip=0,nOsc=0; bool confined=false; };
+struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0, rep=0; int nShip=0,nOsc=0; bool confined=false; };
 static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
     Variety V; double need=max(1.0,C.varyMin*E.n); auto pres=[&](double c){ return min(1.0,c/need); };
     map<string,pair<double,int>> beh; // behaviour -> (count, shapes)
@@ -1187,13 +1256,16 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
         for(auto&k:kinds){ string c=k.substr(0,k.find('|')); V.cat+= c=="reflector"?5: c=="converter"||c=="splitter"?2: c=="catalysed"?0.5:1; }
         auto sig=probeWicks(E,nullptr); set<string> sg,fu,ca; for(auto&h:sig){ string d=descOf(h.id); (d[1]=='s'?sg:d[1]=='1'?ca:fu).insert(d); }
         V.sig=4*sg.size()+min<size_t>(3,fu.size()); V.ca= ca.empty()? 0 : 4+min<size_t>(2,ca.size()-1); // one behaviour: a 1D CA wick usually shows several speeds
-        if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); } }
-    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca;
+        vector<ProbeHit> rp; if(C.varyRep) rp=probeReplicators(E); if(!rp.empty()){ set<long> kinds; for(auto&h:rp) kinds.insert(h.sig); // phases of one replicator share R and copy count
+            V.rep=4+6*rp[0].score+min<size_t>(2,kinds.size()-1); } // best one counts by controllability
+        if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); recordProbe(E,rp,"replicator",ctx,false); } }
+    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca+V.rep;
+    if(V.rep>0) V.confined=false; // a replicator spreads
     if(V.confined&&C.varyConfined!=1.0) V.score*=C.varyConfined; // vary_confined f: no ship and no growth at all, everything stays in its box
     return V;
 }
-static string varietyLine(const Variety&V){ char b[300]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f]",
-    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca); string r=b; if(V.confined&&C.varyConfined!=1.0) r+=" (confined: x"+to_string(C.varyConfined).substr(0,4)+")"; return r; }
+static string varietyLine(const Variety&V){ char b[300]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f, replicators %.1f]",
+    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca,V.rep); string r=b; if(V.confined&&C.varyConfined!=1.0) r+=" (confined: x"+to_string(C.varyConfined).substr(0,4)+")"; return r; }
 // vary: late-acceptance hill climb on the variety score (constraints as usual; targets/min_rate/max_bad/max_cost
 // only as feasibility). No racing: a mutant is dropped after the first 1/8 of the soups if it is clearly too bad.
 static void modeVary(int iters){

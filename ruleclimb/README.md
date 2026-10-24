@@ -66,6 +66,8 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `vary_strict N` `vary_decay d` | vary: an oscillator period seen in fewer than N soups scores 0 (default 0 = off); the k-th best oscillator period, with its shape bonus, counts d^k (default 1 = off). Against rules whose many periods are random geometry; see Variety below |
 | `vary_common_ship m [r]` | vary: a ship velocity seen r times per soup or more (default 0.1) counts (1+m)× its weight, linearly less below r (default m 0 = off) |
 | `vary_confined f` | vary: a rule with no ship at all and no puffer/rake/gun soup (nothing ever leaves its box) has its whole score multiplied by f (default 1 = off; 0.5 used on the random sample) |
+| `vary_replicators 0\|1` | vary: also search for replicators and score the best one 4 + 6·controllability, +1 per further kind (≤ 2); default 0 (it adds ~8 CPU-s per chaotic rule) |
+| `replicator_seeds N` `replicator_soups N` `replicator_max N` `replicator_gens G` `replicator_add RLE` | replicator probe: random 3×3–6×6 seeds (1000) and census soups (200) searched for candidates, at most 64 tested alone for G gens (192); `replicator_add` always tests the given pattern |
 | `gun_ships N` | a soup that never settles and emitted ≥ N copies of one ship is reported as a gun candidate (10) |
 
 ## Algorithm
@@ -151,6 +153,13 @@ setup to open in Golly.
   Credit: signal 6, 1D CA 5, fuse 2 (× `reward signal`). Check: in Life the diagonal line of cells is found as a
   speed-c fuse. (Before 2026-10-22, 1D CA behaviour and slow stalling damage were labelled signals, and diagonal
   speeds with an odd step were printed wrongly, e.g. 3c/4 as c/2.)
+- **Replicators.** Random small seeds and some census soups are run; any cluster shape that occurs twice at once and,
+  on its own, copies itself within G/4 gens is tested alone for G gens. It counts if it never comes back alone as itself
+  (no oscillator or ship), reaches ≥ 3 exact copies (any orientation of the symmetry group), and at least half of all
+  live cells are exact copies when the second copy appears (chance repeats of a shape in chaos fail this).
+  **Controllability** = the best share of live cells that are exact copies between gens 4R and 8R (R = gen of the
+  first two copies): 1.00 for HighLife's replicator and for B1357/S1357, near 0 when the copies dissolve into chaos.
+  HighLife's replicator is rare in 16×16 soups (~1 in 150 soups contains one), so it needs `replicator_soups 2000`.
 - **Fossils** (my reading of "index fossils"): large isolated objects in the final ash (≥ `fossil_cells`) that occur
   in few soups — leftovers that mark rare reactions. Pseudo-objects are excluded. (Before 2026-10-22 a bug left
   fossils without their pattern and undercounted them, so objects that were not rare could be reported.)

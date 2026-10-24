@@ -11,6 +11,7 @@ first; a #C line per object gives what it is and its top-left position, x right,
   catalysts     ships fired at still lifes that come back: eaters, reflectors, converters, ...
   signals       signals and 1D CA behaviour along wicks (fuses only with --fuses)
   fossils       large rare objects left in the ash
+  replicators   patterns that make exact copies of themselves, most controllable first
 
 Ships and oscillators are re-simulated with casim when it can be imported (period and displacement). Objects are
 spaced --gap cells apart, but ships fly off and soups grow when the collection is run, so look before you run.
@@ -59,6 +60,10 @@ def classify(head, soups):
     if m:
         kind = 'fuses' if m.group(1).startswith('fuse') else 'signals'
         return kind, -int(m.group(2)), f'{m.group(1)} ({m.group(2)} setups)', None
+    m = re.match(r'# (?:NEW )?replicator: (.*), (\d+) setups', h)
+    if m:
+        f = float(re.search(r'controllability ([\d.]+)', m.group(1)).group(1))
+        return 'replicators', -f, f'replicator: {m.group(1)} (found in {m.group(2)} seeds/soups)', None
     m = re.match(r'# (?:NEW )?fossil: (.*), (\d+) in (\d+) soups', h)
     if m:
         return 'fossils', int(m.group(2)), f'{m.group(1)}; in {m.group(2)} of {soups} soups', int(m.group(2))
@@ -185,7 +190,7 @@ def main():
         census = next((l.strip() for l in r.stdout.splitlines() if l.startswith('census')), '')
         text = open(log).read() if os.path.exists(log) else ''
 
-    sections = {k: [] for k in ('ships', 'oscillators', 'soups', 'catalysts', 'signals', 'fuses', 'fossils')}
+    sections = {k: [] for k in ('replicators', 'ships', 'oscillators', 'soups', 'catalysts', 'signals', 'fuses', 'fossils')}
     lim = a.rare * a.soups
     for head, rle in parse_log(text):
         c = classify(head, a.soups)
@@ -206,12 +211,12 @@ def main():
                 desc += '  [casim check FAILED]'
         sections[sec].append((key, desc, rle))
 
-    titles = {'ships': 'Rare ships (and all oblique ships)', 'oscillators': f'Rare oscillators (p{a.min_period}+)',
+    titles = {'replicators': 'Replicators (most controllable first; they fill space when run)', 'ships': 'Rare ships (and all oblique ships)', 'oscillators': f'Rare oscillators (p{a.min_period}+)',
               'soups': 'Soups with puffers, rakes, guns or never-settling regions (RLE = the soup)',
               'catalysts': 'Catalysts (ship + still life, still life restored)',
               'signals': 'Signals and 1D CA along wicks', 'fuses': 'Fuses along wicks', 'fossils': 'Rare large objects in the ash'}
     # layout: each section starts a new band; objects left to right, wrapping past --width
-    order = ['ships', 'oscillators', 'catalysts', 'signals', 'fuses', 'fossils', 'soups']   # soups last: they grow
+    order = ['ships', 'oscillators', 'catalysts', 'signals', 'fuses', 'fossils', 'replicators', 'soups']   # growing things last
     comments, live, X, Y, rowh, maxw = [], [], 0, 0, 0, 0
     for sec in order:
         items = [it for it in sorted(sections[sec], key=lambda x: x[0]) if rle_cells(it[2])]
