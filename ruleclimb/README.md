@@ -17,6 +17,9 @@ new objects while keeping targets common (`explore`).
     ./rulesearch CONFIG climb 500 seed=3 soups=400 soup=16,16,0.4   # key=value overrides config lines
     OMP_NUM_THREADS=n sets threads; results do not depend on thread count.
 
+`census` also prints a bad-soup breakdown (exploded, unsettled at `gmax`, over `soup_cost_limit`). Life-like rules
+have long-lived soups: with the default limit about 5% of B3/S23 soups count as bad; 60–150M cell-updates is enough.
+
 To collect the rare and easy-to-miss things of one rule into a single RLE pattern collection (rare ships and
 oscillators, puffers/guns, catalysts, signals and 1D CA along wicks, rare large ash objects), use `rarefind.py`:
 
@@ -63,6 +66,10 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `wick_period K` `wick_cells N` `wick_max N` | wick tiles: period ≤ K (6), ≤ N cells per tile (8), at most N wicks probed (400) |
 | `fossil_cells N` `fossil_rate r` `fossil_max N` | fossils: ≥ N cells (12), in ≤ r·soups (0.002), report at most N (12) |
 | `vary_min r` `vary_probe 0\|1` | vary: a behaviour counts fully once seen r·soups times (0.002); run the probe for every rule (1) |
+| `min_rule R` `max_rule R` | rule range: transitions of min_rule are forced on, transitions absent from max_rule forced off; `rule` defaults to min_rule. Aborts if min ⊄ max or the reference is outside |
+| `scan_max_cells n` | mid-run scans skip clusters larger than n cells (default 400 = unchanged); the final census is unaffected. B3/S23: identical glider counts at n = 25. A non-target ship larger than n is then not removed mid-run |
+| `mutation_uniform u` | mix u of uniform picks into the usage-weighted choice of transitions to mutate (default 0 = off). Rarely-firing transitions (e.g. B8) are otherwise almost never tried |
+| `objective rate\|density` `density_lambda λ` | `rate` (default): Σ w·log(rate). `density`: log(T/soup) − λ·log(other/soup) for the first target, other = leftover population of everything else (λ default 1; 0 = pure rate) |
 | `vary_strict N` `vary_decay d` | vary: an oscillator period seen in fewer than N soups scores 0 (default 0 = off); the k-th best oscillator period, with its shape bonus, counts d^k (default 1 = off). Against rules whose many periods are random geometry; see Variety below |
 | `vary_common_ship m [r]` | vary: a ship velocity seen r times per soup or more (default 0.1) counts (1+m)× its weight, linearly less below r (default m 0 = off) |
 | `vary_confined f` | vary: a rule with no ship at all and no puffer/rake/gun soup (nothing ever leaves its box) has its whole score multiplied by f (default 1 = off; 0.5 used on the random sample) |

@@ -281,7 +281,7 @@ struct Target { string name; int pat; double w=1; double minRate=0; set<string> 
 struct Cfg {
     string refRule; Table ref; vector<Pat> pats; vector<Target> tg; vector<pair<string,int>> fixes;
     int soupW=16,soupH=16; double dens=0.5; int N=1000; int grid=256; int gmax=2000; int pmax=2500; int maxp=256; int cap=4;
-    double maxBad=1.0, costW=0, costRef=0, maxCost=0, minOscPeriod=3; int lahc=50; int reseed=200; double soupCostLimit=-1; u64 seed=1;
+    double maxBad=1.0, costW=0, costRef=0, maxCost=0, minOscPeriod=3; int lahc=50; int reseed=200; double soupCostLimit=-1; int scanMaxCells=400; u64 seed=1; bool density=false; double densLambda=1.0, mutU=0; string minRule, maxRule;
     string logFile="discoveries.txt", archiveFile="archive.txt", bestFile; vector<string> starts; int maxgCons=4000;
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
@@ -327,6 +327,12 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="soup_symmetry"){ need((bool)(is>>C.soupSym)); need(C.soupSym=="C1"||C.soupSym=="C2"||C.soupSym=="C4"||C.soupSym=="D2"||C.soupSym=="D4"||C.soupSym=="D8"); }
         else if(k=="gun_ships") is>>C.gunShips;
         else if(k=="vary_min") is>>C.varyMin; else if(k=="vary_probe") is>>C.varyProbe;
+        else if(k=="scan_max_cells") is>>C.scanMaxCells;
+        else if(k=="objective"){ string o; is>>o; need(o=="density"||o=="rate"); C.density= o=="density"; }
+        else if(k=="mutation_uniform") is>>C.mutU;
+        else if(k=="density_lambda") is>>C.densLambda;
+        else if(k=="min_rule") need((bool)(is>>C.minRule));
+        else if(k=="max_rule") need((bool)(is>>C.maxRule));
         else if(k=="vary_strict") is>>C.varyStrict; else if(k=="vary_decay") is>>C.varyDecay;
         else if(k=="vary_confined") is>>C.varyConfined;
         else if(k=="vary_common_ship"){ need((bool)(is>>C.varyCommonShip)); is>>C.varyCommonRate; }
@@ -340,7 +346,8 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="reward"){ string n; double w; need((bool)(is>>n>>w)); need(n=="ship"||n=="oblique"||n=="diagonal"||n=="orthogonal"||n=="osc"||n=="growth"||n=="gun"||n=="catalyst"||n=="signal"||n=="active"); C.reward[n]=w; }
         else die("unknown config key '"+k+"'"+(ln>nfile?string(" (command line)"):" at line "+to_string(ln)));
     }
-    if(C.refRule.empty()) die("config needs 'rule'");
+    if(C.refRule.empty()) C.refRule=C.minRule;
+    if(C.refRule.empty()) die("config needs 'rule' (or min_rule)");
     initClasses(); C.ref=parseRule(C.refRule);
     if(!respectsSym(C.ref)) die("reference rule is not symmetric under the chosen symmetry");
     if(C.ref.t[0]) die("B0 reference rules are not supported");
@@ -364,6 +371,14 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
     // split sanity: whole pattern vs union of components
     for(auto&[n,r,sp]:pats){ if(!sp) continue; Cells whole=parseRLE(r); int H=0; vector<Cells> comps; for(auto&P:C.pats) if(P.name.rfind(n+".",0)==0){ comps.push_back(P.cells); H=max(H,P.evo.t);}
         for(int g=0;g<H;g++){ whole=stepCells(whole,C.ref.t); set<pair<int,int>> U; for(auto&cc:comps){cc=stepCells(cc,C.ref.t); U.insert(cc.begin(),cc.end());} if(U!=set<pair<int,int>>(whole.begin(),whole.end())) die("components of "+n+" interact at gen "+to_string(g+1)+"; don't split it"); } }
+    if(!C.minRule.empty()||!C.maxRule.empty()){ // rule range: min_rule transitions forced on, transitions absent from max_rule forced off
+        Table mn; memset(mn.t,0,512); Table mx; memset(mx.t,1,512);
+        if(!C.minRule.empty()) mn=parseRule(C.minRule); if(!C.maxRule.empty()) mx=parseRule(C.maxRule);
+        if(!respectsSym(mn)||!respectsSym(mx)) die("min_rule/max_rule not symmetric under chosen symmetry");
+        for(int i=0;i<512;i++) if(mn.t[i]&&!mx.t[i]) die("min_rule is not contained in max_rule");
+        for(int i=0;i<512;i++) if(C.ref.t[i]<mn.t[i]||C.ref.t[i]>mx.t[i]) die("reference rule is outside [min_rule, max_rule]");
+        for(int c=0;c<NC;c++){ int r=members[c][0]; if(mn.t[r]) force(r,1,"min_rule"); else if(!mx.t[r]) force(r,0,"max_rule"); }
+    }
     for(auto&[n,v]:C.fixes){
         bool done=false;
         if(SYM!=2){ for(int c=0;c<NC;c++) if(cname[c]==n){ force(members[c][0],v,"fix"); done=true; } }
@@ -420,7 +435,7 @@ static inline uint8x16_t step16(const uint8_t*r0,const uint8_t*r1,const uint8_t*
 static inline u64 laneBits(uint8x16_t v){ return vget_lane_u64(vreinterpret_u64_u8(vshrn_n_u16(vreinterpretq_u16_u8(vtstq_u8(v,v)),4)),0)&0x1111111111111111ULL; }
 #endif
 struct Cand { long count=0; Cells ex; Info I; u64 seed=0; };
-struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; uint16_t activeN; uint16_t settleT; }; // settleT: gen the soup died out or became periodic // activeN: bounded region that never settled // growth: pop +growD every growP gens; gun: gunN copies of one ship
+struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; uint16_t activeN; uint16_t settleT; double other, tfinal; }; // other: leftover non-target population (objective density) // settleT: gen the soup died out or became periodic // activeN: bounded region that never settled // growth: pop +growD every growP gens; gun: gunN copies of one ship
 // everything one soup produces (kept per soup so merging is in soup order, independent of thread count)
 struct SoupOut { SoupRes r; vector<pair<string,Cand>> cands; vector<uint32_t> usage; Cand gunShip; vector<pair<string,Cand>> ash; };
 struct ShipEvt { Cells c; Info I; int t; }; // a ship deleted by the scan (probe runs)
@@ -539,7 +554,7 @@ struct Engine {
             pbx0=bx0;pbx1=bx1;pby0=by0;pby1=by1;
             int nx0=INT_MAX,nx1=-1,ny0=INT_MAX,ny1=-1; long pop=0;
             cost+=(double)(sx1-sx0+1)*(sy1-sy0+1);
-            if(cost>C.soupCostLimit*1e6){ R.bad=3; R.cost=cost; detectGrowth(R,t); return; }
+            if(cost>C.soupCostLimit*1e6){ R.bad=3; R.cost=cost; R.other+=lastpop; detectGrowth(R,t); return; }
             for(int y=sy0;y<=sy1;y++){
                 const uint8_t*r0=&a[(y-1)*W],*r1=&a[y*W],*r2=&a[(y+1)*W]; uint8_t*o=&b[y*W];
                 int x=sx0-1; int j=(r0[x]<<2)|(r1[x]<<1)|r2[x]; x++; j=(j<<3)|(r0[x]<<2)|(r1[x]<<1)|r2[x];
@@ -561,11 +576,12 @@ struct Engine {
             bx0=nx0;bx1=nx1;by0=ny0;by1=ny1; lastpop=pop; popH[t+1]=pop;
             // first contact with the grid border (cells there are never updated): check for linear growth now
             if(!R.growP && !edgeHit && (bx0<=2||by0<=2||bx1>=W-3||by1>=H-3)){ edgeHit=true; detectGrowth(R,t+1); }
-            if(pop>C.pmax){ R.bad=1; R.cost=cost; detectGrowth(R,t+1); return; }
+            if(pop>C.pmax){ R.bad=1; R.cost=cost; R.other+=pop; detectGrowth(R,t+1); return; }
         }
         R.cost=cost; if(stable) R.settleT=min(t,65535);
         if(!stable){ R.bad=2; detectGrowth(R,t); }
         scan(R,true,bx0,bx1,by0,by1,h);
+        { long live=0; for(int y=by0;y<=by1;y++) for(int x=bx0;x<=bx1;x++) live+=a[y*W+x]; R.other+=live-R.tfinal; }
         if(!stable&&C.growth){ // never settled: a soup that keeps emitting copies of one ship looks like a gun
             const string*bk=nullptr; int bn=0; for(auto&kv:shipN) if(kv.second>bn){bn=kv.second;bk=&kv.first;}
             if(bk && bn>=C.gunShips){ R.gunN=min(bn,65535); gunShip.ex=keyCells(*bk); gunShip.I=cls1(gunShip.ex); gunShip.seed=seed; gunShip.count=bn; }
@@ -632,7 +648,7 @@ struct Engine {
                 for(int dy=-2;dy<=2;dy++){int yy=py+dy; if(yy<0||yy>=H) continue; for(int dx=-2;dx<=2;dx++){int xx=px+dx; if(xx<0||xx>=W) continue; int n=yy*W+xx; if(a[n]&&stamp[n]<sbase){stamp[n]=sbase+id;q.push_back(n);} }} } }
         st=sbase+clusters.size();
         for(size_t id=0;id<clusters.size();id++){
-            auto&cl=clusters[id]; if(cl.size()>400) continue;
+            auto&cl=clusters[id]; if(cl.size()>400) continue; if(!final && (int)cl.size()>C.scanMaxCells) continue; // scan_max_cells
             Cells c; for(int p:cl) c.push_back({p%W,p/W}); int mx,my,Mx,My; bbox(c,mx,my,Mx,My);
             if(Mx-mx>60||My-my>60) continue;
             // a ship counts only if nothing lies ahead in a cone along its direction of travel
@@ -650,7 +666,7 @@ struct Engine {
                 if(threatened((I.dx>0)-(I.dx<0),(I.dy>0)-(I.dy<0))) continue;
                 k=keyOf(c); bool tgt=false; shipN[k]++; lastShipT=curT; lastShipK=k; if(shipLog) shipLog->push_back({c,I,curT});
                 for(size_t t=0;t<C.tg.size();t++) if(C.tg[t].keys.count(k)){ if(R.cnt[t]<255) R.cnt[t]++; tgt=true; }
-                if(!tgt) note(c,I);
+                if(!tgt){ note(c,I); R.other+=cl.size(); }
                 for(int p:cl){a[p]=0; h^=Z[p];}
             } else if(final && I.type==1){
                 bool ok=true;
@@ -660,6 +676,7 @@ struct Engine {
                 k=keyOf(c); bool tgt=false;
                 if(collectAsh){ auto&e=ash[k]; if(!e.count){e.ex=c;e.I=I;e.seed=curSeed;} e.count++; }
                 for(size_t t=0;t<C.tg.size();t++) if(C.tg[t].keys.count(k)){ if(R.cnt[t]<255) R.cnt[t]++; tgt=true; }
+                if(tgt) R.tfinal+=cl.size();
                 if(!tgt && I.period>=C.minOscPeriod) note(c,I);
             }
         }
@@ -670,7 +687,7 @@ static vector<Engine*> engines;
 // ===================== evaluation =====================
 struct Eval {
     Table T; int n=0; vector<SoupOut> res; vector<double> usage; // per class
-    unordered_map<string,Cand> cands, ash; double f=-1e9; vector<double> rate; double bad=0, cost=0; u64 seedEpoch=0;
+    unordered_map<string,Cand> cands, ash; double f=-1e9; vector<double> rate; double bad=0, cost=0; u64 seedEpoch=0; double dens=0, sumT=0, sumO=0;
 };
 static double tSim=0,tProc=0; static double nowS(){ return chrono::duration<double>(chrono::steady_clock::now().time_since_epoch()).count(); }
 static u64 soupSeed(u64 epoch,int i){ u64 s=epoch*1000003ULL+i; return splitmix(s); }
@@ -713,6 +730,8 @@ static void score(Eval&E){
     for(int i=0;i<n;i++){ auto&r=E.res[i].r; cost+=r.cost; if(r.bad){bad++;continue;} for(int t=0;t<nt;t++) E.rate[t]+=min((int)r.cnt[t],C.cap); }
     for(auto&x:E.rate) x/=n; E.bad=bad/n; E.cost=cost/n/1e6;
     double f=0; for(int t=0;t<nt;t++) f+=C.tg[t].w*log(E.rate[t]+1e-3);
+    if(nt>0){ double sT=0,sO=0; for(int i=0;i<n;i++){ sT+=min((int)E.res[i].r.cnt[0],C.cap); sO+=E.res[i].r.other; } E.sumT=sT/n; E.sumO=sO/n; E.dens=sT/max(sO,1.0);
+      if(C.density) f=log(sT/n+0.5/n)-C.densLambda*log(sO/n+1.0/n); } // objective density: first target per leftover non-target cell
     if(C.costW>0 && C.costRef>0) f-=C.costW*max(0.0,log(E.cost/C.costRef));
     // feasibility penalties
     for(int t=0;t<nt;t++) if(C.tg[t].minRate>0) f-=5*max(0.0,(C.tg[t].minRate-E.rate[t])/C.tg[t].minRate);
@@ -1165,6 +1184,7 @@ static Table mutate(const Table&T,const vector<double>&usage,u64&rng,string&desc
     vector<double> w(fc.size()); double tot=0, tu=0; for(size_t i=0;i<fc.size();i++) tu+=sqrt(usage.empty()?0:usage[fc[i]]);
     double eps=max(1e-9,0.02*tu/fc.size());
     for(size_t i=0;i<fc.size();i++){ w[i]=sqrt(usage.empty()?0:usage[fc[i]])+eps; tot+=w[i]; }
+    if(C.mutU>0){ for(size_t i=0;i<fc.size();i++) w[i]=(1-C.mutU)*w[i]/tot + C.mutU/fc.size(); tot=1; } // mutation_uniform
     double r=(splitmix(rng)>>11)*(1.0/9007199254740992.0); int k= r<0.5?1: r<0.8?2:3;
     Table M=T; desc.clear(); set<int> chosen;
     auto pick=[&](bool usedOnly)->int{ double tt=0; for(size_t i=0;i<fc.size();i++) if(!usedOnly||usage[fc[i]]>0) tt+=w[i];
@@ -1185,7 +1205,8 @@ static bool race(Eval&M,const Eval&P,int batch){
     for(int i0=0;i0<C.N;){
         int i1=min(C.N, i0==0 ? min(32,batch) : i0+batch); evalRange(M,i0,i1);
         for(int i=i0;i<i1;i++){
-            auto g=[&](const SoupRes&r,bool par){ double s=0; if(!r.bad) for(int t=0;t<nt;t++) s+=C.tg[t].w*min((int)r.cnt[t],C.cap)/(P.rate[t]+1e-3);
+            auto g=[&](const SoupRes&r,bool par){ double s=0;
+                if(C.density) return min((int)r.cnt[0],C.cap)/(P.sumT+1e-3) - C.densLambda*r.other/(P.sumO+1e-3); if(!r.bad) for(int t=0;t<nt;t++) s+=C.tg[t].w*min((int)r.cnt[t],C.cap)/(P.rate[t]+1e-3);
                 s-=5*(r.bad?1:0)*(P.bad>C.maxBad?1:0.2); if(C.costW>0&&C.costRef>0) s-=C.costW*r.cost/1e6/max(P.cost,1e-9); return s; };
             d.push_back(g(M.res[i].r,false)-g(P.res[i].r,true));
         }
@@ -1208,6 +1229,7 @@ static void writeBest(const vector<const Eval*>&es,const char*what){
 static void printEval(const char*tag,const Eval&E){ printf("%s",evalLine(tag,E).c_str()); fflush(stdout); }
 static string evalLine(const char*tag,const Eval&E){
     string o; char b[256]; snprintf(b,256,"%s f=%.4f",tag,E.f); o+=b; for(size_t t=0;t<C.tg.size();t++){ snprintf(b,256,E.rate[t]>=0.01||E.rate[t]==0?" %s=%.3f":" %s=%.2e",C.tg[t].name.c_str(),E.rate[t]); o+=b; }
+    if(C.density){ snprintf(b,256," density=%.5f (T/soup %.3f, other pop/soup %.1f)",E.dens,E.sumT,E.sumO); o+=b; }
     snprintf(b,256," bad=%.3f cost=%.3fM %s ",E.bad,E.cost,feasible(E)?"feasible":"INFEASIBLE"); o+=b; return o+ruleString(E.T)+"\n"; }
 
 // ===================== modes =====================
@@ -1223,7 +1245,8 @@ static void modeCheck(const vector<string>&rules){
 static void modeCensus(const string&rule,int N,u64 seed){
     Table T=parseRule(rule); if(!satisfies(T)) printf("warning: rule violates constraints\n");
     C.N=N; Eval E; auto t0=chrono::steady_clock::now(); fullEval(E,T,seed);
-    printEval("census",E); printf("time %.2fs\n",chrono::duration<double>(chrono::steady_clock::now()-t0).count());
+    printEval("census",E); { int nb[4]={0,0,0,0}; for(int i=0;i<E.n;i++) nb[E.res[i].r.bad&3]++; printf("bad soups: %d exploded (pop>pmax), %d unsettled at gmax, %d over soup_cost_limit\n",nb[1],nb[2],nb[3]); }
+    printf("time %.2fs\n",chrono::duration<double>(chrono::steady_clock::now()-t0).count());
     if(getenv("BADSTAT")){ int nb[4]={0,0,0,0}; for(int i=0;i<E.n;i++) nb[E.res[i].r.bad]++; printf("bad types: exploded %d, unsettled %d, too slow %d\n",nb[1],nb[2],nb[3]); }
     for(auto&e:soupEvents(E)) printf("%6ld  %s  first in soup seed %llu (dump RULE SEED shows it)\n",e.count,e.desc.c_str(),(unsigned long long)e.seed);
     auto fs=processCands(E);
