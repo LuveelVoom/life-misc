@@ -286,7 +286,7 @@ struct Cfg {
     map<string,double> reward;
     string soupSym="C1"; int gunShips=10; bool growth=true;
     double varyMin=0.002; int varyProbe=1; int varyStrict=0; double varyDecay=1.0, varyCommonShip=0, varyCommonRate=0.1, varyConfined=1.0;
-    int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; int repSeeds=1000, repSoups=200, repMax=64, repGens=192, varyRep=0; vector<string> repAdd; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
+    int probe=0, probeGrid=512, probeShips=4, probeStills=16, probeGens=600, wickK=6, wickCells=8, wickMax=400, fossilCells=12, fossilMax=12; double fossilRate=0.002; int repSeeds=1000, repSoups=200, repMax=64, repGens=192, varyRep=0, collMax=2000; double varyColl=0, varyLife=0, varyAsh=0; vector<string> repAdd; // explore: novelty-credit multipliers by kind (ship, oblique, diagonal, orthogonal, osc)
 } C;
 static vector<int> forcedV; // per class: -1 free, 0/1 forced
 
@@ -332,7 +332,8 @@ static void loadCfg(const string&fn,const vector<string>&overrides){
         else if(k=="vary_common_ship"){ need((bool)(is>>C.varyCommonShip)); is>>C.varyCommonRate; }
         else if(k=="probe") is>>C.probe; else if(k=="probe_grid") is>>C.probeGrid; else if(k=="probe_ships") is>>C.probeShips; else if(k=="probe_stills") is>>C.probeStills;
         else if(k=="replicator_add"){ string r; need((bool)(is>>r)); C.repAdd.push_back(r); }
-        else if(k=="vary_replicators") is>>C.varyRep; else if(k=="replicator_seeds") is>>C.repSeeds; else if(k=="replicator_soups") is>>C.repSoups; else if(k=="replicator_max") is>>C.repMax; else if(k=="replicator_gens") is>>C.repGens;
+        else if(k=="vary_replicators") is>>C.varyRep; else if(k=="vary_collisions") is>>C.varyColl; else if(k=="vary_lifespan") is>>C.varyLife;
+        else if(k=="vary_ash") is>>C.varyAsh; else if(k=="collision_max") is>>C.collMax; else if(k=="replicator_seeds") is>>C.repSeeds; else if(k=="replicator_soups") is>>C.repSoups; else if(k=="replicator_max") is>>C.repMax; else if(k=="replicator_gens") is>>C.repGens;
         else if(k=="probe_gens") is>>C.probeGens; else if(k=="wick_period") is>>C.wickK; else if(k=="wick_cells") is>>C.wickCells; else if(k=="wick_max") is>>C.wickMax;
         else if(k=="fossil_cells") is>>C.fossilCells; else if(k=="fossil_rate") is>>C.fossilRate; else if(k=="fossil_max") is>>C.fossilMax;
         else if(k=="growth"){ int v; is>>v; C.growth=v; }
@@ -419,7 +420,7 @@ static inline uint8x16_t step16(const uint8_t*r0,const uint8_t*r1,const uint8_t*
 static inline u64 laneBits(uint8x16_t v){ return vget_lane_u64(vreinterpret_u64_u8(vshrn_n_u16(vreinterpretq_u16_u8(vtstq_u8(v,v)),4)),0)&0x1111111111111111ULL; }
 #endif
 struct Cand { long count=0; Cells ex; Info I; u64 seed=0; };
-struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; uint16_t activeN; }; // activeN: bounded region that never settled // growth: pop +growD every growP gens; gun: gunN copies of one ship
+struct SoupRes { uint8_t cnt[8]; uint8_t bad; double cost; uint16_t growP; int16_t growD; uint16_t gunN; uint8_t gunKey; uint16_t activeN; uint16_t settleT; }; // settleT: gen the soup died out or became periodic // activeN: bounded region that never settled // growth: pop +growD every growP gens; gun: gunN copies of one ship
 // everything one soup produces (kept per soup so merging is in soup order, independent of thread count)
 struct SoupOut { SoupRes r; vector<pair<string,Cand>> cands; vector<uint32_t> usage; Cand gunShip; vector<pair<string,Cand>> ash; };
 struct ShipEvt { Cells c; Info I; int t; }; // a ship deleted by the scan (probe runs)
@@ -556,13 +557,13 @@ struct Engine {
                         uint8_t v=T2[j]; o[x]=v; if(v!=r1[x]) h^=Z[y*W+x]; if(v){pop++; if(x<nx0)nx0=x; if(x>nx1)nx1=x; if(y<ny0)ny0=y; if(y>ny1)ny1=y;} } }
             }
             swap(a,b);
-            if(pop==0){ R.cost=cost; return; }
+            if(pop==0){ R.cost=cost; R.settleT=min(t+1,65535); return; }
             bx0=nx0;bx1=nx1;by0=ny0;by1=ny1; lastpop=pop; popH[t+1]=pop;
             // first contact with the grid border (cells there are never updated): check for linear growth now
             if(!R.growP && !edgeHit && (bx0<=2||by0<=2||bx1>=W-3||by1>=H-3)){ edgeHit=true; detectGrowth(R,t+1); }
             if(pop>C.pmax){ R.bad=1; R.cost=cost; detectGrowth(R,t+1); return; }
         }
-        R.cost=cost;
+        R.cost=cost; if(stable) R.settleT=min(t,65535);
         if(!stable){ R.bad=2; detectGrowth(R,t); }
         scan(R,true,bx0,bx1,by0,by1,h);
         if(!stable&&C.growth){ // never settled: a soup that keeps emitting copies of one ship looks like a gun
@@ -577,6 +578,7 @@ struct Engine {
     // perGen(t) runs after every generation and may return false to stop. The grid is left clean afterwards, so
     // callers must read what they need inside perGen or via finalCells before the next run.
     vector<pair<int,int>> fin; // live cells (grid coords) at the end of the last runPattern
+    int noScanBefore=0; // runPattern: no ship deletion before this gen (ships still on their way to a collision)
     bool runPattern(const Cells&init,int gmax,int&offx,int&offy,const function<bool(int)>&perGen){
         int mx,my,Mx,My; bbox(init,mx,my,Mx,My); offx=W/2-(mx+Mx)/2; offy=H/2-(my+My)/2;
         u64 h=0; SoupRes R; memset(&R,0,sizeof R); shipN.clear(); lastShipT=-1000000; curSeed=0; cands.clear();
@@ -587,7 +589,7 @@ struct Engine {
             hist[t&255]=h;
             if(t>=20){ for(int p=1;p<=60&&2*p<=t;p++) if(hist[(t-p)&255]==h&&hist[(t-2*p)&255]==h){stable=true;break;} if(stable) break; }
             curT=t;
-            if(t%8==0&&t>0&&lastpop<800) scan(R,false,bx0,bx1,by0,by1,h);
+            if(t%8==0&&t>0&&t>=noScanBefore&&lastpop<800) scan(R,false,bx0,bx1,by0,by1,h);
             int sx0=max(1,min(bx0,pbx0)-1), sx1=min(W-2,max(bx1,pbx1)+1), sy0=max(1,min(by0,pby0)-1), sy1=min(H-2,max(by1,pby1)+1);
             ux0=min(ux0,sx0); ux1=max(ux1,sx1); uy0=min(uy0,sy0); uy1=max(uy1,sy1);
             pbx0=bx0;pbx1=bx1;pby0=by0;pby1=by1; int nx0=INT_MAX,nx1=-1,ny0=INT_MAX,ny1=-1; long pop=0;
@@ -840,7 +842,7 @@ static string objName(const Info&I,size_t n){ return (I.type==1&&I.period==1? st
 
 // Fire every library ship at every library still life, in every orientation of the still life and every lane
 // (one ship phase suffices: a still life is time-invariant). Keep reactions that restore the still life exactly.
-static vector<ProbeHit> probeCatalysts(const Eval&E,const vector<LibObj>&ships,const vector<LibObj>&stills){
+static vector<ProbeHit> probeCatalysts(const Eval&E,const vector<LibObj>&ships,const vector<LibObj>&stills,set<string>*outcomes=nullptr){
     struct Setup { int si,li; Cells sl, ship; int sx,sy; };
     vector<Setup> setups;
     for(size_t si=0;si<ships.size();si++){
@@ -882,6 +884,10 @@ static vector<ProbeHit> probeCatalysts(const Eval&E,const vector<LibObj>&ships,c
           for(auto&cl:splitComponents(fc)){
               if(set<pair<int,int>>(cl.begin(),cl.end())==SL){ restored=true; continue; }
               Info I=G.cls1(cl); if(I.type!=1){ unknown=true; break; } prods.push_back(objName(I,cl.size())); }
+          if(outcomes&&!unknown){ vector<string> ids; for(auto&cl:splitComponents(fc)) ids.push_back(canonId(normCells(cl),G.cls1(cl),E.T.t));
+              for(auto&ev:log) ids.push_back(canonId(normCells(ev.c),ev.I,E.T.t)); sort(ids.begin(),ids.end()); string k; for(auto&x:ids) k+=x+"|";
+              #pragma omp critical(outcomes)
+              outcomes->insert(k); }
           if(!restored||unknown) continue;
           for(auto&ev:log){ shipsOut.push_back(ev.I); prods.push_back(objName(ev.I,ev.c.size())); }
           sort(prods.begin(),prods.end());
@@ -1095,6 +1101,43 @@ static vector<ProbeHit> probeReplicators(const Eval&E){
     sort(out.begin(),out.end(),[](const ProbeHit&a,const ProbeHit&b){ return a.score!=b.score? a.score>b.score : a.id<b.id; });
     return out;
 }
+// Ship-ship collisions for synthesis potential: the most common ship against itself and the second most common,
+// in every orientation of the second ship. Every near-contact meeting (offset, phase) is set up by backing both ships
+// off along their tracks until they are >= 6 cells apart. A run counts when it settles into still lifes/oscillators
+// plus outgoing ships and is not just the two ships passing; outcomes (product multisets) go into 'outcomes'.
+static void probeShipCollisions(const Eval&E,const vector<LibObj>&ships,set<string>&outcomes){
+    if(ships.empty()||C.collMax<=0) return; const uint8_t*T=E.T.t;
+    auto gap=[](const Cells&a,int ax,int ay,const Cells&b,int bx,int by){ int a0,a1,a2,a3,b0,b1,b2,b3; bbox(a,a0,a1,a2,a3); bbox(b,b0,b1,b2,b3);
+        a0+=ax;a2+=ax;a1+=ay;a3+=ay;b0+=bx;b2+=bx;b1+=by;b3+=by; return max(max(b0-a2,a0-b2),max(b1-a3,a1-b3))-1; };
+    struct Run { Cells init; int t0; string a,b; }; vector<Run> runs; set<string> seen;
+    const LibObj&A=ships[0]; Cells A0=normCells(A.c); int PA=A.I.period;
+    for(size_t bi=0;bi<min<size_t>(2,ships.size());bi++){ const LibObj&B=ships[bi]; int PB=B.I.period; int Pc=PA/std::gcd(PA,PB)*PB; if(Pc>120) continue;
+        int dAx=A.I.dx*(Pc/PA), dAy=A.I.dy*(Pc/PA);
+        for(int o:groupOrients()){ Cells v=xform(Cells{{B.I.dx,B.I.dy}},o); int dBx=v[0].first*(Pc/PB), dBy=v[0].second*(Pc/PB); if(dBx==dAx&&dBy==dAy) continue;
+            Cells Bp=normCells(xform(B.c,o));
+            for(int ph=0;ph<PB;ph++){ Cells Bn=normCells(Bp); int bw,bh,aw,ah; { int a,b,c2,d; bbox(Bn,a,b,c2,d); bw=c2; bh=d; bbox(A0,a,b,c2,d); aw=c2; ah=d; }
+                for(int uy=-bh-3;uy<=ah+3;uy++) for(int ux=-bw-3;ux<=aw+3;ux++){ int g0=gap(A0,0,0,Bn,ux,uy); if(g0<0||g0>2) continue;
+                    int k=0; for(int kk=1;kk<=60;kk++){ int g=gap(A0,-kk*dAx,-kk*dAy,Bn,ux-kk*dBx,uy-kk*dBy), gp=gap(A0,-(kk-1)*dAx,-(kk-1)*dAy,Bn,ux-(kk-1)*dBx,uy-(kk-1)*dBy);
+                        if(g<gp) break; if(g>=6){ k=kk; break; } }
+                    if(!k) continue; Cells init; for(auto&p:A0) init.push_back({p.first-k*dAx,p.second-k*dAy}); for(auto&p:Bn) init.push_back({p.first+ux-k*dBx,p.second+uy-k*dBy});
+                    string key=keyOf(normCells(init)); if(!seen.insert(key).second) continue; runs.push_back({init,k*Pc,A.canon,B.canon}); }
+                Bp=stepCells(Bp,T); } } }
+    if((int)runs.size()>C.collMax){ vector<Run> r; double st=(double)runs.size()/C.collMax; for(int i=0;i<C.collMax;i++) r.push_back(runs[(size_t)(i*st)]); runs.swap(r); }
+    probeSetRule(E.T);
+    #pragma omp parallel
+    { Engine&G=*probeEngines[omp_get_thread_num()]; vector<ShipEvt> log; G.shipLog=&log;
+      #pragma omp for schedule(dynamic,4)
+      for(size_t q=0;q<runs.size();q++){ auto&U=runs[q]; log.clear(); int ox,oy; G.noScanBefore=U.t0+8;
+          bool settled=G.runPattern(U.init,U.t0+C.probeGens,ox,oy,[](int){ return true; }); G.noScanBefore=0; if(!settled) continue;
+          Cells fc; for(auto&p:G.fin) fc.push_back({p.first-ox,p.second-oy}); vector<string> ids; bool unknown=false;
+          for(auto&cl:splitComponents(fc)){ Info I=G.cls1(cl); if(I.type!=1){ unknown=true; break; } ids.push_back(canonId(normCells(cl),I,T)); }
+          if(unknown) continue; for(auto&ev:log) ids.push_back(canonId(normCells(ev.c),ev.I,T)); sort(ids.begin(),ids.end());
+          vector<string> pass={U.a,U.b}; sort(pass.begin(),pass.end()); if(ids==pass) continue; // no interaction
+          string k="X"; for(auto&x:ids) k+=x+"|";
+          #pragma omp critical(outcomes)
+          outcomes.insert(k); }
+      G.shipLog=nullptr; }
+}
 static double probeRule(const Eval&E,const string&ctx,bool printAll){
     double t0=nowS(); vector<LibObj> ships,stills; probeLibrary(E,ships,stills);
     if(printAll){ printf("probe library: %zu ships, %zu still lifes\n",ships.size(),stills.size());
@@ -1224,7 +1267,7 @@ struct Member { Eval E; double credit=0; int visits=0; vector<string> finds; };
 // behaviours count fully and one-off flukes little. Behaviours: ship velocities (oblique worth more), oscillator
 // periods >= min_osc_period, extra shapes of them, still-life diversity, puffer/gun/active-region soups, and (with
 // the probe) catalyst kinds, signals and fuses. Returns the score; 'why' gets a breakdown.
-struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0, rep=0; int nShip=0,nOsc=0; bool confined=false; };
+struct Variety { double score=0, ships=0, oscs=0, shapes=0, stills=0, soup=0, cat=0, sig=0, ca=0, rep=0, coll=0, life=0, ash=0; int nShip=0,nOsc=0,nColl=0,nAsh=0; double lifeT=0; bool confined=false; };
 static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
     Variety V; double need=max(1.0,C.varyMin*E.n); auto pres=[&](double c){ return min(1.0,c/need); };
     map<string,pair<double,int>> beh; // behaviour -> (count, shapes)
@@ -1250,7 +1293,8 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
       int ng=0; for(auto&kv:sb){ char c=kv.first[0]; if(c=='G'){ if(ng++<5) V.soup+=2; } else if(c=='U') V.soup+=4; else if(c=='A') V.soup+=2; }
       bool moves=false; for(auto&kv:beh) if(kv.first[0]=='Q') moves=true; for(auto&kv:sb) if(kv.first[0]=='G'||kv.first[0]=='U') moves=true; V.confined=!moves; }
     if(probe){ vector<LibObj> ships,stills; probeLibrary(E,ships,stills);
-        auto cat=probeCatalysts(E,ships,stills); set<string> kinds;
+        set<string> outc; auto cat=probeCatalysts(E,ships,stills,C.varyColl>0?&outc:nullptr); set<string> kinds;
+        if(C.varyColl>0){ probeShipCollisions(E,ships,outc); V.nColl=outc.size(); V.coll=C.varyColl*log2(1.0+V.nColl); } // vary_collisions: synthesis potential
         for(auto&h:cat){ string k=h.id.substr(1,h.id.find('_')-1); string ship=h.id.substr(h.id.find('_')+1); ship=ship.substr(0,ship.find(':'));
             if(k.rfind("reflector",0)==0) k="reflector"; if(k.rfind("converter",0)==0) k="converter"; if(k.rfind("splitter",0)==0) k="splitter"; kinds.insert(k+"|"+ship); }
         for(auto&k:kinds){ string c=k.substr(0,k.find('|')); V.cat+= c=="reflector"?5: c=="converter"||c=="splitter"?2: c=="catalysed"?0.5:1; }
@@ -1259,13 +1303,22 @@ static Variety varietyOf(const Eval&E,bool probe,const string&ctx,bool log){
         vector<ProbeHit> rp; if(C.varyRep) rp=probeReplicators(E); if(!rp.empty()){ set<long> kinds; for(auto&h:rp) kinds.insert(h.sig); // phases of one replicator share R and copy count
             V.rep=2+5*rp[0].score+min<size_t>(1,kinds.size()-1); } // best one counts by controllability
         if(log){ recordProbe(E,cat,"catalyst",ctx,false); recordProbe(E,sig,"wick",ctx,false); recordProbe(E,rp,"replicator",ctx,false); } }
-    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca+V.rep;
+    if(C.varyLife>0){ // vary_lifespan: soups that take long to settle but do settle (edge of chaos)
+        vector<int> ts; int good=0; for(int i=0;i<E.n;i++){ auto&r=E.res[i].r; if(r.bad) continue; good++; ts.push_back(r.settleT); }
+        if(!ts.empty()){ nth_element(ts.begin(),ts.begin()+ts.size()/2,ts.end()); V.lifeT=ts[ts.size()/2];
+            double g=min(1.0,max(0.0,log2(max(1.0,V.lifeT)/30.0)/4.0)); V.life=C.varyLife*((double)good/E.n)*g; } } // ramp: median 30 -> 0, 480 -> 1
+    if(C.varyAsh>0){ // vary_ash: long tail of the ash census, species (still lifes and oscillators) seen at least twice
+        for(auto&kv:E.ash){ auto&c=kv.second; if(c.count<2||c.I.type!=1) continue; if(isPseudo(c.ex,E.T.t,max(1,c.I.period))) continue; V.nAsh++; }
+        V.ash=C.varyAsh*log2(1.0+V.nAsh); }
+    V.score=V.ships+V.oscs+V.shapes+V.stills+V.soup+V.cat+V.sig+V.ca+V.rep+V.coll+V.life+V.ash;
     if(V.rep>0) V.confined=false; // a replicator spreads
     if(V.confined&&C.varyConfined!=1.0) V.score*=C.varyConfined; // vary_confined f: no ship and no growth at all, everything stays in its box
     return V;
 }
 static string varietyLine(const Variety&V){ char b[300]; snprintf(b,256,"variety %.2f [ships %.1f (%d), oscillators %.1f (%d), shapes %.1f, still lifes %.1f, soup %.1f, catalysts %.1f, signals %.1f, 1D CA %.1f, replicators %.1f]",
-    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca,V.rep); string r=b; if(V.confined&&C.varyConfined!=1.0) r+=" (confined: x"+to_string(C.varyConfined).substr(0,4)+")"; return r; }
+    V.score,V.ships,V.nShip,V.oscs,V.nOsc,V.shapes,V.stills,V.soup,V.cat,V.sig,V.ca,V.rep); string r=b;
+    if(C.varyColl>0||C.varyLife>0||C.varyAsh>0){ char e[200]; snprintf(e,200," {collisions %.1f (%d outcomes), lifespan %.1f (median %.0f gens), ash %.1f (%d species)}",V.coll,V.nColl,V.life,V.lifeT,V.ash,V.nAsh); r+=e; }
+    if(V.confined&&C.varyConfined!=1.0) r+=" (confined: x"+to_string(C.varyConfined).substr(0,4)+")"; return r; }
 // vary: late-acceptance hill climb on the variety score (constraints as usual; targets/min_rate/max_bad/max_cost
 // only as feasibility). No racing: a mutant is dropped after the first 1/8 of the soups if it is clearly too bad.
 static void modeVary(int iters){

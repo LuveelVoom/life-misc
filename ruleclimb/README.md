@@ -66,6 +66,10 @@ as usual (a second Ctrl-C quits at once). Example configs are in `examples/`.
 | `vary_strict N` `vary_decay d` | vary: an oscillator period seen in fewer than N soups scores 0 (default 0 = off); the k-th best oscillator period, with its shape bonus, counts d^k (default 1 = off). Against rules whose many periods are random geometry; see Variety below |
 | `vary_common_ship m [r]` | vary: a ship velocity seen r times per soup or more (default 0.1) counts (1+m)× its weight, linearly less below r (default m 0 = off) |
 | `vary_confined f` | vary: a rule with no ship at all and no puffer/rake/gun soup (nothing ever leaves its box) has its whole score multiplied by f (default 1 = off; 0.5 used on the random sample) |
+| `vary_collisions w` | vary: synthesis potential, w·log2(1 + distinct clean collision outcomes): library ships fired at still lifes (from the catalyst probe) and the most common ship against itself and the second most common, every near-contact meeting; an outcome = the multiset of settled objects and outgoing ships (default 0 = off; 1 used) |
+| `vary_lifespan w` | vary: edge of chaos, w · (share of good soups) · ramp(median settle time: 30 gens → 0, 480 → 1, log scale) (default 0 = off; 3 used) |
+| `vary_ash w` | vary: long tail of the ash census, w·log2(1 + still-life/oscillator species seen at least twice, pseudo-objects excluded) (default 0 = off; 2 used) |
+| `collision_max N` | at most N ship-ship collision runs per rule (2000) |
 | `vary_replicators 0\|1` | vary: also search for replicators and score the best one 2 + 5·controllability, +1 for a further kind; default 0 (it adds ~8 CPU-s per chaotic rule) |
 | `replicator_seeds N` `replicator_soups N` `replicator_max N` `replicator_gens G` `replicator_add RLE` | replicator probe: random 3×3–6×6 seeds (1000) and census soups (200) searched for candidates, at most 64 tested alone for G gens (192); `replicator_add` always tests the given pattern |
 | `gun_ships N` | a soup that never settles and emitted ≥ N copies of one ship is reported as a gun candidate (10) |
