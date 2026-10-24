@@ -19,7 +19,7 @@ Parent rule (straight from explore, knightship 0.64/soup, bad 1.9%):
 
     B2ce3akqy4enjytw5cknq6ak8/S12en3ejq4ajwz5-eikn6-an7e8
 
-## Common small knightships (each in its own rule; all checked with the original engine too)
+## Common small knightships (each in its own rule) [1]
 | ship | cells | rate/soup | rule |
 |---|---|---|---|
 | (3,2)c/19 `2o$bo$o2$o!` | 5 | 0.10 | B2ce3akqy4ejytw5cknq6ak8/S12in3ajq4ejywz5cajqr6-an7e8 (the start rule itself) |
@@ -77,8 +77,7 @@ Census of 20000 fresh soups + probe:
 - oscillators: p5 (4 cells, common), p18 (5 cells), p6, p8 (two kinds), more rarely others
 - **180-degree reflectors: the 2c/17 ship bounces straight back off many single still lifes (4–10 cells)**, and
   2–6-cell still lifes convert it into the c/4 diagonal ship — single-object reflectors/converters, which Life lacks
-- soups with exact linear growth: 8% of soups grow +1 cell per 2 gens (checked without ship deletion: +50 cells per
-  100 gens, steady — a puffer / wickstretcher), plus ~20 other growth signatures (periods 1–68)
+- soups with exact linear growth: 8% of soups grow +1 cell per 2 gens, steady — a puffer / wickstretcher [2], plus ~20 other growth signatures (periods 1–68)
 - persistent bounded active regions (~8–16 cells) in a few soups per 20000 (aperiodic or period > 60)
 - signals/fuses on wicks and rare large ash objects (fossils)
 
@@ -92,3 +91,8 @@ simulation without ship deletion: the ship climbs 8 rows per 68 gens, reflects a
 
 All reflections, conversions and other reactions of this rule: findings/variety_rule_probe.txt (probe of 4000
 soups); its census of 20000 soups: findings/variety_rule_census.txt.
+
+## Checks
+
+1. All knightships in "Common small knightships" were also checked with the original engine.
+2. Checked without ship deletion: +50 cells per 100 gens, steady.

@@ -148,8 +148,7 @@ setup to open in Golly.
   identified. Outcomes: **eater** (nothing else left), **reflector N deg** (the same ship leaves in another
   direction), **converter** (a different ship leaves), **splitter** (several ships), **pass-through** (same ship, same
   direction, after a real interaction), **catalysed reaction** (still life restored, other debris made).
-  Explore credit: reflector 8, converter 5, splitter 5, pass-through 4, catalysed 1.5, eater 1 (× `reward catalyst`).
-  Check: in Life it finds eater 1 and its 9-cell variant eating gliders and LWSSes.
+  Explore credit: reflector 8, converter 5, splitter 5, pass-through 4, catalysed 1.5, eater 1 (× `reward catalyst`) [1].
 - **Wicks, signals, fuses.** Wicks are stable periodic lines made of a small tile repeated along (k,0) or (k,k), whose
   pieces are not still lifes on their own (rows of independent still lifes are rejected). Each cell of the tile in
   the middle of a long wick is toggled and the damage (cells differing from the intact wick) is followed for 64
@@ -161,8 +160,7 @@ setup to open in Golly.
     periodic with period ≤ 8): the wick acts as a one-dimensional automaton, e.g. holes multiplying inside it.
   - **fuse**: the damaged part keeps growing (spilling out of the wick, or leaving static/short-period remains).
 
-  Credit: signal 6, 1D CA 5, fuse 2 (× `reward signal`). Check: in Life the diagonal line of cells is found as a
-  speed-c fuse. (Before 2026-10-22, 1D CA behaviour and slow stalling damage were labelled signals, and diagonal
+  Credit: signal 6, 1D CA 5, fuse 2 (× `reward signal`) [2]. (Before 2026-10-22, 1D CA behaviour and slow stalling damage were labelled signals, and diagonal
   speeds with an odd step were printed wrongly, e.g. 3c/4 as c/2.)
 - **Replicators.** Random small seeds and some census soups are run; any cluster shape that occurs twice at once and,
   on its own, copies itself within G/4 gens is tested alone for G gens. It counts if it never comes back alone as itself
@@ -194,3 +192,8 @@ sparkers, signals on oscillating wicks, catalysts for soup reactions other than 
 Results never depend on the thread count. On an M4 Pro, a census of 2000 soups takes about 0.4 s on one thread,
 and 60 `climb` iterations about 21 s on one thread or 3.4 s on 14 (rule of `examples/diag_ship_explore.cfg`).
 What was optimised, and what was tried and rejected, is in `speedups.txt`.
+
+## Checks
+
+1. Check: in Life the probe finds eater 1 and its 9-cell variant eating gliders and LWSSes.
+2. Check: in Life the diagonal line of cells is found as a speed-c fuse.

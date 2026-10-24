@@ -13,7 +13,7 @@ first; a #C line per object gives what it is and its top-left position, x right,
   fossils       large rare objects left in the ash
   replicators   patterns that make exact copies of themselves, most controllable first
 
-Ships and oscillators are re-simulated with casim when it can be imported (period and displacement). Objects are
+Ships and oscillators are re-simulated with casim (an independent simulator) when it can be imported; it is optional. Objects are
 spaced --gap cells apart, but ships fly off and soups grow when the collection is run, so look before you run.
 
 Example:
@@ -120,6 +120,19 @@ def rle_body(cells):
     return '\n'.join(lines + [cur])
 
 
+def has_b0(rule):
+    """True if the rule has birth on 0 neighbours (B/S, S/B or Golly's digits-only S/B form, or MAP bit 0)."""
+    r = rule.strip().split(':')[0]
+    if r[:3].upper() == 'MAP':
+        b64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+        return len(r) > 3 and r[3] in b64 and bool(b64.index(r[3]) >> 5 & 1)   # table[0] = top bit of the first char
+    parts = r.split('/')
+    for q in parts:
+        if q[:1] in 'Bb':
+            return q[1:2] == '0'
+    return len(parts) == 2 and parts[1][:1] == '0'   # digits only: survival/birth
+
+
 def casim_check(C, rle, desc):
     """Re-simulate a ship / oscillator: True, False, or None when the description has no period."""
     m = re.search(r'\(p(\d+)\)|^p(\d+) |c/(\d+) oblique', desc)
@@ -153,26 +166,34 @@ def main():
     ap.add_argument('--gap', type=int, default=24, help='empty cells between objects (default 24)')
     ap.add_argument('--width', type=int, default=600, help='start a new row past this width (default 600)')
     ap.add_argument('--rulesearch', default=os.path.join(HERE, 'rulesearch'), help='path to the rulesearch binary')
+    ap.add_argument('--no-recheck', action='store_true', help='skip the casim re-simulation of ships and oscillators')
     a = ap.parse_args()
 
     if not os.path.exists(a.rulesearch):
         sys.exit(f'{a.rulesearch} not found: run make in {HERE} first')
     C = None
-    try:
-        sys.path.insert(0, CASIM)
-        import casim as C
-    except ImportError:
-        print('casim not found; ships and oscillators will not be re-checked', file=sys.stderr)
-    sym = 'isotropic'
-    if C is not None:
+    if not a.no_recheck:
         try:
-            T = C.parse_rule(a.rule)
-            if T[0]:
-                sys.exit('B0 rules are not supported (rulesearch forces B0 off)')
-            if not C.is_isotropic(T):
-                sym = 'none'
-        except Exception as e:
-            sys.exit(f'cannot read rule {a.rule}: {e}')
+            sys.path.insert(0, CASIM)
+            import casim as C
+        except ImportError:
+            print('casim not found; ships and oscillators will not be re-checked', file=sys.stderr)
+    if has_b0(a.rule):
+        sys.exit('B0 rules are not supported (rulesearch forces B0 off)')
+    # rulesearch refuses a non-isotropic rule under symmetry isotropic: then use symmetry none
+    sym = None
+    with tempfile.TemporaryDirectory() as tmp:
+        for sy in ('isotropic', 'none'):
+            cfg = os.path.join(tmp, 'sym.cfg')
+            open(cfg, 'w').write(f'rule {a.rule}\nsymmetry {sy}\nlog none\narchive none\n')
+            r = subprocess.run([a.rulesearch, cfg, 'check'], capture_output=True, text=True)
+            if r.returncode == 0:
+                sym = sy
+                break
+            if 'not symmetric' not in r.stdout + r.stderr:
+                sys.exit(f'rulesearch cannot use rule {a.rule}:\n{(r.stdout + r.stderr)[-1000:]}')
+    if sym is None:
+        sys.exit(f'rulesearch cannot use rule {a.rule}')
     out = a.out or 'rare_' + re.sub(r'[^A-Za-z0-9-]+', '_', a.rule) + '.rle'
 
     with tempfile.TemporaryDirectory() as tmp:

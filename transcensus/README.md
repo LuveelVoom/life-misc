@@ -61,7 +61,7 @@ to ≤ 12 cells within 256 generations, almost nothing settles. B2-a3/S23 settle
 ## Rules
 
 - Golly syntax (`B3/S23`, `b3s23`, `23/3`, `B2-a3/S23`, `B2-a3_S23`, `MAP...`). The parser is a C port of
-  casim's, which follows Golly's `liferules.cpp`. Checked equal to casim on 225 rule strings (`tests/test_rules.py`).
+  casim's, which follows Golly's `liferules.cpp` [1].
 - **B0 rules are rejected.** The grid has a fixed dead background and no strobing.
 - **Non-isotropic MAP rules are rejected**, because the census merges all 8 orientations.
 - Bounded-grid suffixes (`:T...`), other neighbourhoods and multistate rules are rejected.
@@ -71,6 +71,10 @@ to ≤ 12 cells within 256 generations, almost nothing settles. B2-a3/S23 settle
 
 ## Tests
 
-`tests/` checks rule parsing and the simulation against casim, and `tests/kat.sh` checks known census outputs
+`tests/` checks rule parsing and the simulation against casim (a separate simulator, not included here), and `tests/kat.sh` checks known census outputs
 (including byte-identical output to the original for B3/S23). Implementation notes and test details are in
 [DEVELOPMENT.md](DEVELOPMENT.md).
+
+## Checks
+
+1. Checked equal to casim on 225 rule strings (`tests/test_rules.py`).

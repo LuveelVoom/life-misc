@@ -38,3 +38,6 @@ How the port differs from the original, and what the tests check. Usage is in [R
 
 - `--evolve` and `--emit-c` accept non-isotropic MAP rules (the census itself rejects them); they are used by the tests.
 - Speed table in README.md measured 2026-10-22 on an otherwise idle M4 Pro.
+- **Dependency to replace later:** `tests/test_rules.py` and `tests/test_engine.py` use casim (a separate Python simulator
+  that follows Golly, not included in this repository) as the reference parser and simulator. Without it only
+  `tests/kat.sh` runs. Replacing it needs another independent Golly-compatible INT/MAP implementation.

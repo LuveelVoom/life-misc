@@ -26,7 +26,10 @@ Lists use rule-half syntax: `B2a`, `B2-a` (every B2 letter except a), `S2ce3`, c
 How many free transitions and possible rules are left is printed to stderr.
 
 Each rule is written with the shorter of the positive and the `-` form for each count (`B2-a` rather than
-`B2cekin`). Output was checked against casim: 3000 random transition sets give the same rule tables as the
-fully spelled-out form, and generated rules respect `--exclude`, `--within` and `--contains`.
+`B2cekin`) [1].
 
 B0 rules can be generated (`B0` isn't excluded unless you say so), but many tools reject them.
+
+## Checks
+
+1. Checked against casim: 3000 random transition sets give the same rule tables as the fully spelled-out form, and generated rules respect `--exclude`, `--within` and `--contains`.
