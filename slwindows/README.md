@@ -25,7 +25,7 @@ B2-a3/S12-a 81 (16); none open. `find 8 8 --mode orbit` on B3/S23 is UNSAT.
 
 - Windows: 259 realizable (51 classes). Of the rest, 228 fail at the centre and 25
   are refuted by requiring all 9 window cells stable in a free 5x5. None open.
-- Orbit: best 67 cells, 13x13 (`best_orbit_13x13_p67.rle`). 8x8 and 10x10 UNSAT
+- Orbit: best 67 cells, 13x13 (`results/best_orbit_13x13_p67.rle`). 8x8 and 10x10 UNSAT
   (kissat, no proof checked). 11x11 and 12x12 undecided (11x11 got 22/50 targets in
   280 s, 12x12 42/50 in 400 s).
 - Oriented: best 31x31, 420 cells and 32x32, 408 cells, both D4-symmetric. With D4:

@@ -2,7 +2,7 @@
 
 A soup census of a rule's small *precursors*: patterns of at most 12 cells that turn up in soups and then grow
 into an active reaction. Results are grouped by the reaction they grow into, most common first. It is a port of `transcensus.c`
-(a 2016 census for B3/S23; the original source is in `../tc.zip`, unpacked unmodified in `orig/`) to Life-like,
+(a 2016 census for B3/S23; the original source is in `orig/tc.zip`, unpacked unmodified in `orig/`) to Life-like,
 isotropic non-totalistic (Hensel/INT) and isotropic MAP rules. For B3/S23 the output is identical to the
 original's, and it can use all your cores.
 
