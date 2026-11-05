@@ -36,9 +36,8 @@ Defaults are the original's constants.
 
 Output on stdout is the original's: a `Key pattern N, count = C:` line per reported pattern, then one
 LifeHistory RLE with the precursors in state 1 and their counts written above them in state 4.
-For any rule other than Life, `rule = LifeHistory` there is only for display: running the RLE in Golly would
-run Life. Use `-l FILE` for a list with one line per reported pattern (count, tab, the precursor as one-line
-RLE body), which you can paste into Golly under the census rule.
+For other rules the `rule = LifeHistory` header is display only (it would run as Life). `-l FILE` writes one line
+per reported pattern instead: count, tab, the precursor as a one-line RLE body.
 
 ## Speed (M4 Pro)
 

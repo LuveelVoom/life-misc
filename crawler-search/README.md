@@ -27,8 +27,7 @@ runs each for up to 60 generations, and writes what it finds to `crawlers.rle`. 
 (12,2)c/49 fuse that burns through a line of ships (it lasts 9 cycles, so it is only reported
 with `--check-cycles 9`).
 
-Open `crawlers.rle` in Golly. Each result is one row: the pattern plus a line of objects, ready
-to run. The `#C` lines at the top say what each row does (period, speed, crawler or fuse).
+Results go to `crawlers.rle`, one row each: the pattern plus a line of objects. The `#C` lines at the top say what each row does (period, speed, crawler or fuse).
 
 ## Three ways to search
 
@@ -114,7 +113,7 @@ Each `#C` line describes one result, for example:
 
 - `crawler`: the objects it passed are still there behind it (moved or not).
 - `fuse`: the objects are used up.
-- `crawler or fuse (N objects left behind)`: some object-shaped remains; check in Golly.
+- `crawler or fuse (N objects left behind)`: some object-shaped remains.
 - `objects every N cells, each K generation(s) on from the last`: the line it needs.
 
 Every result has been checked to repeat for `--check-cycles` cycles (default 10) on a line of
@@ -166,8 +165,7 @@ escapes.
   startup phase.
 - In line mode the repeating part must fit in `--window`, and a spaceship fired forward along the
   line would be mistaken for the front.
-- The labels crawler/fuse are a quick check (are there object-shaped remains?); look at
-  interesting results in Golly.
+- The labels crawler/fuse are a quick check (are there object-shaped remains?), not a classification.
 
 ## Results so far (`results/`)
 
