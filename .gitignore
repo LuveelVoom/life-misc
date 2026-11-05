@@ -4,3 +4,5 @@ __pycache__/
 *.pkl
 # JLS download (no license text, so not in the repo); JLS-LLS/build.sh reads it from here
 JLS-1.7.zip
+# build output
+smallspaceexploration/soupclass

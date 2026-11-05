@@ -179,8 +179,147 @@ def incremental(a, cnf, cell, groups, z_of, W, H, rule):
     print(to_rle(cells, W, H, rule), end="")
 
 
-def find(a):
-    rule, stable = load_rule(a.rule)
+def window_at(live, x, y):
+    i = 0
+    for dx, dy in OFFS:
+        i = 2 * i + ((x + dx, y + dy) in live)
+    return i
+
+
+def repatch(live, free, W, H, allowed, groups, bound, rng, shuffle, budget):
+    """Best-effort: new contents for the cells in `free`, everything else fixed, with at
+    most `bound` live cells in total and all targets still covered. None if not found."""
+    from pysat.solvers import Glucose4
+    var = {c: n + 1 for n, c in enumerate(sorted(free))}
+    nv = len(var)
+    near = {(x + dx, y + dy) for x, y in free for dx, dy in OFFS}
+    positions = {c for c in near if -1 <= c[0] <= W and -1 <= c[1] <= H}
+    seen = {0}
+    for y in range(-1, H + 1):
+        for x in range(-1, W + 1):
+            if (x, y) not in positions:
+                seen.add(window_at(live, x, y))
+    need = [g for g in groups if not (set(g) & seen)]
+    cnf, z_of = [], {}
+    for x, y in positions:
+        one = []
+        terms = [(var.get((x + dx, y + dy)), (x + dx, y + dy) in live) for dx, dy in OFFS]
+        for w in allowed:
+            bs = bits(w)
+            if any(v is None and b != f for (v, f), b in zip(terms, bs)):
+                continue
+            nv += 1
+            one.append(nv)
+            z_of.setdefault(w, []).append(nv)
+            cnf += [[-nv, v if b else -v] for (v, _), b in zip(terms, bs) if v is not None]
+        if not one:
+            return None
+        cnf.append(one)
+    for g in need:
+        c = [z for w in g for z in z_of.get(w, [])]
+        if not c:
+            return None
+        cnf.append(c)
+    room = bound - len(live - free)
+    if room < 0:
+        return None
+    if room < len(var):
+        enc = CardEnc.atmost(lits=list(var.values()), bound=room, top_id=nv, encoding=EncType.seqcounter)
+        cnf += enc.clauses
+    with Glucose4(bootstrap_with=cnf) as s:
+        if shuffle:
+            s.set_phases([v * rng.choice((1, -1)) for v in var.values()])
+        s.conf_budget(budget)
+        if s.solve_limited() is not True:
+            return None
+        m = set(l for l in s.get_model() if l > 0)
+    return (live - free) | {c for c, v in var.items() if v in m}
+
+
+def polish_whole(a, rule, live, W, H, rng):
+    """Whole box free: the pattern only seeds the solver's phases. Each success tightens
+    the cap by --drop. Exact for the box if UNSAT comes back. One thread."""
+    from pysat.card import ITotalizer
+    from pysat.solvers import Glucose4
+    a.width, a.height, a.sym = W, H, False
+    cnf, cell, groups, nv = build(a, rule)[:4]
+    tot = ITotalizer(lits=list(cell.values()), ubound=len(live) + 1, top_id=nv)
+    s = Glucose4(bootstrap_with=cnf + tot.cnf.clauses)
+    t0 = time.time()
+    pop = len(live)
+    print(f"{rule} whole {W}x{H} from pop {pop}, drop {a.drop}, noise {a.noise}", flush=True)
+    while time.time() - t0 < a.time:
+        cap = pop - a.drop
+        s.set_phases([(l if ((c in live) != (rng.random() < a.noise)) else -l) for c, l in cell.items()])
+        s.conf_budget(a.budget)
+        r = s.solve_limited(assumptions=[-tot.rhs[cap]])
+        if r is False:
+            print(f"[{time.time() - t0:7.1f}s] UNSAT: no pattern of at most {cap} in this box", flush=True)
+            return
+        if r is None:
+            continue
+        m = set(l for l in s.get_model() if l > 0)
+        live = {c for c, l in cell.items() if l in m}
+        pop = len(live)
+        per, seen = check(sorted(live), rule)
+        miss = sum(1 for g in groups.values() if not (set(g) & seen))
+        print(f"[{time.time() - t0:7.1f}s] pop {pop}; casim {per['kind']} p{per['period']}, missing {miss}", flush=True)
+        if a.out and per["kind"] == "still life" and miss == 0:
+            open(a.out, "w").write(to_rle(sorted(live), W, H, rule))
+    print(f"END pop {pop}")
+
+
+def polish(a):
+    """Large-neighbourhood search: free a random patch, try to lose a cell; accept
+    equal-population changes so the search can move. Heuristic, one thread."""
+    import random
+    rng = random.Random(a.seed)
+    C = casim()
+    p = C.parse_rle(open(a.start).read())
+    rule, _ = load_rule(a.rule)
+    d = json.load(open(windows_file(rule)))
+    allowed = sorted(d["realizable"] + d["open"])
+    orb = orbit_id()
+    grouped = {}
+    for w in d["realizable"]:
+        grouped.setdefault(w if a.mode == "oriented" else orb[w], []).append(w)
+    groups = list(grouped.values())
+    x0, y0, w, h = p.bbox
+    live = {(int(x) - x0 + a.pad, int(y) - y0 + a.pad) for x, y in p.coords()}
+    W, H = w + 2 * a.pad, h + 2 * a.pad
+    if a.whole:
+        return polish_whole(a, rule, live, W, H, rng)
+    t0 = time.time()
+    best = len(live)
+    it = moves = 0
+    print(f"{rule} start pop {best}, box {W}x{H}, {len(groups)} targets", flush=True)
+    while time.time() - t0 < a.time:
+        it += 1
+        n = rng.randint(a.minpatch, a.maxpatch)
+        px, py = rng.randint(0, max(0, W - n)), rng.randint(0, max(0, H - n))
+        free = {(x, y) for y in range(py, min(H, py + n)) for x in range(px, min(W, px + n))}
+        new = repatch(live, free, W, H, allowed, groups, len(live) - 1, rng, False, a.budget)
+        if new is None:
+            new = repatch(live, free, W, H, allowed, groups, len(live), rng, True, a.budget)
+            if new is not None and new != live:
+                moves += 1
+                live = new
+        else:
+            live = new
+            if len(live) < best:
+                best = len(live)
+                per, seen = check(sorted(live), rule)
+                miss = sum(1 for g in groups if not (set(g) & seen))
+                print(f"[{time.time() - t0:7.1f}s] pop {best} after {it} patches, {moves} sideways; "
+                      f"casim {per['kind']} p{per['period']}, missing {miss}", flush=True)
+                if a.out and per["kind"] == "still life" and miss == 0:
+                    open(a.out, "w").write(to_rle(sorted(live), W, H, rule))
+        if it % 500 == 0:
+            print(f"[{time.time() - t0:7.1f}s] {it} patches, {moves} sideways, current {len(live)}, best {best}", flush=True)
+    print(f"END best pop {best}, {it} patches, {moves} sideways")
+
+
+def build(a, rule):
     path = windows_file(rule)
     if not os.path.exists(path):
         sys.exit(f"run: slwindows.py classify --rule {rule}")
@@ -224,12 +363,17 @@ def find(a):
         if 0 in g:
             continue
         cnf.append([z for w in g for z in z_of.get(w, [])])
-    ncard = 0
+    return cnf, cell, groups, nv, real, allowed, z_of
+
+
+def find(a):
+    rule, stable = load_rule(a.rule)
+    cnf, cell, groups, nv, real, allowed, z_of = build(a, rule)
+    W, H = a.width, a.height
     if a.maxpop:
         enc = CardEnc.atmost(lits=list(cell.values()), bound=a.maxpop, top_id=nv, encoding=EncType.seqcounter)
         nv = max(nv, enc.nv)
         cnf = enc.clauses + cnf
-        ncard = len(enc.clauses)
     if a.incremental:
         return incremental(a, cnf, cell, groups, z_of, W, H, rule)
     tmp = tempfile.NamedTemporaryFile("w", suffix=".cnf", delete=False, dir=a.tmp)
@@ -300,6 +444,20 @@ def main():
                    help="force D4 symmetry; with --mode orbit this covers every oriented window too")
     f.add_argument("--out")
     f.add_argument("--tmp", default=tempfile.gettempdir())
+    q = sub.add_parser("polish", help="reduce the population of a pattern by patch-wise SAT")
+    q.add_argument("start", help="RLE file")
+    q.add_argument("--rule", default="B3/S23")
+    q.add_argument("--mode", choices=["oriented", "orbit"], default="orbit")
+    q.add_argument("--time", type=float, default=600)
+    q.add_argument("--pad", type=int, default=1, help="dead margin added around the pattern")
+    q.add_argument("--minpatch", type=int, default=5)
+    q.add_argument("--maxpatch", type=int, default=9)
+    q.add_argument("--budget", type=int, default=5000, help="conflicts per attempt")
+    q.add_argument("--seed", type=int, default=1)
+    q.add_argument("--whole", action="store_true", help="free the whole box instead of patches")
+    q.add_argument("--drop", type=int, default=1, help="--whole: cells to lose per step")
+    q.add_argument("--noise", type=float, default=0.0, help="--whole: fraction of seed phases flipped")
+    q.add_argument("--out")
     a = p.parse_args()
     if a.cmd == "classify":
         rule, stable = load_rule(a.rule)
@@ -314,6 +472,8 @@ def main():
               f"impossible by proof radius {sorted(hist.items())}; open {[w for w in res if res[w] is None]}")
         json.dump({"rule": rule, "realizable": real, "open": [w for w in res if res[w] is None],
                    "witness": {str(w): wit[w] for w in real}}, open(windows_file(rule), "w"))
+    elif a.cmd == "polish":
+        polish(a)
     else:
         find(a)
 

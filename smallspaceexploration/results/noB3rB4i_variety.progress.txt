@@ -1,0 +1,7 @@
+variety scan of noB3rB4i.csv (STABLE + STABLE (long-lived))
+updated 20:31:37
+7780 / 7780 rules scored (100%)
+rate 105 rules/min, estimated finish 20:31
+partial ranking: noB3rB4i_variety.partial.txt (rules scored so far)
+final ranking: noB3rB4i_variety.txt (written when the scan ends)
+scan finished 20:31:39; final ranking in noB3rB4i_variety.txt

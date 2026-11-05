@@ -8,6 +8,7 @@ Not useful for anything.
 python3 slwindows.py classify --rule B3/S23-a5   # writes windows_<rule>.json, needed by find
 python3 slwindows.py find 13 13 --mode orbit --incremental --maxpop 85 --out x.rle
 python3 slwindows.py find 31 31 --mode orbit --sym --incremental --out x.rle
+python3 slwindows.py polish x.rle --rule B3/S23-a5 --whole --noise 0.02 --out y.rle
 ```
 
 `--mode oriented` needs every window, `--mode orbit` one per rotation/reflection
@@ -34,3 +35,18 @@ B2-a3/S12-a 81 (16); none open. `find 8 8 --mode orbit` on B3/S23 is UNSAT.
 Rejected: plain kissat on 12x12+ orbit and 14x14-28x28 oriented (no answer in
 60-190 s); adding oriented targets one by one without symmetry (24x24 reached
 56/258 and 32x32 102/258 in 200 s).
+
+## Results for B3/S23-a5, class mode (2026-10-31)
+
+336 windows, 66 classes (25 live-centre, 41 dead-centre), none open. So population
+is at least 25. All runs were on a machine at load 120-140, about 0.4 core each.
+
+- Best: 97 cells in 14x14 (`results/best_a5_orbit_14x14_p97.rle`). 15x15 gave 111.
+- 13x13: undecided, stalled at 35/65 targets after 420 s.
+- `polish` patches: this pattern looks rigid. On a handful of 5x5 to 9x9 patches, 96
+  was not found and random phases at 97 returned the same pattern (not exhaustive).
+  Patches 9-12: 8 tried, no gain.
+- Population caps, stopped early by hand with nothing complete: 14x14 at 92 (36/65)
+  and 90 (27/65), 15x15 at 84 (24/65), 16x16 at 82 (20/65), 18x18 at 80 (12/65).
+- `polish --whole` in 16x16 seeded from the 97: stopped by hand after a few minutes
+  with no improvement and no UNSAT. Not a fair test yet.
