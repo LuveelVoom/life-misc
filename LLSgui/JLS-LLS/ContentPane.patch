@@ -1,0 +1,73 @@
+--- orig/jls/ContentPane.java	2026-10-31 18:01:41
++++ new/jls/ContentPane.java	2026-10-31 18:01:41
+@@ -134,6 +134,8 @@
+     private JMenuItem searchAcceptStateMenuItem;
+     private JMenuItem searchShowResultMenuItem; 
+     private JMenuItem searchShowCombinationMenuItem; 
++    private JMenuItem searchRunLlsMenuItem;
++    private LlsRunDialog llsRunDialog;
+ 
+     private Action setOnAction;
+     private Action setOnAllAction;
+@@ -415,6 +417,12 @@
+         searchShowCombinationMenuItem.setMnemonic(KeyEvent.VK_M); 
+         searchShowCombinationMenuItem.addActionListener(this); 
+         menu.add(searchShowCombinationMenuItem); 
++        menu.addSeparator();
++        searchRunLlsMenuItem = new JMenuItem("Run in LLS (INT rule)...");
++        searchRunLlsMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_DOWN_MASK));
++        searchRunLlsMenuItem.setMnemonic(KeyEvent.VK_L);
++        searchRunLlsMenuItem.addActionListener(this);
++        menu.add(searchRunLlsMenuItem);
+         menuBar.add(menu);
+ 
+         menu = new JMenu("Help");
+@@ -1171,7 +1179,16 @@
+                     fileName = stateFileChooser.getSelectedFile().getAbsolutePath();
+                     sendCommand(USRCMD_LOAD);
+                 }
++            }
++        }
++        else if (source == searchRunLlsMenuItem)
++        {
++            if (null == llsRunDialog)
++            {
++                llsRunDialog = new LlsRunDialog(mainFrame, this);
+             }
++            llsRunDialog.setVisible(true);
++            llsRunDialog.toFront();
+         }
+         else if (source == saveFileMenuItem)
+         {
+@@ -1385,6 +1402,7 @@
+         searchContinueMenuItem.setEnabled(userState == USERSTATE_PAUSE);
+         searchPauseMenuItem.setEnabled(userState == USERSTATE_SEARCH);
+         searchResetMenuItem.setEnabled(userState != USERSTATE_EDIT);
++        searchRunLlsMenuItem.setEnabled(userState == USERSTATE_EDIT);
+     }
+     
+     private void loadStatus(String filename, SearchCellArray searchCellArray)
+@@ -1451,6 +1469,23 @@
+         }
+     }
+ 
++    // true when the field can be handed to LLS: only the edited field is sent, never a search state
++    public boolean isEditing()
++    {
++        return userState == USERSTATE_EDIT;
++    }
++
++    public Properties getProperties()
++    {
++        return properties;
++    }
++
++    // call only while isEditing()
++    public void saveFieldForLls(String filename)
++    {
++        saveStatus(filename, null);
++    }
++
+     private void saveStatus(String filename, SearchCellArray searchCellArray)
+     {
+         FileWriter fout = null;
