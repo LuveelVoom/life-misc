@@ -2,9 +2,13 @@
 """Rule parser check: transcensus-int --rule-info must give casim's table (casim follows Golly's liferules.cpp)."""
 import os, random, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "..", "..", "casim"))
+sys.path.insert(0, os.environ.get("CASIM", os.path.join(HERE, "..", "..", "..", "casim")))
 import numpy as np
-import casim as C
+try:
+    import casim as C
+except ImportError:
+    print("casim not found (set CASIM=/path/to/casim-folder); skipped. tests/kat.sh doesn't need it.")
+    sys.exit(0)
 
 EXE = os.path.join(HERE, "..", "transcensus-int")
 

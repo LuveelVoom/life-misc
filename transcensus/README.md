@@ -70,8 +70,9 @@ to ≤ 12 cells within 256 generations, almost nothing settles. B2-a3/S23 settle
 
 ## Tests
 
-`tests/` checks rule parsing and the simulation against casim (a separate simulator, not included here), and `tests/kat.sh` checks known census outputs
-(including byte-identical output to the original for B3/S23). Implementation notes and test details are in
+`tests/kat.sh` checks known census outputs (including byte-identical output to the original for B3/S23).
+`tests/test_rules.py` and `test_engine.py` also check parsing and simulation against casim, a separate simulator
+not included here (`CASIM=/path`); without it they're skipped. Implementation notes and test details are in
 [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## Checks

@@ -10,9 +10,13 @@ With --generated it also builds and checks the fixed-rule (make RULE=...) path f
 import os, random, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
-sys.path.insert(0, os.path.join(ROOT, "..", "..", "casim"))
+sys.path.insert(0, os.environ.get("CASIM", os.path.join(ROOT, "..", "..", "casim")))
 import numpy as np
-import casim as C
+try:
+    import casim as C
+except ImportError:
+    print("casim not found (set CASIM=/path/to/casim-folder); skipped. tests/kat.sh doesn't need it.")
+    sys.exit(0)
 
 rng = random.Random(11)
 shift_ne = np.array([(x >> 6) & 1 for x in range(512)], np.uint8)     # MAP weight 64 = NE

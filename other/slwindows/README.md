@@ -14,7 +14,7 @@ python3 slwindows.py polish x.rle --rule B3/S23-a5 --whole --noise 0.02 --out y.
 `--mode oriented` needs every window, `--mode orbit` one per rotation/reflection
 class. `--sym` forces D4 symmetry, so covering the classes covers every orientation.
 Patterns are stable but not forced to be strict or connected. Each solution is
-checked with casim plus a direct window scan, independent of the CNF.
+checked by simulation (`minirule.py`) plus a direct window scan, independent of the CNF.
 
 Windows that are neither proved possible nor refuted stay legal but aren't targets;
 `classify` lists them as open (raise `--radius`).

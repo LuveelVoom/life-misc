@@ -13,11 +13,12 @@ means optimal for that box only. --feasible just asks whether the box can work.
   python3 intcover.py 10 10 --feasible
 
 Index convention: Golly MAP, NW 256, N 128, NE 64, W 32, C 16, E 8, SW 4, S 2,
-SE 1; x right, y down (same as casim).
+SE 1; x right, y down.
 """
-import argparse, itertools, sys, time
+import argparse, itertools, os, sys, time
 
-CASIM = "/Users/leo/Desktop/Life tools/Vibecoded life tools/casim"
+# Optional independent check with casim (a separate simulator); skipped if it isn't found.
+CASIM = os.environ.get("CASIM", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "casim"))
 OFFS = [(dx, dy) for dy in (-1, 0, 1) for dx in (-1, 0, 1)]   # MSB first
 LETTERS = {0: "", 1: "ce", 2: "cekain", 3: "cekainyqjr", 4: "cekainyqjrtwz",
            5: "cekainyqjr", 6: "cekain", 7: "ce", 8: ""}
@@ -68,7 +69,10 @@ def casim_check(cells):
     """Independent check: Golly letter semantics via casim. For each transition
     T, the rule containing only T leaves something alive iff T occurs."""
     sys.path.insert(0, CASIM)
-    import casim as C
+    try:
+        import casim as C
+    except ImportError:
+        return None, None
     missing = []
     names = [("B", n, l) for n in range(1, 9) for l in (LETTERS[n] or " ")]
     names += [("S", n, l) for n in range(9) for l in (LETTERS[n] or " ")]
@@ -152,8 +156,9 @@ def main():
     if cells:
         seen = covered(cells, cls)
         total, missing = casim_check(cells)
-        print(f"pop {len(cells)}; own check {len(seen)}/102; casim {total - len(missing)}/{total} (B0 free)"
-              + (f" MISSING {missing}" if missing else ""))
+        extra = (f"; casim {total - len(missing)}/{total} (B0 free)" + (f" MISSING {missing}" if missing else "")
+                 if total is not None else " (casim not found, independent check skipped)")
+        print(f"pop {len(cells)}; own check {len(seen)}/102" + extra)
         print(to_rle(cells, a.width, a.height), end="")
 
 

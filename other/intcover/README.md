@@ -10,9 +10,9 @@ python3 intcover.py 12 12 --feasible       # CP-SAT: is this box possible?
 python3 intcover.py 15 15 --hint run.txt --time 300 --out best.rle
 ```
 
-`intcover.py` needs ortools and stubs out pandas, whose anaconda install is broken.
-It checks each solution itself and with casim: for each transition T, the rule
-containing only T must leave a live cell after one step.
+`intcover.py` needs ortools (pandas is stubbed out; ortools imports it without using it).
+It checks each solution itself, and with casim if that's available (`CASIM=/path`): for each
+transition T, the rule containing only T must leave a live cell after one step.
 
 ## Results (2026-10-31, 10 threads/processes)
 

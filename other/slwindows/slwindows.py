@@ -19,26 +19,22 @@ import argparse, json, os, subprocess, sys, tempfile, time
 from pysat.solvers import Cadical153
 from pysat.card import CardEnc, EncType
 
-CASIM = "/Users/leo/Desktop/Life tools/Vibecoded life tools/casim"
 OFFS = [(dx, dy) for dy in (-1, 0, 1) for dx in (-1, 0, 1)]
 HERE = os.path.dirname(os.path.abspath(__file__))
-
-
-def casim():
-    sys.path.insert(0, CASIM)
-    import casim as C
-    return C
+sys.path.insert(0, HERE)
+import minirule as M  # noqa: E402
 
 
 def load_rule(text):
     """Golly-canonical name and the 512 'cell stays as it is' flags."""
-    C = casim()
-    r = C.Rule(text)
-    if r.b0:
-        sys.exit(f"{r.name}: B0 rule, a dead plane is not stable; not supported")
-    if r.kind == "map":
-        sys.exit(f"{r.name}: not isotropic; not supported")
-    return r.name, [int(r.table[i]) == ((i >> 4) & 1) for i in range(512)]
+    try:
+        table = M.parse(text)
+    except M.RuleError as e:
+        sys.exit(f"{e} (MAP rules aren't supported)")
+    name = M.name(table)
+    if M.b0(table):
+        sys.exit(f"{name}: B0 rule, a dead plane is not stable; not supported")
+    return name, [table[i] == ((i >> 4) & 1) for i in range(512)]
 
 
 def windows_file(name):
@@ -122,10 +118,8 @@ def classify(a, stable):
 
 
 def check(cells, rule):
-    """Independent of the CNF: stability by casim, windows by direct scan."""
-    C = casim()
-    p = C.Pattern.from_coords(cells, rule)
-    per = p.period(4)
+    """Independent of the CNF: stability by simulation, windows by direct scan."""
+    per = M.period(cells, M.parse(rule), 4) or {"kind": "no period", "period": "?"}
     live = set(cells)
     seen = {0}
     for x, y in {(x + i, y + j) for x, y in live for i in range(-2, 3) for j in range(-2, 3)}:
@@ -174,7 +168,7 @@ def incremental(a, cnf, cell, groups, z_of, W, H, rule):
             open(a.out, "w").write(to_rle(cells, W, H, rule))
     per, seen = check(cells, rule)
     miss = sum(1 for g in groups.values() if not (set(g) & seen))
-    print(f"DONE pop {len(cells)}, casim {per['kind']} p{per['period']}, missing {miss}, "
+    print(f"DONE pop {len(cells)}, {per['kind']} p{per['period']}, missing {miss}, "
           f"oriented windows {len(seen & set(groups_all(groups)))}/{len(groups_all(groups))}")
     print(to_rle(cells, W, H, rule), end="")
 
@@ -263,7 +257,7 @@ def polish_whole(a, rule, live, W, H, rng):
         pop = len(live)
         per, seen = check(sorted(live), rule)
         miss = sum(1 for g in groups.values() if not (set(g) & seen))
-        print(f"[{time.time() - t0:7.1f}s] pop {pop}; casim {per['kind']} p{per['period']}, missing {miss}", flush=True)
+        print(f"[{time.time() - t0:7.1f}s] pop {pop}; {per['kind']} p{per['period']}, missing {miss}", flush=True)
         if a.out and per["kind"] == "still life" and miss == 0:
             open(a.out, "w").write(to_rle(sorted(live), W, H, rule))
     print(f"END pop {pop}")
@@ -274,8 +268,7 @@ def polish(a):
     equal-population changes so the search can move. Heuristic, one thread."""
     import random
     rng = random.Random(a.seed)
-    C = casim()
-    p = C.parse_rle(open(a.start).read())
+    start, _ = M.parse_rle(open(a.start).read())
     rule, _ = load_rule(a.rule)
     d = json.load(open(windows_file(rule)))
     allowed = sorted(d["realizable"] + d["open"])
@@ -284,8 +277,9 @@ def polish(a):
     for w in d["realizable"]:
         grouped.setdefault(w if a.mode == "oriented" else orb[w], []).append(w)
     groups = list(grouped.values())
-    x0, y0, w, h = p.bbox
-    live = {(int(x) - x0 + a.pad, int(y) - y0 + a.pad) for x, y in p.coords()}
+    x0, y0 = min(x for x, _ in start), min(y for _, y in start)
+    w, h = max(x for x, _ in start) - x0 + 1, max(y for _, y in start) - y0 + 1
+    live = {(x - x0 + a.pad, y - y0 + a.pad) for x, y in start}
     W, H = w + 2 * a.pad, h + 2 * a.pad
     if a.whole:
         return polish_whole(a, rule, live, W, H, rng)
@@ -311,7 +305,7 @@ def polish(a):
                 per, seen = check(sorted(live), rule)
                 miss = sum(1 for g in groups if not (set(g) & seen))
                 print(f"[{time.time() - t0:7.1f}s] pop {best} after {it} patches, {moves} sideways; "
-                      f"casim {per['kind']} p{per['period']}, missing {miss}", flush=True)
+                      f"{per['kind']} p{per['period']}, missing {miss}", flush=True)
                 if a.out and per["kind"] == "still life" and miss == 0:
                     open(a.out, "w").write(to_rle(sorted(live), W, H, rule))
         if it % 500 == 0:
@@ -415,7 +409,7 @@ def find(a):
     per, seen = check(cells, rule)
     miss = sum(1 for g in groups.values() if not (set(g) & seen))
     extra = seen - set(allowed)
-    print(f"SAT in {time.time() - t0:.1f}s: pop {len(cells)}, casim {per['kind']} p{per['period']}, "
+    print(f"SAT in {time.time() - t0:.1f}s: pop {len(cells)}, {per['kind']} p{per['period']}, "
           f"targets missing {miss}, oriented windows {len(seen & set(real))}/{len(real)}, "
           f"windows outside realizable set {len(extra)}")
     rle = to_rle(cells, W, H, rule)
