@@ -1,9 +1,9 @@
 #!/bin/sh
 # Builds JavaLifeSearch_LLS.jar and native/llsbt. Needs a JDK (9 or later), a C++ compiler, and
-# the JLS 1.7 download, which isn't in this repository: JLS_ZIP, by default ../JLS-1.7.zip.
+# the JLS 1.7 download, JLS-1.7.zip (included; JLS_ZIP overrides it).
 set -e
 cd "$(dirname "$0")"
-ZIP="${JLS_ZIP:-../JLS-1.7.zip}"
+ZIP="${JLS_ZIP:-JLS-1.7.zip}"
 [ -f "$ZIP" ] || { echo "JLS download not found at $ZIP: set JLS_ZIP"; exit 1; }
 rm -rf build
 mkdir -p build/jls-orig build/classes

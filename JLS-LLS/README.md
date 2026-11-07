@@ -6,9 +6,8 @@ field you are editing, runs it in Logic Life Search with the rule you type, and 
 Start it with `Run JLS.command`, which builds on first use. Requires a JDK (9+), a C++ compiler,
 `python3`, and kissat or cadical (`lls/solvers/` links to the Homebrew copies).
 
-The JLS 1.7 source has no license text, so it isn't in this repository. The build takes it from
-the JLS download, `JLS-1.7.zip` from the ConwayLife.com JLS thread: put it next to this folder
-or set `JLS_ZIP`.
+The build patches JLS 1.7 from `JLS-1.7.zip`, the download from the ConwayLife.com JLS thread
+(included here; `JLS_ZIP` points it at another copy).
 
 ## The dialog
 

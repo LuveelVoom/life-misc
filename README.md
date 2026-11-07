@@ -7,7 +7,7 @@ Smaller cellular-automaton tools and research. Each folder stands on its own; re
 | [`lightcone/`](lightcone) | Life seen by a moving observer, with information travelling at a finite speed c. Open `life-lightcone.html`. |
 | [`crawler-search/`](crawler-search) | Brute-force crawler search (a pattern crawling along a line of objects) in Life-like and INT rules. `python3 crawler_search.py --help`. |
 | [`transcensus/`](transcensus) | Port of the 2016 `transcensus.c` active-region soup census (`orig/tc.zip`) to Life-like, INT and isotropic MAP rules, with deterministic threads; output identical to the original for B3/S23. |
-| [`JLS-LLS/`](JLS-LLS) | JavaLifeSearch 1.7 with a "Run in LLS (INT rule)" command. Needs `JLS-1.7.zip` next to the folder (not in the repo). |
+| [`JLS-LLS/`](JLS-LLS) | JavaLifeSearch 1.7 with a "Run in LLS (INT rule)" command; `Run JLS.command` builds it on first use (needs a JDK). |
 
 ## `other/`
 
