@@ -16,6 +16,7 @@ One-off research and small tools.
 | Folder | What it is |
 |---|---|
 | [`agar-density/`](other/agar-density) | Computer-assisted work on the conjecture that every oscillating agar has density at most 1/2: LP bounds (≈0.5146 for 3×4 windows), an exclusion theorem with an exact certificate, and strip certificates. Write-up in `writeup/`, scripts in `scripts/`. Not yet independently checked. |
+| [`doublerule/`](other/doublerule) | Writes Double[rule] rule trees (two independent copies of a Life-like or INT rule, as in DoubleB3S23). |
 | [`intcover/`](other/intcover) | Smallest pattern containing all 102 INT transitions (annealer plus CP-SAT). Best so far: 68 cells in 15×15, `results/best.rle`. |
 | [`slwindows/`](other/slwindows) | Small Life still lifes containing every realizable 3×3 window (SAT): 259 oriented windows, 51 classes. |
 | [`smallspaceexploration/`](other/smallspaceexploration) | Explosiveness survey of a 2^16-rule INT space around B3/S23-a4er variants (`rulespace.py` + the `soupclass` C engine). `smallspaceexploration.zip` is an earlier snapshot (23 Oct). |
