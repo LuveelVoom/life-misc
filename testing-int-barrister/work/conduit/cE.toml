@@ -1,0 +1,12 @@
+# B3/S23-a5: conduit search (object must reappear; checked afterwards) for a lone 2bo$2bo$bobo$o2bo$b2o! (region cE; behind is skipped).
+rule = "B3/S23-a5"
+
+first-active-range = [0, 10]
+active-window-range = [0, 60]
+min-stable-interval = 10
+max-active-cells = 8
+stabilise-results = true
+pattern = '''
+x = 15, y = 8, rule = LifeHistory
+6.9B$6.9B$2.A3.9B$2.A3.9B$.A.A2.9B$A2.A2.9B$.2A3.9B$6.9B!
+'''

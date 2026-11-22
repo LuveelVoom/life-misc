@@ -1,0 +1,26 @@
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.A$19.A$17.3A3$13.4E2.2C2.9E$13.4E3.C2.9E$13.19E$13.19E$13.19E$13.19E$13.19E$13.19E$13.19E$13.19E33$
+Completed:
+17$18bo$19bo$17b3o3$19b2o$20bo$19bo$19b2o39$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.A$19.A$17.3A3$13.3E4.2C.C8E$13.5E2.2C.C8E$13.5E7.7E$13.5E.2EC10E$13.19E$13.19E$13.19E$13.19E$13.19E$13.19E33$
+Completed:
+17$18bo$19bo$17b3o3$20b2obo$20b2ob3o$26bo$20b2ob3o$19bo2b2o$19b2o37$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.A$19.A$17.3A3$13.3E3.C3.2C.6E$13.3E2.C.C3.C.6E$13.3E.2EC3.C2.6E$13.6E3.C3.6E$13.11EC7E$13.19E$13.19E$13.19E$13.19E$13.19E33$
+Completed:
+17$18bo$19bo$17b3o3$19bo3b2o$18bobo3bo$17bobo3bo$17bo4bo$16b2o5b3o$25bo37$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.A$19.A$17.3A3$13.2C3.C3.10E$13.C3.C.C2.10E$14.C3.C2E.10E$15.C3.13E$13.C.4C13E$13.2C3.14E$16.C15E$13.19E$13.19E$13.19E33$
+Completed:
+17$18bo$19bo$17b3o3$13b2o3bo$13bo3bobo$14bo3bobo$15bo4bo$13bob5o$13b2o$16b2o$17bo$15bo$15b2o33$
+All solutions:
+x = 0, y = 0, rule = B3/S23
+17$18bo69bo69bo69bo$19bo69bo69bo69bo$17b3o67b3o67b3o67b3o3$19b2o69b2obo65bo3b2o58b2o3bo$20bo69b2ob3o62bobo3bo58bo3bobo$19bo76bo60bobo3bo60bo3bobo$19b2o69b2ob3o61bo4bo62bo4bo$89bo2b2o62b2o5b3o57bob5o$89b2o74bo57b2o$226b2o$227bo$225bo$225b2o39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23
+17$18bo69bo$19bo69bo$17b3o67b3o3$19b2o69b2obo$20bo69b2ob3o$19bo76bo$19b2o69b2ob3o$89bo2b2o$89b2o43$

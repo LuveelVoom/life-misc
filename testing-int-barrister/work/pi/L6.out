@@ -1,0 +1,7 @@
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B36/S23
+All solutions:
+x = 0, y = 0, rule = B36/S23
+Unique perturbations:
+x = 0, y = 0, rule = B36/S23
+done 0 18:22:48

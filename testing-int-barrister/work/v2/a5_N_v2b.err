@@ -1,0 +1,1 @@
+note: unsafe-allow-unrepresented-survival is no longer needed (the still-life solver is generic) and is ignored

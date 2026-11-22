@@ -1,0 +1,14 @@
+# B2i3/S23-c: catalysts for 2bo$b3o$2o2bo! (region: within 6 of the plain reaction up to gen 25,
+# >= 3 cells from the gen-0 pattern; 456 cells). Copies of the target are looked for afterwards (copies.py).
+rule = "B2i3/S23-c"
+first-active-range = [1, 25]
+active-window-range = [0, 60]
+min-stable-interval = 30
+max-active-cells = 6
+stabilise-results = true
+minimise-results = true
+pattern-center = [7, 16]
+pattern = '''
+x = 19, y = 28, rule = LifeHistory
+2.15B$2.15B$19B$19B$19B$19B$19B$19B$19B$19B$19B$19B$19B$19B$7B5.7B$6B7.6B$5B4.A4.5B$5B3.3A3.5B$5B2.2A2.A2.5B$5B9.5B$5B9.5B$19B$19B$19B$18B$17B$.16B$2.14B!
+'''

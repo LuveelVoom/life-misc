@@ -1,0 +1,26 @@
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B36/S23
+INT check: still-life=yes catalyst-region-restored-at-gen-66=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+4$17.15E$17.15E$17.15E$17.15E$10.A6.15E$11.A5.15E$9.3A5.15E$18.E6.E$21.2C$21.2C5.2A$28.A$26.A.A$26.2A4$15.A$14.A.A$15.2A$20.2A$19.A2.A$19.A2.A$20.2A2$16.2A2.2A2.2A$16.A3.2A3.A$14.A.A8.A.A$14.2A10.2A33$
+Completed:
+8$10bo$11bo$9b3o2$21b2o$21b2o5b2o$28bo$26bobo$26b2o4$15bo$14bobo$15b2o$20b2o$19bo2bo$19bo2bo$20b2o2$16b2o2b2o2b2o$16bo3b2o3bo$14bobo8bobo$14b2o10b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-66=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+4$17.15E$17.15E$17.15E$17.15E$10.A6.15E$11.A5.15E$9.3A5.15E$25.E$20.2C$20.2C6.2A$28.A$26.A.A$26.2A4$15.A$14.A.A$15.2A$20.2A$19.A2.A$19.A2.A$20.2A2$16.2A2.2A2.2A$16.A3.2A3.A$14.A.A8.A.A$14.2A10.2A33$
+Completed:
+8$10bo$11bo$9b3o2$20b2o$20b2o6b2o$28bo$26bobo$26b2o4$15bo$14bobo$15b2o$20b2o$19bo2bo$19bo2bo$20b2o2$16b2o2b2o2b2o$16bo3b2o3bo$14bobo8bobo$14b2o10b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-66=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+4$17.15E$17.15E$17.15E$17.15E$10.A6.15E$11.A5.15E$9.3A5.15E$24.CE$20.2C$20.2C6.2A$28.A$26.A.A$26.2A4$15.A$14.A.A$15.2A$20.2A$19.A2.A$19.A2.A$20.2A2$16.2A2.2A2.2A$16.A3.2A3.A$14.A.A8.A.A$14.2A10.2A33$
+Completed:
+8$10bo$11bo$9b3o12b2o$24b2o$20b2o$20b2o6b2o$28bo$26bobo$26b2o4$15bo$14bobo$15b2o$20b2o$19bo2bo$19bo2bo$20b2o2$16b2o2b2o2b2o$16bo3b2o3bo$14bobo8bobo$14b2o10b2o33$
+All solutions:
+x = 0, y = 0, rule = B36/S23
+8$10bo69bo69bo$11bo69bo69bo$9b3o67b3o67b3o12b2o$164b2o$21b2o67b2o68b2o$21b2o5b2o60b2o6b2o60b2o6b2o$28bo69bo69bo$26bobo67bobo67bobo$26b2o68b2o68b2o4$15bo69bo69bo$14bobo67bobo67bobo$15b2o68b2o68b2o$20b2o68b2o68b2o$19bo2bo66bo2bo66bo2bo$19bo2bo66bo2bo66bo2bo$20b2o68b2o68b2o2$16b2o2b2o2b2o60b2o2b2o2b2o60b2o2b2o2b2o$16bo3b2o3bo60bo3b2o3bo60bo3b2o3bo$14bobo8bobo56bobo8bobo56bobo8bobo$14b2o10b2o56b2o10b2o56b2o10b2o39$
+Unique perturbations:
+x = 0, y = 0, rule = B36/S23
+8$10bo$11bo$9b3o2$20b2o$20b2o6b2o$28bo$26bobo$26b2o4$15bo$14bobo$15b2o$20b2o$19bo2bo$19bo2bo$20b2o2$16b2o2b2o2b2o$16bo3b2o3bo$14bobo8bobo$14b2o10b2o39$

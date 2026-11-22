@@ -1,0 +1,14 @@
+note: unsafe-allow-unrepresented-survival is no longer needed (the still-life solver is generic) and is ignored
+Rule: B3/S23-a5
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$23.8E$23.8E$23.2EC5E$23.2E3C$23.2E3.C$23.2E2.2C$23.2E6$29.3A$28.A2.A$28.A2.A33$
+Completed:
+19$25bo$25b3o$28bo$27b2o7$29b3o$28bo2bo$28bo2bo33$
+All solutions:
+x = 0, y = 0, rule = B3/S23-a5
+19$25bo$25b3o$28bo$27b2o7$29b3o$28bo2bo$28bo2bo39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-a5
+19$25bo$25b3o$28bo$27b2o7$29b3o$28bo2bo$28bo2bo39$

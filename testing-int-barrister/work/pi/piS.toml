@@ -1,0 +1,11 @@
+# B36/S23: catalysts for a lone pi (3o$obo$obo, moving north). Region piS.
+rule = "B36/S23"
+first-active-range = [0, 30]
+active-window-range = [0, 30]
+min-stable-interval = 8
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 19, y = 12, rule = LifeHistory
+8.3A$8.A.A$8.A.A$$6B7.6B$19B$19B$19B$19B$19B$19B$19B!
+'''

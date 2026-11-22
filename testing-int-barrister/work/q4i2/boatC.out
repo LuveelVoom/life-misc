@@ -1,0 +1,21 @@
+UNSAFE: survival outside S23 counts is ignored by the still-life solver; still lifes using it cannot be found
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B3/S23-q4i
+INT check: still-life=yes catalyst-region-restored-at-gen-39=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A11.3A$15.A.A5.C7.A$15.A6.C.C$14.2A7.2C$19.E7.E$19.9E$19.9E33$
+Completed:
+17$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o11b3o$15bobo5bo7bo$15bo6bobo$14b2o7b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-39=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A11.3A$15.A.A5.C7.A$15.A6.C.C$14.2A7.2C$20.C6.E$19.C.C4.2E$19.ECE3.3E33$
+Completed:
+17$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o11b3o$15bobo5bo7bo$15bo6bobo$14b2o7b2o$20bo$19bobo$20bo33$
+All solutions:
+x = 0, y = 0, rule = B3/S23-q4i
+17$15bo69bo$16bo69bo$14b3o67b3o2$20b2o6bo61b2o6bo$20b2o5bobo60b2o5bobo$27bobo67bobo$28bo69bo$16b2o11b3o54b2o11b3o$15bobo5bo7bo53bobo5bo7bo$15bo6bobo60bo6bobo$14b2o7b2o59b2o7b2o$90bo$89bobo$90bo39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-q4i
+17$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o11b3o$15bobo5bo7bo$15bo6bobo$14b2o7b2o42$

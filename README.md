@@ -6,6 +6,8 @@ Smaller cellular-automaton tools and research. Each folder stands on its own; re
 |---|---|
 | [`crawler-search/`](crawler-search) | Brute-force crawler search (a pattern crawling along a line of objects) in Life-like and INT rules. `python3 crawler_search.py --help`. |
 | [`transcensus/`](transcensus) | Port of the 2016 `transcensus.c` active-region soup census (`orig/tc.zip`) to Life-like, INT and isotropic MAP rules, with deterministic threads; output identical to the original for B3/S23. |
+| [`testing-int-barrister/`](testing-int-barrister) | Barrister ported to INT and MAP rules (`barrister-int2/`), with B3/S23-a5, -q4i and B36/S23 catalyst searches in `work/`. |
+| [`selfforce/`](selfforce) | Self-forcing patches and Gardens of Eden in Life-like, INT and MAP rules (SAT): forcing agars, a CEGAR search for self-forcing still lifes, and a GoE finder that flips one cell of a forcing agar. Found a 20×22 GoE in B3/S23-a5; no self-forcing still life yet. |
 | [`JLS-LLS/`](JLS-LLS) | JavaLifeSearch 1.7 with a "Run in LLS (INT rule)" command; `Run JLS.command` builds it on first use (needs a JDK). |
 
 ## `other/`

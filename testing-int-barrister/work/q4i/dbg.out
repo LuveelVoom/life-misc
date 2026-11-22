@@ -1,0 +1,64 @@
+UNSAFE: survival outside S23 counts is ignored by the still-life solver; still lifes using it cannot be found
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B3/S23-q4i
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$22.10E$16.2C2.12E$16.C3.12E$17.C8.6E$5.A.2A7.2C8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completed:
+13$19bo$18bo$18b3o4$16b2o$16bo$17bo$5bob2o7b2o$5b2obo3b2o6b2obo$12b2o7b3o$19bo$19b3o$22bo$10b2o9b2o$11bo$8b3o$8bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.2C3.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$22.10E$16.2C2.12E$16.C3.12E$17.C8.6E$5.A.2A7.2C8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completed:
+12$14b2o$14b2o3bo$18bo$18b3o4$16b2o$16bo$17bo$5bob2o7b2o$5b2obo3b2o6b2obo$12b2o7b3o$19bo$19b3o$22bo$10b2o9b2o$11bo$8b3o$8bo33$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$17.2C3.10E$17.C3.11E$18.C13E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$14.EC2.A4.9E$14.E3.3A2.9E$14.EC7.9E$14.EC7.9E$14.EC.2C3.10E$14.2E.C3.11E$14.2E.15E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.2C3.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$17.2C3.10E$17.C3.11E$18.C13E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$21.C10E$16.2C2.12E$16.C3.12E$17.C8.6E$5.A.2A7.2C8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completed:
+13$19bo$18bo$18b3o3$21b2o$16b2o3b2o$16bo$17bo$5bob2o7b2o$5b2obo3b2o6b2obo$12b2o7b3o$19bo$19b3o$22bo$10b2o9b2o$11bo$8b3o$8bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.2C3.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$21.C10E$16.2C2.12E$16.C3.12E$17.C8.6E$5.A.2A7.2C8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completed:
+12$14b2o$14b2o3bo$18bo$18b3o3$21b2o$16b2o3b2o$16bo$17bo$5bob2o7b2o$5b2obo3b2o6b2obo$12b2o7b3o$19bo$19b3o$22bo$10b2o9b2o$11bo$8b3o$8bo33$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$17.2C2.C10E$17.C3.11E$18.C13E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.E4.A3.9E$14.EC2.A4.9E$14.E3.3A2.9E$14.EC7.9E$14.EC7.9E$14.EC.2C2.C10E$14.2E.C3.11E$14.2E.15E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+5$14.18E$14.18E$14.18E$14.18E$14.18E$14.18E$14.3E5.10E$14.2E6.10E$14.2C3.A3.9E$18.A4.9E$18.3A2.9E$23.9E$23.9E$17.2C2.C10E$17.C3.11E$18.C13E$16.2E8.6E$5.A.2A7.2E8.6E$5.2A.A3.2A6.2A.A$12.2A7.3A$19.A$19.3A$22.A$10.2A9.2A$11.A$8.3A$8.A33$
+Completion Failed: Inconsistent
+64$
+All solutions:
+x = 0, y = 0, rule = B3/S23-q4i
+12$84b2o348b2o$19bo64b2o3bo69bo69bo64b2o3bo69bo64b2o3bo69bo$18bo69bo69bo66bo2bo69bo69bo69bo69bo$18b3o67b3o67b3o67b3o67b3o67b3o67b3o67b3o$225bo$225bo$157b2o66bob2o68b2o72b2o68b2o64b2o2bo$16b2o68b2o69bo69bo69bo68b2o3b2o63b2o3b2o64bo$16bo69bo71bo139bo67bo69bo71bo$17bo69bo279bo69bo$5bob2o7b2o57bob2o7b2o57bob2o66bob2o66bob2o66bob2o7b2o57bob2o7b2o57bob2o$5b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo51b2obo3b2o6b2obo$12b2o7b3o58b2o7b3o58b2o7b3o58b2o7b3o58b2o7b3o58b2o7b3o58b2o7b3o58b2o7b3o$19bo69bo69bo69bo69bo69bo69bo69bo$19b3o67b3o67b3o67b3o67b3o67b3o67b3o67b3o$22bo69bo69bo69bo69bo69bo69bo69bo$10b2o9b2o57b2o9b2o57b2o9b2o57b2o9b2o57b2o9b2o57b2o9b2o57b2o9b2o57b2o9b2o$11bo69bo69bo69bo69bo69bo69bo69bo$8b3o67b3o67b3o67b3o67b3o67b3o67b3o67b3o$8bo69bo69bo69bo69bo69bo69bo69bo39$
+13$19bo64b2o3bo$15bo2bo69bo$18b3o67b3o$15bo$15bo$15bob2o2bo65b2o2bo$17bo69bo$88bo2$5bob2o66bob2o$5b2obo3b2o6b2obo51b2obo3b2o6b2obo$12b2o7b3o58b2o7b3o$19bo69bo$19b3o67b3o$22bo69bo$10b2o9b2o57b2o9b2o$11bo69bo$8b3o67b3o$8bo69bo39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-q4i
+13$19bo69bo$18bo69bo$18b3o67b3o3$17b2o$17bo68b2o$18bo67bo$87bo$5bob2o66bob2o7b2o$5b2obo3b2o6b2obo51b2obo3b2o6b2obo$12b2o7b3o58b2o7b3o$19bo69bo$19b3o67b3o$22bo69bo$10b2o9b2o57b2o9b2o$11bo69bo$8b3o67b3o$8bo69bo39$

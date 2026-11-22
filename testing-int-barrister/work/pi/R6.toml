@@ -1,0 +1,13 @@
+# B36/S23 pi catalyst search, eater removed (crude INT port of Barrister)
+# A = glider + still lifes. B = catalyst region, side R: >= 3 cells from the glider lane
+# (lane x-y in [-2,1]; west x-y <= -7, east x-y >= 6), >= 3 cells from existing stills.
+rule = "B36/S23"
+first-active-range = [20, 70]
+active-window-range = [0, 30]
+min-stable-interval = 8
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 24, y = 28, rule = LifeHistory
+4.20B$4.20B$4.20B$4.20B$4.20B$4.20B$4.20B$5.19B$.A4.18B$2.A4.17B$3A5.16B$9.15B$10.14B$11.13B$12.12B$13.11B$2.A11.10B$.A.A11.9B$2.2A12.8B$7.2A8.7B$6.A2.A8.6B$6.A2.A9.5B$7.2A$$3.2A2.2A2.2A$3.A3.2A3.A$.A.A8.A.A$.2A10.2A!
+'''

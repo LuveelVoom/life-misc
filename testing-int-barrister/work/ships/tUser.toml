@@ -1,0 +1,14 @@
+# B3/S23-a5: catalysts for the c/4 ship bo$2o$bo! in the user's region. Pure eaters are removed afterwards
+# (../pipeline/realcats.py --min-leftover 1).
+rule = "B3/S23-a5"
+
+first-active-range = [0, 50]
+active-window-range = [0, 60]
+min-stable-interval = 30
+max-active-cells = 8
+stabilise-results = true
+minimise-results = true
+pattern = '''
+x = 16, y = 9, rule = LifeHistory
+3.13B$3.13B$3.13B$3.13B$3.13B$5.11B$.A3.11B$2A$.A!
+'''

@@ -1,0 +1,14 @@
+# B3/S23-q4i: catalyst for the left-going debris (blinker) of the glider reaction.
+# A = pattern as given. B = region: off the glider lane, >= 3 cells from existing still lifes.
+# First interaction must be after the glider hits (gen 4), so incoming gliders pass untouched.
+rule = "B3/S23-q4i"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [4, 80]
+active-window-range = [0, 40]
+min-stable-interval = 10
+max-active-cells = 12
+stabilise-results = true
+pattern = '''
+x = 34, y = 26, rule = LifeHistory
+4.14B6.3B$B4.13B6.3B$2B4.12B2.2A4.B$3B4.11B2.A5.B$4B4.9B4.3A2.B$5B4.8B6.A2.B$6B4.7B2.3A4.B$7B4.6B2.A.2A$8B4.5B$9B4.4B8.A$10B4.8B2.A.A$11B4.7B3.2A$12B4.6B$13B4.6B$14B4.9B$15B3.A8B$16B3.A6.B$17B3A6.B$18B4.2A2.B3.A$20B2.2A2.B2.A.A$16B10.B2.A.A$30.A$18.2A11.3A$17.A.A5.A7.A$17.A6.A.A$16.2A7.2A!
+'''

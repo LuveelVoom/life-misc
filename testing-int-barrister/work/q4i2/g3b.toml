@@ -1,0 +1,12 @@
+# B3/S23-q4i: catalyst for the glider + block reaction; post-check (common.py) wants the E block and all stills restored.
+rule = "B3/S23-q4i"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [8, 70]
+active-window-range = [0, 40]
+min-stable-interval = 10
+max-active-cells = 8
+stabilise-results = true
+pattern = '''
+x = 18, y = 17, rule = LifeHistory
+5.9B$.A4.8B$2.A4.7B$3A7.2B$10.B$6.2A2.B3.A$6.2A2.B2.A.A$10.B2.A.A$10.B3.A$2.2A2.5B4.3A$.A.A2.3BC2B5.A$.A4.2BCBC2B$2A4.3B2C3B$5.9B$5.9B$5.9B$5.9B!
+'''

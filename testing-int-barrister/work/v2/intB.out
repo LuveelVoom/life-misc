@@ -1,0 +1,13 @@
+Rule: B2i3/S23-c
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+23$21.2C.C2.C$19.C2.C.4C$19.2C7.4E$23.3C2.4E$23.C2.C.4E$25.2C.4E$9.A7.A10.4E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A30$
+Completed:
+23$21b2obo2bo$19bo2bob4o$19b2o$23b3o$23bo2bo$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o30$
+All solutions:
+x = 0, y = 0, rule = B2i3/S23-c
+23$21b2obo2bo$19bo2bob4o$19b2o$23b3o$23bo2bo$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o36$
+Unique perturbations:
+x = 0, y = 0, rule = B2i3/S23-c
+23$21b2obo2bo$19bo2bob4o$19b2o$23b3o$23bo2bo$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o36$

@@ -1,0 +1,13 @@
+piE.snap2 valid 103 distinct reactions 36 {'cat not restored @300': 588, 'cat unstable': 54}
+  x6    interacting cells  4, debris pop   6, smallest cat pop 4 : x = 2, y = 2, rule = B36/S232o$2o!
+  x5    interacting cells  5, debris pop   6, smallest cat pop 8 : x = 3, y = 7, rule = B36/S232o$2o3$bo$obo$bo!
+  x6    interacting cells  5, debris pop   6, smallest cat pop 8 : x = 3, y = 7, rule = B36/S23bo$obo$bo3$2o$2o!
+  x6    interacting cells  5, debris pop   6, smallest cat pop 8 : x = 3, y = 7, rule = B36/S23bo$obo$bo3$b2o$b2o!
+  x2    interacting cells  5, debris pop   6, smallest cat pop 8 : x = 3, y = 7, rule = B36/S23b2o$b2o3$bo$obo$bo!
+  x2    interacting cells  5, debris pop   6, smallest cat pop 5 : x = 3, y = 3, rule = B36/S23bo$obo$2o!
+  x5    interacting cells  6, debris pop   6, smallest cat pop 12 : x = 3, y = 12, rule = B36/S23bo$obo$bo3$2o$2o3$bo$obo$bo!
+  x5    interacting cells  6, debris pop   6, smallest cat pop 12 : x = 4, y = 12, rule = B36/S23bo$obo$bo3$b2o$b2o3$2bo$bobo$2bo!
+  x2    interacting cells  6, debris pop   6, smallest cat pop 12 : x = 4, y = 12, rule = B36/S232bo$bobo$2bo3$b2o$b2o3$bo$obo$bo!
+  x2    interacting cells  6, debris pop   6, smallest cat pop 12 : x = 3, y = 12, rule = B36/S23bo$obo$bo3$b2o$b2o3$bo$obo$bo!
+  x6    interacting cells  7, debris pop   6, smallest cat pop 11 : x = 5, y = 9, rule = B36/S232b2o$3bo$3o$o4$3b2o$3b2o!
+  x5    interacting cells  8, debris pop   6, smallest cat pop 15 : x = 6, y = 14, rule = B36/S232b2o$3bo$3o$o4$3b2o$3b2o3$4bo$3bobo$4bo!

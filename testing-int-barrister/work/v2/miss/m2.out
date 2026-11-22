@@ -1,0 +1,38 @@
+note: unsafe-allow-unrepresented-survival is no longer needed (the still-life solver is generic) and is ignored
+Rule: B3/S23-a5
+INT check: still-life=yes catalyst-region-restored-at-gen-25=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$10.5EC2.C.2C3.2C.4E$10.5E4C.C.C2.C.5E$10.5E8.C.C.5E$10.5E5C4.C7E$10.5EC3.C6.6E$10.2E2C.C2.C7.2EC3E$10.3EC.C.C9.CEC2E$10.3EC2.C10.C2ECE$10.2E2C14.C.CE$10.2E.2E13.EC2E3$20.3A$19.A2.A$19.A2.A33$
+Completed:
+17$15bo2bob2o3b2o$15b4obobo2bo$23bobo$15b5o4bo$15bo3bo$12b2obo2bo9bo$13bobobo9bobo$13bo2bo10bo2bo$12b2o14bobo$29bo3$20b3o$19bo2bo$19bo2bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-25=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$10.5EC2.C.2C3.2C.4E$10.5E4C.C.C2.C.5E$10.5E8.C.C.5E$10.5E5C4.C.6E$10.5EC3.C5.C6E$10.2E2C.C2.C7.2EC3E$10.3EC.C.C9.CEC2E$10.3EC2.C10.C2ECE$10.2E2C14.C.CE$10.2E.2E13.EC2E3$20.3A$19.A2.A$19.A2.A33$
+Completed:
+17$15bo2bob2o3b2o$15b4obobo2bo$23bobo$15b5o4bo$15bo3bo5b3o$12b2obo2bo9bo$13bobobo9bobo$13bo2bo10bo2bo$12b2o14bobo$29bo3$20b3o$19bo2bo$19bo2bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-18=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$10.5EC2.C.2C.E.2C.4E$10.5E4CEC.CE.C.5E$10.5E4.4ECEC6E$10.5E5C4EC7E$10.5EC2.EC12E$10.2E2CEC2EC9EC3E$10.3ECECECE.4C.CECEC2E$10.3EC2EC5.C.C.EC2ECE$10.2E2C2E10.2ECECE$10.6E10.3EC2E3$20.3A$19.A2.A$19.A2.A33$
+Completed:
+17$15bo2bob2o3b2o$15b4obobo2bo$23bobobo$11b2o2b8obobobo$11bo3bo3bo3b5o$12b5obobob2obob4o$13bob4ob4ob3obobo$12b2o2bo5bobo2b2obo$10b5o11bob4o$10bobo14bobobo3$20b3o$19bo2bo$19bo2bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-18=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$10.5EC2.C.2C.E.2C.4E$10.5E4CEC.CE.C.5E$10.5E4.4ECEC6E$10.5E5C4EC7E$10.5EC2.EC12E$10.2E2CEC2EC9EC3E$10.3ECECECE.4C.CECEC2E$10.3EC2EC5.C.C.EC2ECE$10.2E2C2EC9.2ECECE$10.6E10.3EC2E3$20.3A$19.A2.A$19.A2.A33$
+Completed:
+17$15bo2bob2o3b2o$15b4obobo2bo$23bobobo$15b8obobobo$11bob3o3bo3b5o$10bob2ob2obobob2obob4o$10bob2ob4ob4ob3obobo$11bob2obo5bobo2b2obo$12b2ob2o9bob4o$27bobobo3$20b3o$19bo2bo$19bo2bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-18=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$10.5EC2.C.2C.E.2C.4E$10.5E4C.C.CE.C.5E$10.5E4.C3ECEC6E$10.5E5C4EC7E$10.5EC2.2C12E$10.2E2CEC2.C2.2C2.3EC3E$10.3EC.3C2.5C.ECEC2E$10.3ECE2C5.C.C.EC2ECE$10.2E2CE.C9.2ECECE$10.6E10.3EC2E3$20.3A$19.A2.A$19.A2.A33$
+Completed:
+17$15bo2bob2o3b2obo$15b4obobo2bob2o$19bo3bobo$15b8obob3o$15bo2b2obo2bo2bo$12b2obo2bo2b2o2b2obo$11bobob3o2b5o2bobo$12b5o5bobo2bo2bo$10bob2o2bo11bobo$10b2obo15bo3$20b3o$19bo2bo$19bo2bo33$
+All solutions:
+x = 0, y = 0, rule = B3/S23-a5
+17$15bo2bob2o3b2o58bo2bob2o3b2o58bo2bob2o3b2o58bo2bob2o3b2o58bo2bob2o3b2obo$15b4obobo2bo59b4obobo2bo59b4obobo2bo59b4obobo2bo59b4obobo2bob2o$23bobo67bobo67bobobo65bobobo61bo3bobo$15b5o4bo60b5o4bo56b2o2b8obobobo56b8obobobo56b8obob3o$15bo3bo65bo3bo5b3o53bo3bo3bo3b5o53bob3o3bo3b5o57bo2b2obo2bo2bo$12b2obo2bo9bo53b2obo2bo9bo53b5obobob2obob4o49bob2ob2obobob2obob4o51b2obo2bo2b2o2b2obo$13bobobo9bobo53bobobo9bobo53bob4ob4ob3obobo48bob2ob4ob4ob3obobo49bobob3o2b5o2bobo$13bo2bo10bo2bo52bo2bo10bo2bo51b2o2bo5bobo2b2obo50bob2obo5bobo2b2obo51b5o5bobo2bo2bo$12b2o14bobo51b2o14bobo49b5o11bob4o50b2ob2o9bob4o48bob2o2bo11bobo$29bo69bo50bobo14bobobo65bobobo48b2obo15bo3$20b3o67b3o67b3o67b3o67b3o$19bo2bo66bo2bo66bo2bo66bo2bo66bo2bo$19bo2bo66bo2bo66bo2bo66bo2bo66bo2bo39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-a5
+17$15bo2bob2o3b2o58bo2bob2o3b2o$15b4obobo2bo59b4obobo2bo$23bobobo65bobo$11b2o2b8obobobo56b5o4bo$11bo3bo3bo3b5o57bo3bo$12b5obobob2obob4o51b2obo2bo9bo$13bob4ob4ob3obobo51bobobo9bobo$12b2o2bo5bobo2b2obo52bo2bo10bo2bo$10b5o11bob4o50b2o14bobo$10bobo14bobobo67bo3$20b3o67b3o$19bo2bo66bo2bo$19bo2bo66bo2bo39$

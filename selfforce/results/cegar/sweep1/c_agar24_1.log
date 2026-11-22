@@ -1,0 +1,12 @@
+box 24x24 wrap=False |D|=484 free=380 fixed=196
+it 1: last diff cluster 1 cells, block 20 lits, avg block 20.0, clauses 144, 0s
+it 2: last diff cluster 1 cells, block 20 lits, avg block 20.0, clauses 288, 4s
+it 3: last diff cluster 1 cells, block 20 lits, avg block 20.0, clauses 432, 4s
+it 4: last diff cluster 1 cells, block 20 lits, avg block 20.0, clauses 576, 5s
+it 200: last diff cluster 2 cells, block 25 lits, avg block 20.6, clauses 18298, 135s
+it 400: last diff cluster 1 cells, block 19 lits, avg block 21.4, clauses 37479, 276s
+it 600: last diff cluster 1 cells, block 25 lits, avg block 21.8, clauses 56501, 411s
+it 800: last diff cluster 1 cells, block 20 lits, avg block 22.2, clauses 72986, 561s
+it 1000: last diff cluster 2 cells, block 20 lits, avg block 22.4, clauses 89618, 722s
+it 1200: last diff cluster 2 cells, block 20 lits, avg block 22.3, clauses 105550, 868s
+it 1400: last diff cluster 1 cells, block 25 lits, avg block 22.9, clauses 121138, 1039s

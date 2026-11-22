@@ -1,0 +1,20 @@
+s12.out: catalyst 9 cells (still=True), first contact gen 10; copy at gen 238, offset (-24,12) orient 6, catalyst intact then=False, at 400=False
+    2bo$b3o$2o2bo2$4b2o5b2o$4b2o5b2o$4b2o2$8bo$7bobo$8b2o!
+s30.out: catalyst 23 cells (still=True), first contact gen 29; copy at gen 189, offset (-7,1) orient 7, catalyst intact then=False, at 400=False
+    2o5b2o$o7bo$b3ob3o$3bobo13$14b2o$14b2o2$4bo$3b3o$2b2o2bo2$6b2o$6b2o$6b2o4$5bo$4bobo$4b2o!
+s30.out: catalyst 18 cells (still=True), first contact gen 29; copy at gen 178, offset (-7,12) orient 6, catalyst intact then=False, at 400=False
+    6b2o5b2o$6bo7bo$7b3ob3o$9bobo16$10bo$9b3o$bo6b2o2bo$obo$bo10b2o$12b2o$12b2o!
+s30.out: catalyst 23 cells (still=True), first contact gen 29; copy at gen 222, offset (-9,3) orient 3, catalyst intact then=False, at 400=False
+    6b2o5b2o$6bo7bo$7b3ob3o$9bobo16$10bo$9b3o$bo6b2o2bo$obo$bo10b2o$12b2o$12b2o4$11bo$10bobo$10b2o!
+s30.out: catalyst 27 cells (still=True), first contact gen 29; copy at gen 154, offset (-2,7) orient 6, catalyst intact then=False, at 400=False
+    6b2o5b2o$6bo7bo$7b3ob3o$9bobo13$20b2o$20b2o2$10bo$9b3o$bo6b2o2bo$obo$bo10b2o$12b2o$12b2o4$11bo$10bobo$10b2o!
+s30.out: catalyst 18 cells (still=True), first contact gen 29; copy at gen 132, offset (-9,4) orient 7, catalyst intact then=False, at 400=False
+    5b2o5b2o$5bo7bo$6b3ob3o$8bobo16$9bo$8b3o$2o5b2o2bo$2o$11b2o$11b2o$11b2o!
+s30.out: catalyst 31 cells (still=True), first contact gen 29; copy at gen 218, offset (-8,-8) orient 5, catalyst intact then=False, at 400=False
+    7b2o5b2o$7bo7bo$8b3ob3o$10bobo13$2o19b2o$2o19b2o2$11bo$10b3o$2b2o5b2o2bo$2b2o$13b2o$13b2o$13b2o4$12bo$11bobo$11b2o!
+s30.out: catalyst 26 cells (still=True), first contact gen 29; copy at gen 115, offset (10,7) orient 7, catalyst intact then=False, at 400=False
+    5b2o5b2o$5bo7bo$6b3ob3o$8bobo16$9bo$8b3o$2o5b2o2bo$2o$11b2o$11b2o$3b2o6b2o$3b2o5$12b2o$12b2o!
+s30.out: catalyst 31 cells (still=True), first contact gen 29; copy at gen 252, offset (10,-22) orient 1, catalyst intact then=False, at 400=False
+    5b2o5b2o$5bo7bo$6b3ob3o$8bobo13$19b2o$19b2o2$9bo$8b3o$2o5b2o2bo$2o$11b2o$11b2o$3b2o6b2o$3b2o3$10bo$9bobo$9b2o!
+s30.out: catalyst 30 cells (still=True), first contact gen 29; copy at gen 115, offset (10,7) orient 7, catalyst intact then=False, at 400=False
+    7b2o5b2o$7bo7bo$8b3ob3o$10bobo13$2o$2o2$11bo$10b3o$2b2o5b2o2bo$2b2o$13b2o$13b2o$5b2o6b2o$5b2o5$14b2o$14b2o!

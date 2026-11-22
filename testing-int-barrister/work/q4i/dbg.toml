@@ -1,0 +1,13 @@
+# B3/S23-q4i: catalyst on the right; post-check wants the left block restored and no block on D (11-12,9-10).
+# A = glider + all still lifes as drawn (D cells empty). B = catalyst region, >= 3 cells from stills and the glider's start.
+rule = "B3/S23-q4i"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [0, 60]
+active-window-range = [0, 30]
+min-stable-interval = 10
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 27, y = 27, rule = LifeHistory
+9.18B$9.18B$9.18B$9.18B$9.18B$9.18B$9.3B5.10B$9.2B6.10B$9.2B3.A3.9B$9.2B2.A4.9B$9.2B2.3A2.9B$9.2B7.9B$9.2B7.9B$9.18B$9.18B$9.18B$11.2B8.6B$A.2A7.2B8.6B$2A.A3.2A6.2A.A$7.2A7.3A$14.A$14.3A$17.A$5.2A9.2A$6.A$3.3A$3.A!
+'''

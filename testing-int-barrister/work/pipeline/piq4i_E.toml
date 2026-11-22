@@ -1,0 +1,12 @@
+# B3/S23-q4i: catalysts for a lone 3o$obo$obo! (region piq4i_E; behind is skipped).
+rule = "B3/S23-q4i"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [0, 30]
+active-window-range = [0, 30]
+min-stable-interval = 10
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 14, y = 19, rule = LifeHistory
+4.10B$4.10B$4.10B$4.10B$4.10B$4.10B$4.10B$4.10B$5.9B$5.9B$3A2.9B$A.A2.9B$A.A2.9B$5.9B$5.9B$4.10B$4.10B$4.10B$4.10B!
+'''

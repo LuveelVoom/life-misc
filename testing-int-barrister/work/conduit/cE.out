@@ -1,0 +1,20 @@
+Rule: B3/S23-a5
+INT check: still-life=yes catalyst-region-restored-at-gen-22=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+24$28.2C.E$26.C2.C2E$19.A5.C.2C3E$19.A4.C2.C.3E$18.A.A3.2C2.C3E$17.A2.A4.C.2C3E$18.2A5.C.5E$23.9E33$
+Completed:
+24$28b2o$26bo2bo$19bo5bob2o$19bo4bo2bo$18bobo3b2o2bo$17bo2bo4bob2o$18b2o5bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-22=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+24$23.9E$25.C.5E$19.A5.C.2C3E$19.A4.2C2.C3E$18.A.A3.C2.C.3E$17.A2.A4.C.2C3E$18.2A6.C2.C2E$28.2C.E33$
+Completed:
+24$24b2o$25bo$19bo5bob2o$19bo4b2o2bo$18bobo3bo2bo$17bo2bo4bob2o$18b2o6bo2bo$28b2o33$
+All solutions:
+x = 0, y = 0, rule = B3/S23-a5
+24$28b2o64b2o$26bo2bo65bo$19bo5bob2o60bo5bob2o$19bo4bo2bo61bo4b2o2bo$18bobo3b2o2bo59bobo3bo2bo$17bo2bo4bob2o58bo2bo4bob2o$18b2o5bo62b2o6bo2bo$24b2o72b2o39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-a5
+24$28b2o$26bo2bo$19bo5bob2o$19bo4bo2bo$18bobo3b2o2bo$17bo2bo4bob2o$18b2o5bo$24b2o39$
+done 0 22:29:49

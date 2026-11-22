@@ -1,0 +1,6 @@
+B3/S23-a5: 69 completions, 67 distinct catalysts, 67 pass, 5 main reactions; rejected {}; symmetries used 1
+1: catalyst 8 cells, first hit gen 6, leftover 4 cells, 12 variant(s)
+2: catalyst 13 cells, first hit gen 6, leftover 4 cells, 10 variant(s)
+3: catalyst 11 cells, first hit gen 6, leftover 7 cells, 43 variant(s)
+4: catalyst 18 cells, first hit gen 5, leftover 7 cells, 1 variant(s)
+5: catalyst 18 cells, first hit gen 5, leftover 7 cells, 1 variant(s)

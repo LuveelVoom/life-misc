@@ -1,0 +1,8 @@
+#C B3/S23-a5: 69 completions, 67 distinct catalysts, 67 pass, 5 main reactions; rejected {}; symmetries used 1
+#C one entry per main reaction (same hit gen and leftover, first 8 gens within 6 cells) (smallest catalyst), sorted by leftover then catalyst size; 3 per row, spacing 27x26, row-major; entries 1-5 (details in conduitobj_reactions.txt)
+x = 61, y = 34, rule = B3/S23-a5
+2bo26bo24b2o$2bo26bo24bo4b2o$bobo24bobo24b3o2bo$o2bo23bo2bo26b2o$b2o
+25b2o2$57bo$2b2o25b2o26bo$bo2bo25bo25bobo$2bo2bo22bobobo22bo2bo$3b2o
+23b2o2b3o21b2o$32bobo15$7b2o29b2o$8bo27bo2bo$2bo5bob2o17bo5bob2o$2bo4b
+2o2bo17bo4bo2bo$bobo3bo2bo17bobo3b2o2bo$o2bo4bob2o15bo2bo4bob2o$b2o6bo
+2bo15b2o5bo$11b2o21b2o!

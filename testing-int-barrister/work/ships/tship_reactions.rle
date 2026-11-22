@@ -1,0 +1,17 @@
+#C B3/S23-a5: 214 completions, 214 distinct catalysts, 214 pass, 13 main reactions; rejected {}; symmetries used 2
+#C one entry per main reaction (same hit gen and leftover, first 8 gens within 6 cells) (smallest catalyst), sorted by leftover then catalyst size; 4 per row, spacing 35x29, row-major; entries 1-13 (details in tship_reactions.txt)
+x = 126, y = 102, rule = B3/S23-a5
+bo34bo34bo15b2o34b2o$2o33b2o33b2o16bo32bo2bo$bo34bo34bo13b3o33b3o$15b
+2o33b2o33bo20bo$15bobo31bo2bo33b2o17b2o14b3o$17bo32b2obo33bo18bo15bo$
+17b2o34bo31bo36b2o$53b2o30b2o22$16b2o18bo16b2o31b2o35b2o$bo14bo18b2o
+17bo28bobo2bo29b2obo2bo$2o13b3o18bo14b3o29b3ob2o30b4o$bo49bo33bo32b2o$
+15b3o34b2o32b2obo32b3o$15bo2bo34bo17bo16b2o32bo2bo$17b2o32bo18b2o16b3o
+15bo17b2o$51b2o18bo14b2obo15b2o$85bobob2o15bo$86bo$119b2o$119bobo$117b
+obobo$117b2o2b3o$121bobo15$10b2ob2obo37bo25b2ob2obo30bobo$11b2o2b2o36b
+obo25b2o2b2o28b3ob3o$10b2obo22bo17b2o24b2obo32b5o$14b3o18b2o16b2o29b5o
+27bo2bo2bo$17bo18bo13b2o2b2o31bobo31b2o$bo14b2o32bob3o16bo14b2obo$2o
+49b3obo14b2o17b2o15bo14b4o$bo14b4o26b2o5bobo15bo14b2o17b2o15bo2bo$15bo
+2bo25b3obo5bo30bo2b3o15bo14b2o2bo$14bob2obo23bo4b3o33bob2o2bo32b2o$13b
+obo2bo24b2o3bobo32bobo2bo32b2o$14bo2bo66bo2bo28bo2bo2bo$15b2o68b2o29b
+5o$115b3ob3o$117bobo15$11bobo$9b3ob3o$10b5o$10bo2bo2bo$15b2o$17b2o$bo
+13b2o2bo$2o14bo2bo$bo13b4o2$15b2o$10bo2bo2bo$10b5o$9b3ob3o$11bobo!

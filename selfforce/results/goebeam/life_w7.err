@@ -1,0 +1,5 @@
+h=1 beam=128 best=44100 worst=261760
+h=2 beam=3000 best=23582 worst=37509
+h=3 beam=3000 best=14631 worst=18879
+h=4 beam=3000 best=9526 worst=12105
+h=5 beam=3000 best=6299 worst=8384

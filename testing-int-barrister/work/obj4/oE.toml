@@ -1,0 +1,12 @@
+# B3/S23-a5: catalysts for a lone 2bo$bobo$2ob2o$2bo! (region oE; behind is skipped).
+rule = "B3/S23-a5"
+
+first-active-range = [0, 40]
+active-window-range = [0, 40]
+min-stable-interval = 10
+max-active-cells = 8
+stabilise-results = true
+pattern = '''
+x = 19, y = 19, rule = LifeHistory
+7.12B$7.12B$7.12B$7.12B$7.12B$7.12B$2.A4.12B$.A.A3.12B$2A.2A2.12B$2.A4.12B$7.12B$7.12B$7.12B$7.12B$7.12B$7.12B$7.12B$7.12B$7.12B!
+'''

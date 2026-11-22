@@ -1,0 +1,24 @@
+# B3/S23-q4i: glider + block, catalyst must restore the block. Region: within 6 of the
+# plain reaction, >= 3 from everything ON before gen 16, >= 3 from the glider's lane. 641 cells.
+rule = "B3/S23-q4i"
+first-active-range = [16, 90]
+active-window-range = [0, 60]
+min-stable-interval = 14
+max-active-cells = 8
+stabilise-results = true
+minimise-results = true
+pattern-center = [17, 22]
+pattern = '''
+x = 30, y = 34, rule = LifeHistory
+9.13B$8.15B$6.17B$5.20B$5.21B$4.22B$5.21B$6.20B$7.19B$8.18B$9.17B$10.16B$11.17B$12.17B$B12.17B$2B12.16B$3B12.15B$4B15.11B$5B7.A6.11B$6B7.A7.9B$7B4.3A7.9B$8B13.9B$9B8.2A2.9B$10B7.2A2.9B$11B10.9B$12B9.9B$30B$.29B$5.24B$8.20B$9.19B$9.19B$9.19B$10.17B!
+'''
+
+# The block recovers:
+[[filter]]
+filter-gen = 200
+filter-type = "EVER"
+filter-pos = [-1, -1]
+filter = '''
+x = 4, y = 4, rule = LifeHistory
+4D$D2CD$D2CD$4D!
+'''

@@ -1,0 +1,47 @@
+B3/S23-a5 catalysts (intact >= 30 gens): 73 completions, 73 distinct, 55 pass after removing filler, 23 reactions; rejected {}
+1: catalyst 7 cells, first contact gen 31, back from gen 35, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    13b2o$13bo$11bobo$11b2o$bo$2o$bo!
+2: catalyst 7 cells, first contact gen 11, back from gen 15, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    8b2o$8bo$6bobo$6b2o$bo$2o$bo!
+3: catalyst 7 cells, first contact gen 27, back from gen 31, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    12b2o$12bo$10bobo$10b2o$bo$2o$bo!
+4: catalyst 7 cells, first contact gen 15, back from gen 19, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    9b2o$9bo$7bobo$7b2o$bo$2o$bo!
+5: catalyst 7 cells, first contact gen 19, back from gen 23, leftover at 300 0 cells: eater (nothing left); 3 variant(s)
+    10b2o$10bo$8bobo$8b2o$bo$2o$bo!
+6: catalyst 7 cells, first contact gen 35, back from gen 39, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    14b2o$14bo$12bobo$12b2o$bo$2o$bo!
+7: catalyst 7 cells, first contact gen 7, back from gen 11, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    7b2o$7bo$5bobo$5b2o$bo$2o$bo!
+8: catalyst 7 cells, first contact gen 23, back from gen 27, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    11b2o$11bo$9bobo$9b2o$bo$2o$bo!
+9: catalyst 10 cells, first contact gen 15, back from gen 18, leftover at 300 0 cells: eater (nothing left); 4 variant(s)
+    10b2o$10bo$7b2obo$6bo2bo$7b2o$bo$2o$bo!
+10: catalyst 10 cells, first contact gen 11, back from gen 14, leftover at 300 0 cells: eater (nothing left); 5 variant(s)
+    9b2o$9bo$6b2obo$5bo2bo$6b2o$bo$2o$bo!
+11: catalyst 10 cells, first contact gen 23, back from gen 26, leftover at 300 0 cells: eater (nothing left); 4 variant(s)
+    12b2o$12bo$9b2obo$8bo2bo$9b2o$bo$2o$bo!
+12: catalyst 10 cells, first contact gen 27, back from gen 30, leftover at 300 0 cells: eater (nothing left); 5 variant(s)
+    13b2o$13bo$10b2obo$9bo2bo$10b2o$bo$2o$bo!
+13: catalyst 10 cells, first contact gen 31, back from gen 34, leftover at 300 0 cells: eater (nothing left); 4 variant(s)
+    14b2o$14bo$11b2obo$10bo2bo$11b2o$bo$2o$bo!
+14: catalyst 10 cells, first contact gen 7, back from gen 10, leftover at 300 0 cells: eater (nothing left); 4 variant(s)
+    8b2o$8bo$5b2obo$4bo2bo$5b2o$bo$2o$bo!
+15: catalyst 10 cells, first contact gen 19, back from gen 22, leftover at 300 0 cells: eater (nothing left); 4 variant(s)
+    11b2o$11bo$8b2obo$7bo2bo$8b2o$bo$2o$bo!
+16: catalyst 11 cells, first contact gen 39, back from gen 42, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    14bo$12b3o$13b3o$12bo2bo$13b2o$bo$2o$bo!
+17: catalyst 11 cells, first contact gen 35, back from gen 38, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    13bo$13b3o$12b3o$11bo2bo$12b2o$bo$2o$bo!
+18: catalyst 17 cells, first contact gen 6, back from gen 14, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    6b2o$5bob3o$3b3o4bo$3bobob3o$6b2o$bo$2o$bo!
+19: catalyst 17 cells, first contact gen 18, back from gen 26, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    9bobo$8bob2o$6b3o$6bobob2o$9b2o2bo$bo10b2o$2o$bo!
+20: catalyst 17 cells, first contact gen 10, back from gen 18, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    7bobo$6bob2o$4b3o$4bobob2o$7b2o2bo$bo8b2o$2o$bo!
+21: catalyst 17 cells, first contact gen 22, back from gen 30, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    10b2o$9bob3o$7b3o4bo$7bobob3o$10b2o$bo$2o$bo!
+22: catalyst 17 cells, first contact gen 26, back from gen 34, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    11bobo$10bob2o$8b3o$8bobob2o$11b2o2bo$bo12b2o$2o$bo!
+23: catalyst 17 cells, first contact gen 14, back from gen 22, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    8bobo$7bob2o$5b3o$5bobob2o$8b2o2bo$bo9b2o$2o$bo!

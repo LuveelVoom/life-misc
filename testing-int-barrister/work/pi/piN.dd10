@@ -1,0 +1,13 @@
+piN.fin valid 734 distinct reactions 109 {'no 10-gen recovery': 13, 'cat unstable': 45}
+  x64   interacting cells  3, debris pop  47, smallest cat pop 7 : x = 4, y = 4, rule = B36/S232o$o$b3o$3bo!
+  x54   interacting cells  3, debris pop  47, smallest cat pop 7 : x = 4, y = 4, rule = B36/S232b2o$3bo$3o$o!
+  x16   interacting cells  4, debris pop  20, smallest cat pop 4 : x = 2, y = 2, rule = B36/S232o$2o!
+  x16   interacting cells  4, debris pop  20, smallest cat pop 4 : x = 2, y = 2, rule = B36/S232o$2o!
+  x1    interacting cells  5, debris pop  12, smallest cat pop 8 : x = 5, y = 4, rule = B36/S232o$bo$bob2o$2bobo!
+  x1    interacting cells  5, debris pop  12, smallest cat pop 8 : x = 5, y = 4, rule = B36/S233b2o$3bo$2obo$obo!
+  x7    interacting cells  5, debris pop  17, smallest cat pop 7 : x = 4, y = 4, rule = B36/S233bo$b3o$o$2o!
+  x7    interacting cells  5, debris pop  17, smallest cat pop 7 : x = 4, y = 4, rule = B36/S23o$3o$3bo$2b2o!
+  x16   interacting cells  5, debris pop  20, smallest cat pop 8 : x = 6, y = 4, rule = B36/S232o$2o$4b2o$4b2o!
+  x4    interacting cells  5, debris pop  20, smallest cat pop 11 : x = 8, y = 4, rule = B36/S236b2o$5bobo$2o3bo$2o2b2o!
+  x16   interacting cells  5, debris pop  20, smallest cat pop 8 : x = 7, y = 3, rule = B36/S235bo$2o2bobo$2o3bo!
+  x16   interacting cells  5, debris pop  20, smallest cat pop 8 : x = 6, y = 4, rule = B36/S234b2o$4b2o$2o$2o!

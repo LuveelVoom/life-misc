@@ -1,0 +1,32 @@
+UNSAFE: survival outside S23 counts is ignored by the still-life solver; still lifes using it cannot be found
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B3/S23-q4i
+INT check: still-life=yes catalyst-region-restored-at-gen-39=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+16$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A11.3A$15.A.A4.2C7.A$15.A6.C.C$14.2A7.2C$27.E$19.E.E4.2E$19.9E$19.9E33$
+Completed:
+16$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o11b3o$15bobo4b2o7bo$15bo6bobo$14b2o7b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-39=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+16$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A11.3A$15.A.A4.2C7.A$15.A6.C.C$14.2A7.2C$27.E$19.EC5.2E$19.9E$19.9E33$
+Completed:
+16$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o11b3o$15bobo4b2o7bo$15bo6bobo$14b2o7b2o2$19b2o$19b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-53=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+16$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A4.C6.3A$15.A.A3.C.C7.A$15.A6.C.C$14.2A7.2C2$19.E$19.2E5.2E$19.3E3.3E33$
+Completed:
+16$15bo$16bo$14b3o2$20b2o6bo$20b2o5bobo$27bobo$28bo$16b2o4bo6b3o$15bobo3bobo7bo$15bo6bobo$14b2o7b2o37$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+16$15.A$16.A$14.3A2$20.2A6.A$20.2A5.A.A$27.A.A$28.A$16.2A4.C6.3A$15.A.A3.C.C7.A$15.A6.C.C$14.2A7.2C3$19.EC4.C.E$19.3E2.4E33$
+Completion Failed: Inconsistent
+64$
+All solutions:
+x = 0, y = 0, rule = B3/S23-q4i
+16$15bo69bo69bo69bo$16bo69bo69bo69bo$14b3o67b3o67b3o67b3o2$20b2o6bo61b2o6bo61b2o6bo61b2o6bo$20b2o5bobo60b2o5bobo60b2o5bobo60b2o5bobo$27bobo67bobo67bobo67bobo$28bo69bo69bo69bo$16b2o11b3o54b2o11b3o54b2o4bo6b3o54b2o4bo6b3o$15bobo4b2o7bo53bobo4b2o7bo53bobo3bobo7bo53bobo3bobo7bo$15bo6bobo60bo6bobo60bo6bobo60bo6bobo$14b2o7b2o59b2o7b2o59b2o7b2o59b2o7b2o2$89b2o$89b2o139bo4bo40$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-q4i
+16$15bo69bo$16bo69bo$14b3o67b3o2$20b2o6bo61b2o6bo$20b2o5bobo60b2o5bobo$27bobo67bobo$28bo69bo$16b2o4bo6b3o54b2o11b3o$15bobo3bobo7bo53bobo4b2o7bo$15bo6bobo60bo6bobo$14b2o7b2o59b2o7b2o43$

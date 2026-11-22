@@ -1,0 +1,12 @@
+# B3/S23-q4i: catalysts for a lone 3o$obo$obo! (farther up, second pi at gen ~30; region piq4i_far6; behind is skipped).
+rule = "B3/S23-q4i"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [20, 80]
+active-window-range = [0, 30]
+min-stable-interval = 10
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 27, y = 35, rule = LifeHistory
+27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$27B$$$$$$$$$$$$$12.3A$12.A.A$12.A.A!
+'''

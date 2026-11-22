@@ -1,0 +1,1473 @@
+UNSAFE: survival outside S23 counts is ignored by the still-life solver; still lifes using it cannot be found
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B3/S23-q4i
+INT check: still-life=yes catalyst-region-restored-at-gen-36=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+23$18b3o6bo$18bobo5bobo$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+23$18b3o6b2o$18bobo5bobo$18bobo5bo$25b2obo$23bo3b2o$23b3o$26b3o$25bo2bo$26b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+23$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-36=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo6$18b3o6bo$18bobo5bobo$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo6$18b3o6b2o$18bobo5bobo$18bobo5bo$25b2obo$23bo3b2o$23b3o$26b3o$25bo2bo$26b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo6$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+22$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+21$28bo$27bobo$18b3o7bo$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o5$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$28bo$27bobo$18b3o7bo$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+21$27b2o$28bo$18b3o7bobo$18bobo8b2o$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A7.4E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+20$28bo$27bobo$28bo$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$27b2o$28bo$18b3o7bobo$18bobo8b2o$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A7.4E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o3$28bo$27bobo$28bo$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-36=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+20$27b2o$28bo$28bob2o$18b3o6b2o2bo$18bobo5bo2b2o$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+20$27b2o$28bo$28bobo$18b3o8b2o$18bobo$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+20$27b2o$28bo$28bobo$18b3o8b2o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-36=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo3$27b2o$28bo$28bob2o$18b3o6b2o2bo$18bobo5bo2b2o$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo3$27b2o$28bo$28bobo$18b3o8b2o$18bobo$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+14$24b2ob2o$25bobo$25bobo$26bo3$27b2o$28bo$28bobo$18b3o8b2o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-36=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+17$26b2o$27bo$27bobo$28bobo$30bo$30b2o$18b3o6bo$18bobo5bobo$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+17$26b2o$27bo$27bobo$28bobo$30bo$29bo$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+17$26b2o$27bo$27bobo$28bobo$30bo$29bo$18b3o8b2o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-36=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+14$24b2o$25bo$25bobo$26bobo$28bo$27bo$28b3o$30bo2$18b3o6bo$18bobo5bobo$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26bobo$28bo$27bo$28b3o$30bo2$18b3o$18bobo$18bobo5b2o$25bo2bo$23bo2b2o$23b3o$26b2o$25bo2bo$26b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+14$24b2o$25bo$25bobo$26bobo$28bo$27bo$28b3o$30bo2$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+16$25b2o$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+18$27b2obo$27bob2o2$28b3o$27bo2bo$18b3o7b2o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29b2o$27bo2bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+13$25bo$24bobo$25bo3$27b2obo$27bob2o2$28b3o$27bo2bo$18b3o7b2o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+23$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+23$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o6$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o6$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+21$28b2o$27bo2bo$18b3o7b2o$18bobo$18bobo5b3obo$24bo2bob2o$24b2o$25bobob2o$24bo2b2obo$24b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+22$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$28b2o$27bo2bo$18b3o7b2o$18bobo$18bobo5b3obo$24bo2bob2o$24b2o$25bobob2o$24bo2b2obo$24b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o5$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+20$28bo$27bobo$28bo$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+20$28bo$27bobo$28bo$18b3o$18bobo6bo$18bobo5bobo$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o3$28bo$27bobo$28bo$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o3$28bo$27bobo$28bo$18b3o$18bobo6bo$18bobo5bobo$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+19$28bo$27bobo$28bo2$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+19$28bo$27bobo$28bo2$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo4$28bo$27bobo$28bo2$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo4$28bo$27bobo$28bo2$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+18$28bo$27bobo$28bo3$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+18$28bo$27bobo$28bo3$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$28bo$27bobo$27b2o4$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$28bo$27bobo$27b2o4$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+18$27b2obo$27bob2o2$28b3o$27bo2bo$18b3o7b2o$18bobo$18bobo5b3obo$24bo2bob2o$24b2o$25bobob2o$24bo2b2obo$24b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+16$25b2o$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo3$27b2obo$27bob2o2$28b3o$27bo2bo$18b3o7b2o$18bobo$18bobo5b3obo$24bo2bob2o$24b2o$25bobob2o$24bo2b2obo$24b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29b2o$27bo2bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o6b2o$18bobo5bobo$18bobo5bo$25b2obo$23bo3b2o$23b3o$26b3o$25bo2bo$26b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo$18bobo2$24b2o$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$28bo$27bobo$18b3o7bo$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo5$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$28bo$27bobo$18b3o7bo$18bobo$18bobo2$24bo$23bobo$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$27b2o$28bo$18b3o7bobo$18bobo8b2o$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo$18bobo2$24bo$23bobo$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$27b2o$28bo$28bobo$18b3o8b2o$18bobo$18bobo$25b2o$23bo2bo$23b3o2$23b2obo$23bob2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo$18bobo2$24bo$23bobo$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o4$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$27b2o$28bo$28bobo$29b2o$18b3o$18bobo$18bobo5b2o$25bo2bo$23bo2b2o$23b3o$26b2o$25bo2bo$26b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o4$18b3o$18bobo$18bobo2$24b2o$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo6b2o39$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$23bo2b3o$23b3o2bo$26bo$23b3o$23bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$25bo$24bo$23bo$23b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo5bo$18bobo4bobo$26bo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$28bo$27bobo$18b3o7bo$18bobo$18bobo4b2o$26bo$26bobo$27b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$28bo$27bobo$18b3o7bo$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo$18bobo4b2o$26bo$26bobo$27b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo$18bobo4b2o$26bo$26bobo$27b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o4$18b3o$18bobo5bo$18bobo4bobo$26bo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o4$18b3o$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=NO catalyst-region-restored-at-gen-32=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo2b2o$25bobo2bo$27b2o$27bo$29bo$28b2o$27bo$18b3o7bobo$18bobo8b2o$18bobo4b2o$26bo$26bobo$27bobo$28bo35$
+INT check: still-life=NO catalyst-region-restored-at-gen-32=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo2b2o$25bobo2bo$27b2o$27bo$29bo$28b2o$27bo$18b3o7bobo$18bobo8b2o$18bobo4b2o$26bo$24bo$23bob4o$22bo2bo2bo$22b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo6$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo4$28b2o$27bo2bo$18b3o7b2o$18bobo$18bobo5b3obo$24bo2bob2o$24b2o$25bobob2o$24bo2b2obo$24b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo5$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$28.4E$27.C4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo3$28bo$27bobo$28bo$18b3o$18bobo6bo$18bobo5bobo$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C5E$25.C.5E$27.5E$28.4E$27.C4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo2$28bo$27bobo$28bo2$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo$28bo$27bobo$28bo3$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bo$28bo$27bobo$28bo3$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo7bobo$18bobo5b2ob2o$24bo2bo$24b2obo$25bobobo$23bo4b2o$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$27.5E$25.C.5E$24.C.C.4E$25.C.5E$27.5E$27.C4E$28.4E$28.4E$27.C4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+15$25bo$24bobo$25bobo$27bo$27b2o3$27b2o$18b3o7bo$18bobo6bo$18bobo5bo$24bo2b3o$24b2obo2bo$25bobobo$23bo4bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.5E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+22$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$30bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.5E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+22$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$24b2o4bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.5E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo7$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$30bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.5E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo7$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$24b2o4bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.5E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+22$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$27.5E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+22$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo$24b2o$25bo$23bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.5E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o5$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$27.5E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o5$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo$24b2o$25bo$23bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C$18.A.A5.C$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+15$30bo$29bobo$30bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C4.E$28.C.CE$26.C.2C.E$22.4E2C3.E$22.4E3.2CE$22.10E$22.10E33$
+Completed:
+15$30bo$29bobo$30bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$28bobo$26bob2obo$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C3.CE$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+16$29b2o$30bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo3b2o$28bo2bo$26bob3o$26b2o$29b2o$26b3o2bo$26bo3b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C2.CE$18.A.A5.C4.E$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+16$25b2o4bo$25bobob3o$27b2o$26bo3b2o$27b3obo$29bo$30bo$18b3o10bo$18bobo5b2o2b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C.E$31.E$18.3A9.CE$18.A.A5.2C3.E$18.A.A5.C4.E$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+16$25b2o4bo$25bobob3o$27b2o$26bo3b2o$27b3obo$29bo$31bo$18b3o9b2o$18bobo5b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C.E$31.E$18.3A9.CE$18.A.A5.2C3.E$18.A.A5.C4.E$28.C.CE$26.C.2C.E$22.4E2C3.E$22.4E3.2CE$22.10E$22.10E33$
+Completed:
+16$25b2o4bo$25bobob3o$27b2o$26bo3b2o$27b3obo$29bo$31bo$18b3o9b2o$18bobo5b2o$18bobo5bo$28bobo$26bob2obo$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C3.CE$28.C2.E$26.C.2C.E$22.E.3C.C2.E$22.EC3.5E$22.10E$22.10E33$
+Completed:
+16$25b2o$25bobo$27b3o$26bo3bo$27b3o$29bobo$30b2o$18b3o$18bobo5b2o$18bobo5bo3b2o$28bo2bo$26bob2o$24b3obo$23bo6bo$22bobo4b2o$23bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-35=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A9.2E$18.A.A5.2C2.2E$18.A.A5.C3.2E$27.3C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+17$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$27b3o$29bo37$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C.C.E$18.A.A5.2C.2CE$31.E$26.2C.2CE$22.3E2.C.C2E$22.10E$22.10E$22.10E33$
+Completed:
+16$25b2o$25bobob2o$27b2obo$26bo$27b3o$29bo$30b2o$18b3o10bo$18bobo5b2obo$18bobo5b2ob2o2$26b2ob2o$27bob2o$25bo$25b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C.C.E$18.A.A5.2C.2CE$31.E$25.C.3C2E$22.3E2C3.2E$22.3E3.C3E$22.10E$22.10E33$
+Completed:
+15$30bo$29bobo$30bo$27b3o$26bo$27b3o$29bo$30b2o$18b3o10bo$18bobo5b2obo$18bobo5b2ob2o2$25bob4o$25b2o4bo$28b3o$25b2obo$25bobo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$31.E$18.3A10.E$18.A.A5.2C.2CE$18.A.A5.2C.C.E$31.E$25.C.4CE$22.3E2C3.2E$22.3E3.C3E$22.10E$22.10E33$
+Completed:
+15$30bo$29bobo$30bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2ob2o$18bobo5b2obo$31bo$25bob5o$25b2o$28b2o$25b3o2bo$25bo3b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-42=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.C.C3E$27.C.3E$29.2E2$18.3A8.2C$18.A.A5.2C2.C$18.A.A6.3C$25.C$25.7C$22.3E6.C$22.9E$22.10E$22.10E33$
+Completed:
+18$27bo$26bobo$27bo3$18b3o8b2o$18bobo5b2o2bo$18bobo6b3o$25bo$25b7o$31bo$24bob2o2bo$24b2obo2b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-42=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.C.C.2E$27.C2.2E$31.E$30.CE$18.3A8.C.E$18.A.A5.2C2.CE$18.A.A6.3C.E$25.C5.E$25.6CE$22.3E5.2E$22.10E$22.10E$22.10E33$
+Completed:
+18$27bo$26bobo$27bo2$30bo$18b3o8bobo$18bobo5b2o2bo$18bobo6b3o$25bo$25b7o$31bo$23b4o2bo$23bo2bo2b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A9.2E$18.A.A5.2C2.2E$18.A.A5.C3.2E$27.3C2E$24.C2E.4E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$25b2o$25bobo$27b3o$26bo3bo$27b3o$29bobo$30b2o$18b3o$18bobo5b2o$18bobo5bo$27b3o$24bo5bo$23bobo3b2o$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C$18.A.A5.C$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C4.E$28.C.CE$26.C.2C.E$22.4E2C3.E$22.4E3.2CE$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$28bobo$26bob2obo$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C3.CE$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo3b2o$28bo2bo$26bob3o$26b2o$29b2o$26b3o2bo$26bo3b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C2.CE$18.A.A5.C4.E$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bobo$26bobob2o$28bob2o$27b2o$26bo3b2o$27b3obo$29bo$30bo$18b3o10bo$18bobo5b2o2b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C.E$31.E$18.3A9.CE$18.A.A5.2C3.E$18.A.A5.C4.E$28.C2.E$26.C.3CE$22.4E2C3.E$22.4E3.C2E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bobo$26bobob2o$28bob2o$27b2o$26bo3b2o$27b3obo$29bo$31bo$18b3o9b2o$18bobo5b2o$18bobo5bo$28bo$26bob3o$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=NO catalyst-region-restored-at-gen-37=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C.E$31.E$18.3A9.CE$18.A.A5.2C3.E$18.A.A5.C4.E$28.C.CE$26.C.2C.E$22.4E2C3.E$22.4E3.2CE$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bobo$26bobob2o$28bob2o$27b2o$26bo3b2o$27b3obo$29bo$31bo$18b3o9b2o$18bobo5b2o$18bobo5bo$28bobo$26bob2obo$26b2o3bo$29b2o$25bob2o$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-37=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C3.E$18.A.A5.C3.CE$28.C2.E$26.C.2C.E$22.E.3C.C2.E$22.EC3.5E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo3b2o$28bo2bo$26bob2o$24b3obo$23bo6bo$22bobo4b2o$23bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-35=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A9.2E$18.A.A5.2C2.2E$18.A.A5.C3.2E$27.3C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$27b3o$29bo37$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C.C.E$18.A.A5.2C.2CE$31.E$26.2C.2CE$22.3E2.C.C2E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo$29b2o$30bo$27b3o$26bo$27b3o$29bo$30b2o$18b3o10bo$18bobo5b2obo$18bobo5b2ob2o2$26b2ob2o$27bob2o$25bo$25b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A10.E$18.A.A5.2C.C.E$18.A.A5.2C.2CE$31.E$25.C.3C2E$22.3E2C3.2E$22.3E3.C3E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo$30b2o$18b3o10bo$18bobo5b2obo$18bobo5b2ob2o2$25bob4o$25b2o4bo$28b3o$25b2obo$25bobo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$31.E$18.3A10.E$18.A.A5.2C.2CE$18.A.A5.2C.C.E$31.E$25.C.4CE$22.3E2C3.2E$22.3E3.C3E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2ob2o$18bobo5b2obo$31bo$25bob5o$25b2o$28b2o$25b3o2bo$25bo3b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-42=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.C4E$26.C.C3E$27.C.3E$29.2E2$18.3A8.2C$18.A.A5.2C2.C$18.A.A6.3C$25.C$25.7C$22.3E6.C$22.9E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo3$27bo$26bobo$27bo3$18b3o8b2o$18bobo5b2o2bo$18bobo6b3o$25bo$25b7o$31bo$24bob2o2bo$24b2obo2b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-42=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$28.4E$27.C4E$26.C.C.2E$27.C2.2E$31.E$30.CE$18.3A8.C.E$18.A.A5.2C2.CE$18.A.A6.3C.E$25.C5.E$25.6CE$22.3E5.2E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo3$27bo$26bobo$27bo2$30bo$18b3o8bobo$18bobo5b2o2bo$18bobo6b3o$25bo$25b7o$31bo$23b4o2bo$23bo2bo2b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-35=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.C6E$24.C.6E$25.C6E$26.6E$25.7E$27.2C3E$26.C3.2E$27.3C2E$29.C2E$30.2E$18.3A9.2E$18.A.A5.2C2.2E$18.A.A5.C3.2E$27.3C2E$24.C2E.4E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo2$29bo$27b3o$26bo$27b3o$29bo2$18b3o$18bobo5b2o$18bobo5bo$27b3o$24bo5bo$23bobo3b2o$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-36=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.C4E$18.A.A5.C.4E$18.A.A5.C.C3E$25.2C2.3E$23.C3.C.3E$23.2C.2C.3E$27.5E$27.5E$26.6E33$
+Completed:
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o4$18b3o6bo$18bobo5bobo$18bobo5bobo$25b2o2b2o$23bo3bobo$23b2ob2o2bo$29b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$22.10E$22.10E33$
+Completed:
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o4$18b3o6b2o$18bobo5bobo$18bobo5bo$25b2obo$23bo3b2o$23b3o$26b3o$25bo2bo$26b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A5.6E$25.7E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo$18bobo2$24bo$23bobo$24bo35$
+INT check: still-life=NO catalyst-region-restored-at-gen-35=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A6.5E$18.A.A6.5E$26.2C.3E$23.2C2.C.3E$23.2C.C2.3E$26.C.C3E$26.C.4E$25.7E33$
+Completed:
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o4$18b3o$18bobo$18bobo$26b2ob2o$23b2o2bobobo$23b2obo4bo$26bob3o$26bobo$27bo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo$18bobo4b2o$26bo$26bobo$27b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A6.5E$18.A.A5.6E$18.A.A4.C6E$26.C5E$24.C.6E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo$18bobo4b2o$26bo$24bo$24b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A5.2C4E$24.C2.C4E$24.2C.5E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo$18bobo5b2o$24bo2bo$24b2obobo$25bo2b2o$23bobo$23b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A5.C.4E$24.C2.C4E$24.2C.C4E$25.C.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$27b2o$28bo$25b3o$25bo$27b3o$26b2o2bo$29b2o3$18b3o$18bobo6b2o$18bobo5bo2bo$24bo2bobo$24b2ob2o$25bo$23bobo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-34=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$29.3E$18.3A6.2C3E$18.A.A7.C3E$18.A.A5.C.4E$24.3C.4E$23.C3.5E$24.2C6E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o4$18b3o6b2o$18bobo7bo$18bobo5bo$24b3obo$23bo3bobo$24b2o3bo$26b3o$26bo34$
+INT check: still-life=NO catalyst-region-restored-at-gen-34=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$26.6E$25.2C5E$25.C3.3E$27.2C3E$26.2C.3E$29.3E$29.3E$28.C3E$18.3A6.C.3E$18.A.A7.C3E$18.A.A5.C.C3E$24.3C.4E$23.C3.5E$24.2C6E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o3$28bo$18b3o6bobo$18bobo7bo$18bobo5bobobo$24b3o2bobo$23bo3bobobo$24b2obo2bo$22bobob2o$22b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.2C.3E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$27bo$26b2o3$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$31bo$30b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.2C.3E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$27bo$26b2o3$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$24bo6bo$23bobo4b2o$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$27.C4E$26.2C.3E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo$28b2o$27bobo$27bo$26b2o3$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$31bo$30b2o36$
+INT check: still-life=yes catalyst-region-restored-at-gen-32=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$27.C4E$26.2C.3E$30.2E$30.2E$27.2C.2E$18.3A5.C2.C2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25bo$24bobo$25bo$28b2o$27bobo$27bo$26b2o3$27b2o$18b3o5bo2bo$18bobo5bobo$18bobo6bo$28b3o$24bo6bo$23bobo4b2o$24bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.2C.3E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25b2o$25bo$26bo$27bo$26b2o3$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$27.C4E$26.2C.3E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+15$25b2o$25bo$26bo$27bo$26b2o3$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo$24b2o$25bo$23bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$27.C4E$26.2C.3E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$25.7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2ob2o$25bobo2bo$25bo3b2o$26bo$27bo$26b2o3$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo38$
+INT check: still-life=yes catalyst-region-restored-at-gen-31=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$27.C4E$26.2C.3E$29.3E$29.3E$27.2C.2E$18.3A5.C.C.2E$18.A.A5.C.C.2E$18.A.A6.C2.2E$28.2C2E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2ob2o$25bobo2bo$25bo3b2o$26bo$27bo$26b2o3$27b2ob2o$18b3o5bobob2o$18bobo5bobo$18bobo6bo2b2o$28b2obo$24b2o$25bo$23bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$27.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24bob2o$24b2obo$27bob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$26.C2.C2E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2o$25bo3b2o$26bo2bo$27bobo$26b2o2b2o$24bo3bobo$24b2ob2o2bo$30b2o3$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bobob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C3.3E$27.C.3E$26.3C3E$24.C4.3E$24.2C.2C.2E$28.C.2E$28.C.2E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bo3b2o$27bo2bo$26b3o$24bo$24b2ob2o$28bo$28bobo$29b2o$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C5E$24.C.C5E$24.2C.5E$27.5E$27.5E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$24bobo$24b2o4$18b3o$18bobo$18bobo39$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C2.C3E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.2C3E$25.C.C.3E$24.2C3.3E$27.C.3E$24.2C.2C3E$24.2C3.3E$27.2C3E$28.C3E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24b2o$24bo2b2o$25bobobo$24b2o3bo$27bo2b2o$24b2ob2obo$24b2o4bo$27b2ob2o$28bobo$27bo2bo$18b3o5bo3b2o$18bobo5b2o$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.2C3E$29.3E$24.2C.2C3E$24.2C.C.3E$29.3E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2ob2o2$24b2ob2o$24b2obo2bo$29b2o3$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$24.C2.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A4.7E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$26b2o$24bo2bo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$23.C.C2.C3E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+21$27b2o$28bo$18b3o7bob2o$18bobo4b2obobo$18bobo5bobo2bo$24bobobob2o$23bobo2bobo$23bobobo2bo$24bo2bobo$27b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$23.C.2C.4E$23.C3.5E$22.10E$22.10E$22.10E33$
+Completed:
+21$27b2o$28bo$18b3o7bob2o$18bobo4b2obob2o$18bobo5bobo$24bobobo$23bob2o2b2o$23bo3bobobo$24b2obo2bo$22bobob2o$22b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$25.7E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$24.2C2.C3E$22.2E4.C3E$22.10E$22.10E$22.10E33$
+Completed:
+21$27b2o$28bo$18b3o7bob2o$18bobo4b2obobo$18bobo5bobo2bo$24bobobob2o$24b2o2bo$28bob2o$29bobo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$23.C.C2.C3E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$27b2o$28bo$18b3o7bob2o$18bobo4b2obobo$18bobo5bobo2bo$24bobobob2o$23bobo2bobo$23bobobo2bo$24bo2bobo$27b2o34$
+INT check: still-life=NO catalyst-region-restored-at-gen-38=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$23.C.2C.4E$23.C3.5E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$27b2o$28bo$18b3o7bob2o$18bobo4b2obob2o$18bobo5bobo$24bobobo$23bob2o2b2o$23bo3bobobo$24b2obo2bo$22bobob2o$22b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-38=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$24.C7E$25.C6E$25.7E$25.7E$26.6E$29.3E$29.3E$27.2C.2E$28.C.2E$18.3A7.C.2E$18.A.A4.2C.C.2E$18.A.A5.C.C.2E$24.C.C.C.2E$24.2C2.C3E$22.2E4.C3E$22.10E$22.10E$22.10E33$
+Completed:
+14$24b2o$25bo$25bobo$26b2o4$27b2o$28bo$18b3o7bob2o$18bobo4b2obobo$18bobo5bobo2bo$24bobobob2o$24b2o2bo$28bob2o$29bobo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$27.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24bob2o$24b2obo$27bob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo4b2o$18bobo5bo$26bobo$27b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$26.C2.C2E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2o$25bo3b2o$26bo2bo$27bobo$26b2o2b2o$24bo3bobo$24b2ob2o2bo$30b2o3$18b3o$18bobo4b2o$18bobo5bo$26bobo$27b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bobob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo4b2o$18bobo5bo$26bobo$27b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C3.3E$27.C.3E$26.3C3E$24.C4.3E$24.2C.2C.2E$28.C.2E$28.C.2E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bo3b2o$27bo2bo$26b3o$24bo$24b2ob2o$28bo$28bobo$29b2o$18b3o5bo$18bobo4bobo$18bobo5bo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C5E$24.C.C5E$24.2C.5E$27.5E$27.5E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$24bobo$24b2o4$18b3o5bo$18bobo4bobo$18bobo5bo39$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C2.C3E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.2C3E$25.C.C.3E$24.2C3.3E$27.C.3E$24.2C.2C3E$24.2C3.3E$27.2C3E$28.C3E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24b2o$24bo2b2o$25bobobo$24b2o3bo$27bo2b2o$24b2ob2obo$24b2o4bo$27b2ob2o$28bobo$27bo2bo$18b3o6bobo$18bobo4b2obo$18bobo5bo$26bobo$27b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.2C3E$29.3E$24.2C.2C3E$24.2C.C.3E$29.3E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2ob2o2$24b2ob2o$24b2obo2bo$29b2o3$18b3o5bo$18bobo4bobo$18bobo5bo39$
+INT check: still-life=NO catalyst-region-restored-at-gen-27=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26b2o$25bo2bo$25bobobo$24b2obobo$27bob2o$24b2obo3bo$24b2o2bob2o$27b2obo$30bo$27b3o$18b3o5bo$18bobo4bobo$18bobo5bo39$
+INT check: still-life=NO catalyst-region-restored-at-gen-27=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$24.C2.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A4.C6E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$27bo$26bobo$24bo2bobo$24b2obobo$27bob2o$24b2obo3bo$24b2o2bob2o$27b2obo$30bo$27b3o$18b3o5bo$18bobo4bobo$18bobo5bo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C.4E$24.C.C.4E$24.2C.5E$27.5E$27.2C3E$29.3E$18.3A6.2C.2E$18.A.A4.C2.C.2E$18.A.A4.2C.C.2E$26.C.C.2E$24.C.C.C.2E$23.C.C2.C3E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bobo$24bobo2bo$24b2obobo$27bo2b2o$27b2obo$30bo$18b3o6b2ob2o$18bobo4bo2bo$18bobo4b2obo$26bobob2o$24bobobobo$23bobo2bobo$23bobobobo$24bo2bo$27b2o33$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C.4E$24.C.C.4E$24.2C.5E$27.5E$27.2C3E$29.3E$18.3A6.2C.2E$18.A.A4.C2.C.2E$18.A.A4.2C.C.2E$26.C.C.2E$24.C.C.C.2E$23.C.2C.4E$23.C3.5E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bobo$24bobo2bo$24b2obobo$27bo2b2o$27b2obo$30bo$18b3o6b2ob2o$18bobo4bo2bo$18bobo4b2obob2o$26bobobo$24bobobo2bo$23bob2obob2o$23bo5bo$24bob2obo$25b2obo33$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C.4E$24.C.C.4E$24.2C.5E$27.5E$27.2C3E$29.3E$18.3A6.2C.2E$18.A.A4.C2.C.2E$18.A.A4.2C.C.2E$26.C.C.2E$24.C.C.C.2E$24.2C2.C3E$22.2E4.C3E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bobo$24bobo2bo$24b2obobo$27bo2b2o$27b2obo$30bo$18b3o6b2ob2o$18bobo4bo2bo$18bobo4b2obo$26bobob2o$24bobobob2o$24b2o2bo$28bob2o$29bobo34$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$27.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24bob2o$24b2obo$27bob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o4b2o$18bobo5bo$18bobo5bobo$27bobo$28bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$26.C2.C2E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2o$25bo3b2o$26bo2bo$27bobo$26b2o2b2o$24bo3bobo$24b2ob2o2bo$30b2o3$18b3o4b2o$18bobo5bo$18bobo5bobo$27bobo$28bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bobob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o4b2o$18bobo5bo$18bobo5bobo$27bobo$28bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C3.3E$27.C.3E$26.3C3E$24.C4.3E$24.2C.2C.2E$28.C.2E$28.C.2E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bo3b2o$27bo2bo$26b3o$24bo$24b2ob2o$28bo$28bobo$29b2o$18b3o4b2o$18bobo5bo$18bobo5bobo$27b2o38$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C5E$24.C.C5E$24.2C.5E$27.5E$27.5E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$24bobo$24b2o3$26bo$18b3o4bobo$18bobo5bo$18bobo39$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C2.C3E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.E.4E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.2C3E$25.C.C.3E$24.2C3.3E$27.C.3E$24.2C.2C3E$24.2C3.3E$27.2C3E$28.C3E$26.E.4E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24b2o$24bo2b2obo$25bobob2o$24b2o$27bob2o$24b2ob2obo$24b2o$27b3o$28bobo$26bo3bo$18b3o4bob3o$18bobo5bo$18bobo6bo$26b2o38$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.2C3E$29.3E$24.2C.2C3E$24.2C.C.3E$29.3E$28.4E$26.6E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2ob2o2$24b2ob2o$24b2obo2bo$29b2o3$18b3o4b2o$18bobo5bo$18bobo5bobo$27b2o38$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.E.4E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o4b2o$18bobo5bo$18bobo5bobo$27bobo$28bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$24.C2.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.E.4E$18.3A4.C6E$18.A.A5.C5E$18.A.A5.6E$24.8E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$26b2o$24bo2bo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o4b2o$18bobo5bo$18bobo5bobo$27bobo$28bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$26.6E$26.6E$26.6E$26.6E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A6.5E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+17$27b2o$28bo$28bob2o$25b2obobo$25b2obo2bo$29bobo$18b3o9bo$18bobo$18bobo39$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$26.C5E$25.C.5E$26.C2.3E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A6.5E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$26bo$25bobo$26bo2bo$27b2obo$28bo2bo$28bob2o$25b2obo$25b2obob2o$29bobo$18b3o$18bobo$18bobo39$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$26.6E$25.C6E$26.C.4E$26.E.4E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A7.4E$18.A.A6.5E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$28b2o$25b2o2bo$26bobo$26bo2b3o$27b2o2bo$28bobo$28bob2o$25b2obo$25b2obob2o$29bobo$18b3o$18bobo$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-33=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$26.6E$26.6E$26.6E$26.6E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A7.4E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$30b2o$27b2o2bo$28bobo$28bob2o$25b2obo$25b2obo$29b2o$18b3o10bo$18bobo6b4o$18bobo7bo$26bo$26b2o37$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$27.5E$26.C5E$25.C.5E$26.C2.3E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A7.4E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$26bo$25bobo$26bo2b2o$27b2o2bo$28bobo$28bob2o$25b2obo$25b2obo$29b2o$18b3o10bo$18bobo6b4o$18bobo7bo$26bo$26b2o37$
+INT check: still-life=NO catalyst-region-restored-at-gen-33=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$26.6E$25.C6E$26.C.4E$26.E.4E$27.2C.2E$28.C.2E$28.C.2E$25.2C.C3E$25.2C.4E$28.4E$18.3A7.4E$18.A.A6.C4E$18.A.A7.4E$25.7E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$28b2o$25b2o2bo$26bobo$26bo2b3o$27b2o2bo$28bobo$28bob2o$25b2obo$25b2obo$29b2o$18b3o10bo$18bobo6b4o$18bobo7bo$26bo$26b2o37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$27.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$24bob2o$24b2obo$27bob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo6bo$18bobo5bobo$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$26.C2.C2E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$25b2o$25bo3b2o$26bo2bo$27bobo$26b2o2b2o$24bo3bobo$24b2ob2o2bo$30b2o3$18b3o$18bobo6bo$18bobo5bobo$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+14$25b2o$25bobob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo6bo$18bobo5bobo$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C3.3E$27.C.3E$26.3C3E$24.C4.3E$24.2C.2C.2E$28.C.2E$28.C.2E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+14$25b2o$25bo3b2o$27bo2bo$26b3o$24bo$24b2ob2o$28bo$28bobo$29b2o$18b3o$18bobo$18bobo5b2o$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C5E$24.C.C5E$24.2C.5E$27.5E$27.5E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+16$26b2o$26bo$24bobo$24b2o4$18b3o$18bobo$18bobo5b2o$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C2.C3E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.2C3E$25.C.C.3E$24.2C3.3E$27.C.3E$24.2C.2C3E$24.2C3.3E$27.2C3E$28.C3E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$24b2o$24bo2b2obo$25bobob2o$24b2o$27bob2o$24b2ob2obo$24b2o$27b3o$28bobo$26bo3bo$18b3o5b4o$18bobo$18bobo5b2o$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.2C3E$29.3E$24.2C.2C3E$24.2C.C.3E$29.3E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2ob2o2$24b2ob2o$24b2obo2bo$29b2o3$18b3o$18bobo$18bobo5b2o$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo6bo$18bobo5bobo$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$24.C2.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+14$26b2o$24bo2bo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo6bo$18bobo5bobo$23b2o2bo$24b3o$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$27.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24bob2o$24b2obo$27bob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$23.9E$24.8E$26.C2.C2E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$25b2o$25bo3b2o$26bo2bo$27bobo$26b2o2b2o$24bo3bobo$24b2ob2o2bo$30b2o3$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C.C.3E$27.C.C2E$26.2C2.2E$24.C3.C.2E$24.2C.2C.2E$28.4E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bobob2o$27bobo$26b2o2bo$24bo3bobo$24b2ob2ob2o4$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-26=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2EC5E$25.C3.3E$27.C.3E$26.3C3E$24.C4.3E$24.2C.2C.2E$28.C.2E$28.C.2E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$25b2o$25bo3b2o$27bo2bo$26b3o$24bo$24b2ob2o$28bo$28bobo$29b2o$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.8E$24.8E$26.C5E$26.C5E$24.C.C5E$24.2C.5E$27.5E$27.5E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+16$26b2o$26bo$24bobo$24b2o4$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C2.C3E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.2C3E$25.C.C.3E$24.2C3.3E$27.C.3E$24.2C.2C3E$24.2C3.3E$27.2C3E$28.C3E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$24b2o$24bo2b2o$25bobobo$24b2o3bo$27bo2b2o$24b2ob2obo$24b2o4bo$27b2ob2o$28bobo$27bo2bo$18b3o6bobo$18bobo7bo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.2C3E$29.3E$24.2C.2C3E$24.2C.C.3E$29.3E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2ob2o2$24b2ob2o$24b2obo2bo$29b2o3$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$24.2E.5E$25.C.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+13$26bo$25bobo$25bobo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=yes catalyst-region-restored-at-gen-27=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$24.8E$25.7E$24.C2.C4E$24.2C.C.3E$27.C.C2E$24.2C.C2.2E$24.2C2.C.2E$27.2C.2E$28.4E$26.6E$18.3A5.6E$18.A.A5.6E$18.A.A3.C.6E$23.C.C6E$24.C7E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+14$26b2o$24bo2bo$24b2obob2o$27bobo$24b2obo2bo$24b2o2bobo$27b2ob2o3$18b3o$18bobo$18bobo3bo$23bobo$24bo37$
+INT check: still-life=NO catalyst-region-restored-at-gen-28=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$25.7E$26.6E$25.C6E$23.C2.6E$23.3C6E$27.5E$25.2C.4E$24.C.C.4E$24.C.C.4E$25.C2.4E$18.3A5.2C4E$18.A.A6.5E$18.A.A5.6E$23.2C.6E$24.2C6E$22.C3.6E$22.2C8E$23.9E$22.10E33$
+Completed:
+13$28bo$26b3o$25bo$23bo2bo$23b4o$27b2o$25b2o2bo$24bobobo$24bobob2o$25bo$18b3o5b4o$18bobo9bo$18bobo5b3obo$23b2o2bobo$24b2o$22bo3b3o$22b2obo2bo$26b2o34$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$27.5E$28.C3E$25.C2.C3E$24.C.C.C3E$18.3A4.2C2.3E$18.A.A6.C.3E$18.A.A2.5C.3E$23.C4.4E$25.2C.4E$26.2C4E$24.C3.4E$23.C.2C5E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=NO catalyst-region-restored-at-gen-18=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$27.5E$28.C3E$25.C2.C3E$24.C.C.C3E$18.3A4.2C2.3E$18.A.A6.C.3E$18.A.A2.5C.3E$23.C4.4E$25.2C.4E$26.2C4E$24.C3.4E$24.2C.C4E$28.4E33$
+Completed:
+20$28b2o$25bo2bo$24bobobo$18b3o4b2o2b2o$18bobo6bobo$18bobo2b5obo$23bo4bo$25b2o$26b2o$24bo3bo$24b2obobo$28bo33$
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$27.5E$28.C3E$25.C2.C3E$24.C.C.C3E$18.3A4.2C2.3E$18.A.A6.C.3E$18.A.A2.5C.3E$23.C4.4E$25.3C4E$26.C.4E$24.C3.4E$23.C.3C4E$22.10E33$
+Completion Failed: Inconsistent
+64$
+INT check: still-life=NO catalyst-region-restored-at-gen-18=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$24.8E$23.2C7E$23.C3.5E$25.2C5E$24.2C.5E$27.5E$18.3A3.2C.5E$18.A.A4.2C5E$18.A.A2.C3.5E$23.2C.C5E$24.C.C5E$22.C.C.6E$22.2C.7E$25.7E$25.7E33$
+Completed:
+15$22b2ob2o$22bob2o$27bo$23b2ob2o$23bo$25b2obo$24b2ob2o2$18b3o3b2ob2o$18bobo4b2o2bo$18bobo2bo4bo$23b2ob2o$24bobo$22bobo2bo$22b2o2b2o35$
+INT check: still-life=NO catalyst-region-restored-at-gen-18=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.C.2C6E$23.C3.5E$25.2C5E$24.2C.5E$27.5E$18.3A3.2C.5E$18.A.A4.2C5E$18.A.A2.C3.5E$23.2C.C5E$24.C.C5E$22.C.C.6E$22.2C.7E$25.7E$25.7E33$
+Completed:
+16$24b2o$23bo2bo$22bob3o$23bo$25b4o$24b2o2bo2$18b3o3b2o$18bobo4b3o$18bobo2bo4bo$23b2ob2o$24bobo$22bobo2bo$22b2o2b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.9E$24.8E$26.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$23.E2.6E$22.10E$22.10E$22.10E33$
+Completed:
+23$18b3o$18bobo2b2o$18bobo2b2o39$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.9E$24.8E$26.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.C4.5E$22.3C2.5E$25.C.5E$24.2C.5E33$
+Completed:
+23$18b3o$18bobo2b2o$18bobo2b2o3$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.9E$24.8E$26.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.E2.C6E$22.10E$22.10E$22.10E33$
+Completed:
+23$18b3o$18bobo2b2o$18bobo2b2o3$25b2o$25b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.9E$24.8E$26.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$24.C.6E$22.10E$22.10E$22.10E33$
+Completed:
+23$18b3o$18bobo2b2o$18bobo2b2o3$24bo$23bobo$24bo34$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$24.8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$23.E2.6E$22.10E$22.10E$22.10E33$
+Completed:
+20$25b2o$25b2o2$18b3o$18bobo2b2o$18bobo2b2o39$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.C8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$23.E2.6E$22.10E$22.10E$22.10E33$
+Completed:
+17$22b2o$23bo$23bobo$24bobo$25bo2$18b3o$18bobo2b2o$18bobo2b2o39$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$24.8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.C4.5E$22.3C2.5E$25.C.5E$24.2C.5E33$
+Completed:
+20$25b2o$25b2o2$18b3o$18bobo2b2o$18bobo2b2o3$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.C8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.C4.5E$22.3C2.5E$25.C.5E$24.2C.5E33$
+Completed:
+17$22b2o$23bo$23bobo$24bobo$25bo2$18b3o$18bobo2b2o$18bobo2b2o3$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$24.8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.E2.C6E$22.10E$22.10E$22.10E33$
+Completed:
+20$25b2o$25b2o2$18b3o$18bobo2b2o$18bobo2b2o3$25b2o$25b2o35$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.C8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.E2.C6E$22.10E$22.10E$22.10E33$
+Completed:
+17$22b2o$23bo$23bobo$24bobo$25bo2$18b3o$18bobo2b2o$18bobo2b2o2$26bo$25bobo$26bo35$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$24.8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$24.C.6E$22.10E$22.10E$22.10E33$
+Completed:
+19$26bo$25bobo$25b2o2$18b3o$18bobo2b2o$18bobo2b2o3$24bo$23bobo$24bo34$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$23.C8E$24.8E$25.C6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$24.C.6E$22.10E$22.10E$22.10E33$
+Completed:
+17$22b2o$23bo$23bobo$24bobo$25bo2$18b3o$18bobo2b2o$18bobo2b2o3$24bo$23bobo$24bo34$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$25.7E$24.2C6E$24.C.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$23.E2.6E$22.10E$22.10E$22.10E33$
+Completed:
+20$24b2o$24bo2bo$26b2o$18b3o$18bobo2b2o$18bobo2b2o39$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$25.7E$24.2C6E$24.C.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.C4.5E$22.3C2.5E$25.C.5E$24.2C.5E33$
+Completed:
+20$24b2o$24bo2bo$26b2o$18b3o$18bobo2b2o$18bobo2b2o3$22bo$22b3o$25bo$24b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$25.7E$24.2C6E$24.C.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$22.E2.C6E$22.10E$22.10E$22.10E33$
+Completed:
+20$24b2obo$24bob2o2$18b3o$18bobo2b2o$18bobo2b2o3$25b2o$23bo2bo$23b2o34$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$22.10E$25.7E$24.2C6E$24.C.6E$26.6E$18.3A5.6E$18.A.A2.2C.6E$18.A.A2.2C.6E$26.6E$26.6E$24.C.6E$22.10E$22.10E$22.10E33$
+Completed:
+20$24b2o$24bo2bo$26b2o$18b3o$18bobo2b2o$18bobo2b2o3$24bo$23bobo$24bo34$
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$26.6E$25.C6E$23.C2.6E$23.3C6E$26.6E$23.3C6E$18.3A2.C2.6E$18.A.A4.C6E$18.A.A5.6E$23.9E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+18$25b2o$23bo2bo$23b3o2$23b3o$18b3o2bo2bo$18bobo4b2o$18bobo39$
+INT check: still-life=yes catalyst-region-restored-at-gen-17=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+13$22.10E$22.10E$22.10E$22.10E$22.10E$26.6E$23.2C.6E$23.2C.6E$26.6E$23.2C.6E$18.3A2.C.C6E$18.A.A4.C6E$18.A.A4.C6E$23.9E$23.9E$22.10E$22.10E$22.10E$22.10E33$
+Completed:
+19$23b2o$23b2o2$23b2o$18b3o2bobo$18bobo4bo$18bobo4b2o39$
+All solutions:
+x = 0, y = 0, rule = B3/S23-q4i
+14$234b2ob2o65b2ob2o65b2ob2o$235bobo67bobo67bobo$235bobo67bobo67bobo$236bo69bo69bo4$518bo$447b2o68bobo$18b3o6bo60b3o6b2o59b3o67b3o6bo60b3o6b2o59b3o67b3o7bo59b3o7bo$18bobo5bobo59bobo5bobo59bobo67bobo5bobo59bobo5bobo59bobo67bobo6bo60bobo$18bobo5bobo59bobo5bo61bobo67bobo5bobo59bobo5bo61bobo67bobo5bo61bobo$25b2o2b2o64b2obo67b2ob2o64b2o2b2o64b2obo67b2ob2o64bo70b2ob2o$23bo3bobo63bo3b2o64b2o2bobobo61bo3bobo63bo3b2o64b2o2bobobo61bo2b3o64b2o2bobobo$23b2ob2o2bo62b3o67b2obo4bo61b2ob2o2bo62b3o67b2obo4bo61b3o2bo64b2obo4bo$29b2o65b3o67bob3o68b2o65b3o67bob3o65bo69bob3o$95bo2bo67bobo136bo2bo67bobo64b3o70bobo$96b2o69bo138b2o69bo65bo73bo39$
+14$24b2o68b2o208b2o68b2o$25bo69bo209bo69bo$25bobo67bobo207bobo67bobo$26b2o68b2o208b2o68b2o3$238bo139bo68b2o68b2o$98bo68b2o68bobo67b2o68bobo68bo69bo$27b2o68bobo68bo69bo69bo69bo69bob2o66bobo$18b3o7bo59b3o7bo59b3o7bobo57b3o67b3o7bobo57b3o67b3o6b2o2bo56b3o8b2o$18bobo6bo60bobo67bobo8b2o57bobo67bobo8b2o57bobo67bobo5bo2b2o57bobo$18bobo5bo61bobo67bobo67bobo67bobo67bobo67bobo5bobo59bobo$25bo70b2ob2o64b2o69b2ob2o64b2o69b2ob2o64b2o2b2o64b2o$23bo2b3o64b2o2bobobo61bo2bo66b2o2bobobo61bo2bo66b2o2bobobo61bo3bobo63bo2bo$23b3o2bo64b2obo4bo61b3o67b2obo4bo61b3o67b2obo4bo61b2ob2o2bo62b3o$26bo69bob3o135bob3o135bob3o68b2o$23b3o70bobo64b2obo69bobo64b2obo69bobo134b2obo$23bo73bo65bob2o70bo65bob2o70bo135bob2o39$
+14$94b2ob2o65b2ob2o65b2ob2o275b2o$95bobo67bobo67bobo277bo$95bobo67bobo67bobo277bobo$96bo69bo69bo69b2o68b2o68b2o68bobo$307bo69bo69bo70bo$307bobo67bobo67bobo67bo$27b2o68b2o68b2o68b2o69bobo67bobo67bobo67b3o$28bo69bo69bo69bo71bo69bo69bo69bo$28bobo67bob2o66bobo67bobo69b2o67bo69bo$18b3o8b2o57b3o6b2o2bo56b3o8b2o57b3o8b2o57b3o6bo60b3o7bo59b3o8b2o57b3o6bo$18bobo67bobo5bo2b2o57bobo67bobo67bobo5bobo59bobo6bo60bobo67bobo5bobo$18bobo67bobo5bobo59bobo67bobo67bobo5bobo59bobo5bo61bobo67bobo5bobo$26b2ob2o64b2o2b2o64b2o69b2ob2o64b2o2b2o64bo70b2ob2o64b2o2b2o$23b2o2bobobo61bo3bobo63bo2bo66b2o2bobobo61bo3bobo63bo2b3o64b2o2bobobo61bo3bobo$23b2obo4bo61b2ob2o2bo62b3o67b2obo4bo61b2ob2o2bo62b3o2bo64b2obo4bo61b2ob2o2bo$26bob3o68b2o135bob3o68b2o65bo69bob3o68b2o$26bobo134b2obo69bobo134b3o70bobo$27bo135bob2o70bo135bo73bo39$
+13$305bo69bo$24b2o68b2o208bobo67bobo$25bo69bo209bo69bo$25bobo67bobo67b2o$26bobo67bobo66bobo141b2o$28bo69bo68bo69b2obo66bo2bo66b2obo$27bo69bo69b2o68bob2o66b2o68bob2o$28b3o67b3o$30bo69bo137b3o137b3o$167b2o68bo2bo66b2o68bo2bo$18b3o67b3o67b3o7bo59b3o7b2o58b3o7bo59b3o7b2o58b3o67b3o$18bobo67bobo67bobo6bo60bobo67bobo6bo60bobo67bobo67bobo6b2o$18bobo5b2o60bobo67bobo5bo61bobo67bobo5bo61bobo67bobo5b2o60bobo5bo2bo$25bo2bo67b2ob2o64bo70b2ob2o64bo70b2ob2o63bo2bo66bo2bobo$23bo2b2o65b2o2bobobo61bo2b3o64b2o2bobobo61bo2b3o64b2o2bobobo62b2obobo64b2ob2o$23b3o67b2obo4bo61b3o2bo64b2obo4bo61b3o2bo64b2obo4bo63bo2b2o65bo$26b2o68bob3o65bo69bob3o65bo69bob3o62bobo67bobo$25bo2bo67bobo64b3o70bobo64b3o70bobo64b2o68b2o$26b2o69bo65bo73bo65bo73bo39$
+14$24b2o68b2o208b2o68b2o$25bo69bo209bo69bo$25bobo67bobo207bobo67bobo$26b2o68b2o208b2o68b2o3$448bo69bo$168b2o138b2o137bobo67bobo$167bo2bo66b2o68bo2bo66b2o69bo69bo$18b3o67b3o67b3o7b2o58b3o7bo59b3o7b2o58b3o7bo59b3o67b3o$18bobo67bobo6b2o59bobo67bobo6bo60bobo67bobo6bo60bobo67bobo6bo$18bobo5b2o60bobo5bo2bo58bobo5b3obo57bobo5bo61bobo5b3obo57bobo5bo61bobo5b2o60bobo5bobo$24bo2bo66bo2bobo64bo2bob2o63bo2b3o64bo2bob2o63bo2b3o64bo2bo66bo2bo$24b2obobo64b2ob2o65b2o68b2obo2bo63b2o68b2obo2bo63b2obobo64b2obobo$25bo2b2o65bo69bobob2o64bobobo65bobob2o64bobobo65bo2b2o65bo2b2o$23bobo67bobo68bo2b2obo62bo4bo65bo2b2obo62bo4bo64bobo67bobo$23b2o68b2o69b2o67b2o69b2o67b2o68b2o68b2o40$
+13$305bo69bo$24b2o68b2o208bobo67bobo$25bo69bo209bo69bo$25bobo67bobo$26b2o68b2o$448bo69bo$168bo69bo69bo69bo68bobo67bobo$28bo69bo68bobo67bobo67bobo67bobo68bo69bo$27bobo67bobo68bo69bo69bo69bo$28bo69bo$18b3o67b3o67b3o67b3o67b3o67b3o67b3o67b3o$18bobo67bobo6bo60bobo67bobo6b2o59bobo67bobo6b2o59bobo67bobo6b2o$18bobo5b2o60bobo5bobo59bobo5b2o60bobo5bo2bo58bobo5b2o60bobo5bo2bo58bobo5b2o60bobo5bo2bo$24bo2bo66bo2bo66bo2bo66bo2bobo64bo2bo66bo2bobo64bo2bo66bo2bobo$24b2obobo64b2obobo64b2obobo64b2ob2o65b2obobo64b2ob2o65b2obobo64b2ob2o$25bo2b2o65bo2b2o65bo2b2o65bo69bo2b2o65bo69bo2b2o65bo$23bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$23b2o68b2o68b2o68b2o68b2o68b2o68b2o68b2o40$
+13$25bo69bo209bo69bo$24bobo67bobo207bobo67bobo$25bo69bo209bo69bo69bo69bo$235b2o207bobo67bobo$28bo69bo136bobo141b2o64bo69bo$27bobo67bobo67b2obo66bo69b2obo66bo2bo$27b2o68b2o68bob2o66b2o68bob2o66b2o2$168b3o137b3o$167bo2bo66b2o68bo2bo66b2o$18b3o67b3o67b3o7b2o58b3o7bo59b3o7b2o58b3o7bo59b3o67b3o6b2o$18bobo67bobo6b2o59bobo67bobo6bo60bobo67bobo6bo60bobo67bobo5bobo$18bobo5b2o60bobo5bo2bo58bobo5b3obo57bobo5bo61bobo5b3obo57bobo5bo61bobo67bobo5bo$24bo2bo66bo2bobo64bo2bob2o63bo2b3o64bo2bob2o63bo2b3o135b2obo$24b2obobo64b2ob2o65b2o68b2obo2bo63b2o68b2obo2bo132bo3b2o$25bo2b2o65bo69bobob2o64bobobo65bobob2o64bobobo133b3o$23bobo67bobo68bo2b2obo62bo4bo65bo2b2obo62bo4bo137b3o$23b2o68b2o69b2o67b2o69b2o67b2o140bo2bo$516b2o39$
+15$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$25bo69bo69bo69bo69bo69bo69bo69bo2$518bo$308bo139bo68bobo$98bo139bo68bobo67b2o68bobo68bo$97bobo67b2o68bobo68bo69bo69bo$18b3o67b3o7bo59b3o7bo59b3o7bo59b3o67b3o7bobo57b3o67b3o$18bobo67bobo67bobo6bo60bobo67bobo67bobo8b2o57bobo67bobo$18bobo67bobo67bobo5bo61bobo67bobo67bobo67bobo67bobo$165bo209b2o$24b2o137bo2b3o65bo138bo2bo67bo$24b2o137b3o2bo64bobo137b3o67bobo$166bo67bo209bo$163b3o207b2obo$163bo209bob2o39$
+15$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$25bo69bo69bobo67bo69bobo67bobo67bobo67bobo$167bo139bo69bo69bo69bo$98bo68b2o68b2o68b2o68b2o68b2o68b2o$27b2o68bobo138bo$28bo69bo139bobo$28bobo208b2o136b2o68b2o68b2o$18b3o8b2o57b3o67b3o67b3o67b3o67b3o7bo59b3o7bo59b3o7bo$18bobo67bobo67bobo67bobo67bobo67bobo6bo60bobo6bo60bobo6bo$18bobo67bobo67bobo67bobo5b2o60bobo67bobo6b2o59bobo5bo61bobo5bo$25b2o208bo2bo206bo69bo$23bo2bo67bo138bo2b2o66b2o137bo2b3o65bo$23b3o67bobo137b3o68b2o137b3o2bo64bo$94bo141b2o208bo66b2o$23b2obo208bo2bo204b3o$23bob2o209b2o205bo39$
+15$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$25bo69bo69bo69bo69bo69bo69bo69bo2$448bo69bo$308bo69bo68bobo67bobo$168bo69bo68bobo67bobo68bo69bo$167bobo67bobo68bo69bo$18b3o67b3o67b3o7bo59b3o7bo59b3o67b3o67b3o67b3o$18bobo5bo61bobo67bobo67bobo67bobo67bobo67bobo67bobo$18bobo4bobo60bobo4b2o61bobo4b2o61bobo4b2o61bobo4b2o61bobo4b2o61bobo4b2o61bobo4b2o$26bo69bo69bo69bo69bo69bo69bo69bo$94bo71bobo65bo71bobo65bo71bobo65bo$94b2o71b2o65b2o71b2o65b2o71b2o65b2o42$
+15$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo2b2o63bobo2b2o63bobo67bobo67bobo67bobo$25bobo67bobo67bobo2bo64bobo2bo64bo69bo69bo69bo$27bo69bo69b2o68b2o$27b2o68b2o68bo69bo$169bo69bo$168b2o68b2o208b2o$167bo69bo209bo2bo66b2o$18b3o67b3o67b3o7bobo57b3o7bobo57b3o67b3o67b3o7b2o58b3o7bo$18bobo5bo61bobo67bobo8b2o57bobo8b2o57bobo67bobo6b2o59bobo67bobo6bo$18bobo4bobo60bobo4b2o61bobo4b2o61bobo4b2o61bobo5b2o60bobo5bo2bo58bobo5b3obo57bobo5bo$26bo69bo69bo69bo67bo2bo66bo2bobo64bo2bob2o63bo2b3o$94bo71bobo65bo69b2obobo64b2ob2o65b2o68b2obo2bo$94b2o71bobo63bob4o66bo2b2o65bo69bobob2o64bobobo$168bo63bo2bo2bo64bobo67bobo68bo2b2obo62bo4bo$232b2o69b2o68b2o69b2o67b2o40$
+15$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$25bo69bo69bo69bo69bo69bo69bobo67bobo$308bo69bo68bo69bo$168bo69bo68bobo67bobo67b2o68b2o$28bo69bo68bobo67bobo68bo69bo$27bobo67bobo68bo69bo$28bo69bo348b2o68b2o$18b3o67b3o67b3o67b3o67b3o67b3o67b3o7bo59b3o7bo$18bobo67bobo6bo60bobo67bobo6b2o59bobo67bobo6b2o59bobo7bobo57bobo6bo$18bobo5b2o60bobo5bobo59bobo5b2o60bobo5bo2bo58bobo5b2o60bobo5bo2bo58bobo5b2ob2o57bobo5bo$24bo2bo66bo2bo66bo2bo66bo2bobo64bo2bo66bo2bobo64bo2bo66bo2b3o$24b2obobo64b2obobo64b2obobo64b2ob2o65b2obobo64b2ob2o65b2obo66b2obo2bo$25bo2b2o65bo2b2o65bo2b2o65bo69bo2b2o65bo69bobobo65bobobo$23bobo67bobo67bobo67bobo67bobo67bobo67bo4b2o63bo4bo$23b2o68b2o68b2o68b2o68b2o68b2o68b2o68b2o40$
+13$165bo69bo$164bobo67bobo207b2o68b2o$165bo69bo209bo69bo$445bobo67bobo$446b2o68b2o5$27b2o68b2o68b2o68b2o68b2ob2o65b2ob2o65b2ob2o65b2ob2o$18b3o5bo2bo58b3o5bo2bo58b3o5bo2bo58b3o5bo2bo58b3o5bobob2o56b3o5bobob2o56b3o5bobob2o56b3o5bobob2o$18bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo$18bobo6bo60bobo6bo60bobo6bo60bobo6bo60bobo6bo2b2o56bobo6bo2b2o56bobo6bo2b2o56bobo6bo2b2o$28b3o67b3o67b3o67b3o67b2obo66b2obo66b2obo66b2obo$30bo63b2o4bo69bo63b2o4bo133b2o138b2o$94b2o138b2o139bo139bo$373bo139bo$373b2o138b2o40$
+15$30bo69bo$29bobo67bobo67b2o64b2o4bo63b2o4bo63b2o4bo63b2o$30bo69bo69bo64bobob3o63bobob3o63bobob3o63bobo71bo$27b3o67b3o67b3o67b2o68b2o68b2o68b3o67b3o$26bo69bo69bo69bo3b2o64bo3b2o64bo3b2o64bo3bo65bo$27b3o67b3o67b3o67b3obo65b3obo65b3obo65b3o67b3o$29bo69bo69bo69bo69bo69bo69bobo67bo$240bo70bo69bo68b2o$18b3o67b3o67b3o67b3o10bo56b3o9b2o56b3o9b2o56b3o67b3o$18bobo5b2o60bobo5b2o60bobo5b2o60bobo5b2o2b2o56bobo5b2o60bobo5b2o60bobo5b2o60bobo5b2o$18bobo5bo61bobo5bo61bobo5bo3b2o56bobo5bo61bobo5bo61bobo5bo61bobo5bo3b2o56bobo5bo$28bo69bobo67bo2bo66bo69bo69bobo67bo2bo65b3o$26bob3o65bob2obo64bob3o65bob3o65bob3o65bob2obo64bob2o69bo$26b2o3bo64b2o3bo64b2o68b2o3bo64b2o3bo64b2o3bo62b3obo$29b2o68b2o68b2o68b2o68b2o68b2o62bo6bo$25bob2o66bob2o67b3o2bo63bob2o66bob2o66bob2o63bobo4b2o$25b2obo66b2obo67bo3b2o63b2obo66b2obo66b2obo64bo39$
+13$445bo69bo$444bobo67bobo$100bo69bo274bo69bo$25b2o72bobo67bobo203b2o$25bobob2o69bo69bo204bobo71bo69bo$27b2obo66b3o67b3o67bo69bo69b3o67b3o67b3o$26bo69bo69bo69bobo67bobo67bo3bo65bo69bo$27b3o67b3o67b3o67bo69bo69b3o67b3o67b3o$29bo69bo69bo209bobo67bo69bo$30b2o68b2o208bo69b2o$18b3o10bo56b3o10bo56b3o67b3o8b2o57b3o8bobo56b3o67b3o67b3o$18bobo5b2obo58bobo5b2obo58bobo5b2ob2o57bobo5b2o2bo57bobo5b2o2bo57bobo5b2o60bobo5b2o60bobo5b2o$18bobo5b2ob2o57bobo5b2ob2o57bobo5b2obo58bobo6b3o58bobo6b3o58bobo5bo61bobo5bo61bobo5bo$171bo63bo69bo71b3o68bo69bobo$26b2ob2o64bob4o64bob5o63b7o63b7o62bo5bo65bob3o65bob2obo$27bob2o64b2o4bo63b2o74bo69bo61bobo3b2o65b2o3bo64b2o3bo$25bo72b3o67b2o64bob2o2bo62b4o2bo64bo74b2o68b2o$25b2o68b2obo66b3o2bo63b2obo2b2o61bo2bo2b2o134bob2o66bob2o$95bobo67bo3b2o274b2obo66b2obo39$
+13$25bo69bo69bo69bo69bo69bo69bo69bo$24bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$25bo69bobo67bobo67bobo67bo69bo69bo69bo$96bobob2o64bobob2o64bobob2o207b2o$29bo68bob2o66bob2o66bob2o67bo69bo70bo68bo$27b3o67b2o68b2o68b2o68b3o67b3o67b3o67b3o$26bo69bo3b2o64bo3b2o64bo3b2o64bo69bo69bo69bo$27b3o67b3obo65b3obo65b3obo65b3o67b3o67b3o67b3o$29bo69bo69bo69bo69bo69bo69bo69bo$100bo70bo69bo208b2o68b2o$18b3o67b3o10bo56b3o9b2o56b3o9b2o56b3o67b3o67b3o10bo56b3o10bo$18bobo5b2o60bobo5b2o2b2o56bobo5b2o60bobo5b2o60bobo5b2o60bobo5b2o60bobo5b2obo58bobo5b2obo$18bobo5bo3b2o56bobo5bo61bobo5bo61bobo5bo61bobo5bo3b2o56bobo5bo61bobo5b2ob2o57bobo5b2ob2o$28bo2bo66bo69bo69bobo67bo2bo65b3o$26bob3o65bob3o65bob3o65bob2obo64bob2o69bo66b2ob2o64bob4o$26b2o68b2o3bo64b2o3bo64b2o3bo62b3obo138bob2o64b2o4bo$29b2o68b2o68b2o68b2o62bo6bo134bo72b3o$26b3o2bo63bob2o66bob2o66bob2o63bobo4b2o134b2o68b2obo$26bo3b2o63b2obo66b2obo66b2obo64bo211bobo39$
+13$25bo69bo69bo69bo139b2ob2o65b2ob2o$24bobo67bobo67bobo67bobo70b2o66b2obo66b2obo68b2o$25bo69bo69bo69bo72bo70bo69bo68bo$305b3o67b2ob2o65b2ob2o65b3o$29bo209bo65bo69bo69bo69bo$27b3o67bo69bo69b3o67b3o67b2obo66b2obo66b3o$26bo69bobo67bobo67bo69b2o2bo65b2ob2o65b2ob2o65b2o2bo$27b3o67bo69bo69b3o69b2o208b2o$29bo209bo$170bo$18b3o67b3o8b2o57b3o8bobo56b3o67b3o67b3o6bo60b3o6b2o59b3o$18bobo5b2ob2o57bobo5b2o2bo57bobo5b2o2bo57bobo5b2o60bobo67bobo5bobo59bobo5bobo59bobo$18bobo5b2obo58bobo6b3o58bobo6b3o58bobo5bo61bobo67bobo5bobo59bobo5bo61bobo$31bo63bo69bo71b3o135b2o2b2o64b2obo$25bob5o63b7o63b7o62bo5bo132bo3bobo63bo3b2o65bo$25b2o74bo69bo61bobo3b2o132b2ob2o2bo62b3o67bobo$28b2o64bob2o2bo62b4o2bo64bo144b2o65b3o65bo$25b3o2bo63b2obo2b2o61bo2bo2b2o274bo2bo$25bo3b2o415b2o39$
+13$25b2ob2o345b2ob2o65b2ob2o$25b2obo68b2o68b2o68b2o68b2o66b2obo66b2obo$29bo68bo69bo69bo69bo70bo69bo$25b2ob2o65b3o67b3o67b3o67b3o67b2ob2o65b2ob2o66b2o$25bo69bo69bo69bo69bo69bo69bo70bo$27b2obo66b3o67b3o67b3o67b3o67b2obo66b2obo66bo$26b2ob2o65b2o2bo65b2o2bo65b2o2bo65b2o2bo65b2ob2o65b2ob2o65b2o$99b2o68b2o68b2o68b2o2$448bo68b2o$18b3o67b3o67b3o67b3o67b3o67b3o6b2o59b3o6bobo58b3o5bo2bo$18bobo67bobo67bobo67bobo67bobo6b2o59bobo7bo59bobo7bo59bobo5bobo$18bobo67bobo4b2o61bobo4b2o61bobo5b2o60bobo5bo2bo58bobo5bo61bobo5bobobo57bobo6bo$26b2ob2o65bo69bo67bo2bo66bo2bobo64b3obo65b3o2bobo66b3o$23b2o2bobobo64bobo65bo69b2obobo64b2ob2o64bo3bobo63bo3bobobo69bo$23b2obo4bo65b2o65b2o69bo2b2o65bo68b2o3bo64b2obo2bo69b2o$26bob3o202bobo67bobo70b3o63bobob2o$26bobo204b2o68b2o71bo65b2o$27bo39$
+13$95bo69bo348bob2o$94bobo67bobo207b2ob2o65b2ob2o65b2obo$95bo69bo69b2o68b2o68bobo2bo64bobo2bo66bob2o$26b2o70b2o68b2o65bo69bo69bo3b2o64bo3b2o66bobo$26bo70bobo67bobo66bo69bo69bo69bo69b2o2bo$27bo69bo69bo69bo69bo69bo69bo66bo3bobo$26b2o68b2o68b2o68b2o68b2o68b2o68b2o66b2ob2ob2o3$27b2o68b2o68b2o68b2ob2o65b2ob2o65b2ob2o65b2ob2o$18b3o5bo2bo58b3o5bo2bo58b3o5bo2bo58b3o5bobob2o56b3o5bobob2o56b3o5bobob2o56b3o5bobob2o56b3o$18bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo59bobo$18bobo6bo60bobo6bo60bobo6bo60bobo6bo2b2o56bobo6bo2b2o56bobo6bo2b2o56bobo6bo2b2o56bobo$28b3o67b3o67b3o67b2obo66b2obo66b2obo66b2obo$24bo6bo69bo62bo6bo132b2o138b2o$23bobo4b2o68b2o61bobo4b2o133bo139bo$24bo139bo138bo139bo$303b2o138b2o40$
+13$25b2o347b2o70bo69bo$25bo3b2o64b2o68b2o207bo2b2o66bobo67bobo$26bo2bo65bobob2o64bo3b2o134bo2bo66bobobo65bobo67bobo$27bobo67bobo67bo2bo65b2o66b2obo66b2o3bo64b2ob2o65b2obob2o$26b2o2b2o64b2o2bo65b3o67bo70bobo67bo2b2o135bobo$24bo3bobo63bo3bobo63bo69bobo67b2obo66b2ob2obo63b2ob2o65b2obo2bo$24b2ob2o2bo62b2ob2ob2o62b2ob2o65b2o68b2o2bo65b2o4bo63b2obo2bo63b2o2bobo$30b2o136bo138b2o68b2ob2o67b2o66b2ob2o$168bobo207bobo$169b2o206bo2bo$18b3o67b3o67b3o67b3o67b3o67b3o5bo3b2o56b3o67b3o$18bobo67bobo67bobo67bobo67bobo67bobo5b2o60bobo67bobo$18bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo45$
+13$514bob2o$26b2o276b2o68b2o68b2o68b2obo$24bo2bo277bo69bo69bo71bob2o$24b2obob2o274bobo67bobo67bobo69bobo$27bobo276b2o68b2o68b2o68b2o2bo$24b2obo2bo483bo3bobo$24b2o2bobo483b2ob2ob2o$27b2ob2o$97b2o68b2o68b2o68b2o68b2o68b2o$98bo69bo69bo69bo69bo69bo$18b3o67b3o7bob2o56b3o7bob2o56b3o7bob2o56b3o7bob2o56b3o7bob2o56b3o7bob2o56b3o$18bobo67bobo4b2obobo57bobo4b2obob2o56bobo4b2obobo57bobo4b2obobo57bobo4b2obob2o56bobo4b2obobo57bobo4b2o$18bobo67bobo5bobo2bo56bobo5bobo59bobo5bobo2bo56bobo5bobo2bo56bobo5bobo59bobo5bobo2bo56bobo5bo$94bobobob2o62bobobo65bobobob2o62bobobob2o62bobobo65bobobob2o64bobo$93bobo2bobo62bob2o2b2o63b2o2bo64bobo2bobo62bob2o2b2o63b2o2bo68b2o$93bobobo2bo62bo3bobobo66bob2o61bobobo2bo62bo3bobobo66bob2o$94bo2bobo64b2obo2bo68bobo62bo2bobo64b2obo2bo68bobo$97b2o63bobob2o139b2o63bobob2o$162b2o208b2o39$
+13$25b2o347b2o70bo69b2o$25bo3b2o64b2o68b2o207bo2b2o66bobo67bo2bo$26bo2bo65bobob2o64bo3b2o134bo2bo66bobobo65bobo67bobobo$27bobo67bobo67bo2bo65b2o66b2obo66b2o3bo64b2ob2o65b2obobo$26b2o2b2o64b2o2bo65b3o67bo70bobo67bo2b2o135bob2o$24bo3bobo63bo3bobo63bo69bobo67b2obo66b2ob2obo63b2ob2o65b2obo3bo$24b2ob2o2bo62b2ob2ob2o62b2ob2o65b2o68b2o2bo65b2o4bo63b2obo2bo63b2o2bob2o$30b2o136bo138b2o68b2ob2o67b2o66b2obo$168bobo207bobo139bo$169b2o206bo2bo136b3o$18b3o67b3o67b3o5bo61b3o5bo61b3o67b3o6bobo58b3o5bo61b3o5bo$18bobo4b2o61bobo4b2o61bobo4bobo60bobo4bobo60bobo4bo62bobo4b2obo59bobo4bobo60bobo4bobo$18bobo5bo61bobo5bo61bobo5bo61bobo5bo61bobo67bobo5bo61bobo5bo61bobo5bo$26bobo67bobo277bobo$27b2o68b2o278b2o43$
+13$27bo276bob2o67b2o$26bobo275b2obo67bo3b2o64b2o68b2o$24bo2bobo277bob2o65bo2bo65bobob2o64bo3b2o$24b2obobo66b2o68b2o68b2o69bobo67bobo67bobo67bo2bo$27bob2o65bobo67bobo67bobo67b2o2bo65b2o2b2o64b2o2bo65b3o$24b2obo3bo62bobo2bo64bobo2bo64bobo2bo64bo3bobo63bo3bobo63bo3bobo63bo$24b2o2bob2o62b2obobo64b2obobo64b2obobo64b2ob2ob2o62b2ob2o2bo62b2ob2ob2o62b2ob2o$27b2obo66bo2b2o65bo2b2o65bo2b2o138b2o136bo$30bo66b2obo66b2obo66b2obo277bobo$27b3o70bo69bo69bo278b2o$18b3o5bo61b3o6b2ob2o56b3o6b2ob2o56b3o6b2ob2o56b3o4b2o61b3o4b2o61b3o4b2o61b3o4b2o$18bobo4bobo60bobo4bo2bo59bobo4bo2bo59bobo4bo2bo59bobo5bo61bobo5bo61bobo5bo61bobo5bo$18bobo5bo61bobo4b2obo59bobo4b2obob2o56bobo4b2obo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5bobo$96bobob2o64bobobo65bobob2o65bobo67bobo67bobo67b2o$94bobobobo63bobobo2bo62bobobob2o66bo69bo69bo$93bobo2bobo62bob2obob2o62b2o2bo$93bobobobo63bo5bo68bob2o$94bo2bo66bob2obo69bobo$97b2o66b2obo39$
+13$164b2o70bo69bo$164bo2b2obo64bobo67bobo68b2o138bo$95bo2bo66bobob2o64bobo67bobo66bo2bo137bobo$26b2o66b2obo66b2o68b2ob2o65b2obob2o63b2obob2o135bo2bo$26bo70bobo67bob2o136bobo67bobo67b2o68b2obo$24bobo67b2obo66b2ob2obo63b2ob2o65b2obo2bo63b2obo2bo67bo69bo2bo$24b2o68b2o2bo65b2o68b2obo2bo63b2o2bobo63b2o2bobo67bob2o66bob2o$97b2o68b3o69b2o66b2ob2o65b2ob2o63b2obobo64b2obo$168bobo274b2obo2bo63b2obob2o$26bo139bo3bo278bobo67bobo$18b3o4bobo60b3o4bo62b3o4bob3o58b3o4b2o61b3o4b2o61b3o4b2o61b3o9bo57b3o$18bobo5bo61bobo5bo61bobo5bo61bobo5bo61bobo5bo61bobo5bo61bobo67bobo$18bobo67bobo67bobo6bo60bobo5bobo59bobo5bobo59bobo5bobo59bobo67bobo$166b2o69b2o68bobo67bobo$308bo69bo43$
+13$28b2o208b2o64bob2o67b2o$25b2o2bo136bo68b2o2bo64b2obo67bo3b2o64b2o68b2o$26bobo136bobo68bobo68bob2o65bo2bo65bobob2o64bo3b2o$26bo2b3o68b2o64bo2b2o65bo2b3o65bobo67bobo67bobo67bo2bo$27b2o2bo65b2o2bo65b2o2bo65b2o2bo64b2o2bo65b2o2b2o64b2o2bo65b3o$28bobo67bobo67bobo67bobo63bo3bobo63bo3bobo63bo3bobo63bo$28bob2o66bob2o66bob2o66bob2o62b2ob2ob2o62b2ob2o2bo62b2ob2ob2o62b2ob2o$25b2obo66b2obo66b2obo66b2obo141b2o136bo$25b2obob2o63b2obo66b2obo66b2obo279bobo$29bobo67b2o68b2o68b2o278b2o$18b3o67b3o10bo56b3o10bo56b3o10bo56b3o67b3o67b3o67b3o$18bobo67bobo6b4o57bobo6b4o57bobo6b4o57bobo6bo60bobo6bo60bobo6bo60bobo$18bobo67bobo7bo59bobo7bo59bobo7bo59bobo5bobo59bobo5bobo59bobo5bobo59bobo5b2o$96bo69bo69bo66b2o2bo65b2o2bo65b2o2bo65b2o2bo$96b2o68b2o68b2o66b3o67b3o67b3o67b3o$302bo69bo69bo69bo$302b3o67b3o67b3o67b3o$305bo69bo69bo69bo$304b2o68b2o68b2o68b2o39$
+13$164b2o70bo69bo137bob2o67b2o$164bo2b2obo64bobo67bobo68b2o66b2obo67bo3b2o$95bo2bo66bobob2o64bobo67bobo66bo2bo69bob2o65bo2bo$26b2o66b2obo66b2o68b2ob2o65b2obob2o63b2obob2o66bobo67bobo$26bo70bobo67bob2o136bobo67bobo66b2o2bo65b2o2b2o$24bobo67b2obo66b2ob2obo63b2ob2o65b2obo2bo63b2obo2bo63bo3bobo63bo3bobo$24b2o68b2o2bo65b2o68b2obo2bo63b2o2bobo63b2o2bobo63b2ob2ob2o62b2ob2o2bo$97b2o68b3o69b2o66b2ob2o65b2ob2o138b2o$168bobo$166bo3bo$18b3o67b3o67b3o5b4o58b3o67b3o67b3o67b3o67b3o$18bobo67bobo67bobo67bobo67bobo6bo60bobo6bo60bobo67bobo$18bobo5b2o60bobo67bobo5b2o60bobo5b2o60bobo5bobo59bobo5bobo59bobo3bo63bobo3bo$23b2o2bo65b2o68b2o2bo65b2o2bo65b2o2bo65b2o2bo65bobo67bobo$24b3o67b2o68b3o67b3o67b3o67b3o67bo69bo$22bo69bo69bo69bo69bo69bo$22b3o67b2o68b3o67b3o67b3o67b3o$25bo139bo69bo69bo69bo$24b2o138b2o68b2o68b2o68b2o39$
+13$304b2o70bo69bo$25b2o68b2o207bo2b2o66bobo67bobo68b2o$25bobob2o64bo3b2o134bo2bo66bobobo65bobo67bobo66bo2bo$27bobo67bo2bo65b2o66b2obo66b2o3bo64b2ob2o65b2obob2o63b2obob2o$26b2o2bo65b3o67bo70bobo67bo2b2o135bobo67bobo$24bo3bobo63bo69bobo67b2obo66b2ob2obo63b2ob2o65b2obo2bo63b2obo2bo$24b2ob2ob2o62b2ob2o65b2o68b2o2bo65b2o4bo63b2obo2bo63b2o2bobo63b2o2bobo$98bo138b2o68b2ob2o67b2o66b2ob2o65b2ob2o$98bobo207bobo$99b2o206bo2bo$18b3o67b3o67b3o67b3o67b3o6bobo58b3o67b3o67b3o$18bobo67bobo67bobo67bobo67bobo7bo59bobo67bobo67bobo$18bobo3bo63bobo3bo63bobo3bo63bobo3bo63bobo3bo63bobo3bo63bobo3bo63bobo3bo$23bobo67bobo67bobo67bobo67bobo67bobo67bobo67bobo$24bo69bo69bo69bo69bo69bo69bo69bo43$
+13$28bo$26b3o$25bo276b2ob2o$23bo2bo275bob2o68b2o$23b4o280bo65bo2bo$27b2o274b2ob2o64bob3o$25b2o2bo273bo69bo$24bobobo69bo69b2o68bo66b2obo66b4o$24bobob2o65bo2bo66bo2bo66bo2bo65b2ob2o65b2o2bo$25bo68bobobo65bobobo65bobobo$18b3o5b4o58b3o4b2o61b3o4b2o2b2o57b3o4b2o61b3o3b2ob2o59b3o3b2o62b3o67b3o$18bobo9bo57bobo6bo60bobo6bobo58bobo6bo60bobo4b2o2bo58bobo4b3o60bobo2b2o63bobo2b2o$18bobo5b3obo57bobo2b5o60bobo2b5obo58bobo2b5o60bobo2bo4bo59bobo2bo4bo59bobo2b2o63bobo2b2o$23b2o2bobo63bo69bo4bo64bo69b2ob2o65b2ob2o$24b2o69b2o68b2o68b3o66bobo67bobo$22bo3b3o67b2o68b2o68bo65bobo2bo64bobo2bo134bo$22b2obo2bo65bo69bo3bo65bo67b2o2b2o64b2o2b2o134b3o$26b2o65bob2o67b2obobo63bob3o277bo$168bo345b2o39$
+17$232b2o138b2o138b2o$233bo139bo139bo$233bobo137bobo137bobo$165b2o67bobo68b2o67bobo68b2o67bobo$165b2o68bo69b2o68bo69b2o68bo2$18b3o67b3o67b3o67b3o67b3o67b3o67b3o67b3o$18bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o$18bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o2$516bo$25b2o67bo207bo69bo72b2o68bobo$25b2o66bobo206b3o67b3o70b2o69bo$94bo210bo69bo$304b2o68b2o39$
+17$92b2o$93bo351b2o$26bo66bobo347bo2bo66b2o$25bobo66bobo67b2o68b2o68b2obo66b2o67b3o67b2o$25b2o68bo68bo2bo66bo2bo66bob2o66bo2bo$166b2o68b2o138b2o65b3o67b2o$18b3o67b3o67b3o67b3o67b3o67b3o67b3o2bo2bo61b3o2bobo$18bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo4b2o61bobo4bo$18bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo2b2o63bobo67bobo4b2o3$24bo69bo137bo72b2o67bo$23bobo67bobo136b3o68bo2bo66bobo$24bo69bo140bo67b2o69bo$234b2o39$
+Unique perturbations:
+x = 0, y = 0, rule = B3/S23-q4i
+13$308bo$306b3o$162b2ob2o138bo209bo$162bob2o70b2o65bo2bo207bobo$167bo68bo66b4o70b2o136bo$95b2o66b2ob2o66bobo70b2o69bo$93bo2bo66bo70b2o69b2o2bo68bob2o$93b3o69b2obo135bobobo66b2obobo$164b2ob2o135bobob2o65b2obo2bo$93b3o209bo73bobo65b2ob2o$18b3o67b3o2bo2bo61b3o3b2ob2o59b3o67b3o5b4o58b3o9bo57b3o5bobob2o56b3o$18bobo2b2o63bobo4b2o61bobo4b2o2bo58bobo67bobo9bo57bobo67bobo5bobo59bobo$18bobo2b2o63bobo67bobo2bo4bo59bobo3bo63bobo5b3obo57bobo67bobo6bo2b2o56bobo$163b2ob2o65bobo67b2o2bobo138b2obo$164bobo67bo69b2o$162bobo2bo134bo3b3o$162b2o2b2o134b2obo2bo$306b2o40$
+13$25b2ob2o$25b2obo$29bo$25b2ob2o$25bo$27b2obo$26b2ob2o4$18b3o6b2o$18bobo7bo$18bobo5bo$24b3obo$23bo3bobo$24b2o3bo$26b3o$26bo40$
+done 0 20:09:38

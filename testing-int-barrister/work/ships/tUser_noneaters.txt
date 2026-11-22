@@ -1,0 +1,2 @@
+B3/S23-a5 catalysts (intact >= 30 gens): 73 completions, 73 distinct, 55 pass after removing filler, 0 reactions; rejected {'leftover<1': 55}
+

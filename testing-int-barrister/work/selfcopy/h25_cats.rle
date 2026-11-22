@@ -1,0 +1,14 @@
+#C B2i3/S23-c head catalysts (intact >= 30 gens): 3111 completions, 3111 distinct, 168 pass after removing filler, 15 reactions; rejected {}
+#C entries in .txt order, 5 per row, spacing 24x26
+x = 109, y = 66, rule = B2i3/S23-c
+o29b2o23bo16bo23bo9bo$3o27b2o21b3o16b3o21b3o5b3o$3bo48bo22bo23bo3bo$2b
+2o22b2o24b2o20b2o22b2o3b2o$24bo2bo$24b2o$83b2o$82bobo$55b2o26bo$55b2o$
+31bo$30b3o$5bo23b2o2bo16bo26bo23bo$4b3o42b3o24b3o21b3o$3b2o2bo40b2o2bo
+22b2o2bo19b2o2bo12$2o5b2o15bo9bo16b2o22bo25b2o$o7bo15b3o5b3o17bo22b3o
+6bo11bo4bobob2o$b3ob3o19bo3bo16b2o2bob2o16bo5bo3b3o11b3o4bobo2bo$3bobo
+20b2o3b2o15bobobobo2bo14b6o3bo17bo3b2o2b2o$50bobo3b2o23b2o15b2o$49bo2b
+2o20b2o$35b2o12b2o23bo$34bobo35bobo$35bo36b2o3$4bo74bo21bo$3b3o23bo23b
+o24b3o19b3o$2b2o2bo21b3o21b3o22b2o2bo17b2o2bo$27b2o2bo19b2o2bo12$2o27b
+2o17b2o27b2o24b2o$2o27b2o17b2o27b2o24b2o3$98bo$97b3o$96b2o2bo$57b2o20b
+2o$57b2o20b2o3$4bo21bo25bo21bo$3b3o19b3o23b3o19b3o$2b2o2bo17b2o2bo21b
+2o2bo17b2o2bo!

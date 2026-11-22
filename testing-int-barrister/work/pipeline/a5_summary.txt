@@ -1,0 +1,16 @@
+B3/S23-a5: completions 373, distinct catalysts 373, passing 312, groups 187, rejected {'catalyst unstable in rule': 61}
+  1:cat7/left0/x20
+  2:cat18/left0/x2
+  3:cat18/left0/x2
+  4:cat24/left0/x2
+  5:cat25/left0/x2
+  6:cat28/left0/x2
+  7:cat29/left0/x2
+  8:cat34/left0/x2
+  9:cat41/left0/x1
+  10:cat20/left4/x2
+  11:cat24/left4/x1
+  12:cat24/left4/x1
+  13:cat24/left4/x2
+  14:cat24/left4/x4
+  15:cat15/left5/x24

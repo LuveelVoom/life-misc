@@ -1,0 +1,44 @@
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B2i3/S23-c
+INT check: still-life=NO catalyst-region-restored-at-gen-24=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.4E3.C6E$18.3E.2C3.5E$18.3E.C.4C4E$19.2E7.4E$23.3C2.4E$23.C2.C.4E$25.2C.4E$9.A7.A10.4E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+17$24bo$22b3o$21bo3b2o$20bob2o3bo$19bo2bob4o$19b2o$23b3o$23bo2bo$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-24=yes
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.14E$18.3E2C.C2.5E$18.3E.C.4C4E$19.2E7.4E$23.3C2.4E$23.C2.C.4E$25.2C.4E$9.A7.A10.4E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+20$21b2obo2bo$19bo2bob4o$19b2o$23b3o$23bo2bo$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.14E$18.14E$22.C9E$19.3C.9E$19.C3.9E$24.8E$26.6E$9.A7.A8.6E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+20$21b2o$22bo$19b3o$19bo3$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.14E$18.14E$22.C9E$19.3C.9E$19.C3.9E$24.8E$25.C6E$9.A7.A8.6E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+20$21b2o$22bo$19b3o$19bo$25b2o$25b2o$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.14E$18.14E$23.9E$19.4C9E$19.C2.C.8E$24.8E$26.6E$9.A7.A8.6E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+19$21bo2bo$21b4o2$19b4o$19bo2bo3$9bo7bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+INT check: still-life=yes catalyst-region-restored-at-gen-14=NO
+Winner:
+x = 0, y = 0, rule = LifeBellman
+17$18.14E$18.14E$18.14E$18.14E$23.9E$19.4C9E$19.C2.C.8E$24.8E$25.C6E$9.A7.A8.6E$8.A.A6.2A$9.A8.2A$19.A$12.2A$12.2A33$
+Completed:
+19$21bo2bo$21b4o2$19b4o$19bo2bo$26bo$25bobo$9bo7bo8bo$8bobo6b2o$9bo8b2o$19bo$12b2o$12b2o33$
+All solutions:
+x = 0, y = 0, rule = B2i3/S23-c
+17$24bo$22b3o$21bo3b2o274bo2bo66bo2bo$20bob2o3bo63b2obo2bo63b2o68b2o68b4o66b4o$19bo2bob4o61bo2bob4o64bo69bo$19b2o68b2o68b3o67b3o67b4o66b4o$23b3o67b3o63bo69bo69bo2bo66bo2bo$23bo2bo66bo2bo138b2o139bo$25b2o68b2o138b2o138bobo$9bo7bo61bo7bo61bo7bo61bo7bo61bo7bo61bo7bo8bo$8bobo6b2o59bobo6b2o59bobo6b2o59bobo6b2o59bobo6b2o59bobo6b2o$9bo8b2o59bo8b2o59bo8b2o59bo8b2o59bo8b2o59bo8b2o$19bo69bo69bo69bo69bo69bo$12b2o68b2o68b2o68b2o68b2o68b2o$12b2o68b2o68b2o68b2o68b2o68b2o39$
+Unique perturbations:
+x = 0, y = 0, rule = B2i3/S23-c
+20$21b2o68b2obo2bo$22bo66bo2bob4o$19b3o67b2o$19bo73b3o$93bo2bo$95b2o$9bo7bo61bo7bo$8bobo6b2o59bobo6b2o$9bo8b2o59bo8b2o$19bo69bo$12b2o68b2o$12b2o68b2o39$

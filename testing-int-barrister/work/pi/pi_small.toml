@@ -1,0 +1,14 @@
+# Pi catalyst search, B36/S23 (crude INT port of Barrister).
+# A = glider + all still lifes (stills take part in the pi-forming reaction).
+# B = catalyst region: east of the glider lane (x-y >= 6, i.e. >= 3 cells from the lane is x-y in [-2,1]),
+#     no cell within 2 of an existing still life.
+rule = "B36/S23"
+first-active-range = [40, 75]
+active-window-range = [0, 25]
+min-stable-interval = 8
+max-active-cells = 6
+stabilise-results = true
+pattern = '''
+x = 23, y = 28, rule = LifeHistory
+8.15B$8.15B$8.15B$8.15B$.A6.15B$2.A5.15B$3A5.15B$9.8B$10.7B$11.4B4.2A$12.3B4.A$13.2B2.A.A$14.B2.2A3.B$22.B$21.2B$$6.A$5.A.A$6.2A$11.2A$10.A2.A$10.A2.A$11.2A$$7.2A2.2A2.2A$7.A3.2A3.A$5.A.A8.A.A$5.2A10.2A!
+'''

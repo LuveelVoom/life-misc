@@ -1,0 +1,13 @@
+# B3/S23-a5: catalysts for a lone b3o$o2bo$o2bo! (region a5_N; behind is skipped).
+rule = "B3/S23-a5"
+unsafe-allow-unrepresented-survival = true
+first-active-range = [0, 30]
+active-window-range = [0, 30]
+min-stable-interval = 10
+max-active-cells = 6
+stabilise-results = true
+exempt-existing = false
+pattern = '''
+x = 0, y = 0, rule = LifeHistory
+7BC14B$5B3C14B$4BC10BC6B$2BC2B5C4BCBC5B$2B2CBC3BC5BC6B$5BC2BC13B$5BCBC14B$6BC15B$22B$22B$$$10.3A$9.A2.A$9.A2.A!
+'''

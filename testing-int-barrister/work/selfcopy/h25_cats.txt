@@ -1,0 +1,31 @@
+B2i3/S23-c head catalysts (intact >= 30 gens): 3111 completions, 3111 distinct, 168 pass after removing filler, 15 reactions; rejected {}
+1: catalyst 7 cells, first contact gen 17, back from gen 24, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    o$3o$3bo$2b2o9$5bo$4b3o$3b2o2bo!
+2: catalyst 10 cells, first contact gen 15, back from gen 19, leftover at 300 0 cells: eater (nothing left); 38 variant(s)
+    6b2o$6b2o2$2b2o$o2bo$2o5$7bo$6b3o$5b2o2bo!
+3: catalyst 11 cells, first contact gen 15, back from gen 24, leftover at 300 0 cells: eater (nothing left); 2 variant(s)
+    7bo$5b3o$4bo$4b2o5$7b2o$7b2o3$2bo$b3o$2o2bo!
+4: catalyst 12 cells, first contact gen 16, back from gen 24, leftover at 300 0 cells: eater (nothing left); 5 variant(s)
+    o$3o$3bo$2b2o3$11b2o$10bobo$11bo4$5bo$4b3o$3b2o2bo!
+5: catalyst 14 cells, first contact gen 17, back from gen 19, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    o9bo$3o5b3o$3bo3bo$2b2o3b2o9$5bo$4b3o$3b2o2bo!
+6: catalyst 14 cells, first contact gen 13, back from gen 17, leftover at 300 0 cells: eater (nothing left); 16 variant(s)
+    2o5b2o$o7bo$b3ob3o$3bobo8$4bo$3b3o$2b2o2bo!
+7: catalyst 19 cells, first contact gen 16, back from gen 19, leftover at 300 0 cells: eater (nothing left); 1 variant(s)
+    o9bo$3o5b3o$3bo3bo$2b2o3b2o3$11b2o$10bobo$11bo4$5bo$4b3o$3b2o2bo!
+8: catalyst 22 cells, first contact gen 11, back from gen 16, leftover at 300 0 cells: eater (nothing left); 18 variant(s)
+    3b2o$4bo$2o2bob2o$obobobo2bo$2bobo3b2o$bo2b2o$b2o6$5bo$4b3o$3b2o2bo!
+9: catalyst 26 cells, first contact gen 12, back from gen 18, leftover at 300 3 cells: p2 oscillator (3 cells); 24 variant(s)
+    3bo$3b3o6bo$o5bo3b3o$6o3bo$9b2o$2b2o$2bo$obo$2o3$7bo$6b3o$5b2o2bo!
+10: catalyst 20 cells, first contact gen 12, back from gen 17, leftover at 300 4 cells: 4-cell still life; 2 variant(s)
+    5b2o$o4bobob2o$3o4bobo2bo$3bo3b2o2b2o$2b2o7$5bo$4b3o$3b2o2bo!
+11: catalyst 4 cells, first contact gen 24, back from gen 27, leftover at 300 6 cells: p2 oscillator (6 cells); 24 variant(s)
+    2o$2o10$4bo$3b3o$2b2o2bo!
+12: catalyst 4 cells, first contact gen 24, back from gen 27, leftover at 300 6 cells: p2 oscillator (6 cells); 6 variant(s)
+    5b2o$5b2o10$2bo$b3o$2o2bo!
+13: catalyst 8 cells, first contact gen 15, back from gen 27, leftover at 300 6 cells: p2 oscillator (6 cells); 25 variant(s)
+    2o$2o6$9b2o$9b2o3$4bo$3b3o$2b2o2bo!
+14: catalyst 8 cells, first contact gen 15, back from gen 27, leftover at 300 6 cells: p2 oscillator (6 cells); 3 variant(s)
+    5b2o$5b2o6$7b2o$7b2o3$2bo$b3o$2o2bo!
+15: catalyst 4 cells, first contact gen 15, back from gen 18, leftover at 300 12 cells: p2 oscillator (12 cells) (same as the head alone); 1 variant(s)
+    7b2o$7b2o3$2bo$b3o$2o2bo!

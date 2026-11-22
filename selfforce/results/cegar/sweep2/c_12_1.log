@@ -1,0 +1,14 @@
+box 12x12 wrap=False |D|=100 free=144 fixed=0
+rigidity 2: 1582 flip sets, 883411 clauses
+it 1: last diff cluster 4 cells, block 30 lits, avg block 30.0, clauses 8, 0s
+it 2: last diff cluster 3 cells, block 16 lits, avg block 23.0, clauses 16, 0s
+it 3: last diff cluster 4 cells, block 20 lits, avg block 22.0, clauses 24, 0s
+it 4: last diff cluster 3 cells, block 30 lits, avg block 24.0, clauses 32, 1s
+it 200: last diff cluster 4 cells, block 16 lits, avg block 25.6, clauses 3500, 15s
+it 400: last diff cluster 3 cells, block 28 lits, avg block 25.4, clauses 7356, 31s
+it 600: last diff cluster 3 cells, block 36 lits, avg block 25.7, clauses 10964, 46s
+it 800: last diff cluster 4 cells, block 23 lits, avg block 26.3, clauses 14308, 61s
+it 1000: last diff cluster 4 cells, block 20 lits, avg block 25.8, clauses 18028, 77s
+it 1200: last diff cluster 4 cells, block 36 lits, avg block 26.1, clauses 21336, 91s
+it 1400: last diff cluster 3 cells, block 26 lits, avg block 26.6, clauses 25192, 108s
+it 1600: last diff cluster 3 cells, block 25 lits, avg block 26.3, clauses 28308, 123s

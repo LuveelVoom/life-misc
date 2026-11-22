@@ -1,0 +1,3 @@
+B2i3/S23-c catalysts (intact >= 30 gens): 120 completions, 120 distinct, 28 pass after removing filler, 1 reactions; rejected {}
+1: catalyst 4 cells, first contact gen 24, back from gen 27, leftover at 300 6 cells: p2 oscillator (6 cells); 28 variant(s)
+    2o$2o10$4bo$3b3o$2b2o2bo!

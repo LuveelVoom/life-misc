@@ -1,0 +1,26 @@
+box 24x24 wrap=False |D|=400 free=576 fixed=0
+it 1: last diff cluster 3 cells, block 25 lits, avg block 25.0, clauses 4, 0s
+it 2: last diff cluster 1 cells, block 25 lits, avg block 25.0, clauses 132, 0s
+it 3: last diff cluster 2 cells, block 30 lits, avg block 26.7, clauses 260, 1s
+it 4: last diff cluster 1 cells, block 25 lits, avg block 26.2, clauses 388, 1s
+it 200: last diff cluster 1 cells, block 25 lits, avg block 25.7, clauses 90420, 34s
+it 400: last diff cluster 1 cells, block 25 lits, avg block 25.8, clauses 172052, 71s
+it 600: last diff cluster 1 cells, block 25 lits, avg block 25.8, clauses 242860, 108s
+it 800: last diff cluster 1 cells, block 25 lits, avg block 25.9, clauses 319832, 148s
+it 1000: last diff cluster 1 cells, block 25 lits, avg block 25.8, clauses 375376, 191s
+it 1200: last diff cluster 1 cells, block 25 lits, avg block 25.6, clauses 467204, 232s
+it 1400: last diff cluster 1 cells, block 25 lits, avg block 26.2, clauses 519236, 279s
+it 1600: last diff cluster 2 cells, block 35 lits, avg block 26.1, clauses 604804, 324s
+it 1800: last diff cluster 1 cells, block 25 lits, avg block 26.2, clauses 682196, 370s
+it 2000: last diff cluster 2 cells, block 30 lits, avg block 26.6, clauses 762628, 418s
+it 2200: last diff cluster 1 cells, block 25 lits, avg block 26.2, clauses 830884, 468s
+it 2400: last diff cluster 2 cells, block 25 lits, avg block 26.4, clauses 883428, 521s
+it 2600: last diff cluster 1 cells, block 25 lits, avg block 26.9, clauses 941328, 574s
+it 2800: last diff cluster 2 cells, block 25 lits, avg block 26.7, clauses 1003532, 629s
+it 3000: last diff cluster 1 cells, block 25 lits, avg block 26.4, clauses 1066936, 686s
+it 3200: last diff cluster 2 cells, block 30 lits, avg block 26.9, clauses 1141256, 745s
+it 3400: last diff cluster 2 cells, block 30 lits, avg block 26.6, clauses 1215816, 804s
+it 3600: last diff cluster 2 cells, block 25 lits, avg block 26.8, clauses 1257024, 863s
+it 3800: last diff cluster 1 cells, block 25 lits, avg block 27.0, clauses 1322096, 924s
+it 4000: last diff cluster 1 cells, block 25 lits, avg block 27.1, clauses 1361128, 987s
+it 4200: last diff cluster 1 cells, block 25 lits, avg block 26.9, clauses 1406824, 1055s

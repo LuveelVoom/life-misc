@@ -1,0 +1,1020 @@
+west=False east=True cat pop 23 stable=True min(x-y)=16 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=187
+  cat RLE (rel): #CXRLE Pos=17,-3 Gen=0 x = 7, y = 9, rule = B36/S23 2o$o3b2o$2bo2bo$b2obo$bo2bobo$2b2ob2o$3bo$3bob2o$4bobo! 
+west=False east=True cat pop 26 stable=True min(x-y)=16 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=17,-5 Gen=0 x = 7, y = 12, rule = B36/S23 5b2o$4bobo$4bo$3b2o$2o3b2o$ob2o2bo$bo2b2o$2b2o$3bo$3bobo$4bobo$5bo! 
+west=False east=True cat pop 30 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=17,-3 Gen=0 x = 7, y = 14, rule = B36/S23 2o$obo$2bo2bo$b2obobo$bo2bobo$2b2obo$3bo$3bo$4b2o$6bo$2b3obo$3bobo$bo$ b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=17,-5 Gen=0 x = 7, y = 16, rule = B36/S23 5b2o$4bobo$4bo$3b2o$2o3b2o$ob2o2bo$bo2b2o$2b2o$3bo$3bobo$4bobo$6bo$2b 4o$3bo$bo$b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=8 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=313
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 12, rule = B36/S23 2b2o$3bo$3o$o11b2o$12bo3b2o$14bo2bo$13b2obo$13bo2bobo$14b2ob2o$15bo$ 15bob2o$16bobo! 
+west=False east=True cat pop 35 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 14, rule = B36/S23 o$3o$3bo13b2o$3o13bobo$o15bo$15b2o$12b2o3b2o$12bob2o2bo$13bo2b2o$14b2o $15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 37 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 17, rule = B36/S23 2b2o$3bo$3o$o11b2o$12bobo$14bo2bo$13b2obobo$13bo2bobo$14b2obo$15bo$15b o$16b2o$18bo$14b3obo$15bobo$13bo$13b2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=37
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 18, rule = B36/S23 o$3o$3bo13b2o$3o13bobo$o15bo$15b2o$12b2o3b2o$12bob2o2bo$13bo2b2o$14b2o $15bo$15bobo$16bobo$18bo$14b4o$15bo$13bo$13b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=7 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=164
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 12, rule = B36/S23 2b2o$3bo$3o$o12b2o$13bo3b2o$15bo2bo$14b2obo$14bo2bobo$15b2ob2o$16bo$ 16bob2o$17bobo! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 13, rule = B36/S23 2b2o$3bo14b2o$3o14bobo$o16bo$16b2o$13b2o3b2o$13bob2o2bo$14bo2b2o$15b2o $16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 37 stable=True min(x-y)=7 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 17, rule = B36/S23 2b2o$3bo$3o$o12b2o$13bobo$15bo2bo$14b2obobo$14bo2bobo$15b2obo$16bo$16b o$17b2o$19bo$15b3obo$16bobo$14bo$14b2o! 
+west=False east=True cat pop 41 stable=True min(x-y)=7 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 17, rule = B36/S23 2b2o$3bo14b2o$3o14bobo$o16bo$16b2o$13b2o3b2o$13bob2o2bo$14bo2b2o$15b2o $16bo$16bobo$17bobo$19bo$15b4o$16bo$14bo$14b2o! 
+west=False east=True cat pop 6 stable=True min(x-y)=16 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=86
+  cat RLE (rel): #CXRLE Pos=16,-2 Gen=0 x = 4, y = 4, rule = B36/S23 2bo$bobo$obo$bo! 
+west=False east=True cat pop 10 stable=True min(x-y)=12 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=188
+  cat RLE (rel): #CXRLE Pos=16,-2 Gen=0 x = 6, y = 11, rule = B36/S23 2bo$bobo$obo$bo5$4bo$3bobo$4bo! 
+west=False east=True cat pop 10 stable=True min(x-y)=13 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=16,-2 Gen=0 x = 6, y = 10, rule = B36/S23 2bo$bobo$obo$bo4$4bo$3bobo$4bo! 
+west=False east=True cat pop 10 stable=True min(x-y)=15 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=80
+  cat RLE (rel): #CXRLE Pos=16,-2 Gen=0 x = 5, y = 7, rule = B36/S23 2bo$bobo$obo$bo2$3b2o$3b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=9 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=16,-4 Gen=0 x = 7, y = 15, rule = B36/S23 2b2o$2bo$3bo$bobo$obo$bo$5b2o$3bo2bo$3b2o3$3b2o$4bo$3bo$3b2o! 
+west=False east=True cat pop 10 stable=True min(x-y)=8 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=57
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 7, rule = B36/S23 bo$obo$bo$14bo$13bobo$12bobo$13bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=299
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 15, rule = B36/S23 2b2o$3bo$3o$o$13bo$12bobo$11bobo$12bo5$15bo$14bobo$15bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=10
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 14, rule = B36/S23 2b2o$3bo$3o$o$13bo$12bobo$11bobo$12bo4$15bo$14bobo$15bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=15
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo$obo$bo$14bo$13bobo$12bobo$13bo2$15b2o$15b2o! 
+west=False east=True cat pop 30 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=113
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 18, y = 18, rule = B36/S23 o$3o$3bo$3o10b2o$o12bo$14bo$12bobo$11bobo$12bo$16b2o$14bo2bo$14b2o3$ 14b2o$15bo$14bo$14b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=7 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=221
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 16, y = 8, rule = B36/S23 2b2o$3bo$3o$o$14bo$13bobo$12bobo$13bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=7 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=236
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 15, rule = B36/S23 2b2o$3bo$3o$o$14bo$13bobo$12bobo$13bo5$16bo$15bobo$16bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=7 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 14, rule = B36/S23 2b2o$3bo$3o$o$14bo$13bobo$12bobo$13bo4$16bo$15bobo$16bo! 
+west=False east=True cat pop 19 stable=True min(x-y)=7 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 13, rule = B36/S23 2b2o$3bo$3o$o$14bo$13bobo$12bobo$13bo2$15b2o$15bo$17bo$16b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=7 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=79
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 17, rule = B36/S23 2b2o$3bo$3o11b2o$o13bo$15bo$13bobo$12bobo$13bo$17b2o$15bo2bo$15b2o3$ 15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=16 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=15,-3 Gen=0 x = 8, y = 8, rule = B36/S23 2o$bo2b2obo$bobo2b2o$2bobo$4bob2o$3b2obo$6bo$6b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=151
+  cat RLE (rel): #CXRLE Pos=15,-3 Gen=0 x = 8, y = 14, rule = B36/S23 2o$bo2b2obo$bobo2b2o$2bobo$4bob2o$3b2obo$6bo$6b2o3$5b2o$6bo$4bo$4b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=13 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=15,-3 Gen=0 x = 9, y = 13, rule = B36/S23 2o$bo2b2obo$bobo2b2o$2bobo$4bob2o$3b2ob2o4$5b2o$6bo$6bobo$7b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=14 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=15,-3 Gen=0 x = 9, y = 12, rule = B36/S23 2o$bo2b2obo$bobo2b2o$2bobo$4bob2o$3b2ob2o3$5b2o$6bo$6bobo$7b2o! 
+west=False east=True cat pop 21 stable=False min(x-y)=16 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=107
+  cat RLE (rel): #CXRLE Pos=14,-3 Gen=0 x = 9, y = 6, rule = B36/S23 2ob2ob2o$o3bobobo$b3o2bobo$3bobobo$5bo$4b2o! 
+west=False east=True cat pop 25 stable=False min(x-y)=13 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=14,-3 Gen=0 x = 9, y = 12, rule = B36/S23 2ob2ob2o$o3bobobo$b3o2bobo$3bobobo$5bo$4b2o4$7bo$6bobo$7bo! 
+west=False east=True cat pop 25 stable=True min(x-y)=14 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=72
+  cat RLE (rel): #CXRLE Pos=14,-3 Gen=0 x = 9, y = 11, rule = B36/S23 2ob2ob2o$o3bobo$b3o2bobo$3bobob2o$5bo$4b2o3$7bo$6bobo$7bo! 
+west=False east=True cat pop 25 stable=True min(x-y)=15 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=14,-3 Gen=0 x = 9, y = 10, rule = B36/S23 2ob2ob2o$o3bobo$b3o2bobo$3bobob2o$5bo$4b2o2$7bo$6bobo$7bo! 
+west=False east=True cat pop 30 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=23
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 18, y = 12, rule = B36/S23 o$3o$3bo$3o$o9b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2obo$16bo$ 16b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=80
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 18, y = 18, rule = B36/S23 o$3o$3bo$3o$o9b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2obo$16bo$ 16b2o3$15b2o$16bo$14bo$14b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 17, rule = B36/S23 o$3o$3bo$3o$o9b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2ob2o4$15b2o $16bo$16bobo$17b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 16, rule = B36/S23 o$3o$3bo$3o$o9b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2ob2o3$15b2o $16bo$16bobo$17b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=109
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 9, rule = B36/S23 2b2o$3bo$3o$o8b2ob2ob2o$9bo3bobobo$10b3o2bobo$12bobobo$14bo$13b2o! 
+west=False east=True cat pop 32 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 15, rule = B36/S23 2b2o$3bo$3o$o8b2ob2ob2o$9bo3bobobo$10b3o2bobo$12bobobo$14bo$13b2o4$16b o$15bobo$16bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=65
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 14, rule = B36/S23 2b2o$3bo$3o$o8b2ob2ob2o$9bo3bobo$10b3o2bobo$12bobob2o$14bo$13b2o3$16bo $15bobo$16bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=7
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 13, rule = B36/S23 2b2o$3bo$3o$o8b2ob2ob2o$9bo3bobo$10b3o2bobo$12bobob2o$14bo$13b2o2$16bo $15bobo$16bo! 
+west=False east=True cat pop 28 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 11, rule = B36/S23 2b2o$3bo$3o$o10b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2obo$17bo$ 17b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 17, rule = B36/S23 2b2o$3bo$3o$o10b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2obo$17bo$ 17b2o3$16b2o$17bo$15bo$15b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=86
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 16, rule = B36/S23 2b2o$3bo$3o$o10b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2ob2o4$16b 2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o10b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2ob2o3$16b 2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=14
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 9, rule = B36/S23 2b2o$3bo$3o$o9b2ob2ob2o$10bo3bobobo$11b3o2bobo$13bobobo$15bo$14b2o! 
+west=False east=True cat pop 32 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o9b2ob2ob2o$10bo3bobobo$11b3o2bobo$13bobobo$15bo$14b2o4$ 17bo$16bobo$17bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 14, rule = B36/S23 2b2o$3bo$3o$o9b2ob2ob2o$10bo3bobo$11b3o2bobo$13bobob2o$15bo$14b2o3$17b o$16bobo$17bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=49
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 13, rule = B36/S23 2b2o$3bo$3o$o9b2ob2ob2o$10bo3bobo$11b3o2bobo$13bobob2o$15bo$14b2o2$17b o$16bobo$17bo! 
+west=False east=True cat pop 22 stable=True min(x-y)=16 catalyst-active-gens=60-62 73-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=16,-4 Gen=0 x = 8, y = 8, rule = B36/S23 2obo$ob2o2$b3o$o3bob2o$bo2bobo$2bobo2bo$3bo2b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=55
+  cat RLE (rel): #CXRLE Pos=16,-4 Gen=0 x = 8, y = 16, rule = B36/S23 2obo$ob2o2$b3o$o3bob2o$bo2bobo$2bobo2bo$3bo2b2o4$3b2o$4bo$3bo$2bo$2b2o ! 
+west=False east=True cat pop 30 stable=True min(x-y)=12 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=134
+  cat RLE (rel): #CXRLE Pos=16,-4 Gen=0 x = 8, y = 15, rule = B36/S23 2obo$ob2o2$b3o$o3bob2o$bo2bobo$2bobo2bo$3bo2b2o3$3b2o$4bo$4bobo$5bobo$ 6bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=65
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 11, rule = B36/S23 o$3o$3bo$3o8b2obo$o10bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo 2b2o! 
+west=False east=True cat pop 38 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=89
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 19, rule = B36/S23 o$3o$3bo$3o8b2obo$o10bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo 2b2o4$14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 39 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=79
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 18, rule = B36/S23 o$3o$3bo$3o8b2obo$o10bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo 2b2o3$14b2o$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=60-62 73-399 @400: stills intact=False catalyst intact=False total pop=50
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 10, rule = B36/S23 2b2o$3bo$3o9b2obo$o11bob2o2$13b3o$12bo3bob2o$13bo2bobo$14bobo2bo$15bo 2b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=137
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 18, rule = B36/S23 2b2o$3bo$3o9b2obo$o11bob2o2$13b3o$12bo3bob2o$13bo2bobo$14bobo2bo$15bo 2b2o4$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=141
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 17, rule = B36/S23 2b2o$3bo$3o9b2obo$o11bob2o2$13b3o$12bo3bob2o$13bo2bobo$14bobo2bo$15bo 2b2o3$15b2o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 22 stable=True min(x-y)=13 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=26
+  cat RLE (rel): #CXRLE Pos=13,-3 Gen=0 x = 9, y = 7, rule = B36/S23 b2o$o2bo$obobo2b2o$bobo2bobo$3bob2o$2b2obo2bo$7b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=8 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=33
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 10, rule = B36/S23 2b2o$3bo$3o$o8b2o$8bo2bo$8bobobo2b2o$9bobo2bobo$11bob2o$10b2obo2bo$15b 2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=33
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 10, rule = B36/S23 2b2o$3bo$3o$o9b2o$9bo2bo$9bobobo2b2o$10bobo2bobo$12bob2o$11b2obo2bo$ 16b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=12 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=30
+  cat RLE (rel): #CXRLE Pos=13,-3 Gen=0 x = 9, y = 12, rule = B36/S23 b2o$o2bo$obobo2b2o$bobo2bobo$3bob2o$2b2obo2bo$7b2o3$7bo$6bobo$7bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=37
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 15, rule = B36/S23 2b2o$3bo$3o$o8b2o$8bo2bo$8bobobo2b2o$9bobo2bobo$11bob2o$10b2obo2bo$15b 2o3$15bo$14bobo$15bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=37
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 15, rule = B36/S23 2b2o$3bo$3o$o9b2o$9bo2bo$9bobobo2b2o$10bobo2bobo$12bob2o$11b2obo2bo$ 16b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 4 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 94-125 155-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=18,6 Gen=0 x = 2, y = 2, rule = B36/S23 2o$2o! 
+west=False east=True cat pop 8 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=180
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 13, rule = B36/S23 bo$obo$bo9$14b2o$14b2o! 
+west=False east=True cat pop 11 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 16, y = 14, rule = B36/S23 2b2o$3bo$3o$o9$14b2o$14b2o! 
+west=False east=True cat pop 8 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 94-125 146-399 @400: stills intact=False catalyst intact=False total pop=14
+  cat RLE (rel): #CXRLE Pos=18,6 Gen=0 x = 4, y = 6, rule = B36/S23 2o$2o3$2b2o$2b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 17, rule = B36/S23 bo$obo$bo9$14b2o$14b2o3$16b2o$16b2o! 
+west=False east=True cat pop 15 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 19, rule = B36/S23 2b2o$3bo$3o$o9$14b2o$14b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 8 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=18,2 Gen=0 x = 4, y = 6, rule = B36/S23 2b2o$2b2o3$2o$2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=256
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo$obo$bo5$16b2o$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=117
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 14, rule = B36/S23 2b2o$3bo$3o$o4$14b2o$14bo2bo$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=77
+  cat RLE (rel): #CXRLE Pos=18,2 Gen=0 x = 4, y = 10, rule = B36/S23 2b2o$2b2o3$2o$2o3$2b2o$2b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=15
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 17, rule = B36/S23 bo$obo$bo5$16b2o$16b2o3$14b2o$14b2o3$16b2o$16b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=23
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 19, rule = B36/S23 2b2o$3bo$3o$o5$17bo$16bobo$17bo2$14b2o$14b2o3$16b2o$14bo2bo$14b2o! 
+west=False east=True cat pop 7 stable=True min(x-y)=14 catalyst-active-gens=50-53 @400: stills intact=False catalyst intact=True total pop=29
+  cat RLE (rel): #CXRLE Pos=17,1 Gen=0 x = 4, y = 4, rule = B36/S23 bo$obo$o2bo$b2o! 
+west=False east=True cat pop 11 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=63
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo$obo$bo4$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 14 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o4$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=14 catalyst-active-gens=50-53 294-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=17,-1 Gen=0 x = 7, y = 10, rule = B36/S23 b2o$2bo$bo$ob3o$o4bo$b3obo$3bob2o$3bo$4b3o$6bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$13b2o$14bo$13bo$12bob3o$12bo4bo$13b3obo$15bob2o$15bo$ 16b3o$18bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$14b2o$15bo$14bo$13bob3o$13bo4bo$14b3obo$16bob2o$16bo$ 17b3o$19bo! 
+west=False east=True cat pop 23 stable=False min(x-y)=14 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=17,-1 Gen=0 x = 7, y = 10, rule = B36/S23 3b2o$2bo2bo$bob3o$obo$o3b2o$b3obo$3bo$3bobo$4bobo$5bo! 
+west=False east=True cat pop 30 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$15b2o$14bo2bo$13bob3o$12bobo$12bo3b2o$13b3obo$15bo$15bo bo$16bobo$17bo! 
+west=False east=True cat pop 30 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$16b2o$15bo2bo$14bob3o$13bobo$13bo3b2o$14b3obo$16bo$16bo bo$17bobo$18bo! 
+west=False east=True cat pop 13 stable=True min(x-y)=9 catalyst-active-gens=50-53 230-399 @400: stills intact=False catalyst intact=False total pop=153
+  cat RLE (rel): #CXRLE Pos=17,1 Gen=0 x = 4, y = 10, rule = B36/S23 bo$obo$o2bo$b2o3$2b2o$3bo$2bo$2b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=67
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 16, y = 17, rule = B36/S23 2b2o$3bo$3o$o4$13bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$14bo$14b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=53
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2b2o$3bo$3o$o4$14bo$13bobo$13bo2bo$14b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 15 stable=True min(x-y)=14 catalyst-active-gens=50-53 @400: stills intact=False catalyst intact=True total pop=37
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 7, rule = B36/S23 2o$bo$bob2o$2bobo$4bob2o$4bo2bo$5b2o! 
+west=False east=True cat pop 24 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=117
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 12, rule = B36/S23 o$3o$3bo$3o$o$8b2o$9bo$9bob2o$10bobo$12bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=64
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o$9b2o$10bo$10bob2o$11bobo$13bob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 19 stable=True min(x-y)=14 catalyst-active-gens=50-53 @400: stills intact=False catalyst intact=True total pop=41
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 11, y = 7, rule = B36/S23 2o$bo$bob2o$2bobo2b2obo$4bobo2b2o$4bo2bo$5b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=142
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 12, rule = B36/S23 o$3o$3bo$3o$o$8b2o$9bo$9bob2o$10bobo2b2obo$12bobo2b2o$12bo2bo$13b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=204
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 11, rule = B36/S23 2b2o$3bo$3o$o$9b2o$10bo$10bob2o$11bobo2b2obo$13bobo2b2o$13bo2bo$14b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=12 catalyst-active-gens=50-53 253-399 @400: stills intact=False catalyst intact=False total pop=72
+  cat RLE (rel): #CXRLE Pos=14,-2 Gen=0 x = 10, y = 13, rule = B36/S23 bo$obob2o$obobo$bobo2bo$3bob2o$3bo$4b3o$6bo$6bobo$7bobo$9bo$8bo$8b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 19, y = 18, rule = B36/S23 o$3o$3bo$3o$o$10bo$9bobob2o$9bobobo$10bobo2bo$12bob2o$12bo$13b3o$15bo$ 15bobo$16bobo$18bo$17bo$17b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 17, rule = B36/S23 2b2o$3bo$3o$o$11bo$10bobob2o$10bobobo$11bobo2bo$13bob2o$13bo$14b3o$16b o$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=7 catalyst-active-gens=50-53 225-399 @400: stills intact=False catalyst intact=False total pop=135
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 14, rule = B36/S23 2o$bo$bob2o$2bobo$4bob2o$4bo2bo$5b2o3$6b2o$7bo$6bo$5bo$5b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=62
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 19, rule = B36/S23 o$3o$3bo$3o$o$8b2o$9bo$9bob2o$10bobo$12bob2o$12bo2bo$13b2o3$14b2o$15bo $14bo$13bo$13b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=188
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 18, rule = B36/S23 2b2o$3bo$3o$o$9b2o$10bo$10bob2o$11bobo$13bob2o$13bo2bo$14b2o3$15b2o$ 16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=7 catalyst-active-gens=50-53 225-399 @400: stills intact=False catalyst intact=False total pop=90
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 9, y = 14, rule = B36/S23 2o$bo$bob2o$2bobo2bo$4bobobo$4bo2bo$5b2o3$6b2o$7bo$6bo$5bo$5b2o! 
+west=False east=True cat pop 32 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 17, y = 19, rule = B36/S23 o$3o$3bo$3o$o$8b2o$9bo$9bob2o$10bobo2bo$12bobobo$12bo2bo$13b2o3$14b2o$ 15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 18, rule = B36/S23 2b2o$3bo$3o$o$9b2o$10bo$10bob2o$11bobo2bo$13bobobo$13bo2bo$14b2o3$15b 2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 19 stable=False min(x-y)=13 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 7, rule = B36/S23 3bo$b3o2bo$o3b3o$b3o$3bob2o$4bo2bo$5b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=188
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 12, rule = B36/S23 o$3o$3bo$3o$o$11bo$9b3o2bo$8bo3b3o$9b3o$11bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 26 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=29
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o$12bo$10b3o2bo$9bo3b3o$10b3o$12bob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=13 catalyst-active-gens=50-52 116-399 @400: stills intact=False catalyst intact=False total pop=100
+  cat RLE (rel): #CXRLE Pos=13,-1 Gen=0 x = 11, y = 10, rule = B36/S23 2ob2ob2o$o3bobo2bo$b3o3b3o$3bob2o$4bo3b2o$5b3obo$7bo$7bobo$8bobo$9bo! 
+west=False east=True cat pop 39 stable=True min(x-y)=8 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=96
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$8b2ob2ob2o$8bo3bobo2bo$9b3o3b3o$11bob2o$12bo3b2o$13b3ob o$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 39 stable=True min(x-y)=7 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=119
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o2$9b2ob2ob2o$9bo3bobo2bo$10b3o3b3o$12bob2o$13bo3b2o$14b3o bo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 26 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 14, rule = B36/S23 3bo$b3o2bo$o3b3o$b3o$3bob2o$4bo2bo$5b2o3$6b2o$7bo$6bo$5bo$5b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=60
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 19, rule = B36/S23 o$3o$3bo$3o$o$11bo$9b3o2bo$8bo3b3o$9b3o$11bob2o$12bo2bo$13b2o3$14b2o$ 15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 33 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 18, rule = B36/S23 2b2o$3bo$3o$o$12bo$10b3o2bo$9bo3b3o$10b3o$12bob2o$13bo2bo$14b2o3$15b2o $16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=18,-1 Gen=0 x = 5, y = 11, rule = B36/S23 2o$o$bo$2o2$2o$bo$o$b3o$4bo$3b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o2$13b2o$13bo$14bo$13b2o2$13b2o$14bo$13bo$14b3o$17bo$16b2o ! 
+west=False east=True cat pop 23 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o2$14b2o$14bo$15bo$14b2o2$14b2o$15bo$14bo$15b3o$18bo$17b2o ! 
+west=False east=True cat pop 17 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=96
+  cat RLE (rel): #CXRLE Pos=18,-1 Gen=0 x = 5, y = 11, rule = B36/S23 3b2o$4bo$b3o$o$bo$2o2$2o$bo$bobo$2b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=63
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o2$16b2o$17bo$14b3o$13bo$14bo$13b2o2$13b2o$14bo$14bobo$15b 2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=49
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o2$17b2o$18bo$15b3o$14bo$15bo$14b2o2$14b2o$15bo$15bobo$16b 2o! 
+west=False east=True cat pop 9 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=86
+  cat RLE (rel): #CXRLE Pos=17,1 Gen=0 x = 4, y = 6, rule = B36/S23 3bo$b3o$o$bo$2bo$b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=66
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo$obo$bo4$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 13, rule = B36/S23 2b2o$3bo$3o$o4$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=17,2 Gen=0 x = 5, y = 8, rule = B36/S23 b2o$o2bo$b2o2$b2o$2bo$2bobo$3b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=29
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 16, rule = B36/S23 2b2o$3bo$3o$o5$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bobo$15b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=211
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o5$14b2o$13bo2bo$14b2o2$14b2o$15bo$15bobo$16b2o! 
+west=False east=True cat pop 14 stable=True min(x-y)=12 catalyst-active-gens=50-53 116-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 7, rule = B36/S23 2b2o$3bo$3o$o4bo$4bobo$4bo2bo$5b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo$obo$bo$11b2o$12bo$9b3o$9bo4bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=155
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo$9b3o$9bo4bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=12 catalyst-active-gens=50-53 116-399 @400: stills intact=False catalyst intact=False total pop=15
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 11, y = 11, rule = B36/S23 2b2o$3bo$3o4b2o$o4bo2bo$4bob2o$4bo$5b3o$7bo$7bobo$8bobo$9bo! 
+west=False east=True cat pop 31 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo$8b3o4b2o$8bo4bo2bo$12bob2o$12bo$13b3o$15bo$ 15bobo$16bobo$17bo! 
+west=False east=True cat pop 31 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=155
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo$9b3o4b2o$9bo4bo2bo$13bob2o$13bo$14b3o$16bo$ 16bobo$17bobo$18bo! 
+west=False east=True cat pop 30 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 11, y = 11, rule = B36/S23 2b2o$3bo3b2o$3o3bo2bo$o4bob3o$4bobo$4bo3b2o$5b3obo$7bo$7bobo$8bobo$9bo ! 
+west=False east=True cat pop 37 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo3b2o$8b3o3bo2bo$8bo4bob3o$12bobo$12bo3b2o$13b 3obo$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 37 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=52
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo3b2o$9b3o3bo2bo$9bo4bob3o$13bobo$13bo3b2o$14b 3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 20 stable=True min(x-y)=9 catalyst-active-gens=50-53 116-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 13, rule = B36/S23 2b2o$3bo$3o$o4bo$4bobo$4bo2bo$5b2o3$6b2o$7bo$6bo$6b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=207
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 16, y = 17, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo$8b3o$8bo4bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$ 14bo$14b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo$9b3o$9bo4bo$13bobo$13bo2bo$14b2o3$15b2o$16bo$ 15bo$15b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=15
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 10, y = 12, rule = B36/S23 2b2o$3bo3b2o$3o3bobo$o5bo$5b2o2$5b2o$6bo$5bo$6b3o$9bo$8b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo3b2o$8b3o3bobo$8bo5bo$13b2o2$13b2o$14bo$13bo$ 14b3o$17bo$16b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo3b2o$9b3o3bobo$9bo5bo$14b2o2$14b2o$15bo$14bo$ 15b3o$18bo$17b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 10, y = 12, rule = B36/S23 2b2o$3bo4b2o$3o6bo$o5b3o$5bo$6bo$5b2o2$5b2o$6bo$6bobo$7b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo4b2o$8b3o6bo$8bo5b3o$13bo$14bo$13b2o2$13b2o$ 14bo$14bobo$15b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo4b2o$9b3o6bo$9bo5b3o$14bo$15bo$14b2o2$14b2o$ 15bo$15bobo$16b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=147
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 8, y = 9, rule = B36/S23 2b2o$3bo$3o$o6bo$5b3o$4bo$5bo$6bo$5b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 16, y = 13, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo$8b3o$8bo6bo$13b3o$12bo$13bo$14bo$13b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=82
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 13, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo$9b3o$9bo6bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=13,-2 Gen=0 x = 9, y = 12, rule = B36/S23 2b2o$3bo$3o$o$5b2o$4bo2bo$5b2o2$5b2o$6bo$6bobo$7b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 16, rule = B36/S23 2b2o$3bo$3o$o$10b2o$11bo$8b3o$8bo$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bo bo$15b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o$11b2o$12bo$9b3o$9bo$14b2o$13bo2bo$14b2o2$14b2o$15bo$15bo bo$16b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=9 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=142
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 11, rule = B36/S23 bo$obo$bo10b2o$12bo3b2o$14bo2bo$13b2obo$13bo2bobo$14b2ob2o$15bo$15bob 2o$16bobo! 
+west=False east=True cat pop 30 stable=True min(x-y)=9 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=153
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 12, rule = B36/S23 bo15b2o$obo13bobo$bo14bo$15b2o$12b2o3b2o$12bob2o2bo$13bo2b2o$14b2o$15b o$15bobo$16bobo$17bo! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo$obo$bo10b2o$12bobo$14bo2bo$13b2obobo$13bo2bobo$14b2obo$15bo$15bo$ 16b2o$18bo$14b3obo$15bobo$13bo$13b2o! 
+west=False east=True cat pop 38 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=89
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo15b2o$obo13bobo$bo14bo$15b2o$12b2o3b2o$12bob2o2bo$13bo2b2o$14b2o$15b o$15bobo$16bobo$18bo$14b4o$15bo$13bo$13b2o! 
+west=False east=True cat pop 10 stable=True min(x-y)=9 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=50
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 15, y = 7, rule = B36/S23 bo$obo$bo$13bo$12bobo$11bobo$12bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=9 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=137
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 14, rule = B36/S23 bo$obo$bo$13bo$12bobo$11bobo$12bo5$15bo$14bobo$15bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=9 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 13, rule = B36/S23 bo$obo$bo$13bo$12bobo$11bobo$12bo4$15bo$14bobo$15bo! 
+west=False east=True cat pop 16 stable=True min(x-y)=9 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=18
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo$obo$bo$13bo$12bobo$11bobo$12bo2$14b2o$14bo$16bo$15b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=9 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=12
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 16, rule = B36/S23 bo$obo10b2o$bo11bo$14bo$12bobo$11bobo$12bo$16b2o$14bo2bo$14b2o3$14b2o$ 15bo$14bo$14b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 10, rule = B36/S23 bo$obo$bo8b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2obo$16bo$16b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=192
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 16, rule = B36/S23 bo$obo$bo8b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2obo$16bo$16b2o 3$15b2o$16bo$14bo$14b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo$obo$bo8b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2ob2o4$15b2o$16b o$16bobo$17b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo8b2o$11bo2b2obo$11bobo2b2o$12bobo$14bob2o$13b2ob2o3$15b2o$16b o$16bobo$17b2o! 
+west=False east=True cat pop 25 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 8, rule = B36/S23 bo$obo$bo7b2ob2ob2o$9bo3bobobo$10b3o2bobo$12bobobo$14bo$13b2o! 
+west=False east=True cat pop 29 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 14, rule = B36/S23 bo$obo$bo7b2ob2ob2o$9bo3bobobo$10b3o2bobo$12bobobo$14bo$13b2o4$16bo$ 15bobo$16bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=216
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo$obo$bo7b2ob2ob2o$9bo3bobo$10b3o2bobo$12bobob2o$14bo$13b2o3$16bo$15b obo$16bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 12, rule = B36/S23 bo$obo$bo7b2ob2ob2o$9bo3bobo$10b3o2bobo$12bobob2o$14bo$13b2o2$16bo$15b obo$16bo! 
+west=False east=True cat pop 26 stable=True min(x-y)=9 catalyst-active-gens=60-62 73-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 9, rule = B36/S23 bo$obo8b2obo$bo9bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo2b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=101
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 17, rule = B36/S23 bo$obo8b2obo$bo9bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo2b2o4$ 14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=9 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo$obo8b2obo$bo9bob2o2$12b3o$11bo3bob2o$12bo2bobo$13bobo2bo$14bo2b2o3$ 14b2o$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 26 stable=True min(x-y)=9 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=30
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 9, rule = B36/S23 bo$obo$bo7b2o$8bo2bo$8bobobo2b2o$9bobo2bobo$11bob2o$10b2obo2bo$15b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=9 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=34
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 14, rule = B36/S23 bo$obo$bo7b2o$8bo2bo$8bobobo2b2o$9bobo2bobo$11bob2o$10b2obo2bo$15b2o3$ 15bo$14bobo$15bo! 
+west=False east=True cat pop 8 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=9
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 15, y = 13, rule = B36/S23 bo$obo$bo9$13b2o$13b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 94-125 127-399 @400: stills intact=False catalyst intact=False total pop=143
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 18, rule = B36/S23 bo$obo$bo9$13b2o$13b2o3$15bo$14bobo$15bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 13, rule = B36/S23 bo$obo$bo4$13b2o$13bo2bo$15b2o3$13b2o$13b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 94-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 18, rule = B36/S23 bo$obo$bo5$16bo$15bobo$16bo2$13b2o$13b2o3$15b2o$13bo2bo$13b2o! 
+west=False east=True cat pop 11 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=29
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo4$13bo$12bobo$12bo2bo$13b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=93
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo2$13b2o$14bo$13bo$12bob3o$12bo4bo$13b3obo$15bob2o$15bo$16b3o$ 18bo! 
+west=False east=True cat pop 27 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=31
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo2$15b2o$14bo2bo$13bob3o$12bobo$12bo3b2o$13b3obo$15bo$15bobo$ 16bobo$17bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=181
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 16, rule = B36/S23 bo$obo$bo4$13bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$14bo$14b2o! 
+west=False east=True cat pop 19 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$8b2o$9bo$9bob2o$10bobo$12bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=173
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 10, rule = B36/S23 bo$obo$bo$8b2o$9bo$9bob2o$10bobo2b2obo$12bobo2b2o$12bo2bo$13b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=80
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo$obo$bo$10bo$9bobob2o$9bobobo$10bobo2bo$12bob2o$12bo$13b3o$15bo$15bo bo$16bobo$18bo$17bo$17b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=186
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 17, rule = B36/S23 bo$obo$bo$8b2o$9bo$9bob2o$10bobo$12bob2o$12bo2bo$13b2o3$14b2o$15bo$14b o$13bo$13b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=125
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 17, rule = B36/S23 bo$obo$bo$8b2o$9bo$9bob2o$10bobo2bo$12bobobo$12bo2bo$13b2o3$14b2o$15bo $14bo$13bo$13b2o! 
+west=False east=True cat pop 23 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$11bo$9b3o2bo$8bo3b3o$9b3o$11bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=9 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=96
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo2$8b2ob2ob2o$8bo3bobo2bo$9b3o3b3o$11bob2o$12bo3b2o$13b3obo$ 15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 30 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 17, rule = B36/S23 bo$obo$bo$11bo$9b3o2bo$8bo3b3o$9b3o$11bob2o$12bo2bo$13b2o3$14b2o$15bo$ 14bo$13bo$13b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo2$13b2o$13bo$14bo$13b2o2$13b2o$14bo$13bo$14b3o$17bo$16b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=92
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo2$16b2o$17bo$14b3o$13bo$14bo$13b2o2$13b2o$14bo$14bobo$15b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 12, rule = B36/S23 bo$obo$bo4$15bo$13b3o$12bo$13bo$14bo$13b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=262
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 15, rule = B36/S23 bo$obo$bo5$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bobo$15b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$10b2o$11bo$8b3o$8bo4bo$12bobo$12bo2bo$13b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=70
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$10b2o$11bo$8b3o4b2o$8bo4bo2bo$12bob2o$12bo$13b3o$15bo$15bobo $16bobo$17bo! 
+west=False east=True cat pop 34 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=59
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$10b2o$11bo3b2o$8b3o3bo2bo$8bo4bob3o$12bobo$12bo3b2o$13b3obo$ 15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 24 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=107
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 16, rule = B36/S23 bo$obo$bo$10b2o$11bo$8b3o$8bo4bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$14bo $14b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=19
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo$10b2o$11bo3b2o$8b3o3bobo$8bo5bo$13b2o2$13b2o$14bo$13bo$14b3o $17bo$16b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo$10b2o$11bo4b2o$8b3o6bo$8bo5b3o$13bo$14bo$13b2o2$13b2o$14bo$ 14bobo$15b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 12, rule = B36/S23 bo$obo$bo$10b2o$11bo$8b3o$8bo6bo$13b3o$12bo$13bo$14bo$13b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 15, rule = B36/S23 bo$obo$bo$10b2o$11bo$8b3o$8bo$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bobo$ 15b2o! 
+west=False east=True cat pop 8 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 8, y = 10, rule = B36/S23 2o$2o7$6b2o$6b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 13, rule = B36/S23 bo$obo$bo$8b2o$8b2o7$14b2o$14b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=8
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 16, y = 14, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o7$14b2o$14b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=19
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 10, y = 14, rule = B36/S23 2o$2o7$6b2o$6b2o3$8b2o$8b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 17, rule = B36/S23 bo$obo$bo$8b2o$8b2o7$14b2o$14b2o3$16b2o$16b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=18
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 19, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o7$14b2o$14b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 12 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 10, y = 10, rule = B36/S23 2o$2o3$8b2o$8b2o3$6b2o$6b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo$obo$bo$8b2o$8b2o3$16b2o$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 14, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o2$14b2o$14bo2bo$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 16 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=16
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 10, y = 14, rule = B36/S23 2o$2o3$8b2o$8b2o3$6b2o$6b2o3$8b2o$8b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=8
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 17, rule = B36/S23 bo$obo$bo$8b2o$8b2o3$16b2o$16b2o3$14b2o$14b2o3$16b2o$16b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=66
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 19, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o3$17bo$16bobo$17bo2$14b2o$14b2o3$16b2o$14bo 2bo$14b2o! 
+west=False east=True cat pop 11 stable=True min(x-y)=13 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=88
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 9, y = 7, rule = B36/S23 2o$2o2$6bo$5bobo$5bo2bo$6b2o! 
+west=False east=True cat pop 15 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=29
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo$obo$bo$8b2o$8b2o2$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=91
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=13 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 12, y = 11, rule = B36/S23 bo$obo3b2o$bo5bo$6bo$5bob3o$5bo4bo$6b3obo$8bob2o$8bo$9b3o$11bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=102
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobo3b2o$8bo5bo$13bo$12bob3o$12bo4bo$13b3obo$15bob 2o$15bo$16b3o$18bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=282
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo3b2o$9bo5bo$14bo$13bob3o$13bo4bo$14b3obo$16bob 2o$16bo$17b3o$19bo! 
+west=False east=True cat pop 27 stable=False min(x-y)=13 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=241
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 12, y = 11, rule = B36/S23 bo$obo5b2o$bo5bo2bo$6bob3o$5bobo$5bo3b2o$6b3obo$8bo$8bobo$9bobo$10bo! 
+west=False east=True cat pop 34 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobo5b2o$8bo5bo2bo$13bob3o$12bobo$12bo3b2o$13b3obo$ 15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 34 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo5b2o$9bo5bo2bo$14bob3o$13bobo$13bo3b2o$14b3obo$ 16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 17 stable=True min(x-y)=9 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=153
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 9, y = 13, rule = B36/S23 bo$obo$bo$6bo$5bobo$5bo2bo$6b2o3$7b2o$8bo$7bo$7b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=86
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 16, y = 17, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobo$8bo$13bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$14bo $14b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=162
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$14b2o3$15b2o$16bo$15bo $15b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=13 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=89
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 9, y = 7, rule = B36/S23 2o3b2obo$o4bob2o$b3obo$3bobo$5bob2o$5bo2bo$6b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=122
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 12, rule = B36/S23 o$3o$3bo$3o$o$7b2o3b2obo$7bo4bob2o$8b3obo$10bobo$12bob2o$12bo2bo$13b2o ! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=148
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o$o$8b2o3b2obo$8bo4bob2o$9b3obo$11bobo$13bob2o$13bo2bo$14b2o ! 
+west=False east=True cat pop 24 stable=False min(x-y)=13 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=10
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 11, y = 7, rule = B36/S23 2o$o4b2ob2o$b3o2bobobo$3bobo2bobo$5bobobo$5bo2bo$6b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=93
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 11, rule = B36/S23 2b2o$3bo$3o$o$7b2o$7bo4b2ob2o$8b3o2bobobo$10bobo2bobo$12bobobo$12bo2bo $13b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=93
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 11, rule = B36/S23 2b2o$3bo$3o$o$8b2o$8bo4b2ob2o$9b3o2bobobo$11bobo2bobo$13bobobo$13bo2bo $14b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=13 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=127
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 11, y = 10, rule = B36/S23 2o$o$b3ob2o$3bobo2bo$5bob2o$5bo$6b3o$8bo$8bobo$9b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=84
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 13, rule = B36/S23 bo$obo$bo$8b2o$8bo$9b3ob2o$11bobo2bo$13bob2o$13bo$14b3o$16bo$16bobo$ 17b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$8b2o$8bo$9b3ob2o$11bobo2bo$13bob2o$13bo$14b3o$16bo$16bob o$17bobo$18bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=7 catalyst-active-gens=50-53 115-399 @400: stills intact=False catalyst intact=False total pop=149
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 9, y = 14, rule = B36/S23 2o3b2obo$o4bob2o$b3obo$3bobo$5bob2o$5bo2bo$6b2o3$7b2o$8bo$7bo$6bo$6b2o ! 
+west=False east=True cat pop 38 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=248
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 19, rule = B36/S23 o$3o$3bo$3o$o$7b2o3b2obo$7bo4bob2o$8b3obo$10bobo$12bob2o$12bo2bo$13b2o 3$14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=76
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 18, rule = B36/S23 2b2o$3bo$3o$o$8b2o3b2obo$8bo4bob2o$9b3obo$11bobo$13bob2o$13bo2bo$14b2o 3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 30 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 11, y = 13, rule = B36/S23 2o$o4b2ob2o$b3o2bobobo$3bobo2bobo$5bobobo$5bo2bo$6b2o3$7b2o$8bo$7bo$7b 2o! 
+west=False east=True cat pop 37 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 17, rule = B36/S23 2b2o$3bo$3o$o$7b2o$7bo4b2ob2o$8b3o2bobobo$10bobo2bobo$12bobobo$12bo2bo $13b2o3$14b2o$15bo$14bo$14b2o! 
+west=False east=True cat pop 37 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=191
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 17, rule = B36/S23 2b2o$3bo$3o$o$8b2o$8bo4b2ob2o$9b3o2bobobo$11bobo2bobo$13bobobo$13bo2bo $14b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 24 stable=False min(x-y)=13 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=150
+  cat RLE (rel): #CXRLE Pos=12,-4 Gen=0 x = 9, y = 9, rule = B36/S23 3bo$2bobo$bo2bo$ob3ob2o$bo4b2o$2b3o$4bob2o$5bo2bo$6b2o! 
+west=False east=True cat pop 33 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 12, rule = B36/S23 o$3o$3bo$3o7bo$o8bobo$8bo2bo$7bob3ob2o$8bo4b2o$9b3o$11bob2o$12bo2bo$ 13b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2b2o$3bo$3o8bo$o9bobo$9bo2bo$8bob3ob2o$9bo4b2o$10b3o$12bob2o$13bo2bo$ 14b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=13 catalyst-active-gens=50-52 115-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 12, y = 11, rule = B36/S23 bo$obob2ob2o$bo3bobo2bo$2b3o3b3o$4bob2o$5bo3b2o$6b3obo$8bo$8bobo$9bobo $10bo! 
+west=False east=True cat pop 40 stable=True min(x-y)=8 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=19
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 19, y = 15, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobob2ob2o$8bo3bobo2bo$9b3o3b3o$11bob2o$12bo3b2o$ 13b3obo$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 40 stable=True min(x-y)=7 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=68
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 20, y = 15, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobob2ob2o$9bo3bobo2bo$10b3o3b3o$12bob2o$13bo3b2o$ 14b3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=7
+  cat RLE (rel): #CXRLE Pos=12,-4 Gen=0 x = 9, y = 16, rule = B36/S23 3bo$2bobo$bo2bo$ob3ob2o$bo4b2o$2b3o$4bob2o$5bo2bo$6b2o3$7b2o$8bo$7bo$ 6bo$6b2o! 
+west=False east=True cat pop 40 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=91
+  cat RLE (rel): #CXRLE Pos=5,-7 Gen=0 x = 16, y = 19, rule = B36/S23 o$3o$3bo$3o7bo$o8bobo$8bo2bo$7bob3ob2o$8bo4b2o$9b3o$11bob2o$12bo2bo$ 13b2o3$14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 38 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 18, rule = B36/S23 2b2o$3bo$3o8bo$o9bobo$9bo2bo$8bob3ob2o$9bo4b2o$10b3o$12bob2o$13bo2bo$ 14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=191
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 11, y = 12, rule = B36/S23 bo$obo3b2o$bo4bo$7bo$6b2o2$6b2o$7bo$6bo$7b3o$10bo$9b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobo3b2o$8bo4bo$14bo$13b2o2$13b2o$14bo$13bo$14b3o$ 17bo$16b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=221
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo3b2o$9bo4bo$15bo$14b2o2$14b2o$15bo$14bo$15b3o$ 18bo$17b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 11, y = 12, rule = B36/S23 bo$obo6b2o$bo8bo$7b3o$6bo$7bo$6b2o2$6b2o$7bo$7bobo$8b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o$8bo$7bobo6b2o$8bo8bo$14b3o$13bo$14bo$13b2o2$13b2o$14bo$ 14bobo$15b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 16, rule = B36/S23 2b2o$3bo$3o$o$9bo$8bobo6b2o$9bo8bo$15b3o$14bo$15bo$14b2o2$14b2o$15bo$ 15bobo$16b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=108
+  cat RLE (rel): #CXRLE Pos=12,-2 Gen=0 x = 9, y = 9, rule = B36/S23 2o$2o2$8bo$6b3o$5bo$6bo$7bo$6b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=10
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo$obo$bo$8b2o$8b2o2$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=146
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 17, y = 13, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o2$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=12,-3 Gen=0 x = 10, y = 13, rule = B36/S23 bo$obo$2o3$6b2o$5bo2bo$6b2o2$6b2o$7bo$7bobo$8b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=110
+  cat RLE (rel): #CXRLE Pos=5,-6 Gen=0 x = 17, y = 16, rule = B36/S23 2b2o$3bo$3o$o7bo$7bobo$7b2o3$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bobo$ 15b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=177
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2b2o$3bo$3o$o8bo$8bobo$8b2o3$14b2o$13bo2bo$14b2o2$14b2o$15bo$15bobo$ 16b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=169
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 15, y = 13, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o7$13b2o$13b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=15
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 18, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o7$13b2o$13b2o3$15bo$14bobo$15bo! 
+west=False east=True cat pop 19 stable=True min(x-y)=9 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=100
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 13, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o2$13b2o$13bo2bo$15b2o3$13b2o$13b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=60
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 18, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o3$16bo$15bobo$16bo2$13b2o$13b2o3$15b2o$13bo2bo$ 13b2o! 
+west=False east=True cat pop 15 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=157
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$8bo$7bobo$8bo$13bo$12bobo$12bo2bo$13b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=182
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$8bo$7bobo3b2o$8bo5bo$13bo$12bob3o$12bo4bo$13b3obo$15bob2o$ 15bo$16b3o$18bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=25
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$8bo$7bobo5b2o$8bo5bo2bo$13bob3o$12bobo$12bo3b2o$13b3obo$15bo $15bobo$16bobo$17bo! 
+west=False east=True cat pop 21 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=57
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 16, rule = B36/S23 bo$obo$bo$8bo$7bobo$8bo$13bo$12bobo$12bo2bo$13b2o3$14b2o$15bo$14bo$14b 2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$7b2o3b2obo$7bo4bob2o$8b3obo$10bobo$12bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=164
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 10, rule = B36/S23 bo$obo$bo$7b2o$7bo4b2ob2o$8b3o2bobobo$10bobo2bobo$12bobobo$12bo2bo$13b 2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=9 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$7b2o$7bo$8b3ob2o$10bobo2bo$12bob2o$12bo$13b3o$15bo$15bobo$ 16bobo$17bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 17, rule = B36/S23 bo$obo$bo$7b2o3b2obo$7bo4bob2o$8b3obo$10bobo$12bob2o$12bo2bo$13b2o3$ 14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 34 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=118
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 16, rule = B36/S23 bo$obo$bo$7b2o$7bo4b2ob2o$8b3o2bobobo$10bobo2bobo$12bobobo$12bo2bo$13b 2o3$14b2o$15bo$14bo$14b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo7bo$bo7bobo$8bo2bo$7bob3ob2o$8bo4b2o$9b3o$11bob2o$12bo2bo$13b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=9 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=79
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 19, y = 14, rule = B36/S23 bo$obo$bo$8bo$7bobob2ob2o$8bo3bobo2bo$9b3o3b3o$11bob2o$12bo3b2o$13b3ob o$15bo$15bobo$16bobo$17bo! 
+west=False east=True cat pop 35 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 17, rule = B36/S23 bo$obo7bo$bo7bobo$8bo2bo$7bob3ob2o$8bo4b2o$9b3o$11bob2o$12bo2bo$13b2o 3$14b2o$15bo$14bo$13bo$13b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo$8bo$7bobo3b2o$8bo4bo$14bo$13b2o2$13b2o$14bo$13bo$14b3o$17bo$ 16b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=9 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo$obo$bo$8bo$7bobo6b2o$8bo8bo$14b3o$13bo$14bo$13b2o2$13b2o$14bo$14bob o$15b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=75
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 16, y = 12, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o2$15bo$13b3o$12bo$13bo$14bo$13b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=9 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=5,-5 Gen=0 x = 17, y = 15, rule = B36/S23 bo$obo$bo6bo$7bobo$7b2o3$13b2o$12bo2bo$13b2o2$13b2o$14bo$14bobo$15b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=12 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=192
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 11, rule = B36/S23 bo$obo$bo7b2o$9bo3b2o$11bo2bo$10b2obo$10bo2bobo$11b2ob2o$12bo$12bob2o$ 13bobo! 
+west=False east=True cat pop 32 stable=True min(x-y)=12 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=9,-5 Gen=0 x = 15, y = 12, rule = B36/S23 13b2o$2obo8bobo$ob2o8bo$11b2o$8b2o3b2o$8bob2o2bo$9bo2b2o$10b2o$11bo$ 11bobo$12bobo$13bo! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 16, rule = B36/S23 bo$obo$bo7b2o$9bobo$11bo2bo$10b2obobo$10bo2bobo$11b2obo$12bo$12bo$13b 2o$15bo$11b3obo$12bobo$10bo$10b2o! 
+west=False east=True cat pop 40 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=79
+  cat RLE (rel): #CXRLE Pos=9,-5 Gen=0 x = 15, y = 16, rule = B36/S23 13b2o$2obo8bobo$ob2o8bo$11b2o$8b2o3b2o$8bob2o2bo$9bo2b2o$10b2o$11bo$ 11bobo$12bobo$14bo$10b4o$11bo$9bo$9b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=124
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 11, rule = B36/S23 bo$obo2b2obo$bo3bob2o4b2o$13bo3b2o$15bo2bo$14b2obo$14bo2bobo$15b2ob2o$ 16bo$16bob2o$17bobo! 
+west=False east=True cat pop 37 stable=True min(x-y)=8 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=63
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 12, rule = B36/S23 bo16b2o$obo2b2o10bobo$bo3bobobo7bo$8b2o6b2o$13b2o3b2o$13bob2o2bo$14bo 2b2o$15b2o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 40 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=60
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 16, rule = B36/S23 bo$obo2b2obo$bo3bob2o4b2o$13bobo$15bo2bo$14b2obobo$14bo2bobo$15b2obo$ 16bo$16bo$17b2o$19bo$15b3obo$16bobo$14bo$14b2o! 
+west=False east=True cat pop 45 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=95
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 16, rule = B36/S23 bo16b2o$obo2b2o10bobo$bo3bobobo7bo$8b2o6b2o$13b2o3b2o$13bob2o2bo$14bo 2b2o$15b2o$16bo$16bobo$17bobo$19bo$15b4o$16bo$14bo$14b2o! 
+west=False east=True cat pop 49 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo7b2o$13bo3b2o$15bo2bo$14b2obo$ 14bo2bobo$15b2ob2o$16bo$16bo$17b2o$18bo$17bo$17b2o! 
+west=False east=True cat pop 50 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=87
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 15, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o9b2o$3obobo10bobo$o4bo11bo$16b2o$13b2o3b2o$ 13bob2o2bo$14bo2b2o$15b2o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 55 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=118
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo7b2o$13bo3b2o$15bo2bo$14b2obo$ 14bo2bobo$15b2ob2o$16bo$16bo$17b2o$19bo$15b3obo$16bobo$14bo$14b2o! 
+west=False east=True cat pop 58 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o9b2o$3obobo10bobo$o4bo11bo$16b2o$13b2o3b2o$ 13bob2o2bo$14bo2b2o$15b2o$16bo$16bobo$17bobo$19bo$15b4o$16bo$14bo$14b 2o! 
+west=False east=True cat pop 10 stable=True min(x-y)=12 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=106
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 12, y = 7, rule = B36/S23 bo$obo$bo$10bo$9bobo$8bobo$9bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=12 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=173
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 14, rule = B36/S23 bo$obo$bo$10bo$9bobo$8bobo$9bo5$12bo$11bobo$12bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=12 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 13, rule = B36/S23 bo$obo$bo$10bo$9bobo$8bobo$9bo4$12bo$11bobo$12bo! 
+west=False east=True cat pop 16 stable=True min(x-y)=12 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=10
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 12, rule = B36/S23 bo$obo$bo$10bo$9bobo$8bobo$9bo2$11b2o$11bo$13bo$12b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2o$o$b3ob2o$3bobo2b2ob2o$6b2obobobo$11bobo$10bobo$11bo$15b2o$13bo2bo$ 13b2o3$13b2o$14bo$13bo$13b2o! 
+west=False east=True cat pop 14 stable=True min(x-y)=8 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 7, rule = B36/S23 bo3bo$obobobo$bo3bo$14bo$13bobo$12bobo$13bo! 
+west=False east=True cat pop 20 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=37
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 14, rule = B36/S23 bo$obo2b2obo$bo3bob2o$14bo$13bobo$12bobo$13bo5$16bo$15bobo$16bo! 
+west=False east=True cat pop 20 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=69
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo$obo2b2obo$bo3bob2o$14bo$13bobo$12bobo$13bo4$16bo$15bobo$16bo! 
+west=False east=True cat pop 18 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=57
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo3bo$obobobo$bo3bo$14bo$13bobo$12bobo$13bo2$15b2o$15b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=149
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo$obo2b2o7b2o$bo3bobobo4bo$8b2o5bo$13bobo$12bobo$13bo$17b2o$15bo2bo$ 15b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 37 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=40
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 16, y = 10, rule = B36/S23 4bo$ob5o$2o5bo$3b2obobo$3obobobo$o4bo2bob2ob2o$8b2obobobo$13bobo$12bob o$13bo! 
+west=False east=True cat pop 43 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 19, rule = B36/S23 4bo$ob5o$2o5bo$3b2obobo$3obobobo$o4bo2bob2ob2o$8b2obobobo$13bobo$12bob o$13bo6$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 44 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 18, rule = B36/S23 4bo$ob5o$2o5bo$3b2obobo$3obobobo$o4bo2bob2ob2o$8b2obobobo$13bobo$12bob o$13bo5$15b2o$16bo$16bobo$17b2o! 
+west=False east=True cat pop 44 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=63
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 15, rule = B36/S23 4bo$ob5o$2o5bo$3b2obobo$3obobobo$o4bo2bob2ob2o$8b2obobobo$13bobo$12bob o$13bo2$15bo$15b3o$18bo$17b2o! 
+west=False east=True cat pop 49 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=81
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bo$ob5o$2o5bo$3b2obobo$3obobobo$o4bo2bob2ob2o$8b2obobobo$13bobo$12bob o$13bo$17b2o$15bo2bo$15b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=12 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=71
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 14, y = 9, rule = B36/S23 2obo$ob2o2b2o$7bo2b2obo$7bobo2b2o$8bobo$10bob2o$9b2obo$12bo$12b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=9 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=12
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 14, y = 15, rule = B36/S23 2obo$ob2o2b2o$7bo2b2obo$7bobo2b2o$8bobo$10bob2o$9b2obo$12bo$12b2o3$11b 2o$12bo$10bo$10b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=12 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 15, y = 14, rule = B36/S23 2obo$ob2o2b2o$7bo2b2obo$7bobo2b2o$8bobo$10bob2o$9b2ob2o4$11b2o$12bo$ 12bobo$13b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=12 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=105
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 15, y = 13, rule = B36/S23 2obo$ob2o2b2o$7bo2b2obo$7bobo2b2o$8bobo$10bob2o$9b2ob2o3$11b2o$12bo$ 12bobo$13b2o! 
+west=False east=True cat pop 25 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=131
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 8, rule = B36/S23 bo$obo$bo4b2ob2ob2o$6bo3bobobo$7b3o2bobo$9bobobo$11bo$10b2o! 
+west=False east=True cat pop 29 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=17
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 14, rule = B36/S23 bo$obo$bo4b2ob2ob2o$6bo3bobobo$7b3o2bobo$9bobobo$11bo$10b2o4$13bo$12bo bo$13bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=12 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 13, rule = B36/S23 bo$obo$bo4b2ob2ob2o$6bo3bobo$7b3o2bobo$9bobob2o$11bo$10b2o3$13bo$12bob o$13bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=12 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 12, rule = B36/S23 bo$obo$bo4b2ob2ob2o$6bo3bobo$7b3o2bobo$9bobob2o$11bo$10b2o2$13bo$12bob o$13bo! 
+west=False east=True cat pop 31 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=71
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 10, rule = B36/S23 bo$obo2b2obo$bo3bob2o2b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2obo $17bo$17b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=112
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo$obo2b2obo$bo3bob2o2b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2obo $17bo$17b2o3$16b2o$17bo$15bo$15b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=82
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 15, rule = B36/S23 bo$obo2b2obo$bo3bob2o2b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2ob 2o4$16b2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=106
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo$obo2b2obo$bo3bob2o2b2o$12bo2b2obo$12bobo2b2o$13bobo$15bob2o$14b2ob 2o3$16b2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 32 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 9, rule = B36/S23 7b2o$bo6bo$obo2b3o$bo3bo4b2ob2ob2o$10bo3bobobo$11b3o2bobo$13bobobo$15b o$14b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=19
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 15, rule = B36/S23 7b2o$bo6bo$obo2b3o$bo3bo4b2ob2ob2o$10bo3bobobo$11b3o2bobo$13bobobo$15b o$14b2o4$17bo$16bobo$17bo! 
+west=False east=True cat pop 36 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=97
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 14, rule = B36/S23 7b2o$bo6bo$obo2b3o$bo3bo4b2ob2ob2o$10bo3bobo$11b3o2bobo$13bobob2o$15bo $14b2o3$17bo$16bobo$17bo! 
+west=False east=True cat pop 36 stable=True min(x-y)=8 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=31
+  cat RLE (rel): #CXRLE Pos=4,-6 Gen=0 x = 19, y = 13, rule = B36/S23 7b2o$bo6bo$obo2b3o$bo3bo4b2ob2ob2o$10bo3bobo$11b3o2bobo$13bobob2o$15bo $14b2o2$17bo$16bobo$17bo! 
+west=False east=True cat pop 40 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=60
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo5b2o$12bo2b2obo$12bobo2b2o$13bobo$ 15bob2o$14b2obo$17bo$17b2o! 
+west=False east=True cat pop 46 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=110
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo5b2o$12bo2b2obo$12bobo2b2o$13bobo$ 15bob2o$14b2obo$17bo$17b2o3$16b2o$17bo$15bo$15b2o! 
+west=False east=True cat pop 45 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 18, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo5b2o$12bo2b2obo$12bobo2b2o$13bobo$ 15bob2o$14b2ob2o4$16b2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 45 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=25
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo5b2o$12bo2b2obo$12bobo2b2o$13bobo$ 15bob2o$14b2ob2o3$16b2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 45 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bobo$o4bo4bob2o$10bo3b2o$11b3o2bob2o$ 13bobo3bo$15bob2o$14b2obo$17bo$17b2o! 
+west=False east=True cat pop 49 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bobo$o4bo4bob2o$10bo3b2o$11b3o2bo$13bob o2bo$15bob2o$14b2obo$17bo$17b2o3$16b2o$17bo$15bo$15b2o! 
+west=False east=True cat pop 48 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=115
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bobo$o4bo4bob2o$10bo3b2o$11b3o2bo$13bob o2bo$15bob2o$14b2o$17b2o$18bo$17bo$16bo$17b3o$19bo! 
+west=False east=True cat pop 47 stable=True min(x-y)=7 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=132
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bobo$o4bo4bob2o$10bo3b2o$11b3o2bo$13bob obobo$15bo2b2o$14b2o3$16b2o$17bo$17bobo$18b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=12 catalyst-active-gens=60-62 73-399 @400: stills intact=False catalyst intact=False total pop=112
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 15, y = 8, rule = B36/S23 2o5b2obo$obobo2bob2o$3b2o$8b3o$7bo3bob2o$8bo2bobo$9bobo2bo$10bo2b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=55
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 15, y = 16, rule = B36/S23 2o5b2obo$obobo2bob2o$3b2o$8b3o$7bo3bob2o$8bo2bobo$9bobo2bo$10bo2b2o4$ 10b2o$11bo$10bo$9bo$9b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=12 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=37
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 15, y = 15, rule = B36/S23 2o5b2obo$obobo2bob2o$3b2o$8b3o$7bo3bob2o$8bo2bobo$9bobo2bo$10bo2b2o3$ 10b2o$11bo$11bobo$12bobo$13bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=60-62 73-399 @400: stills intact=False catalyst intact=False total pop=236
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 9, rule = B36/S23 bo$obo2b2o5b2obo$bo3bobobo2bob2o$8b2o$13b3o$12bo3bob2o$13bo2bobo$14bob o2bo$15bo2b2o! 
+west=False east=True cat pop 40 stable=True min(x-y)=7 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=54
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 17, rule = B36/S23 bo$obo2b2o5b2obo$bo3bobobo2bob2o$8b2o$13b3o$12bo3bob2o$13bo2bobo$14bob o2bo$15bo2b2o4$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 41 stable=True min(x-y)=8 catalyst-active-gens=60-62 71-399 @400: stills intact=False catalyst intact=False total pop=150
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 16, rule = B36/S23 bo$obo2b2o5b2obo$bo3bobobo2bob2o$8b2o$13b3o$12bo3bob2o$13bo2bobo$14bob o2bo$15bo2b2o3$15b2o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 48 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 12, rule = B36/S23 4b2o$ob3obob2o$2o4bobo$3b2obo2bo$3obobo3bobo2bo$o4bo5b5o2$13b3o$12bo3b ob2o$13bo2bobo$14bobo2bo$15bo2b2o! 
+west=False east=True cat pop 55 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=37
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 20, rule = B36/S23 4b2o$ob3obob2o$2o4bobo$3b2obo2bo$3obobo3bobo2bo$o4bo5b5o2$13b3o$12bo3b ob2o$13bo2bobo$14bobo2bo$15bo2b2o4$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 56 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=76
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4b2o$ob3obob2o$2o4bobo$3b2obo2bo$3obobo3bobo2bo$o4bo5b5o2$13b3o$12bo3b ob2o$13bo2bobo$14bobo2bo$15bo2b2o3$15b2o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 24 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=232
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 13, y = 8, rule = B36/S23 2o$obo3b2o$3bo2bobo$4bobo2bo$5bobobo$7bob2o$6b2obo2bo$11b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=8 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=33
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 9, rule = B36/S23 bo$obo2b2o$bo3bobo3b2o$8bo2bo2bo$9bobob2o$10bobo$12bob3o$11b2obo2bo$ 16b2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=124
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 12, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo6b2o$o4bo7bo$15bo$10b2o2b2o$10bobo$ 12bob2o$11b2obo2bo$16b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=128
+  cat RLE (rel): #CXRLE Pos=9,-4 Gen=0 x = 13, y = 13, rule = B36/S23 2o$obo3b2o$3bo2bobo$4bobo2bo$5bobobo$7bob2o$6b2obo2bo$11b2o3$11bo$10bo bo$11bo! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=50-54 @400: stills intact=False catalyst intact=True total pop=37
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 14, rule = B36/S23 bo$obo2b2o$bo3bobo3b2o$8bo2bo2bo$9bobob2o$10bobo$12bob3o$11b2obo2bo$ 16b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 49 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo6b2o$o4bo7bo$15bo$10b2o2b2o$10bobo$ 12bob2o$11b2obo2bo$16b2o4$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 8 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 12, y = 13, rule = B36/S23 bo$obo$bo9$10b2o$10b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 13, rule = B36/S23 bo3bo$obobobo$bo3bo9$14b2o$14b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 16, y = 16, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo9$14b2o$14b2o! 
+west=False east=True cat pop 12 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 18, rule = B36/S23 bo$obo$bo9$10b2o$10b2o3$12bo$11bobo$12bo! 
+west=False east=True cat pop 16 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 18, rule = B36/S23 bo3bo$obobobo$bo3bo9$14b2o$14b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 32 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=14
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 21, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo9$14b2o$14b2o3$16bo$15bobo$16bo ! 
+west=False east=True cat pop 14 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=117
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 13, rule = B36/S23 bo$obo$bo4$10b2o$10bo2bo$12b2o3$10b2o$10b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=117
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo3bo$obobobo$bo3bo4$14b2o$14bo2bo$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 37 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 16, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo3$14b2o$14bo$15bo$16bo$17bobo$ 18b2o$14b2o$14b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=49
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 18, rule = B36/S23 bo$obo$bo5$13bo$12bobo$13bo2$10b2o$10b2o3$12b2o$10bo2bo$10b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 72-399 @400: stills intact=False catalyst intact=False total pop=49
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 18, rule = B36/S23 bo3bo$obobobo$bo3bo5$17bo$16bobo$17bo2$14b2o$14b2o3$16b2o$14bo2bo$14b 2o! 
+west=False east=True cat pop 42 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=10
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 21, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo3$14b2o$14bo$15bo$16bo$17bo$18b o$14b2o3bo$14b2o2b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 11 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 10, rule = B36/S23 bo$obo$bo4$10bo$9bobo$9bo2bo$10b2o! 
+west=False east=True cat pop 15 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo3bo$obobobo$bo3bo4$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 31 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo4$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=39
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo2$10b2o$11bo$10bo$9bob3o$9bo4bo$10b3obo$12bob2o$12bo$13b3o$ 15bo! 
+west=False east=True cat pop 30 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=114
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo2$14b2o$15bo$14bo$13bob3o$13bo4bo$14b3obo$16bob2o$ 16bo$17b3o$19bo! 
+west=False east=True cat pop 48 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=89
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo$12bo$12b3o$15bo$14bo$13bob3o$ 13bo4bo$14b3o2bo$16bob2o$16bo$17b3o$19bo! 
+west=False east=True cat pop 27 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=16
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo2$12b2o$11bo2bo$10bob3o$9bobo$9bo3b2o$10b3obo$12bo$12bobo$13b obo$14bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=64
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo2$16b2o$15bo2bo$14bob3o$13bobo$13bo3b2o$14b3obo$16b o$16bobo$17bobo$18bo! 
+west=False east=True cat pop 50 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=220
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo2$17b2o$15bo2bo$14bob2o$13bobo$ 13bo3b3o$14b3o2bo$16bo$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=9 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 16, rule = B36/S23 bo$obo$bo4$10bo$9bobo$9bo2bo$10b2o3$11b2o$12bo$11bo$11b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=77
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 16, rule = B36/S23 bo3bo$obobobo$bo3bo4$14bo$13bobo$13bo2bo$14b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 38 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=64
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo4$14bo$13bobo$13bo2bo$14b2o3$ 15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 19 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=184
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 10, rule = B36/S23 bo$obo$bo$5b2o$6bo$6bob2o$7bobo$9bob2o$9bo2bo$10b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=18
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 10, rule = B36/S23 bo$obo2b2o$bo3bobo$8bo3b2o$9bo2bo2bob2o$10bobob2obo$11bobo4bo$13bob2ob o$13bo2bob2o$14b2o! 
+west=False east=True cat pop 34 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9b2o$10bo$10bob2o$11bobo$13bob2o$ 13bo2bo$14b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 10, rule = B36/S23 bo$obo$bo$5b2o$6bo$6bob2o$7bobo2b2obo$9bobo2b2o$9bo2bo$10b2o! 
+west=False east=True cat pop 31 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=106
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 10, rule = B36/S23 bo$obo2b2o$bo3bobo$8bo3b2o$9bo2bo2bo$10bobob2o$11bobo2b2obo$13bobo2b2o $13bo2bo$14b2o! 
+west=False east=True cat pop 38 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9b2o$10bo$10bob2o$11bobo2b2obo$13b obo2b2o$13bo2bo$14b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 16, rule = B36/S23 bo$obo$bo$5b2o$6bo2bo$6bobobo$7bobo2bo$9bob2o$9bo$10b3o$12bo$12bobo$ 13bobo$15bo$14bo$14b2o! 
+west=False east=True cat pop 42 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo$obo2b2o$bo3bobo$8bo3b2o$9bo2bobob2o$10bobobobo$11bobo2bo$13bob2ob2o $13bo4bo$14b3o2bo$16bob2o$16bo$17b3o$19bo! 
+west=False east=True cat pop 45 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=30
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9b2o$10bo2bo$10bobobo$11bobo2bo$ 13bob2o$13bo$14b3o$16bo$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=7 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=76
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 17, rule = B36/S23 bo$obo$bo$5b2o$6bo$6bob2o$7bobo$9bob2o$9bo2bo$10b2o3$11b2o$12bo$11bo$ 10bo$10b2o! 
+west=False east=True cat pop 41 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=41
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 17, rule = B36/S23 bo$obo2b2o$bo3bobo$8bo3b2o$9bo2bo2bob2o$10bobob2obo$11bobo4bo$13bob2ob o$13bo2bob2o$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 41 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=170
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9b2o$10bo$10bob2o$11bobo$13bob2o$ 13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=194
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 17, rule = B36/S23 bo$obo$bo$5b2o$6bo$6bob2o$7bobo2bo$9bobobo$9bo2bo$10b2o3$11b2o$12bo$ 11bo$10bo$10b2o! 
+west=False east=True cat pop 38 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=33
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 17, rule = B36/S23 bo$obo2b2o$bo3bobo$8bo3b2o$9bo2bo2bo$10bobob2o$11bobo2b2obo$13bobo2b2o $13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 42 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=57
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9b2o$10bo$10bob2o$11bobo2bo$13bobo bo$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 26 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=9,-6 Gen=0 x = 12, y = 11, rule = B36/S23 2b2o$3bo$3o$o$7bo$5b3o2bo$4bo3b3o$5b3o$7bob2o$8bo2bo$9b2o! 
+west=False east=True cat pop 29 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=23
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo$obo2b2obo$bo3bob2o$12bo$10b3o2bo$9bo3b3o$10b3o$12bob2o$13bo2bo$14b 2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=71
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo$12bo$10b3o2bo$9bo3b3o$10b3o$ 12bob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 35 stable=True min(x-y)=12 catalyst-active-gens=50-52 109-399 @400: stills intact=False catalyst intact=False total pop=94
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$6b2o$5bob3obo$5bo4b2o$6b3o3b2o$8bob2o2bo$9bo3b2o$10b3o$12bo$ 12bobo$13bobo$14bo! 
+west=False east=True cat pop 40 stable=True min(x-y)=8 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=220
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo2$9b2ob2ob2o$9bo3bobo2bo$10b3o3b3o$12bob2o$13bo3b2o $14b3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 47 stable=True min(x-y)=7 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 16, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo6bo$11bobo$10bo2bo$9bo3b2o$10b3o3bo $12bob2obo$13bo3bo$14b3ob2o$16bo2bo$16bobo$17bo! 
+west=False east=True cat pop 33 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=51
+  cat RLE (rel): #CXRLE Pos=9,-6 Gen=0 x = 12, y = 18, rule = B36/S23 2b2o$3bo$3o$o$7bo$5b3o2bo$4bo3b3o$5b3o$7bob2o$8bo2bo$9b2o3$10b2o$11bo$ 10bo$9bo$9b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 17, rule = B36/S23 bo$obo2b2obo$bo3bob2o$12bo$10b3o2bo$9bo3b3o$10b3o$12bob2o$13bo2bo$14b 2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 50 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=True catalyst intact=False total pop=43
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo$12bo$10b3o2bo$9bo3b3o$10b3o$ 12bob2o$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=21
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo2$10b2o$10bo$11bo$10b2o2$10b2o$11bo$10bo$11b3o$14bo$13b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=25
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo2$14b2o$14bo$15bo$14b2o2$14b2o$15bo$14bo$15b3o$18bo $17b2o! 
+west=False east=True cat pop 42 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo$13b2o$13bo$14bo$15bo$14b2o2$ 14b2o$15bo$14bo$15b3o$18bo$17bobo$18bo! 
+west=False east=True cat pop 21 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=176
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo2$13b2o$14bo$11b3o$10bo$11bo$10b2o2$10b2o$11bo$11bobo$12b2o! 
+west=False east=True cat pop 25 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=162
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo2$17b2o$18bo$15b3o$14bo$15bo$14b2o2$14b2o$15bo$15bo bo$16b2o! 
+west=False east=True cat pop 46 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 18, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo4$15b2obo$14bo2b2o$15bo$14b2ob 2o$17b2o$14b2o$15bob2o$15bo2bo$16b2o! 
+west=False east=True cat pop 13 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=90
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 12, rule = B36/S23 bo$obo$bo4$12bo$10b3o$9bo$10bo$11bo$10b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo3bo$obobobo$bo3bo4$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 39 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 15, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo2$13b2o$13bo3b2o$15bo2bo$14b3o$ 13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 15, rule = B36/S23 bo$obo$bo5$10b2o$9bo2bo$10b2o2$10b2o$11bo$11bobo$12b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=133
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo5$14b2o$13bo2bo$14b2o2$14b2o$15bo$15bobo$16b2o! 
+west=False east=True cat pop 45 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=18
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bobo$ob3ob3o$2o7bo$3b2ob3o$3obobo$o4bo2$13b2o$13bo$15bo$14b2o$13bo$ 14b2o$16bo$14b2o2bo$15bob2o$15bo$16b3o$18bo! 
+west=False east=True cat pop 18 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=216
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 10, rule = B36/S23 bo$obo$bo$7b2o$8bo$5b3o$5bo4bo$9bobo$9bo2bo$10b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=84
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo$9b3o$9bo4bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo$9b3o$9bo4bo$13bobo$ 13bo2bo$14b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=181
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$7b2o$8bo$5b3o4b2o$5bo4bo2bo$9bob2o$9bo$10b3o$12bo$12bobo$13b obo$14bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=118
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo$9b3o4b2o$9bo4bo2bo$13bob2o$13bo$14b3o$ 16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 45 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=13
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo$9b3o4b2o$9bo4bo2bo$ 13bob2o$13bo$14b3o$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 34 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=20
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$7b2o$8bo3b2o$5b3o3bo2bo$5bo4bob3o$9bobo$9bo3b2o$10b3obo$12bo $12bobo$13bobo$14bo! 
+west=False east=True cat pop 38 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=212
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo3b2o$9b3o3bo2bo$9bo4bob3o$13bobo$13bo3b 2o$14b3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 52 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=41
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo6b2o$11bo2bo$12bo2bo$9b3o4bo$9bo4bo b3o$13bobo3bo$13bo3b2o$14b3o$16bo$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=9 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=125
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 16, rule = B36/S23 bo$obo$bo$7b2o$8bo$5b3o$5bo4bo$9bobo$9bo2bo$10b2o3$11b2o$12bo$11bo$11b 2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 16, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo$9b3o$9bo4bo$13bobo$13bo2bo$14b2o3$15b2o $16bo$15bo$15b2o! 
+west=False east=True cat pop 42 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo$9b3o$9bo4bo$13bobo$ 13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo$7b2o$8bo3b2o$5b3o3bobo$5bo5bo$10b2o2$10b2o$11bo$10bo$11b3o$ 14bo$13b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=141
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo3b2o$9b3o3bobo$9bo5bo$14b2o2$14b2o$15bo$ 14bo$15b3o$18bo$17b2o! 
+west=False east=True cat pop 54 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=126
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo3bo$9b3o3bobo$9bo5bo2b o$14b2ob2o$17bo$14b2obo$15bob2o$14bo$15b4o$19bo$17bobo$17b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo$7b2o$8bo4b2o$5b3o6bo$5bo5b3o$10bo$11bo$10b2o2$10b2o$11bo$11b obo$12b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo4b2o$9b3o6bo$9bo5b3o$14bo$15bo$14b2o2$ 14b2o$15bo$15bobo$16b2o! 
+west=False east=True cat pop 50 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=29
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 18, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo$9b3o$9bo5b2obo$14bo2b 2o$15bo$14b2ob2o$17b2o$14b2o$15bob2o$15bo2bo$16b2o! 
+west=False east=True cat pop 20 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=147
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 12, rule = B36/S23 bo$obo$bo$7b2o$8bo$5b3o$5bo6bo$10b3o$9bo$10bo$11bo$10b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=91
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo$9b3o$9bo6bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 40 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=96
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 15, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo$9b2obo3b2o$9bobo5bo$ 14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 15, rule = B36/S23 bo$obo$bo$7b2o$8bo$5b3o$5bo$10b2o$9bo2bo$10b2o2$10b2o$11bo$11bobo$12b 2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo$11b2o$12bo$9b3o$9bo$14b2o$13bo2bo$14b2o2$14b2o$15b o$15bobo$16b2o! 
+west=False east=True cat pop 51 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo3bo$9b3o$12bo3b2o$9b2obo2bobo$9bobo 3bo$14b2o$13bo$14b2o$16bo$14b2o2bo$15bob2o$15bo$16b3o$18bo! 
+west=False east=True cat pop 13 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=168
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 12, y = 13, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o7$10b2o$10b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=22
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 16, y = 13, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o7$14b2o$14b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 67-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 16, y = 16, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo6$14b2o$14b2o! 
+west=False east=True cat pop 17 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 18, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o7$10b2o$10b2o3$12bo$11bobo$12bo! 
+west=False east=True cat pop 21 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=34
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 18, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o7$14b2o$14b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 31 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 67-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 18, y = 21, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo6$14b2o$14b2o3$16bo$ 15bobo$16bo! 
+west=False east=True cat pop 19 stable=True min(x-y)=11 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=87
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 13, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o2$10b2o$10bo2bo$12b2o3$10b2o$10b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=8 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=72
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 13, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o2$14b2o$14bo2bo$16b2o3$14b2o$14b2o! 
+west=False east=True cat pop 36 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 67-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 16, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo4b2o$14bo$15bo$16bo$ 17bobo$18b2o$14b2o$14b2o! 
+west=False east=True cat pop 23 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=99
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 18, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o3$13bo$12bobo$13bo2$10b2o$10b2o3$12b2o$10bo2bo$ 10b2o! 
+west=False east=True cat pop 27 stable=True min(x-y)=6 catalyst-active-gens=49-50 54-56 68-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 18, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o3$17bo$16bobo$17bo2$14b2o$14b2o3$16b 2o$14bo2bo$14b2o! 
+west=False east=True cat pop 41 stable=True min(x-y)=7 catalyst-active-gens=49-50 54-56 67-399 @400: stills intact=False catalyst intact=False total pop=301
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 21, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo4b2o$14bo$15bo$16bo$ 17bo$18bo$14b2o3bo$14b2o2b2o3$16bo$15bobo$16bo! 
+west=False east=True cat pop 15 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=31
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 10, rule = B36/S23 bo$obo$bo$5bo$4bobo$5bo$10bo$9bobo$9bo2bo$10b2o! 
+west=False east=True cat pop 19 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 10, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$14b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=227
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$ 14b2o! 
+west=False east=True cat pop 30 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$5bo$4bobo3b2o$5bo5bo$10bo$9bob3o$9bo4bo$10b3obo$12bob2o$12bo $13b3o$15bo! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=161
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo3b2o$9bo5bo$14bo$13bob3o$13bo4bo$14b3obo$ 16bob2o$16bo$17b3o$19bo! 
+west=False east=True cat pop 53 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 17, rule = B36/S23 4bo2bo$ob6o$2o$3b2ob4o$3obobo3bo$o4bo3bo$8bo3bo$8b2o2b3o$15bo$14bo$13b ob3o$13bo4bo$14b3o2bo$16bob2o$16bo$17b3o$19bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=64
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$5bo$4bobo5b2o$5bo5bo2bo$10bob3o$9bobo$9bo3b2o$10b3obo$12bo$ 12bobo$13bobo$14bo! 
+west=False east=True cat pop 35 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=196
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo5b2o$9bo5bo2bo$14bob3o$13bobo$13bo3b2o$ 14b3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 49 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=181
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo6b2o$9bo5bo2bo$14bob2o$ 13bobo$13bo3b3o$14b3o2bo$16bo$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 21 stable=True min(x-y)=9 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=168
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 16, rule = B36/S23 bo$obo$bo$5bo$4bobo$5bo$10bo$9bobo$9bo2bo$10b2o3$11b2o$12bo$11bo$11b2o ! 
+west=False east=True cat pop 25 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=27
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 16, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$14b2o3$15b2o$16b o$15bo$15b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=144
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo$14bo$13bobo$13bo2bo$ 14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 32 stable=True min(x-y)=11 catalyst-active-gens=50-53 103-399 @400: stills intact=False catalyst intact=False total pop=170
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 15, y = 11, rule = B36/S23 2o$o$b3ob2o$3bobobo$7bo3b2obo$6bo4bob2o$7b3obo$9bobo$11bob2o$11bo2bo$ 12b2o! 
+west=False east=True cat pop 33 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=51
+  cat RLE (rel): #CXRLE Pos=4,-7 Gen=0 x = 17, y = 12, rule = B36/S23 5bo$5b3o$bo6bo$obo2b2obo$bo3bobob2o$9bobo$8bo3bo$9b3obo$11bobo$13bob2o $13bo2bo$14b2o! 
+west=False east=True cat pop 43 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=62
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo2b2o$o4bo4bo$9bo3b2obo$8bo4bob2o$9b3obo$ 11bobo$13bob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=80
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 10, rule = B36/S23 bo$obo$bo$4b2o$4bo4b2ob2o$5b3o2bobobo$7bobo2bobo$9bobobo$9bo2bo$10b2o! 
+west=False east=True cat pop 32 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=23
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 10, rule = B36/S23 bo3bo$obobobo$bo3bo$8b2o$8bo4b2ob2o$9b3o2bobobo$11bobo2bobo$13bobobo$ 13bo2bo$14b2o! 
+west=False east=True cat pop 53 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=130
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 13, rule = B36/S23 4b2o$ob3obo$2o4bo$3b2obob2o$3obobobobo$o4bo5bo$9b2obobo2bo$8bo3bob4o$ 9b3obo$11bobo2b4o$13bobo3bo$13bo2bo$14b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=12 catalyst-active-gens=50-53 109-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$4b2o$4bo$5b3ob2o$7bobo2bo$9bob2o$9bo$10b3o$12bo$12bobo$13bob o$14bo! 
+west=False east=True cat pop 32 stable=True min(x-y)=8 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=24
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$8b2o$8bo$9b3ob2o$11bobo2bo$13bob2o$13bo$14b3o$16bo $16bobo$17bobo$18bo! 
+west=False east=True cat pop 49 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=93
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo5bo$9b3o$8bo3b2o$9b3o2bo$11bobo2bo$ 13bob2o$13bo$14b3o$16bo$16bobo$17bobo$19bo$18bo$18b2o! 
+west=False east=True cat pop 39 stable=True min(x-y)=7 catalyst-active-gens=50-53 103-399 @400: stills intact=False catalyst intact=False total pop=47
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 15, y = 18, rule = B36/S23 2o$o$b3ob2o$3bobobo$7bo3b2obo$6bo4bob2o$7b3obo$9bobo$11bob2o$11bo2bo$ 12b2o3$13b2o$14bo$13bo$12bo$12b2o! 
+west=False east=True cat pop 40 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=45
+  cat RLE (rel): #CXRLE Pos=4,-7 Gen=0 x = 17, y = 19, rule = B36/S23 5bo$5b3o$bo6bo$obo2b2obo$bo3bobob2o$9bobo$8bo3bo$9b3obo$11bobo$13bob2o $13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 50 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=53
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo2b2o$o4bo4bo$9bo3b2obo$8bo4bob2o$9b3obo$ 11bobo$13bob2o$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 34 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 16, rule = B36/S23 bo$obo$bo$4b2o$4bo4b2ob2o$5b3o2bobobo$7bobo2bobo$9bobobo$9bo2bo$10b2o 3$11b2o$12bo$11bo$11b2o! 
+west=False east=True cat pop 38 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=37
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 16, rule = B36/S23 bo3bo$obobobo$bo3bo$8b2o$8bo4b2ob2o$9b3o2bobobo$11bobo2bobo$13bobobo$ 13bo2bo$14b2o3$15b2o$16bo$15bo$15b2o! 
+west=False east=True cat pop 60 stable=True min(x-y)=7 catalyst-active-gens=50-53 101-399 @400: stills intact=False catalyst intact=False total pop=77
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 20, rule = B36/S23 4b2o$ob3obo$2o4bo$3b2obob2o$3obobobobo$o4bo5bo$9b2obobo2bo$8bo3bob4o$ 9b3obo$11bobo2b4o$13bobo3bo$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 28 stable=False min(x-y)=12 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=152
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 10, rule = B36/S23 bo$obo4bo$bo4bobo$5bo2bo$4bob3ob2o$5bo4b2o$6b3o$8bob2o$9bo2bo$10b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=123
+  cat RLE (rel): #CXRLE Pos=4,-7 Gen=0 x = 17, y = 12, rule = B36/S23 5bo$5b3o$bo6bo$obo2b2o2bo$bo3bob2obo$8bobo$8bob2o3bo$9bo3b3o$10b3o$12b ob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=74
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 13, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bo$o4bo4bobo$9bo2bo$8bob3ob2o$9bo4b2o$ 10b3o$12bob2o$13bo2bo$14b2o! 
+west=False east=True cat pop 37 stable=True min(x-y)=12 catalyst-active-gens=50-52 109-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo$5bo$4bobob2ob2o$5bo3bobo2bo$6b3o3b3o$8bob2o$9bo3b2o$10b3obo$ 12bo$12bobo$13bobo$14bo! 
+west=False east=True cat pop 41 stable=True min(x-y)=8 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 20, y = 14, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobob2ob2o$9bo3bobo2bo$10b3o3b3o$12bob2o$13bo 3b2o$14b3obo$16bo$16bobo$17bobo$18bo! 
+west=False east=True cat pop 51 stable=True min(x-y)=7 catalyst-active-gens=50-52 101-399 @400: stills intact=False catalyst intact=False total pop=152
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 16, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bo$o4bo4bobo$9bobobo$8bobo2bo$9bo3b2o$ 10b3o3bo$12bob2obo$13bo3bo$14b3ob2o$16bo2bo$16bobo$17bo! 
+west=False east=True cat pop 35 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=108
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 17, rule = B36/S23 bo$obo4bo$bo4bobo$5bo2bo$4bob3ob2o$5bo4b2o$6b3o$8bob2o$9bo2bo$10b2o3$ 11b2o$12bo$11bo$10bo$10b2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=49
+  cat RLE (rel): #CXRLE Pos=4,-7 Gen=0 x = 17, y = 19, rule = B36/S23 5bo$5b3o$bo6bo$obo2b2o2bo$bo3bob2obo$8bobo$8bob2o3bo$9bo3b3o$10b3o$12b ob2o$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 50 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 17, y = 20, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo4bo$o4bo4bobo$9bo2bo$8bob3ob2o$9bo4b2o$ 10b3o$12bob2o$13bo2bo$14b2o3$15b2o$16bo$15bo$14bo$14b2o! 
+west=False east=True cat pop 24 stable=True min(x-y)=12 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=61
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo$5bo$4bobo3b2o$5bo4bo$11bo$10b2o2$10b2o$11bo$10bo$11b3o$14bo$ 13b2o! 
+west=False east=True cat pop 28 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=65
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo3b2o$9bo4bo$15bo$14b2o2$14b2o$15bo$14bo$ 15b3o$18bo$17b2o! 
+west=False east=True cat pop 42 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=94
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 20, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo4b2o$9bo2bo$8bobo2bo$9bo4bo$15bo$ 14b2o2$14b2o$15bo$14bo$15b3o$18bo$17bobo$18bo! 
+west=False east=True cat pop 25 stable=True min(x-y)=11 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=32
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 15, y = 15, rule = B36/S23 bo$obo$bo$5bo$4bobo6b2o$5bo8bo$11b3o$10bo$11bo$10b2o2$10b2o$11bo$11bob o$12b2o! 
+west=False east=True cat pop 29 stable=True min(x-y)=8 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=36
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 19, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo$9bo$8bobo6b2o$9bo8bo$15b3o$14bo$15bo$14b2o2$14b2o$ 15bo$15bobo$16b2o! 
+west=False east=True cat pop 45 stable=True min(x-y)=7 catalyst-active-gens=49-51 60-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 18, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo$9bo$15b2obo$14bo2b2o$15b o$14b2ob2o$17b2o$14b2o$15bob2o$15bo2bo$16b2o! 
+west=False east=True cat pop 18 stable=True min(x-y)=12 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=63
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 13, y = 12, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o2$12bo$10b3o$9bo$10bo$11bo$10b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=67
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 17, y = 12, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o2$16bo$14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 38 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=152
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 15, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo2b2o$9bo3bo3b2o$15bo2bo$ 14b3o$13bo$14bo$15bo$14b2o! 
+west=False east=True cat pop 22 stable=True min(x-y)=11 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=157
+  cat RLE (rel): #CXRLE Pos=8,-5 Gen=0 x = 14, y = 15, rule = B36/S23 bo$obo$bo3bo$4bobo$4b2o3$10b2o$9bo2bo$10b2o2$10b2o$11bo$11bobo$12b2o! 
+west=False east=True cat pop 26 stable=True min(x-y)=8 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=26
+  cat RLE (rel): #CXRLE Pos=4,-5 Gen=0 x = 18, y = 15, rule = B36/S23 bo3bo$obobobo$bo3bo3bo$8bobo$8b2o3$14b2o$13bo2bo$14b2o2$14b2o$15bo$15b obo$16b2o! 
+west=False east=True cat pop 44 stable=True min(x-y)=7 catalyst-active-gens=49-49 61-399 @400: stills intact=False catalyst intact=False total pop=46
+  cat RLE (rel): #CXRLE Pos=4,-8 Gen=0 x = 19, y = 19, rule = B36/S23 4bo$ob3o$2o3b2o$3b2o2bo$3obobo$o4bo$9bo$8bobo2b2o$9bo3bo$15bo$14b2o$ 13bo$14b2o$16bo$14b2o2bo$15bob2o$15bo$16b3o$18bo! 
+west=False east=True cat pop 27 stable=True min(x-y)=11 catalyst-active-gens=66-68 143-399 @400: stills intact=False catalyst intact=False total pop=202
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 17, y = 11, rule = B36/S23 bo$obo$bo8b2o$10bo3b2o$12bo2bo$11b2obo$11bo2bobo$12b2ob2o$13bo$13bob2o $14bobo! 
+west=False east=True cat pop 35 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 13, rule = B36/S23 2ob2o$bobo12b2o$bobo11bobo$2bo12bo$14b2o$11b2o3b2o$11bob2o2bo$12bo2b2o $13b2o$14bo$14bobo$15bobo$16bo! 
+west=False east=True cat pop 34 stable=True min(x-y)=8 catalyst-active-gens=66-68 135-399 @400: stills intact=False catalyst intact=False total pop=35
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 17, y = 16, rule = B36/S23 bo$obo$bo8b2o$10bobo$12bo2bo$11b2obobo$11bo2bobo$12b2obo$13bo$13bo$14b 2o$16bo$12b3obo$13bobo$11bo$11b2o! 
+west=False east=True cat pop 43 stable=False min(x-y)=8 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=38
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 17, rule = B36/S23 2ob2o$bobo12b2o$bobo11bobo$2bo12bo$14b2o$11b2o3b2o$11bob2o2bo$12bo2b2o $13b2o$14bo$14bobo$15bobo$17bo$13b4o$14bo$12bo$12b2o! 
+west=False east=True cat pop 10 stable=True min(x-y)=11 catalyst-active-gens=60-61 73-399 @400: stills intact=False catalyst intact=False total pop=31
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 13, y = 7, rule = B36/S23 bo$obo$bo$11bo$10bobo$9bobo$10bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=11 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=224
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 15, y = 14, rule = B36/S23 bo$obo$bo$11bo$10bobo$9bobo$10bo5$13bo$12bobo$13bo! 
+west=False east=True cat pop 14 stable=True min(x-y)=11 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=132
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 15, y = 13, rule = B36/S23 bo$obo$bo$11bo$10bobo$9bobo$10bo4$13bo$12bobo$13bo! 
+west=False east=True cat pop 16 stable=True min(x-y)=11 catalyst-active-gens=60-61 71-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 15, y = 12, rule = B36/S23 bo$obo$bo$11bo$10bobo$9bobo$10bo2$12b2o$12bo$14bo$13b2o! 
+west=False east=True cat pop 30 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=162
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2ob2o$bobo$bobo8b2o$2bo9bo$13bo$11bobo$10bobo$11bo$15b2o$13bo2bo$13b2o 3$13b2o$14bo$13bo$13b2o! 
+west=False east=True cat pop 30 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=43
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 17, y = 11, rule = B36/S23 2ob2o$bobo$bobo$2bo6b2o$10bo2b2obo$10bobo2b2o$11bobo$13bob2o$12b2obo$ 15bo$15b2o! 
+west=False east=True cat pop 36 stable=False min(x-y)=9 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=28
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 17, y = 17, rule = B36/S23 2ob2o$bobo$bobo$2bo6b2o$10bo2b2obo$10bobo2b2o$11bobo$13bob2o$12b2obo$ 15bo$15b2o3$14b2o$15bo$13bo$13b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 16, rule = B36/S23 2ob2o$bobo$bobo$2bo6b2o$10bo2b2obo$10bobo2b2o$11bobo$13bob2o$12b2ob2o 4$14b2o$15bo$15bobo$16b2o! 
+west=False east=True cat pop 35 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=48
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 15, rule = B36/S23 2ob2o$bobo$bobo$2bo6b2o$10bo2b2obo$10bobo2b2o$11bobo$13bob2o$12b2ob2o 3$14b2o$15bo$15bobo$16b2o! 
+west=False east=True cat pop 25 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=182
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 16, y = 8, rule = B36/S23 bo$obo$bo5b2ob2ob2o$7bo3bobobo$8b3o2bobo$10bobobo$12bo$11b2o! 
+west=False east=True cat pop 29 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=43
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 16, y = 14, rule = B36/S23 bo$obo$bo5b2ob2ob2o$7bo3bobobo$8b3o2bobo$10bobobo$12bo$11b2o4$14bo$13b obo$14bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=11 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=108
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 16, y = 13, rule = B36/S23 bo$obo$bo5b2ob2ob2o$7bo3bobo$8b3o2bobo$10bobob2o$12bo$11b2o3$14bo$13bo bo$14bo! 
+west=False east=True cat pop 29 stable=True min(x-y)=11 catalyst-active-gens=61-63 72-399 @400: stills intact=False catalyst intact=False total pop=59
+  cat RLE (rel): #CXRLE Pos=7,-5 Gen=0 x = 16, y = 12, rule = B36/S23 bo$obo$bo5b2ob2ob2o$7bo3bobo$8b3o2bobo$10bobob2o$12bo$11b2o2$14bo$13bo bo$14bo! 
+west=False east=True cat pop 31 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=44
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 10, rule = B36/S23 2ob2o$bobo$bobo6b2obo$2bo7bob2o2$11b3o$10bo3bob2o$11bo2bobo$12bobo2bo$ 13bo2b2o! 
+west=False east=True cat pop 38 stable=False min(x-y)=7 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=42
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 18, rule = B36/S23 2ob2o$bobo$bobo6b2obo$2bo7bob2o2$11b3o$10bo3bob2o$11bo2bobo$12bobo2bo$ 13bo2b2o4$13b2o$14bo$13bo$12bo$12b2o! 
+west=False east=True cat pop 39 stable=False min(x-y)=11 catalyst-active-gens=1-399 @400: stills intact=False catalyst intact=False total pop=100
+  cat RLE (rel): #CXRLE Pos=6,-6 Gen=0 x = 18, y = 17, rule = B36/S23 2ob2o$bobo$bobo6b2obo$2bo7bob2o2$11b3o$10bo3bob2o$11bo2bobo$12bobo2bo$ 13bo2b2o3$13b2o$14bo$14bobo$15bobo$16bo! 

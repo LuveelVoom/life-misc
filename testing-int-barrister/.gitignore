@@ -1,0 +1,19 @@
+# upstream clone (mvr/barrister at 9fb5e0c), not republished here
+barrister/
+# build products
+Barrister
+Barrister-new
+*.o
+# backups
+*.bak
+# raw outputs over 1 MB (listed in README.md)
+work/gblock/t16.out
+work/selfcopy/hw6.out
+work/selfcopy/h25.out
+work/selfcopy/hcat.out
+work/pipeline/piq4i_N.out
+work/pipeline/piq4i_far6.out
+work/pipeline/piq4i_far6.snap
+work/pipeline/a5_farW.out
+work/pi/R6.fin
+work/pi/R6.out

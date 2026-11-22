@@ -1,0 +1,12 @@
+first-active-range = [0, 120]
+active-window-range = [0, 120]
+min-stable-interval = 20
+max-active-cells = 7
+exempt-existing = true
+rule = "B34k/S23"
+stabilise-results = true
+pattern = '''
+x = 29, y = 16, rule = B34k/S23History
+14B4.A.A2.A$14B2.3A.4A$14B.A$14B.A.2A.4A$14B2.A.A.A2.A$14B3.A9.A$14B12.
+A.A$14B13.A$14B$14B$14B$14B$14B$14B9.A$14B8.3A$14B7.2A.A!
+'''

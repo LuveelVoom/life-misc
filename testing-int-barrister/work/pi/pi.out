@@ -1,0 +1,2 @@
+warning: dead cells with 7 or 8 neighbours are stable in this rule but Barrister never uses them
+Rule: B36/S23

@@ -1,0 +1,8 @@
+box 16x16 wrap=False |D|=256 free=256 fixed=0
+rigidity 2: 3790 flip sets, 1894629 clauses
+it 1: last diff cluster 3 cells, block 19 lits, avg block 19.0, clauses 8, 0s
+it 2: last diff cluster 3 cells, block 18 lits, avg block 18.5, clauses 96, 1s
+it 3: last diff cluster 3 cells, block 20 lits, avg block 19.0, clauses 104, 1s
+it 4: last diff cluster 3 cells, block 9 lits, avg block 16.5, clauses 112, 1s
+it 200: last diff cluster 3 cells, block 17 lits, avg block 19.6, clauses 8800, 48s
+it 400: last diff cluster 4 cells, block 17 lits, avg block 21.4, clauses 22588, 91s
