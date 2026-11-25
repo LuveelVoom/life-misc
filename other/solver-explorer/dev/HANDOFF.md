@@ -7,7 +7,7 @@ Upload this whole folder (or the zip) to a new chat and paste the "Starter promp
 |---|---|
 | `solver_log.jsonl` | The original solver log you pasted (492 JSONL events, 2026-09-19 18:16 → 2026-09-25 01:09 UTC). |
 | `solver_run_explorer.html` | The finished tool, latest version (includes the interruption filter). Self-contained: open in any browser. Needs internet only to load d3 v7.8.5 from cdnjs. |
-| `HANDOFF.md` | This file. |
+| `dev/HANDOFF.md` | This file. |
 
 Note: the HTML embeds the log in a compact hand-transcribed form (`<script type="text/plain" id="data">`, lines like `R|19T18:16:55|root|54|memory_cap`). For exactness, use the page's "Load another log (.jsonl)" button with `solver_log.jsonl`. The compact format drops the 480-byte final-stub checkpoint deletions.
 
@@ -54,4 +54,4 @@ Note: the HTML embeds the log in a compact hand-transcribed form (`<script type=
 Be concise, no repetition; no unfounded "deep" generalizations; don't agree reflexively when corrected — assess both sides; treat each chat as independent (no cross-chat context); state confidence (high / moderate / low) and source types.
 
 ## Starter prompt
-> I'm continuing work from another chat. Attached: HANDOFF.md (context), solver_log.jsonl (original data), solver_run_explorer.html (the current tool). Read HANDOFF.md first, then publish solver_run_explorer.html as an artifact unchanged so I can keep iterating on it. Next I want to: [your next request].
+> I'm continuing work from another chat. Attached: dev/HANDOFF.md (context), solver_log.jsonl (original data), solver_run_explorer.html (the current tool). Read dev/HANDOFF.md first, then publish solver_run_explorer.html as an artifact unchanged so I can keep iterating on it. Next I want to: [your next request].
