@@ -30,17 +30,59 @@ Examples (a block at 0 0; the last finds the 17c/45 pi crawler in about 90 s):
 
 Coordinates: x to the right, y down; the object's top-left cell is at --object-pos (default 0 0).
 """
-import argparse, itertools, json, math, os, sys, time
+import argparse, itertools, json, math, multiprocessing, os, sys, time
 import numpy as np
+
+_BOX = _LINE = None   # search context for the worker processes (set before they are forked)
+
+
+class Pool:
+    """--jobs worker processes (forked, so they inherit _BOX / _LINE), or this process alone.
+    imap keeps the input order, so the output is the same for any number of jobs."""
+    def __init__(self, jobs):
+        self.jobs, self.pool = jobs, None
+
+    def __enter__(self):
+        if self.jobs > 1:
+            self.pool = multiprocessing.get_context('fork').Pool(self.jobs)
+        return self
+
+    def imap(self, fn, items):
+        return self.pool.imap(fn, items) if self.pool else map(fn, items)
+
+    def __exit__(self, *_):
+        if self.pool:
+            self.pool.terminate()
 
 # Neighbour offsets and their bit in the 8-bit neighbourhood mask (Hensel table order).
 NB = {(-1, -1): 0x80, (0, -1): 0x40, (1, -1): 0x20, (-1, 0): 0x10,
       (1, 0): 0x08, (-1, 1): 0x04, (0, 1): 0x02, (1, 1): 0x01}
 
 
+def map_table(rule):
+    """Golly MAP rule (86 base64 characters, padding optional) -> this script's table layout.
+    MAP bit k (MSB first) is the next state for neighbourhood index k, with cells weighted
+    NW 256, N 128, NE 64, W 32, centre 16, E 8, SW 4, S 2, SE 1."""
+    b64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+    body = rule.strip()[3:].rstrip('=')
+    if len(body) != 86 or any(c not in b64 for c in body):
+        sys.exit(f"Cannot read MAP rule {rule!r}: it needs 86 base64 characters")
+    bits = ''.join(f'{b64.index(c):06b}' for c in body)[:512]
+    t = [0] * 512
+    for k in range(512):
+        alive = (k >> 4) & 1
+        mask = (((k >> 5) & 0xF) << 4) | (k & 0xF)
+        t[alive * 256 + mask] = int(bits[k])
+    if t[0]:
+        sys.exit("B0 rules are not supported")
+    return np.array(t, dtype=np.uint8)
+
+
 def rule_table(rule):
     """512-entry next-state table, index = alive * 256 + neighbourhood mask.
-    Accepts Hensel/INT notation such as B3/S23-q4i, B2-a/S12, B36/S23."""
+    Accepts Hensel/INT notation such as B3/S23-q4i, B2-a/S12, B36/S23, and Golly MAP rules."""
+    if rule.strip()[:3].upper() == 'MAP':
+        return map_table(rule)
     hensel = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'hensel.json')))
     birth, surv = [0] * 256, [0] * 256
     mode, i, r = -1, 0, rule.strip()
@@ -189,7 +231,7 @@ class ObjectInfo:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--rule', default='B3/S23')
+    ap.add_argument('--rule', default='B3/S23', help='Hensel/INT rule or Golly MAP rule')
     ap.add_argument('--object', required=True, help='RLE of the object the pattern crawls over')
     ap.add_argument('--object-pos', type=int, nargs=2, default=[0, 0], metavar=('X', 'Y'))
     ap.add_argument('--active', action='append', metavar='RLE',
@@ -221,6 +263,8 @@ def main():
                     help='cycles a find must repeat for on a line of objects (default 10)')
     ap.add_argument('--batch', type=int, default=2048, help='patterns simulated at once')
     ap.add_argument('--out', default='crawlers.rle')
+    ap.add_argument('--jobs', type=int, default=1,
+                    help='worker processes (default 1); the results are the same for any number')
     args = ap.parse_args()
 
     table = rule_table(args.rule)
@@ -337,42 +381,16 @@ def main():
 
     results = []
     tried, t0 = 0, time.time()
-    for g in boards():
-        B = len(g)
-        popA = (g ^ base).reshape(B, -1).sum(axis=1).astype(np.int64)
-        idx = np.arange(B)
-        cur, prev1, prev2 = g, None, None
-        for t in range(1, P + 1):
-            prev2, prev1 = prev1, cur
-            cur = step_live(cur, table)
-            # Edges absorb what reaches them (escaping spaceships). Without --allow-debris such a
-            # reaction is not clean, so it is dropped.
-            edge = cur[:, :2, :].any((1, 2)) | cur[:, -2:, :].any((1, 2)) | cur[:, :, :2].any((1, 2)) | cur[:, :, -2:].any((1, 2))
-            cur[:, :2, :] = 0; cur[:, -2:, :] = 0; cur[:, :, :2] = 0; cur[:, :, -2:] = 0
-            pop = cur.reshape(len(idx), -1).sum(axis=1)
-            keep = (pop > 0) & (~edge if not args.allow_debris else True)
-            # a board that is now still or period 2 stays that way: it cannot become a crawler
-            flat = cur.reshape(len(idx), -1)
-            settled = (flat == prev1.reshape(len(idx), -1)).all(axis=1)
-            if prev2 is not None:
-                settled |= (flat == prev2.reshape(len(idx), -1)).all(axis=1)
-            cand = pop > popA[idx] if args.allow_debris else np.zeros(len(idx), dtype=bool)
-            for p in obj_pops:
-                cand |= pop == popA[idx] + p
-            for i in np.nonzero(cand & keep)[0]:
-                j = idx[i]
-                res = decompose(cur[i], g[j] ^ base, t, phase_shapes, oi, X0, Y0, table, args)
-                if res and repeats(res, oi, table):
-                    keep[i] = False
-                    record(res, oi, results)
-            keep &= ~settled
-            idx, cur, prev1 = idx[keep], cur[keep], prev1[keep]
-            if not len(idx):
-                break
-        tried += B
-        if time.time() - t0 > 10:
-            print(f'  {tried} of {total} starting patterns tried, {len(results)} found so far', flush=True)
-            t0 = time.time()
+    global _BOX
+    _BOX = (args, table, base, P, phase_shapes, obj_pops, oi, X0, Y0)
+    with Pool(args.jobs) as pool:
+        for B, found in pool.imap(_box_batch, boards()):
+            for res in found:
+                record(res, oi, results)
+            tried += B
+            if time.time() - t0 > 10:
+                print(f'  {tried} of {total} starting patterns tried, {len(results)} found so far', flush=True)
+                t0 = time.time()
 
     print(f'{tried} starting patterns tried: {len(results)} result(s)')
     if results:
@@ -394,6 +412,45 @@ def main():
             f.write('\n'.join(body[i:i + 70] for i in range(0, len(body), 70)) + '\n')
         print(f'Written to {args.out}')
 
+
+def _box_batch(g):
+    """--active / --region: the finds (already checked to repeat) in one batch of boards.
+    Runs in a worker process with --jobs; the context comes from _BOX (set before forking)."""
+    args, table, base, P, phase_shapes, obj_pops, oi, X0, Y0 = _BOX
+    found = []
+    B = len(g)
+    B = len(g)
+    popA = (g ^ base).reshape(B, -1).sum(axis=1).astype(np.int64)
+    idx = np.arange(B)
+    cur, prev1, prev2 = g, None, None
+    for t in range(1, P + 1):
+        prev2, prev1 = prev1, cur
+        cur = step_live(cur, table)
+        # Edges absorb what reaches them (escaping spaceships). Without --allow-debris such a
+        # reaction is not clean, so it is dropped.
+        edge = cur[:, :2, :].any((1, 2)) | cur[:, -2:, :].any((1, 2)) | cur[:, :, :2].any((1, 2)) | cur[:, :, -2:].any((1, 2))
+        cur[:, :2, :] = 0; cur[:, -2:, :] = 0; cur[:, :, :2] = 0; cur[:, :, -2:] = 0
+        pop = cur.reshape(len(idx), -1).sum(axis=1)
+        keep = (pop > 0) & (~edge if not args.allow_debris else True)
+        # a board that is now still or period 2 stays that way: it cannot become a crawler
+        flat = cur.reshape(len(idx), -1)
+        settled = (flat == prev1.reshape(len(idx), -1)).all(axis=1)
+        if prev2 is not None:
+            settled |= (flat == prev2.reshape(len(idx), -1)).all(axis=1)
+        cand = pop > popA[idx] if args.allow_debris else np.zeros(len(idx), dtype=bool)
+        for p in obj_pops:
+            cand |= pop == popA[idx] + p
+        for i in np.nonzero(cand & keep)[0]:
+            j = idx[i]
+            res = decompose(cur[i], g[j] ^ base, t, phase_shapes, oi, X0, Y0, table, args)
+            if res and repeats(res, oi, table):
+                keep[i] = False
+                found.append(res)
+        keep &= ~settled
+        idx, cur, prev1 = idx[keep], cur[keep], prev1[keep]
+        if not len(idx):
+            break
+    return B, found
 
 def decompose(board, d0, t, phase_shapes, oi, X0, Y0, table, args):
     """Is board (generation t) = the starting pattern moved by d + an object phase moved by e?"""
@@ -481,126 +538,28 @@ def line_search(args, table, obj, oi, placements):
     print(f'line mode: direction ({dx},{dy}), spacings {nmin}-{nmax}, {oi.period} phase step(s), '
           f'{len(placements)} placements, {G} generations, periods up to {P}')
     t_start = time.time()
-    for ci, (n, phi) in enumerate(combos):
-        s = (n * dx, n * dy)
-        depth = (args.window or 2 * n) * q
-        # objects needed: the front moves at most 1 cell/gen relative to the objects, which may move too
-        K = (2 * G + 2 * n) // n + 3
-        objs = [move(oi.at(j * phi), (j * s[0], j * s[1])) for j in range(K)]
-
-        def line_at(t):
-            return set().union(*[move(oi.at(t + j * phi), (j * s[0], j * s[1])) for j in range(K)])
-        line = set().union(*objs)
-        if any(len(o & p) for i, o in enumerate(objs) for p in objs[i + 1:]):
-            continue
-        # objects must not interact with each other
-        free = run(line, oi.period, table)
-        if any(free[t] != line_at(t) for t in range(1, oi.period + 1)):
-            continue
-        p1 = proj(next(iter(objs[1])))
-        pl = [A for A in placements if A.isdisjoint(line) and max(proj(c) for c in A) < max(proj(c) for c in objs[1])]
-        if not pl:
-            continue
-        # canvas: the line (wherever it is during the run) and placements, margin P + 2.
-        # Its edges absorb whatever reaches them (escaping spaceships, debris).
-        Ft = [line_at(t) for t in range(G + 2)]
-        cells = set().union(*Ft) | set().union(*pl)
-        m = P + 2
-        X0 = min(x for x, y in cells) - m; Y0 = min(y for x, y in cells) - m
-        W = max(x for x, y in cells) - X0 + m + 1; H = max(y for x, y in cells) - Y0 + m + 1
-        F = np.zeros((G + 2, H, W), dtype=np.uint8)      # the line on its own, every generation
-        for t in range(G + 2):
-            for x, y in Ft[t]:
-                F[t, y - Y0, x - X0] = 1
-        yy, xx = np.mgrid[0:H, 0:W]
-        Pm = ((xx + X0) * dx + (yy + Y0) * dy).astype(np.int64)
-        unit = n * q                                     # projection change per spacing
-        bs = min(args.batch, 256)
-        for b0 in range(0, len(pl), bs):
-            chunk = pl[b0:b0 + bs]
-            B = len(chunk)
-            # D = difference from the free line (F); the board is F ^ D. Only the box around D is
-            # stepped and examined. Edges absorb whatever reaches them (escaping spaceships).
-            D = np.zeros((B, H, W), dtype=np.uint8)
-            for k, A in enumerate(chunk):
-                for x, y in A:
-                    D[k, y - Y0, x - X0] = 1
-            ids = np.arange(B)                     # boards still being simulated
-            rejected = set()                       # (board, period, move) already checked and refused
-            Hh = np.zeros((B, G + 1), dtype=np.uint64)
-            Ox = np.zeros((B, G + 1), dtype=np.int64); Oy = np.zeros((B, G + 1), dtype=np.int64)
-            occ = D.any(axis=0)
-            rows, cols = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
-            for t in range(G + 1):
-                if t:
-                    y0, y1 = max(rows[0] - 2, 0), min(rows[-1] + 3, H)
-                    x0, x1 = max(cols[0] - 2, 0), min(cols[-1] + 3, W)
-                    stepped = step(F[t - 1][y0:y1, x0:x1] ^ D[:, y0:y1, x0:x1], table)
-                    # the box's own edge cells were computed with dead cells outside: keep the inside
-                    iy0, iy1 = (1 if y0 > 0 else 0), (y1 - y0 - 1 if y1 < H else y1 - y0)
-                    ix0, ix1 = (1 if x0 > 0 else 0), (x1 - x0 - 1 if x1 < W else x1 - x0)
-                    D[:, y0:y1, x0:x1] = 0
-                    D[:, y0 + iy0:y0 + iy1, x0 + ix0:x0 + ix1] = (stepped[:, iy0:iy1, ix0:ix1]
-                                                                 ^ F[t][y0 + iy0:y0 + iy1, x0 + ix0:x0 + ix1])
-                    D[:, :2, :] = 0; D[:, -2:, :] = 0; D[:, :, :2] = 0; D[:, :, -2:] = 0
-                    occ = D[:, y0:y1, x0:x1].any(axis=0)
-                    rr, cc = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
-                    if not len(rr):
-                        break
-                    rows, cols = rr + y0, cc + x0
-                # examine the changes plus one spacing ahead
-                r0, r1 = max(rows[0] - n - 2, 0), min(rows[-1] + n + 3, H)
-                c0, c1 = max(cols[0] - n - 2, 0), min(cols[-1] + n + 3, W)
-                Ds = D[:, r0:r1, c0:c1]
-                gs = Ds ^ F[t][r0:r1, c0:c1]
-                Ps = Pm[r0:r1, c0:c1]
-                Bn = len(ids)
-                alive = Ds.reshape(Bn, -1).any(axis=1)
-                front = np.where(Ds.astype(bool), Ps[None], np.iinfo(np.int64).min // 2).reshape(Bn, -1).max(axis=1)
-                win = gs.astype(bool) & (Ps[None] >= (front - depth)[:, None, None]) & (Ps[None] <= (front + unit)[:, None, None])
-                bi, wy, wx = np.nonzero(win)
-                # position-independent hash of the window (the line itself may be moving)
-                big = np.iinfo(np.int64).max
-                mx = np.full(Bn, big, dtype=np.int64); my = np.full(Bn, big, dtype=np.int64)
-                np.minimum.at(mx, bi, wx); np.minimum.at(my, bi, wy)
-                xr = (wx - mx[bi]).astype(np.int64); yr = (wy - my[bi]).astype(np.int64)
-                v = (xr * 0x9E3779B1 + yr * 0x85EBCA77 + 0x165667B1).astype(np.uint64)
-                v ^= v >> np.uint64(15); v *= np.uint64(0x2C1B3C6D297A1A2B); v ^= v >> np.uint64(29)
-                h = np.zeros(Bn, dtype=np.uint64)
-                np.add.at(h, bi, v)
-                Hh[ids, t] = h
-                Ox[ids, t] = mx + c0; Oy[ids, t] = my + r0
-                done = np.zeros(Bn, dtype=bool)
-                Tm = min(P, t // 2)
-                cols_ = np.arange(t - 2 * Tm, t + 1) if Tm else np.arange(t, t + 1)
-                hx, hy, hh = Ox[ids][:, cols_], Oy[ids][:, cols_], Hh[ids][:, cols_]   # generations t-2Tm..t
-                base_ = t - 2 * Tm
-                for T in range(1, Tm + 1):
-                    a0, a1, a2 = t - base_, t - T - base_, t - 2 * T - base_
-                    ddx, ddy = hx[:, a0] - hx[:, a1], hy[:, a0] - hy[:, a1]
-                    hit = (alive & ~done & (hh[:, a0] == hh[:, a1]) & (hh[:, a1] == hh[:, a2])
-                           & (ddx == hx[:, a1] - hx[:, a2]) & (ddy == hy[:, a1] - hy[:, a2])
-                           & ((ddx != 0) | (ddy != 0)))
-                    if not hit.any():
-                        continue
-                    for i in np.nonzero(hit)[0]:
-                        key = (int(ids[i]), T, int(ddx[i]), int(ddy[i]))
-                        if key in rejected or passes(T, (int(ddx[i]), int(ddy[i])), s, phi, oi) is None:
-                            continue
-                        if line_record(chunk[ids[i]], objs, n, phi, s, int(T), t - 2 * T, depth, unit,
-                                       proj, table, results, seen, oi):
-                            done[i] = True
-                        else:
-                            rejected.add(key)
-                keep = alive & ~done
-                if not keep.all():
-                    if not keep.any():
-                        break
-                    ids, D = ids[keep], D[keep]
-                    occ = D.any(axis=0)
-                    rows, cols = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
-        print(f'  spacing {n}, phase step {phi} done ({ci + 1}/{len(combos)}, {time.time() - t_start:.0f} s), '
-              f'{len(results)} found so far', flush=True)
+    global _LINE
+    _LINE = (args, table, obj, oi, placements, P, G, q, dx, dy, combos)
+    with Pool(args.jobs) as pool:
+        # each pair's placement chunks are shared out over the jobs: task (pair, share, shares)
+        shares = max(1, args.jobs)
+        tasks = [(ci, p, shares) for ci in range(len(combos)) for p in range(shares)]
+        pending = []
+        for (ci, p, _), part in zip(tasks, pool.imap(_line_combo, tasks)):
+            pending += part
+            if p < shares - 1:
+                continue
+            n, phi = combos[ci]
+            found = sorted(pending, key=lambda r: r['chunk'])   # serial order (stable within a chunk)
+            pending = []
+            for r in found:   # the same reaction found again (other chunk or spacing) counts once
+                if r['key'] in seen:
+                    continue
+                seen.add(r['key'])
+                results.append(r)
+                print(f'  found: {r["desc"]}', flush=True)
+            print(f'  spacing {n}, phase step {phi} done ({ci + 1}/{len(combos)}, {time.time() - t_start:.0f} s), '
+                  f'{len(results)} found so far', flush=True)
 
     print(f'{len(results)} result(s)')
     if results:
@@ -620,6 +579,139 @@ def line_search(args, table, obj, oi, placements):
             f.write(f'x = {w}, y = {h}, rule = {args.rule}\n')
             f.write('\n'.join(body[i:i + 70] for i in range(0, len(body), 70)) + '\n')
         print(f'Written to {args.out}')
+
+
+def _line_combo(task):
+    """Line mode, one (spacing, phase step) pair: the results found (each with its 'key').
+    Runs in a worker process with --jobs; the context comes from _LINE (set before forking)."""
+    args, table, obj, oi, placements, P, G, q, dx, dy, combos = _LINE
+    proj = lambda c: c[0] * dx + c[1] * dy
+    ci, share, shares = task
+    n, phi = combos[ci]
+    results, seen = [], set()
+    s = (n * dx, n * dy)
+    depth = (args.window or 2 * n) * q
+    # objects needed: the front moves at most 1 cell/gen relative to the objects, which may move too
+    K = (2 * G + 2 * n) // n + 3
+    objs = [move(oi.at(j * phi), (j * s[0], j * s[1])) for j in range(K)]
+
+    def line_at(t):
+        return set().union(*[move(oi.at(t + j * phi), (j * s[0], j * s[1])) for j in range(K)])
+    line = set().union(*objs)
+    if any(len(o & p) for i, o in enumerate(objs) for p in objs[i + 1:]):
+        return results
+    # objects must not interact with each other
+    free = run(line, oi.period, table)
+    if any(free[t] != line_at(t) for t in range(1, oi.period + 1)):
+        return results
+    p1 = proj(next(iter(objs[1])))
+    pl = [A for A in placements if A.isdisjoint(line) and max(proj(c) for c in A) < max(proj(c) for c in objs[1])]
+    if not pl:
+        return results
+    # canvas: the line (wherever it is during the run) and placements, margin P + 2.
+    # Its edges absorb whatever reaches them (escaping spaceships, debris).
+    Ft = [line_at(t) for t in range(G + 2)]
+    cells = set().union(*Ft) | set().union(*pl)
+    m = P + 2
+    X0 = min(x for x, y in cells) - m; Y0 = min(y for x, y in cells) - m
+    W = max(x for x, y in cells) - X0 + m + 1; H = max(y for x, y in cells) - Y0 + m + 1
+    F = np.zeros((G + 2, H, W), dtype=np.uint8)      # the line on its own, every generation
+    for t in range(G + 2):
+        for x, y in Ft[t]:
+            F[t, y - Y0, x - X0] = 1
+    yy, xx = np.mgrid[0:H, 0:W]
+    Pm = ((xx + X0) * dx + (yy + Y0) * dy).astype(np.int64)
+    unit = n * q                                     # projection change per spacing
+    bs = min(args.batch, 256)
+    for b0 in range(0, len(pl), bs):
+        if (b0 // bs) % shares != share:
+            continue
+        n_before = len(results)
+        chunk = pl[b0:b0 + bs]
+        B = len(chunk)
+        # D = difference from the free line (F); the board is F ^ D. Only the box around D is
+        # stepped and examined. Edges absorb whatever reaches them (escaping spaceships).
+        D = np.zeros((B, H, W), dtype=np.uint8)
+        for k, A in enumerate(chunk):
+            for x, y in A:
+                D[k, y - Y0, x - X0] = 1
+        ids = np.arange(B)                     # boards still being simulated
+        rejected = set()                       # (board, period, move) already checked and refused
+        Hh = np.zeros((B, G + 1), dtype=np.uint64)
+        Ox = np.zeros((B, G + 1), dtype=np.int64); Oy = np.zeros((B, G + 1), dtype=np.int64)
+        occ = D.any(axis=0)
+        rows, cols = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
+        for t in range(G + 1):
+            if t:
+                y0, y1 = max(rows[0] - 2, 0), min(rows[-1] + 3, H)
+                x0, x1 = max(cols[0] - 2, 0), min(cols[-1] + 3, W)
+                stepped = step(F[t - 1][y0:y1, x0:x1] ^ D[:, y0:y1, x0:x1], table)
+                # the box's own edge cells were computed with dead cells outside: keep the inside
+                iy0, iy1 = (1 if y0 > 0 else 0), (y1 - y0 - 1 if y1 < H else y1 - y0)
+                ix0, ix1 = (1 if x0 > 0 else 0), (x1 - x0 - 1 if x1 < W else x1 - x0)
+                D[:, y0:y1, x0:x1] = 0
+                D[:, y0 + iy0:y0 + iy1, x0 + ix0:x0 + ix1] = (stepped[:, iy0:iy1, ix0:ix1]
+                                                             ^ F[t][y0 + iy0:y0 + iy1, x0 + ix0:x0 + ix1])
+                D[:, :2, :] = 0; D[:, -2:, :] = 0; D[:, :, :2] = 0; D[:, :, -2:] = 0
+                occ = D[:, y0:y1, x0:x1].any(axis=0)
+                rr, cc = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
+                if not len(rr):
+                    break
+                rows, cols = rr + y0, cc + x0
+            # examine the changes plus one spacing ahead
+            r0, r1 = max(rows[0] - n - 2, 0), min(rows[-1] + n + 3, H)
+            c0, c1 = max(cols[0] - n - 2, 0), min(cols[-1] + n + 3, W)
+            Ds = D[:, r0:r1, c0:c1]
+            gs = Ds ^ F[t][r0:r1, c0:c1]
+            Ps = Pm[r0:r1, c0:c1]
+            Bn = len(ids)
+            alive = Ds.reshape(Bn, -1).any(axis=1)
+            front = np.where(Ds.astype(bool), Ps[None], np.iinfo(np.int64).min // 2).reshape(Bn, -1).max(axis=1)
+            win = gs.astype(bool) & (Ps[None] >= (front - depth)[:, None, None]) & (Ps[None] <= (front + unit)[:, None, None])
+            bi, wy, wx = np.nonzero(win)
+            # position-independent hash of the window (the line itself may be moving)
+            big = np.iinfo(np.int64).max
+            mx = np.full(Bn, big, dtype=np.int64); my = np.full(Bn, big, dtype=np.int64)
+            np.minimum.at(mx, bi, wx); np.minimum.at(my, bi, wy)
+            xr = (wx - mx[bi]).astype(np.int64); yr = (wy - my[bi]).astype(np.int64)
+            v = (xr * 0x9E3779B1 + yr * 0x85EBCA77 + 0x165667B1).astype(np.uint64)
+            v ^= v >> np.uint64(15); v *= np.uint64(0x2C1B3C6D297A1A2B); v ^= v >> np.uint64(29)
+            h = np.zeros(Bn, dtype=np.uint64)
+            np.add.at(h, bi, v)
+            Hh[ids, t] = h
+            Ox[ids, t] = mx + c0; Oy[ids, t] = my + r0
+            done = np.zeros(Bn, dtype=bool)
+            Tm = min(P, t // 2)
+            cols_ = np.arange(t - 2 * Tm, t + 1) if Tm else np.arange(t, t + 1)
+            hx, hy, hh = Ox[ids][:, cols_], Oy[ids][:, cols_], Hh[ids][:, cols_]   # generations t-2Tm..t
+            base_ = t - 2 * Tm
+            for T in range(1, Tm + 1):
+                a0, a1, a2 = t - base_, t - T - base_, t - 2 * T - base_
+                ddx, ddy = hx[:, a0] - hx[:, a1], hy[:, a0] - hy[:, a1]
+                hit = (alive & ~done & (hh[:, a0] == hh[:, a1]) & (hh[:, a1] == hh[:, a2])
+                       & (ddx == hx[:, a1] - hx[:, a2]) & (ddy == hy[:, a1] - hy[:, a2])
+                       & ((ddx != 0) | (ddy != 0)))
+                if not hit.any():
+                    continue
+                for i in np.nonzero(hit)[0]:
+                    key = (int(ids[i]), T, int(ddx[i]), int(ddy[i]))
+                    if key in rejected or passes(T, (int(ddx[i]), int(ddy[i])), s, phi, oi) is None:
+                        continue
+                    if line_record(chunk[ids[i]], objs, n, phi, s, int(T), t - 2 * T, depth, unit,
+                                   proj, table, results, seen, oi):
+                        done[i] = True
+                    else:
+                        rejected.add(key)
+            keep = alive & ~done
+            if not keep.all():
+                if not keep.any():
+                    break
+                ids, D = ids[keep], D[keep]
+                occ = D.any(axis=0)
+                rows, cols = np.nonzero(occ.any(axis=1))[0], np.nonzero(occ.any(axis=0))[0]
+        for r in results[n_before:]:
+            r['chunk'] = b0
+    return results
 
 
 def passes(T, d, s, phi, oi):
@@ -698,8 +790,7 @@ def line_record(A, objs, n, phi, s, T, t0, depth, unit, proj, table, results, se
             + f'; objects every {n} cells' + (f', each {phi} generation(s) on from the last' if oi.period > 1 else '')
             + f'; repeating from generation {t0}; pattern {encode_rle(set(A))[0]}')
     shown = set(A) | set().union(*objs[:max(10, (t0 + CYCLES * T) * k // T + 3)])
-    results.append({'desc': desc, 'stream': shown})
-    print(f'  found: {desc}', flush=True)
+    results.append({'desc': desc, 'stream': shown, 'key': key})
     return True
 
 

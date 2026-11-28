@@ -76,3 +76,15 @@ Measured (single thread, M4 Pro; other searches were running, so timings are rou
 
 Rejected idea: keeping each frontier transition as a lasting window constraint on the stable
 cells (like upstream's per-cell options): no fewer nodes on the a5 test (30 s vs 26 s), removed.
+
+## Results file and progress (2026-11-27)
+- Results go to `output-file`, default `<input>-results.rle` (next to the .toml). Normal mode rewrites
+  it after every new solution (via `<file>.tmp` + rename) and once more at the end; the `#C` first line
+  says whether the search was still running. The file holds all solutions (the "All solutions" list);
+  the trimmed and filtered lists are still only printed. Metasearch writes it after each round, as before.
+- stderr gets a line every 10 s: `progress: P% (rough), path ..., nodes, solutions, seconds`. P counts
+  each node as 2^-depth of the tree and both halves of a branch as equal, so it reaches exactly 100%
+  at the end but can sit near 0 for most of a run (intA: 0.0000% until 90 s of 92 s). `path` is the
+  current node's first 32 branch choices (0 = cell set off first, 1 = the second branch).
+- Search output on stdout unchanged (intA, intB byte-identical to the previous build).
+  The previous binary is `Barrister.pre-progress`.

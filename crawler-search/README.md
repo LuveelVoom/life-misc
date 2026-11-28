@@ -1,18 +1,16 @@
 # crawler-search
 
-Finds **crawlers** and **fuses** in Life-like and INT rules by brute force.
-
-- A **crawler** (LifeWiki definition) is a reaction where an active pattern hits an object and
-  comes back unchanged but moved, while the object is left moved or rephased. Repeated on a line
-  of objects, the pattern travels forever. Example: the 17c/45 pi heptomino crawler over blinkers.
-- A **fuse** is the same, except that the objects are used up (burnt) instead of moved.
+Finds **crawlers** (objects left moved or rephased, e.g. the 17c/45 pi heptomino crawler over
+blinkers) and **fuses** (objects used up) in Life-like and INT rules by brute force.
 
 You give the script one object (the thing crawled over) and either your own active pattern(s) or
 a box of cells to try every pattern in. It simulates every placement and reports the reactions
 that keep repeating along a line of copies of the object.
 
 Requirements: Python 3 with numpy. `hensel.json` must sit next to the script. Rules use Hensel/INT
-notation (`B3/S23`, `B36/S23`, `B3/S23-q4i`, `B2-a/S12`); B0 rules are not supported.
+notation (`B3/S23`, `B36/S23`, `B3/S23-q4i`, `B2-a/S12`) or Golly `MAP` strings; B0 rules are not
+supported. In a non-isotropic MAP rule the 8 orientations of an `--active` pattern are simply 8
+different patterns.
 Coordinates: x to the right, y down.
 
 ## Quick start
@@ -79,9 +77,16 @@ This finds the 17c/45 pi crawler from a bare pi heptomino in a few seconds.
 Cost grows with placements x spacings x phase steps; narrow `--spacing` and `--positions` when
 you can.
 
+## Using several cores
+
+`--jobs N` runs N worker processes; the output is the same for any N. Line mode shares out every
+spacing and phase step's placements, the other modes the batches of starting patterns. The pi
+crawler example above: 64 s with 1 job, 12 s with 10 (M4 Pro).
+
 ## Searching many objects at once
 
-The script takes one object per run. Run several in parallel from the shell:
+The script takes one object per run. Run several from the shell (each with `--jobs 1`, or a few
+with more jobs each):
 
 ```
 P='2bo$2ob2o$bobo$2bo!'
@@ -139,7 +144,7 @@ escapes.
 
 | Option | Default | Meaning |
 |---|---|---|
-| `--rule RULE` | `B3/S23` | Hensel/INT rule |
+| `--rule RULE` | `B3/S23` | Hensel/INT or MAP rule |
 | `--object RLE` | (required) | the object crawled over: still life, oscillator or spaceship |
 | `--object-pos X Y` | `0 0` | top-left cell of the object |
 | `--active RLE` | | an active pattern to place (repeatable) |
@@ -157,6 +162,7 @@ escapes.
 | `--check-cycles N` | 10 | cycles a result must keep repeating for |
 | `--batch N` | 2048 | patterns simulated at once (memory) |
 | `--out FILE` | `crawlers.rle` | output file |
+| `--jobs N` | 1 | worker processes |
 
 ## Limits
 

@@ -4,6 +4,9 @@
 #include <map>
 #include <set>
 #include <algorithm>
+#include <chrono>
+#include <cstdio>
+#include <fstream>
 
 #include "toml/toml.hpp"
 
@@ -161,6 +164,11 @@ public:
   bool hasInteracted;
   unsigned interactionStart;
   unsigned recoveredTime;
+
+  // Share of the search tree below this node (1 at the root, halved at each
+  // branch), for the progress estimate.
+  double weight = 1.0;
+  unsigned depth = 0;   // number of branches above this node
 
   SearchParams *params;
   std::vector<Solution> *allSolutions;
@@ -738,8 +746,41 @@ std::pair<unsigned, std::pair<int, int>> SearchState::ChooseBranchCell() const {
 
 struct NodeCount { unsigned long n=0, adv=0; ~NodeCount(){ if (getenv("INTDBG")) fprintf(stderr, "nodes %lu\n", n);} };
 inline NodeCount gNodes;
+
+// Progress: a node's weight counts as done when its subtree is finished, so the
+// total reaches 1 when the search ends. Treats both halves of every branch as
+// the same size, so it is only a rough guide (it tends to jump).
+static double gProgressDone = 0;
+static auto gStartTime = std::chrono::steady_clock::now();
+static auto gLastProgress = std::chrono::steady_clock::now();
+static size_t gSolutionsSoFar = 0;
+static char gPath[33] = "";   // the current node's first 32 branch choices
+void WriteResultsFile(const std::string &path, std::vector<Solution> &pats, const std::string &note);
+static void ResetProgress() {
+  gProgressDone = 0;
+  gPath[0] = 0;
+  gStartTime = gLastProgress = std::chrono::steady_clock::now();
+}
+static void MaybePrintProgress() {
+  auto now = std::chrono::steady_clock::now();
+  if (now - gLastProgress < std::chrono::seconds(10))
+    return;
+  gLastProgress = now;
+  double secs = std::chrono::duration<double>(now - gStartTime).count();
+  fprintf(stderr, "progress: %.4f%% (rough), path %s, %lu nodes, %zu solutions, %.0f s\n",
+          100.0 * gProgressDone, gPath, gNodes.n, gSolutionsSoFar, secs);
+}
+struct ProgressGuard {   // adds the node's weight minus what its children took
+  double &passed; double weight;
+  ~ProgressGuard() { gProgressDone += weight - passed; }
+};
+
 void SearchState::SearchStep() {
   gNodes.n++;
+  double passed = 0;
+  ProgressGuard guard{passed, weight};
+  if ((gNodes.n & 4095) == 0)
+    MaybePrintProgress();
 #ifdef DEBUG
   if (params->hasOracle) {
     if (!stable.CompatibleWith(params->oracle))
@@ -793,6 +834,7 @@ void SearchState::SearchStep() {
       // The stored next generation is stale (its neighbourhood became known
       // after it was computed): recompute the frontier instead of pruning.
       frontier.frontierCells = LifeState();
+      passed = weight;   // the repeated step below counts this node's share
       return SearchStep();
     }
     if (getenv("INTDBG")) std::cerr << "PRUNE active-unknown-neighbour gen " << currentGen << std::endl;
@@ -802,6 +844,12 @@ void SearchState::SearchStep() {
   for (int v = 0; v < 2; v++) {
 
     SearchState newSearch = *this;
+    newSearch.weight = weight / 2;
+    newSearch.depth = depth + 1;
+    if (depth < 32) {   // path string: 0 = first branch (cell off), 1 = second (cell on)
+      gPath[depth] = '0' + v;
+      gPath[depth + 1] = 0;
+    }
     if (v == 0) newSearch.stable.SetOff(valueCell); else newSearch.stable.SetOn(valueCell);
     newSearch.stable.SynchroniseStateKnown(valueCell);
 
@@ -810,6 +858,7 @@ void SearchState::SearchStep() {
       continue;
 
     newSearch.frontier.frontierCells = LifeState(); // force a full recompute
+    passed += newSearch.weight;
     newSearch.SearchStep();
   }
 }
@@ -927,9 +976,12 @@ void SearchState::RecordSolution() {
   }
 
   allSolutions->push_back(solution);
+  gSolutionsSoFar++;
 
-  if (!params->metasearch)
+  if (!params->metasearch) {
     PrintSolution(solution);
+    WriteResultsFile(params->outputFile, *allSolutions, "search still running (written after each new one)");
+  }
 }
 
 void SearchState::SanityCheck() {
@@ -967,6 +1019,19 @@ void PrintSummary(std::vector<Solution> &pats, std::ostream &out) {
 
 void PrintSummary(std::vector<Solution> &pats) {
   PrintSummary(pats, std::cout);
+}
+
+// Rewrites the results file (via a temporary file, so it is never half-written).
+void WriteResultsFile(const std::string &path, std::vector<Solution> &pats, const std::string &note) {
+  if (path.empty())
+    return;
+  std::string tmp = path + ".tmp";
+  {
+    std::ofstream f(tmp);
+    f << "#C " << pats.size() << " solution(s), " << note << std::endl;
+    PrintSummary(pats, f);
+  }
+  std::rename(tmp.c_str(), path.c_str());
 }
 
 bool PassesFilters(const SearchParams &params, const Solution &solution) {
@@ -1077,6 +1142,7 @@ void MetaSearchStep(unsigned round, std::vector<Solution> &allSolutions, SearchP
   std::cerr << LifeBellmanRLEFor(params.stable.state | params.startingState.state, params.stable.unknown | params.stable.state) << std::endl;
 
   SearchState search(params, roundSolutions, seenRotors, stableAtInteraction);
+  ResetProgress();
   search.SearchStep();
 
   auto trimmed = TrimSolutions(params, roundSolutions);
@@ -1091,10 +1157,7 @@ void MetaSearchStep(unsigned round, std::vector<Solution> &allSolutions, SearchP
   if (filtered.size() > 0) {
     std::cout << "Winner!" << std::endl;
     PrintSummary(filtered);
-    if (params.outputFile != "") {
-      std::ofstream resultsFile(params.outputFile);
-      PrintSummary(allSolutions, resultsFile);
-    }
+    WriteResultsFile(params.outputFile, allSolutions, "metasearch still running (written after each round)");
   }
 
   if (round == params.metasearchRounds) {
@@ -1122,15 +1185,19 @@ void MetaSearch(SearchParams &params) {
   MetaSearchStep(1, allSolutions, params);
   std::cout << "Summary!" << std::endl;
   PrintSummary(allSolutions);
-  if (params.outputFile != "") {
-    std::ofstream resultsFile(params.outputFile);
-    PrintSummary(allSolutions, resultsFile);
-  }
+  WriteResultsFile(params.outputFile, allSolutions, "metasearch complete");
 }
 
 int main(int, char *argv[]) {
   auto toml = toml::parse(argv[1]);
   SearchParams params = SearchParams::FromToml(toml);
+  if (params.outputFile.empty()) {   // default: next to the input, <input>-results.rle
+    std::string base = argv[1];
+    if (base.size() > 5 && base.compare(base.size() - 5, 5, ".toml") == 0)
+      base.resize(base.size() - 5);
+    params.outputFile = base + "-results.rle";
+  }
+  std::cerr << "Results are written to " << params.outputFile << " as they are found" << std::endl;
 
   if (params.maxCellActiveWindowGens != -1 &&
   (unsigned)params.maxCellActiveWindowGens > maxCellActiveWindowGens) {
@@ -1154,7 +1221,10 @@ int main(int, char *argv[]) {
     }
 
     SearchState search(params, allSolutions, seenRotors, stableAtInteraction);
+    ResetProgress();
     search.SearchStep();
+    fprintf(stderr, "progress: %.4f%%, %lu nodes, %zu solutions, search complete\n", 100.0 * gProgressDone, gNodes.n, allSolutions.size());
+    WriteResultsFile(params.outputFile, allSolutions, "search complete");
 
     if (params.printSummary) {
       std::cout << "All solutions:" << std::endl;
